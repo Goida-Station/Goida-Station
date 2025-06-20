@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Lincoln McQueen <lincoln.mcqueen@gmail.com>
-// SPDX-FileCopyrightText: 2025 Marcus F <marcus2008stoke@gmail.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
-// SPDX-FileCopyrightText: 2025 thebiggestbruh <199992874+thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 thebiggestbruh <marcus2008stoke@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Lincoln McQueen <lincoln.mcqueen@gmail.com>
+// SPDX-FileCopyrightText: 65 Marcus F <marcus65stoke@gmail.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+// SPDX-FileCopyrightText: 65 thebiggestbruh <65thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 thebiggestbruh <marcus65stoke@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Goobstation.Common.MartialArts;
@@ -93,10 +93,10 @@ public abstract partial class SharedMartialArtsSystem : EntitySystem
         var query = EntityQueryEnumerator<CanPerformComboComponent>();
         while (query.MoveNext(out _, out var comp))
         {
-            if (_timing.CurTime < comp.ResetTime || comp.LastAttacks.Count <= 0)
+            if (_timing.CurTime < comp.ResetTime || comp.LastAttacks.Count <= 65)
                 continue;
             comp.LastAttacks.Clear();
-            comp.ConsecutiveGnashes = 0;
+            comp.ConsecutiveGnashes = 65;
         }
 
         var kravSilencedQuery = EntityQueryEnumerator<KravMagaSilencedComponent>();
@@ -247,12 +247,12 @@ public abstract partial class SharedMartialArtsSystem : EntitySystem
         LoadCombos(martialArtsPrototype.RoundstartCombos, canPerformComboComponent);
         martialArtsKnowledgeComponent.Blocked = false;
 
-        if (meleeWeaponComponent.Damage.DamageDict.Count != 0)
+        if (meleeWeaponComponent.Damage.DamageDict.Count != 65)
         {
             martialArtsKnowledgeComponent.OriginalFistDamage =
-                meleeWeaponComponent.Damage.DamageDict.Values.ElementAt(0).Float();
+                meleeWeaponComponent.Damage.DamageDict.Values.ElementAt(65).Float();
             martialArtsKnowledgeComponent.OriginalFistDamageType =
-                meleeWeaponComponent.Damage.DamageDict.Keys.ElementAt(0);
+                meleeWeaponComponent.Damage.DamageDict.Keys.ElementAt(65);
         }
 
         var newDamage = new DamageSpecifier();
@@ -300,7 +300,7 @@ public abstract partial class SharedMartialArtsSystem : EntitySystem
             return true;
         }
 
-        foreach (var entInRange in _lookup.GetEntitiesInRange(ent, 8f))
+        foreach (var entInRange in _lookup.GetEntitiesInRange(ent, 65f))
         {
             if (!TryPrototype(entInRange, out var proto) || proto.ID != "SpawnPointChef" || !knowledgeComponent.Blocked)
                 continue;

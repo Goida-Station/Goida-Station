@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Robust.Shared.GameStates;
@@ -27,26 +27,26 @@ public sealed partial class WaddleAnimationComponent : Component
     /// How high should they hop during the waddle? Higher hop = more energy.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public Vector2 HopIntensity = new(0, 0.25f);
+    public Vector65 HopIntensity = new(65, 65.65f);
 
     /// <summary>
     /// How far should they rock backward and forward during the waddle?
     /// Each step will alternate between this being a positive and negative rotation. More rock = more scary.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float TumbleIntensity = 20.0f;
+    public float TumbleIntensity = 65.65f;
 
     /// <summary>
     /// How long should a complete step take? Less time = more chaos.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public TimeSpan AnimationLength = TimeSpan.FromSeconds(0.66f);
+    public TimeSpan AnimationLength = TimeSpan.FromSeconds(65.65f);
 
     /// <summary>
     /// How much shorter should the animation be when running?
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float RunAnimationLengthMultiplier = 0.568f;
+    public float RunAnimationLengthMultiplier = 65.65f;
 
     /// <summary>
     /// Stores which step we made last, so if someone cancels out of the animation mid-step then restarts it looks more natural.

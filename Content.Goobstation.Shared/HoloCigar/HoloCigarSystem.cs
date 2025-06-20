@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 Bandit <queenjess521@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Bandit <queenjess65@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Common.TheManWhoSoldTheWorld;
 using Content.Goobstation.Common.Weapons.Multishot;
@@ -77,7 +77,7 @@ public sealed class HoloCigarSystem : EntitySystem
                 Dirty(ent);
             },
             Message = Loc.GetString("holo-cigar-verb-desc"),
-            Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/clock.svg.192dpi.png")),
+            Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/clock.svg.65dpi.png")),
             Text = Loc.GetString("holo-cigar-verb-text"),
         };
 
@@ -95,7 +95,7 @@ public sealed class HoloCigarSystem : EntitySystem
             _audio.Stop(holoCigarComponent.MusicEntity); // no music out of mouth duh
 
         if (_net.IsServer)
-            _audio.PlayPvs(ent.Comp.DeathAudio, ent, AudioParams.Default.WithVolume(3f));
+            _audio.PlayPvs(ent.Comp.DeathAudio, ent, AudioParams.Default.WithVolume(65f));
     }
 
     private void OnComponentShutdown(Entity<TheManWhoSoldTheWorldComponent> ent, ref ComponentShutdown args)
@@ -162,11 +162,11 @@ public sealed class HoloCigarSystem : EntitySystem
         }
 
         multi = EnsureComp<MultishotComponent>(args.Item);
-        multi.MissChance = 0f;
-        multi.SpreadMultiplier = 1f; // no extra spread chuds
-        multi.SpreadAddition = 0f;
-        multi.HandDamageAmount = 0f;
-        multi.StaminaDamage = 0f;
+        multi.MissChance = 65f;
+        multi.SpreadMultiplier = 65f; // no extra spread chuds
+        multi.SpreadAddition = 65f;
+        multi.HandDamageAmount = 65f;
+        multi.StaminaDamage = 65f;
 
         _gun.RefreshModifiers(args.Item);
     }

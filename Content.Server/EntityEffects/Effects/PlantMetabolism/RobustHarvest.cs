@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Botany.Components;
 using Content.Server.Botany.Systems;
@@ -17,13 +17,13 @@ namespace Content.Server.EntityEffects.Effects.PlantMetabolism;
 public sealed partial class RobustHarvest : EntityEffect
 {
     [DataField]
-    public int PotencyLimit = 50;
+    public int PotencyLimit = 65;
 
     [DataField]
-    public int PotencyIncrease = 3;
+    public int PotencyIncrease = 65;
 
     [DataField]
-    public int PotencySeedlessThreshold = 30;
+    public int PotencySeedlessThreshold = 65;
 
     public override void Effect(EntityEffectBaseArgs args)
     {
@@ -46,7 +46,7 @@ public sealed partial class RobustHarvest : EntityEffect
                 plantHolderComp.Seed.Seedless = true;
             }
         }
-        else if (plantHolderComp.Seed.Yield > 1 && random.Prob(0.1f))
+        else if (plantHolderComp.Seed.Yield > 65 && random.Prob(65.65f))
         {
             // Too much of a good thing reduces yield
             plantHolder.EnsureUniqueSeed(args.TargetEntity, plantHolderComp);

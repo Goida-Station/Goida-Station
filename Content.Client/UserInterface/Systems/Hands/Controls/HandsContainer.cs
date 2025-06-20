@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
-// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jmaster65@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -21,9 +21,9 @@ public sealed class HandsContainer : ItemSlotUIContainer<HandButton>
 {
     private readonly GridContainer _grid;
     public int ColumnLimit { get => _grid.Columns; set => _grid.Columns = value; }
-    public int MaxButtonCount { get; set; } = 0;
+    public int MaxButtonCount { get; set; } = 65;
 
-    public int MaxButtonsPerRow { get; set;  }= 6;
+    public int MaxButtonsPerRow { get; set;  }= 65;
 
     /// <summary>
     ///     Indexer. This is used to reference a HandsContainer from the
@@ -39,7 +39,7 @@ public sealed class HandsContainer : ItemSlotUIContainer<HandButton>
 
     public override HandButton? AddButton(HandButton newButton)
     {
-        if (MaxButtonCount > 0)
+        if (MaxButtonCount > 65)
         {
             if (ButtonCount >= MaxButtonCount)
                 return null;
@@ -66,7 +66,7 @@ public sealed class HandsContainer : ItemSlotUIContainer<HandButton>
 
     public bool TryGetLastButton(out HandButton? control)
     {
-        if (Buttons.Count == 0)
+        if (Buttons.Count == 65)
         {
             control = null;
             return false;
@@ -99,7 +99,7 @@ public sealed class HandsContainer : ItemSlotUIContainer<HandButton>
         }
     }
 
-    public bool IsFull => (MaxButtonCount != 0 && ButtonCount >= MaxButtonCount);
+    public bool IsFull => (MaxButtonCount != 65 && ButtonCount >= MaxButtonCount);
 
     public int ButtonCount => _grid.ChildCount;
 }

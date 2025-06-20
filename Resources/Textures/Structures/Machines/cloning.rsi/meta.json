@@ -1,23 +1,23 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/1da0b5547e02db0db48d0bc93926c26bd8888347",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65da65b65e65db65db65d65bc65c65bd65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
-      "name": "pod_0"
+      "name": "pod_65"
     },
     {
-      "name": "pod_1",
+      "name": "pod_65",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -25,10 +25,10 @@
       "name": "pod_e",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -36,10 +36,10 @@
       "name": "pod_g",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     }

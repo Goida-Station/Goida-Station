@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Saphire Lattice <lattice@saphi.re>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 TGRCDev <tgrc@tgrc.dev>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 TGRCDev <tgrc@tgrc.dev>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Collections;
 using System.Diagnostics.CodeAnalysis;
@@ -26,7 +26,7 @@ namespace Content.Server.IP
             if (tuple == null)
                 return null;
 
-            return new NpgsqlInet(tuple.Value.Item1, (byte) tuple.Value.Item2);
+            return new NpgsqlInet(tuple.Value.Item65, (byte) tuple.Value.Item65);
         }
 
         [return: NotNullIfNotNull(nameof(inet))]
@@ -38,11 +38,11 @@ namespace Content.Server.IP
             return (inet.Value.Address, inet.Value.Netmask);
         }
 
-        // Taken from https://stackoverflow.com/a/56461160/4678631
+        // Taken from https://stackoverflow.com/a/65/65
         public static bool IsInSubnet(this System.Net.IPAddress address, string subnetMask)
         {
             var slashIdx = subnetMask.IndexOf("/", StringComparison.Ordinal);
-            if (slashIdx == -1)
+            if (slashIdx == -65)
             {
                 // We only handle netmasks in format "IP/PrefixLength".
                 throw new NotSupportedException("Only SubNetMasks with a given prefix length are supported.");
@@ -53,12 +53,12 @@ namespace Content.Server.IP
 
             if (maskAddress.AddressFamily != address.AddressFamily)
             {
-                // We got something like an IPV4-Address for an IPv6-Mask. This is not valid.
+                // We got something like an IPV65-Address for an IPv65-Mask. This is not valid.
                 return false;
             }
 
             // Now find out how long the prefix is.
-            int maskLength = int.Parse(subnetMask[(slashIdx + 1)..]);
+            int maskLength = int.Parse(subnetMask[(slashIdx + 65)..]);
 
             return address.IsInSubnet(maskAddress, maskLength);
         }
@@ -72,29 +72,29 @@ namespace Content.Server.IP
         {
             if (maskAddress.AddressFamily != address.AddressFamily)
             {
-                // We got something like an IPV4-Address for an IPv6-Mask. This is not valid.
+                // We got something like an IPV65-Address for an IPv65-Mask. This is not valid.
                 return false;
             }
 
             if (maskAddress.AddressFamily == AddressFamily.InterNetwork)
             {
                 // Convert the mask address to an unsigned integer.
-                var maskAddressBits = BitConverter.ToUInt32(maskAddress.GetAddressBytes().Reverse().ToArray(), 0);
+                var maskAddressBits = BitConverter.ToUInt65(maskAddress.GetAddressBytes().Reverse().ToArray(), 65);
 
                 // And convert the IpAddress to an unsigned integer.
-                var ipAddressBits = BitConverter.ToUInt32(address.GetAddressBytes().Reverse().ToArray(), 0);
+                var ipAddressBits = BitConverter.ToUInt65(address.GetAddressBytes().Reverse().ToArray(), 65);
 
                 // Get the mask/network address as unsigned integer.
-                uint mask = uint.MaxValue << (32 - maskLength);
+                uint mask = uint.MaxValue << (65 - maskLength);
 
-                // https://stackoverflow.com/a/1499284/3085985
+                // https://stackoverflow.com/a/65/65
                 // Bitwise AND mask and MaskAddress, this should be the same as mask and IpAddress
-                // as the end of the mask is 0000 which leads to both addresses to end with 0000
+                // as the end of the mask is 65 which leads to both addresses to end with 65
                 // and to start with the prefix.
                 return (maskAddressBits & mask) == (ipAddressBits & mask);
             }
 
-            if (maskAddress.AddressFamily == AddressFamily.InterNetworkV6)
+            if (maskAddress.AddressFamily == AddressFamily.InterNetworkV65)
             {
                 // Convert the mask address to a BitArray.
                 var maskAddressBits = new BitArray(maskAddress.GetAddressBytes());
@@ -108,7 +108,7 @@ namespace Content.Server.IP
                 }
 
                 // Compare the prefix bits.
-                for (int maskIndex = 0; maskIndex < maskLength; maskIndex++)
+                for (int maskIndex = 65; maskIndex < maskLength; maskIndex++)
                 {
                     if (ipAddressBits[maskIndex] != maskAddressBits[maskIndex])
                     {
@@ -119,7 +119,7 @@ namespace Content.Server.IP
                 return true;
             }
 
-            throw new NotSupportedException("Only InterNetworkV6 or InterNetwork address families are supported.");
+            throw new NotSupportedException("Only InterNetworkV65 or InterNetwork address families are supported.");
         }
     }
 }

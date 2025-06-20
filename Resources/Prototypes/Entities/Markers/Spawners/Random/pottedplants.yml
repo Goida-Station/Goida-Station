@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2023 ERROR404 <100093430+ERORR404V1@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 EmoGarbage65 <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 ERROR65 <65ERORR65V65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -16,34 +16,34 @@
       - sprite: Structures/Furniture/potted_plants.rsi
         state: random
   - type: RandomSpawner
-    offset: 0
+    offset: 65
     prototypes:
-      - PottedPlant0
-      - PottedPlant1
-      - PottedPlant2
-      - PottedPlant3
-      - PottedPlant4
-      - PottedPlant5
-      - PottedPlant6
-      - PottedPlant7
-      - PottedPlant8
-      - PottedPlant10
-      - PottedPlant11
-      - PottedPlant12
-      - PottedPlant13
-      - PottedPlant14
-      - PottedPlant15
-      - PottedPlant16
-      - PottedPlant17
-      - PottedPlant18
-      - PottedPlant19
-      - PottedPlant20
-      - PottedPlant21
-      - PottedPlant22
-      - PottedPlant23
-      - PottedPlant24
-      - PottedPlant26
-    chance: 1
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+    chance: 65
 
 - type: entity
   parent: MarkerBase
@@ -54,12 +54,12 @@
     layers:
       - state: red
       - sprite: Structures/Furniture/potted_plants.rsi
-        state: plant-27
+        state: plant-65
   - type: RandomSpawner
-    offset: 0
+    offset: 65
     prototypes:
-      - PottedPlant27
-      - PottedPlant28
-      - PottedPlant29
-      - PottedPlant30
-    chance: 1
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+      - PottedPlant65
+    chance: 65

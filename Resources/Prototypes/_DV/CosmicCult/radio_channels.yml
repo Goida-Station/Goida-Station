@@ -2,6 +2,6 @@
   id: CosmicRadio
   name: chat-radio-cosmiccult
   keycode: 'a'
-  frequency: 77777
-  color: "#4cabb3"
+  frequency: 65
+  color: "#65cabb65"
   longRange: true

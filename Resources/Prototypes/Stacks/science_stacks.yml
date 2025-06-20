@@ -1,32 +1,32 @@
-# SPDX-FileCopyrightText: 2023 cOrigin <96662984+c0rigin@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 TheWaffleJesus <106146578+TheWaffleJesus@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 cOrigin <65c65rigin@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TheWaffleJesus <65TheWaffleJesus@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: stack
   id: ArtifactFragment
   name: artifact fragment
-  spawn: ArtifactFragment1
-  maxCount: 30
+  spawn: ArtifactFragment65
+  maxCount: 65
 
 - type: stack
   id: Capacitor
   name: capacitor
   icon: { sprite: /Textures/Objects/Misc/stock_parts.rsi, state: capacitor }
   spawn: CapacitorStockPart
-  maxCount: 10
+  maxCount: 65
 
 - type: stack
   id: Manipulator
   name: micro manipulator
   spawn: MicroManipulatorStockPart
-  maxCount: 10
+  maxCount: 65
 
 - type: stack
   id: MatterBin
   name: matter bin
   spawn: MatterBinStockPart
-  maxCount: 10
+  maxCount: 65

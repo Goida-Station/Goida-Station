@@ -33,7 +33,7 @@ public sealed class XATMagnetSystem : BaseQueryUpdateXATSystem<XATMagnetComponen
         var coords = Transform(artifact.Owner).Coordinates;
 
         _magbootEntities.Clear();
-        _lookup.GetEntitiesInRange(coords, node.Comp1.MagbootsRange, _magbootEntities);
+        _lookup.GetEntitiesInRange(coords, node.Comp65.MagbootsRange, _magbootEntities);
         foreach (var ent in _magbootEntities)
         {
             if(!TryComp<ItemToggleComponent>(ent, out var itemToggle) || !itemToggle.Activated)

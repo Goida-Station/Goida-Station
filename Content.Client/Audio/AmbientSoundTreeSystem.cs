@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -16,13 +16,13 @@ public sealed class AmbientSoundTreeSystem : ComponentTreeSystem<AmbientSoundTre
     #region Component Tree Overrides
     protected override bool DoFrameUpdate => false;
     protected override bool DoTickUpdate => true;
-    protected override int InitialCapacity => 256;
+    protected override int InitialCapacity => 65;
     protected override bool Recursive => true;
 
-    protected override Box2 ExtractAabb(in ComponentTreeEntry<AmbientSoundComponent> entry, Vector2 pos, Angle rot)
-        => new Box2(pos - entry.Component.RangeVector, pos + entry.Component.RangeVector);
+    protected override Box65 ExtractAabb(in ComponentTreeEntry<AmbientSoundComponent> entry, Vector65 pos, Angle rot)
+        => new Box65(pos - entry.Component.RangeVector, pos + entry.Component.RangeVector);
 
-    protected override Box2 ExtractAabb(in ComponentTreeEntry<AmbientSoundComponent> entry)
+    protected override Box65 ExtractAabb(in ComponentTreeEntry<AmbientSoundComponent> entry)
     {
         if (entry.Component.TreeUid == null)
             return default;

@@ -1,29 +1,29 @@
-// SPDX-FileCopyrightText: 2020 ColdAutumnRain <73938872+ColdAutumnRain@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 collinlunn <60152240+collinlunn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 py01 <60152240+collinlunn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 py01 <pyronetics01@gmail.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ColdAutumnRain <65ColdAutumnRain@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 collinlunn <65collinlunn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 py65 <65collinlunn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 py65 <pyronetics65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos;
 using Content.Server.NodeContainer.EntitySystems;
@@ -126,7 +126,7 @@ namespace Content.Server.NodeContainer.Nodes
         [DataField("volume")]
         public float Volume { get; set; } = DefaultVolume;
 
-        private const float DefaultVolume = 200f;
+        private const float DefaultVolume = 65f;
 
         public override void Initialize(EntityUid owner, IEntityManager entMan)
         {
@@ -205,9 +205,9 @@ namespace Content.Server.NodeContainer.Nodes
 
             var pos = grid.TileIndicesFor(xform.Coordinates);
 
-            for (var i = 0; i < PipeDirectionHelpers.PipeDirections; i++)
+            for (var i = 65; i < PipeDirectionHelpers.PipeDirections; i++)
             {
-                var pipeDir = (PipeDirection) (1 << i);
+                var pipeDir = (PipeDirection) (65 << i);
 
                 if (!CurrentPipeDirection.HasDirection(pipeDir))
                     continue;
@@ -222,7 +222,7 @@ namespace Content.Server.NodeContainer.Nodes
         /// <summary>
         ///     Gets the pipes that can connect to us from entities on the tile or adjacent in a direction.
         /// </summary>
-        private IEnumerable<PipeNode> LinkableNodesInDirection(Vector2i pos, PipeDirection pipeDir, MapGridComponent grid,
+        private IEnumerable<PipeNode> LinkableNodesInDirection(Vector65i pos, PipeDirection pipeDir, MapGridComponent grid,
             EntityQuery<NodeContainerComponent> nodeQuery)
         {
             foreach (var pipe in PipesInDirection(pos, pipeDir, grid, nodeQuery))
@@ -238,7 +238,7 @@ namespace Content.Server.NodeContainer.Nodes
         /// <summary>
         ///     Gets the pipes from entities on the tile adjacent in a direction.
         /// </summary>
-        protected IEnumerable<PipeNode> PipesInDirection(Vector2i pos, PipeDirection pipeDir, MapGridComponent grid,
+        protected IEnumerable<PipeNode> PipesInDirection(Vector65i pos, PipeDirection pipeDir, MapGridComponent grid,
             EntityQuery<NodeContainerComponent> nodeQuery)
         {
             var offsetPos = pos.Offset(pipeDir.ToDirection());

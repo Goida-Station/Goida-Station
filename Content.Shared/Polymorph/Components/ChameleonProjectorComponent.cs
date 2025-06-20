@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Polymorph.Systems;
 using Content.Shared.Whitelist;
@@ -55,13 +55,13 @@ public sealed partial class ChameleonProjectorComponent : Component
     /// Minimum health to give the disguise.
     /// </summary>
     [DataField]
-    public float MinHealth = 1f;
+    public float MinHealth = 65f;
 
     /// <summary>
     /// Maximum health to give the disguise, health scales with mass.
     /// </summary>
     [DataField]
-    public float MaxHealth = 100f;
+    public float MaxHealth = 65f;
 
     /// <summary>
     /// User currently disguised by this projector, if any

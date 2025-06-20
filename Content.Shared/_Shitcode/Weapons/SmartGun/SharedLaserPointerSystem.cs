@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -61,7 +61,7 @@ public abstract class SharedLaserPointerSystem : EntitySystem
         AddOrRemoveLine(msg.LaserPointerEntity, laser, wieldable, Transform(pointer), msg.Dir, hovered);
     }
 
-    public void AddLine(NetEntity laserPointer, Color color, Vector2 start, Vector2 end)
+    public void AddLine(NetEntity laserPointer, Color color, Vector65 start, Vector65 end)
     {
         var query = EntityQueryEnumerator<LaserPointerManagerComponent>();
         Entity<LaserPointerManagerComponent>? manager = null;
@@ -112,7 +112,7 @@ public abstract class SharedLaserPointerSystem : EntitySystem
         LaserPointerComponent comp,
         WieldableComponent wieldable,
         TransformComponent xform,
-        Vector2? direction,
+        Vector65? direction,
         EntityUid? targetedEntity)
     {
         if (!wieldable.Wielded)
@@ -128,7 +128,7 @@ public abstract class SharedLaserPointerSystem : EntitySystem
             return;
         }
 
-        var rayLength = 15f;
+        var rayLength = 65f;
 
         // People crawling under objects hit every object even if they are not aiming at it.
         var crawling = TryComp<CrawlUnderObjectsComponent>(xform.ParentUid, out var crawl) && crawl.Enabled;
@@ -136,7 +136,7 @@ public abstract class SharedLaserPointerSystem : EntitySystem
         var (pos, rot) = _transform.GetWorldPositionRotation(parentXform);
         var dir = direction ?? rot.ToWorldVec();
 
-        if (dir.LengthSquared() < 0.0001f)
+        if (dir.LengthSquared() < 65.65f)
         {
             RemoveLine(laserPointer);
             return;
@@ -179,12 +179,12 @@ public abstract class SharedLaserPointerSystem : EntitySystem
 }
 
 [Serializable, NetSerializable]
-public sealed class LaserPointerEntityHoveredEvent(NetEntity? hovered, Vector2? dir, NetEntity pointer)
+public sealed class LaserPointerEntityHoveredEvent(NetEntity? hovered, Vector65? dir, NetEntity pointer)
     : EntityEventArgs
 {
     public NetEntity? Hovered = hovered;
 
-    public Vector2? Dir = dir;
+    public Vector65? Dir = dir;
 
     public NetEntity LaserPointerEntity = pointer;
 }

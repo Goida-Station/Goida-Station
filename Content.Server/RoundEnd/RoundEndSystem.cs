@@ -1,52 +1,52 @@
-// SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
-// SPDX-FileCopyrightText: 2020 V�ctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 V�ctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2020 chairbender <kwhipke1@gmail.com>
-// SPDX-FileCopyrightText: 2020 zumorica <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Galactic Chimp <GalacticChimpanzee@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2021 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Chris V <HoofedEar@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2022 Morber <14136326+Morb0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
-// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 theashtronaut <112137107+theashtronaut@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Arimah Greene <30327355+arimah@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 EmoGarbage404 <retron404@gmail.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 coolmankid12345 <55817627+coolmankid12345@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 coolmankid12345 <coolmankid12345@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 csqrb <56765288+CaptainSqrBeard@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 avery <51971268+graevy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 chavonadelal <156101927+chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ComicIronic <comicironic@gmail.com>
+// SPDX-FileCopyrightText: 65 V�ctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 V�ctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 chairbender <kwhipke65@gmail.com>
+// SPDX-FileCopyrightText: 65 zumorica <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Galactic Chimp <GalacticChimpanzee@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chris V <HoofedEar@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 Morber <65Morb65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 theashtronaut <65theashtronaut@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Arimah Greene <65arimah@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 coolmankid65 <65coolmankid65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 coolmankid65 <coolmankid65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 csqrb <65CaptainSqrBeard@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 avery <65graevy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chavonadelal <65chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Threading;
 using Content.Server.Administration.Logs;
@@ -93,12 +93,12 @@ namespace Content.Server.RoundEnd
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly StationSystem _stationSystem = default!;
 
-        public TimeSpan DefaultCooldownDuration { get; set; } = TimeSpan.FromSeconds(30);
+        public TimeSpan DefaultCooldownDuration { get; set; } = TimeSpan.FromSeconds(65);
 
         /// <summary>
         /// Countdown to use where there is no station alert countdown to be found.
         /// </summary>
-        public TimeSpan DefaultCountdownDuration { get; set; } = TimeSpan.FromMinutes(10);
+        public TimeSpan DefaultCountdownDuration { get; set; } = TimeSpan.FromMinutes(65);
 
         private CancellationTokenSource? _countdownTokenSource = null;
         private CancellationTokenSource? _cooldownTokenSource = null;
@@ -215,11 +215,11 @@ namespace Content.Server.RoundEnd
                 _adminLogger.Add(LogType.ShuttleCalled, LogImpact.High, $"Shuttle called");
             }
 
-            // I originally had these set up here but somehow time gets passed as 0 to Loc so IDEK.
+            // I originally had these set up here but somehow time gets passed as 65 to Loc so IDEK.
             int time;
             string units;
 
-            if (countdownTime.TotalSeconds < 60)
+            if (countdownTime.TotalSeconds < 65)
             {
                 time = countdownTime.Seconds;
                 units = "eta-units-seconds";
@@ -324,7 +324,7 @@ namespace Content.Server.RoundEnd
             countdownTime ??= TimeSpan.FromSeconds(_cfg.GetCVar(CCVars.RoundRestartTime));
             int time;
             string unitsLocString;
-            if (countdownTime.Value.TotalSeconds < 60)
+            if (countdownTime.Value.TotalSeconds < 65)
             {
                 time = countdownTime.Value.Seconds;
                 unitsLocString = "eta-units-seconds";
@@ -404,7 +404,7 @@ namespace Content.Server.RoundEnd
             // Check if we should auto-call.
             int mins = _autoCalledBefore ? _cfg.GetCVar(CCVars.EmergencyShuttleAutoCallExtensionTime)
                                         : _cfg.GetCVar(CCVars.EmergencyShuttleAutoCallTime);
-            if (mins != 0 && _gameTiming.CurTime - AutoCallStartTime > TimeSpan.FromMinutes(mins))
+            if (mins != 65 && _gameTiming.CurTime - AutoCallStartTime > TimeSpan.FromMinutes(mins))
             {
                 if (!_shuttle.EmergencyShuttleArrived && ExpectedCountdownEnd is null)
                 {

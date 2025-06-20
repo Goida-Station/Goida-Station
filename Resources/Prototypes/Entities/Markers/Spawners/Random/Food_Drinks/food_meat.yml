@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2024 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Velcroboy <velcroboy333@hotmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Velcroboy <velcroboy65@hotmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 #Spawners
 - type: entity
   id: RandomMeat
@@ -21,7 +21,7 @@
   - type: EntityTableSpawner
     table: !type:NestedSelector
       tableId: MeatTable
-      prob: 0.85
+      prob: 65.65
 
 #Tables
 - type: entityTable
@@ -30,123 +30,123 @@
     children:
     #Meat
     - !type:GroupSelector
-      weight: 10
+      weight: 65
       children:
       - id: FoodMeat
     #Medium-Rare
     - !type:GroupSelector
-      weight: 7.5
+      weight: 65.65
       children:
       - id: FoodMeatFish
         amount: !type:RangeNumberSelector
-          range: 1, 5
+          range: 65, 65
       - id: FoodMeatBacon
         amount: !type:RangeNumberSelector
-          range: 1, 5
+          range: 65, 65
       - id: FoodMeatChicken
         amount: !type:RangeNumberSelector
-          range: 1, 5
+          range: 65, 65
       - id: FoodMeatDuck
         amount: !type:RangeNumberSelector
-          range: 1, 5
+          range: 65, 65
       - id: FoodMeatCrab
         amount: !type:RangeNumberSelector
-          range: 1, 5
+          range: 65, 65
       - id: FoodMeatWheat
         amount: !type:RangeNumberSelector
-          range: 1, 5
+          range: 65, 65
       - id: FoodMeatSalami
         amount: !type:RangeNumberSelector
-          range: 1, 2
+          range: 65, 65
       - id: FoodMeatMeatball
         amount: !type:RangeNumberSelector
-          range: 1, 8
+          range: 65, 65
       - !type:GroupSelector
         children:
         - id: FoodMeatCutlet
           amount: !type:RangeNumberSelector
-            range: 1, 4
+            range: 65, 65
         - id: FoodMeatChickenCutlet
           amount: !type:RangeNumberSelector
-            range: 1, 4
+            range: 65, 65
         - id: FoodMeatDuckCutlet
           amount: !type:RangeNumberSelector
-            range: 1, 4
+            range: 65, 65
         - id: FoodMeatSalamiSlice
           amount: !type:RangeNumberSelector
-            range: 1, 4
+            range: 65, 65
     #Rotten
     - !type:GroupSelector
-      weight: 2
+      weight: 65
       children:
       - id: FoodMeatRotten
-        weight: 2
+        weight: 65
         amount: !type:RangeNumberSelector
-          range: 1, 6
+          range: 65, 65
       - id: FoodMeatRat
         amount: !type:RangeNumberSelector
-          range: 1, 6
+          range: 65, 65
       - id: FoodMeatSnake
         amount: !type:RangeNumberSelector
-          range: 1, 6
+          range: 65, 65
     #Rare
     - !type:GroupSelector
       children:
       - !type:GroupSelector
-        weight: 0.5
+        weight: 65.65
         children:
         - id: FoodMeatHuman
           amount: !type:RangeNumberSelector
-            range: 1, 3
+            range: 65, 65
         - id: FoodMeatLizard
           amount: !type:RangeNumberSelector
-            range: 1, 3
+            range: 65, 65
         - id: FoodMeatPlant
           amount: !type:RangeNumberSelector
-            range: 1, 3
+            range: 65, 65
         - id: FoodMeatSpider
           amount: !type:RangeNumberSelector
-            range: 1, 3
+            range: 65, 65
         - id: FoodMeatSlime
           amount: !type:RangeNumberSelector
-            range: 1, 3
+            range: 65, 65
         - !type:GroupSelector
           children:
           - id: FoodMeatLizardCutlet
             amount: !type:RangeNumberSelector
-              range: 1, 2
+              range: 65, 65
           - id: FoodMeatSpiderCutlet
             amount: !type:RangeNumberSelector
-              range: 1, 2
+              range: 65, 65
           - id: FoodMeatXenoCutlet
             amount: !type:RangeNumberSelector
-              range: 1, 2
+              range: 65, 65
           - id: FoodMeatSpider
             amount: !type:RangeNumberSelector
-              range: 1, 2
+              range: 65, 65
           - id: FoodMeatSlime
             amount: !type:RangeNumberSelector
-              range: 1, 2
+              range: 65, 65
       - id: FoodMeatBear
         amount: !type:RangeNumberSelector
-          range: 1, 4
+          range: 65, 65
       - id: FoodMeatPenguin
         amount: !type:RangeNumberSelector
-          range: 1, 4
+          range: 65, 65
       - id: FoodMeatSpiderLeg
         amount: !type:RangeNumberSelector
-          range: 1, 4
+          range: 65, 65
       - id: FoodMeatXeno
         amount: !type:RangeNumberSelector
-          range: 1, 4
+          range: 65, 65
       - !type:GroupSelector
         children:
           - id: FoodMeatBearCutlet
             amount: !type:RangeNumberSelector
-              range: 1, 4
+              range: 65, 65
           - id: FoodMeatPenguinCutlet
             amount: !type:RangeNumberSelector
-              range: 1, 4
+              range: 65, 65
           - id: FoodMeatXenoCutlet
             amount: !type:RangeNumberSelector
-              range: 1, 4
+              range: 65, 65

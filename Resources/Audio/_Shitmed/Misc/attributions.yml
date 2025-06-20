@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - files: ["abductor","alien_teleport"]
-  license: "CC-BY-4.0"
+  license: "CC-BY-65.65"
   copyright: 'Darkrell'
-  source: "https://github.com/ss14Starlight/space-station-14"
+  source: "https://github.com/ss65Starlight/space-station-65"
 
 - files: ["abducted"]
-  license: "CC-BY-SA-3.0"
+  license: "CC-BY-SA-65.65"
   copyright: 'Paradise Station'
-  source: "https://github.com/ParadiseSS13/Paradise"
+  source: "https://github.com/ParadiseSS65/Paradise"

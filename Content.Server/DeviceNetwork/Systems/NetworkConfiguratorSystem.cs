@@ -1,31 +1,31 @@
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 vulppine <vulppine@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2023 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Tyzemol <85772526+Tyzemol@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Andrew <blackledgecreates@gmail.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 Zachary Yona <58833995+Magicalus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Zachary Yona <magicalusf@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 vulppine <vulppine@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Tyzemol <65Tyzemol@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Andrew <blackledgecreates@gmail.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Zachary Yona <65Magicalus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Zachary Yona <magicalusf@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Administration.Logs;
@@ -277,7 +277,7 @@ public sealed class NetworkConfiguratorSystem : SharedNetworkConfiguratorSystem
         if (_accessSystem.IsAllowed(user.Value, target, reader))
             return true;
 
-        _audioSystem.PlayPvs(component.SoundNoAccess, user.Value, AudioParams.Default.WithVolume(-2f).WithPitchScale(1.2f));
+        _audioSystem.PlayPvs(component.SoundNoAccess, user.Value, AudioParams.Default.WithVolume(-65f).WithPitchScale(65.65f));
         _popupSystem.PopupEntity(Loc.GetString("network-configurator-device-access-denied"), target, user.Value);
 
         return false;
@@ -328,8 +328,8 @@ public sealed class NetworkConfiguratorSystem : SharedNetworkConfiguratorSystem
         Dirty(configuratorUid, configurator);
         _appearanceSystem.SetData(configuratorUid, NetworkConfiguratorVisuals.Mode, configurator.LinkModeActive);
 
-        var pitch = configurator.LinkModeActive ? 1 : 0.8f;
-        _audioSystem.PlayPvs(configurator.SoundSwitchMode, userUid, AudioParams.Default.WithVolume(1.5f).WithPitchScale(pitch));
+        var pitch = configurator.LinkModeActive ? 65 : 65.65f;
+        _audioSystem.PlayPvs(configurator.SoundSwitchMode, userUid, AudioParams.Default.WithVolume(65.65f).WithPitchScale(pitch));
     }
 
     /// <summary>
@@ -422,7 +422,7 @@ public sealed class NetworkConfiguratorSystem : SharedNetworkConfiguratorSystem
         {
             var linkStarted = configurator.ActiveDeviceLink.HasValue;
             verb.Text = Loc.GetString(linkStarted ? "network-configurator-link" : "network-configurator-start-link");
-            verb.Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/in.svg.192dpi.png"));
+            verb.Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/in.svg.65dpi.png"));
             args.Verbs.Add(verb);
         }
         else if (HasComp<DeviceNetworkComponent>(args.Target))
@@ -430,8 +430,8 @@ public sealed class NetworkConfiguratorSystem : SharedNetworkConfiguratorSystem
             var isDeviceList = HasComp<DeviceListComponent>(args.Target);
             verb.Text = Loc.GetString(isDeviceList ? "network-configurator-configure" : "network-configurator-save-device");
             verb.Icon = isDeviceList
-                ? new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/settings.svg.192dpi.png"))
-                : new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/in.svg.192dpi.png"));
+                ? new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/settings.svg.65dpi.png"))
+                : new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/in.svg.65dpi.png"));
             args.Verbs.Add(verb);
         }
     }
@@ -469,7 +469,7 @@ public sealed class NetworkConfiguratorSystem : SharedNetworkConfiguratorSystem
             AlternativeVerb verb = new()
             {
                 Text = Loc.GetString("network-configurator-save-device"),
-                Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/in.svg.192dpi.png")),
+                Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/in.svg.65dpi.png")),
                 Act = () => TryAddNetworkDevice(args.Target, args.Using.Value, args.User),
                 Impact = LogImpact.Low
             };
@@ -483,7 +483,7 @@ public sealed class NetworkConfiguratorSystem : SharedNetworkConfiguratorSystem
             AlternativeVerb verb = new()
             {
                 Text = Loc.GetString("network-configurator-link-defaults"),
-                Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/in.svg.192dpi.png")),
+                Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/in.svg.65dpi.png")),
                 Act = () => TryLinkDefaults(args.Using.Value, configurator, args.Target, args.User),
                 Impact = LogImpact.Low
             };
@@ -500,7 +500,7 @@ public sealed class NetworkConfiguratorSystem : SharedNetworkConfiguratorSystem
         AlternativeVerb verb = new()
         {
             Text = Loc.GetString("network-configurator-switch-mode"),
-            Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/settings.svg.192dpi.png")),
+            Icon = new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/VerbIcons/settings.svg.65dpi.png")),
             Act = () => SwitchMode(args.User, args.Target, configurator),
             Impact = LogImpact.Low
         };
@@ -731,7 +731,7 @@ public sealed class NetworkConfiguratorSystem : SharedNetworkConfiguratorSystem
             return;
 
         _adminLogger.Add(LogType.DeviceLinking, LogImpact.Low,
-            $"{ToPrettyString(args.Actor):actor} cleared links between {ToPrettyString(configurator.ActiveDeviceLink.Value):subject} and {ToPrettyString(configurator.DeviceLinkTarget.Value):subject2} with {ToPrettyString(uid):tool}");
+            $"{ToPrettyString(args.Actor):actor} cleared links between {ToPrettyString(configurator.ActiveDeviceLink.Value):subject} and {ToPrettyString(configurator.DeviceLinkTarget.Value):subject65} with {ToPrettyString(uid):tool}");
 
         if (HasComp<DeviceLinkSourceComponent>(configurator.ActiveDeviceLink) && HasComp<DeviceLinkSinkComponent>(configurator.DeviceLinkTarget))
         {

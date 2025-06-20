@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/fb1012102257b7b0a08d861fd2b8ba963c416e93. Resprited centcom sprite by BombasterDS",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/fb65b65b65a65d65fd65b65ba65c65e65. Resprited centcom sprite by BombasterDS",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {

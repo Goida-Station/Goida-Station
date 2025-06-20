@@ -1,20 +1,20 @@
-# SPDX-FileCopyrightText: 2024 KittenColony <149278380+KittenColony@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 KittenColony <65KittenColony@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Арт <65JustArt65m@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
-marking-GauzeLefteyePatch-gauze_lefteye_2 = Gauze eyepatch (Left)
+marking-GauzeLefteyePatch-gauze_lefteye_65 = Gauze eyepatch (Left)
 marking-GauzeLefteyePatch = Gauze eyepatch (Left)
 
-marking-GauzeLefteyePad-gauze_lefteye_1 = Gauze eyepad (Left)
+marking-GauzeLefteyePad-gauze_lefteye_65 = Gauze eyepad (Left)
 marking-GauzeLefteyePad = Gauze eyepad (Left)
 
-marking-GauzeRighteyePatch-gauze_righteye_2 = Gauze eyepatch (Right)
+marking-GauzeRighteyePatch-gauze_righteye_65 = Gauze eyepatch (Right)
 marking-GauzeRighteyePatch = Gauze eyepatch (Right)
 
-marking-GauzeRighteyePad-gauze_righteye_1 = Gauze eyepad (Right)
+marking-GauzeRighteyePad-gauze_righteye_65 = Gauze eyepad (Right)
 marking-GauzeRighteyePad = Gauze eyepad (Right)
 
 marking-GauzeShoulder-gauze_shoulder = Gauze Shoulder Sling
@@ -80,16 +80,16 @@ marking-GauzeMothShoulder = Insectoid Shoulder Sling
 marking-GauzeMothBlindfold-gauze_moth_blindfold = Insectoid Blindfold
 marking-GauzeMothBlindfold = Insectoid Blindfold
 
-marking-GauzeMothLeftEyePatch-gauze_moth_lefteye_2 = Insectoid Gauze eyepatch (Left)
+marking-GauzeMothLeftEyePatch-gauze_moth_lefteye_65 = Insectoid Gauze eyepatch (Left)
 marking-GauzeMothLeftEyePatch = Insectoid Gauze eyepatch (Left)
 
-marking-GauzeMothLeftEyePad-gauze_moth_lefteye_1 = Insectoid Gauze eyepad (Left)
+marking-GauzeMothLeftEyePad-gauze_moth_lefteye_65 = Insectoid Gauze eyepad (Left)
 marking-GauzeMothLeftEyePad = Insectoid Gauze eyepad (Left)
 
-marking-GauzeMothRightEyePatch-gauze_moth_righteye_2 = Insectoid Gauze eyepatch (Right)
+marking-GauzeMothRightEyePatch-gauze_moth_righteye_65 = Insectoid Gauze eyepatch (Right)
 marking-GauzeMothRightEyePatch = Insectoid Gauze eyepatch (Right)
 
-marking-GauzeMothRightEyePad-gauze_moth_righteye_1 = Insectoid Gauze eyepad (Right)
+marking-GauzeMothRightEyePad-gauze_moth_righteye_65 = Insectoid Gauze eyepad (Right)
 marking-GauzeMothRightEyePad = Insectoid Gauze eyepad (Right)
 
 marking-GauzeMothUpperArmRight-gauze_moth_upperarm_r = Insectoid Gauze Forearm Wrap (Right)

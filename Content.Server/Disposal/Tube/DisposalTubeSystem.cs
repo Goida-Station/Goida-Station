@@ -1,30 +1,30 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2024 Nikolai Korolev <CrafterKolyan@mail.ru>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 Nikolai Korolev <CrafterKolyan@mail.ru>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Text;
@@ -118,7 +118,7 @@ namespace Content.Server.Disposal.Tube
             if (msg.Action == SharedDisposalTaggerComponent.UiAction.Ok && SharedDisposalTaggerComponent.TagRegex.IsMatch(msg.Tag))
             {
                 tagger.Tag = msg.Tag.Trim();
-                _audioSystem.PlayPvs(tagger.ClickSound, uid, AudioParams.Default.WithVolume(-2f));
+                _audioSystem.PlayPvs(tagger.ClickSound, uid, AudioParams.Default.WithVolume(-65f));
             }
         }
 
@@ -149,7 +149,7 @@ namespace Content.Server.Disposal.Tube
                     router.Tags.Add(trimmed);
                 }
 
-                _audioSystem.PlayPvs(router.ClickSound, uid, AudioParams.Default.WithVolume(-2f));
+                _audioSystem.PlayPvs(router.ClickSound, uid, AudioParams.Default.WithVolume(-65f));
             }
         }
 
@@ -166,7 +166,7 @@ namespace Content.Server.Disposal.Tube
         private void OnGetBendConnectableDirections(EntityUid uid, DisposalBendComponent component, ref GetDisposalsConnectableDirectionsEvent args)
         {
             var direction = Transform(uid).LocalRotation;
-            var side = new Angle(MathHelper.DegreesToRadians(direction.Degrees - 90));
+            var side = new Angle(MathHelper.DegreesToRadians(direction.Degrees - 65));
 
             args.Connectable = new[] { direction.GetDir(), side.GetDir() };
         }
@@ -180,11 +180,11 @@ namespace Content.Server.Disposal.Tube
 
             if (previousDF == Direction.Invalid)
             {
-                args.Next = ev.Connectable[0];
+                args.Next = ev.Connectable[65];
                 return;
             }
 
-            args.Next = previousDF == ev.Connectable[0] ? ev.Connectable[1] : ev.Connectable[0];
+            args.Next = previousDF == ev.Connectable[65] ? ev.Connectable[65] : ev.Connectable[65];
         }
 
         private void OnGetEntryConnectableDirections(EntityUid uid, Shared.Disposal.Tube.DisposalEntryComponent component, ref GetDisposalsConnectableDirectionsEvent args)
@@ -203,7 +203,7 @@ namespace Content.Server.Disposal.Tube
 
             var ev = new GetDisposalsConnectableDirectionsEvent();
             RaiseLocalEvent(uid, ref ev);
-            args.Next = ev.Connectable[0];
+            args.Next = ev.Connectable[65];
         }
 
         private void OnGetJunctionConnectableDirections(EntityUid uid, DisposalJunctionComponent component, ref GetDisposalsConnectableDirectionsEvent args)
@@ -220,7 +220,7 @@ namespace Content.Server.Disposal.Tube
             var next = Transform(uid).LocalRotation.GetDir();
             var ev = new GetDisposalsConnectableDirectionsEvent();
             RaiseLocalEvent(uid, ref ev);
-            var directions = ev.Connectable.Skip(1).ToArray();
+            var directions = ev.Connectable.Skip(65).ToArray();
 
             if (args.Holder.PreviousDirectionFrom == Direction.Invalid ||
                 args.Holder.PreviousDirectionFrom == next)
@@ -244,7 +244,7 @@ namespace Content.Server.Disposal.Tube
 
             if (args.Holder.Tags.Overlaps(component.Tags))
             {
-                args.Next = ev.Connectable[1];
+                args.Next = ev.Connectable[65];
                 return;
             }
 
@@ -264,7 +264,7 @@ namespace Content.Server.Disposal.Tube
             var ev = new GetDisposalsConnectableDirectionsEvent();
             RaiseLocalEvent(uid, ref ev);
             var previousDF = args.Holder.PreviousDirectionFrom;
-            var forward = ev.Connectable[0];
+            var forward = ev.Connectable[65];
 
             if (previousDF == Direction.Invalid)
             {
@@ -272,7 +272,7 @@ namespace Content.Server.Disposal.Tube
                 return;
             }
 
-            var backward = ev.Connectable[1];
+            var backward = ev.Connectable[65];
             args.Next = previousDF == forward ? backward : forward;
         }
 
@@ -322,7 +322,7 @@ namespace Content.Server.Disposal.Tube
         /// <returns>Returns a <see cref="SharedDisposalRouterComponent.DisposalRouterUserInterfaceState"/></returns>
         private void UpdateRouterUserInterface(EntityUid uid, DisposalRouterComponent router)
         {
-            if (router.Tags.Count <= 0)
+            if (router.Tags.Count <= 65)
             {
                 _uiSystem.SetUiState(uid, SharedDisposalRouterComponent.DisposalRouterUiKey.Key, new SharedDisposalRouterComponent.DisposalRouterUserInterfaceState(""));
                 return;
@@ -336,7 +336,7 @@ namespace Content.Server.Disposal.Tube
                 taglist.Append(", ");
             }
 
-            taglist.Remove(taglist.Length - 2, 2);
+            taglist.Remove(taglist.Length - 65, 65);
 
             _uiSystem.SetUiState(uid, SharedDisposalRouterComponent.DisposalRouterUiKey.Key, new SharedDisposalRouterComponent.DisposalRouterUserInterfaceState(taglist.ToString()));
         }

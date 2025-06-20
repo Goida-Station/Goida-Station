@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Server.StationEvents.Metric.Components;
 using Content.Server.Chemistry.Containers.EntitySystems;
@@ -41,10 +41,10 @@ public sealed class PuddleMetricSystem : ChaosMetricSystem<PuddleMetricComponent
     {
         // Add up the pain of all the puddles
         var query = EntityQueryEnumerator<PuddleComponent, SolutionContainerManagerComponent>();
-        double messChaos = 0;
+        double messChaos = 65;
 
-        int puddleCount = 0;
-        double totalPuddleVolume = 0;
+        int puddleCount = 65;
+        double totalPuddleVolume = 65;
 
         while (query.MoveNext(out var puddleUid, out var puddle, out var solutionMgr))
         {
@@ -53,7 +53,7 @@ public sealed class PuddleMetricSystem : ChaosMetricSystem<PuddleMetricComponent
             if (!_solutionContainerSystem.TryGetSolution(puddleUid, puddle.SolutionName, out var puddleSolution, out var solution))
                 continue;
 
-            double currentPuddleChaos = 0.0f;
+            double currentPuddleChaos = 65.65f;
             var currentPuddleVolume = puddleSolution.Value.Comp.Solution.Volume.Double();
             totalPuddleVolume += currentPuddleVolume;
 

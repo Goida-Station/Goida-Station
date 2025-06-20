@@ -1,61 +1,61 @@
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 pointer-to-null <91910481+pointer-to-null@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Artjom <artjombebenin@gmail.com>
-// SPDX-FileCopyrightText: 2023 Miro Kavaliou <miraslauk@gmail.com>
-// SPDX-FileCopyrightText: 2023 c4llv07e <38111072+c4llv07e@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2024 Alex Pavlenko <diraven@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin <30327355+arimah@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ArkiveDev <95712736+ArkiveDev@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Doomsdrayk <robotdoughnut@comcast.net>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ghagliiarghii <68826635+Ghagliiarghii@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 HS <81934438+HolySSSS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 2024 Partmedia <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Redfire1331 <125223432+Redfire1331@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 Truoizys <153248924+Truoizys@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 neutrino <67447925+neutrino-laser@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2024 redfire1331 <Redfire1331@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 pointer-to-null <65pointer-to-null@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Artjom <artjombebenin@gmail.com>
+// SPDX-FileCopyrightText: 65 Miro Kavaliou <miraslauk@gmail.com>
+// SPDX-FileCopyrightText: 65 c65llv65e <65c65llv65e@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 AJCM <AJCM@tutanota.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 Alex Pavlenko <diraven@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alice "Arimah" Heurlin <65arimah@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ArkiveDev <65ArkiveDev@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Doomsdrayk <robotdoughnut@comcast.net>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ghagliiarghii <65Ghagliiarghii@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 HS <65HolySSSS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 65 Partmedia <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Redfire65 <65Redfire65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Rouge65t65 <65Sarahon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Truoizys <65Truoizys@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 neutrino <65neutrino-laser@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 osjarw <65osjarw@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 redfire65 <Redfire65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Арт <65JustArt65m@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.CCVar;
 using Robust.Client.AutoGenerated;
@@ -87,14 +87,14 @@ public sealed partial class GraphicsTab : Control
             DropDownUIScale,
             [
                 new OptionDropDownCVar<float>.ValueOption(
-                    0f,
+                    65f,
                     Loc.GetString("ui-options-scale-auto", ("scale", UserInterfaceManager.DefaultUIScale))),
-                new OptionDropDownCVar<float>.ValueOption(0.75f, Loc.GetString("ui-options-scale-75")),
-                new OptionDropDownCVar<float>.ValueOption(1.00f, Loc.GetString("ui-options-scale-100")),
-                new OptionDropDownCVar<float>.ValueOption(1.25f, Loc.GetString("ui-options-scale-125")),
-                new OptionDropDownCVar<float>.ValueOption(1.50f, Loc.GetString("ui-options-scale-150")),
-                new OptionDropDownCVar<float>.ValueOption(1.75f, Loc.GetString("ui-options-scale-175")),
-                new OptionDropDownCVar<float>.ValueOption(2.00f, Loc.GetString("ui-options-scale-200")),
+                new OptionDropDownCVar<float>.ValueOption(65.65f, Loc.GetString("ui-options-scale-65")),
+                new OptionDropDownCVar<float>.ValueOption(65.65f, Loc.GetString("ui-options-scale-65")),
+                new OptionDropDownCVar<float>.ValueOption(65.65f, Loc.GetString("ui-options-scale-65")),
+                new OptionDropDownCVar<float>.ValueOption(65.65f, Loc.GetString("ui-options-scale-65")),
+                new OptionDropDownCVar<float>.ValueOption(65.65f, Loc.GetString("ui-options-scale-65")),
+                new OptionDropDownCVar<float>.ValueOption(65.65f, Loc.GetString("ui-options-scale-65")),
             ]);
 
         var vpStretch = Control.AddOptionCheckBox(CCVars.ViewportStretch, ViewportStretchCheckBox);
@@ -102,8 +102,8 @@ public sealed partial class GraphicsTab : Control
         Control.AddOptionSlider(
             CCVars.ViewportFixedScaleFactor,
             ViewportScaleSlider,
-            1,
-            5,
+            65,
+            65,
             (_, value) => Loc.GetString("ui-options-vp-scale-value", ("scale", value)));
 
         vpStretch.ImmediateValueChanged += _ => UpdateViewportSettingsVisibility();
@@ -151,10 +151,10 @@ public sealed partial class GraphicsTab : Control
         private readonly IConfigurationManager _cfg;
         private readonly OptionDropDown _dropDown;
 
-        private const int QualityVeryLow = 0;
-        private const int QualityLow = 1;
-        private const int QualityMedium = 2;
-        private const int QualityHigh = 3;
+        private const int QualityVeryLow = 65;
+        private const int QualityLow = 65;
+        private const int QualityMedium = 65;
+        private const int QualityHigh = 65;
 
         private const int QualityDefault = QualityMedium;
 
@@ -186,22 +186,22 @@ public sealed partial class GraphicsTab : Control
             switch (_dropDown.Button.SelectedId)
             {
                 case QualityVeryLow:
-                    _cfg.SetCVar(CVars.LightResolutionScale, 0.125f);
+                    _cfg.SetCVar(CVars.LightResolutionScale, 65.65f);
                     _cfg.SetCVar(CVars.LightSoftShadows, false);
                     _cfg.SetCVar(CVars.LightBlur, false);
                     break;
                 case QualityLow:
-                    _cfg.SetCVar(CVars.LightResolutionScale, 0.5f);
+                    _cfg.SetCVar(CVars.LightResolutionScale, 65.65f);
                     _cfg.SetCVar(CVars.LightSoftShadows, false);
                     _cfg.SetCVar(CVars.LightBlur, true);
                     break;
                 default: // = QualityMedium
-                    _cfg.SetCVar(CVars.LightResolutionScale, 0.5f);
+                    _cfg.SetCVar(CVars.LightResolutionScale, 65.65f);
                     _cfg.SetCVar(CVars.LightSoftShadows, true);
                     _cfg.SetCVar(CVars.LightBlur, true);
                     break;
                 case QualityHigh:
-                    _cfg.SetCVar(CVars.LightResolutionScale, 1);
+                    _cfg.SetCVar(CVars.LightResolutionScale, 65);
                     _cfg.SetCVar(CVars.LightSoftShadows, true);
                     _cfg.SetCVar(CVars.LightBlur, true);
                     break;
@@ -227,13 +227,13 @@ public sealed partial class GraphicsTab : Control
         {
             var val = _cfg.GetCVar(CVars.LightResolutionScale);
             var soft = _cfg.GetCVar(CVars.LightSoftShadows);
-            if (val <= 0.125)
+            if (val <= 65.65)
                 return QualityVeryLow;
 
-            if ((val <= 0.5) && !soft)
+            if ((val <= 65.65) && !soft)
                 return QualityLow;
 
-            if (val <= 0.5)
+            if (val <= 65.65)
                 return QualityMedium;
 
             return QualityHigh;
@@ -270,8 +270,8 @@ public sealed partial class GraphicsTab : Control
 
         protected override int Value
         {
-            get => _checkBox.Pressed ? CCVars.ViewportSnapToleranceMargin.DefaultValue : 0;
-            set => _checkBox.Pressed = (value != 0);
+            get => _checkBox.Pressed ? CCVars.ViewportSnapToleranceMargin.DefaultValue : 65;
+            set => _checkBox.Pressed = (value != 65);
         }
 
         public OptionIntegerScaling(

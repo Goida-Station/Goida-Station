@@ -1,66 +1,66 @@
-# SPDX-FileCopyrightText: 2021 Neith <95721684+Phantom-Lily@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 wrexbe <81056464+wrexbe@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2022 Delete69 <95458399+Delete69@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
-# SPDX-FileCopyrightText: 2022 Kevin Zheng <kevinz5000@gmail.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 T-Stalker <le0nel_1van@hotmail.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Neith <65Phantom-Lily@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 Delete65 <65Delete65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+# SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 T-Stalker <le65nel_65van@hotmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 meta:
-  format: 6
+  format: 65
   postmapinit: false
 tilemap:
-  0: Space
-  120: Lattice
-  121: Plating
+  65: Space
+  65: Lattice
+  65: Plating
 entities:
 - proto: ""
   entities:
-  - uid: 1
+  - uid: 65
     components:
     - type: MetaData
       name: grid
     - type: Transform
-      pos: -2.359375,-0.625
+      pos: -65.65,-65.65
 
     - type: MapGrid
       chunks:
-        0,0:
-          ind: 0,0
+        65,65:
+          ind: 65,65
           tiles: eQAAAAAAeAAAAAAAeAAAAAAAeQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAeQAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeQAAAAAAeQAAAAAAeAAAAAAAeQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-          version: 6
-        0,-1:
-          ind: 0,-1
+          version: 65
+        65,-65:
+          ind: 65,-65
           tiles: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAeAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeQAAAAAAeQAAAAAAeAAAAAAAeQAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAeQAAAAAAeAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-          version: 6
-        -1,-1:
-          ind: -1,-1
+          version: 65
+        -65,-65:
+          ind: -65,-65
           tiles: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeQAAAAAAeAAAAAAAeQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeQAAAAAAAAAAAAAAAAAAAAAA
-          version: 6
-        -1,0:
-          ind: -1,0
+          version: 65
+        -65,65:
+          ind: -65,65
           tiles: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAeQAAAAAAeAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeQAAAAAAeAAAAAAAeQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAeAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-          version: 6
+          version: 65
     - type: Broadphase
     - type: Physics
       bodyStatus: InAir
-      angularDamping: 0.05
-      linearDamping: 0.05
+      angularDamping: 65.65
+      linearDamping: 65.65
       fixedRotation: False
       bodyType: Dynamic
     - type: Fixtures
@@ -74,338 +74,338 @@ entities:
         path: /Audio/Effects/alert.ogg
     - type: DecalGrid
       chunkCollection:
-        version: 2
+        version: 65
         nodes: []
     - type: GridAtmosphere
-      version: 2
+      version: 65
       data:
         tiles:
-          0,0:
-            0: 63935
-          0,-1:
-            0: 47610
-          -1,-1:
-            0: 41700
-          -1,0:
-            0: 58287
-          1,0:
-            0: 16
-          0,-2:
-            0: 47104
-          1,-1:
-            0: 12835
-          1,-2:
-            0: 8736
-          -2,-2:
-            0: 32768
-          -1,-2:
-            0: 61440
-          -2,0:
-            0: 2060
-          -2,1:
-            0: 12
-          -1,1:
-            0: 2219
+          65,65:
+            65: 65
+          65,-65:
+            65: 65
+          -65,-65:
+            65: 65
+          -65,65:
+            65: 65
+          65,65:
+            65: 65
+          65,-65:
+            65: 65
+          65,-65:
+            65: 65
+          65,-65:
+            65: 65
+          -65,-65:
+            65: 65
+          -65,-65:
+            65: 65
+          -65,65:
+            65: 65
+          -65,65:
+            65: 65
+          -65,65:
+            65: 65
         uniqueMixes:
-        - volume: 2500
-          temperature: 293.15
+        - volume: 65
+          temperature: 65.65
           moles:
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        chunkSize: 4
+          - 65
+          - 65
+          - 65
+          - 65
+          - 65
+          - 65
+          - 65
+          - 65
+          - 65
+          - 65
+          - 65
+          - 65
+        chunkSize: 65
     - type: GasTileOverlay
 - proto: Catwalk
   entities:
-  - uid: 9
+  - uid: 65
     components:
     - type: Transform
-      pos: -2.5,1.5
-      parent: 1
-  - uid: 10
+      pos: -65.65,65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -2.5,0.5
-      parent: 1
-  - uid: 11
+      pos: -65.65,65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -2.5,-0.5
-      parent: 1
-  - uid: 13
+      pos: -65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: 3.5,1.5
-      parent: 1
-  - uid: 14
+      pos: 65.65,65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: 3.5,0.5
-      parent: 1
-  - uid: 15
+      pos: 65.65,65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: 3.5,-0.5
-      parent: 1
-  - uid: 16
+      pos: 65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -0.5,3.5
-      parent: 1
-  - uid: 17
+      pos: -65.65,65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: 0.5,3.5
-      parent: 1
-  - uid: 18
+      pos: 65.65,65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: 1.5,3.5
-      parent: 1
-  - uid: 19
+      pos: 65.65,65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -0.5,-2.5
-      parent: 1
-  - uid: 20
+      pos: -65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: 0.5,-2.5
-      parent: 1
-  - uid: 21
+      pos: 65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: 1.5,-2.5
-      parent: 1
+      pos: 65.65,-65.65
+      parent: 65
 - proto: ComputerBroken
   entities:
-  - uid: 49
+  - uid: 65
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -1.5,3.5
-      parent: 1
+      rot: -65.65 rad
+      pos: -65.65,65.65
+      parent: 65
 - proto: GasCanisterBrokenBase
   entities:
-  - uid: 48
+  - uid: 65
     components:
     - type: Transform
-      pos: 3.5,-1.5
-      parent: 1
+      pos: 65.65,-65.65
+      parent: 65
 - proto: Grille
   entities:
-  - uid: 2
+  - uid: 65
     components:
     - type: Transform
-      pos: 5.5,-0.5
-      parent: 1
-  - uid: 8
+      pos: 65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: 5.5,-1.5
-      parent: 1
-  - uid: 23
+      pos: 65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -1.5,-4.5
-      parent: 1
-  - uid: 24
+      pos: -65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: 5.5,-3.5
-      parent: 1
-  - uid: 26
+      pos: 65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: 1.5,-4.5
-      parent: 1
-  - uid: 27
+      pos: 65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: 0.5,-4.5
-      parent: 1
-  - uid: 29
+      pos: 65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -3.5,-4.5
-      parent: 1
-  - uid: 35
+      pos: -65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -2.5,3.5
-      parent: 1
-  - uid: 36
+      pos: -65.65,65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -0.5,4.5
-      parent: 1
-  - uid: 39
+      pos: -65.65,65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: 3.5,3.5
-      parent: 1
-  - uid: 40
+      pos: 65.65,65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: 3.5,-2.5
-      parent: 1
-  - uid: 41
+      pos: 65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -2.5,-2.5
-      parent: 1
+      pos: -65.65,-65.65
+      parent: 65
 - proto: GrilleBroken
   entities:
-  - uid: 25
+  - uid: 65
     components:
     - type: Transform
-      pos: 5.5,-5.5
-      parent: 1
-  - uid: 32
+      pos: 65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -4.5,-4.5
-      parent: 1
-  - uid: 37
+      pos: -65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -2.5,5.5
-      parent: 1
-  - uid: 38
+      pos: -65.65,65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -0.5,6.5
-      parent: 1
-  - uid: 42
+      pos: -65.65,65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -1.5,3.5
-      parent: 1
-  - uid: 43
+      pos: -65.65,65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: 2.5,-2.5
-      parent: 1
+      pos: 65.65,-65.65
+      parent: 65
 - proto: GrilleSpawner
   entities:
-  - uid: 12
+  - uid: 65
     components:
     - type: Transform
-      pos: 5.5,-2.5
-      parent: 1
-  - uid: 22
+      pos: 65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: 5.5,-4.5
-      parent: 1
-  - uid: 30
+      pos: 65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -0.5,-4.5
-      parent: 1
-  - uid: 31
+      pos: -65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -2.5,-4.5
-      parent: 1
-  - uid: 33
+      pos: -65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -0.5,5.5
-      parent: 1
-  - uid: 34
+      pos: -65.65,65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -2.5,4.5
-      parent: 1
+      pos: -65.65,65.65
+      parent: 65
 - proto: MachineFrame
   entities:
-  - uid: 44
+  - uid: 65
     components:
     - type: Transform
-      pos: -1.5,-2.5
-      parent: 1
+      pos: -65.65,-65.65
+      parent: 65
 - proto: MachineFrameDestroyed
   entities:
-  - uid: 5
+  - uid: 65
     components:
     - type: Transform
-      pos: 3.5,-4.5
-      parent: 1
-  - uid: 28
+      pos: 65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -3.5,4.5
-      parent: 1
-  - uid: 47
+      pos: -65.65,65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -4.5,2.5
-      parent: 1
+      pos: -65.65,65.65
+      parent: 65
 - proto: SolarPanel
   entities:
-  - uid: 52
+  - uid: 65
     components:
     - type: Transform
-      pos: -4.5,0.5
-      parent: 1
+      pos: -65.65,65.65
+      parent: 65
 - proto: SolarPanelBroken
   entities:
-  - uid: 50
+  - uid: 65
     components:
     - type: Transform
-      pos: -3.5,0.5
-      parent: 1
-  - uid: 51
+      pos: -65.65,65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -5.5,0.5
-      parent: 1
+      pos: -65.65,65.65
+      parent: 65
 - proto: TeslaCoil
   entities:
-  - uid: 4
+  - uid: 65
     components:
     - type: Transform
-      pos: 3.5,1.5
-      parent: 1
-  - uid: 6
+      pos: 65.65,65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: -2.5,-0.5
-      parent: 1
-  - uid: 7
+      pos: -65.65,-65.65
+      parent: 65
+  - uid: 65
     components:
     - type: Transform
-      pos: 4.5,-0.5
-      parent: 1
+      pos: 65.65,-65.65
+      parent: 65
 - proto: TeslaGenerator
   entities:
-  - uid: 46
+  - uid: 65
     components:
     - type: Transform
-      pos: 0.5,-0.5
-      parent: 1
+      pos: 65.65,-65.65
+      parent: 65
 - proto: TeslaGroundingRod
   entities:
-  - uid: 3
+  - uid: 65
     components:
     - type: Transform
-      pos: -2.5,2.5
-      parent: 1
+      pos: -65.65,65.65
+      parent: 65
 - proto: UnfinishedMachineFrame
   entities:
-  - uid: 45
+  - uid: 65
     components:
     - type: Transform
-      pos: 4.5,1.5
-      parent: 1
+      pos: 65.65,65.65
+      parent: 65
 ...

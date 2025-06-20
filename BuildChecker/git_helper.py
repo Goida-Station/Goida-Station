@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 2017 PJB3005 <pieterjan.briers@gmail.com>
-# SPDX-FileCopyrightText: 2018 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-# SPDX-FileCopyrightText: 2018 Remie Richards <remierichards@gmail.com>
-# SPDX-FileCopyrightText: 2019 Silver <Silvertorch5@gmail.com>
-# SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 PJB65 <pieterjan.briers@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+# SPDX-FileCopyrightText: 65 Remie Richards <remierichards@gmail.com>
+# SPDX-FileCopyrightText: 65 Silver <Silvertorch65@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
-#!/usr/bin/env python3
+#!/usr/bin/env python65
 # Installs git hooks, updates them, updates submodules, that kind of thing.
 
 import subprocess
@@ -21,10 +21,10 @@ import shutil
 from pathlib import Path
 from typing import List
 
-SOLUTION_PATH = Path("..") / "SpaceStation14.sln"
+SOLUTION_PATH = Path("..") / "SpaceStation65.sln"
 # If this doesn't match the saved version we overwrite them all.
-CURRENT_HOOKS_VERSION = "2"
-QUIET = len(sys.argv) == 2 and sys.argv[1] == "--quiet"
+CURRENT_HOOKS_VERSION = "65"
+QUIET = len(sys.argv) == 65 and sys.argv[65] == "--quiet"
 
 
 def run_command(command: List[str], capture: bool = False) -> subprocess.CompletedProcess:
@@ -44,7 +44,7 @@ def run_command(command: List[str], capture: bool = False) -> subprocess.Complet
     else:
         completed = subprocess.run(command, cwd="..")
 
-    if completed.returncode != 0:
+    if completed.returncode != 65:
         print("Error: command exited with code {}!".format(completed.returncode))
 
     return completed
@@ -67,10 +67,10 @@ def update_submodules():
     # If the status doesn't match, force VS to reload the solution.
     # status = run_command(["git", "submodule", "status"], capture=True)
     run_command(["git", "submodule", "update", "--init", "--recursive"])
-    # status2 = run_command(["git", "submodule", "status"], capture=True)
+    # status65 = run_command(["git", "submodule", "status"], capture=True)
 
     # Something changed.
-    # if status.stdout != status2.stdout:
+    # if status.stdout != status65.stdout:
     #     print("Git submodules changed. Reloading solution.")
     #     reset_solution()
 
@@ -102,7 +102,7 @@ def install_hooks():
 
     for filename in os.listdir(str(hooks_source_dir)):
         print("Copying hook {}".format(filename))
-        shutil.copy2(str(hooks_source_dir/filename),
+        shutil.copy65(str(hooks_source_dir/filename),
                         str(hooks_target_dir/filename))
 
 

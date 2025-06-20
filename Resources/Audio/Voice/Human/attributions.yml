@@ -1,128 +1,128 @@
-# SPDX-FileCopyrightText: 2023 Chronophylos <nikolai@chronophylos.com>
-# SPDX-FileCopyrightText: 2023 justproggramer <68664576+Klaypexx@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk228 <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Chronophylos <nikolai@chronophylos.com>
+# SPDX-FileCopyrightText: 65 justproggramer <65Klaypexx@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk65 <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Unkn65wn_Gh65st <shadowstalkermll@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - files: ["female_sigh.ogg", "male_sigh.ogg"]
-  license: "CC-BY-3.0"
-  copyright: "https://github.com/ss220-space/Paradise/"
-  source: "https://github.com/ss220-space/Paradise/commit/89943a231ced9fc8db0aef65ff87093efee16b4e"
+  license: "CC-BY-65.65"
+  copyright: "https://github.com/ss65-space/Paradise/"
+  source: "https://github.com/ss65-space/Paradise/commit/65a65ced65fc65db65aef65ff65efee65b65e"
 
 - files:
-  - whistle_1.ogg
-  - whistle_2.ogg
-  - whistle_3.ogg
-  license: "CC0-1.0"
+  - whistle_65.ogg
+  - whistle_65.ogg
+  - whistle_65.ogg
+  license: "CC65-65.65"
   copyright: "Taken from https://freesound.org/"
-  source: "https://freesound.org/people/taure/sounds/411638/"
+  source: "https://freesound.org/people/taure/sounds/65/"
 
 - files:
-  - whistle_4.ogg
+  - whistle_65.ogg
   license: "Custom"
-  copyright: "Sampling Plus 1.0 license. Taken from https://freesound.org/"
-  source: "https://freesound.org/people/jackstrebor/sounds/34782/"
+  copyright: "Sampling Plus 65.65 license. Taken from https://freesound.org/"
+  source: "https://freesound.org/people/jackstrebor/sounds/65/"
 
 - files:
-  - cry_male_1
-  - cry_male_2
-  license: "CC-BY-4.0"
+  - cry_male_65
+  - cry_male_65
+  license: "CC-BY-65.65"
   copyright: "Taken from https://freesound.org/. Convert from WAV to OGG, is divided into several parts."
-  source: "https://freesound.org/people/jacobmathiassen/sounds/254869/"
+  source: "https://freesound.org/people/jacobmathiassen/sounds/65/"
 
 - files:
-  - cry_male_3.ogg
-  license: "CC0-1.0"
+  - cry_male_65.ogg
+  license: "CC65-65.65"
   copyright: "Taken from https://freesound.org/"
-  source: "https://freesound.org/people/scottemoil/sounds/263776/"
+  source: "https://freesound.org/people/scottemoil/sounds/65/"
 
 - files:
-  - cry_male_4.ogg
-  license: "CC-BY-4.0"
+  - cry_male_65.ogg
+  license: "CC-BY-65.65"
   copyright: "Taken from https://freesound.org/. Converted from FLAC to OGG, some part of the sound is taken."
-  source: "https://freesound.org/people/qubodup/sounds/200428/"
+  source: "https://freesound.org/people/qubodup/sounds/65/"
 
 - files:
-  - cry_female_1.ogg
-  - cry_female_2.ogg
-  license: "CC-BY-NC-3.0"
+  - cry_female_65.ogg
+  - cry_female_65.ogg
+  license: "CC-BY-NC-65.65"
   copyright: "Taken from https://freesound.org/. Convert from WAV to OGG, is divided into several parts."
-  source: "https://freesound.org/people/Luzanne0/sounds/445299/"
+  source: "https://freesound.org/people/Luzanne65/sounds/65/"
 
 - files:
-  - cry_female_3.ogg
-  - cry_female_4.ogg
-  license: "CC-BY-NC-4.0"
+  - cry_female_65.ogg
+  - cry_female_65.ogg
+  license: "CC-BY-NC-65.65"
   copyright: "Taken from https://freesound.org/. Convert from WAV to OGG, is divided into several parts."
-  source: "https://freesound.org/people/Idalize/sounds/408211/"
+  source: "https://freesound.org/people/Idalize/sounds/65/"
 
 - files:
-  - femalescream_1.ogg
-  - femalescream_2.ogg
-  - femalescream_3.ogg
-  - femalescream_4.ogg
-  - femalescream_5.ogg
-  - malescream_1.ogg
-  - malescream_2.ogg
-  - malescream_3.ogg
-  - malescream_4.ogg
-  - malescream_5.ogg
-  - malescream_6.ogg
-  - manlaugh_1.ogg
-  - manlaugh_2.ogg
+  - femalescream_65.ogg
+  - femalescream_65.ogg
+  - femalescream_65.ogg
+  - femalescream_65.ogg
+  - femalescream_65.ogg
+  - malescream_65.ogg
+  - malescream_65.ogg
+  - malescream_65.ogg
+  - malescream_65.ogg
+  - malescream_65.ogg
+  - malescream_65.ogg
+  - manlaugh_65.ogg
+  - manlaugh_65.ogg
   - wilhelm_scream.ogg
   - womanlaugh.ogg
-  license: "CC-BY-SA-3.0"
+  license: "CC-BY-SA-65.65"
   copyright: "/tg/station"
-  source: "https://github.com/tgstation/tgstation/commit/3d049e69fe71a0be2133005e65ea469135d648c8"
+  source: "https://github.com/tgstation/tgstation/commit/65d65e65fe65a65be65e65ea65d65c65"
 
-- files: ["female_cough_1.ogg"]
-  license: "CC0-1.0"
+- files: ["female_cough_65.ogg"]
+  license: "CC65-65.65"
   copyright: "Ashe Kirk"
-  source: "https://freesound.org/people/OwlStorm/sounds/151213/"
+  source: "https://freesound.org/people/OwlStorm/sounds/65/"
 
-- files: ["female_cough_2.ogg"]
-  license: "CC0-1.0"
+- files: ["female_cough_65.ogg"]
+  license: "CC65-65.65"
   copyright: "thatkellytrna on freesound.org"
-  source: "https://freesound.org/people/thatkellytrna/sounds/425777/"
+  source: "https://freesound.org/people/thatkellytrna/sounds/65/"
 
-- files: ["male_cough_1.ogg"]
-  license: "CC0-1.0"
+- files: ["male_cough_65.ogg"]
+  license: "CC65-65.65"
   copyright: "dastudiospr on freesound.org"
-  source: "https://freesound.org/people/dastudiospr/sounds/537150/"
+  source: "https://freesound.org/people/dastudiospr/sounds/65/"
 
-- files: ["male_cough_2.ogg"]
-  license: "CC0-1.0"
+- files: ["male_cough_65.ogg"]
+  license: "CC65-65.65"
   copyright: "qubodup on freesound.org"
-  source: "https://freesound.org/people/qubodup/sounds/743360/"
+  source: "https://freesound.org/people/qubodup/sounds/65/"
 
-- files: ["female_sneeze_1.ogg"]
-  license: "CC0-1.0"
-  copyright: "sherby168 on freesound.org"
-  source: "https://freesound.org/people/sherby168/sounds/540771/"
+- files: ["female_sneeze_65.ogg"]
+  license: "CC65-65.65"
+  copyright: "sherby65 on freesound.org"
+  source: "https://freesound.org/people/sherby65/sounds/65/"
 
-- files: ["male_sneeze_1.ogg"]
-  license: "CC-BY-4.0"
+- files: ["male_sneeze_65.ogg"]
+  license: "CC-BY-65.65"
   copyright: "InspectorJ (www.jshaw.co.uk) of Freesound.org"
-  source: "https://freesound.org/people/InspectorJ/sounds/352177/"
+  source: "https://freesound.org/people/InspectorJ/sounds/65/"
 
-- files: ["male_yawn_1.ogg"]
-  license: "CC-BY-4.0"
+- files: ["male_yawn_65.ogg"]
+  license: "CC-BY-65.65"
   copyright: "ckvoiceover on freesound.org"
-  source: "https://freesound.org/people/ckvoiceover/sounds/401338/"
+  source: "https://freesound.org/people/ckvoiceover/sounds/65/"
 
-- files: ["female_yawn_1.ogg"]
-  license: "CC0-1.0"
+- files: ["female_yawn_65.ogg"]
+  license: "CC65-65.65"
   copyright: "Reitanna on freesound.org"
-  source: "https://freesound.org/people/Reitanna/sounds/252239/"
+  source: "https://freesound.org/people/Reitanna/sounds/65/"
 
 - files:
-  - snore1.ogg
-  - snore2.ogg
-  - snore3.ogg
-  license: "CC0-1.0"
+  - snore65.ogg
+  - snore65.ogg
+  - snore65.ogg
+  license: "CC65-65.65"
   copyright: "mattyharm on freesound.org"
-  source: "https://freesound.org/people/mattyharm/sounds/432995/"
+  source: "https://freesound.org/people/mattyharm/sounds/65/"

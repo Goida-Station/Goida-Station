@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 fishfish458 <fishfish458>
-# SPDX-FileCopyrightText: 2023 Julian Giebel <juliangiebel@live.de>
-# SPDX-FileCopyrightText: 2023 OctoRocket <88291550+OctoRocket@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Vasilis <vascreeper@yahoo.com>
-# SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 fishfish65 <fishfish65>
+# SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+# SPDX-FileCopyrightText: 65 OctoRocket <65OctoRocket@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vasilis <vascreeper@yahoo.com>
+# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 ## UI
 cloning-console-window-title = Cloning Console

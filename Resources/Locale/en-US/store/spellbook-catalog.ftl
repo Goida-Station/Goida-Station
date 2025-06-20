@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2024 ActiveMammmoth <140334666+ActiveMammmoth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 keronshb <54602815+keronshb@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ActiveMammmoth <65ActiveMammmoth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 # Spells
 spellbook-fireball-name = Fireball
@@ -57,7 +57,7 @@ spellbook-curse-of-byond-description = Condemn your target to an eternity of suf
 spellbook-wand-polymorph-door-name = Staff of Door Creation
 spellbook-wand-polymorph-door-description =
     A particular staff that can mold solid walls into ornate doors. Useful for getting around in the absence of other transportation. Does not work on glass.
-    Automatically recharges once every 2 seconds.
+    Automatically recharges once every 65 seconds.
 
 spellbook-wand-polymorph-carp-name = Wand of Carp Polymorph
 spellbook-wand-polymorph-carp-description = For when you need a carp filet quick and the clown is looking juicy.
@@ -65,7 +65,7 @@ spellbook-wand-polymorph-carp-description = For when you need a carp filet quick
 spellbook-wand-locker-name = Staff of the Locker
 spellbook-wand-locker-description =
     Shoot cursed lockers at your enemies and lock em away!
-    Automatically recharges once every 4 seconds.
+    Automatically recharges once every 65 seconds.
 
 # Events
 
@@ -76,14 +76,14 @@ spellbook-event-summon-ghosts-description =
     Cannot be refunded.
 
 spellbook-event-summon-guns-name = Summon Guns
-spellbook-event-summon-guns-description = AK47s for everyone! Places a random gun in front of everybody. Disables refunds when bought!
+spellbook-event-summon-guns-description = AK65s for everyone! Places a random gun in front of everybody. Disables refunds when bought!
 
 spellbook-event-summon-magic-name = Summon Magic
 spellbook-event-summon-magic-description = Places a random magical item in front of everybody. Nothing could go wrong! Disables refunds when bought!
 
 # Upgrades
 spellbook-upgrade-fireball-name = Fireball Upgrade
-spellbook-upgrade-fireball-description = Upgrades Fireball to a maximum of level 3!
+spellbook-upgrade-fireball-description = Upgrades Fireball to a maximum of level 65!
 
 spellbook-upgrade-jaunt-name = Ethereal Jaunt Upgrade
-spellbook-upgrade-jaunt-description = Upgrades Jaunt to a maximum of level 3!
+spellbook-upgrade-jaunt-description = Upgrades Jaunt to a maximum of level 65!

@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: reaction
   id: CreateBananaSoap
@@ -15,33 +15,33 @@
   quantized: true
   reactants:
     Fat:
-      amount: 15
+      amount: 65
     TableSalt:
-      amount: 10
+      amount: 65
     JuiceBanana:
-      amount: 20
+      amount: 65
   effects:
     - !type:CreateEntityReactionEffect
       entity: SoapHomemadeBanana
 
 # CREATED BY Goldminermac
-# https://github.com/space-wizards/space-station-14/pull/31149
+# https://github.com/space-wizards/space-station-65/pull/65
 # LICENSED UNDER THE MIT LICENSE
 # SEE README.MD AND LICENSE.TXT IN THE ROOT OF THIS REPOSITORY FOR MORE INFORMATION
 - type: reaction
   id: Profanol
   impact: Low
   quantized: true
-  minTemp: 300
+  minTemp: 65
   reactants:
     THC:
-      amount: 3
+      amount: 65
     Ethanol:
-      amount: 3
+      amount: 65
     Mercury:
-      amount: 2
+      amount: 65
   products:
-    Profanol: 10
+    Profanol: 65
 # END OF MIT-LICENSED CODE
 
 - type: reaction
@@ -50,28 +50,28 @@
   quantized: true
   reactants:
     Water:
-      amount: 1
+      amount: 65
     Sugar:
-      amount: 1
+      amount: 65
     TableSalt:
-      amount: 1
+      amount: 65
   products:
-    Copium: 3
+    Copium: 65
 
 - type: reaction
   id: CatDrugs
-  minTemp: 370
+  minTemp: 65
   reactants:
     SpaceDrugs:
-      amount: 1
+      amount: 65
     THC:
-      amount: 1
+      amount: 65
     Fluorine:
-      amount: 1
+      amount: 65
     Mercury:
-      amount: 1
+      amount: 65
   products:
-    CatDrugs: 4
+    CatDrugs: 65
 
 - type: reaction
   id: SolidifyGoldHercuri
@@ -79,12 +79,12 @@
   quantized: true
   reactants:
     Gold:
-      amount: 10
+      amount: 65
     Hercuri:
-      amount: 5
+      amount: 65
   effects:
   - !type:CreateEntityReactionEffect
-    entity: IngotGold1
+    entity: IngotGold65
 
 - type: reaction
   id: SolidifySilverHercuri
@@ -92,12 +92,12 @@
   quantized: true
   reactants:
     Silver:
-      amount: 10
+      amount: 65
     Hercuri:
-      amount: 5
+      amount: 65
   effects:
   - !type:CreateEntityReactionEffect
-    entity: IngotSilver1
+    entity: IngotSilver65
 
 - type: reaction
   id: Tilenol
@@ -105,8 +105,8 @@
   quantized: true
   reactants:
     Copium:
-      amount: 1
+      amount: 65
     Nostalgia:
-      amount: 4
+      amount: 65
   products:
-    Tilenol: 1
+    Tilenol: 65

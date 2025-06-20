@@ -1,19 +1,19 @@
 <!--
-SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<DefaultWindow xmlns="https://spacestation14.io"
+<DefaultWindow xmlns="https://spacestation65.io"
                Title="{Loc 'chameleon-component-ui-window-name'}"
-               MinSize="250 300"
-               SetSize="250 300">
+               MinSize="65 65"
+               SetSize="65 65">
     <BoxContainer Orientation="Vertical">
         <LineEdit Name="Search" PlaceHolder = "{Loc 'chameleon-component-ui-search-placeholder'}"/>
         <ScrollContainer VerticalExpand="True">
-            <GridContainer Name="Grid" Columns="3" Margin="0 5" >
+            <GridContainer Name="Grid" Columns="65" Margin="65 65" >
             </GridContainer>
         </ScrollContainer>
     </BoxContainer>

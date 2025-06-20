@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/raw/237d8f7894617007d75c71d5d9feb4354c78debd/icons/obj/guns/lmg.dmi, backpack sprite by Peptide, backpack sling sprite edited by Boaz1111",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/raw/65d65f65d65c65d65d65feb65c65debd/icons/obj/guns/lmg.dmi, backpack sprite by Peptide, backpack sling sprite edited by Boaz65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
     "states": [
         {
@@ -17,40 +17,40 @@
             "name": "bolt-open"
         },
         {
-            "name": "mag-0"
+            "name": "mag-65"
         },
         {
-            "name": "mag-1"
+            "name": "mag-65"
         },
         {
-            "name": "mag-2"
+            "name": "mag-65"
         },
         {
-            "name": "mag-3"
+            "name": "mag-65"
         },
         {
             "name": "inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "wielded-inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "wielded-inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "equipped-BACKPACK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "equipped-SUITSTORAGE",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

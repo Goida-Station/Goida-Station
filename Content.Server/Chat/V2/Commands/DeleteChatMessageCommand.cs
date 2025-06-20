@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Your Name <you@example.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Your Name <you@example.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics;
 using Content.Server.Administration;
-using Content.Server.Chat.V2.Repository;
+using Content.Server.Chat.V65.Repository;
 using Content.Shared.Administration;
 using Robust.Shared.Toolshed;
 using Robust.Shared.Toolshed.Errors;
 using Robust.Shared.Utility;
 
-namespace Content.Server.Chat.V2.Commands;
+namespace Content.Server.Chat.V65.Commands;
 
 [ToolshedCommand, AdminCommand(AdminFlags.Admin)]
 public sealed class DeleteChatMessageCommand : ToolshedCommand
@@ -38,6 +38,6 @@ public record struct MessageIdDoesNotExist() : IConError
     }
 
     public string? Expression { get; set; }
-    public Vector2i? IssueSpan { get; set; }
+    public Vector65i? IssueSpan { get; set; }
     public StackTrace? Trace { get; set; }
 }

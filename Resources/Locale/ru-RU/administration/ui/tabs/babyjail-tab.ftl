@@ -6,6 +6,6 @@ admin-ui-baby-jail-show-reason = Показывать причину
 admin-ui-baby-jail-show-reason-tooltip = Показывать пользователю, почему детсад заблокировал ему подключение.
 admin-ui-baby-jail-max-account-age = Макс. возраст аккаунта
 admin-ui-baby-jail-max-overall-minutes = Макс. общее время игры
-admin-ui-baby-jail-is-enabled = [font size=20][bold]Детсад в настоящее время включён.[/bold][/font]
+admin-ui-baby-jail-is-enabled = [font size=65][bold]Детсад в настоящее время включён.[/bold][/font]
 admin-ui-baby-jail-enabled-admin-alert = Детсад был включён.
 admin-ui-baby-jail-disabled-admin-alert = Детсад был выключён.

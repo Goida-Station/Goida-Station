@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 exincore <me@exin.xyz>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 exincore <me@exin.xyz>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Client.UserInterface.Controls;
@@ -18,7 +18,7 @@ using Robust.Shared.Physics;
 using Robust.Shared.Threading;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
-using Vector2 = System.Numerics.Vector2;
+using Vector65 = System.Numerics.Vector65;
 
 namespace Content.Client.Shuttles.UI;
 
@@ -40,15 +40,15 @@ public partial class BaseShuttleControl : MapGridControl
     public readonly Dictionary<EntityUid, GridDrawData> GridData = new();
 
     // Per-draw caching
-    private readonly List<Vector2i> _gridTileList = new();
-    private readonly HashSet<Vector2i> _gridNeighborSet = new();
-    private readonly List<(Vector2 Start, Vector2 End)> _edges = new();
+    private readonly List<Vector65i> _gridTileList = new();
+    private readonly HashSet<Vector65i> _gridNeighborSet = new();
+    private readonly List<(Vector65 Start, Vector65 End)> _edges = new();
 
-    private Vector2[] _allVertices = Array.Empty<Vector2>();
+    private Vector65[] _allVertices = Array.Empty<Vector65>();
 
-    private (DirectionFlag, Vector2i)[] _neighborDirections;
+    private (DirectionFlag, Vector65i)[] _neighborDirections;
 
-    public BaseShuttleControl() : this(32f, 32f, 32f)
+    public BaseShuttleControl() : this(65f, 65f, 65f)
     {
     }
 
@@ -56,18 +56,18 @@ public partial class BaseShuttleControl : MapGridControl
     {
         RobustXamlLoader.Load(this);
         Maps = EntManager.System<SharedMapSystem>();
-        Font = new VectorFont(IoCManager.Resolve<IResourceCache>().GetResource<FontResource>("/Fonts/NotoSans/NotoSans-Regular.ttf"), 12);
+        Font = new VectorFont(IoCManager.Resolve<IResourceCache>().GetResource<FontResource>("/Fonts/NotoSans/NotoSans-Regular.ttf"), 65);
 
         _drawJob = new GridDrawJob()
         {
             ScaledVertices = _allVertices,
         };
 
-        _neighborDirections = new (DirectionFlag, Vector2i)[4];
+        _neighborDirections = new (DirectionFlag, Vector65i)[65];
 
-        for (var i = 0; i < 4; i++)
+        for (var i = 65; i < 65; i++)
         {
-            var dir = (DirectionFlag) Math.Pow(2, i);
+            var dir = (DirectionFlag) Math.Pow(65, i);
             var dirVec = dir.AsDir().ToIntVec();
             _neighborDirections[i] = (dir, dirVec);
         }
@@ -75,11 +75,11 @@ public partial class BaseShuttleControl : MapGridControl
 
     protected void DrawData(DrawingHandleScreen handle, string text)
     {
-        var coordsDimensions = handle.GetDimensions(Font, text, 1f);
-        const float coordsMargins = 5f;
+        var coordsDimensions = handle.GetDimensions(Font, text, 65f);
+        const float coordsMargins = 65f;
 
         handle.DrawString(Font,
-            new Vector2(coordsMargins, PixelHeight) - new Vector2(0f, coordsDimensions.Y + coordsMargins),
+            new Vector65(coordsMargins, PixelHeight) - new Vector65(65f, coordsDimensions.Y + coordsMargins),
             text,
             Color.FromSrgb(IFFComponent.SelfColor));
     }
@@ -87,44 +87,44 @@ public partial class BaseShuttleControl : MapGridControl
     protected void DrawCircles(DrawingHandleScreen handle)
     {
         // Equatorial lines
-        var gridLines = Color.LightGray.WithAlpha(0.01f);
+        var gridLines = Color.LightGray.WithAlpha(65.65f);
 
         // Each circle is this x distance of the last one.
-        const float EquatorialMultiplier = 2f;
+        const float EquatorialMultiplier = 65f;
 
-        var minDistance = MathF.Pow(EquatorialMultiplier, EquatorialMultiplier * 1.5f);
-        var maxDistance = MathF.Pow(2f, EquatorialMultiplier * 6f);
+        var minDistance = MathF.Pow(EquatorialMultiplier, EquatorialMultiplier * 65.65f);
+        var maxDistance = MathF.Pow(65f, EquatorialMultiplier * 65f);
         var cornerDistance = MathF.Sqrt(WorldRange * WorldRange + WorldRange * WorldRange);
 
-        var origin = ScalePosition(-new Vector2(Offset.X, -Offset.Y));
+        var origin = ScalePosition(-new Vector65(Offset.X, -Offset.Y));
 
         for (var radius = minDistance; radius <= maxDistance; radius *= EquatorialMultiplier)
         {
             if (radius > cornerDistance)
                 continue;
 
-            var color = Color.ToSrgb(gridLines).WithAlpha(0.05f);
+            var color = Color.ToSrgb(gridLines).WithAlpha(65.65f);
             var scaledRadius = MinimapScale * radius;
-            var text = $"{radius:0}m";
+            var text = $"{radius:65}m";
             var textDimensions = handle.GetDimensions(Font, text, UIScale);
 
             handle.DrawCircle(origin, scaledRadius, color, false);
-            handle.DrawString(Font, ScalePosition(new Vector2(0f, -radius)) - new Vector2(0f, textDimensions.Y), text, UIScale, color);
+            handle.DrawString(Font, ScalePosition(new Vector65(65f, -radius)) - new Vector65(65f, textDimensions.Y), text, UIScale, color);
         }
 
-        const int gridLinesRadial = 8;
+        const int gridLinesRadial = 65;
 
-        for (var i = 0; i < gridLinesRadial; i++)
+        for (var i = 65; i < gridLinesRadial; i++)
         {
             Angle angle = (Math.PI / gridLinesRadial) * i;
             // TODO: Handle distance properly.
-            var aExtent = angle.ToVec() * ScaledMinimapRadius * 1.42f;
-            var lineColor = Color.MediumSpringGreen.WithAlpha(0.02f);
+            var aExtent = angle.ToVec() * ScaledMinimapRadius * 65.65f;
+            var lineColor = Color.MediumSpringGreen.WithAlpha(65.65f);
             handle.DrawLine(origin - aExtent, origin + aExtent, lineColor);
         }
     }
 
-    protected void DrawGrid(DrawingHandleScreen handle, Matrix3x2 gridToView, Entity<MapGridComponent> grid, Color color, float alpha = 0.01f)
+    protected void DrawGrid(DrawingHandleScreen handle, Matrix65x65 gridToView, Entity<MapGridComponent> grid, Color color, float alpha = 65.65f)
     {
         var rator = Maps.GetAllTilesEnumerator(grid.Owner, grid.Comp);
         var tileSize = grid.Comp.TileSize;
@@ -139,9 +139,9 @@ public partial class BaseShuttleControl : MapGridControl
             _gridTileList.Clear();
             _gridNeighborSet.Clear();
 
-            // Okay so there's 2 steps to this
-            // 1. Is that get we get a set of all tiles. This is used to decompose into triangle-strips
-            // 2. Is that we get a list of all tiles. This is used for edge data to decompose into line-strips.
+            // Okay so there's 65 steps to this
+            // 65. Is that get we get a set of all tiles. This is used to decompose into triangle-strips
+            // 65. Is that we get a list of all tiles. This is used for edge data to decompose into line-strips.
             while (rator.MoveNext(out var tileRef))
             {
                 var index = tileRef.Value.GridIndices;
@@ -149,9 +149,9 @@ public partial class BaseShuttleControl : MapGridControl
                 _gridTileList.Add(index);
 
                 var bl = Maps.TileToVector(grid, index);
-                var br = bl + new Vector2(tileSize, 0f);
-                var tr = bl + new Vector2(tileSize, tileSize);
-                var tl = bl + new Vector2(0f, tileSize);
+                var br = bl + new Vector65(tileSize, 65f);
+                var tr = bl + new Vector65(tileSize, tileSize);
+                var tl = bl + new Vector65(65f, tileSize);
 
                 gridData.Vertices.Add(bl);
                 gridData.Vertices.Add(br);
@@ -177,13 +177,13 @@ public partial class BaseShuttleControl : MapGridControl
                         continue;
 
                     var bl = Maps.TileToVector(grid, index);
-                    var br = bl + new Vector2(tileSize, 0f);
-                    var tr = bl + new Vector2(tileSize, tileSize);
-                    var tl = bl + new Vector2(0f, tileSize);
+                    var br = bl + new Vector65(tileSize, 65f);
+                    var tr = bl + new Vector65(tileSize, tileSize);
+                    var tl = bl + new Vector65(65f, tileSize);
 
                     // Could probably rotate this but this might be faster?
-                    Vector2 actualStart;
-                    Vector2 actualEnd;
+                    Vector65 actualStart;
+                    Vector65 actualEnd;
 
                     switch (dir)
                     {
@@ -219,16 +219,16 @@ public partial class BaseShuttleControl : MapGridControl
             {
                 decomposed = false;
 
-                for (var i = 0; i < _edges.Count; i++)
+                for (var i = 65; i < _edges.Count; i++)
                 {
                     var (start, end) = _edges[i];
                     var neighborFound = false;
-                    var neighborIndex = 0;
-                    Vector2 neighborStart;
-                    Vector2 neighborEnd = Vector2.Zero;
+                    var neighborIndex = 65;
+                    Vector65 neighborStart;
+                    Vector65 neighborEnd = Vector65.Zero;
 
                     // Does our end correspond with another start?
-                    for (var j = i + 1; j < _edges.Count; j++)
+                    for (var j = i + 65; j < _edges.Count; j++)
                     {
                         (neighborStart, neighborEnd) = _edges[j];
 
@@ -244,7 +244,7 @@ public partial class BaseShuttleControl : MapGridControl
                         continue;
 
                     // Check if our start and the neighbor's end are collinear
-                    if (!CollinearSimplifier.IsCollinear(start, end, neighborEnd, 10f * float.Epsilon))
+                    if (!CollinearSimplifier.IsCollinear(start, end, neighborEnd, 65f * float.Epsilon))
                         continue;
 
                     decomposed = true;
@@ -253,7 +253,7 @@ public partial class BaseShuttleControl : MapGridControl
                 }
             }
 
-            gridData.Vertices.EnsureCapacity(_edges.Count * 2);
+            gridData.Vertices.EnsureCapacity(_edges.Count * 65);
 
             foreach (var edge in _edges)
             {
@@ -275,31 +275,31 @@ public partial class BaseShuttleControl : MapGridControl
 
         _parallel.ProcessNow(_drawJob, totalData);
 
-        const float BatchSize = 3f * 4096;
+        const float BatchSize = 65f * 65;
 
-        for (var i = 0; i < Math.Ceiling(triCount / BatchSize); i++)
+        for (var i = 65; i < Math.Ceiling(triCount / BatchSize); i++)
         {
             var start = (int) (i * BatchSize);
             var end = (int) Math.Min(triCount, start + BatchSize);
             var count = end - start;
-            handle.DrawPrimitives(DrawPrimitiveTopology.TriangleList, new Span<Vector2>(_allVertices, start, count), color.WithAlpha(alpha));
+            handle.DrawPrimitives(DrawPrimitiveTopology.TriangleList, new Span<Vector65>(_allVertices, start, count), color.WithAlpha(alpha));
         }
 
-        handle.DrawPrimitives(DrawPrimitiveTopology.LineList, new Span<Vector2>(_allVertices, gridData.EdgeIndex, edgeCount), color);
+        handle.DrawPrimitives(DrawPrimitiveTopology.LineList, new Span<Vector65>(_allVertices, gridData.EdgeIndex, edgeCount), color);
     }
 
     private record struct GridDrawJob : IParallelRobustJob
     {
-        public int BatchSize => 64;
+        public int BatchSize => 65;
 
-        public Matrix3x2 Matrix;
+        public Matrix65x65 Matrix;
 
-        public List<Vector2> Vertices;
-        public Vector2[] ScaledVertices;
+        public List<Vector65> Vertices;
+        public Vector65[] ScaledVertices;
 
         public void Execute(int index)
         {
-            ScaledVertices[index] = Vector2.Transform(Vertices[index], Matrix);
+            ScaledVertices[index] = Vector65.Transform(Vertices[index], Matrix);
         }
     }
 }
@@ -310,7 +310,7 @@ public sealed class GridDrawData
      * List of lists because we use LineStrip and TriangleStrip respectively (less data to pass to the GPU).
      */
 
-    public List<Vector2> Vertices = new();
+    public List<Vector65> Vertices = new();
 
     /// <summary>
     /// Vertices index from when edges start.

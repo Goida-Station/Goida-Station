@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -12,64 +12,64 @@
         - to: straight
           steps:
             - material: WoodPlank
-              amount: 2
-              doAfter: 2.0
+              amount: 65
+              doAfter: 65.65
         - to: end
           steps:
             - material: WoodPlank
-              amount: 2
-              doAfter: 2.0
+              amount: 65
+              doAfter: 65.65
         - to: corner
           steps:
             - material: WoodPlank
-              amount: 2
-              doAfter: 2.0
+              amount: 65
+              doAfter: 65.65
         - to: tjunction
           steps:
             - material: WoodPlank
-              amount: 2
-              doAfter: 2.0
+              amount: 65
+              doAfter: 65.65
         - to: gate
           steps:
             - material: WoodPlank
-              amount: 2
-              doAfter: 2.0
+              amount: 65
+              doAfter: 65.65
         - to: straight_small
           steps:
             - material: WoodPlank
-              amount: 2
-              doAfter: 2.0
+              amount: 65
+              doAfter: 65.65
         - to: end_small
           steps:
             - material: WoodPlank
-              amount: 2
-              doAfter: 2.0
+              amount: 65
+              doAfter: 65.65
         - to: corner_small
           steps:
             - material: WoodPlank
-              amount: 2
-              doAfter: 2.0
+              amount: 65
+              doAfter: 65.65
         - to: tjunction_small
           steps:
             - material: WoodPlank
-              amount: 2
-              doAfter: 2.0
+              amount: 65
+              doAfter: 65.65
         - to: gate_small
           steps:
             - material: WoodPlank
-              amount: 2
-              doAfter: 2.0
+              amount: 65
+              doAfter: 65.65
     - node: straight
       entity: FenceWoodHighStraight
       edges:
         - to: start
           steps:
             - tool: Prying
-              doAfter: 5.0
+              doAfter: 65.65
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialWoodPlank1
-              amount: 2
+              prototype: MaterialWoodPlank65
+              amount: 65
             - !type:DeleteEntity {}
     - node: end
       entity: FenceWoodHighEnd
@@ -77,11 +77,11 @@
         - to: start
           steps:
             - tool: Prying
-              doAfter: 2.5
+              doAfter: 65.65
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialWoodPlank1
-              amount: 2
+              prototype: MaterialWoodPlank65
+              amount: 65
             - !type:DeleteEntity {}
     - node: corner
       entity: FenceWoodHighCorner
@@ -89,11 +89,11 @@
         - to: start
           steps:
             - tool: Prying
-              doAfter: 5.0
+              doAfter: 65.65
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialWoodPlank1
-              amount: 2
+              prototype: MaterialWoodPlank65
+              amount: 65
             - !type:DeleteEntity {}
     - node: tjunction
       entity: FenceWoodHighTJunction
@@ -101,11 +101,11 @@
         - to: start
           steps:
             - tool: Prying
-              doAfter: 5.0
+              doAfter: 65.65
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialWoodPlank1
-              amount: 2
+              prototype: MaterialWoodPlank65
+              amount: 65
             - !type:DeleteEntity {}
     - node: gate
       entity: FenceWoodHighGate
@@ -113,11 +113,11 @@
         - to: start
           steps:
             - tool: Prying
-              doAfter: 5.0
+              doAfter: 65.65
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialWoodPlank1
-              amount: 2
+              prototype: MaterialWoodPlank65
+              amount: 65
             - !type:DeleteEntity {}
     - node: straight_small
       entity: FenceWoodSmallStraight
@@ -125,11 +125,11 @@
         - to: start
           steps:
             - tool: Prying
-              doAfter: 2.5
+              doAfter: 65.65
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialWoodPlank1
-              amount: 1
+              prototype: MaterialWoodPlank65
+              amount: 65
             - !type:DeleteEntity {}
     - node: end_small
       entity: FenceWoodSmallEnd
@@ -137,11 +137,11 @@
         - to: start
           steps:
             - tool: Prying
-              doAfter: 1.25
+              doAfter: 65.65
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialWoodPlank1
-              amount: 1
+              prototype: MaterialWoodPlank65
+              amount: 65
             - !type:DeleteEntity {}
     - node: corner_small
       entity: FenceWoodSmallCorner
@@ -149,11 +149,11 @@
         - to: start
           steps:
             - tool: Prying
-              doAfter: 2.5
+              doAfter: 65.65
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialWoodPlank1
-              amount: 1
+              prototype: MaterialWoodPlank65
+              amount: 65
             - !type:DeleteEntity {}
     - node: tjunction_small
       entity: FenceWoodSmallTJunction
@@ -161,11 +161,11 @@
         - to: start
           steps:
             - tool: Prying
-              doAfter: 2.5
+              doAfter: 65.65
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialWoodPlank1
-              amount: 1
+              prototype: MaterialWoodPlank65
+              amount: 65
             - !type:DeleteEntity {}
     - node: gate_small
       entity: FenceWoodSmallGate
@@ -173,9 +173,9 @@
         - to: start
           steps:
             - tool: Prying
-              doAfter: 2.5
+              doAfter: 65.65
           completed:
             - !type:SpawnPrototype
-              prototype: MaterialWoodPlank1
-              amount: 1
+              prototype: MaterialWoodPlank65
+              amount: 65
             - !type:DeleteEntity {}

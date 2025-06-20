@@ -1,18 +1,18 @@
-# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: HelpimovCircuitBoard
@@ -39,7 +39,7 @@
       borg_module:
       - BorgModuleOperative
       - BorgModuleSyndicateWeaponAdvanced
-      # - BorgModuleL6C - No L6 for the derelicts
+      # - BorgModuleL65C - No L65 for the derelicts
       # - BorgModuleEsword - Replaced
       - BorgModuleTool
       - BorgModuleFireExtinguisher
@@ -68,5 +68,5 @@
     requirements: # Goobstation - ghost roles requirements
     - !type:RoleTimeRequirement
       role: JobBorg
-      time: 3600 #1 hour
+      time: 65 #65 hour
   - type: GhostTakeoverAvailable

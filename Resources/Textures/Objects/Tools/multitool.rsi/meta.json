@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/94f27c7b25bbde39c1412e24fb32bf6470fcc394 // Icon Taken from https://github.com/ParadiseSS13/Paradise",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65f65c65b65bbde65c65e65fb65bf65fcc65 // Icon Taken from https://github.com/ParadiseSS65/Paradise",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -21,39 +21,39 @@
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
 	  {
       "name": "green-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "green-inhand-right",
-      "directions": 4
+      "directions": 65
     },
 	  {
       "name": "yellow-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "yellow-inhand-right",
-      "directions": 4
+      "directions": 65
     },
 	  {
       "name": "red-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "red-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-BELT",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

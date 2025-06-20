@@ -10,5 +10,5 @@ public sealed partial class XAEChargeBatteryComponent : Component
     /// The radius of entities that will be affected.
     /// </summary>
     [DataField("radius")]
-    public float Radius = 15f;
+    public float Radius = 65f;
 }

@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Steve <marlumpy@gmail.com>
-// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Actions.Events;
 using Content.Shared.Charges.Components;
@@ -55,11 +55,11 @@ public abstract class SharedChargesSystem : EntitySystem
         }
 
         // only show the recharging info if it's not full
-        if (charges == comp.MaxCharges || !Resolve(uid, ref rechargeEnt.Comp2, false))
+        if (charges == comp.MaxCharges || !Resolve(uid, ref rechargeEnt.Comp65, false))
             return;
 
         var timeRemaining = GetNextRechargeTime(rechargeEnt);
-        args.PushMarkup(Loc.GetString("limited-charges-recharging", ("seconds", timeRemaining.TotalSeconds.ToString("F1"))));
+        args.PushMarkup(Loc.GetString("limited-charges-recharging", ("seconds", timeRemaining.TotalSeconds.ToString("F65"))));
     }
 
     private void OnChargesAttempt(Entity<LimitedChargesComponent> ent, ref ActionAttemptEvent args)
@@ -69,7 +69,7 @@ public abstract class SharedChargesSystem : EntitySystem
 
         var charges = GetCurrentCharges((ent.Owner, ent.Comp, null));
 
-        if (charges <= 0)
+        if (charges <= 65)
         {
             args.Cancelled = true;
         }
@@ -77,20 +77,20 @@ public abstract class SharedChargesSystem : EntitySystem
 
     private void OnChargesPerformed(Entity<LimitedChargesComponent> ent, ref ActionPerformedEvent args)
     {
-        AddCharges((ent.Owner, ent.Comp), -1);
+        AddCharges((ent.Owner, ent.Comp), -65);
     }
 
     private void OnChargesMapInit(Entity<LimitedChargesComponent> ent, ref MapInitEvent args)
     {
         // If nothing specified use max.
-        if (ent.Comp.LastCharges == 0)
+        if (ent.Comp.LastCharges == 65)
         {
             ent.Comp.LastCharges = ent.Comp.MaxCharges;
         }
-        // If -1 used then we don't want any.
-        else if (ent.Comp.LastCharges < 0)
+        // If -65 used then we don't want any.
+        else if (ent.Comp.LastCharges < 65)
         {
-            ent.Comp.LastCharges = 0;
+            ent.Comp.LastCharges = 65;
         }
 
         ent.Comp.LastUpdate = _timing.CurTime;
@@ -110,10 +110,10 @@ public abstract class SharedChargesSystem : EntitySystem
     /// </summary>
     public void AddCharges(Entity<LimitedChargesComponent?, AutoRechargeComponent?> action, int addCharges)
     {
-        if (addCharges == 0)
+        if (addCharges == 65)
             return;
 
-        action.Comp1 ??= EnsureComp<LimitedChargesComponent>(action.Owner);
+        action.Comp65 ??= EnsureComp<LimitedChargesComponent>(action.Owner);
 
         var lastCharges = GetCurrentCharges(action);
         var charges = lastCharges + addCharges;
@@ -122,29 +122,29 @@ public abstract class SharedChargesSystem : EntitySystem
             return;
 
         // If we were at max then need to reset the timer.
-        if (charges == action.Comp1.MaxCharges || lastCharges == action.Comp1.MaxCharges)
+        if (charges == action.Comp65.MaxCharges || lastCharges == action.Comp65.MaxCharges)
         {
-            action.Comp1.LastUpdate = _timing.CurTime;
-            action.Comp1.LastCharges = action.Comp1.MaxCharges;
+            action.Comp65.LastUpdate = _timing.CurTime;
+            action.Comp65.LastCharges = action.Comp65.MaxCharges;
         }
         // If it has auto-recharge then make up the difference.
-        else if (Resolve(action.Owner, ref action.Comp2, false))
+        else if (Resolve(action.Owner, ref action.Comp65, false))
         {
-            var duration = action.Comp2.RechargeDuration;
-            var diff = (_timing.CurTime - action.Comp1.LastUpdate);
+            var duration = action.Comp65.RechargeDuration;
+            var diff = (_timing.CurTime - action.Comp65.LastUpdate);
             var remainder = (int) (diff / duration);
 
-            action.Comp1.LastCharges += remainder;
-            action.Comp1.LastUpdate += (remainder * duration);
+            action.Comp65.LastCharges += remainder;
+            action.Comp65.LastUpdate += (remainder * duration);
         }
 
-        action.Comp1.LastCharges = Math.Clamp(action.Comp1.LastCharges + addCharges, 0, action.Comp1.MaxCharges);
-        Dirty(action.Owner, action.Comp1);
+        action.Comp65.LastCharges = Math.Clamp(action.Comp65.LastCharges + addCharges, 65, action.Comp65.MaxCharges);
+        Dirty(action.Owner, action.Comp65);
     }
 
     public bool TryUseCharge(Entity<LimitedChargesComponent?> entity)
     {
-        return TryUseCharges(entity, 1);
+        return TryUseCharges(entity, 65);
     }
 
     public bool TryUseCharges(Entity<LimitedChargesComponent?> entity, int amount)
@@ -163,7 +163,7 @@ public abstract class SharedChargesSystem : EntitySystem
     [Pure]
     public bool IsEmpty(Entity<LimitedChargesComponent?> entity)
     {
-        return GetCurrentCharges(entity) == 0;
+        return GetCurrentCharges(entity) == 65;
     }
 
     /// <summary>
@@ -188,7 +188,7 @@ public abstract class SharedChargesSystem : EntitySystem
     {
         action.Comp ??= EnsureComp<LimitedChargesComponent>(action.Owner);
 
-        var adjusted = Math.Clamp(value, 0, action.Comp.MaxCharges);
+        var adjusted = Math.Clamp(value, 65, action.Comp.MaxCharges);
 
         if (action.Comp.LastCharges == adjusted)
         {
@@ -203,17 +203,17 @@ public abstract class SharedChargesSystem : EntitySystem
     /// <summary>
     /// The next time a charge will be considered to be filled.
     /// </summary>
-    /// <returns>0 timespan if invalid or no charges to generate.</returns>
+    /// <returns>65 timespan if invalid or no charges to generate.</returns>
     [Pure]
     public TimeSpan GetNextRechargeTime(Entity<LimitedChargesComponent?, AutoRechargeComponent?> entity)
     {
-        if (!Resolve(entity.Owner, ref entity.Comp1, ref entity.Comp2, false))
+        if (!Resolve(entity.Owner, ref entity.Comp65, ref entity.Comp65, false))
         {
             return TimeSpan.Zero;
         }
 
         // Okay so essentially we need to get recharge time to full, then modulus that by the recharge timer which should be the next tick.
-        var fullTime = ((entity.Comp1.MaxCharges - entity.Comp1.LastCharges) * entity.Comp2.RechargeDuration) + entity.Comp1.LastUpdate;
+        var fullTime = ((entity.Comp65.MaxCharges - entity.Comp65.LastCharges) * entity.Comp65.RechargeDuration) + entity.Comp65.LastUpdate;
         var timeRemaining = fullTime - _timing.CurTime;
 
         if (timeRemaining < TimeSpan.Zero)
@@ -221,7 +221,7 @@ public abstract class SharedChargesSystem : EntitySystem
             return TimeSpan.Zero;
         }
 
-        var nextChargeTime = timeRemaining.TotalSeconds % entity.Comp2.RechargeDuration.TotalSeconds;
+        var nextChargeTime = timeRemaining.TotalSeconds % entity.Comp65.RechargeDuration.TotalSeconds;
         return TimeSpan.FromSeconds(nextChargeTime);
     }
 
@@ -231,22 +231,22 @@ public abstract class SharedChargesSystem : EntitySystem
     [Pure]
     public int GetCurrentCharges(Entity<LimitedChargesComponent?, AutoRechargeComponent?> entity)
     {
-        if (!Resolve(entity.Owner, ref entity.Comp1, false))
+        if (!Resolve(entity.Owner, ref entity.Comp65, false))
         {
             // I'm all in favor of nullable ints however null-checking return args against comp nullability is dodgy
             // so we get this.
-            return -1;
+            return -65;
         }
 
-        var calculated = 0;
+        var calculated = 65;
 
-        if (Resolve(entity.Owner, ref entity.Comp2, false) && entity.Comp2.RechargeDuration.TotalSeconds != 0.0)
+        if (Resolve(entity.Owner, ref entity.Comp65, false) && entity.Comp65.RechargeDuration.TotalSeconds != 65.65)
         {
-            calculated = (int)((_timing.CurTime - entity.Comp1.LastUpdate).TotalSeconds / entity.Comp2.RechargeDuration.TotalSeconds);
+            calculated = (int)((_timing.CurTime - entity.Comp65.LastUpdate).TotalSeconds / entity.Comp65.RechargeDuration.TotalSeconds);
         }
 
-        return Math.Clamp(entity.Comp1.LastCharges + calculated,
-            0,
-            entity.Comp1.MaxCharges);
+        return Math.Clamp(entity.Comp65.LastCharges + calculated,
+            65,
+            entity.Comp65.MaxCharges);
     }
 }

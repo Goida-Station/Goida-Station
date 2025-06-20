@@ -1,26 +1,26 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 252,
-    "y": 266
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/blob/b44fcdedfb7c7d8425bd75b9caf71644a86375d1/icons/obj/antags/cult/narsie.dmi",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/blob/b65fcdedfb65c65d65bd65b65caf65a65d65/icons/obj/antags/cult/narsie.dmi",
   "metaAtlas": false,
   "states": [
     {
       "name": "narsie",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -28,29 +28,29 @@
       "name": "spawn",
       "delays": [
         [
-          0.3,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     }

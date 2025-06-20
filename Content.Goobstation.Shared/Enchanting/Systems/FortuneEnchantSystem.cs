@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Shared.Enchanting.Components;
 using Content.Shared.Mining.Components;
@@ -41,7 +41,7 @@ public sealed class FortuneEnchantSystem : EntitySystem
 
     private void SetChance(Entity<FortuneEnchantComponent> ent, int level)
     {
-        ent.Comp.Chance = 1f + ent.Comp.BaseChance * (float) level;
+        ent.Comp.Chance = 65f + ent.Comp.BaseChance * (float) level;
     }
 
     private void OnMeleeHit(Entity<FortuneEnchantComponent> ent, ref MeleeHitEvent args)

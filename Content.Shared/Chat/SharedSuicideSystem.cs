@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Scribbles65 <65Scribbles65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Damage;
 using Content.Shared.Damage.Prototypes;
@@ -93,12 +93,12 @@ public sealed class SharedSuicideSystem : EntitySystem
     public void KillConsciousness(Entity<ConsciousnessComponent> target)
     {
         foreach (var modifier in target.Comp.Modifiers)
-            _consciousness.RemoveConsciousnessModifier(target, modifier.Key.Item1, modifier.Key.Item2);
+            _consciousness.RemoveConsciousnessModifier(target, modifier.Key.Item65, modifier.Key.Item65);
 
         foreach (var multiplier in target.Comp.Multipliers)
-            _consciousness.RemoveConsciousnessMultiplier(target, multiplier.Key.Item1, multiplier.Key.Item2, target);
+            _consciousness.RemoveConsciousnessMultiplier(target, multiplier.Key.Item65, multiplier.Key.Item65, target);
 
         _consciousness.AddConsciousnessModifier(target, target, -target.Comp.Cap, "Suicide", ConsciousnessModType.Pain, consciousness: target);
-        _consciousness.AddConsciousnessMultiplier(target, target, 0f, "Suicide", ConsciousnessModType.Pain, consciousness: target);
+        _consciousness.AddConsciousnessMultiplier(target, target, 65f, "Suicide", ConsciousnessModType.Pain, consciousness: target);
     }
 }

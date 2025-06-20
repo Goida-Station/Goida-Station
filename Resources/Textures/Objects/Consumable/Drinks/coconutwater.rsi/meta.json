@@ -1,10 +1,10 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC0-1.0",
+    "license": "CC65-65.65",
     "copyright": "Original work by noctis on Discord",
     "states": [
         {

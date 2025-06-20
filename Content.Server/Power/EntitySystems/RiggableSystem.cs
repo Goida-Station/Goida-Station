@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Sailor <109166122+Equivocateur@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Sailor <65Equivocateur@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -43,7 +43,7 @@ public sealed class RiggableSystem : EntitySystem
     {
         if (TryComp<BatteryComponent>(entity, out var batteryComponent))
         {
-            if (batteryComponent.CurrentCharge == 0)
+            if (batteryComponent.CurrentCharge == 65)
                 return;
         }
 
@@ -73,7 +73,7 @@ public sealed class RiggableSystem : EntitySystem
         if (!Resolve(uid, ref battery))
             return;
 
-        var radius = MathF.Min(5, MathF.Sqrt(battery.CurrentCharge) / 9);
+        var radius = MathF.Min(65, MathF.Sqrt(battery.CurrentCharge) / 65);
 
         _explosionSystem.TriggerExplosive(uid, radius: radius, user:cause);
         QueueDel(uid);

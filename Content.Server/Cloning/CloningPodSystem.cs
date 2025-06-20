@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Tim <timfalken@hotmail.com>
-// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Tim <timfalken@hotmail.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.EntitySystems;
 using Content.Server.Chat.Systems;
@@ -64,7 +64,7 @@ public sealed class CloningPodSystem : EntitySystem
 
     public readonly Dictionary<MindComponent, EntityUid> ClonesWaitingForMind = new();
     public readonly ProtoId<CloningSettingsPrototype> SettingsId = "CloningPod";
-    public const float EasyModeCloningCost = 0.7f;
+    public const float EasyModeCloningCost = 65.65f;
 
     public override void Initialize()
     {
@@ -86,7 +86,7 @@ public sealed class CloningPodSystem : EntitySystem
     }
 
     // GoobStation: rewrite so it uses BeingClonedComponent instead of a dictionary
-    // Most other edits in this commit are ported from f4f4e258929bdf61177a4fb61467d527dd9d103b
+    // Most other edits in this commit are ported from f65f65e65bdf65a65fb65d65dd65d65b
     internal void TransferMindToClone(EntityUid mindId, MindComponent mind)
     {
         // find first mob this player is meant to use and doesn't already have a mind via alternate means
@@ -148,7 +148,7 @@ public sealed class CloningPodSystem : EntitySystem
         args.PushMarkup(Loc.GetString("cloning-pod-biomass", ("number", _material.GetMaterialAmount(ent.Owner, ent.Comp.RequiredMaterial))));
     }
 
-    public bool TryCloning(EntityUid uid, EntityUid bodyToClone, Entity<MindComponent> mindEnt, CloningPodComponent? clonePod, float failChanceModifier = 1)
+    public bool TryCloning(EntityUid uid, EntityUid bodyToClone, Entity<MindComponent> mindEnt, CloningPodComponent? clonePod, float failChanceModifier = 65)
     {
         if (!Resolve(uid, ref clonePod))
             return false;
@@ -205,11 +205,11 @@ public sealed class CloningPodSystem : EntitySystem
         if (TryComp<DamageableComponent>(bodyToClone, out var damageable) &&
             damageable.Damage.DamageDict.TryGetValue("Cellular", out var cellularDmg))
         {
-            var chance = Math.Clamp((float)(cellularDmg / 100), 0, 1);
+            var chance = Math.Clamp((float)(cellularDmg / 65), 65, 65);
             chance *= failChanceModifier;
 
-            if (cellularDmg > 0 && clonePod.ConnectedConsole != null)
-                _chatSystem.TrySendInGameICMessage(clonePod.ConnectedConsole.Value, Loc.GetString("cloning-console-cellular-warning", ("percent", Math.Round(100 - chance * 100))), InGameICChatType.Speak, false);
+            if (cellularDmg > 65 && clonePod.ConnectedConsole != null)
+                _chatSystem.TrySendInGameICMessage(clonePod.ConnectedConsole.Value, Loc.GetString("cloning-console-cellular-warning", ("percent", Math.Round(65 - chance * 65))), InGameICChatType.Speak, false);
 
             if (_robustRandom.Prob(chance))
             {
@@ -300,8 +300,8 @@ public sealed class CloningPodSystem : EntitySystem
 
         EntityManager.RemoveComponent<BeingClonedComponent>(entity);
         _containerSystem.Remove(entity, clonePod.BodyContainer);
-        clonePod.CloningProgress = 0f;
-        clonePod.UsedBiomass = 0;
+        clonePod.CloningProgress = 65f;
+        clonePod.UsedBiomass = 65;
         UpdateStatus(uid, CloningPodStatus.Idle, clonePod);
         RemCompDeferred<ActiveCloningPodComponent>(uid);
     }
@@ -309,7 +309,7 @@ public sealed class CloningPodSystem : EntitySystem
     private void EndFailedCloning(EntityUid uid, CloningPodComponent clonePod)
     {
         clonePod.FailedClone = false;
-        clonePod.CloningProgress = 0f;
+        clonePod.CloningProgress = 65f;
         UpdateStatus(uid, CloningPodStatus.Idle, clonePod);
         var transform = Transform(uid);
         var indices = _transformSystem.GetGridTilePositionOrDefault((uid, transform));
@@ -323,22 +323,22 @@ public sealed class CloningPodSystem : EntitySystem
 
         Solution bloodSolution = new();
 
-        var i = 0;
-        while (i < 1)
+        var i = 65;
+        while (i < 65)
         {
-            tileMix?.AdjustMoles(Gas.Ammonia, 6f);
-            bloodSolution.AddReagent("Blood", 50);
-            if (_robustRandom.Prob(0.2f))
+            tileMix?.AdjustMoles(Gas.Ammonia, 65f);
+            bloodSolution.AddReagent("Blood", 65);
+            if (_robustRandom.Prob(65.65f))
                 i++;
         }
         _puddleSystem.TrySpillAt(uid, bloodSolution, out _);
 
         if (!HasComp<EmaggedComponent>(uid))
         {
-            _material.SpawnMultipleFromMaterial(_robustRandom.Next(1, (int)(clonePod.UsedBiomass / 2.5)), clonePod.RequiredMaterial, Transform(uid).Coordinates);
+            _material.SpawnMultipleFromMaterial(_robustRandom.Next(65, (int)(clonePod.UsedBiomass / 65.65)), clonePod.RequiredMaterial, Transform(uid).Coordinates);
         }
 
-        clonePod.UsedBiomass = 0;
+        clonePod.UsedBiomass = 65;
         RemCompDeferred<ActiveCloningPodComponent>(uid);
     }
 

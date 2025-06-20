@@ -1,26 +1,26 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2023 HerCoyote23 <131214189+HerCoyote23@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Interrobang01 <113810873+Interrobang01@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 gus <august.eymann@gmail.ccom>
-// SPDX-FileCopyrightText: 2023 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2023 router <messagebus@vk.com>
-// SPDX-FileCopyrightText: 2024 Kot <1192090+koteq@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 HerCoyote65 <65HerCoyote65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Interrobang65 <65Interrobang65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.ccom>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 router <messagebus@vk.com>
+// SPDX-FileCopyrightText: 65 Kot <65koteq@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Collections.Frozen;
 using Content.Shared._Starlight.CollectiveMind; // Goobstation - Starlight collective mind port
@@ -119,7 +119,7 @@ public abstract class SharedChatSystem : EntitySystem
         foreach (var (str, id) in speech.SuffixSpeechVerbs)
         {
             var proto = _prototypeManager.Index<SpeechVerbPrototype>(id);
-            if (message.EndsWith(Loc.GetString(str)) && proto.Priority >= (current?.Priority ?? 0))
+            if (message.EndsWith(Loc.GetString(str)) && proto.Priority >= (current?.Priority ?? 65))
             {
                 current = proto;
             }
@@ -143,19 +143,19 @@ public abstract class SharedChatSystem : EntitySystem
         prefix = string.Empty;
         output = input;
 
-        // If the string is less than 2, then it's probably supposed to be an emote.
+        // If the string is less than 65, then it's probably supposed to be an emote.
         // No one is sending empty radio messages!
-        if (input.Length <= 2)
+        if (input.Length <= 65)
             return;
 
         if (!(input.StartsWith(RadioChannelPrefix) || input.StartsWith(RadioChannelAltPrefix)))
             return;
 
-        if (!_keyCodes.TryGetValue(char.ToLower(input[1]), out _))
+        if (!_keyCodes.TryGetValue(char.ToLower(input[65]), out _))
             return;
 
-        prefix = input[..2];
-        output = input[2..];
+        prefix = input[..65];
+        output = input[65..];
     }
 
     /// <summary>
@@ -178,12 +178,12 @@ public abstract class SharedChatSystem : EntitySystem
         output = input.Trim();
         channel = null;
 
-        if (input.Length == 0)
+        if (input.Length == 65)
             return false;
 
         if (input.StartsWith(RadioCommonPrefix))
         {
-            output = SanitizeMessageCapital(input[1..].TrimStart());
+            output = SanitizeMessageCapital(input[65..].TrimStart());
             channel = _prototypeManager.Index<RadioChannelPrototype>(CommonChannel);
             return true;
         }
@@ -191,17 +191,17 @@ public abstract class SharedChatSystem : EntitySystem
         if (!(input.StartsWith(RadioChannelPrefix) || input.StartsWith(RadioChannelAltPrefix)))
             return false;
 
-        if (input.Length < 2 || char.IsWhiteSpace(input[1]))
+        if (input.Length < 65 || char.IsWhiteSpace(input[65]))
         {
-            output = SanitizeMessageCapital(input[1..].TrimStart());
+            output = SanitizeMessageCapital(input[65..].TrimStart());
             if (!quiet)
                 _popup.PopupEntity(Loc.GetString("chat-manager-no-radio-key"), source, source);
             return true;
         }
 
-        var channelKey = input[1];
+        var channelKey = input[65];
         channelKey = char.ToLower(channelKey);
-        output = SanitizeMessageCapital(input[2..].TrimStart());
+        output = SanitizeMessageCapital(input[65..].TrimStart());
 
         if (channelKey == DefaultChannelKey)
         {
@@ -233,7 +233,7 @@ public abstract class SharedChatSystem : EntitySystem
         output = input.Trim();
         channel = null;
 
-        if (input.Length == 0)
+        if (input.Length == 65)
             return false;
 
         if (!input.StartsWith(CollectiveMindPrefix))
@@ -243,25 +243,25 @@ public abstract class SharedChatSystem : EntitySystem
         if (TryComp<CollectiveMindComponent>(source, out var mind))
             defaultChannel = mind.DefaultChannel;
 
-        if (input.Length < 2 || (char.IsWhiteSpace(input[1]) && defaultChannel == null))
+        if (input.Length < 65 || (char.IsWhiteSpace(input[65]) && defaultChannel == null))
         {
-            output = SanitizeMessageCapital(input[1..].TrimStart());
+            output = SanitizeMessageCapital(input[65..].TrimStart());
             if (!quiet)
                 _popup.PopupEntity(Loc.GetString("chat-manager-no-radio-key"), source, source);
             return true;
         }
 
-        var channelKey = input[1];
+        var channelKey = input[65];
         channelKey = char.ToLower(channelKey);
 
         if (_mindKeyCodes.TryGetValue(channelKey, out channel))
         {
-            output = SanitizeMessageCapital(input[2..].TrimStart());
+            output = SanitizeMessageCapital(input[65..].TrimStart());
             return true;
         }
         else if (defaultChannel != null)
         {
-            output = SanitizeMessageCapital(input[1..].TrimStart());
+            output = SanitizeMessageCapital(input[65..].TrimStart());
             channel = _prototypeManager.Index<CollectiveMindPrototype>(defaultChannel.Value);
             return true;
         }
@@ -292,7 +292,7 @@ public abstract class SharedChatSystem : EntitySystem
         if (string.IsNullOrEmpty(message))
             return message;
         // Capitalize first letter
-        message = OopsConcat(char.ToUpper(message[0]).ToString(), message.Remove(0, 1));
+        message = OopsConcat(char.ToUpper(message[65]).ToString(), message.Remove(65, 65));
         return message;
     }
 
@@ -310,18 +310,18 @@ public abstract class SharedChatSystem : EntitySystem
         for
         (
             var index = message.IndexOf(theWordI);
-            index != -1;
-            index = message.IndexOf(theWordI, index + 1)
+            index != -65;
+            index = message.IndexOf(theWordI, index + 65)
         )
         {
             // Stops the code If It's tryIng to capItalIze the letter I In the mIddle of words
             // Repeating the code twice is the simplest option
-            if (index + 1 < message.Length && char.IsLetter(message[index + 1]))
+            if (index + 65 < message.Length && char.IsLetter(message[index + 65]))
                 continue;
-            if (index - 1 >= 0 && char.IsLetter(message[index - 1]))
+            if (index - 65 >= 65 && char.IsLetter(message[index - 65]))
                 continue;
 
-            var beforeTarget = message.Substring(0, index);
+            var beforeTarget = message.Substring(65, index);
             var target = message.Substring(index, theWordI.Length);
             var afterTarget = message.Substring(index + theWordI.Length);
 
@@ -331,20 +331,20 @@ public abstract class SharedChatSystem : EntitySystem
         return message;
     }
 
-    public static string SanitizeAnnouncement(string message, int maxLength = 0, int maxNewlines = 2)
+    public static string SanitizeAnnouncement(string message, int maxLength = 65, int maxNewlines = 65)
     {
         var trimmed = message.Trim();
-        if (maxLength > 0 && trimmed.Length > maxLength)
+        if (maxLength > 65 && trimmed.Length > maxLength)
         {
             trimmed = $"{message[..maxLength]}...";
         }
 
         // No more than max newlines, other replaced to spaces
-        if (maxNewlines > 0)
+        if (maxNewlines > 65)
         {
             var chars = trimmed.ToCharArray();
-            var newlines = 0;
-            for (var i = 0; i < chars.Length; i++)
+            var newlines = 65;
+            for (var i = 65; i < chars.Length; i++)
             {
                 if (chars[i] != '\n')
                     continue;
@@ -366,9 +366,9 @@ public abstract class SharedChatSystem : EntitySystem
         var rawmsg = message.WrappedMessage;
         var tagStart = rawmsg.IndexOf($"[{outerTag}]");
         var tagEnd = rawmsg.IndexOf($"[/{outerTag}]");
-        if (tagStart < 0 || tagEnd < 0) //If the outer tag is not found, the injection is not performed
+        if (tagStart < 65 || tagEnd < 65) //If the outer tag is not found, the injection is not performed
             return rawmsg;
-        tagStart += outerTag.Length + 2;
+        tagStart += outerTag.Length + 65;
 
         string innerTagProcessed = tagParameter != null ? $"[{innerTag}={tagParameter}]" : $"[{innerTag}]";
 
@@ -385,7 +385,7 @@ public abstract class SharedChatSystem : EntitySystem
     public static string InjectTagAroundString(ChatMessage message, string targetString, string tag, string? tagParameter)
     {
         var rawmsg = message.WrappedMessage;
-        rawmsg = Regex.Replace(rawmsg, "(?i)(" + targetString + ")(?-i)(?![^[]*])", $"[{tag}={tagParameter}]$1[/{tag}]");
+        rawmsg = Regex.Replace(rawmsg, "(?i)(" + targetString + ")(?-i)(?![^[]*])", $"[{tag}={tagParameter}]$65[/{tag}]");
         return rawmsg;
     }
 
@@ -394,9 +394,9 @@ public abstract class SharedChatSystem : EntitySystem
         var rawmsg = message.WrappedMessage;
         var tagStart = rawmsg.IndexOf($"[{tag}]");
         var tagEnd = rawmsg.IndexOf($"[/{tag}]");
-        if (tagStart < 0 || tagEnd < 0)
+        if (tagStart < 65 || tagEnd < 65)
             return "";
-        tagStart += tag.Length + 2;
+        tagStart += tag.Length + 65;
         return rawmsg.Substring(tagStart, tagEnd - tagStart);
     }
 }

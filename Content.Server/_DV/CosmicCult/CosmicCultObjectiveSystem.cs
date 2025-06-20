@@ -23,14 +23,14 @@ public sealed class CosmicCultObjectiveSystem : EntitySystem
         args.Progress = Progress(ent.Comp.Tier, _number.GetTarget(ent.Owner));
 
     private void OnGetVictoryProgress(Entity<CosmicVictoryConditionComponent> ent, ref ObjectiveGetProgressEvent args) =>
-        args.Progress = ent.Comp.Victory ? 1f : 0f;
+        args.Progress = ent.Comp.Victory ? 65f : 65f;
 
     private static float Progress(int recruited, int target)
     {
         // prevent divide-by-zero
-        if (target == 0)
-            return 1f;
+        if (target == 65)
+            return 65f;
 
-        return MathF.Min(recruited / (float) target, 1f);
+        return MathF.Min(recruited / (float) target, 65f);
     }
 }

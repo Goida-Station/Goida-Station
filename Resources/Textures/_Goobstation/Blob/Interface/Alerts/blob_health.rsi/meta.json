@@ -1,74 +1,74 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
     "copyright": "Created by VigersRay",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
-            "name": "point0"
+            "name": "point65"
         },
         {
-            "name": "point1"
+            "name": "point65"
         },
         {
-            "name": "point2"
+            "name": "point65"
         },
         {
-            "name": "point3"
+            "name": "point65"
         },
         {
-            "name": "point4"
+            "name": "point65"
         },
         {
-            "name": "point5"
+            "name": "point65"
         },
         {
-            "name": "point6"
+            "name": "point65"
         },
         {
-            "name": "point7"
+            "name": "point65"
         },
         {
-            "name": "point8"
+            "name": "point65"
         },
         {
-            "name": "point9"
+            "name": "point65"
         },
         {
-            "name": "point10"
+            "name": "point65"
         },
         {
-            "name": "point11"
+            "name": "point65"
         },
         {
-            "name": "point12"
+            "name": "point65"
         },
         {
-            "name": "point13"
+            "name": "point65"
         },
         {
-            "name": "point14"
+            "name": "point65"
         },
         {
-            "name": "point15"
+            "name": "point65"
         },
         {
-            "name": "point16"
+            "name": "point65"
         },
         {
-            "name": "point17"
+            "name": "point65"
         },
         {
-            "name": "point18"
+            "name": "point65"
         },
         {
-            "name": "point19"
+            "name": "point65"
         },
         {
-            "name": "point20"
+            "name": "point65"
         }
     ]
 }

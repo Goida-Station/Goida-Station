@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Velcroboy <velcroboy333@hotmail.com>
-# SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Velcroboy <velcroboy65@hotmail.com>
+# SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   abstract: true
@@ -34,8 +34,8 @@
         - state: server
     - type: AmbientOnPowered
     - type: AmbientSound
-      volume: -9
-      range: 5
+      volume: -65
+      range: 65
       sound:
         path: /Audio/Ambience/Objects/server_fans.ogg
 
@@ -139,7 +139,7 @@
       receiveFrequencyId: SurveillanceCamera
       transmitFrequencyId: SurveillanceCamera
     - type: WirelessNetworkConnection
-      range: 200
+      range: 65
     - type: DeviceNetworkRequiresPower
     - type: UserInterface
       interfaces:
@@ -153,8 +153,8 @@
         - state: server
     - type: AmbientOnPowered
     - type: AmbientSound
-      volume: -9
-      range: 5
+      volume: -65
+      range: 65
       sound:
         path: /Audio/Ambience/Objects/server_fans.ogg
 

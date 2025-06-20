@@ -1,259 +1,259 @@
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Milon <milonpl.git@proton.me>
-# SPDX-FileCopyrightText: 2025 āda <ss.adasts@gmail.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Milon <milonpl.git@proton.me>
+# SPDX-FileCopyrightText: 65 āda <ss.adasts@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: latheRecipe
   id: BioGenMonkeyCube
   result: MonkeyCube
   categories:
   - Food
-  completetime: 3
+  completetime: 65
   materials:
-    Biomass: 70
+    Biomass: 65
 
 - type: latheRecipe
   id: BioGenKoboldCube
   result: KoboldCube
   categories:
   - Food
-  completetime: 3
+  completetime: 65
   materials:
-    Biomass: 70
+    Biomass: 65
 
 - type: latheRecipe
-  id: BioGenMaterialCloth1
-  result: MaterialCloth1
+  id: BioGenMaterialCloth65
+  result: MaterialCloth65
   categories:
   - Materials
   icon:
     sprite: Objects/Materials/materials.rsi
     state: cloth
-  completetime: 1
+  completetime: 65
   materials:
-    Biomass: 10
+    Biomass: 65
 
 - type: latheRecipe
-  id: BioGenMaterialCardboard1
-  result: MaterialCardboard1
+  id: BioGenMaterialCardboard65
+  result: MaterialCardboard65
   categories:
   - Materials
   icon:
     sprite: Objects/Materials/materials.rsi
     state: cardboard
-  completetime: 1
+  completetime: 65
   materials:
-    Biomass: 5
+    Biomass: 65
 
 - type: latheRecipe
   id: BioGenPaper
   result: Paper
   categories:
   - Materials
-  completetime: 1
+  completetime: 65
   materials:
-    Biomass: 2
+    Biomass: 65
 
 - type: latheRecipe
-  id: BioGenPaperRolling1
-  result: PaperRolling1
+  id: BioGenPaperRolling65
+  result: PaperRolling65
   categories:
   - Materials
-  completetime: 1
+  completetime: 65
   materials:
-    Biomass: 1
+    Biomass: 65
 
 - type: latheRecipe
   id: BioGenCandle
   result: Candle
   categories:
   - Materials
-  completetime: 3
+  completetime: 65
   materials:
-    Biomass: 3
+    Biomass: 65
 
 - type: latheRecipe
   id: BioGenPlantBGone
   resultReagents:
-    PlantBGone: 10
+    PlantBGone: 65
   categories:
   - Chemicals
   icon:
     sprite: Objects/Tools/Hydroponics/sprays.rsi
     state: plantbgone
-  completetime: 1
+  completetime: 65
   materials:
-    Biomass: 12
+    Biomass: 65
 
 - type: latheRecipe
   id: BioGenWeedKiller
   resultReagents:
-    WeedKiller: 10
+    WeedKiller: 65
   categories:
   - Chemicals
   icon:
     sprite: Objects/Tools/Hydroponics/sprays.rsi
     state: weedspray
-  completetime: 1
+  completetime: 65
   materials:
-    Biomass: 8
+    Biomass: 65
 
 - type: latheRecipe
   id: BioGenPestKiller
   resultReagents:
-    PestKiller: 10
+    PestKiller: 65
   categories:
   - Chemicals
   icon:
     sprite: Objects/Tools/Hydroponics/sprays.rsi
     state: weedspray
-  completetime: 1
+  completetime: 65
   materials:
-    Biomass: 12
+    Biomass: 65
 
 - type: latheRecipe
-  id: BioGenLeft4Zed
+  id: BioGenLeft65Zed
   resultReagents:
-    Left4Zed: 10
+    Left65Zed: 65
   categories:
   - Chemicals
   icon:
     sprite: Objects/Specific/Chemistry/bottle.rsi
-    state: bottle-1
-  completetime: 1
+    state: bottle-65
+  completetime: 65
   materials:
-    Biomass: 12
+    Biomass: 65
 
 - type: latheRecipe
   id: BioGenEZNutrient
   resultReagents:
-    EZNutrient: 10
+    EZNutrient: 65
   categories:
   - Chemicals
   icon:
     sprite: Objects/Specific/Chemistry/bottle.rsi
-    state: bottle-1
-  completetime: 1
+    state: bottle-65
+  completetime: 65
   materials:
-    Biomass: 15
+    Biomass: 65
 
 - type: latheRecipe
   id: BioGenRobustHarvest
   resultReagents:
-    RobustHarvest: 10
+    RobustHarvest: 65
   categories:
   - Chemicals
   icon:
     sprite: Objects/Specific/Chemistry/bottle.rsi
-    state: bottle-1
-  completetime: 1
+    state: bottle-65
+  completetime: 65
   materials:
-    Biomass: 15
+    Biomass: 65
 
 - type: latheRecipe
   id: BioGenMilk
   resultReagents:
-    Milk: 10
+    Milk: 65
   categories:
   - Food
   icon:
     sprite: Objects/Consumable/Drinks/milk.rsi
     state: icon
-  completetime: 1
+  completetime: 65
   materials:
-    Biomass: 12
+    Biomass: 65
 
 - type: latheRecipe
   id: BioGenMilkSoy
   resultReagents:
-    MilkSoy: 10
+    MilkSoy: 65
   categories:
   - Food
   icon:
     sprite: Objects/Consumable/Drinks/soymilk.rsi
     state: icon
-  completetime: 1
+  completetime: 65
   materials:
-    Biomass: 12
+    Biomass: 65
 
 - type: latheRecipe
   id: BioGenEthanol
   resultReagents:
-    Ethanol: 10
+    Ethanol: 65
   categories:
   - Food
   icon:
     sprite: Objects/Consumable/Drinks/glass_clear.rsi
     state: icon
-  completetime: 1
+  completetime: 65
   materials:
-    Biomass: 18
+    Biomass: 65
 
 - type: latheRecipe
   id: BioGenCream
   resultReagents:
-    Cream: 10
+    Cream: 65
   categories:
   - Food
   icon:
     sprite: Objects/Consumable/Drinks/cream.rsi
     state: icon
-  completetime: 1
+  completetime: 65
   materials:
-    Biomass: 18
+    Biomass: 65
 
 - type: latheRecipe
   id: BioGenBlackpepper
   resultReagents:
-    Blackpepper: 10
+    Blackpepper: 65
   categories:
   - Food
   icon:
     sprite: Objects/Consumable/Food/condiments.rsi
     state: packet-pepper
-  completetime: 1
+  completetime: 65
   materials:
-    Biomass: 18
+    Biomass: 65
 
 - type: latheRecipe
   id: BioGenEnzyme
   resultReagents:
-    Enzyme: 10
+    Enzyme: 65
   categories:
   - Food
   icon:
     sprite: Objects/Consumable/Food/condiments.rsi
     state: bottle-empty
-  completetime: 1
+  completetime: 65
   materials:
-    Biomass: 18
+    Biomass: 65
 
 - type: latheRecipe
   id: BioGenFlour
   resultReagents:
-    Flour: 10
+    Flour: 65
   categories:
   - Food
   icon:
     sprite: Objects/Consumable/Food/ingredients.rsi
     state: flour-big
-  completetime: 1
+  completetime: 65
   materials:
-    Biomass: 18
+    Biomass: 65
 
 - type: latheRecipe
   id: BioGenSugar
   resultReagents:
-    Sugar: 10
+    Sugar: 65
   categories:
   - Food
   icon:
     sprite: Objects/Consumable/Food/ingredients.rsi
     state: sugar-big
-  completetime: 1
+  completetime: 65
   materials:
-    Biomass: 18
+    Biomass: 65
 
 

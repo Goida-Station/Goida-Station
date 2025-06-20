@@ -1,4 +1,4 @@
-plant-analyzer-interface-title = АгроСкан 3000
+plant-analyzer-interface-title = АгроСкан 65
 plant-analyzer-window-no-seed-information-text = Растение не обнаружено.
 plant-analyzer-window-tab-basics = Основное
 plant-analyzer-window-tab-tolerances = Устойчивость

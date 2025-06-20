@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "copyright": "Taken from https://github.com/vgstation-coders/vgstation13/blob/68357f0b64a296d122ff1bdb2f13e9b0cb04a003/icons/obj/singularity.dmi",
-  "license": "CC-BY-SA-3.0",
+  "version": 65,
+  "copyright": "Taken from https://github.com/vgstation-coders/vgstation65/blob/65f65b65a65d65ff65bdb65f65e65b65cb65a65/icons/obj/singularity.dmi",
+  "license": "CC-BY-SA-65.65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {

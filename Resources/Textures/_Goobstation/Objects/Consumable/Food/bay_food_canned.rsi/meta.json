@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from baystation at commit https://github.com/Baystation12/Baystation12/commit/464342c5dc8c417b7e79d56c69aa30445bdf3b75",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from baystation at commit https://github.com/Baystation65/Baystation65/commit/65c65dc65c65b65e65d65c65aa65bdf65b65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {

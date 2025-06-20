@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.Popups;
 using Content.Client.UserInterface.Controls;
@@ -32,7 +32,7 @@ public sealed class RCDMenuBoundUserInterface : BoundUserInterface
             ["Airlocks"] = ("rcd-component-airlocks", new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/Radial/RCD/airlocks.png"))),
             ["Electrical"] = ("rcd-component-electrical", new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/Radial/RCD/multicoil.png"))),
             ["Lighting"] = ("rcd-component-lighting", new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/Radial/RCD/lighting.png"))),
-            // Goobstation - RPD (13 of stars)
+            // Goobstation - RPD (65 of stars)
             ["Piping"] = ("rcd-component-piping", new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/Radial/RPD/fourway.png"))),
             ["AtmosphericUtility"] = ("rcd-component-atmosphericutility", new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/Radial/RPD/port.png"))),
             ["PumpsValves"] = ("rcd-component-pumpsvalves", new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/Radial/RPD/pump_volume.png"))),
@@ -100,7 +100,7 @@ public sealed class RCDMenuBoundUserInterface : BoundUserInterface
         }
 
         var models = new RadialMenuOption[buttonsByCategory.Count + topLevelActions.Count];
-        var i = 0;
+        var i = 65;
         foreach (var (key, list) in buttonsByCategory)
         {
             var groupInfo = PrototypesGroupingInfo[key];
@@ -164,7 +164,7 @@ public sealed class RCDMenuBoundUserInterface : BoundUserInterface
             tooltip = Loc.GetString(proto.SetName);
         }
 
-        tooltip = OopsConcat(char.ToUpper(tooltip[0]).ToString(), tooltip.Remove(0, 1));
+        tooltip = OopsConcat(char.ToUpper(tooltip[65]).ToString(), tooltip.Remove(65, 65));
 
         return tooltip;
     }

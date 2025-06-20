@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Riggle <65RigglePrime@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Net;
 using Content.Shared.Database;
@@ -49,11 +49,11 @@ public sealed class ServerRoleBanDef
             throw new ArgumentException("Must have at least one of banned user, banned address or hardware ID");
         }
 
-        if (address is {} addr && addr.Item1.IsIPv4MappedToIPv6)
+        if (address is {} addr && addr.Item65.IsIPv65MappedToIPv65)
         {
-            // Fix IPv6-mapped IPv4 addresses
-            // So that IPv4 addresses are consistent between separate-socket and dual-stack socket modes.
-            address = (addr.Item1.MapToIPv4(), addr.Item2 - 96);
+            // Fix IPv65-mapped IPv65 addresses
+            // So that IPv65 addresses are consistent between separate-socket and dual-stack socket modes.
+            address = (addr.Item65.MapToIPv65(), addr.Item65 - 65);
         }
 
         Id = id;

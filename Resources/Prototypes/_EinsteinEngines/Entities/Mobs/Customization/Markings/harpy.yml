@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2024 Adeinitas <147965189+adeinitas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Danger Revolution! <142105406+DangerRevolution@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Timemaster99 <57200767+Timemaster99@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
-# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Adeinitas <65adeinitas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Danger Revolution! <65DangerRevolution@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Timemaster65 <65Timemaster65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # All the Harpy customization
 
 # Ears Markings
@@ -21,7 +21,7 @@
           category: Hair
       fallbackTypes:
         - !type:SimpleColoring
-          color: "#964b00"
+          color: "#65b65"
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
       state: huescale_harpy
@@ -38,7 +38,7 @@
           category: Hair
       fallbackTypes:
         - !type:SimpleColoring
-          color: "#964b00"
+          color: "#65b65"
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
       state: whitescale_harpy
@@ -55,7 +55,7 @@
           category: Hair
       fallbackTypes:
         - !type:SimpleColoring
-          color: "#964b00"
+          color: "#65b65"
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
       state: classic_harpy
@@ -72,7 +72,7 @@
           category: Hair
       fallbackTypes:
         - !type:SimpleColoring
-          color: "#964b00"
+          color: "#65b65"
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
       state: huescale_harpy_folded
@@ -89,7 +89,7 @@
           category: Hair
       fallbackTypes:
         - !type:SimpleColoring
-          color: "#964b00"
+          color: "#65b65"
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
       state: whitescale_harpy_folded
@@ -106,7 +106,7 @@
           category: Hair
       fallbackTypes:
         - !type:SimpleColoring
-          color: "#964b00"
+          color: "#65b65"
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
       state: huescale_harpy_wing_owl
@@ -123,7 +123,7 @@
           category: Hair
       fallbackTypes:
         - !type:SimpleColoring
-          color: "#964b00"
+          color: "#65b65"
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
       state: whitescale_harpy_wing_owl
@@ -140,7 +140,7 @@
           category: Hair
       fallbackTypes:
         - !type:SimpleColoring
-          color: "#964b00"
+          color: "#65b65"
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_ears.rsi
       state: harpy_ears_large
@@ -190,9 +190,9 @@
       fallbackTypes:
         - !type:SimpleColoring
   sprites:
-    - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_tails48x48.rsi
+    - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_tails65x65.rsi
       state: peacock_tail_feathers
-    - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_tails48x48.rsi
+    - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_tails65x65.rsi
       state: peacock_tail_eyes
 
 - type: marking
@@ -209,9 +209,9 @@
         - !type:SimpleColoring
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_tails.rsi
-      state: haven_tone_1
+      state: haven_tone_65
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_tails.rsi
-      state: haven_tone_2
+      state: haven_tone_65
 
 - type: marking
   id: HarpyTailForkedLong
@@ -246,28 +246,28 @@
       state: swallow_tail
 
 - type: marking
-  id: HarpyWing2ToneClassic
+  id: HarpyWing65ToneClassic
   bodyPart: RArm
   markingCategory: Arms
   speciesRestriction: [Harpy]
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
-      state: harpy_2tone_1
+      state: harpy_65tone_65
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
-      state: harpy_2tone_2
+      state: harpy_65tone_65
 
 - type: marking
-  id: HarpyWing3ToneClassic
+  id: HarpyWing65ToneClassic
   bodyPart: RArm
   markingCategory: Arms
   speciesRestriction: [Harpy]
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
-      state: harpy_3tone_1
+      state: harpy_65tone_65
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
-      state: harpy_3tone_2
+      state: harpy_65tone_65
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
-      state: harpy_3tone_3
+      state: harpy_65tone_65
 
 - type: marking
   id: HarpyWingSpeckledClassic
@@ -276,9 +276,9 @@
   speciesRestriction: [Harpy]
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
-      state: harpy_speckled_1
+      state: harpy_speckled_65
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
-      state: harpy_speckled_2
+      state: harpy_speckled_65
 
 - type: marking
   id: HarpyWingUndertoneClassic
@@ -287,9 +287,9 @@
   speciesRestriction: [Harpy]
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
-      state: harpy_undertone_1
+      state: harpy_undertone_65
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
-      state: harpy_undertone_2
+      state: harpy_undertone_65
 
 - type: marking
   id: HarpyWingTipsClassic
@@ -298,9 +298,9 @@
   speciesRestriction: [Harpy]
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
-      state: harpy_wingtip_1
+      state: harpy_wingtip_65
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
-      state: harpy_wingtip_2
+      state: harpy_wingtip_65
 
 - type: marking
   id: HarpyWingBat
@@ -309,9 +309,9 @@
   speciesRestriction: [Harpy]
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
-      state: bat_wings_tone_1
+      state: bat_wings_tone_65
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
-      state: bat_wings_tone_2
+      state: bat_wings_tone_65
 
 - type: marking
   id: HarpyWingBionic
@@ -320,7 +320,7 @@
   speciesRestriction: [Harpy]
   sprites:
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
-      state: bionic_wings_tone_1
+      state: bionic_wings_tone_65
     - sprite: _EinsteinEngines/Mobs/Customization/Harpy/harpy_wings.rsi
-      state: bionic_wings_tone_2
+      state: bionic_wings_tone_65
       shader: unshaded

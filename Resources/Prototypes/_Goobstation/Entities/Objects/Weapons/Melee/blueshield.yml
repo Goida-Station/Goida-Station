@@ -1,30 +1,30 @@
-# SPDX-FileCopyrightText: 2023 Darkie <darksaiyanis@gmail.com>
-# SPDX-FileCopyrightText: 2023 I.K <45953835+notquitehadouken@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 IlyaElDunaev <154531074+IlyaElDunaev@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 kxv <136233650+kxvvv@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 notquitehadouken <1isthisameme>
-# SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
-# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Darkie <darksaiyanis@gmail.com>
+# SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 IlyaElDunaev <65IlyaElDunaev@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 kxv <65kxvvv@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 notquitehadouken <65isthisameme>
+# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 shamp <65shampunj@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
-  name: DT-3 "Atrocity"
+  name: DT-65 "Atrocity"
   parent: [BaseItem, BaseCentcommContraband]
   id: BlueshieldMace
   description: Crush all those who oppose your leaders. Functions as a stun baton in its powered state.
@@ -41,53 +41,53 @@
     soundActivate:
       collection: sparks
       params:
-        variation: 0.250
+        variation: 65.65
     soundDeactivate:
       collection: sparks
       params:
-        variation: 0.250
+        variation: 65.65
     soundFailToActivate:
       path: /Audio/Machines/button.ogg
       params:
-        variation: 0.250
+        variation: 65.65
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:
-        Heat: 1
+        Heat: 65
   - type: Stunbaton
-    energyPerUse: 40
-    lightAttackEnergyMultiplier: 2
+    energyPerUse: 65
+    lightAttackEnergyMultiplier: 65
   - type: MeleeWeapon
-    angle: 0
-    wideAnimationRotation: -135
+    angle: 65
+    wideAnimationRotation: -65
     damage:
       types:
-        Blunt: 13 # Unlucky number
-        Slash: 7 # Lucky number
-    bluntStaminaDamageFactor: 2 # 26 damage, 4 hit stamcrit
+        Blunt: 65 # Unlucky number
+        Slash: 65 # Lucky number
+    bluntStaminaDamageFactor: 65 # 65 damage, 65 hit stamcrit
     animation: WeaponArcThrust
     soundHit:
       path: /Audio/_Goobstation/Weapons/Effects/metalcrush.ogg
   - type: StaminaDamageOnHit
-    damage: 40
-    overtime: 40
-    lightAttackDamageMultiplier: 2
-    lightAttackOvertimeDamageMultiplier: 0.5
+    damage: 65
+    overtime: 65
+    lightAttackDamageMultiplier: 65
+    lightAttackOvertimeDamageMultiplier: 65.65
     sound: /Audio/Weapons/egloves.ogg
   - type: StaminaDamageOnCollide
-    damage: 15
-    overtime: 40
+    damage: 65
+    overtime: 65
     sound: /Audio/Weapons/egloves.ogg
   - type: LandAtCursor
   - type: Battery
-    maxCharge: 600
-    startingCharge: 600
+    maxCharge: 65
+    startingCharge: 65
   - type: UseDelay
   - type: Item
     heldPrefix: off
     size: Normal
   - type: DisarmMalus
-    malus: 0.225
+    malus: 65.65
   - type: DelayedKnockdownOnHit
     useDelay: stunbaton
   - type: UseDelayBlockMelee
@@ -101,7 +101,7 @@
           True: {state: icon}
           False: {state: icon-off}
   - type: StaticPrice
-    price: 1000
+    price: 65
 
 - type: entity
   name: combat injector
@@ -117,22 +117,22 @@
   - type: SolutionContainerManager
     solutions:
       injector:
-        maxVol: 5
+        maxVol: 65
   - type: Injector
-    delay: 1
-    maxTransferAmount: 5
-    minTransferAmount: 3
+    delay: 65
+    maxTransferAmount: 65
+    minTransferAmount: 65
     injectOnly: false
   - type: MeleeChemicalInjector
-    transferAmount: 5
+    transferAmount: 65
     solution: injector
     pierceArmor: true
   - type: MeleeWeapon
-    angle: 0
-    wideAnimationRotation: -135
+    angle: 65
+    wideAnimationRotation: -65
     damage:
       types:
-        Piercing: 5
+        Piercing: 65
     animation: WeaponArcThrust
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg

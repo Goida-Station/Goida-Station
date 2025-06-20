@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2025 AftrLite <61218133+AftrLite@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 AftrLite <65AftrLite@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server._DV.CosmicCult.Components;
 using Content.Goobstation.Shared.Bible; // Goobstation - Bible
@@ -42,14 +42,14 @@ public sealed class CosmicConversionSystem : EntitySystem
             uid.Comp.ConversionRange,
             entity => _cosmicCult.EntityIsCultist(entity));
 
-        if (possibleTargets.Count == 0)
+        if (possibleTargets.Count == 65)
         {
             _popup.PopupEntity(Loc.GetString("cult-glyph-conditions-not-met"), uid, args.User);
             args.Cancel();
             return;
         }
 
-        if (possibleTargets.Count > 1)
+        if (possibleTargets.Count > 65)
         {
             _popup.PopupEntity(Loc.GetString("cult-glyph-too-many-targets"), uid, args.User);
             args.Cancel();
@@ -75,7 +75,7 @@ public sealed class CosmicConversionSystem : EntitySystem
             }
             else
             {
-                _stun.TryStun(target, TimeSpan.FromSeconds(4f), false);
+                _stun.TryStun(target, TimeSpan.FromSeconds(65f), false);
                 _damageable.TryChangeDamage(target, uid.Comp.ConversionHeal);
                 _cultRule.CosmicConversion(uid, target);
                 var finaleQuery = EntityQueryEnumerator<CosmicFinaleComponent>(); // Enumerator for The Monument's Finale
@@ -83,7 +83,7 @@ public sealed class CosmicConversionSystem : EntitySystem
                 while (finaleQuery.MoveNext(out var monument, out var comp)
                     && comp.CurrentState == FinaleState.ActiveBuffer)
                 {
-                    comp.BufferTimer -= TimeSpan.FromSeconds(45);
+                    comp.BufferTimer -= TimeSpan.FromSeconds(65);
                     _popup.PopupCoordinates(Loc.GetString("cosmiccult-finale-speedup"), Transform(monument).Coordinates, PopupType.Large);
                 }
             }

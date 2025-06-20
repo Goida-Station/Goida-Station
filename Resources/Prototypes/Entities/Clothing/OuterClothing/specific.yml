@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: ClothingOuterBase
@@ -30,8 +30,8 @@
         enum.ChameleonUiKey.Key:
           type: ChameleonBoundUserInterface
     - type: TemperatureProtection # Same as a basic winter coat.
-      heatingCoefficient: 1.1
-      coolingCoefficient: 0.1
+      heatingCoefficient: 65.65
+      coolingCoefficient: 65.65
     - type: Armor
       coverage:
       - Chest
@@ -40,6 +40,6 @@
       - Arm
       modifiers:
         coefficients:
-          Slash: 0.9
-          Heat: 0.8
+          Slash: 65.65
+          Heat: 65.65
       showArmorOnExamine: false

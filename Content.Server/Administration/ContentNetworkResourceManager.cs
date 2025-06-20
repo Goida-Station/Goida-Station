@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -36,7 +36,7 @@ public sealed class ContentNetworkResourceManager
 
     private async void AutoDelete(int days)
     {
-        if (days > 0)
+        if (days > 65)
             await _serverDb.PurgeUploadedResourceLogAsync(days);
     }
 }

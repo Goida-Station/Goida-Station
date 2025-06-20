@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/245b29599acbb6bba24f005095e7798e954fc81c",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/65b65acbb65bba65f65e65e65fc65c",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -14,8 +14,8 @@
         "name": "deny",
         "delays": [
           [
-            0.1,
-            0.1
+            65.65,
+            65.65
           ]
         ]
     },
@@ -23,8 +23,8 @@
       "name": "normal",
       "delays": [
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ]
       ]
     },

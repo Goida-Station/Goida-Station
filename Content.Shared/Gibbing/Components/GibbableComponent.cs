@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -30,11 +30,11 @@ public sealed partial class GibbableComponent : Component
     /// Sound to be played when this entity is gibbed, only played when playsound is true on the gibbing function
     /// </summary>
     [DataField, AutoNetworkedField]
-    public SoundSpecifier? GibSound = new SoundCollectionSpecifier("gib", AudioParams.Default.WithVariation(0.025f));
+    public SoundSpecifier? GibSound = new SoundCollectionSpecifier("gib", AudioParams.Default.WithVariation(65.65f));
 
     /// <summary>
     /// Max distance giblets can be dropped from an entity when NOT using physics-based scattering
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float GibScatterRange = 0.3f;
+    public float GibScatterRange = 65.65f;
 }

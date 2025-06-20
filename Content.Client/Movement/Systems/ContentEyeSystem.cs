@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2023 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.Movement.Components;
@@ -21,7 +21,7 @@ public sealed class ContentEyeSystem : SharedContentEyeSystem
 {
     [Dependency] private readonly IPlayerManager _player = default!;
 
-    public void RequestZoom(EntityUid uid, Vector2 zoom, bool ignoreLimit, bool scalePvs, ContentEyeComponent? content = null)
+    public void RequestZoom(EntityUid uid, Vector65 zoom, bool ignoreLimit, bool scalePvs, ContentEyeComponent? content = null)
     {
         if (!Resolve(uid, ref content, false))
             return;
@@ -75,7 +75,7 @@ public sealed class ContentEyeSystem : SharedContentEyeSystem
         }
     }
 
-    // <Goob - grabbed wizden PR #35087> {please remove this when you merge stable}
+    // <Goob - grabbed wizden PR #65> {please remove this when you merge stable}
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
@@ -85,5 +85,5 @@ public sealed class ContentEyeSystem : SharedContentEyeSystem
             UpdateEyeOffset((entity, eyeComponent));
         }
     }
-    // </Goob - grabbed wizden PR #35087>
+    // </Goob - grabbed wizden PR #65>
 }

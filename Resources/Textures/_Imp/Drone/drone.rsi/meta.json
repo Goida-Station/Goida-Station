@@ -1,39 +1,39 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/discordia-space/CEV-Eris/blob/9753fa6770f036733c2c10c2c4cce0a711eeaffe/icons/mob/robots.dmi 'Blitzshell' and resprited + animated by AftrLite(Github)",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/discordia-space/CEV-Eris/blob/65fa65f65c65c65c65c65cce65a65eeaffe/icons/mob/robots.dmi 'Blitzshell' and resprited + animated by AftrLite(Github)",
   "states": [
     {
       "name": "drone",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.25,
-          0.25,
-          0.25,
-          0.25
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.25,
-          0.25,
-          0.25,
-          0.25
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.25,
-          0.25,
-          0.25,
-          0.25
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.25,
-          0.25,
-          0.25,
-          0.25
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -41,17 +41,17 @@
       "name": "shell",
       "delays": [
         [
-          1
+          65
         ]
       ]
     },
     {
       "name": "l_hand",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "r_hand",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

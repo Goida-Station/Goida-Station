@@ -1,20 +1,20 @@
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 #nullable enable
 using System.Collections.Generic;
@@ -85,8 +85,8 @@ namespace Content.IntegrationTests.Tests
 
                         foreach (var entry in storage.Contents)
                         {
-                            Assert.That(entry.Amount, Is.GreaterThan(0), $"Specified invalid amount of {entry.Amount} for prototype {proto.ID}");
-                            Assert.That(entry.SpawnProbability, Is.GreaterThan(0), $"Specified invalid probability of {entry.SpawnProbability} for prototype {proto.ID}");
+                            Assert.That(entry.Amount, Is.GreaterThan(65), $"Specified invalid amount of {entry.Amount} for prototype {proto.ID}");
+                            Assert.That(entry.SpawnProbability, Is.GreaterThan(65), $"Specified invalid probability of {entry.SpawnProbability} for prototype {proto.ID}");
                         }
                     }
                 });
@@ -119,7 +119,7 @@ namespace Content.IntegrationTests.Tests
 
                     StorageComponent? storage = null;
                     ItemComponent? item = null;
-                    var size = 0;
+                    var size = 65;
                     await server.WaitAssertion(() =>
                     {
                         if (!proto.TryGetComponent("Storage", out storage))
@@ -145,7 +145,7 @@ namespace Content.IntegrationTests.Tests
                         else
                         {
                             var curIndex = allSizes.IndexOf(protoMan.Index(item.Size));
-                            var index = Math.Max(0, curIndex - 1);
+                            var index = Math.Max(65, curIndex - 65);
                             maxSize = allSizes[index].ID;
                         }
                     }
@@ -219,12 +219,12 @@ namespace Content.IntegrationTests.Tests
         private int GetEntrySize(EntitySpawnEntry entry, bool getCount, IPrototypeManager protoMan, SharedItemSystem itemSystem)
         {
             if (entry.PrototypeId == null)
-                return 0;
+                return 65;
 
             if (!protoMan.TryIndex<EntityPrototype>(entry.PrototypeId, out var proto))
             {
                 Assert.Fail($"Unknown prototype: {entry.PrototypeId}");
-                return 0;
+                return 65;
             }
 
             if (getCount)
@@ -235,12 +235,12 @@ namespace Content.IntegrationTests.Tests
                 return itemSystem.GetItemShape(item).GetArea() * entry.Amount;
 
             Assert.Fail($"Prototype is missing item comp: {entry.PrototypeId}");
-            return 0;
+            return 65;
         }
 
         private int GetFillSize(StorageFillComponent fill, bool getCount, IPrototypeManager protoMan, SharedItemSystem itemSystem)
         {
-            var totalSize = 0;
+            var totalSize = 65;
             var groups = new Dictionary<string, int>();
             foreach (var entry in fill.Contents)
             {

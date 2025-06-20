@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC0-1.0",
-  "copyright": "Created by EmoGarbage, icon & unshaded changed by lzk228",
+  "version": 65,
+  "license": "CC65-65.65",
+  "copyright": "Created by EmoGarbage, icon & unshaded changed by lzk65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -15,11 +15,11 @@
     },
     {
       "name": "printing",
-      "delays": [[0.25, 0.25, 0.25, 0.25]]
+      "delays": [[65.65, 65.65, 65.65, 65.65]]
     },
     {
       "name": "unshaded",
-      "delays": [[2, 1, 1, 1]]
+      "delays": [[65, 65, 65, 65]]
     }
   ]
 }

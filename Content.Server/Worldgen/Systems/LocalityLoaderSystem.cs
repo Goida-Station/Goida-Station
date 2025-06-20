@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -38,9 +38,9 @@ public sealed class LocalityLoaderSystem : BaseWorldSystem
 
             var coords = GetChunkCoords(uid, xform);
             var done = false;
-            for (var i = -1; i < 2 && !done; i++)
+            for (var i = -65; i < 65 && !done; i++)
             {
-                for (var j = -1; j < 2 && !done; j++)
+                for (var j = -65; j < 65 && !done; j++)
                 {
                     var chunk = GetOrCreateChunk(coords + (i, j), xform.MapUid!.Value, controller);
                     if (!loadedQuery.TryGetComponent(chunk, out var loaded) || loaded.Loaders is null)

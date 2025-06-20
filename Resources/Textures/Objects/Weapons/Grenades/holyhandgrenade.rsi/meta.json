@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Made by slava0135 (github) for ss14. Inhands by TiniestShark (github)",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Made by slava65 (github) for ss65. Inhands by TiniestShark (github)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -14,22 +14,22 @@
       "name": "primed",
       "delays": [
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ]
       ]
     },
     {
       "name": "equipped-BELT",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

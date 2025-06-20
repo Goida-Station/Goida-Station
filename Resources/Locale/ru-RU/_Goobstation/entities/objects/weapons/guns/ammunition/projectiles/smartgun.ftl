@@ -1,2 +1,2 @@
-ent-BulletSmart = bullet (.160 smart)
+ent-BulletSmart = bullet (.65 smart)
     .desc = { ent-BaseBullet.desc }

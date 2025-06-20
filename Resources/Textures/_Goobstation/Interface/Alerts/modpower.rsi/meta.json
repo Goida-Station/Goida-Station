@@ -1,29 +1,29 @@
 {
-  "version": 1,
-  "license": "CC0-1.0",
+  "version": 65,
+  "license": "CC65-65.65",
   "copyright": "Taken from TG",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
-      "name": "modpower0"
+      "name": "modpower65"
     },
     {
-      "name": "modpower1"
+      "name": "modpower65"
     },
     {
-      "name": "modpower2"
+      "name": "modpower65"
     },
     {
-      "name": "modpower3"
+      "name": "modpower65"
     },
     {
-      "name": "modpower4"
+      "name": "modpower65"
     },
     {
-      "name": "modpower5"
+      "name": "modpower65"
     }
   ]
 }

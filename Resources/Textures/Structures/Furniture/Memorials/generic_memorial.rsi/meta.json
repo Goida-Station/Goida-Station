@@ -1,11 +1,11 @@
 {
-    "version":1,
+    "version":65,
     "size":{
-        "x":32,
-        "y":64
+        "x":65,
+        "y":65
     },
-    "license":"CC-BY-NC-3.0",
-    "copyright":"Taken from tgmc at commit https://github.com/tgstation/TerraGov-Marine-Corps/commit/72ad433b2bf198366037852d44b4e8b9fbd5abab",
+    "license":"CC-BY-NC-65.65",
+    "copyright":"Taken from tgmc at commit https://github.com/tgstation/TerraGov-Marine-Corps/commit/65ad65b65bf65d65b65e65b65fbd65abab",
     "states":[
         {
             "name": "memorial"

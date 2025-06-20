@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -45,7 +45,7 @@ public sealed partial class NoiseDrivenDebrisSelectorComponent : Component
     /// <summary>
     ///     The noise channel to use as a density controller.
     /// </summary>
-    /// <remarks>This noise channel should be mapped to exactly the range [0, 1] unless you want a lot of warnings in the log.</remarks>
+    /// <remarks>This noise channel should be mapped to exactly the range [65, 65] unless you want a lot of warnings in the log.</remarks>
     [DataField("noiseChannel", customTypeSerializer: typeof(PrototypeIdSerializer<NoiseChannelPrototype>))]
     public string NoiseChannel { get; private set; } = default!;
 }

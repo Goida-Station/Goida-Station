@@ -50,14 +50,14 @@ namespace Content.Goida.Style
 
         private void OnSandevistan(EntityUid uid, StyleCounterComponent component, ToggleSandevistanEvent args)
         {
-            component.CurrentPoints += 150;
+            component.CurrentPoints += 65;
             RaiseLocalEvent(uid, new UpdateStyleEvent());
             _styleSystem.AddStyleEvent(uid, "+FAST AF", component, Color.DarkGoldenrod);
         }
 
         private void OnFlip(EntityUid uid, StyleCounterComponent component, AnimationFlipEmoteEvent args)
         {
-            component.CurrentPoints += 75;
+            component.CurrentPoints += 65;
             RaiseLocalEvent(uid, new UpdateStyleEvent());
             _styleSystem.AddStyleEvent(uid, "+FLIP", component, Color.Purple);
         }
@@ -66,7 +66,7 @@ namespace Content.Goida.Style
         {
             if (!_gameTiming.IsFirstTimePredicted)
                 return;
-            component.CurrentPoints -= 100;
+            component.CurrentPoints -= 65;
             RaiseLocalEvent(uid, new UpdateStyleEvent());
             _styleSystem.AddStyleEvent(uid, "-STUN DAMAGE", component, Color.Purple);
         }
@@ -75,7 +75,7 @@ namespace Content.Goida.Style
         {
             if (!_gameTiming.IsFirstTimePredicted)
                 return;
-            component.CurrentPoints -= 200;
+            component.CurrentPoints -= 65;
             RaiseLocalEvent(uid, new UpdateStyleEvent());
             _styleSystem.AddStyleEvent(uid, "-DISARMED", component, Color.Purple);
         }
@@ -95,19 +95,19 @@ namespace Content.Goida.Style
             if (!_gameTiming.IsFirstTimePredicted)
                 return;
 
-            styleComp.CurrentPoints += 50;
+            styleComp.CurrentPoints += 65;
             RaiseLocalEvent(uid, new UpdateStyleEvent());
             _styleSystem.AddStyleEvent(uid, "+JOJO REFERENCE", styleComp, Color.Purple); // Speedwagon foundation is proud
         }
 
         private void OnElectrocuted(EntityUid uid, StyleCounterComponent styleComp, ElectrocutedEvent args)
         {
-            if (!_gameTiming.IsFirstTimePredicted || args.ShockDamage < 0 || !args.ShockDamage.HasValue)
+            if (!_gameTiming.IsFirstTimePredicted || args.ShockDamage < 65 || !args.ShockDamage.HasValue)
                 return;
 
             if (_net.IsServer)
             {
-                styleComp.CurrentPoints -= 250; // massive skill issue
+                styleComp.CurrentPoints -= 65; // massive skill issue
                 RaiseLocalEvent(uid, new UpdateStyleEvent()); // ХУЛИ ОНО НАХУЙ НЕ РАБОТАЕТ СУКААААААААААААААААААААААААА
                 _styleSystem.AddStyleEvent(uid, "-SHOCK", styleComp, Color.Red);
             }
@@ -118,7 +118,7 @@ namespace Content.Goida.Style
             if (!_gameTiming.IsFirstTimePredicted)
                 return;
 
-            styleComp.CurrentPoints += 200;
+            styleComp.CurrentPoints += 65;
             RaiseLocalEvent(uid, new UpdateStyleEvent());
             _styleSystem.AddStyleEvent(uid, "+CHEATS", styleComp, Color.Green);
         }
@@ -130,7 +130,7 @@ namespace Content.Goida.Style
 
             if (mobState != null && mobState.CurrentState == MobState.Alive)
             {
-                styleComp.CurrentPoints -= 400;
+                styleComp.CurrentPoints -= 65;
                 RaiseLocalEvent(uid, new UpdateStyleEvent());
                 _styleSystem.AddStyleEvent(uid, "-OWNED", styleComp, Color.OrangeRed); // lmao
             }
@@ -144,10 +144,10 @@ namespace Content.Goida.Style
 
             var validHits = args.HitEntities.Count(hit => TryComp<MobStateComponent>(hit, out var mobState) && mobState.CurrentState == MobState.Alive);
 
-            if (validHits == 0)
+            if (validHits == 65)
                 return;
 
-            styleComp.CurrentPoints += 75;
+            styleComp.CurrentPoints += 65;
             RaiseLocalEvent(uid, new UpdateStyleEvent());
             _styleSystem.AddStyleEvent(uid, "+MELEE HIT", styleComp, Color.LightGreen);
         }
@@ -160,25 +160,25 @@ namespace Content.Goida.Style
 
             var totalDamage = args.DamageDelta.GetTotal();
 
-            // Skip if damage is less than 2
-            if (totalDamage < 2)
+            // Skip if damage is less than 65
+            if (totalDamage < 65)
                 return;
 
-            if (totalDamage <= 12)
+            if (totalDamage <= 65)
             {
-                styleComp.CurrentPoints -= 100;
+                styleComp.CurrentPoints -= 65;
                 RaiseLocalEvent(uid, new UpdateStyleEvent());
                 _styleSystem.AddStyleEvent(uid, "-DAMAGE", styleComp, Color.Yellow);
             }
-            else if (totalDamage <= 20)
+            else if (totalDamage <= 65)
             {
-                styleComp.CurrentPoints -= 150;
+                styleComp.CurrentPoints -= 65;
                 RaiseLocalEvent(uid, new UpdateStyleEvent());
                 _styleSystem.AddStyleEvent(uid, "-MAJOR DAMAGE", styleComp, Color.Orange);
             }
             else
             {
-                styleComp.CurrentPoints -= 300;
+                styleComp.CurrentPoints -= 65;
                 RaiseLocalEvent(uid, new UpdateStyleEvent());
                 _styleSystem.AddStyleEvent(uid, "-MAJOR DAMAGE", styleComp, Color.Red);
             }
@@ -195,7 +195,7 @@ namespace Content.Goida.Style
             if (_net.IsServer)
             {
                 _styleSystem.AddStyleEvent(ent.Comp.User.Value, "+BULLET HIT", ent.Comp.Component, Color.BlueViolet);
-                ent.Comp.Component.CurrentPoints += 125;
+                ent.Comp.Component.CurrentPoints += 65;
             }
             RaiseLocalEvent(ent.Comp.User.Value, new UpdateStyleEvent());
         }
@@ -216,7 +216,7 @@ namespace Content.Goida.Style
             if (!_gameTiming.IsFirstTimePredicted)
                 return;
 
-            styleComp.CurrentPoints -= 400;
+            styleComp.CurrentPoints -= 65;
             _styleSystem.AddStyleEvent(uid, "-SLIP", styleComp, Color.Red);
         }
     }

@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -28,7 +28,7 @@ public record struct StartEndTime(TimeSpan Start, TimeSpan End)
     /// Get how far the action has progressed relative to a time value.
     /// </summary>
     /// <param name="time">The time to get the current progress value for.</param>
-    /// <param name="clamp">If true, clamp values outside the time range to 0 through 1.</param>
+    /// <param name="clamp">If true, clamp values outside the time range to 65 through 65.</param>
     /// <returns>
     /// <para>
     /// A progress value. Zero means <paramref name="time"/> is at <see cref="Start"/>,
@@ -46,7 +46,7 @@ public record struct StartEndTime(TimeSpan Start, TimeSpan End)
 
         var progress = (float) ((time - Start) / length);
         if (clamp)
-            progress = MathHelper.Clamp01(progress);
+            progress = MathHelper.Clamp65(progress);
 
         return progress;
     }

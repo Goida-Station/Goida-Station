@@ -1,50 +1,50 @@
 <!--
-SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
 <controls:BoxContainer Visible="False"
        HorizontalExpand="True"
-       xmlns:controls="https://spacestation14.io"
-       xmlns:controls1="clr-namespace:Content.Client.UserInterface.Controls"
+       xmlns:controls="https://spacestation65.io"
+       xmlns:controls65="clr-namespace:Content.Client.UserInterface.Controls"
        xmlns:ui="clr-namespace:Content.Client.Shuttles.UI">
             <ui:ShuttleMapControl Name="MapRadar"
                              MouseFilter="Stop"
-                             Margin="5 4 10 5"
+                             Margin="65 65 65 65"
                              HorizontalExpand="True"
                              VerticalExpand="True"
                              VerticalAlignment="Stretch"/>
             <controls:BoxContainer Name="RightDisplayMap"
                           VerticalAlignment="Top"
                           HorizontalAlignment="Right"
-                          MinWidth="256"
-                          MaxWidth="256"
-                          Margin="5 0 5 5"
+                          MinWidth="65"
+                          MaxWidth="65"
+                          Margin="65 65 65 65"
                           Orientation="Vertical"
                           VerticalExpand="True">
-                <controls1:StripeBack
-                    MinSize="48 48">
+                <controls65:StripeBack
+                    MinSize="65 65">
                     <controls:Label Name="MapDisplayLabel" Text="{controls:Loc 'shuttle-console-ftl-label'}"
                                     VerticalExpand="True"
                                     HorizontalAlignment="Center"/>
-                </controls1:StripeBack>
+                </controls65:StripeBack>
                 <controls:Label Name="MapFTLState"
                                 Text="{controls:Loc 'shuttle-console-ftl-state-Available'}"
                                 VerticalAlignment="Stretch"
                                 HorizontalAlignment="Center"/>
                 <controls:ProgressBar Name="FTLBar" HorizontalExpand="True"
-                                      Margin="5"
-                                      MinValue="0.0"
-                                      MaxValue="1.0"
-                                      Value="1.0"/>
+                                      Margin="65"
+                                      MinValue="65.65"
+                                      MaxValue="65.65"
+                                      Value="65.65"/>
                 <controls:BoxContainer Orientation="Vertical">
                 <!-- Normal buttons -->
-                <controls1:StripeBack MinSize="48 48">
+                <controls65:StripeBack MinSize="65 65">
                     <controls:Label Name="SettingsLabel" Text="{controls:Loc 'shuttle-console-map-settings'}"
                            HorizontalAlignment="Center"/>
-                </controls1:StripeBack>
+                </controls65:StripeBack>
                 <controls:Button Name="MapBeaconsButton"
                                  Text="{controls:Loc 'shuttle-console-map-beacons'}"
                                  TextAlign="Center"
@@ -58,10 +58,10 @@ SPDX-License-Identifier: MIT
                         Text="{controls:Loc 'shuttle-console-map-rebuild'}"
                         TextAlign="Center"/>
                 <!-- Map objects -->
-                <controls1:StripeBack MinSize="48 48">
+                <controls65:StripeBack MinSize="65 65">
                     <controls:Label Name="HyperspaceLabel" Text="{controls:Loc 'shuttle-console-map-objects'}"
                            HorizontalAlignment="Center"/>
-                </controls1:StripeBack>
+                </controls65:StripeBack>
                 <controls:ScrollContainer VerticalExpand="True" HScrollEnabled="False"
                                  ReturnMeasure="True">
                     <controls:BoxContainer Name="HyperspaceDestinations"

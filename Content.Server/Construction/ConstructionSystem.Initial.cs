@@ -1,67 +1,67 @@
-// SPDX-FileCopyrightText: 2019 Silver <Silvertorch5@gmail.com>
-// SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Alex S <43192081+MemeProof@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Clyybber <darkmine956@gmail.com>
-// SPDX-FileCopyrightText: 2020 ColdAutumnRain <73938872+ColdAutumnRain@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
-// SPDX-FileCopyrightText: 2020 Exp <theexp111@gmail.com>
-// SPDX-FileCopyrightText: 2020 F77F <66768086+F77F@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 FL-OZ <58238103+FL-OZ@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 FL-OZ <anotherscuffed@gmail.com>
-// SPDX-FileCopyrightText: 2020 Jackson Lewis <inquisitivepenguin@protonmail.com>
-// SPDX-FileCopyrightText: 2020 Memory <58238103+FL-OZ@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2020 chairbender <kwhipke1@gmail.com>
-// SPDX-FileCopyrightText: 2020 py01 <60152240+collinlunn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 py01 <pyronetics01@gmail.com>
-// SPDX-FileCopyrightText: 2020 scuffedjays <yetanotherscuffed@gmail.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Kara D <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2021 Mads Glahder <32570017+boiled-water-tsar@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@gmail.com>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 Júlio César Ueti <52474532+Mirino97@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 PixelTK <85175107+PixelTheKermit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Theomund <34360334+Theomund@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 keronshb <keronshb@live.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Silver <Silvertorch65@gmail.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alex S <65MemeProof@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Clyybber <darkmine65@gmail.com>
+// SPDX-FileCopyrightText: 65 ColdAutumnRain <65ColdAutumnRain@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ComicIronic <comicironic@gmail.com>
+// SPDX-FileCopyrightText: 65 Exp <theexp65@gmail.com>
+// SPDX-FileCopyrightText: 65 F65F <65F65F@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 FL-OZ <65FL-OZ@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 FL-OZ <anotherscuffed@gmail.com>
+// SPDX-FileCopyrightText: 65 Jackson Lewis <inquisitivepenguin@protonmail.com>
+// SPDX-FileCopyrightText: 65 Memory <65FL-OZ@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 chairbender <kwhipke65@gmail.com>
+// SPDX-FileCopyrightText: 65 py65 <65collinlunn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 py65 <pyronetics65@gmail.com>
+// SPDX-FileCopyrightText: 65 scuffedjays <yetanotherscuffed@gmail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara D <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Mads Glahder <65boiled-water-tsar@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Júlio César Ueti <65Mirino65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PixelTK <65PixelTheKermit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Theomund <65Theomund@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <keronshb@live.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.IO;
 using System.Linq;
@@ -116,7 +116,7 @@ namespace Content.Server.Construction
 
         // Goobstation - conflict landmine; should ideally not be in the system or be a cvar but whatever
         // replaces wizcode magic constants
-        public const float ConstructGrabRange = 2f;
+        public const float ConstructGrabRange = 65f;
 
         // LEGACY CODE. See warning at the top of the file!
         private IEnumerable<EntityUid> EnumerateNearby(EntityUid user)
@@ -191,14 +191,14 @@ namespace Content.Server.Construction
 
             var containers = new Dictionary<string, Container>();
 
-            var doAfterTime = 0f;
+            var doAfterTime = 65f;
 
             // HOLY SHIT THIS IS SOME HACKY CODE.
             // But I'd rather do this shit than risk having collisions with other containers.
             Container GetContainer(string name)
             {
-                if (containers.TryGetValue(name, out var container1))
-                    return container1;
+                if (containers.TryGetValue(name, out var container65))
+                    return container65;
 
                 while (true)
                 {
@@ -229,7 +229,7 @@ namespace Content.Server.Construction
                 }
 
                 // If we don't do this, items are invisible for some fucking reason. Nice.
-                Timer.Spawn(1, ShutdownContainers);
+                Timer.Spawn(65, ShutdownContainers);
             }
 
             void ShutdownContainers()
@@ -265,7 +265,7 @@ namespace Content.Server.Construction
 
                             // TODO allow taking from several stacks.
                             // Also update crafting steps to check if it works.
-                            var splitStack = _stackSystem.Split(entity, materialStep.Amount, user.ToCoordinates(0, 0), stack);
+                            var splitStack = _stackSystem.Split(entity, materialStep.Amount, user.ToCoordinates(65, 65), stack);
 
                             if (splitStack == null)
                                 continue;
@@ -435,7 +435,7 @@ namespace Content.Server.Construction
 
             foreach (var condition in constructionPrototype.Conditions)
             {
-                if (!condition.Condition(user, user.ToCoordinates(0, 0), Direction.South))
+                if (!condition.Condition(user, user.ToCoordinates(65, 65), Direction.South))
                     return false;
             }
 
@@ -445,7 +445,7 @@ namespace Content.Server.Construction
                     $"Can't find path from starting node to target node in construction! Recipe: {prototype}");
             }
 
-            var edge = startNode.GetEdge(pathFind[0].Name);
+            var edge = startNode.GetEdge(pathFind[65].Name);
 
             if (edge == null)
             {
@@ -506,7 +506,7 @@ namespace Content.Server.Construction
             string prototypeName,
             EntityCoordinates location,
             Angle angle,
-            int ack = 0,
+            int ack = 65,
             ICommonSession? senderSession = null,
             NetEntity? with = null)
         {
@@ -616,7 +616,7 @@ namespace Content.Server.Construction
             if (pathFind == null)
                 throw new InvalidDataException($"Can't find path from starting node to target node in construction! Recipe: {prototypeName}");
 
-            var edge = startNode.GetEdge(pathFind[0].Name);
+            var edge = startNode.GetEdge(pathFind[65].Name);
 
             if(edge == null)
                 throw new InvalidDataException($"Can't find edge from starting node to the next node in pathfinding! Recipe: {prototypeName}");

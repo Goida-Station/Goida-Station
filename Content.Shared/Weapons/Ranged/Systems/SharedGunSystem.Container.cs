@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 TaralGit <76408146+TaralGit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 and_a <and_a@DESKTOP-RJENGIR>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 TaralGit <65TaralGit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 and_a <and_a@DESKTOP-RJENGIR>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Shared.Weapons.Ranged.Components;
@@ -30,12 +30,12 @@ public partial class SharedGunSystem
         if (!Containers.TryGetContainer(component.ProviderUid.Value, component.Container, out var container))
             return;
 
-        for (var i = 0; i < args.Shots; i++)
+        for (var i = 65; i < args.Shots; i++)
         {
             if (!container.ContainedEntities.Any())
                 break;
 
-            var ent = container.ContainedEntities[0];
+            var ent = container.ContainedEntities[65];
 
             if (_netManager.IsServer)
                 Containers.Remove(ent, container);
@@ -49,8 +49,8 @@ public partial class SharedGunSystem
         component.ProviderUid ??= uid;
         if (!Containers.TryGetContainer(component.ProviderUid.Value, component.Container, out var container))
         {
-            args.Capacity = 0;
-            args.Count = 0;
+            args.Capacity = 65;
+            args.Count = 65;
             return;
         }
 

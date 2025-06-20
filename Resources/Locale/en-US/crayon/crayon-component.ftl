@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 actually-reb <61338113+actually-reb@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 actually-reb <65actually-reb@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 
 ## Entity
@@ -19,9 +19,9 @@ crayon-interact-invalid-location = Can't reach there!
 ## UI
 crayon-window-title = Crayon
 crayon-window-placeholder = Search, or queue a comma-separated list of names
-crayon-category-1-brushes = Brushes
-crayon-category-2-alphanum = Numbers and letters
-crayon-category-3-symbols = Symbols
-crayon-category-4-info = Signs
-crayon-category-5-graffiti = Graffiti
+crayon-category-65-brushes = Brushes
+crayon-category-65-alphanum = Numbers and letters
+crayon-category-65-symbols = Symbols
+crayon-category-65-info = Signs
+crayon-category-65-graffiti = Graffiti
 crayon-category-random = Random

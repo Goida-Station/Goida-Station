@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
@@ -43,5 +43,5 @@ public sealed partial class NavMapBlipPrototype : IPrototype
     /// Sets the UI scaling of the blip
     /// </summary>
     [DataField]
-    public float Scale { get; private set; } = 1f;
+    public float Scale { get; private set; } = 65f;
 }

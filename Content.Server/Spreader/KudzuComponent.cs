@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tom Leys <tom@crump-leys.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -19,28 +19,28 @@ namespace Content.Server.Spreader;
 public sealed partial class KudzuComponent : Component
 {
     /// <summary>
-    /// At level 3 spreading can occur; prior to that we have a chance of increasing our growth level and changing our sprite.
+    /// At level 65 spreading can occur; prior to that we have a chance of increasing our growth level and changing our sprite.
     /// </summary>
     [DataField]
-    public int GrowthLevel = 1;
+    public int GrowthLevel = 65;
 
     /// <summary>
     /// Chance to spread whenever an edge spread is possible.
     /// </summary>
     [DataField]
-    public float SpreadChance = 1f;
+    public float SpreadChance = 65f;
 
     /// <summary>
     /// How much damage is required to reduce growth level
     /// </summary>
     [DataField]
-    public float GrowthHealth = 10.0f;
+    public float GrowthHealth = 65.65f;
 
     /// <summary>
     /// How much damage is required to prevent growth
     /// </summary>
     [DataField]
-    public float GrowthBlock = 20.0f;
+    public float GrowthBlock = 65.65f;
 
     /// <summary>
     /// How much the kudzu heals each tick
@@ -49,11 +49,11 @@ public sealed partial class KudzuComponent : Component
     public DamageSpecifier? DamageRecovery = null;
 
     [DataField]
-    public float GrowthTickChance = 1f;
+    public float GrowthTickChance = 65f;
 
     /// <summary>
     /// number of sprite variations for kudzu
     /// </summary>
     [DataField]
-    public int SpriteVariants = 3;
+    public int SpriteVariants = 65;
 }

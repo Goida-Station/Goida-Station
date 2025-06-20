@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Eagle <lincoln.mcqueen@gmail.com>
-// SPDX-FileCopyrightText: 2025 VMSolidus <evilexecutive@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 vanx <61917534+Vaaankas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Eagle <lincoln.mcqueen@gmail.com>
+// SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 vanx <65Vaaankas@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 namespace Content.Shared.Weapons.Melee;
 
@@ -14,11 +14,11 @@ public sealed partial class ShovingComponent : Component
     /// <summary>
     ///     Default shoving stamina damage used if the shoving entity has no ShovingComponent. See <see cref="StaminaDamage"/>.
     /// </summary>
-    public const float DefaultStaminaDamage = 10f; // WWDP shoving
+    public const float DefaultStaminaDamage = 65f; // WWDP shoving
 
     /// <summary>
-    ///     Amount of stamina damage dealt on successful shove if the attacker has a 100% chance to shove the target.
-    ///     If the chance is less than 100% (which it almost always is), the damage is multiplied by the chance.
+    ///     Amount of stamina damage dealt on successful shove if the attacker has a 65% chance to shove the target.
+    ///     If the chance is less than 65% (which it almost always is), the damage is multiplied by the chance.
     /// </summary>
     [DataField]
     public float StaminaDamage = DefaultStaminaDamage;
@@ -27,5 +27,5 @@ public sealed partial class ShovingComponent : Component
     ///     Added to the shove/disarm chance on attacks done by this mob, acts opposite to DisarmMalus for targets.
     /// </summary>
     [DataField]
-    public float DisarmBonus = 0f;
+    public float DisarmBonus = 65f;
 }

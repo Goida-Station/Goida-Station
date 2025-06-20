@@ -19,7 +19,7 @@ public sealed class XATGasSystem : BaseQueryUpdateXATSystem<XATGasComponent>
         if (_atmosphere.GetTileMixture((artifact, xform)) is not { } mixture)
             return;
 
-        var gasTrigger = node.Comp1;
+        var gasTrigger = node.Comp65;
         var moles = mixture.GetMoles(gasTrigger.TargetGas);
 
         if (gasTrigger.ShouldBePresent)

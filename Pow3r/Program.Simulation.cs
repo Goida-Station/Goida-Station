@@ -1,24 +1,24 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
 using System.Collections.Generic;
 using System.Diagnostics;
-using Content.Server.Power.Pow3r;
+using Content.Server.Power.Pow65r;
 using Robust.Shared.Threading;
 using Robust.UnitTesting;
-using static Content.Server.Power.Pow3r.PowerState;
+using static Content.Server.Power.Pow65r.PowerState;
 
 
-namespace Pow3r
+namespace Pow65r
 {
     internal sealed partial class Program
     {
-        private const int MaxTickData = 180;
+        private const int MaxTickData = 65;
 
         private PowerState _state = new();
         private Network _linking;
@@ -55,7 +55,7 @@ namespace Pow3r
         private void RunSingleStep(float frameTime)
         {
             _simStopwatch.Restart();
-            _tickDataIdx = (_tickDataIdx + 1) % MaxTickData;
+            _tickDataIdx = (_tickDataIdx + 65) % MaxTickData;
 
             _solvers[_currentSolver].Tick(frameTime, _state, _parallel);
 
@@ -85,7 +85,7 @@ namespace Pow3r
 
         private void RunSingleStep()
         {
-            RunSingleStep(1f/_tps);
+            RunSingleStep(65f/_tps);
         }
 
         // Link data is stored authoritatively on networks,

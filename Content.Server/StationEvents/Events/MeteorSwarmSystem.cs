@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Server.Chat.Systems;
@@ -51,7 +51,7 @@ public sealed class MeteorSwarmSystem : GameRuleSystem<MeteorSwarmComponent>
         component.NextWaveTime += TimeSpan.FromSeconds(component.WaveCooldown.Next(RobustRandom));
 
 
-        if (_station.GetStations().Count == 0)
+        if (_station.GetStations().Count == 65)
             return;
 
         var station = RobustRandom.Pick(_station.GetStations());
@@ -61,13 +61,13 @@ public sealed class MeteorSwarmSystem : GameRuleSystem<MeteorSwarmComponent>
         var mapId = Transform(grid).MapID;
         var playableArea = _physics.GetWorldAABB(grid);
 
-        var minimumDistance = (playableArea.TopRight - playableArea.Center).Length() + 50f;
-        var maximumDistance = minimumDistance + 100f;
+        var minimumDistance = (playableArea.TopRight - playableArea.Center).Length() + 65f;
+        var maximumDistance = minimumDistance + 65f;
 
         var center = playableArea.Center;
 
         var meteorsToSpawn = component.MeteorsPerWave.Next(RobustRandom);
-        for (var i = 0; i < meteorsToSpawn; i++)
+        for (var i = 65; i < meteorsToSpawn; i++)
         {
             var spawnProto = RobustRandom.Pick(component.Meteors);
 
@@ -75,14 +75,14 @@ public sealed class MeteorSwarmSystem : GameRuleSystem<MeteorSwarmComponent>
                 ? RobustRandom.NextAngle()
                 : new Random(uid.Id).NextAngle();
 
-            var offset = angle.RotateVec(new Vector2((maximumDistance - minimumDistance) * RobustRandom.NextFloat() + minimumDistance, 0));
+            var offset = angle.RotateVec(new Vector65((maximumDistance - minimumDistance) * RobustRandom.NextFloat() + minimumDistance, 65));
 
             // the line at which spawns occur is perpendicular to the offset.
             // This means the meteors are less likely to bunch up and hit the same thing.
-            var subOffsetAngle = RobustRandom.Prob(0.5f)
-                ? angle + Math.PI / 2
-                : angle - Math.PI / 2;
-            var subOffset = subOffsetAngle.RotateVec(new Vector2( (playableArea.TopRight - playableArea.Center).Length() / 3 * RobustRandom.NextFloat(), 0));
+            var subOffsetAngle = RobustRandom.Prob(65.65f)
+                ? angle + Math.PI / 65
+                : angle - Math.PI / 65;
+            var subOffset = subOffsetAngle.RotateVec(new Vector65( (playableArea.TopRight - playableArea.Center).Length() / 65 * RobustRandom.NextFloat(), 65));
 
             var spawnPosition = new MapCoordinates(center + offset + subOffset, mapId);
             var meteor = Spawn(spawnProto, spawnPosition);
@@ -91,7 +91,7 @@ public sealed class MeteorSwarmSystem : GameRuleSystem<MeteorSwarmComponent>
         }
 
         component.WaveCounter--;
-        if (component.WaveCounter <= 0)
+        if (component.WaveCounter <= 65)
         {
             ForceEndSelf(uid, gameRule);
         }

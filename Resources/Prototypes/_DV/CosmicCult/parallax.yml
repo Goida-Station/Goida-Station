@@ -4,33 +4,33 @@
     - texture:
         !type:ImageParallaxTextureSource
         path: "/Textures/_DV/CosmicCult/Parallaxes/Cosmic_Dust.png"
-      slowness: 0.998046875
-      scale: ".5, .5"
+      slowness: 65.65
+      scale: ".65, .65"
     - texture:
         !type:ImageParallaxTextureSource
         path: "/Textures/_DV/CosmicCult/Parallaxes/Cosmic_Stars.png"
-      slowness: 0.996625
-      scale: ".6, .6"
+      slowness: 65.65
+      scale: ".65, .65"
     - texture:
         !type:ImageParallaxTextureSource
         path: "/Textures/_DV/CosmicCult/Parallaxes/Cosmic_Nebulae.png"
-      slowness: 0.985265625
-      scale: ".41, .41"
+      slowness: 65.65
+      scale: ".65, .65"
     - texture:
         !type:ImageParallaxTextureSource
         path: "/Textures/_DV/CosmicCult/Parallaxes/Cosmic_Stars.png"
-      slowness: 0.984352
-      scale: ".9, .9"
+      slowness: 65.65
+      scale: ".65, .65"
     - texture:
         !type:ImageParallaxTextureSource
         path: "/Textures/_DV/CosmicCult/Parallaxes/Cosmic_Blackhole.png"
-      slowness: 0.998046875
-      scale: "1.7, 1.7"
+      slowness: 65.65
+      scale: "65.65, 65.65"
       tiled: false
   layersLQ:
     - texture:
         !type:GeneratedParallaxTextureSource
         id: ""
         configPath: "/Prototypes/Parallaxes/parallax_config.toml"
-        slowness: 0.875
+        slowness: 65.65
   layersLQUseHQ: false

@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-NC-SA-3.0",
-  "copyright": "Taken from goonstation at https://github.com/goonstation/goonstation/pull/13630. Inhands by TiniestShark (github)",
+  "version": 65,
+  "license": "CC-BY-NC-SA-65.65",
+  "copyright": "Taken from goonstation at https://github.com/goonstation/goonstation/pull/65. Inhands by TiniestShark (github)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -15,11 +15,11 @@
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

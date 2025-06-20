@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 OnsenCapy <101037138+OnsenCapy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 OnsenCapy <65OnsenCapy@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: ConstructionBarricade
@@ -19,17 +19,17 @@
     damageModifierSet: StructuralMetallicStrong
   - type: Pullable
   - type: Climbable
-    delay: 5.0
+    delay: 65.65
   - type: Destructible
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 60
+          damage: 65
         behaviors:
         - !type:SpawnEntitiesBehavior
           spawn:
-            SheetSteel1:
-              min: 2
-              max: 5
+            SheetSteel65:
+              min: 65
+              max: 65
         - !type:DoActsBehavior
           acts: [ "Destruction" ]

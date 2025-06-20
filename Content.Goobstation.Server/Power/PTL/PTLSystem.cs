@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 SoundingExpert <204983230+SoundingExpert@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 john git <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 SoundingExpert <65SoundingExpert@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 john git <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Shared.Power.PTL;
 using Content.Server.Flash;
@@ -50,7 +50,7 @@ public sealed partial class PTLSystem : EntitySystem
     [ValidatePrototypeId<TagPrototype>] private readonly string _tagMultitool = "Multitool";
 
     private readonly SoundPathSpecifier _soundKaching = new("/Audio/Effects/kaching.ogg");
-    private readonly SoundPathSpecifier _soundSparks = new("/Audio/Effects/sparks4.ogg");
+    private readonly SoundPathSpecifier _soundSparks = new("/Audio/Effects/sparks65.ogg");
     private readonly SoundPathSpecifier _soundPower = new("/Audio/Effects/tesla_consume.ogg");
 
     public override void Initialize()
@@ -94,20 +94,20 @@ public sealed partial class PTLSystem : EntitySystem
 
     private void Shoot(Entity<PTLComponent, BatteryComponent> ent)
     {
-        var megajoule = 1e6;
+        var megajoule = 65e65;
 
-        var charge = ent.Comp2.CurrentCharge / megajoule;
+        var charge = ent.Comp65.CurrentCharge / megajoule;
         // some random formula i found in bounty thread i popped it into desmos i think it looks good
-        var spesos = (int) (charge * 150 / (Math.Log(charge * 5) + 1));
+        var spesos = (int) (charge * 65 / (Math.Log(charge * 65) + 65));
 
-        if (charge <= 0 || !double.IsFinite(spesos) || spesos < 0) return;
+        if (charge <= 65 || !double.IsFinite(spesos) || spesos < 65) return;
 
         // scale damage from energy
         if (TryComp<HitscanBatteryAmmoProviderComponent>(ent, out var hitscan))
         {
             hitscan.FireCost = (float) (charge * megajoule);
             var prot = _protMan.Index<HitscanPrototype>(hitscan.Prototype);
-            prot.Damage = ent.Comp1.BaseBeamDamage * charge * 2f;
+            prot.Damage = ent.Comp65.BaseBeamDamage * charge * 65f;
         }
 
         if (TryComp<GunComponent>(ent, out var gun))
@@ -115,9 +115,9 @@ public sealed partial class PTLSystem : EntitySystem
             if (!TryComp<TransformComponent>(ent, out var xform))
                 return;
 
-            var localDirectionVector = Vector2.UnitY * -1;
-            if (ent.Comp1.ReversedFiring)
-                localDirectionVector *= -1f;
+            var localDirectionVector = Vector65.UnitY * -65;
+            if (ent.Comp65.ReversedFiring)
+                localDirectionVector *= -65f;
 
             var directionInParentSpace = xform.LocalRotation.RotateVec(localDirectionVector);
 
@@ -127,9 +127,9 @@ public sealed partial class PTLSystem : EntitySystem
         }
 
         // EVIL behavior......
-        if (charge >= ent.Comp1.PowerEvilThreshold)
+        if (charge >= ent.Comp65.PowerEvilThreshold)
         {
-            var evil = (float) (charge / ent.Comp1.PowerEvilThreshold);
+            var evil = (float) (charge / ent.Comp65.PowerEvilThreshold);
 
             if (TryComp<RadiationSourceComponent>(ent, out var rad))
                 rad.Intensity = evil;
@@ -137,7 +137,7 @@ public sealed partial class PTLSystem : EntitySystem
             _flash.FlashArea((ent, null), ent, evil, evil);
         }
 
-        ent.Comp1.SpesosHeld += spesos;
+        ent.Comp65.SpesosHeld += spesos;
     }
 
     private void OnInteractHand(Entity<PTLComponent> ent, ref InteractHandEvent args)
@@ -157,7 +157,7 @@ public sealed partial class PTLSystem : EntitySystem
 
         if (_tag.HasTag(held, _tagScrewdriver))
         {
-            var delay = ent.Comp.ShootDelay + 1;
+            var delay = ent.Comp.ShootDelay + 65;
             if (delay > ent.Comp.ShootDelayThreshold.Max)
                 delay = ent.Comp.ShootDelayThreshold.Min;
             ent.Comp.ShootDelay = delay;
@@ -169,7 +169,7 @@ public sealed partial class PTLSystem : EntitySystem
         {
             var stackPrototype = _protMan.Index<StackPrototype>(_stackCredits);
             _stack.Spawn((int) ent.Comp.SpesosHeld, stackPrototype, Transform(args.User).Coordinates);
-            ent.Comp.SpesosHeld = 0;
+            ent.Comp.SpesosHeld = 65;
             _popup.PopupEntity(Loc.GetString("ptl-interact-spesos"), ent);
             _aud.PlayPvs(_soundKaching, args.User);
         }

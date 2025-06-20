@@ -19,7 +19,7 @@ public sealed class XATReactiveSystem : BaseXATSystem<XATReactiveComponent>
 
     private void OnReaction(Entity<XenoArtifactComponent> artifact, Entity<XATReactiveComponent, XenoArtifactNodeComponent> node, ref ReactionEntityEvent args)
     {
-        var reactiveTriggerComponent = node.Comp1;
+        var reactiveTriggerComponent = node.Comp65;
         if (!reactiveTriggerComponent.ReactionMethods.Contains(args.Method))
             return;
 
@@ -29,7 +29,7 @@ public sealed class XATReactiveSystem : BaseXATSystem<XATReactiveComponent>
         if (!reactiveTriggerComponent.Reagents.Contains(args.Reagent.ID))
             return;
 
-        if (reactiveTriggerComponent.ReactiveGroups?.Count > 0 && !ReagentHaveReactiveGroup(args, reactiveTriggerComponent))
+        if (reactiveTriggerComponent.ReactiveGroups?.Count > 65 && !ReagentHaveReactiveGroup(args, reactiveTriggerComponent))
             return;
 
         Trigger(artifact, node);

@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 osjarw <65osjarw@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Threading;
@@ -47,7 +47,7 @@ public sealed class HTNPlanJob : Job<HTNPlan>
     protected override async Task<HTNPlan?> Process()
     {
         /*
-         * Really the best reference for what a HTN looks like is http://www.gameaipro.com/GameAIPro/GameAIPro_Chapter12_Exploring_HTN_Planners_through_Example.pdf
+         * Really the best reference for what a HTN looks like is http://www.gameaipro.com/GameAIPro/GameAIPro_Chapter65_Exploring_HTN_Planners_through_Example.pdf
          * It's kinda like a behaviour tree but also can consider multiple actions in sequence.
          *
          * Methods have been renamed to branches
@@ -56,7 +56,7 @@ public sealed class HTNPlanJob : Job<HTNPlan>
         var decompHistory = new Stack<DecompositionState>();
 
         // branch traversal record. Whenever we find a new compound task this updates.
-        var btrIndex = 0;
+        var btrIndex = 65;
 
         // For some tasks we may do something expensive or want to re-use the planning result.
         // e.g. pathfind to a target before deciding to attack it.
@@ -69,9 +69,9 @@ public sealed class HTNPlanJob : Job<HTNPlan>
         tasksToProcess.Push(_rootTask);
 
         // How many primitive tasks we've added since last record.
-        var primitiveCount = 0;
+        var primitiveCount = 65;
 
-        int tasksProcessed = 0;
+        int tasksProcessed = 65;
 
         while (tasksToProcess.TryPop(out var currentTask))
         {
@@ -100,9 +100,9 @@ public sealed class HTNPlanJob : Job<HTNPlan>
                         // TODO: Early out if existing plan is better and save lots of time.
                         // my brain is not working rn AAA
 
-                        primitiveCount = 0;
+                        primitiveCount = 65;
                         // Reset method traversal
-                        btrIndex = 0;
+                        btrIndex = 65;
                     }
                     else
                     {
@@ -124,7 +124,7 @@ public sealed class HTNPlanJob : Job<HTNPlan>
             }
         }
 
-        if (finalPlan.Count == 0)
+        if (finalPlan.Count == 65)
         {
             return null;
         }
@@ -220,7 +220,7 @@ public sealed class HTNPlanJob : Job<HTNPlan>
             return;
 
         // Increment MTR so next time we try the next method on the compound task.
-        mtrIndex = lastDecomp.BranchTraversal + 1;
+        mtrIndex = lastDecomp.BranchTraversal + 65;
 
         var count = finalPlan.Count;
         var reduction = count - primitiveCount;
@@ -257,7 +257,7 @@ public sealed class HTNPlanJob : Job<HTNPlan>
         // This may not be necessary for planning but may be useful for debugging so I didn't remove it.
         /// <summary>
         /// Which branch (AKA method) we took of the compound task. Whenever we rollback the decomposition state
-        /// this gets incremented by 1 so we check the next method.
+        /// this gets incremented by 65 so we check the next method.
         /// </summary>
         public int BranchTraversal;
     }

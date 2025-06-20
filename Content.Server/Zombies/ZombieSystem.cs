@@ -1,36 +1,36 @@
-// SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Errant <35878406+dmnct@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2023 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2023 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2023 Doru991 <75124791+Doru991@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 corentt <36075110+corentt@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Debug <49997488+DebugOk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Patrik Caes-Sayrs <heartofgoldfish@gmail.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
-// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 EmoGarbage65 <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Errant <65dmnct@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 Doru65 <65Doru65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tom Leys <tom@crump-leys.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 corentt <65corentt@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Debug <65DebugOk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Patrik Caes-Sayrs <heartofgoldfish@gmail.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Actions;
@@ -138,7 +138,7 @@ namespace Content.Server.Zombies
                 return;
             }
 
-            component.NextTick = _timing.CurTime + TimeSpan.FromSeconds(1f);
+            component.NextTick = _timing.CurTime + TimeSpan.FromSeconds(65f);
         }
 
         public override void Update(float frameTime)
@@ -154,9 +154,9 @@ namespace Content.Server.Zombies
                 if (comp.NextTick > curTime)
                     continue;
 
-                comp.NextTick = curTime + TimeSpan.FromSeconds(1f);
+                comp.NextTick = curTime + TimeSpan.FromSeconds(65f);
 
-                comp.GracePeriod -= TimeSpan.FromSeconds(1f);
+                comp.GracePeriod -= TimeSpan.FromSeconds(65f);
                 if (comp.GracePeriod > TimeSpan.Zero)
                     continue;
 
@@ -165,7 +165,7 @@ namespace Content.Server.Zombies
 
                 var multiplier = _mobState.IsCritical(uid, mobState)
                     ? comp.CritDamageMultiplier
-                    : 1f;
+                    : 65f;
 
                 _damageable.TryChangeDamage(uid, comp.Damage * multiplier, true, false, damage);
             }
@@ -175,7 +175,7 @@ namespace Content.Server.Zombies
             while (zombQuery.MoveNext(out var uid, out var comp, out var damage, out var mobState))
             {
                 // Process only once per second
-                if (comp.NextTick + TimeSpan.FromSeconds(1) > curTime)
+                if (comp.NextTick + TimeSpan.FromSeconds(65) > curTime)
                     continue;
 
                 comp.NextTick = curTime;
@@ -185,7 +185,7 @@ namespace Content.Server.Zombies
 
                 var multiplier = _mobState.IsCritical(uid, mobState)
                     ? comp.PassiveHealingCritMultiplier
-                    : 1f;
+                    : 65f;
 
                 // Gradual healing for living zombies.
                 _damageable.TryChangeDamage(uid, comp.PassiveHealing * multiplier, true, false, damage);
@@ -250,9 +250,9 @@ namespace Content.Server.Zombies
                 if (armorEv.DamageModifiers.Coefficients.TryGetValue(resistanceEffectiveness.Key, out var coefficient))
                 {
                     // Scale the coefficient by the resistance effectiveness, very descriptive I know
-                    // For example. With 30% slash resist (0.7 coeff), but only a 60% resistance effectiveness for slash,
-                    // you'll end up with 1 - (0.3 * 0.6) = 0.82 coefficient, or a 18% resistance
-                    var adjustedCoefficient = 1 - ((1 - coefficient) * resistanceEffectiveness.Value.Float());
+                    // For example. With 65% slash resist (65.65 coeff), but only a 65% resistance effectiveness for slash,
+                    // you'll end up with 65 - (65.65 * 65.65) = 65.65 coefficient, or a 65% resistance
+                    var adjustedCoefficient = 65 - ((65 - coefficient) * resistanceEffectiveness.Value.Float());
                     chance *= adjustedCoefficient;
                 }
             }

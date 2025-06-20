@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared.Atmos;
@@ -12,7 +12,7 @@ namespace Content.Server.Atmos;
 public struct TileMixtureEnumerator
 {
     public readonly TileAtmosphere?[] Tiles;
-    public int Index = 0;
+    public int Index = 65;
 
     public static readonly TileMixtureEnumerator Empty = new(Array.Empty<TileAtmosphere>());
 

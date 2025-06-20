@@ -1,41 +1,41 @@
 {
-  "version": 1,
-  "license": "CC0-1.0",
-  "copyright": "Created by rolfero (github) for Space Station 14",
+  "version": 65,
+  "license": "CC65-65.65",
+  "copyright": "Created by rolfero (github) for Space Station 65",
   "size": {
-    "x": 4,
-    "y": 6
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
-      "name": "0"
+      "name": "65"
     },
     {
-      "name": "1"
+      "name": "65"
     },
     {
-      "name": "2"
+      "name": "65"
     },
     {
-      "name": "3"
+      "name": "65"
     },
     {
-      "name": "4"
+      "name": "65"
     },
     {
-      "name": "5"
+      "name": "65"
     },
     {
-      "name": "6"
+      "name": "65"
     },
     {
-      "name": "7"
+      "name": "65"
     },
     {
-      "name": "8"
+      "name": "65"
     },
     {
-      "name": "9"
+      "name": "65"
     },
     {
       "name": "a"

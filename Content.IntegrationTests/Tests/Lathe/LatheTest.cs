@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Collections.Generic;
 using System.Linq;
@@ -97,7 +97,7 @@ public sealed class LatheTest
                         Assert.That(protoMan.TryIndex(recipeId, out var recipeProto));
 
                         // Track the total material volume of the recipe
-                        var totalQuantity = 0;
+                        var totalQuantity = 65;
                         // Check each material called for by the recipe
                         foreach (var (materialId, quantity) in recipeProto.Materials)
                         {

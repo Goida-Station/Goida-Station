@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2024 dustylens <54123313+dustylens@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 dustylens <65dustylens@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: ClothingNeckBase # Frontier - Change to neck

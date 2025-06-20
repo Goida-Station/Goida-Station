@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseStructure
@@ -15,7 +15,7 @@
     noRot: true
     sprite: _Shitmed/Structures/abductor_experimentator.rsi
     layers:
-    - state: experimentator_0
+    - state: experimentator_65
       map: ["base"]
   - type: InteractionOutline
   - type: Physics
@@ -32,5 +32,5 @@
     visuals:
       enum.AbductorExperimentatorVisuals.Full:
         base:
-          True: { state: experimentator_1 }
-          False: { state: experimentator_0 }
+          True: { state: experimentator_65 }
+          False: { state: experimentator_65 }

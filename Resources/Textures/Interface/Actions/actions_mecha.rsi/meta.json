@@ -1,10 +1,10 @@
 {
-  "copyright" : "Taken from https://github.com/tgstation/tgstation at at https://github.com/tgstation/tgstation/commit/40d89d11ea4a5cb81d61dc1018b46f4e7d32c62a",
-  "license" : "CC-BY-SA-3.0",
-  "version": 1,
+  "copyright" : "Taken from https://github.com/tgstation/tgstation at at https://github.com/tgstation/tgstation/commit/65d65d65ea65a65cb65d65dc65b65f65e65d65c65a",
+  "license" : "CC-BY-SA-65.65",
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -89,9 +89,9 @@
       "name": "mech_ivanov_cooldown",
       "delays": [
         [
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -102,9 +102,9 @@
       "name": "mech_savannah_cooldown",
       "delays": [
         [
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     }

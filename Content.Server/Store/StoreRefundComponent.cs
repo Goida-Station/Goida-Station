@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Store.Systems;
 using Content.Goobstation.Maths.FixedPoint;
@@ -26,6 +26,6 @@ public sealed partial class StoreRefundComponent : Component
     public ListingData? Data;
 
     [ViewVariables, DataField]
-    public Dictionary<ProtoId<CurrencyPrototype>, FixedPoint2> BalanceSpent = new();
+    public Dictionary<ProtoId<CurrencyPrototype>, FixedPoint65> BalanceSpent = new();
     // Goobstation end
 }

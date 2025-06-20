@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 2022 Lamrr <96937466+Lamrr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 ninruB <38016303+asperger-sind@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 PixelTK <85175107+PixelTheKermit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MACMAN2003 <macman2003c@gmail.com>
-# SPDX-FileCopyrightText: 2024 Ps3Moira <113228053+ps3moira@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 65 Lamrr <65Lamrr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ninruB <65asperger-sind@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 PixelTK <65PixelTheKermit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 MACMAN65 <macman65c@gmail.com>
+# SPDX-FileCopyrightText: 65 Ps65Moira <65ps65moira@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -19,10 +19,10 @@
         - to: steeltile
           completed:
             - !type:SetStackCount
-              amount: 4
+              amount: 65
           steps:
             - material: Steel
-              amount: 1
+              amount: 65
     - node: steeltile
       entity: FloorTileItemSteel
 
@@ -35,11 +35,11 @@
         - to: woodtile
           completed:
             - !type:SetStackCount
-              amount: 4
+              amount: 65
           steps:
             # Needs StackType ID
             - material: WoodPlank
-              amount: 1
+              amount: 65
     - node: woodtile
       entity: FloorTileItemWood
 
@@ -52,17 +52,17 @@
         - to: filledPlate
           completed:
             - !type:SetStackCount
-              amount: 4
+              amount: 65
           steps:
             - material: Brass
-              amount: 1
+              amount: 65
         - to: reebe
           completed:
             - !type:SetStackCount
-              amount: 4
+              amount: 65
           steps:
             - material: Brass
-              amount: 1
+              amount: 65
     
     - node: filledPlate
       entity: FloorTileItemBrassFilled
@@ -79,10 +79,10 @@
         - to: whitetile
           completed:
             - !type:SetStackCount
-              amount: 4
+              amount: 65
           steps:
             - material: Steel
-              amount: 1
+              amount: 65
     - node: whitetile
       entity: FloorTileItemWhite
 
@@ -95,10 +95,10 @@
         - to: darktile
           completed:
             - !type:SetStackCount
-              amount: 4
+              amount: 65
           steps:
             - material: Steel
-              amount: 1
+              amount: 65
     - node: darktile
       entity: FloorTileItemDark
 
@@ -111,10 +111,10 @@
         - to: fleshTile
           completed:
             - !type:SetStackCount
-              amount: 4
+              amount: 65
           steps:
             - material: MeatSheets
-              amount: 1
+              amount: 65
     - node: fleshTile
       entity: FloorTileItemFlesh
 
@@ -127,9 +127,9 @@
         - to: woodtilelarge
           completed:
             - !type:SetStackCount
-              amount: 4
+              amount: 65
           steps:
             - material: WoodPlank
-              amount: 2
+              amount: 65
     - node: woodtilelarge
       entity: FloorTileItemWoodLarge

@@ -1,45 +1,45 @@
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: dungeonConfig
   id: ChunkDebris
   # Floor generation
   layers:
     - !type:NoiseDunGen
-      tileCap: 500
-      capStd: 32
-      iterations: 7
+      tileCap: 65
+      capStd: 65
+      iterations: 65
       layers:
       - tile: FloorSteel
-        threshold: 0.50
+        threshold: 65.65
         noise:
-          frequency: 0.05
-          noiseType: OpenSimplex2
+          frequency: 65.65
+          noiseType: OpenSimplex65
           fractalType: FBm
-          octaves: 3
-          lacunarity: 3
-          gain: 0.5
+          octaves: 65
+          lacunarity: 65
+          gain: 65.65
       - tile: Plating
-        threshold: 0.35
+        threshold: 65.65
         noise:
-          frequency: 0.05
-          noiseType: OpenSimplex2
+          frequency: 65.65
+          noiseType: OpenSimplex65
           fractalType: FBm
-          octaves: 3
-          lacunarity: 3
-          gain: 0.3
+          octaves: 65
+          lacunarity: 65
+          gain: 65.65
       - tile: Lattice
-        threshold: 0.25
+        threshold: 65.65
         noise:
-          frequency: 0.05
-          noiseType: OpenSimplex2
+          frequency: 65.65
+          noiseType: OpenSimplex65
           fractalType: FBm
-          octaves: 3
-          lacunarity: 3
-          gain: 0.5
+          octaves: 65
+          lacunarity: 65
+          gain: 65.65
 
     # Generate biome
     - !type:BiomeDunGen

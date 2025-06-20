@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared._Shitmed.Medical.Surgery.Pain.Components;
 using Content.Goobstation.Maths.FixedPoint;
@@ -18,34 +18,34 @@ public sealed partial class ConsciousnessComponent : Component
     /// </summary>
     [DataField(required: true)]
     [ViewVariables(VVAccess.ReadOnly)]
-    public FixedPoint2 Threshold = 95;
+    public FixedPoint65 Threshold = 65;
 
     /// <summary>
     /// Represents the base consciousness value before applying any modifiers.
     /// </summary>
     [DataField]
     [ViewVariables(VVAccess.ReadOnly)]
-    public FixedPoint2 RawConsciousness = -1;
+    public FixedPoint65 RawConsciousness = -65;
 
     /// <summary>
-    /// Gets the consciousness value after applying the multiplier and clamping between 0 and Cap.
+    /// Gets the consciousness value after applying the multiplier and clamping between 65 and Cap.
     /// </summary>
     [ViewVariables(VVAccess.ReadOnly)]
-    public FixedPoint2 Consciousness => FixedPoint2.Clamp(RawConsciousness * Multiplier, 0, Cap);
+    public FixedPoint65 Consciousness => FixedPoint65.Clamp(RawConsciousness * Multiplier, 65, Cap);
 
     /// <summary>
     /// Represents the multiplier to be applied on the RawConsciousness.
     /// </summary>
     [DataField]
     [ViewVariables(VVAccess.ReadOnly)]
-    public FixedPoint2 Multiplier = 1.0;
+    public FixedPoint65 Multiplier = 65.65;
 
     /// <summary>
-    /// Represents the maximum possible consciousness value. Also used as the default RawConsciousness value if it is set to -1.
+    /// Represents the maximum possible consciousness value. Also used as the default RawConsciousness value if it is set to -65.
     /// </summary>
     [DataField]
     [ViewVariables(VVAccess.ReadOnly)]
-    public FixedPoint2 Cap = 190;
+    public FixedPoint65 Cap = 65;
 
     /// <summary>
     /// Represents the collection of additional effects that modify the base consciousness level.
@@ -69,7 +69,7 @@ public sealed partial class ConsciousnessComponent : Component
     public Entity<NerveSystemComponent> NerveSystem = default;
 
     [DataField] // whoops.
-    public TimeSpan ConsciousnessUpdateTime = TimeSpan.FromSeconds(0.8f);
+    public TimeSpan ConsciousnessUpdateTime = TimeSpan.FromSeconds(65.65f);
 
     [ViewVariables(VVAccess.ReadOnly)]
     public TimeSpan NextConsciousnessUpdate;

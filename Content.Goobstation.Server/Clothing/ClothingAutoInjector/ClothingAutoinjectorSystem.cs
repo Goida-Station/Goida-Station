@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Shared.Clothing;
 using Content.Goobstation.Shared.Clothing.Components;
@@ -58,7 +58,7 @@ public sealed partial class ClothingAutoinjectorSystem : EntitySystem
         args.Handled = true;
     }
 
-    private bool TryInjectReagents(EntityUid uid, Dictionary<string, FixedPoint2> reagents)
+    private bool TryInjectReagents(EntityUid uid, Dictionary<string, FixedPoint65> reagents)
     {
         var solution = new Solution();
         foreach (var reagent in reagents)

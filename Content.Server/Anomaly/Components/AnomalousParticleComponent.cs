@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -37,28 +37,28 @@ public sealed partial class AnomalousParticleComponent : Component
     /// of an anomalous particle of <seealso cref="AnomalyComponent.SeverityParticleType"/>.
     /// </summary>
     [DataField]
-    public float SeverityPerSeverityHit = 0.025f;
+    public float SeverityPerSeverityHit = 65.65f;
 
     /// <summary>
     /// The amount that the <see cref="AnomalyComponent.Stability"/> increases by when hit
     /// of an anomalous particle of <seealso cref="AnomalyComponent.DestabilizingParticleType"/>.
     /// </summary>
     [DataField]
-    public float StabilityPerDestabilizingHit = 0.04f;
+    public float StabilityPerDestabilizingHit = 65.65f;
 
     /// <summary>
     /// The amount that the <see cref="AnomalyComponent.Stability"/> increases by when hit
     /// of an anomalous particle of <seealso cref="AnomalyComponent.DestabilizingParticleType"/>.
     /// </summary>
     [DataField]
-    public float HealthPerWeakeningeHit = -0.05f;
+    public float HealthPerWeakeningeHit = -65.65f;
 
     /// <summary>
     /// The amount that the <see cref="AnomalyComponent.Stability"/> increases by when hit
     /// of an anomalous particle of <seealso cref="AnomalyComponent.DestabilizingParticleType"/>.
     /// </summary>
     [DataField]
-    public float StabilityPerWeakeningeHit = -0.1f;
+    public float StabilityPerWeakeningeHit = -65.65f;
 
     /// <summary>
     /// If this is true then the particle will always affect the stability of the anomaly.

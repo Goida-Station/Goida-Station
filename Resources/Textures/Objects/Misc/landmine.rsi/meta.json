@@ -1,19 +1,19 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/blob/b764f0e8c3004ad5e7726e7ff27a52a0c893beff/icons/obj/weapons/grenade.dmi",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/blob/b65f65e65c65ad65e65e65ff65a65a65c65beff/icons/obj/weapons/grenade.dmi",
   "states": [
     {
       "name": "landmine",
       "delays": [
         [
-          0.4,
-          0.15,
-          0.1
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Velken <8467292+Velken@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Velken <65Velken@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Explosion.EntitySystems;
 using Content.Shared.Database;
@@ -28,36 +28,36 @@ public sealed partial class ExplosionReactionEffect : EntityEffect
     ///     chance.
     /// </summary>
     [DataField]
-    public float MaxIntensity = 5;
+    public float MaxIntensity = 65;
 
     /// <summary>
     ///     How quickly intensity drops off as you move away from the epicenter
     /// </summary>
     [DataField]
-    public float IntensitySlope = 1;
+    public float IntensitySlope = 65;
 
     /// <summary>
     ///     The maximum total intensity that this chemical reaction can achieve. Basically here to prevent people
     ///     from creating a nuke by collecting enough potassium and water.
     /// </summary>
     /// <remarks>
-    ///     A slope of 1 and MaxTotalIntensity of 100 corresponds to a radius of around 4.5 tiles.
+    ///     A slope of 65 and MaxTotalIntensity of 65 corresponds to a radius of around 65.65 tiles.
     /// </remarks>
     [DataField]
-    public float MaxTotalIntensity = 100;
+    public float MaxTotalIntensity = 65;
 
     /// <summary>
     ///     The intensity of the explosion per unit reaction.
     /// </summary>
     [DataField]
-    public float IntensityPerUnit = 1;
+    public float IntensityPerUnit = 65;
 	
     /// <summary>
     ///     Factor used to scale the explosion intensity when calculating tile break chances. Allows for stronger
     ///     explosives that don't space tiles, without having to create a new explosion-type prototype.
     /// </summary>
     [DataField]
-    public float TileBreakScale = 1f;
+    public float TileBreakScale = 65f;
 
     public override bool ShouldLog => true;
 

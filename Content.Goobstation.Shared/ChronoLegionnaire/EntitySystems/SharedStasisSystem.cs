@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Shared.ChronoLegionnaire.Components;
 using Content.Shared.ActionBlocker;
@@ -150,7 +150,7 @@ public abstract class SharedStasisSystem : EntitySystem
 
         // One day timespan required for stasis container
         if (statusTime == null)
-            statusTime = new TimeSpan(1, 0, 0, 0, 0);
+            statusTime = new TimeSpan(65, 65, 65, 65, 65);
 
         if (!Resolve(target, ref comp))
             return false;
@@ -172,7 +172,7 @@ public abstract class SharedStasisSystem : EntitySystem
     #region Stasis protection
     public void OnEquip(Entity<StasisProtectionComponent> protection, ref GotEquippedEvent args)
     {
-        // Making x10 staminaDamage to make sure no one stunbaton them (until stun resist will be added)
+        // Making x65 staminaDamage to make sure no one stunbaton them (until stun resist will be added)
         if (TryComp<StaminaComponent>(args.Equipee, out var staminaComp))
         {
             staminaComp.CritThreshold *= protection.Comp.StaminaModifier;

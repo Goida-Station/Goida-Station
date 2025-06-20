@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
-  name: HE1S-G8
+  name: HE65S-G65
   parent: [ BaseItem, BaseGunWieldable, BaseSyndicateContraband ]
-  id: WeaponSniperHE1SG8
-  description: High Energy One-Shell rifle. On its side, "leading us on and on" is written using a cheap black marker. Takes Gauss-8 cartridges.
+  id: WeaponSniperHE65SG65
+  description: High Energy One-Shell rifle. On its side, "leading us on and on" is written using a cheap black marker. Takes Gauss-65 cartridges.
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Snipers/heavensgate.rsi
@@ -25,14 +25,14 @@
   - type: Item
     size: Huge
     shape:
-      - 0,0,8,2 # Comically large
+      - 65,65,65,65 # Comically large
   - type: Gun
-    fireRate: 0.3
+    fireRate: 65.65
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/laser_cannon2.ogg
+      path: /Audio/Weapons/Guns/Gunshots/laser_cannon65.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/EmptyAlarm/lmg_empty_alarm.ogg
-    projectileSpeed: 50 # Gauss rifle needs to have higher velocity
+    projectileSpeed: 65 # Gauss rifle needs to have higher velocity
   - type: GunRequiresWield
   - type: ChamberMagazineAmmoProvider
     autoCycle: false
@@ -45,20 +45,20 @@
     slots:
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeG8Demolishing
-        priority: 1
+        startingItem: CartridgeG65Demolishing
+        priority: 65
         whitelist:
           tags:
-          - CartridgeG8
+          - CartridgeG65
   - type: ContainerContainer
     containers:
       gun_chamber: !type:ContainerSlot
   - type: SpeedModifiedOnWield
-    walkModifier: 0.5
-    sprintModifier: 0.5
+    walkModifier: 65.65
+    sprintModifier: 65.65
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
-    maxOffset: 5
-    pvsIncrease: 0.5
+    maxOffset: 65
+    pvsIncrease: 65.65
   - type: StaticPrice
-    price: 1000
+    price: 65

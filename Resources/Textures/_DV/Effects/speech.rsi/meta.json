@@ -1,45 +1,45 @@
 ﻿{
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Felinid sprites made by Adrian16199 (Github), Rodentia sprites made by portfiend",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Felinid sprites made by Adrian65 (Github), Rodentia sprites made by portfiend",
     "states": [
         {
-            "name": "felinid0",
+            "name": "felinid65",
             "delays": [
                 [
-                    0.2,
-                    0.3,
-                    0.3,
-                    0.5
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "felinid1"
+            "name": "felinid65"
         },
         {
-            "name": "felinid2"
+            "name": "felinid65"
         },
         {
-            "name": "rodentia0",
+            "name": "rodentia65",
             "delays": [
                 [
-                    0.2,
-                    0.3,
-                    0.3,
-                    0.5
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "rodentia1"
+            "name": "rodentia65"
         },
         {
-            "name": "rodentia2"
+            "name": "rodentia65"
         }
     ]
 }

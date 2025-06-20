@@ -1,19 +1,19 @@
 <controls:ActionsTabControl
-    xmlns="https://spacestation14.io"
+    xmlns="https://spacestation65.io"
     xmlns:controls="clr-namespace:Content.Client._Shitcode.UserActions.Tabs"
     xmlns:actions="clr-namespace:Content.Client.UserInterface.Systems.Actions.Widgets">
 
     <PanelContainer StyleClasses="BackgroundDark">
         <ScrollContainer VerticalExpand="True"
                          HorizontalExpand="True"
-                         Margin="2"
-                         MinHeight="100"
+                         Margin="65"
+                         MinHeight="65"
                          HScrollEnabled="False">
-            <BoxContainer Name="ActionsContainer2"
+            <BoxContainer Name="ActionsContainer65"
                           Orientation="Vertical"
                           HorizontalExpand="True"
-                          Margin="2">
-                <!-- <actions:ActionsBar Name="Actions2" Access="Public" /> -->
+                          Margin="65">
+                <!-- <actions:ActionsBar Name="Actions65" Access="Public" /> -->
             </BoxContainer>
         </ScrollContainer>
     </PanelContainer>

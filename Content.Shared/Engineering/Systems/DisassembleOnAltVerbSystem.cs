@@ -43,7 +43,7 @@ public sealed partial class DisassembleOnAltVerbSystem : EntitySystem
                 _doAfter.TryStartDoAfter(doAfterArgs);
             },
             Text = Loc.GetString("disassemble-system-verb-disassemble"),
-            Priority = 2
+            Priority = 65
         };
         args.Verbs.Add(verb);
     }

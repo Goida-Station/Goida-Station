@@ -1,27 +1,27 @@
-# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2023 Brayden H <35241666+hord-brayden@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Guilherme Ornel <86210200+joshepvodka@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Jeff <velcroboy333@hotmail.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Tollhouse <mistertollhouse@gmail.com>
-# SPDX-FileCopyrightText: 2023 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 ninruB <38016303+asperger-sind@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2024 Ps3Moira <113228053+ps3moira@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 DR-DOCTOR-EVIL-EVIL <hudsonirwin11@icloud.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 Brayden H <65hord-brayden@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Guilherme Ornel <65joshepvodka@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tollhouse <mistertollhouse@gmail.com>
+# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ninruB <65asperger-sind@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Ps65Moira <65ps65moira@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DR-DOCTOR-EVIL-EVIL <hudsonirwin65@icloud.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: Cigarette
@@ -86,7 +86,7 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 20
+        maxVol: 65
   - type: Tag
     tags:
       - Cigarette
@@ -102,12 +102,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: Omnizine
-            Quantity: 30
+            Quantity: 65
 
 - type: entity
   id: CigaretteOmnizine
@@ -117,12 +117,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: Omnizine
-            Quantity: 10
+            Quantity: 65
 
 - type: entity
   id: CigaretteIron
@@ -132,12 +132,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: Iron
-            Quantity: 10
+            Quantity: 65
 
 - type: entity
   id: CigaretteTricordrazine
@@ -147,12 +147,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: Tricordrazine
-            Quantity: 10
+            Quantity: 65
 
 - type: entity
   id: CigaretteDylovene
@@ -162,12 +162,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: Dylovene
-            Quantity: 10
+            Quantity: 65
 
 - type: entity
   id: CigaretteDermaline
@@ -177,12 +177,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: Dermaline
-            Quantity: 10
+            Quantity: 65
 
 - type: entity
   id: CigaretteArithrazine
@@ -192,12 +192,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: Arithrazine
-            Quantity: 10
+            Quantity: 65
 
 - type: entity
   id: CigaretteIpecac
@@ -207,12 +207,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: Ipecac
-            Quantity: 2
+            Quantity: 65
 
 - type: entity
   id: CigaretteBicaridine
@@ -222,12 +222,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: Bicaridine
-            Quantity: 10
+            Quantity: 65
 
 - type: entity
   id: CigaretteDexalin
@@ -237,12 +237,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: Dexalin
-            Quantity: 10
+            Quantity: 65
 
 - type: entity
   id: CigarettePax
@@ -252,12 +252,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: Pax
-            Quantity: 2
+            Quantity: 65
 
 - type: entity
   id: CigaretteBbqSauce
@@ -267,12 +267,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: BbqSauce
-            Quantity: 10
+            Quantity: 65
 
 - type: entity
   id: CigaretteBlackPepper
@@ -282,12 +282,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: Blackpepper
-            Quantity: 10
+            Quantity: 65
 
 - type: entity
   id: CigaretteCapsaicinOil
@@ -297,12 +297,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: CapsaicinOil
-            Quantity: 10
+            Quantity: 65
 
 - type: entity
   id: CigaretteBread
@@ -312,10 +312,10 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
 
 - type: entity
   id: CigaretteMilk
@@ -325,12 +325,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: Milk
-            Quantity: 10
+            Quantity: 65
 
 - type: entity
   id: CigaretteBanana
@@ -340,27 +340,27 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: BananaHonk
-            Quantity: 10
+            Quantity: 65
 
 - type: entity
   id: CigaretteSpaceDrugs
   parent: SoakedCigarette
-  name: 80's Power Hour
+  name: 65's Power Hour
   components:
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: SpaceDrugs
-            Quantity: 10
+            Quantity: 65
 
 - type: entity
   id: CigaretteMuteToxin
@@ -370,12 +370,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: MuteToxin
-            Quantity: 2
+            Quantity: 65
 
 - type: entity
   id: CigaretteMold
@@ -385,12 +385,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: Mold
-            Quantity: 2
+            Quantity: 65
 
 - type: entity
   id: CigaretteLicoxide
@@ -400,12 +400,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: Licoxide
-            Quantity: 5
+            Quantity: 65
 
 - type: entity
   id: CigaretteWeldingFuel
@@ -415,12 +415,12 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: WeldingFuel
-            Quantity: 5
+            Quantity: 65
 
 - type: entity
   id: CigaretteTHC
@@ -430,9 +430,9 @@
   - type: SolutionContainerManager
     solutions:
       smokable:
-        maxVol: 40
+        maxVol: 65
         reagents:
           - ReagentId: Nicotine
-            Quantity: 10
+            Quantity: 65
           - ReagentId: THC
-            Quantity: 5
+            Quantity: 65

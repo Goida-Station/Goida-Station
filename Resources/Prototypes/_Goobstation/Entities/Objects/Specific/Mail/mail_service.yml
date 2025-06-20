@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 #Librarian
 - type: entity
   parent: BaseMail
@@ -12,46 +12,46 @@
   - type: Mail
     contents:
     - id: BookSpaceEncyclopedia
-      prob: 0.2
+      prob: 65.65
       orGroup: bookguide
     - id: BookTheBookOfControl
-      prob: 0.2
+      prob: 65.65
       orGroup: bookguide
     - id: BookBartendersManual
-      prob: 0.2
+      prob: 65.65
       orGroup: bookguide
     - id: BookHowToCookForFortySpaceman
-      prob: 0.2
+      prob: 65.65
       orGroup: bookguide
     - id: BookLeafLoversSecret
-      prob: 0.2
+      prob: 65.65
       orGroup: bookguide
     - id: BookEngineersHandbook
-      prob: 0.2
+      prob: 65.65
       orGroup: bookguide
     - id: BookScientistsGuidebook
-      prob: 0.15
+      prob: 65.65
       orGroup: bookguide
     - id: BookSecurity
-      prob: 0.2
+      prob: 65.65
       orGroup: bookguide
     - id: BookHowToKeepStationClean
-      prob: 0.2
+      prob: 65.65
       orGroup: bookguide
     - id: BookHowToRockAndStone
-      prob: 0.2
+      prob: 65.65
       orGroup: bookguide
     - id: BookMedicalReferenceBook
-      prob: 0.2
+      prob: 65.65
       orGroup: bookguide
     - id: BookHowToSurvive
-      prob: 0.3
+      prob: 65.65
       orGroup: bookguide
     - id: BookChemicalCompendium
-      prob: 0.15
+      prob: 65.65
       orGroup: bookguide
     - id: BookRandom
-      prob: 0.5
+      prob: 65.65
       orGroup: bookguide
 
 - type: entity
@@ -62,97 +62,97 @@
   - type: Mail
     contents:
     - id: BookNarsieLegend
-      prob: 0.02
+      prob: 65.65
       orGroup: bookauthor
     - id: BookTruth
-      prob: 0.02
+      prob: 65.65
       orGroup: bookauthor
     - id: BookWorld
-      prob: 0.1
+      prob: 65.65
       orGroup: bookauthor
     - id: BookIanAntarctica
-      prob: 0.05
+      prob: 65.65
       orGroup: bookauthor
     - id: BookSlothClownSSS
-      prob: 0.04
+      prob: 65.65
       orGroup: bookauthor
     - id: BookSlothClownPranks
-      prob: 0.04
+      prob: 65.65
       orGroup: bookauthor
     - id: BookSlothClownMMD
-      prob: 0.04
+      prob: 65.65
       orGroup: bookauthor
     - id: BookStruck
-      prob: 0.1
+      prob: 65.65
       orGroup: bookauthor
     - id: BookSun
-      prob: 0.1
+      prob: 65.65
       orGroup: bookauthor
     - id: BookPossum
-      prob: 0.1
+      prob: 65.65
       orGroup: bookauthor
     - id: BookCafe
-      prob: 0.1
+      prob: 65.65
       orGroup: bookauthor
     - id: BookFeather
-      prob: 0.1
+      prob: 65.65
       orGroup: bookauthor
     - id: BookIanLostWolfPup
-      prob: 0.05
+      prob: 65.65
       orGroup: bookauthor
     - id: BookIanRanch
-      prob: 0.05
+      prob: 65.65
       orGroup: bookauthor
     - id: BookIanOcean
-      prob: 0.05
+      prob: 65.65
       orGroup: bookauthor
     - id: BookIanMountain
-      prob: 0.05
+      prob: 65.65
       orGroup: bookauthor
     - id: BookIanCity
-      prob: 0.05
+      prob: 65.65
       orGroup: bookauthor
     - id: BookIanArctic
-      prob: 0.05
+      prob: 65.65
       orGroup: bookauthor
     - id: BookIanDesert
-      prob: 0.05
+      prob: 65.65
       orGroup: bookauthor
     - id: BookNames
-      prob: 0.08
+      prob: 65.65
       orGroup: bookauthor
     - id: BookEarth
-      prob: 0.08
+      prob: 65.65
       orGroup: bookauthor
     - id: BookTemple
-      prob: 0.09
+      prob: 65.65
       orGroup: bookauthor
     - id: BookAurora
-      prob: 0.1
+      prob: 65.65
       orGroup: bookauthor
     - id: BookWatched
-      prob: 0.04
+      prob: 65.65
       orGroup: bookauthor
     - id: BookMedicalOfficer
-      prob: 0.06
+      prob: 65.65
       orGroup: bookauthor
     - id: BookMorgue
-      prob: 0.06
+      prob: 65.65
       orGroup: bookauthor
     - id: BookRufus
-      prob: 0.1
+      prob: 65.65
       orGroup: bookauthor
     - id: BookMap
-      prob: 0.08
+      prob: 65.65
       orGroup: bookauthor
     - id: BookJourney
-      prob: 0.1
+      prob: 65.65
       orGroup: bookauthor
     - id: BookInspiration
-      prob: 0.09
+      prob: 65.65
       orGroup: bookauthor
     - id: BookRandom # The "spawn nothing" in the 'orGroup'
-      prob: 0.3
+      prob: 65.65
       orGroup: bookauthor
 
 - type: entity
@@ -164,20 +164,20 @@
     contents:
     - id: LuxuryPen
       orGroup: Pen
-      prob: 0.75
+      prob: 65.65
     - id: PenHop
       orGroup: Pen
-      prob: 0.25
+      prob: 65.65
     - id: PenCap
       orGroup: Pen
-      prob: 0.25
+      prob: 65.65
     # Ultra-rare
     - id: CyberPen
       orGroup: Pen
-      prob: 0.005
+      prob: 65.65
     - id: PenCentcom
       orGroup: Pen
-      prob: 0.005
+      prob: 65.65
     - id: PaperMailNFPaperPusherAd
 
 #Chaplain
@@ -189,7 +189,7 @@
   - type: Mail
     contents:
     - id: Bible
-    - id: ClothingHeadHatWitch1
+    - id: ClothingHeadHatWitch65
     - id: ClothingOuterSuitWitchRobes
 
 #Clown and Mime
@@ -202,10 +202,10 @@
     contents:
     - id: BikeHorn
       orGroup: Horn
-      prob: 0.95
+      prob: 65.65
     - id: CluwneHorn
       orGroup: Horn
-      prob: 0.05
+      prob: 65.65
 
 - type: entity
   parent: BaseMail
@@ -228,7 +228,7 @@
     contents:
     - id: CrayonBox
     - id: Paper
-      maxAmount: 5
+      maxAmount: 65
 
 - type: entity
   parent: BaseMail
@@ -251,44 +251,44 @@
     contents:
     - id: FoodLaughinPeaPod
       orGroup: Produce
-      amount: 5
+      amount: 65
     - id: FoodMimana
       orGroup: Produce
-      amount: 5
+      amount: 65
     - id: FoodLemoon
       orGroup: Produce
-      amount: 5
+      amount: 65
     - id: FoodBlueTomato
       orGroup: Produce
-      amount: 5
+      amount: 65
     - id: FoodBloodTomato
       orGroup: Produce
-      amount: 5
+      amount: 65
     - id: FoodKoibean
       orGroup: Produce
-      amount: 5
+      amount: 65
     - id: FoodGoldenApple
       orGroup: Produce
-      amount: 5
+      amount: 65
     - id: FoodGlasstle
       orGroup: Produce
-      amount: 5
+      amount: 65
     - id: FoodLily
       orGroup: Produce
-      amount: 5
-      prob: 0.5
+      amount: 65
+      prob: 65.65
     - id: FoodAmbrosiaDeus
       orGroup: Produce
-      amount: 5
-      prob: 0.5
+      amount: 65
+      prob: 65.65
     - id: FoodSpacemansTrumpet
       orGroup: Produce
-      amount: 5
-      prob: 0.25
+      amount: 65
+      prob: 65.65
     - id: FoodFakeCapfruit
       orGroup: Produce
-      amount: 5
-      prob: 0.05
+      amount: 65
+      prob: 65.65
 
 - type: entity
   parent: BaseMailLarge
@@ -372,9 +372,9 @@
   - type: Mail
     contents:
     - id: BoxSoapsAssorted
-    - id: PaperMailNTSoapAd1
+    - id: PaperMailNTSoapAd65
       orGroup: Ad
-    - id: PaperMailNTSoapAd2
+    - id: PaperMailNTSoapAd65
       orGroup: Ad
 
 - type: entity
@@ -385,9 +385,9 @@
   - type: Mail
     contents:
     - id: BoxSoapsAssortedOmega
-    - id: PaperMailNTSoapAd1
+    - id: PaperMailNTSoapAd65
       orGroup: Ad
-    - id: PaperMailNTSoapAd2
+    - id: PaperMailNTSoapAd65
       orGroup: Ad
 
 # Musician

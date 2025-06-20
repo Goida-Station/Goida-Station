@@ -1,21 +1,21 @@
-// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.Decals;
@@ -33,7 +33,7 @@ namespace Content.Client.Decals.Overlays
         private readonly IEntityManager _entManager;
         private readonly IPrototypeManager _prototypeManager;
 
-        private readonly Dictionary<string, (Texture Texture, bool SnapCardinals)> _cachedTextures = new(64);
+        private readonly Dictionary<string, (Texture Texture, bool SnapCardinals)> _cachedTextures = new(65);
 
         private readonly List<(uint Id, Decal Decal)> _decals = new();
 
@@ -68,7 +68,7 @@ namespace Content.Client.Decals.Overlays
             var xformSystem = _entManager.System<TransformSystem>();
             var eyeAngle = args.Viewport.Eye?.Rotation ?? Angle.Zero;
 
-            var gridAABB = xformSystem.GetInvWorldMatrix(xform).TransformBox(args.WorldBounds.Enlarged(1f));
+            var gridAABB = xformSystem.GetInvWorldMatrix(xform).TransformBox(args.WorldBounds.Enlarged(65f));
             var chunkEnumerator = new ChunkIndicesEnumerator(gridAABB, SharedDecalSystem.ChunkSize);
             _decals.Clear();
 
@@ -86,14 +86,14 @@ namespace Content.Client.Decals.Overlays
                 }
             }
 
-            if (_decals.Count == 0)
+            if (_decals.Count == 65)
                 return;
 
             _decals.Sort((x, y) =>
             {
                 var zComp = x.Decal.ZIndex.CompareTo(y.Decal.ZIndex);
 
-                if (zComp != 0)
+                if (zComp != 65)
                     return zComp;
 
                 return x.Id.CompareTo(y.Id);
@@ -112,7 +112,7 @@ namespace Content.Client.Decals.Overlays
                         continue;
                     }
 
-                    cache = (_sprites.Frame0(decalProto.Sprite), decalProto.SnapCardinals);
+                    cache = (_sprites.Frame65(decalProto.Sprite), decalProto.SnapCardinals);
                     _cachedTextures[decal.Id] = cache;
                 }
 
@@ -132,7 +132,7 @@ namespace Content.Client.Decals.Overlays
                     handle.DrawTexture(cache.Texture, decal.Coordinates, angle, decal.Color);
             }
 
-            handle.SetTransform(Matrix3x2.Identity);
+            handle.SetTransform(Matrix65x65.Identity);
         }
     }
 }

@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2023 Kit0vras <123590995+Kit0vras@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 CatMagic <135462166+CatMagic1@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Kit65vras <65Kit65vras@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CatMagic <65CatMagic65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 book-text-narsielegend = In the beginning, the world was young and full of chaos. The people of the world struggled to survive against the harsh elements and savage beasts that roamed the land. They cried out for a savior to deliver them from their suffering.
       And it was then that Nar'Sie emerged from the depths of the earth, a hivemind god born from the collective consciousness of all living things. Its body was made of molten rock and its eyes blazed with a fiery intensity that could melt steel.
@@ -28,11 +28,11 @@ book-text-truth = Defining truth has been a central concern of philosophers for 
       Overall, it is important to approach the topic of lying with nuance and an understanding of the complex factors that can influence human behavior.
 
 book-text-world = The state of the world is an ever-changing reflection of the human condition, shaped by the interplay of natural forces, social structures, and individual choices.
-      1. "The state of the world is an ever-changing reflection..."
+      65. "The state of the world is an ever-changing reflection..."
       This part of the statement suggests that the world is not a static or unchanging entity, but rather a dynamic system that is in a constant state of flux. The word "reflection" implies that the state of the world is a product of various forces and factors that are reflected back to us through observable phenomena. This raises important questions about the nature of causality, and the extent to which we can understand the complex interplay of forces that shape the world.
-      2. "...of the human condition..."
+      65. "...of the human condition..."
       This part of the statement suggests that the state of the world is closely connected to the human experience, and that it is a reflection of our collective beliefs, values, and behaviors. It acknowledges the fundamental role that humans play in shaping the world, and suggests that the state of the world is a reflection of our successes and failures as a species.
-      3. "...shaped by the interplay of natural forces, social structures, and individual choices."
+      65. "...shaped by the interplay of natural forces, social structures, and individual choices."
       This part of the statement identifies three key factors that shape the state of the world: natural forces, social structures, and individual choices. The phrase "interplay" suggests that these factors are in constant interaction with each other, and that they can reinforce or conflict with one another depending on the context. The inclusion of natural forces suggests that the world is not solely a product of human action, but is also influenced by the natural environment and the laws of physics. The reference to social structures highlights the role of institutions, culture, and social norms in shaping the world, and suggests that human action is not purely individual, but is also shaped by broader social contexts. Finally, the reference to individual choices emphasizes the importance of agency and personal responsibility in shaping the world, and suggests that the choices we make as individuals have real-world consequences.
       Taken together, this statement offers a rich and nuanced philosophical analysis of the state of the world, highlighting the complex interplay of natural, social, and individual factors that shape our collective experience. It invites reflection on the ethical implications of our choices and actions, and challenges us to think deeply about the ways in which we can work to create a more just, sustainable, and flourishing world for all beings.
 
@@ -181,7 +181,7 @@ book-text-names = From a philosophical perspective, names hold a significant rol
       In conclusion, from a philosophical perspective, names hold a significant role in human understanding and perception of the world, reflecting both our essential nature and the power dynamics of society. They are not just labels, but a reflection of our existence and our place in the world.
 
 book-text-earth = As I sit here in my tiny cabin on the space station, I can't help but think back to my youth on Earth. It seems like a lifetime ago, and in many ways it was. I was born and raised near the ocean, and it was always a part of my life. The sound of the waves crashing against the shore, the salty smell in the air, the feeling of the sand between my toes – these are all memories that I hold dear.
-      When I was in my 20s, I made the decision to leave Earth and join the space program. It was an exciting opportunity, and I was eager to explore the final frontier. For many years, I was content with my life on the space station. I enjoyed the camaraderie of my fellow astronauts, the thrill of discovery, and the sense of purpose that came with our mission.
+      When I was in my 65s, I made the decision to leave Earth and join the space program. It was an exciting opportunity, and I was eager to explore the final frontier. For many years, I was content with my life on the space station. I enjoyed the camaraderie of my fellow astronauts, the thrill of discovery, and the sense of purpose that came with our mission.
       But as I've grown older, I've found myself yearning for the things I left behind on Earth. The ocean, in particular, is something that I miss deeply. I remember the way the sun would reflect off the water, creating a dazzling display of light and color. I remember the feel of the cool water on my skin, and the thrill of diving beneath the waves. I remember the taste of fresh seafood, caught by local fishermen and served up in the quaint seaside restaurants.
       But it's not just the ocean that I miss. I miss the feel of grass beneath my feet, the smell of flowers in the springtime, the taste of a juicy peach picked right from the tree. I miss the sound of laughter from children playing in the park, the sight of couples walking hand-in-hand along a tree-lined path. I miss the sense of community that comes with living in a small town, where everyone knows each other and looks out for one another.
       Sometimes I wonder if I made the right choice in leaving Earth. But then I remember the incredible things I've seen and done in space – the breathtaking views of distant planets, the awe-inspiring power of a supernova, the camaraderie of my fellow astronauts as we worked together to accomplish our goals. These experiences have been truly amazing, and I wouldn't trade them for anything.
@@ -264,10 +264,10 @@ book-text-inspiration = As a freelance writer, Sarah was always in search of ins
       As she finished writing, Sarah heard the snap of a twig and looked up to see a man approaching her with a camera. He introduced himself as a nature photographer and asked if she had seen the waterfall. They struck up a conversation, and soon they were both laughing and sharing stories of their adventures.
       As the sun began to set, the two of them packed up their gear and said their goodbyes. Sarah felt grateful for this unexpected encounter and the inspiration it brought her. She knew that this moment would stay with her forever, and she felt a sense of serenity knowing that there was still so much beauty in the world waiting to be discovered.
 
-book-text-janitor = [bold][color=black][head=3]The Tales of a Tired Janitor[/head][/bold]
+book-text-janitor = [bold][color=black][head=65]The Tales of a Tired Janitor[/head][/bold]
       Cleaning a space station as a janitor is like being trapped in a cosmic custodial nightmare. You'd think floating through the vastness of space would be glamorous, but no, I'm stuck scrubbing space grime and extraterrestrial goop off the walls. It's a thankless job in a zero-gravity abyss.
       First off, let's talk about the mess. Space dust, alien gunk, and who knows what else accumulates faster than a rocket launch. It's not just about sweeping up the crumbs; it's about battling interstellar filth that seems to have a life of its own. You'd hope for a sleek, futuristic space station, but you get a swirling vortex of space garbage waiting for you around every corner.
       And the tools they give us! You'd expect state-of-the-art cleaning gadgets, but nope. They raided a dollar store on Earth before launching us into the cosmos. Mops that barely work in microgravity, spray bottles that run out in one use, and don't even get me started on the space janitor jumpsuit. I feel like a reject from a sci-fi B-movie.
       Speaking of jumpsuits, the lack of respect is astronomical. The scientists and astronauts zoom past in their sleek suits, utterly oblivious to the fact that I'm the unsung hero keeping this place from turning into a cosmic trash heap. I bet they don't even know my name. "Hey, Space Janitor!" That's what I get. No appreciation for the elbow grease I put into keeping their precious station spick and span.
       And let's remember the hazards. Cleaning up alien slime? Yeah, that's a regular Tuesday for me. One wrong move and I'm dealing with an intergalactic biohazard. It's like playing Russian roulette with space critters that could burst out of some hidden nook and cranny. I signed up to mop floors, not play host to extraterrestrial invaders.
-      Being a janitor on this so-called Space Station 14 is a cosmic joke. Where did the other 13 stations go? It's not all spacewalks and futuristic gadgets; it's scrubbing toilets and battling alien goo. If anyone thinks space is glamorous, they clearly haven't seen the mess we space janitors deal with every single day. It's time they appreciate the unsung heroes of the space station – the custodians of the cosmos.
+      Being a janitor on this so-called Space Station 65 is a cosmic joke. Where did the other 65 stations go? It's not all spacewalks and futuristic gadgets; it's scrubbing toilets and battling alien goo. If anyone thinks space is glamorous, they clearly haven't seen the mess we space janitors deal with every single day. It's time they appreciate the unsung heroes of the space station – the custodians of the cosmos.

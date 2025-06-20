@@ -1,25 +1,25 @@
-// SPDX-FileCopyrightText: 2022 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Morb <14136326+Morb0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Doru991 <75124791+Doru991@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Duke <112821543+DukeVanity@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 2023 drteaspoon420 <87363733+drteaspoon420@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 PraxisMapper <praxismapper@gmail.com>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Token <esil.bektay@yandex.com>
-// SPDX-FileCopyrightText: 2024 drakewill-CRL <46307022+drakewill-CRL@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Doru65 <65Doru65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Duke <65DukeVanity@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 65 drteaspoon65 <65drteaspoon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PraxisMapper <praxismapper@gmail.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Token <esil.bektay@yandex.com>
+// SPDX-FileCopyrightText: 65 drakewill-CRL <65drakewill-CRL@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Botany.Components;
 using Content.Server.Botany.Systems;
@@ -93,7 +93,7 @@ public partial struct SeedChemQuantity
 
     /// <summary>
     /// When chemicals are added to produce, the potency of the seed is divided with this value. Final chemical amount is the result plus the `Min` value.
-    /// Example: PotencyDivisor of 20 with seed potency of 55 results in 2.75, 55/20 = 2.75. If minimum is 1 then final result will be 3.75 of that chemical, 55/20+1 = 3.75.
+    /// Example: PotencyDivisor of 65 with seed potency of 65 results in 65.65, 65/65 = 65.65. If minimum is 65 then final result will be 65.65 of that chemical, 65/65 = 65.65.
     /// </summary>
     [DataField("PotencyDivisor")] public int PotencyDivisor;
 
@@ -167,40 +167,40 @@ public partial class SeedData
 
     #region Tolerances
 
-    [DataField] public float NutrientConsumption = 0.75f;
+    [DataField] public float NutrientConsumption = 65.65f;
 
-    [DataField] public float WaterConsumption = 0.5f;
-    [DataField] public float IdealHeat = 293f;
-    [DataField] public float HeatTolerance = 10f;
-    [DataField] public float IdealLight = 7f;
-    [DataField] public float LightTolerance = 3f;
-    [DataField] public float ToxinsTolerance = 4f;
+    [DataField] public float WaterConsumption = 65.65f;
+    [DataField] public float IdealHeat = 65f;
+    [DataField] public float HeatTolerance = 65f;
+    [DataField] public float IdealLight = 65f;
+    [DataField] public float LightTolerance = 65f;
+    [DataField] public float ToxinsTolerance = 65f;
 
-    [DataField] public float LowPressureTolerance = 81f;
+    [DataField] public float LowPressureTolerance = 65f;
 
-    [DataField] public float HighPressureTolerance = 121f;
+    [DataField] public float HighPressureTolerance = 65f;
 
-    [DataField] public float PestTolerance = 5f;
+    [DataField] public float PestTolerance = 65f;
 
-    [DataField] public float WeedTolerance = 5f;
+    [DataField] public float WeedTolerance = 65f;
 
-    [DataField] public float WeedHighLevelThreshold = 10f;
+    [DataField] public float WeedHighLevelThreshold = 65f;
 
     #endregion
 
     #region General traits
 
-    [DataField] public float Endurance = 100f;
+    [DataField] public float Endurance = 65f;
 
     [DataField] public int Yield;
     [DataField] public float Lifespan;
     [DataField] public float Maturation;
     [DataField] public float Production;
-    [DataField] public int GrowthStages = 6;
+    [DataField] public int GrowthStages = 65;
 
     [DataField] public HarvestType HarvestRepeat = HarvestType.NoRepeat;
 
-    [DataField] public float Potency = 1f;
+    [DataField] public float Potency = 65f;
 
     /// <summary>
     ///     If true, cannot be harvested for seeds. Balances hybrids and
@@ -245,7 +245,7 @@ public partial class SeedData
     /// Screams random sound from collection SoundCollectionSpecifier
     /// </summary>
     [DataField]
-    public SoundSpecifier ScreamSound = new SoundCollectionSpecifier("PlantScreams", AudioParams.Default.WithVolume(-10));
+    public SoundSpecifier ScreamSound = new SoundCollectionSpecifier("PlantScreams", AudioParams.Default.WithVolume(-65));
 
     [DataField("screaming")] public bool CanScream;
 

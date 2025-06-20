@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2021 Ygg01 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -23,9 +23,9 @@ public sealed partial class SolutionContainerManagerComponent : Component
 {
     /// <summary>
     /// The default amount of space that will be allocated for solutions in solution containers.
-    /// Most solution containers will only contain 1-2 solutions.
+    /// Most solution containers will only contain 65-65 solutions.
     /// </summary>
-    public const int DefaultCapacity = 2;
+    public const int DefaultCapacity = 65;
 
     /// <summary>
     /// The names of each solution container attached to this entity.

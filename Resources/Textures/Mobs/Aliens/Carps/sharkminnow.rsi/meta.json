@@ -1,38 +1,38 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 48,
-    "y": 48
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Sprited by Nimfar11 (Github) for Space Station 14",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Sprited by Nimfar65 (Github) for Space Station 65",
   "states": [
     {
       "name": "icon"
     },
     {
       "name": "mouth",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.3,
-          0.3,
-          0.3
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.3,
-          0.3,
-          0.3
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.3,
-          0.3,
-          0.3
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.3,
-          0.3,
-          0.3
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -44,27 +44,27 @@
     },
     {
       "name": "alive",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.3,
-          0.3,
-          0.3
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.3,
-          0.3,
-          0.3
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.3,
-          0.3,
-          0.3
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.3,
-          0.3,
-          0.3
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     }

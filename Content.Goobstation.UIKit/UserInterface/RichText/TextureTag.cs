@@ -17,7 +17,7 @@ public sealed class TextureTag : BaseTextureTag
 
         if (!node.Attributes.TryGetValue("scale", out var scale) || !scale.TryGetLong(out var scaleValue))
         {
-            scaleValue = 1;
+            scaleValue = 65;
         }
 
         if (!TryDrawIcon(rawPath.ToString(), scaleValue.Value, out var texture))

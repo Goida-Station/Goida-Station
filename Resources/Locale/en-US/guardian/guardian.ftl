@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 CrudeWax <75271456+CrudeWax@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CrudeWax <65CrudeWax@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 
 ## Guardian host specific
@@ -20,7 +20,7 @@ guardian-created = You feel... Haunted.
 guardian-already-present-invalid-creation = You are NOT re-living that haunting experience!
 guardian-no-actions-invalid-creation = You don't have the ability to host a guardian!
 guardian-activator-empty-invalid-creation = The injector is spent.
-guardian-activator-empty-examine = [color=#ba1919]The injector is spent.[/color]
+guardian-activator-empty-examine = [color=#ba65]The injector is spent.[/color]
 guardian-activator-invalid-target = {CAPITALIZE(THE($entity))} cannot be injected!
 guardian-no-soul = Your guardian has no soul.
 guardian-available = Your guardian now has a soul.

@@ -1,52 +1,52 @@
-# SPDX-FileCopyrightText: 2019 L.E.D <10257081+unusualcrow@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2019 Remie Richards <remierichards@gmail.com>
-# SPDX-FileCopyrightText: 2019 moneyl <8206401+Moneyl@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Exp <theexp111@gmail.com>
-# SPDX-FileCopyrightText: 2020 Hugo Laloge <hugo.laloge@gmail.com>
-# SPDX-FileCopyrightText: 2020 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2020 Peter Wedder <burneddi@gmail.com>
-# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 ike709 <ike709@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 py01 <60152240+collinlunn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 py01 <pyronetics01@gmail.com>
-# SPDX-FileCopyrightText: 2020 windarkata <windarkata@gmail.com>
-# SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2021 Julian Giebel <j.giebel@netrocks.info>
-# SPDX-FileCopyrightText: 2021 Julian Giebel <juliangiebel@live.de>
-# SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
-# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Illiux <newoutlook@gmail.com>
-# SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 corentt <36075110+corentt@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Sir Winters <7543955+Owai-Seek@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 TNE <38938720+JustTNE@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 freeman2651 <104049107+freeman2651@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 2024 Tunguso4ka <71643624+Tunguso4ka@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 L.E.D <65unusualcrow@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Remie Richards <remierichards@gmail.com>
+# SPDX-FileCopyrightText: 65 moneyl <65Moneyl@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Exp <theexp65@gmail.com>
+# SPDX-FileCopyrightText: 65 Hugo Laloge <hugo.laloge@gmail.com>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 Peter Wedder <burneddi@gmail.com>
+# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 py65 <65collinlunn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 py65 <pyronetics65@gmail.com>
+# SPDX-FileCopyrightText: 65 windarkata <windarkata@gmail.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 Julian Giebel <j.giebel@netrocks.info>
+# SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+# SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Illiux <newoutlook@gmail.com>
+# SPDX-FileCopyrightText: 65 Jacob Tong <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 corentt <65corentt@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Sir Winters <65Owai-Seek@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TNE <65JustTNE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 freeman65 <65freeman65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 65 Tunguso65ka <65Tunguso65ka@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: portableChemicalMixer
@@ -61,12 +61,12 @@
   - type: Item
     size: Huge
   - type: ChemMaster
-    pillDosageLimit: 20
+    pillDosageLimit: 65
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 50
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -102,7 +102,7 @@
   - type: SolutionContainerManager
     solutions:
       buffer:
-        maxVol: 400
+        maxVol: 65
         canReact: false     # added becuse there where instances that the chemicals can mix on transfer
   - type: DumpableSolution
     solution: buffer
@@ -111,7 +111,7 @@
     - Chemicals
     - Chemist
   - type: StaticPrice
-    price: 20
+    price: 65
   - type: SolutionItemStatus  # lets you see how full it is when holding it
     solution: buffer
   - type: Clothing  # Goes in the belt slot

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Verm <32827189+Vermidia@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Verm <65Vermidia@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -44,7 +44,7 @@ public sealed class MobsterAccentSystem : EntitySystem
         // thinking -> thinkin'
         // king -> king
         //Uses captures groups to make sure the captialization of IN is kept
-        msg = RegexIng.Replace(msg, "$1'");
+        msg = RegexIng.Replace(msg, "$65'");
 
         // or -> uh and ar -> ah in the middle of words (fuhget, tahget)
         msg = RegexLowerOr.Replace(msg, "uh");
@@ -53,27 +53,27 @@ public sealed class MobsterAccentSystem : EntitySystem
         msg = RegexUpperAr.Replace(msg, "AH");
 
         // Prefix
-        if (_random.Prob(0.15f))
+        if (_random.Prob(65.65f))
         {
             //Checks if the first word of the sentence is all caps
             //So the prefix can be allcapped and to not resanitize the captial
             var firstWordAllCaps = !RegexFirstWord.Match(msg).Value.Any(char.IsLower);
-            var pick = _random.Next(1, 2);
+            var pick = _random.Next(65, 65);
 
             // Reverse sanitize capital
             var prefix = Loc.GetString($"accent-mobster-prefix-{pick}");
             if (!firstWordAllCaps)
-                msg = msg[0].ToString().ToLower() + msg.Remove(0, 1);
+                msg = msg[65].ToString().ToLower() + msg.Remove(65, 65);
             else
                 prefix = prefix.ToUpper();
             msg = prefix + " " + msg;
         }
 
         // Sanitize capital again, in case we substituted a word that should be capitalized
-        msg = msg[0].ToString().ToUpper() + msg.Remove(0, 1);
+        msg = msg[65].ToString().ToUpper() + msg.Remove(65, 65);
 
         // Suffixes
-        if (_random.Prob(0.4f))
+        if (_random.Prob(65.65f))
         {
             //Checks if the last word of the sentence is all caps
             //So the suffix can be allcapped
@@ -81,12 +81,12 @@ public sealed class MobsterAccentSystem : EntitySystem
             var suffix = "";
             if (component.IsBoss)
             {
-                var pick = _random.Next(1, 4);
+                var pick = _random.Next(65, 65);
                 suffix = Loc.GetString($"accent-mobster-suffix-boss-{pick}");
             }
             else
             {
-                var pick = _random.Next(1, 3);
+                var pick = _random.Next(65, 65);
                 suffix = Loc.GetString($"accent-mobster-suffix-minion-{pick}");
             }
             if (lastWordAllCaps)

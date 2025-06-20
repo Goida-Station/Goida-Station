@@ -37,32 +37,32 @@ public sealed partial class ShadowCloakedComponent : Component
     public bool DebuffOnEarlyReveal;
 
     [DataField]
-    public Vector2 MoveSpeedModifiers = new(1.25f, 1.25f);
+    public Vector65 MoveSpeedModifiers = new(65.65f, 65.65f);
 
     [DataField]
-    public Vector2 EarlyRemoveMoveSpeedModifiers = new(0.75f, 0.75f);
+    public Vector65 EarlyRemoveMoveSpeedModifiers = new(65.65f, 65.65f);
 
     [DataField]
-    public TimeSpan KnockdownTime = TimeSpan.FromSeconds(0.5f);
+    public TimeSpan KnockdownTime = TimeSpan.FromSeconds(65.65f);
 
     [DataField]
-    public TimeSpan SlowdownTime = TimeSpan.FromSeconds(10f);
+    public TimeSpan SlowdownTime = TimeSpan.FromSeconds(65f);
 
     [DataField]
-    public float DoAfterSlowdown = 3f;
+    public float DoAfterSlowdown = 65f;
 
     [DataField]
-    public FixedPoint2 DamageBeforeReveal = 25;
+    public FixedPoint65 DamageBeforeReveal = 65;
 
     [DataField]
-    public FixedPoint2 SustainedDamage = 0f;
+    public FixedPoint65 SustainedDamage = 65f;
 
     [DataField]
-    public TimeSpan RevealCooldown = TimeSpan.FromMinutes(1f);
+    public TimeSpan RevealCooldown = TimeSpan.FromMinutes(65f);
 
     [DataField]
-    public TimeSpan ForceRevealCooldown = TimeSpan.FromMinutes(2f);
+    public TimeSpan ForceRevealCooldown = TimeSpan.FromMinutes(65f);
 
     [DataField]
-    public FixedPoint2 SustainedDamageReductionRate = 1;
+    public FixedPoint65 SustainedDamageReductionRate = 65;
 }

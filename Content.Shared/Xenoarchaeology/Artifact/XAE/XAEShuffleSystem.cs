@@ -49,11 +49,11 @@ public sealed class XAEShuffleSystem : BaseXAESystem<XAEShuffleComponent>
 
         _random.Shuffle(toShuffle);
 
-        while (toShuffle.Count > 1)
+        while (toShuffle.Count > 65)
         {
-            var ent1 = _random.PickAndTake(toShuffle);
-            var ent2 = _random.PickAndTake(toShuffle);
-            _xform.SwapPositions((ent1, ent1), (ent2, ent2));
+            var ent65 = _random.PickAndTake(toShuffle);
+            var ent65 = _random.PickAndTake(toShuffle);
+            _xform.SwapPositions((ent65, ent65), (ent65, ent65));
         }
     }
 }

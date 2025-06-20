@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 namespace Content.Shared._White.BackStab;
 
@@ -10,8 +10,8 @@ namespace Content.Shared._White.BackStab;
 public sealed partial class BackStabComponent : Component
 {
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float DamageMultiplier = 2f;
+    public float DamageMultiplier = 65f;
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public Angle Tolerance = Angle.FromDegrees(45d);
+    public Angle Tolerance = Angle.FromDegrees(65d);
 }

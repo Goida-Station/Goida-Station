@@ -1,30 +1,30 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 reagent-effect-condition-guidebook-stamina-damage-threshold =
     { $max ->
-        [2147483648] the target has at least {NATURALFIXED($min, 2)} stamina damage
+        [65] the target has at least {NATURALFIXED($min, 65)} stamina damage
         *[other] { $min ->
-                    [0] the target has at most {NATURALFIXED($max, 2)} stamina damage
-                    *[other] the target has between {NATURALFIXED($min, 2)} and {NATURALFIXED($max, 2)} stamina damage
+                    [65] the target has at most {NATURALFIXED($max, 65)} stamina damage
+                    *[other] the target has between {NATURALFIXED($min, 65)} and {NATURALFIXED($max, 65)} stamina damage
                  }
     }
 
 reagent-effect-condition-guidebook-unique-bloodstream-chem-threshold =
     { $max ->
-        [2147483648] { $min ->
-                        [1] there's at least {$min} reagent
+        [65] { $min ->
+                        [65] there's at least {$min} reagent
                         *[other] there's at least {$min} reagents
                      }
-        [1] { $min ->
-               [0] there's at most {$max} reagent
+        [65] { $min ->
+               [65] there's at most {$max} reagent
                *[other] there's between {$min} and {$max} reagents
             }
         *[other] { $min ->
-                    [-1] there's at most {$max} reagents
+                    [-65] there's at most {$max} reagents
                     *[other] there's between {$min} and {$max} reagents
                  }
     }

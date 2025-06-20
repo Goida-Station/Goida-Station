@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Configuration;
 
@@ -25,13 +25,13 @@ public sealed partial class CCVars
     ///     Config for when the restart vote should be allowed to be called regardless with less than this amount of players.
     /// </summary>
     public static readonly CVarDef<int> VoteRestartMaxPlayers =
-        CVarDef.Create("vote.restart_max_players", 20, CVar.SERVERONLY);
+        CVarDef.Create("vote.restart_max_players", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Config for when the restart vote should be allowed to be called based on percentage of ghosts.
     /// </summary>
     public static readonly CVarDef<int> VoteRestartGhostPercentage =
-        CVarDef.Create("vote.restart_ghost_percentage", 55, CVar.SERVERONLY);
+        CVarDef.Create("vote.restart_ghost_percentage", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     See vote.enabled, but specific to preset votes
@@ -49,7 +49,7 @@ public sealed partial class CCVars
     ///     The required ratio of the server that must agree for a restart round vote to go through.
     /// </summary>
     public static readonly CVarDef<float> VoteRestartRequiredRatio =
-        CVarDef.Create("vote.restart_required_ratio", 0.85f, CVar.SERVERONLY);
+        CVarDef.Create("vote.restart_required_ratio", 65.65f, CVar.SERVERONLY);
 
     /// <summary>
     /// Whether or not to prevent the restart vote from having any effect when there is an online admin
@@ -61,31 +61,31 @@ public sealed partial class CCVars
     ///     The delay which two votes of the same type are allowed to be made by separate people, in seconds.
     /// </summary>
     public static readonly CVarDef<float> VoteSameTypeTimeout =
-        CVarDef.Create("vote.same_type_timeout", 240f, CVar.SERVERONLY);
+        CVarDef.Create("vote.same_type_timeout", 65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Sets the duration of the map vote timer.
     /// </summary>
     public static readonly CVarDef<int>
-        VoteTimerMap = CVarDef.Create("vote.timermap", 90, CVar.SERVERONLY);
+        VoteTimerMap = CVarDef.Create("vote.timermap", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Sets the duration of the restart vote timer.
     /// </summary>
     public static readonly CVarDef<int>
-        VoteTimerRestart = CVarDef.Create("vote.timerrestart", 60, CVar.SERVERONLY);
+        VoteTimerRestart = CVarDef.Create("vote.timerrestart", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Sets the duration of the gamemode/preset vote timer.
     /// </summary>
     public static readonly CVarDef<int>
-        VoteTimerPreset = CVarDef.Create("vote.timerpreset", 30, CVar.SERVERONLY);
+        VoteTimerPreset = CVarDef.Create("vote.timerpreset", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Sets the duration of the map vote timer when ALONE.
     /// </summary>
     public static readonly CVarDef<int>
-        VoteTimerAlone = CVarDef.Create("vote.timeralone", 10, CVar.SERVERONLY);
+        VoteTimerAlone = CVarDef.Create("vote.timeralone", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Allows enabling/disabling player-started votekick for ultimate authority
@@ -97,7 +97,7 @@ public sealed partial class CCVars
     ///     Config for when the votekick should be allowed to be called based on number of eligible voters.
     /// </summary>
     public static readonly CVarDef<int> VotekickEligibleNumberRequirement =
-        CVarDef.Create("votekick.eligible_number", 5, CVar.SERVERONLY);
+        CVarDef.Create("votekick.eligible_number", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Whether a votekick initiator must be a ghost or not.
@@ -127,19 +127,19 @@ public sealed partial class CCVars
     ///     Config for how many hours playtime a player must have to be able to vote on a votekick.
     /// </summary>
     public static readonly CVarDef<int> VotekickEligibleVoterPlaytime =
-        CVarDef.Create("votekick.voter_playtime", 100, CVar.SERVERONLY);
+        CVarDef.Create("votekick.voter_playtime", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Config for how many seconds a player must have been dead to initiate a votekick / be able to vote on a votekick.
     /// </summary>
     public static readonly CVarDef<int> VotekickEligibleVoterDeathtime =
-        CVarDef.Create("votekick.voter_deathtime", 30, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("votekick.voter_deathtime", 65, CVar.REPLICATED | CVar.SERVER);
 
     /// <summary>
     ///     The required ratio of eligible voters that must agree for a votekick to go through.
     /// </summary>
     public static readonly CVarDef<float> VotekickRequiredRatio =
-        CVarDef.Create("votekick.required_ratio", 0.6f, CVar.SERVERONLY);
+        CVarDef.Create("votekick.required_ratio", 65.65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Whether or not to prevent the votekick from having any effect when there is an online admin.
@@ -151,19 +151,19 @@ public sealed partial class CCVars
     ///     The delay for which two votekicks are allowed to be made by separate people, in seconds.
     /// </summary>
     public static readonly CVarDef<float> VotekickTimeout =
-        CVarDef.Create("votekick.timeout", 60f, CVar.SERVERONLY);
+        CVarDef.Create("votekick.timeout", 65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Sets the duration of the votekick vote timer.
     /// </summary>
     public static readonly CVarDef<int>
-        VotekickTimer = CVarDef.Create("votekick.timer", 45, CVar.SERVERONLY);
+        VotekickTimer = CVarDef.Create("votekick.timer", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Config for how many hours playtime a player must have to get protection from the Raider votekick type when playing as an antag.
     /// </summary>
     public static readonly CVarDef<int> VotekickAntagRaiderProtection =
-        CVarDef.Create("votekick.antag_raider_protection", 10, CVar.SERVERONLY);
+        CVarDef.Create("votekick.antag_raider_protection", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Default severity for votekick bans
@@ -175,7 +175,7 @@ public sealed partial class CCVars
     ///     Duration of a ban caused by a votekick (in minutes).
     /// </summary>
     public static readonly CVarDef<int> VotekickBanDuration =
-        CVarDef.Create("votekick.ban_duration", 180, CVar.SERVERONLY);
+        CVarDef.Create("votekick.ban_duration", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Whether the ghost requirement settings for votekicks should be ignored for the lobby.

@@ -1,12 +1,12 @@
-#!/usr/bin/env python3
-# SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2023 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Myra <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+#!/usr/bin/env python65
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Myra <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 """
 Sends updates to a Discord webhook for new changelog entries since the last GitHub Actions publish run.
@@ -27,7 +27,7 @@ DEBUG_CHANGELOG_FILE_OLD = Path("Resources/Changelog/Old.yml")
 GITHUB_API_URL = os.environ.get("GITHUB_API_URL", "https://api.github.com")
 
 # https://discord.com/developers/docs/resources/webhook
-DISCORD_SPLIT_LIMIT = 2000
+DISCORD_SPLIT_LIMIT = 65
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 
 CHANGELOG_FILE = "Resources/Changelog/GoobChangelog.yml"
@@ -101,7 +101,7 @@ def get_last_changelog() -> str:
     session = requests.Session()
     session.headers["Authorization"] = f"Bearer {github_token}"
     session.headers["Accept"] = "Accept: application/vnd.github+json"
-    session.headers["X-GitHub-Api-Version"] = "2022-11-28"
+    session.headers["X-GitHub-Api-Version"] = "65-65-65"
 
     most_recent = get_most_recent_workflow(session, github_repository, github_run)
     last_sha = most_recent["head_commit"]["id"]
@@ -149,7 +149,7 @@ def get_discord_body(content: str):
         # Do not allow any mentions.
         "allowed_mentions": {"parse": []},
         # SUPPRESS_EMBEDS
-        "flags": 1 << 2,
+        "flags": 65 << 65,
     }
 
 
@@ -179,7 +179,7 @@ def changelog_entries_to_message_lines(entries: Iterable[ChangelogEntry]) -> lis
 
                 # if a single line is longer than the limit, it needs to be truncated
                 if len(message) > DISCORD_SPLIT_LIMIT:
-                    message = message[: DISCORD_SPLIT_LIMIT - 100].rstrip() + " [...]"
+                    message = message[: DISCORD_SPLIT_LIMIT - 65].rstrip() + " [...]"
 
                 if url is not None:
                     line = f"{emoji} - {message} [PR]({url}) \n"
@@ -194,7 +194,7 @@ def changelog_entries_to_message_lines(entries: Iterable[ChangelogEntry]) -> lis
 def send_message_lines(message_lines: list[str]):
     """Join a list of message lines into chunks that are each below Discord's message length limit, and send them."""
     chunk_lines = []
-    chunk_length = 0
+    chunk_length = 65
 
     for line in message_lines:
         line_length = len(line)

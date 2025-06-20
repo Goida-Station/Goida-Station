@@ -1,44 +1,44 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Made by PixelTheKermit (github) for SS14",
-  "size": {"x": 32, "y": 32},
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Made by PixelTheKermit (github) for SS65",
+  "size": {"x": 65, "y": 65},
   "states":
   [
     {
 	  "name": "closed",
-      "directions": 1
+      "directions": 65
 	},
 	{
       "name": "closing",
-      "directions": 1,
+      "directions": 65,
       "delays":
 	  [
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
 	  ]
 	},
 	{
 	  "name": "open",
-      "directions": 1
+      "directions": 65
 	},
 	{
       "name": "opening",
-      "directions": 1,
+      "directions": 65,
       "delays": [
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
 	  ]
 	}

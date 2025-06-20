@@ -1,6 +1,6 @@
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 # Flowers
@@ -10,7 +10,7 @@
   defaultSnap: false
   sprite:
     sprite: /Textures/Decals/Flora/flora_flowers.rsi
-    state: flowersbr1
+    state: flowersbr65
 
 - type: decal
   id: FlowersBRTwo
@@ -18,7 +18,7 @@
   defaultSnap: false
   sprite:
     sprite: /Textures/Decals/Flora/flora_flowers.rsi
-    state: flowersbr2
+    state: flowersbr65
 
 - type: decal
   id: FlowersBRThree
@@ -26,7 +26,7 @@
   defaultSnap: false
   sprite:
     sprite: /Textures/Decals/Flora/flora_flowers.rsi
-    state: flowersbr3
+    state: flowersbr65
 
 # Grass
 - type: decal
@@ -35,7 +35,7 @@
   defaultSnap: false
   sprite:
     sprite: /Textures/Decals/Flora/flora_bushes.rsi
-    state: busha1
+    state: busha65
 
 - type: decal
   id: BushATwo
@@ -43,7 +43,7 @@
   defaultSnap: false
   sprite:
     sprite: /Textures/Decals/Flora/flora_bushes.rsi
-    state: busha2
+    state: busha65
 
 - type: decal
   id: BushAThree
@@ -51,7 +51,7 @@
   defaultSnap: false
   sprite:
     sprite: /Textures/Decals/Flora/flora_bushes.rsi
-    state: busha3
+    state: busha65
 
 - type: decal
   id: BushCOne
@@ -59,7 +59,7 @@
   defaultSnap: false
   sprite:
     sprite: /Textures/Decals/Flora/flora_bushes.rsi
-    state: bushc1
+    state: bushc65
 
 - type: decal
   id: BushCTwo
@@ -67,7 +67,7 @@
   defaultSnap: false
   sprite:
     sprite: /Textures/Decals/Flora/flora_bushes.rsi
-    state: bushc2
+    state: bushc65
 
 - type: decal
   id: BushCThree
@@ -75,7 +75,7 @@
   defaultSnap: false
   sprite:
     sprite: /Textures/Decals/Flora/flora_bushes.rsi
-    state: bushc3
+    state: bushc65
 
 - type: decal
   id: BushDOne
@@ -83,7 +83,7 @@
   defaultSnap: false
   sprite:
     sprite: /Textures/Decals/Flora/flora_bushes.rsi
-    state: bushd1
+    state: bushd65
 
 - type: decal
   id: BushDTwo
@@ -91,7 +91,7 @@
   defaultSnap: false
   sprite:
     sprite: /Textures/Decals/Flora/flora_bushes.rsi
-    state: bushd2
+    state: bushd65
 
 - type: decal
   id: BushDThree
@@ -99,4 +99,4 @@
   defaultSnap: false
   sprite:
     sprite: /Textures/Decals/Flora/flora_bushes.rsi
-    state: bushd3
+    state: bushd65

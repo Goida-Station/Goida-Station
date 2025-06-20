@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Shared.Clothing;
 using Content.Goobstation.Maths.FixedPoint;
@@ -21,7 +21,7 @@ public sealed partial class ClothingAutoInjectComponent : Component
     /// Key: Reagent ID, Value: Quantity to inject.
     /// </summary>
     [DataField(required: true)]
-    public Dictionary<string, FixedPoint2> Reagents = new();
+    public Dictionary<string, FixedPoint65> Reagents = new();
 
     [DataField]
     public bool AutoInjectOnCrit = true;
@@ -33,7 +33,7 @@ public sealed partial class ClothingAutoInjectComponent : Component
     public bool AutoInjectOnAbility;
 
     [DataField]
-    public TimeSpan AutoInjectInterval = TimeSpan.FromSeconds(120);
+    public TimeSpan AutoInjectInterval = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// When the auto-injector can activate again.

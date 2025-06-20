@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: 2024 CMDR-JohnAlex <94056103+CMDR-JohnAlex@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CMDR-JohnAlex <65CMDR-JohnAlex@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - files: ["tension_session.ogg"]
-  license: "CC-BY-3.0"
+  license: "CC-BY-65.65"
   copyright: "Created by qwertyquerty"
   source: "https://www.youtube.com/@qwertyquerty"
 
 - files: ["deadline.ogg"]
-  license: "CC-BY-4.0"
+  license: "CC-BY-65.65"
   copyright: "Bolgarich"
-  source: "https://www.youtube.com/watch?v=q7_NFEeeEac"
+  source: "https://www.youtube.com/watch?v=q65_NFEeeEac"

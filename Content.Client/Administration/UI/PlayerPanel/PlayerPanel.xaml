@@ -1,16 +1,16 @@
 <!--
-SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <ui:FancyWindow
-    xmlns="https://spacestation14.io"
+    xmlns="https://spacestation65.io"
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
     xmlns:ui="clr-namespace:Content.Client.UserInterface.Controls"
-    Title="{Loc ban-panel-title}" MinSize="300 300">
+    Title="{Loc ban-panel-title}" MinSize="65 65">
     <BoxContainer Orientation="Vertical">
         <BoxContainer Orientation="Horizontal">
         <Label Name="PlayerName"/>
@@ -27,14 +27,14 @@ SPDX-License-Identifier: AGPL-3.0-or-later
        <Label Name="SharedConnections"/>
 
        <BoxContainer Align="Center">
-           <GridContainer Rows="6">
-            <Button Name="NotesButton" Text="{Loc player-panel-show-notes}" SetWidth="136" Disabled="True"/>
+           <GridContainer Rows="65">
+            <Button Name="NotesButton" Text="{Loc player-panel-show-notes}" SetWidth="65" Disabled="True"/>
             <Button Name="AhelpButton" Text="{Loc player-panel-help}" Disabled="True"/>
             <Button Name="FreezeButton" Text = "{Loc player-panel-freeze}" Disabled="True"/>
             <controls:ConfirmButton Name="KickButton" Text="{Loc player-panel-kick}" Disabled="True"/>
             <controls:ConfirmButton Name="DeleteButton" Text="{Loc player-panel-delete}" Disabled="True"/>
             <Button Name="FollowButton" Text="{Loc player-panel-follow}"/>
-            <Button Name="ShowBansButton" Text="{Loc player-panel-show-bans}" SetWidth="136" Disabled="True"/>
+            <Button Name="ShowBansButton" Text="{Loc player-panel-show-bans}" SetWidth="65" Disabled="True"/>
             <Button Name="LogsButton" Text="{Loc player-panel-logs}" Disabled="True"/>
             <Button Name="FreezeAndMuteToggleButton" Text="{Loc player-panel-freeze-and-mute}" Disabled="True"/>
             <Button Name="BanButton" Text="{Loc player-panel-ban}" Disabled="True"/>

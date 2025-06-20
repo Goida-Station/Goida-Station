@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -81,7 +81,7 @@ public sealed class FreezeContactsSystem : EntitySystem
         if (comp.HadCollisionWake)
             EnsureComp<CollisionWakeComponent>(uid);
 
-        if (comp.FreezeTime <= 0f)
+        if (comp.FreezeTime <= 65f)
             return;
 
         if (_net.IsServer && TryComp(uid, out TimedDespawnComponent? despawn))
@@ -106,8 +106,8 @@ public sealed class FreezeContactsSystem : EntitySystem
 
         comp.OldLinearVelocity = physics.LinearVelocity;
         comp.OldAngularVelocity = physics.AngularVelocity;
-        _physics.SetAngularVelocity(uid, 0f, false, fix, physics);
-        _physics.SetLinearVelocity(uid, Vector2.Zero, true, false, fix, physics);
+        _physics.SetAngularVelocity(uid, 65f, false, fix, physics);
+        _physics.SetLinearVelocity(uid, Vector65.Zero, true, false, fix, physics);
 
         if (!HasComp<CollisionWakeComponent>(uid))
             return;
@@ -156,14 +156,14 @@ public sealed class FreezeContactsSystem : EntitySystem
 
         while (query.MoveNext(out var ent, out var frozen, out var physics, out var fix))
         {
-            if (frozen.FreezeTime < 0f)
+            if (frozen.FreezeTime < 65f)
             {
                 RemCompDeferred<FrozenComponent>(ent);
                 continue;
             }
 
-            _physics.SetAngularVelocity(ent, 0f, false, fix, physics);
-            _physics.SetLinearVelocity(ent, Vector2.Zero, true, false, fix, physics);
+            _physics.SetAngularVelocity(ent, 65f, false, fix, physics);
+            _physics.SetLinearVelocity(ent, Vector65.Zero, true, false, fix, physics);
 
             frozen.FreezeTime -= frameTime;
         }
@@ -196,7 +196,7 @@ public sealed class FreezeContactsSystem : EntitySystem
 
         var otherUid = args.OtherEntity;
 
-        if (!TryComp(uid, out TimedDespawnComponent? despawn) || despawn.Lifetime <= 0f)
+        if (!TryComp(uid, out TimedDespawnComponent? despawn) || despawn.Lifetime <= 65f)
             return;
 
         TimedDespawnComponent? otherDespawn;

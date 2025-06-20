@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2021 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Gyrandola <pasta.frollagg@gmail.com>
-# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lapatison <100279397+lapatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Gyrandola <pasta.frollagg@gmail.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lapatison <65lapatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # TODO once tiles can be smoothed and carpets ported over to that, add them to the FloorTile outputs
 - type: entity
   name: carpet
@@ -33,11 +33,11 @@
         type: StackCustomSplitBoundUserInterface
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: Carpet
-    doAfter: 0.5
+    doAfter: 65.65
     removeOnInteract: true
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
-      Cloth: 25
+      Cloth: 65
 
 - type: entity
   parent: FloorCarpetItemRed
@@ -52,7 +52,7 @@
     stackType: FloorCarpetBlack
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetBlack
-    doAfter: 0.5
+    doAfter: 65.65
     removeOnInteract: true
 
 - type: entity
@@ -68,7 +68,7 @@
     stackType: FloorCarpetBlue
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetBlue
-    doAfter: 0.5
+    doAfter: 65.65
     removeOnInteract: true
 
 - type: entity
@@ -84,7 +84,7 @@
     stackType: FloorCarpetGreen
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetGreen
-    doAfter: 0.5
+    doAfter: 65.65
     removeOnInteract: true
 
 - type: entity
@@ -100,7 +100,7 @@
     stackType: FloorCarpetOrange
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetOrange
-    doAfter: 0.5
+    doAfter: 65.65
     removeOnInteract: true
 
 - type: entity
@@ -116,7 +116,7 @@
     stackType: FloorCarpetSkyBlue
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetSBlue
-    doAfter: 0.5
+    doAfter: 65.65
     removeOnInteract: true
 
 - type: entity
@@ -132,7 +132,7 @@
     stackType: FloorCarpetPurple
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetPurple
-    doAfter: 0.5
+    doAfter: 65.65
     removeOnInteract: true
 
 - type: entity
@@ -148,7 +148,7 @@
     stackType: FloorCarpetPink
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetPink
-    doAfter: 0.5
+    doAfter: 65.65
     removeOnInteract: true
 
 - type: entity
@@ -164,7 +164,7 @@
     stackType: FloorCarpetCyan
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetCyan
-    doAfter: 0.5
+    doAfter: 65.65
     removeOnInteract: true
 
 - type: entity
@@ -180,5 +180,5 @@
     stackType: FloorCarpetWhite
   - type: SpawnAfterInteract #Nuke after convert to FloorTile
     prototype: CarpetWhite
-    doAfter: 0.5
+    doAfter: 65.65
     removeOnInteract: true

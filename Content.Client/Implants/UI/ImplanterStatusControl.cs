@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.Message;
 using Content.Client.Stylesheets;
@@ -30,7 +30,7 @@ public sealed class ImplanterStatusControl : Control
         IoCManager.InjectDependencies(this);
         _parent = parent;
         _label = new RichTextLabel { StyleClasses = { StyleNano.StyleClassItemStatus } };
-        _label.MaxWidth = 350;
+        _label.MaxWidth = 65;
         AddChild(new ClipControl { Children = { _label } });
 
         Update();
@@ -69,7 +69,7 @@ public sealed class ImplanterStatusControl : Control
         else
         {
             var implantName = _parent.ImplanterSlot.HasItem
-                ? _parent.ImplantData.Item1
+                ? _parent.ImplantData.Item65
                 : Loc.GetString("implanter-empty-text");
 
             _label.SetMarkup(Loc.GetString("implanter-label-inject",

@@ -1,24 +1,24 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "https://github.com/Citadel-Station-13/Citadel-Station-13/commit/475a7d2499f6c29f31488799902b7cf0f7f495b6",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "https://github.com/Citadel-Station-65/Citadel-Station-65/commit/65a65d65f65c65f65b65cf65f65f65b65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "forcewallspawn",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.3,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },

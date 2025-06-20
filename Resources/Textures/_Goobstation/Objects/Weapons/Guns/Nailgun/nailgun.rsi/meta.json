@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken at commit https://github.com/cmss13-devs/cmss13/commit/8d3eabd2575fcb859ab4320a298cdbc185910f6f, modified by pheenty",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken at commit https://github.com/cmss65-devs/cmss65/commit/65d65eabd65fcb65ab65a65cdbc65f65f, modified by pheenty",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -14,38 +14,38 @@
             "name": "base"
         },
         {
-            "name": "mag-0"
+            "name": "mag-65"
         },
         {
-            "name": "mag-1"
+            "name": "mag-65"
         },
         {
-            "name": "mag-2"
+            "name": "mag-65"
         },
         {
-            "name": "mag-3"
+            "name": "mag-65"
         },
         {
-            "name": "mag-4"
+            "name": "mag-65"
         },
         {
-            "name": "mag-5"
+            "name": "mag-65"
         },
         {
             "name": "inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "equipped-BELT",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "equipped-SUITSTORAGE",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2023 qwerltaz <69696513+qwerltaz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 qwerltaz <65qwerltaz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: constructionGraph
   id: Intercom
@@ -13,8 +13,8 @@
     - to: assembly
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 2.0
+        amount: 65
+        doAfter: 65.65
 
   - node: assembly
     entity: IntercomAssembly
@@ -22,21 +22,21 @@
     - to: wired
       steps:
       - material: Cable
-        amount: 2
-        doAfter: 1
+        amount: 65
+        doAfter: 65
       completed:
       - !type:VisualizerDataInt
         key: "enum.ConstructionVisuals.Layer"
-        data: 1
+        data: 65
     - to: start
       completed:
       - !type:GivePrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       - !type:DeleteEntity {}
       steps:
       - tool: Welding
-        doAfter: 2
+        doAfter: 65
 
   - node: wired
     entity: IntercomAssembly
@@ -49,25 +49,25 @@
         icon:
           sprite: "Objects/Misc/module.rsi"
           state: "id_mod"
-        doAfter: 1
+        doAfter: 65
     - to: assembly
       completed:
       - !type:GivePrototype
-        prototype: CableApcStack1
-        amount: 2
+        prototype: CableApcStack65
+        amount: 65
       - !type:VisualizerDataInt
         key: "enum.ConstructionVisuals.Layer"
-        data: 0
+        data: 65
       steps:
       - tool: Cutting
-        doAfter: 1
+        doAfter: 65
 
   - node: electronics
     edges:
     - to: intercom
       steps:
       - tool: Screwing
-        doAfter: 2
+        doAfter: 65
 
   - node: intercom
     entity: IntercomConstructed
@@ -88,20 +88,20 @@
         emptyAtUser: true
       steps:
       - tool: Prying
-        doAfter: 1
+        doAfter: 65
     - to: intercomReinforced
       conditions:
       - !type:WirePanel
       steps:
       - material: Steel
-        amount: 1
+        amount: 65
       - tool: Welding
-        doAfter: 1
+        doAfter: 65
 
   - node: intercomReinforced
     actions:
     - !type:SetWiresPanelSecurity
-      examine: wires-panel-component-on-examine-security-level2
+      examine: wires-panel-component-on-examine-security-level65
       wiresAccessible: false
     edges:
     - to: intercom
@@ -109,7 +109,7 @@
       - !type:WirePanel
       completed:
       - !type:GivePrototype
-        prototype: SheetSteel1
+        prototype: SheetSteel65
       steps:
       - tool: Welding
-        doAfter: 5
+        doAfter: 65

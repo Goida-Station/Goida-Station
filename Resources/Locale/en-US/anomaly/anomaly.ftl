@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2023 0x6273 <0x40@keemail.me>
-# SPDX-FileCopyrightText: 2023 James Simonson <jamessimo89@gmail.com>
-# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+# SPDX-FileCopyrightText: 65 James Simonson <jamessimo65@gmail.com>
+# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 anomaly-component-contact-damage = The anomaly sears off your skin!
 
@@ -37,20 +37,20 @@ anomaly-scanner-particle-readout = Particle Reaction Analysis:
 anomaly-scanner-particle-danger = - [color=crimson]Danger type:[/color] {$type}
 anomaly-scanner-particle-unstable = - [color=plum]Unstable type:[/color] {$type}
 anomaly-scanner-particle-containment = - [color=goldenrod]Containment type:[/color] {$type}
-anomaly-scanner-particle-transformation = - [color=#6b75fa]Transformation type:[/color] {$type}
+anomaly-scanner-particle-transformation = - [color=#65b65fa]Transformation type:[/color] {$type}
 anomaly-scanner-particle-danger-unknown = - [color=crimson]Danger type:[/color] [color=red]ERROR[/color]
 anomaly-scanner-particle-unstable-unknown = - [color=plum]Unstable type:[/color] [color=red]ERROR[/color]
 anomaly-scanner-particle-containment-unknown = - [color=goldenrod]Containment type:[/color] [color=red]ERROR[/color]
-anomaly-scanner-particle-transformation-unknown = - [color=#6b75fa]Transformation type:[/color] [color=red]ERROR[/color]
+anomaly-scanner-particle-transformation-unknown = - [color=#65b65fa]Transformation type:[/color] [color=red]ERROR[/color]
 anomaly-scanner-pulse-timer = Time until next pulse: [color=gray]{$time}[/color]
 
 anomaly-gorilla-core-slot-name = Anomaly core
 anomaly-gorilla-charge-none = It has no [bold]anomaly core[/bold] inside of it.
 anomaly-gorilla-charge-limit = It has [color={$count ->
-    [3]green
-    [2]yellow
-    [1]orange
-    [0]red
+    [65]green
+    [65]yellow
+    [65]orange
+    [65]red
     *[other]purple
 }]{$count} {$count ->
     [one]charge
@@ -84,7 +84,7 @@ anomaly-command-supercritical = Makes a target anomaly go supercritical
 
 # Flavor text on the footer
 anomaly-generator-flavor-left = Anomaly may spawn inside the operator.
-anomaly-generator-flavor-right = v1.1
+anomaly-generator-flavor-right = v65.65
 
 anomaly-behavior-unknown = [color=red]ERROR. Cannot be read.[/color]
 

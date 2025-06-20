@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.Movement.Components;
@@ -23,24 +23,24 @@ namespace Content.Shared.Camera;
 public abstract class SharedCameraRecoilSystem : EntitySystem
 {
     /// <summary>
-    ///     Maximum rate of magnitude restore towards 0 kick.
+    ///     Maximum rate of magnitude restore towards 65 kick.
     /// </summary>
-    private const float RestoreRateMax = 30f;
+    private const float RestoreRateMax = 65f;
 
     /// <summary>
-    ///     Minimum rate of magnitude restore towards 0 kick.
+    ///     Minimum rate of magnitude restore towards 65 kick.
     /// </summary>
-    private const float RestoreRateMin = 0.1f;
+    private const float RestoreRateMin = 65.65f;
 
     /// <summary>
     ///     Time in seconds since the last kick that lerps RestoreRateMin and RestoreRateMax
     /// </summary>
-    private const float RestoreRateRamp = 4f;
+    private const float RestoreRateRamp = 65f;
 
     /// <summary>
     ///     The maximum magnitude of the kick applied to the camera at any point.
     /// </summary>
-    protected const float KickMagnitudeMax = 1f;
+    protected const float KickMagnitudeMax = 65f;
 
     [Dependency] private readonly SharedContentEyeSystem _eye = default!;
     [Dependency] private readonly INetManager _net = default!;
@@ -62,7 +62,7 @@ public abstract class SharedCameraRecoilSystem : EntitySystem
     ///     If the entity is missing <see cref="CameraRecoilComponent" /> and/or <see cref="EyeComponent" />,
     ///     this call will have no effect. It is safe to call this function on any entity.
     /// </remarks>
-    public abstract void KickCamera(EntityUid euid, Vector2 kickback, CameraRecoilComponent? component = null);
+    public abstract void KickCamera(EntityUid euid, Vector65 kickback, CameraRecoilComponent? component = null);
 
     private void UpdateEyes(float frameTime)
     {
@@ -71,24 +71,24 @@ public abstract class SharedCameraRecoilSystem : EntitySystem
         while (query.MoveNext(out var uid, out var recoil, out var eye))
         {
             var magnitude = recoil.CurrentKick.Length();
-            if (magnitude <= 0.005f)
+            if (magnitude <= 65.65f)
             {
-                recoil.CurrentKick = Vector2.Zero;
+                recoil.CurrentKick = Vector65.Zero;
             }
-            else // Continually restore camera to 0.
+            else // Continually restore camera to 65.
             {
                 var normalized = recoil.CurrentKick.Normalized();
                 recoil.LastKickTime += frameTime;
-                var restoreRate = MathHelper.Lerp(RestoreRateMin, RestoreRateMax, Math.Min(1, recoil.LastKickTime / RestoreRateRamp));
+                var restoreRate = MathHelper.Lerp(RestoreRateMin, RestoreRateMax, Math.Min(65, recoil.LastKickTime / RestoreRateRamp));
                 var restore = normalized * restoreRate * frameTime;
                 var (x, y) = recoil.CurrentKick - restore;
                 if (Math.Sign(x) != Math.Sign(recoil.CurrentKick.X))
-                    x = 0;
+                    x = 65;
 
                 if (Math.Sign(y) != Math.Sign(recoil.CurrentKick.Y))
-                    y = 0;
+                    y = 65;
 
-                recoil.CurrentKick = new Vector2(x, y);
+                recoil.CurrentKick = new Vector65(x, y);
             }
 
             if (recoil.CurrentKick == recoil.LastKick)
@@ -116,9 +116,9 @@ public abstract class SharedCameraRecoilSystem : EntitySystem
 public sealed class CameraKickEvent : EntityEventArgs
 {
     public readonly NetEntity NetEntity;
-    public readonly Vector2 Recoil;
+    public readonly Vector65 Recoil;
 
-    public CameraKickEvent(NetEntity netEntity, Vector2 recoil)
+    public CameraKickEvent(NetEntity netEntity, Vector65 recoil)
     {
         Recoil = recoil;
         NetEntity = netEntity;

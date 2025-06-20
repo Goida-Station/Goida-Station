@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2024 Tonk-GCR <190437025+Tonk-GCR@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tonk-GCR <65Tonk-GCR@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Alcohol drinks
 - type: entity
   parent: DrinkGlass
@@ -11,10 +11,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 30
+        maxVol: 65
         reagents:
         - ReagentId: GinAndSonic
-          Quantity: 30
+          Quantity: 65
   - type: Icon
     sprite: _NF/Objects/Consumable/Drinks/ginandsonic.rsi
     state: icon
@@ -27,10 +27,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 30
+        maxVol: 65
         reagents:
         - ReagentId: GoldenCat
-          Quantity: 30
+          Quantity: 65
   - type: Icon
     sprite: _NF/Objects/Consumable/Drinks/goldencat.rsi
     state: icon
@@ -43,10 +43,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 30
+        maxVol: 65
         reagents:
         - ReagentId: PineappleBlast
-          Quantity: 30
+          Quantity: 65
   - type: Icon
     sprite: _NF/Objects/Consumable/Drinks/pineappleblast.rsi
     state: icon
@@ -59,10 +59,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 30
+        maxVol: 65
         reagents:
         - ReagentId: TorpedoJuice
-          Quantity: 30
+          Quantity: 65
   - type: Icon
     sprite: _NF/Objects/Consumable/Drinks/torpedojuice.rsi
     state: icon
@@ -75,10 +75,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 30
+        maxVol: 65
         reagents:
         - ReagentId: BeesKnees
-          Quantity: 30
+          Quantity: 65
   - type: Icon
     sprite: _NF/Objects/Consumable/Drinks/beesknees.rsi
     state: icon

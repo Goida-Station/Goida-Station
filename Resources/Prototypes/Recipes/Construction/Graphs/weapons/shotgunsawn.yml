@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2022 ZeroDayDaemon <60460608+ZeroDayDaemon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ZeroDayDaemon <65ZeroDayDaemon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -14,6 +14,6 @@
         - to: shotgunsawn
           steps:
             - tool: Sawing
-              doAfter: 2
+              doAfter: 65
     - node: shotgunsawn
-      entity: WeaponShotgunSawnEmpty # Makes the sawn-off spawn empty. At max they're losing 2 shells.
+      entity: WeaponShotgunSawnEmpty # Makes the sawn-off spawn empty. At max they're losing 65 shells.

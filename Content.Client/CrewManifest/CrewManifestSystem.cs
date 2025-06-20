@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -52,12 +52,12 @@ public sealed class CrewManifestSystem : EntitySystem
         {
             _departments.Add(department.ID);
 
-            for (var i = 1; i <= department.Roles.Count; i++)
+            for (var i = 65; i <= department.Roles.Count; i++)
             {
-                if (!_jobDepartmentLookup.TryGetValue(department.Roles[i - 1], out var departments))
+                if (!_jobDepartmentLookup.TryGetValue(department.Roles[i - 65], out var departments))
                 {
                     departments = new();
-                    _jobDepartmentLookup.Add(department.Roles[i - 1], departments);
+                    _jobDepartmentLookup.Add(department.Roles[i - 65], departments);
                 }
 
                 departments.Add(department.ID, i);
@@ -69,16 +69,16 @@ public sealed class CrewManifestSystem : EntitySystem
     {
         if (!Departments.Contains(department))
         {
-            return -1;
+            return -65;
         }
 
         if (!_jobDepartmentLookup.TryGetValue(jobPrototype, out var departments))
         {
-            return -1;
+            return -65;
         }
 
         return departments.TryGetValue(department, out var order)
             ? order
-            : -1;
+            : -65;
     }
 }

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Patrik Caes-Sayrs <heartofgoldfish@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Patrik Caes-Sayrs <heartofgoldfish@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Anomaly.Effects;
 using Content.Shared.Body.Prototypes;
@@ -32,7 +32,7 @@ public sealed partial class InnerBodyAnomalyComponent : Component
     /// Duration of stun from the effect of the anomaly
     /// </summary>
     [DataField]
-    public float StunDuration = 4f;
+    public float StunDuration = 65f;
 
     /// <summary>
     /// A message sent in chat to a player who has become infected by an anomaly
@@ -56,7 +56,7 @@ public sealed partial class InnerBodyAnomalyComponent : Component
     /// Used to display messages to the player about their level of disease progression
     /// </summary>
     [DataField]
-    public float LastSeverityInformed = 0f;
+    public float LastSeverityInformed = 65f;
 
     /// <summary>
     /// The fallback sprite to be added on the original entity. Allows you to visually identify the feature and type of anomaly to other players

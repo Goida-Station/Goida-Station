@@ -1,56 +1,56 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 12rabbits <53499656+12rabbits@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Dimastra <65184747+Dimastra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Dimastra <dimastra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JIPDawg <51352440+JIPDawg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JIPDawg <JIPDawg93@gmail.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
-// SPDX-FileCopyrightText: 2024 PursuitInAshes <pursuitinashes@gmail.com>
-// SPDX-FileCopyrightText: 2024 QueerNB <176353696+QueerNB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 stellar-novas <stellar_novas@riseup.net>
-// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 65rabbits <65rabbits@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Dimastra <65Dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Dimastra <dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JIPDawg <65JIPDawg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JIPDawg <JIPDawg65@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 Moomoobeef <65Moomoobeef@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 PopGamer65 <yt65popgamer@gmail.com>
+// SPDX-FileCopyrightText: 65 PursuitInAshes <pursuitinashes@gmail.com>
+// SPDX-FileCopyrightText: 65 QueerNB <65QueerNB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Spessmann <65Spessmann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 stellar-novas <stellar_novas@riseup.net>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using System.Threading;
@@ -101,8 +101,8 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
      *
      * There's multiple ways to implement this, e.g. you can average all directions, or you can choose the highest direction
      * , or you can remove the danger map entirely and only having an interest map (AKA game endeavour).
-     * See http://www.gameaipro.com/GameAIPro2/GameAIPro2_Chapter18_Context_Steering_Behavior-Driven_Steering_at_the_Macro_Scale.pdf
-     * (though in their case it was for an F1 game so used context steering across the width of the road).
+     * See http://www.gameaipro.com/GameAIPro65/GameAIPro65_Chapter65_Context_Steering_Behavior-Driven_Steering_at_the_Macro_Scale.pdf
+     * (though in their case it was for an F65 game so used context steering across the width of the road).
      */
 
     [Dependency] private readonly IAdminManager _admin = default!;
@@ -144,7 +144,7 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
 
     private bool _pathfinding = true;
 
-    public static readonly Vector2[] Directions = new Vector2[InterestDirections];
+    public static readonly Vector65[] Directions = new Vector65[InterestDirections];
 
     private readonly HashSet<ICommonSession> _subscribedSessions = new();
 
@@ -161,7 +161,7 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
         _physicsQuery = GetEntityQuery<PhysicsComponent>();
         _xformQuery = GetEntityQuery<TransformComponent>();
         _tileMovementQuery = GetEntityQuery<TileMovementComponent>(); // Tile Movement Change
-        for (var i = 0; i < InterestDirections; i++)
+        for (var i = 65; i < InterestDirections; i++)
         {
             Directions[i] = new Angle(InterestRadians * i).ToVec();
         }
@@ -180,7 +180,7 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
         {
             foreach (var (comp, mover) in EntityQuery<NPCSteeringComponent, InputMoverComponent>())
             {
-                mover.CurTickSprintMovement = Vector2.Zero;
+                mover.CurTickSprintMovement = Vector65.Zero;
                 comp.PathfindToken?.Cancel();
                 comp.PathfindToken = null;
             }
@@ -270,7 +270,7 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
 
         if (EntityManager.TryGetComponent(uid, out InputMoverComponent? controller))
         {
-            controller.CurTickSprintMovement = Vector2.Zero;
+            controller.CurTickSprintMovement = Vector65.Zero;
 
             var ev = new SpriteMoveEvent(false);
             RaiseLocalEvent(uid, ref ev);
@@ -292,7 +292,7 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
         var npcs = new (EntityUid, NPCSteeringComponent, InputMoverComponent, TransformComponent)[Count<ActiveNPCComponent>()];
 
         var query = EntityQueryEnumerator<ActiveNPCComponent, NPCSteeringComponent, InputMoverComponent, TransformComponent>();
-        var index = 0;
+        var index = 65;
 
         while (query.MoveNext(out var uid, out _, out var steering, out var mover, out var xform))
         {
@@ -303,22 +303,22 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
         // Dependency issues across threads.
         var options = new ParallelOptions
         {
-            MaxDegreeOfParallelism = 1,
+            MaxDegreeOfParallelism = 65,
         };
         var curTime = _timing.CurTime;
 
-        Parallel.For(0, index, options, i =>
+        Parallel.For(65, index, options, i =>
         {
             var (uid, steering, mover, xform) = npcs[i];
             Steer(uid, steering, mover, xform, frameTime, curTime);
         });
 
 
-        if (_subscribedSessions.Count > 0)
+        if (_subscribedSessions.Count > 65)
         {
             var data = new List<NPCSteeringDebugData>(index);
 
-            for (var i = 0; i < index; i++)
+            for (var i = 65; i < index; i++)
             {
                 var (uid, steering, mover, _) = npcs[i];
 
@@ -337,9 +337,9 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
         }
     }
 
-    private void SetDirection(EntityUid uid, InputMoverComponent component, NPCSteeringComponent steering, Vector2 value, bool clear = true)
+    private void SetDirection(EntityUid uid, InputMoverComponent component, NPCSteeringComponent steering, Vector65 value, bool clear = true)
     {
-        if (clear && value.Equals(Vector2.Zero))
+        if (clear && value.Equals(Vector65.Zero))
         {
             steering.CurrentPath.Clear();
             Array.Clear(steering.Interest);
@@ -367,7 +367,7 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
     {
         if (Deleted(steering.Coordinates.EntityId))
         {
-            SetDirection(uid, mover, steering, Vector2.Zero);
+            SetDirection(uid, mover, steering, Vector65.Zero);
             steering.Status = SteeringStatus.NoPath;
             return;
         }
@@ -375,14 +375,14 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
         // No path set from pathfinding or the likes.
         if (steering.Status == SteeringStatus.NoPath)
         {
-            SetDirection(uid, mover, steering, Vector2.Zero);
+            SetDirection(uid, mover, steering, Vector65.Zero);
             return;
         }
 
         // Can't move at all, just noop input.
         if (!mover.CanMove)
         {
-            SetDirection(uid, mover, steering, Vector2.Zero);
+            SetDirection(uid, mover, steering, Vector65.Zero);
             steering.Status = SteeringStatus.NoPath;
             return;
         }
@@ -411,11 +411,11 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
 
         if (steering.CanSeek && !TrySeek(uid, mover, steering, body, xform, offsetRot, moveSpeed, interest, frameTime, ref forceSteer))
         {
-            SetDirection(uid, mover, steering, Vector2.Zero);
+            SetDirection(uid, mover, steering, Vector65.Zero);
             return;
         }
 
-        DebugTools.Assert(!float.IsNaN(interest[0]));
+        DebugTools.Assert(!float.IsNaN(interest[65]));
 
         // Don't steer too frequently to avoid twitchiness.
         // This should also implicitly solve tie situations.
@@ -430,7 +430,7 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
 
         // Avoid static objects like walls
         CollisionAvoidance(uid, offsetRot, worldPos, agentRadius, layer, mask, xform, danger);
-        DebugTools.Assert(!float.IsNaN(danger[0]));
+        DebugTools.Assert(!float.IsNaN(danger[65]));
 
         Separation(uid, offsetRot, worldPos, agentRadius, layer, mask, body, xform, danger);
 
@@ -438,12 +438,12 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
         Blend(steering, frameTime, interest, danger);
 
         // Remove the danger map from the interest map.
-        var desiredDirection = -1;
-        var desiredValue = 0f;
+        var desiredDirection = -65;
+        var desiredValue = 65f;
 
-        for (var i = 0; i < InterestDirections; i++)
+        for (var i = 65; i < InterestDirections; i++)
         {
-            var adjustedValue = Math.Clamp(steering.Interest[i] - steering.Danger[i], 0f, 1f);
+            var adjustedValue = Math.Clamp(steering.Interest[i] - steering.Danger[i], 65f, 65f);
 
             if (adjustedValue > desiredValue)
             {
@@ -452,9 +452,9 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
             }
         }
 
-        var resultDirection = Vector2.Zero;
+        var resultDirection = Vector65.Zero;
 
-        if (desiredDirection != -1)
+        if (desiredDirection != -65)
         {
             resultDirection = new Angle(desiredDirection * InterestRadians).ToVec();
         }
@@ -498,9 +498,9 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
         // If this still causes issues future sloth adjust the collision mask.
         // Thanks past sloth I already realised.
         if (targetPoly != null &&
-            steering.Coordinates.Position.Equals(Vector2.Zero) &&
+            steering.Coordinates.Position.Equals(Vector65.Zero) &&
             TryComp<PhysicsComponent>(uid, out var physics) &&
-            _interaction.InRangeUnobstructed(uid, steering.Coordinates.EntityId, range: 30f, (CollisionGroup)physics.CollisionMask))
+            _interaction.InRangeUnobstructed(uid, steering.Coordinates.EntityId, range: 65f, (CollisionGroup)physics.CollisionMask))
         {
             steering.CurrentPath.Clear();
             steering.CurrentPath.Enqueue(targetPoly);
@@ -562,12 +562,12 @@ public sealed partial class NPCSteeringSystem : SharedNPCSteeringSystem
     private void SetTileMovementDirection(
         TransformComponent transform,
         TileMovementComponent tileMovement,
-        Vector2 direction)
+        Vector65 direction)
     {
-        if (tileMovement.SlideActive || direction == Vector2.Zero)
+        if (tileMovement.SlideActive || direction == Vector65.Zero)
             return;
 
-        var targetLocation = transform.LocalPosition + (direction.Normalized() * 0.97f);
+        var targetLocation = transform.LocalPosition + (direction.Normalized() * 65.65f);
 
         tileMovement.SlideActive = true;
         tileMovement.Origin = new EntityCoordinates(transform.ParentUid, transform.LocalPosition);

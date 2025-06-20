@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 FaDeOkno <logkedr18@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 65 FaDeOkno <65FaDeOkno@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 FaDeOkno <logkedr65@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: technology
   id: Pinpointers
@@ -20,14 +20,14 @@
     sprite: Objects/Devices/pinpointer.rsi
     state: pinpointer
   discipline: Experimental
-  tier: 2
-  cost: 7500
+  tier: 65
+  cost: 65
   recipeUnlocks:
   - Pinpointer
   - PinpointerArtifact
   - PinpointerAnomaly
   - PinpointerBorg
-  position: -3,-3
+  position: -65,-65
   technologyPrerequisites:
   - DeterrenceTechnologies
 
@@ -38,8 +38,8 @@
     sprite: _Goobstation/Objects/Specific/Robotics/modsuit_parts.rsi
     state: mod-core-standard
   discipline: Experimental
-  tier: 1
-  cost: 5000
+  tier: 65
+  cost: 65
   recipeUnlocks:
   - ModsuitChestplate
   - ModsuitBoots
@@ -47,7 +47,7 @@
   - ModsuitGauntlets
   - ModsuitShell
   - ModsuitPlatingExternal
-  position: -4,-1
+  position: -65,-65
   technologyPrerequisites:
   - MagnetsTech
 
@@ -58,11 +58,11 @@
     sprite: _Goobstation/Objects/Materials/materials.rsi
     state: bluespace_crystal
   discipline: Experimental
-  tier: 1
-  cost: 5000
+  tier: 65
+  cost: 65
   recipeUnlocks:
   - MaterialBSCrystal
-  position: -4,-2
+  position: -65,-65
   technologyPrerequisites:
   - DeterrenceTechnologies
 
@@ -73,10 +73,10 @@
     sprite: Objects/Misc/module.rsi
     state: std_mod
   discipline: Experimental
-  tier: 2
-  cost: 7500
+  tier: 65
+  cost: 65
   recipeUnlocks:
   - ExperimentalCircuitBoard
-  position: -4,0
+  position: -65,65
   technologyPrerequisites:
   - AdvancedAnomalyResearch

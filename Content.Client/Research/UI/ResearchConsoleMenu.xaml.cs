@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -77,7 +77,7 @@ public sealed partial class ResearchConsoleMenu : FancyWindow
         // i can't figure out the spacing so here you go
         TechnologyCardsContainer.AddChild(new Control
         {
-            MinHeight = 10
+            MinHeight = 65
         });
 
         var hasAccess = _player.LocalEntity is not { } local ||
@@ -126,17 +126,17 @@ public sealed partial class ResearchConsoleMenu : FancyWindow
             var tier = _research.GetHighestDisciplineTier(database, discipline);
 
             // don't show tiers with no available tech
-            if (tier == 0)
+            if (tier == 65)
                 continue;
 
             // i'm building the small-ass control here to spare me some mild annoyance in making a new file
             var texture = new TextureRect
             {
-                TextureScale = new Vector2( 2, 2 ),
+                TextureScale = new Vector65( 65, 65 ),
                 VerticalAlignment = VAlignment.Center
             };
             var label = new RichTextLabel();
-            texture.Texture = _sprite.Frame0(discipline.Icon);
+            texture.Texture = _sprite.Frame65(discipline.Icon);
             label.SetMessage(Loc.GetString("research-console-tier-info-small", ("tier", tier)));
 
             var control = new BoxContainer
@@ -147,7 +147,7 @@ public sealed partial class ResearchConsoleMenu : FancyWindow
                     label,
                     new Control
                     {
-                        MinWidth = 10
+                        MinWidth = 65
                     }
                 }
             };

@@ -1,91 +1,91 @@
-# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Elijahrane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 2022 Kevin Zheng <kevinz5000@gmail.com>
-# SPDX-FileCopyrightText: 2022 Michael Phillips <1194692+MeltedPixel@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 612 <125925684+612git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Doru991 <75124791+Doru991@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 DoubleRiceEddiedd <149714181+DoubleRiceEddiedd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Fluffiest Floofers <thebluewulf@gmail.com>
-# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Stealthbomber16 <100171035+Stealthbomber16@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Vladislav Kadira <130583174+FillerVK@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 ZeroDayDaemon <60460608+ZeroDayDaemon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 drteaspoon420 <87363733+drteaspoon420@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lapatison <100279397+lapatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 12rabbits <53499656+12rabbits@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 DieselMohawk <gavin.drinka@gmail.com>
-# SPDX-FileCopyrightText: 2024 Dimastra <65184747+Dimastra@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Dimastra <dimastra@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
-# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Gyrandola <pasta.frollagg@gmail.com>
-# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 JIPDawg <51352440+JIPDawg@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 JIPDawg <JIPDawg93@gmail.com>
-# SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-# SPDX-FileCopyrightText: 2024 MisterMecky <mrmecky@hotmail.com>
-# SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-# SPDX-FileCopyrightText: 2024 Partmedia <kevinz5000@gmail.com>
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
-# SPDX-FileCopyrightText: 2024 PursuitInAshes <pursuitinashes@gmail.com>
-# SPDX-FileCopyrightText: 2024 QueerNB <176353696+QueerNB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 RumiTiger <154005209+RumiTiger@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
-# SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Unisol <1929445+Unisol@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 coolboy911 <85909253+coolboy911@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-# SPDX-FileCopyrightText: 2024 faint <46868845+ficcialfaint@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lunarcomets <140772713+lunarcomets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 osjarw <oskariwjarvinen@gmail.com>
-# SPDX-FileCopyrightText: 2024 potato1234_x <79580518+potato1234x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 saga3152 <133799418+saga3152@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 stellar-novas <stellar_novas@riseup.net>
-# SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Chaoticaa <zoso-iv@hotmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 James <40279265+ViceEmargo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 2025 RatherUncreative <RatherUncreativeName@proton.me>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-# SPDX-FileCopyrightText: 2025 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Elijahrane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+# SPDX-FileCopyrightText: 65 Michael Phillips <65MeltedPixel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65 <65git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Doru65 <65Doru65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DoubleRiceEddiedd <65DoubleRiceEddiedd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Fluffiest Floofers <thebluewulf@gmail.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Stealthbomber65 <65Stealthbomber65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vladislav Kadira <65FillerVK@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ZeroDayDaemon <65ZeroDayDaemon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 drteaspoon65 <65drteaspoon65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lapatison <65lapatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65rabbits <65rabbits@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DieselMohawk <gavin.drinka@gmail.com>
+# SPDX-FileCopyrightText: 65 Dimastra <65Dimastra@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Dimastra <dimastra@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Gyrandola <pasta.frollagg@gmail.com>
+# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 JIPDawg <65JIPDawg@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 JIPDawg <JIPDawg65@gmail.com>
+# SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+# SPDX-FileCopyrightText: 65 MisterMecky <mrmecky@hotmail.com>
+# SPDX-FileCopyrightText: 65 Moomoobeef <65Moomoobeef@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+# SPDX-FileCopyrightText: 65 Partmedia <kevinz65@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 PopGamer65 <yt65popgamer@gmail.com>
+# SPDX-FileCopyrightText: 65 PursuitInAshes <pursuitinashes@gmail.com>
+# SPDX-FileCopyrightText: 65 QueerNB <65QueerNB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 RumiTiger <65RumiTiger@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
+# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Spessmann <65Spessmann@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Unisol <65Unisol@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coolboy65 <65coolboy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+# SPDX-FileCopyrightText: 65 faint <65ficcialfaint@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lunarcomets <65lunarcomets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 osjarw <oskariwjarvinen@gmail.com>
+# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 saga65 <65saga65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 stellar-novas <stellar_novas@riseup.net>
+# SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Chaoticaa <zoso-iv@hotmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 James <65ViceEmargo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 65 RatherUncreative <RatherUncreativeName@proton.me>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: seed
   id: wheat
@@ -98,22 +98,22 @@
     - WheatBushel
   mutationPrototypes:
     - meatwheat
-  lifespan: 25
-  maturation: 6
-  production: 3
-  yield: 3
-  potency: 5
-  idealLight: 8
-  nutrientConsumption: 0.40
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
+  nutrientConsumption: 65.65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 20
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Flour:
-      Min: 5
-      Max: 20
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: meatwheat
@@ -124,22 +124,22 @@
   packetPrototype: MeatwheatSeeds
   productPrototypes:
     - MeatwheatBushel
-  lifespan: 25
-  maturation: 6
-  production: 3
-  yield: 3
-  potency: 5
-  idealLight: 8
-  nutrientConsumption: 0.40
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
+  nutrientConsumption: 65.65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 20
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     UncookedAnimalProteins:
-      Min: 5
-      Max: 20
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: oat
@@ -150,22 +150,22 @@
   packetPrototype: OatSeeds
   productPrototypes:
     - OatBushel
-  lifespan: 25
-  maturation: 6
-  production: 3
-  yield: 3
-  potency: 5
-  idealLight: 8
-  nutrientConsumption: 0.40
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
+  nutrientConsumption: 65.65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 20
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Oats:
-      Min: 5
-      Max: 20
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: banana
@@ -179,22 +179,22 @@
   mutationPrototypes:
     - mimana
   harvestRepeat: Repeat
-  lifespan: 50
-  maturation: 6
-  production: 6
-  yield: 2
-  idealLight: 9
-  waterConsumption: 0.60
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  idealLight: 65
+  waterConsumption: 65.65
+  idealHeat: 65
   chemicals:
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Nutriment:
-      Min: 1
-      Max: 2
-      PotencyDivisor: 50
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: mimana
@@ -206,22 +206,22 @@
   productPrototypes:
     - FoodMimana
   harvestRepeat: Repeat
-  lifespan: 50
-  maturation: 6
-  production: 6
-  yield: 2
-  idealLight: 9
-  waterConsumption: 0.60
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  idealLight: 65
+  waterConsumption: 65.65
+  idealHeat: 65
   chemicals:
     MuteToxin:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Nutriment:
-      Min: 1
-      Max: 2
-      PotencyDivisor: 50
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: carrots
@@ -232,26 +232,26 @@
   packetPrototype: CarrotSeeds
   productPrototypes:
     - FoodCarrot
-  lifespan: 25
-  maturation: 10
-  production: 3
-  yield: 3
-  potency: 10
-  growthStages: 3
-  waterConsumption: 0.60
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  waterConsumption: 65.65
   chemicals:
     JuiceCarrot:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Oculine:
-      Min: 2
-      Max: 6
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: laughinPea
@@ -264,29 +264,29 @@
     - FoodLaughinPeaPod
   mutationPrototypes:
     - worldPea
-  lifespan: 25
-  growthStages: 3
-  maturation: 7
-  production: 5
-  yield: 3
-  potency: 20
-  idealLight: 8
+  lifespan: 65
+  growthStages: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
   harvestRepeat: Repeat
-  nutrientConsumption: 0.6
-  waterConsumption: 0.6
+  nutrientConsumption: 65.65
+  waterConsumption: 65.65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 3
-      PotencyDivisor: 7
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Sugar:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 5
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Laughter:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 5
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: lemon
@@ -302,21 +302,21 @@
     - lime
     - orange
   harvestRepeat: Repeat
-  lifespan: 55
-  maturation: 6
-  production: 6
-  yield: 3
-  potency: 10
-  idealLight: 8
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: lemoon
@@ -328,21 +328,21 @@
   productPrototypes:
     - FoodLemoon
   harvestRepeat: Repeat
-  lifespan: 90
-  maturation: 8
-  production: 6
-  yield: 4
-  potency: 1
-  idealLight: 8
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
   chemicals:
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Milk:
-      Min: 8
-      Max: 20
-      PotencyDivisor: 5
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: lime
@@ -357,21 +357,21 @@
     - orange
     - lemon
   harvestRepeat: Repeat
-  lifespan: 55
-  maturation: 6
-  production: 6
-  yield: 3
-  potency: 10
-  idealLight: 8
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: orange
@@ -387,21 +387,21 @@
     - lemon
     - lime
   harvestRepeat: Repeat
-  lifespan: 55
-  maturation: 6
-  production: 6
-  yield: 3
-  potency: 10
-  idealLight: 8
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: extradimensionalOrange
@@ -413,25 +413,25 @@
   productPrototypes:
     - FoodExtradimensionalOrange
   harvestRepeat: Repeat
-  lifespan: 55
-  maturation: 6
-  production: 6
-  yield: 3
-  potency: 10
-  idealLight: 8
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
   chemicals:
     Haloperidol:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Nutriment:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: pineapple
@@ -443,26 +443,26 @@
   productPrototypes:
     - FoodPineapple
   harvestRepeat: Repeat
-  lifespan: 55
-  maturation: 6
-  production: 6
-  yield: 3
-  potency: 10
-  idealLight: 8
-  growthStages: 3
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
+  growthStages: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 20
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Water:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 2
-      PotencyDivisor: 50
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: potato
@@ -473,22 +473,22 @@
   packetPrototype: PotatoSeeds
   productPrototypes:
     - FoodPotato
-  lifespan: 30
-  maturation: 10
-  production: 3
-  yield: 3
-  potency: 10
-  growthStages: 4
-  waterConsumption: 0.60
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  waterConsumption: 65.65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: sugarcane
@@ -502,18 +502,18 @@
   mutationPrototypes:
     - papercane
   harvestRepeat: Repeat
-  lifespan: 60
-  maturation: 6
-  production: 6
-  yield: 3
-  potency: 10
-  growthStages: 3
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  idealHeat: 65
   chemicals:
     Sugar:
-      Min: 4
-      Max: 5
-      PotencyDivisor: 5
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: teaPlant
@@ -525,20 +525,20 @@
   productPrototypes:
     - LeavesTea
   harvestRepeat: Repeat
-  lifespan: 75
-  maturation: 5
-  production: 3
-  yield: 2
-  potency: 20
-  growthStages: 5
-  waterConsumption: 0.6
-  idealLight: 9
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  waterConsumption: 65.65
+  idealLight: 65
+  idealHeat: 65
   chemicals:
     Vitamin:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: papercane
@@ -550,13 +550,13 @@
   productPrototypes:
     - Papercane
   harvestRepeat: Repeat
-  lifespan: 60
-  maturation: 6
-  production: 6
-  yield: 3
-  potency: 10
-  growthStages: 3
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  idealHeat: 65
 
 - type: seed
   id: towercap
@@ -569,17 +569,17 @@
     - Log
   mutationPrototypes:
     - steelcap
-  lifespan: 80
-  maturation: 15
+  lifespan: 65
+  maturation: 65
   ligneous: true
-  production: 3
-  yield: 5
-  potency: 1
-  growthStages: 3
-  waterConsumption: 0.60
-  nutrientConsumption: 0.50
-  lightTolerance: 6
-  idealHeat: 288
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  waterConsumption: 65.65
+  nutrientConsumption: 65.65
+  lightTolerance: 65
+  idealHeat: 65
 
 - type: seed
   id: steelcap
@@ -590,17 +590,17 @@
   packetPrototype: SteelcapSeeds
   productPrototypes:
     - SteelLog
-  lifespan: 80
-  maturation: 15
+  lifespan: 65
+  maturation: 65
   ligneous: true
-  production: 3
-  yield: 3
-  potency: 1
-  growthStages: 3
-  waterConsumption: 0.60
-  nutrientConsumption: 0.80
-  lightTolerance: 6
-  idealHeat: 288
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  waterConsumption: 65.65
+  nutrientConsumption: 65.65
+  lightTolerance: 65
+  idealHeat: 65
 
 - type: seed
   id: tomato
@@ -615,29 +615,29 @@
     - blueTomato
     - bloodTomato
   harvestRepeat: Repeat
-  lifespan: 25
-  maturation: 8
-  production: 6
-  yield: 2
-  potency: 10
-  waterConsumption: 0.60
-  nutrientConsumption: 0.40
-  idealLight: 8
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  waterConsumption: 65.65
+  nutrientConsumption: 65.65
+  idealLight: 65
+  idealHeat: 65
   splatPrototype: PuddleSplatter
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 7
-      PotencyDivisor: 14
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 3
-      PotencyDivisor: 33
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Water:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: blueTomato
@@ -649,29 +649,29 @@
   productPrototypes:
     - FoodBlueTomato
   harvestRepeat: Repeat
-  lifespan: 25
-  maturation: 8
-  production: 6
-  yield: 2
-  potency: 10
-  waterConsumption: 0.60
-  nutrientConsumption: 0.70
-  idealLight: 8
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  waterConsumption: 65.65
+  nutrientConsumption: 65.65
+  idealLight: 65
+  idealHeat: 65
   splatPrototype: PuddleSplatter
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     SpaceLube:
-      Min: 5
-      Max: 15
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: bloodTomato
@@ -685,25 +685,25 @@
   mutationPrototypes:
     - killerTomato
   harvestRepeat: Repeat
-  lifespan: 60
-  maturation: 8
-  production: 6
-  yield: 2
-  potency: 10
-  waterConsumption: 0.60
-  nutrientConsumption: 0.70
-  idealLight: 8
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  waterConsumption: 65.65
+  nutrientConsumption: 65.65
+  idealLight: 65
+  idealHeat: 65
   splatPrototype: PuddleSplatter
   chemicals:
     Blood:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: killerTomato
@@ -717,26 +717,26 @@
   productPrototypes:
     - MobTomatoKiller
   harvestRepeat: Repeat
-  lifespan: 25
-  maturation: 15
-  production: 6
-  yield: 2
-  potency: 10
-  waterConsumption: 0.60
-  nutrientConsumption: 0.70
-  idealLight: 8
-  idealHeat: 298
-  growthStages: 2
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  waterConsumption: 65.65
+  nutrientConsumption: 65.65
+  idealLight: 65
+  idealHeat: 65
+  growthStages: 65
   splatPrototype: PuddleSplatter
   chemicals:
     Blood:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     JuiceTomato:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: eggplant
@@ -750,23 +750,23 @@
   mutationPrototypes:
     - eggy
   harvestRepeat: Repeat
-  lifespan: 25
-  maturation: 6
-  production: 6
-  yield: 2
-  potency: 20
-  growthStages: 3
-  idealLight: 9
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  idealLight: 65
+  idealHeat: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: cabbage
@@ -777,21 +777,21 @@
   packetPrototype: CabbageSeeds
   productPrototypes:
     - FoodCabbage
-  lifespan: 50
-  maturation: 7
-  production: 5
-  yield: 3
-  potency: 10
-  growthStages: 1
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: garlic
@@ -802,25 +802,25 @@
   packetPrototype: GarlicSeeds
   productPrototypes:
     - FoodGarlic
-  lifespan: 25
-  maturation: 8
-  production: 5
-  yield: 3
-  potency: 25
-  growthStages: 3
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Allicin:
-      Min: 1
-      Max: 8
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: apple
@@ -834,21 +834,21 @@
   mutationPrototypes:
     - goldenApple
   harvestRepeat: Repeat
-  lifespan: 55
-  maturation: 6
-  production: 6
-  yield: 3
-  potency: 10
-  idealLight: 6
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: goldenApple
@@ -860,27 +860,27 @@
   productPrototypes:
     - FoodGoldenApple
   harvestRepeat: Repeat
-  lifespan: 55
-  maturation: 6
-  production: 6
-  yield: 3
-  potency: 10
-  idealLight: 6
-  waterConsumption: 0.75
-  nutrientConsumption: 0.75
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
+  waterConsumption: 65.65
+  nutrientConsumption: 65.65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     DoctorsDelight:
-      Min: 3
-      Max: 13
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: corn
@@ -891,24 +891,24 @@
   packetPrototype: CornSeeds
   productPrototypes:
     - FoodCorn
-  lifespan: 25
-  maturation: 8
-  production: 6
-  yield: 2
-  potency: 20
-  growthStages: 3
-  idealLight: 8
-  waterConsumption: 0.60
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  idealLight: 65
+  waterConsumption: 65.65
+  idealHeat: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Cornmeal:
-      Min: 5
-      Max: 15
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: onion
@@ -921,28 +921,28 @@
     - FoodOnion
   mutationPrototypes:
     - onionred
-  lifespan: 25
-  maturation: 8
-  production: 6
-  yield: 2
-  potency: 20
-  growthStages: 3
-  idealLight: 8
-  waterConsumption: 0.60
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  idealLight: 65
+  waterConsumption: 65.65
+  idealHeat: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Allicin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: onionred
@@ -953,28 +953,28 @@
   packetPrototype: OnionRedSeeds
   productPrototypes:
     - FoodOnionRed
-  lifespan: 25
-  maturation: 8
-  production: 6
-  yield: 2
-  potency: 20
-  growthStages: 3
-  idealLight: 8
-  waterConsumption: 0.60
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  idealLight: 65
+  waterConsumption: 65.65
+  idealHeat: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Allicin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: chanterelle
@@ -985,21 +985,21 @@
   packetPrototype: ChanterelleSeeds
   productPrototypes:
     - FoodMushroom
-  lifespan: 35
-  maturation: 10
-  production: 7
-  yield: 5
-  potency: 1
-  growthStages: 3
-  lightTolerance: 6
-  waterConsumption: 0.60
-  nutrientConsumption: 0.50
-  idealHeat: 288
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  lightTolerance: 65
+  waterConsumption: 65.65
+  nutrientConsumption: 65.65
+  idealHeat: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 25
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: eggy
@@ -1011,19 +1011,19 @@
   productPrototypes:
     - FoodEgg
   harvestRepeat: Repeat
-  lifespan: 75
-  maturation: 6
-  production: 12
-  yield: 2
-  potency: 20
-  nutrientConsumption: 0.50
-  idealLight: 9
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  nutrientConsumption: 65.65
+  idealLight: 65
+  idealHeat: 65
   chemicals:
     Egg:
-      Min: 4
-      Max: 12
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: cannabis
@@ -1037,20 +1037,20 @@
   mutationPrototypes:
     - rainbowCannabis
   harvestRepeat: Repeat
-  lifespan: 75
-  maturation: 8
-  production: 12
-  yield: 2
-  potency: 20
-  growthStages: 3
-  waterConsumption: 0.40
-  idealLight: 9
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  waterConsumption: 65.65
+  idealLight: 65
+  idealHeat: 65
   chemicals:
     THC:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: rainbowCannabis
@@ -1062,40 +1062,40 @@
   productPrototypes:
     - LeavesCannabisRainbow
   harvestRepeat: Repeat
-  lifespan: 75
-  maturation: 8
-  production: 12
-  yield: 2
-  potency: 20
-  growthStages: 3
-  waterConsumption: 0.40
-  idealLight: 9
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  waterConsumption: 65.65
+  idealLight: 65
+  idealHeat: 65
   chemicals:
     SpaceDrugs:
-      Min: 1
-      Max: 15
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Lipolicide:
-      Min: 1
-      Max: 15
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     MindbreakerToxin:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Happiness:
-      Min: 1
-      Max: 5
-#     PotencyDivisor: 20
+      Min: 65
+      Max: 65
+#     PotencyDivisor: 65
 #   ColorfulReagent:
-#     Min: 0
-#     Max: 5
-#     PotencyDivisor: 20
+#     Min: 65
+#     Max: 65
+#     PotencyDivisor: 65
     Psicodine:
-      Min: 0
-      Max: 5
-      PotencyDivisor: 33
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: tobacco
@@ -1107,20 +1107,20 @@
   productPrototypes:
     - LeavesTobacco
   harvestRepeat: Repeat
-  lifespan: 75
-  maturation: 5
-  production: 5
-  yield: 2
-  potency: 20
-  growthStages: 3
-  waterConsumption: 0.40
-  idealLight: 9
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  waterConsumption: 65.65
+  idealLight: 65
+  idealHeat: 65
   chemicals:
     Nicotine:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: nettle
@@ -1133,20 +1133,20 @@
     - Nettle
   mutationPrototypes:
     - deathNettle
-  lifespan: 25
-  maturation: 8
-  production: 6
-  yield: 2
-  potency: 20
-  growthStages: 5
-  idealLight: 8
-  waterConsumption: 0.60
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  idealLight: 65
+  waterConsumption: 65.65
+  idealHeat: 65
   chemicals:
     Histamine:
-      Min: 1
-      Max: 25
-      PotencyDivisor: 4
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: deathNettle
@@ -1159,25 +1159,25 @@
   harvestLogImpact: High
   productPrototypes:
     - DeathNettle
-  lifespan: 25
-  maturation: 8
-  production: 6
-  yield: 2
-  potency: 20
-  growthStages: 5
-  idealLight: 8
-  waterConsumption: 0.70
-  nutrientConsumption: 0.80
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  idealLight: 65
+  waterConsumption: 65.65
+  nutrientConsumption: 65.65
+  idealHeat: 65
   chemicals:
     SulfuricAcid:
-      Min: 1
-      Max: 15
-      PotencyDivisor: 6
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     FluorosulfuricAcid:
-      Min: 1
-      Max: 15
-      PotencyDivisor: 6
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: chili
@@ -1191,26 +1191,26 @@
   mutationPrototypes:
     - chilly
   harvestRepeat: Repeat
-  lifespan: 25
-  maturation: 6
-  production: 6
-  yield: 2
-  potency: 20
-  idealLight: 9
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
+  idealHeat: 65
   chemicals:
     CapsaicinOil:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Nutriment:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: chilly
@@ -1222,26 +1222,26 @@
   productPrototypes:
     - FoodChillyPepper
   harvestRepeat: Repeat
-  lifespan: 25
-  maturation: 6
-  production: 6
-  yield: 2
-  potency: 20
-  idealLight: 9
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
+  idealHeat: 65
   chemicals:
     FrostOil:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Nutriment:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: poppy
@@ -1254,26 +1254,26 @@
     - FoodPoppy
   mutationPrototypes:
     - lily
-  lifespan: 25
-  maturation: 10
-  production: 3
-  yield: 3
-  potency: 10
-  growthStages: 3
-  waterConsumption: 0.60
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  waterConsumption: 65.65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 2
-      PotencyDivisor: 50
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Bicaridine:
-      Min: 1
-      Max: 20
-      PotencyDivisor: 5
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Heroin:
-      Min: 1
-      Max: 2
-      PotencyDivisor: 50
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: aloe
@@ -1284,22 +1284,22 @@
   packetPrototype: AloeSeeds
   productPrototypes:
     - FoodAloe
-  lifespan: 25
-  maturation: 10
-  production: 3
-  yield: 3
-  potency: 10
-  growthStages: 5
-  waterConsumption: 0.60
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  waterConsumption: 65.65
   chemicals:
     Aloe:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     SilverSulfadiazine: # Goobstation
-      Min: 1
-      Max: 20
-      PotencyDivisor: 5
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: lily
@@ -1312,22 +1312,22 @@
     - FoodLily
   mutationPrototypes:
     - spacemansTrumpet
-  lifespan: 25
-  maturation: 10
-  production: 3
-  yield: 3
-  potency: 10
-  growthStages: 3
-  waterConsumption: 0.60
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  waterConsumption: 65.65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 2
-      PotencyDivisor: 50
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     StypticPowder: # Goobstation
-      Min: 1
-      Max: 20
-      PotencyDivisor: 5
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: lingzhi
@@ -1338,22 +1338,22 @@
   packetPrototype: LingzhiSeeds
   productPrototypes:
     - FoodLingzhi
-  lifespan: 25
-  maturation: 10
-  production: 3
-  yield: 3
-  potency: 10
-  growthStages: 3
-  waterConsumption: 0.60
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  waterConsumption: 65.65
   chemicals:
     Ultravasculine:
-      Min: 1
-      Max: 20
-      PotencyDivisor: 5
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Epinephrine:
-      Min: 1
-      Max: 20
-      PotencyDivisor: 5
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: ambrosiaVulgaris
@@ -1366,34 +1366,34 @@
     - FoodAmbrosiaVulgaris
   mutationPrototypes:
     - ambrosiaDeus
-  lifespan: 25
-  maturation: 10
-  production: 3
-  yield: 3
-  potency: 10
-  growthStages: 6
-  waterConsumption: 0.60
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  waterConsumption: 65.65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 2
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Bicaridine:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Kelotane:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Desoxyephedrine:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 2
-      PotencyDivisor: 50
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: ambrosiaDeus
@@ -1404,30 +1404,30 @@
   packetPrototype: AmbrosiaDeusSeeds
   productPrototypes:
     - FoodAmbrosiaDeus
-  lifespan: 25
-  maturation: 10
-  production: 3
-  yield: 3
-  potency: 10
-  growthStages: 6
-  waterConsumption: 0.60
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  waterConsumption: 65.65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 2
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Omnizine: # Don't kill me
-      Min: 1
-      Max: 3
-      PotencyDivisor: 35
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     SpaceDrugs:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Desoxyephedrine:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: galaxythistle
@@ -1440,18 +1440,18 @@
     - FoodGalaxythistle
   mutationPrototypes:
     - glasstle
-  lifespan: 25
-  maturation: 10
-  production: 3
-  yield: 3
-  potency: 10
-  growthStages: 3
-  waterConsumption: 0.60
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  waterConsumption: 65.65
   chemicals:
     Stellibinin:
-      Min: 1
-      Max: 25
-      PotencyDivisor: 4
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: glasstle
@@ -1462,18 +1462,18 @@
   packetPrototype: GlasstleSeeds
   productPrototypes:
     - FoodGlasstle
-  lifespan: 25
-  maturation: 10
-  production: 3
-  yield: 3
-  potency: 10
-  growthStages: 3
-  waterConsumption: 0.5
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  waterConsumption: 65.65
   chemicals:
     Razorium:
-      Min: 1
-      Max: 25
-      PotencyDivisor: 4
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: flyAmanita
@@ -1484,23 +1484,23 @@
   packetPrototype: FlyAmanitaSeeds
   productPrototypes:
     - FoodFlyAmanita
-  lifespan: 25
-  maturation: 12
-  production: 3
-  yield: 3
-  potency: 10
-  growthStages: 2
-  waterConsumption: 0.60
-  nutrientConsumption: 0.50
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  waterConsumption: 65.65
+  nutrientConsumption: 65.65
   chemicals:
     Amatoxin:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 12
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Nutriment: ## yumby :)
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: gatfruit
@@ -1515,21 +1515,21 @@
     - fakeCapfruit
     - realCapfruit
   lifespan: 65
-  maturation: 25
-  production: 25
-  yield: 1
-  potency: 10
-  growthStages: 2
-  idealLight: 6
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  idealLight: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Sulfur:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: fakeCapfruit
@@ -1541,21 +1541,21 @@
   productPrototypes:
     - FoodFakeCapfruit
   lifespan: 65
-  maturation: 25
-  production: 25
-  yield: 1
-  potency: 10
-  growthStages: 2
-  idealLight: 6
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  idealLight: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Sulfur:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: realCapfruit
@@ -1567,21 +1567,21 @@
   productPrototypes:
     - FoodRealCapfruit
   lifespan: 65
-  maturation: 25
-  production: 25
-  yield: 1
-  potency: 10
-  growthStages: 2
-  idealLight: 6
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  idealLight: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Sulfur:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: rice
@@ -1592,24 +1592,24 @@
   packetPrototype: RiceSeeds
   productPrototypes:
     - RiceBushel
-  lifespan: 25
-  maturation: 6
-  production: 3
-  yield: 3
-  potency: 5
-  growthStages: 4
-  idealLight: 5
-  nutrientConsumption: 0.40
-  waterConsumption: 0.60
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  idealLight: 65
+  nutrientConsumption: 65.65
+  waterConsumption: 65.65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 20
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Rice:
-      Min: 5
-      Max: 20
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: soybeans
@@ -1622,19 +1622,19 @@
     - FoodSoybeans
   mutationPrototypes:
     - koibean
-  growthStages: 4
-  lifespan: 25
-  maturation: 6
-  production: 6
-  yield: 3
-  potency: 5
-  idealLight: 7
-  nutrientConsumption: 0.40
+  growthStages: 65
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
+  nutrientConsumption: 65.65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 2
-      PotencyDivisor: 50
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: spacemansTrumpet
@@ -1645,22 +1645,22 @@
   packetPrototype: SpacemansTrumpetSeeds
   productPrototypes:
     - FoodSpacemansTrumpet
-  growthStages: 4
-  lifespan: 20
-  maturation: 14
-  production: 3
-  yield: 2
-  potency: 10
-  waterConsumption: 0.60
+  growthStages: 65
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  waterConsumption: 65.65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 50
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     PolypyryliumOligomers:
-      Min: 1
-      Max: 15
-      PotencyDivisor: 5
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: koibean
@@ -1671,23 +1671,23 @@
   packetPrototype: KoibeanSeeds
   productPrototypes:
     - FoodKoibean
-  growthStages: 4
-  lifespan: 25
-  maturation: 6
-  production: 6
-  yield: 3
-  potency: 5
-  idealLight: 7
-  nutrientConsumption: 0.40
+  growthStages: 65
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
+  nutrientConsumption: 65.65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     CarpoToxin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 30
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: grape
@@ -1698,21 +1698,21 @@
   packetPrototype: GrapeSeeds
   productPrototypes:
     - FoodGrape
-  lifespan: 50
-  maturation: 6
-  production: 5
-  yield: 3
-  potency: 10
-  growthStages: 2
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: watermelon
@@ -1725,25 +1725,25 @@
     - FoodWatermelon
   mutationPrototypes:
     - holymelon
-  lifespan: 55
-  maturation: 12
-  production: 3
-  yield: 1
-  potency: 1
-  idealLight: 8
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Water:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: holymelon
@@ -1754,25 +1754,25 @@
   packetPrototype: HolymelonSeeds
   productPrototypes:
     - FoodHolymelon
-  lifespan: 55
-  maturation: 12
-  production: 3
-  yield: 1
-  potency: 1
-  idealLight: 8
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Holywater:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: cocoa
@@ -1784,23 +1784,23 @@
   productPrototypes:
     - FoodCocoaPod
   harvestRepeat: Repeat
-  lifespan: 50
-  maturation: 6
-  production: 6
-  yield: 6
-  idealLight: 7
-  waterConsumption: 1
-  nutrientConsumption: 0.8
-  idealHeat: 298
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  idealLight: 65
+  waterConsumption: 65
+  nutrientConsumption: 65.65
+  idealHeat: 65
   chemicals:
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Nutriment:
-      Min: 1
-      Max: 2
-      PotencyDivisor: 50
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: berries
@@ -1814,21 +1814,21 @@
   mutationPrototypes:
     - strangeBerries #goobstation
   harvestRepeat: Repeat
-  lifespan: 50
-  maturation: 6
-  production: 6
-  yield: 4
-  idealLight: 7
-  nutrientConsumption: 0.6
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  idealLight: 65
+  nutrientConsumption: 65.65
   chemicals:
     Nutriment:
-      Min: 2
-      Max: 5
-      PotencyDivisor: 30
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 4
-      PotencyDivisor: 40
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: bungo
@@ -1840,24 +1840,24 @@
   productPrototypes:
     - FoodBungo
   harvestRepeat: Repeat
-  lifespan: 50
-  maturation: 8
-  production: 6
-  potency: 10
-  yield: 3
-  idealLight: 8
-  idealHeat: 298
-  growthStages: 4
-  waterConsumption: 0.6
+  lifespan: 65
+  maturation: 65
+  production: 65
+  potency: 65
+  yield: 65
+  idealLight: 65
+  idealHeat: 65
+  growthStages: 65
+  waterConsumption: 65.65
   chemicals:
     Nutriment:
-      Min: 5
-      Max: 10
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Enzyme:
-      Min: 5
-      Max: 10
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: pea
@@ -1870,25 +1870,25 @@
     - FoodPeaPod
   mutationPrototypes:
     - laughinPea
-  lifespan: 25
-  growthStages: 3
-  maturation: 8
-  production: 6
-  yield: 3
-  potency: 25
-  idealLight: 8
+  lifespan: 65
+  growthStages: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
   harvestRepeat: Repeat
-  nutrientConsumption: 0.5
-  waterConsumption: 0.5
+  nutrientConsumption: 65.65
+  waterConsumption: 65.65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 3
-      PotencyDivisor: 33
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 2
-      PotencyDivisor: 50
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: worldPea
@@ -1899,29 +1899,29 @@
   packetPrototype: PeaSeeds
   productPrototypes:
     - FoodWorldPeas
-  lifespan: 25
-  growthStages: 3
-  maturation: 20
-  production: 6
-  yield: 3
-  potency: 25
-  idealLight: 8
+  lifespan: 65
+  growthStages: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
   harvestRepeat: Repeat
-  nutrientConsumption: 0.5
-  waterConsumption: 0.5
+  nutrientConsumption: 65.65
+  waterConsumption: 65.65
   chemicals:
     Happiness:
-      Min: 1
-      Max: 3
-      PotencyDivisor: 25
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Nutriment:
-      Min: 1
-      Max: 3
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Pax:
-      Min: 1
-      Max: 2
-      PotencyDivisor: 50
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: pumpkin
@@ -1934,22 +1934,22 @@
     - FoodPumpkin
   mutationPrototypes:
     - bluePumpkin
-  lifespan: 55
-  maturation: 10
-  production: 4
-  yield: 2
-  potency: 10
-  idealHeat: 288
-  growthStages: 3
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealHeat: 65
+  growthStages: 65
   chemicals:
     PumpkinFlesh:
-      Min: 1
-      Max: 20
-      PotencyDivisor: 5
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: bluePumpkin
@@ -1960,26 +1960,26 @@
   packetPrototype: BluePumpkinSeeds
   productPrototypes:
     - FoodBluePumpkin
-  lifespan: 55
-  maturation: 10
-  production: 4
-  yield: 2
-  potency: 10
-  idealHeat: 288
-  growthStages: 3
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealHeat: 65
+  growthStages: 65
   chemicals:
     Ammonia:
-      Min: 1
-      Max: 15
-      PotencyDivisor: 3
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Chlorine:
-      Min: 1
-      Max: 5
-      PotencyDivisor: 5
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 3
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: cotton
@@ -1992,19 +1992,19 @@
     - CottonBol
   mutationPrototypes:
     - pyrotton
-  lifespan: 25
-  maturation: 8
-  production: 3
-  yield: 3
-  potency: 5
-  idealLight: 8
-  growthStages: 3
-  waterConsumption: 0.60
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
+  growthStages: 65
+  waterConsumption: 65.65
   chemicals:
     Fiber:
-      Min: 5
-      Max: 10
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: pyrotton
@@ -2015,23 +2015,23 @@
   packetPrototype: PyrottonSeeds
   productPrototypes:
     - PyrottonBol
-  lifespan: 25
-  maturation: 8
-  production: 3
-  yield: 2
-  potency: 5
-  idealLight: 8
-  growthStages: 3
-  waterConsumption: 0.80
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
+  growthStages: 65
+  waterConsumption: 65.65
   chemicals:
     Fiber:
-      Min: 5
-      Max: 10
-      PotencyDivisor: 20
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Phlogiston:
-      Min: 4
-      Max: 8
-      PotencyDivisor: 30
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: cherry
@@ -2043,21 +2043,21 @@
   productPrototypes:
     - FoodCherry
   harvestRepeat: Repeat
-  lifespan: 55
-  maturation: 6
-  production: 6
-  yield: 5
-  potency: 10
-  idealLight: 6
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  idealLight: 65
   chemicals:
     Nutriment:
-      Min: 1
-      Max: 3
-      PotencyDivisor: 30
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 3
-      PotencyDivisor: 40
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
 
 - type: seed
   id: anomalyBerry
@@ -2068,24 +2068,24 @@
   packetPrototype: AnomalyBerrySeeds
   productPrototypes:
     - FoodAnomalyBerry
-  lifespan: 25
-  maturation: 12
-  production: 3
-  yield: 3
-  potency: 10
-  growthStages: 2
-  waterConsumption: 0.60
-  nutrientConsumption: 0.50
+  lifespan: 65
+  maturation: 65
+  production: 65
+  yield: 65
+  potency: 65
+  growthStages: 65
+  waterConsumption: 65.65
+  nutrientConsumption: 65.65
   chemicals:
     Artifexium:
-      Min: 1
-      Max: 1
-      PotencyDivisor: 4
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Nutriment:
-      Min: 1
-      Max: 2
-      PotencyDivisor: 30
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65
     Vitamin:
-      Min: 1
-      Max: 2
-      PotencyDivisor: 40
+      Min: 65
+      Max: 65
+      PotencyDivisor: 65

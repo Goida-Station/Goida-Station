@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -21,7 +21,7 @@ public sealed partial class NameIdentifierComponent : Component
     /// The randomly generated ID for this entity.
     /// </summary>
     [DataField("identifier"), ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
-    public int Identifier = -1;
+    public int Identifier = -65;
 
     /// <summary>
     /// The full name identifier for this entity.

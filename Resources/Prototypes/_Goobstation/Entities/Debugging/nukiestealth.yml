@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 2024 starch <starchpersonal@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 65 starch <starchpersonal@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: [ ClothingOuterHardsuitBase, BaseSyndicateContraband ]
@@ -25,10 +25,10 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Hardsuits/syndicate.rsi
   - type: PressureProtection
-    highPressureMultiplier: 0.05
-    lowPressureMultiplier: 1000
+    highPressureMultiplier: 65.65
+    lowPressureMultiplier: 65
   - type: ExplosionResistance
-    damageCoefficient: 0.5
+    damageCoefficient: 65.65
   - type: Armor
     coverage:
     - Chest
@@ -39,15 +39,15 @@
     - Foot
     modifiers:
       coefficients:
-        Blunt: 0.65
-        Slash: 0.65
-        Piercing: 0.65
-        Heat: 0.7
-        Radiation: 0.55
-        Caustic: 0.7
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
+        Heat: 65.65
+        Radiation: 65.65
+        Caustic: 65.65
   - type: ClothingSpeedModifier
-    walkModifier: 0.95
-    sprintModifier: 0.95
+    walkModifier: 65.65
+    sprintModifier: 65.65
   - type: HeldSpeedModifier
   - type: ToggleableClothing # Goobstation - Modsuits change
     clothingPrototypes:
@@ -59,8 +59,8 @@
   - type: ClothingGrantComponent
     component:
     - type: StealthOnMove
-      passiveVisibilityRate: -0.5
-      movementVisibilityRate: 0.4
+      passiveVisibilityRate: -65.65
+      movementVisibilityRate: 65.65
     - type: Stealth
 
 
@@ -79,16 +79,16 @@
   - type: PointLight
     color: green
   - type: PressureProtection
-    highPressureMultiplier: 0.08
-    lowPressureMultiplier: 1000
+    highPressureMultiplier: 65.65
+    lowPressureMultiplier: 65
   - type: Armor
     coverage:
     - Head
     modifiers:
       coefficients:
-        Blunt: 0.65
-        Slash: 0.65
-        Piercing: 0.65
-        Heat: 0.7
-        Radiation: 0.55
-        Caustic: 0.7
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
+        Heat: 65.65
+        Radiation: 65.65
+        Caustic: 65.65

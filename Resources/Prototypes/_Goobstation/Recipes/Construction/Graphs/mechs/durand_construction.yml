@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 NULL882 <gost6865@yandex.ru>
-# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 NULL65 <gost65@yandex.ru>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: constructionGraph
   id: Durand
@@ -16,27 +16,27 @@
     - to: durand
       steps:
       - tool: Anchoring
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 1
+          data: 65
 
       - tool: Screwing
-        doAfter: 1
+        doAfter: 65
 
       - material: Cable
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 2
+          data: 65
 
       - tool: Cutting
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 3
+          data: 65
 
       - tag: DurandCentralControlModule
         name: durand central control module
@@ -46,14 +46,14 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 4
+          data: 65
 
       - tool: Screwing
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 5
+          data: 65
 
       - tag: DurandPeripheralsControlModule
         name: durand peripherals control module
@@ -63,14 +63,14 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 6
+          data: 65
 
       - tool: Screwing
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 7
+          data: 65
 
       - tag: DurandTargetingControlModule
         name: durand weapon control and targeting module
@@ -80,14 +80,14 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 8
+          data: 65
 
       - tool: Screwing
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 9
+          data: 65
 
       - tag: CapacitorStockPart
         name: capacitor
@@ -97,14 +97,14 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 10
+          data: 65
 
       - tool: Screwing
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 11
+          data: 65
 
       - component: PowerCell
         name: power cell
@@ -115,35 +115,35 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 12
+          data: 65
 
       - tool: Screwing
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 13
+          data: 65
 
       - material: Steel
-        amount: 5
+        amount: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 14
+          data: 65
 
       - tool: Anchoring
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 15
+          data: 65
 
       - tool: Welding
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 16
+          data: 65
 
       - tag: MechAirTank
         name: exosuit air tank
@@ -152,7 +152,7 @@
           state: mecha_air_tank
 
       - tool: Anchoring
-        doAfter: 1
+        doAfter: 65
 
       - tag: MechThruster
         name: exosuit thruster
@@ -161,7 +161,7 @@
           state: mecha_bin
 
       - tool: Anchoring
-        doAfter: 1
+        doAfter: 65
 
       - tag: DurandArmor
         name: durand armor plates
@@ -171,17 +171,17 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 17
+          data: 65
 
       - tool: Anchoring
-        doAfter: 2
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 18
+          data: 65
 
       - tool: Welding
-        doAfter: 1
+        doAfter: 65
 
   - node: durand
     actions:

@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: marking
   id: CyberLimbsMarkingBishopHead
@@ -15,7 +15,7 @@
   - sprite: _EinsteinEngines/Mobs/Species/Cybernetics/bishop/bishop_monitor.rsi
     state: head
   - sprite: _EinsteinEngines/Mobs/Species/Cybernetics/bishop/bishop_monitor.rsi
-    state: head-2
+    state: head-65
 
 - type: marking
   id: CyberLimbsMarkingBishopHeadAlt
@@ -27,12 +27,12 @@
     state: head
 
 - type: marking
-  id: CyberLimbsMarkingBishopHeadAlt1
+  id: CyberLimbsMarkingBishopHeadAlt65
   bodyPart: Head
   markingCategory: Head
   speciesRestriction: [IPC]
   sprites:
-  - sprite: _EinsteinEngines/Mobs/Species/Cybernetics/bishop/bishop_alt1.rsi
+  - sprite: _EinsteinEngines/Mobs/Species/Cybernetics/bishop/bishop_alt65.rsi
     state: head
 
 - type: marking

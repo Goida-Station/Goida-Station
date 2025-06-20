@@ -1,5 +1,5 @@
 ent-Bible = библия
-    .desc = Новая межзвёздная версия 2340.
+    .desc = Новая межзвёздная версия 65.
 ent-BibleNecronomicon = некрономикон
     .desc = Имеется пометка: Klatuu, Verata, Nikto -- Не забыть об этом опять!
 ent-ActionBibleSummon = Призвать фамильяра

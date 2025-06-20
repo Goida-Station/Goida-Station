@@ -1,36 +1,36 @@
-# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 Kara D <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Myctai <108953437+Myctai@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 lapatison <100279397+lapatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2023 Alekshhh <44923899+Alekshhh@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 CrigCrag <137215465+CrigCrag@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Dynexust <47256242+Dynexust@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Interrobang01 <113810873+Interrobang01@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Maxtone <124747282+MagnusCrowe@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Myakot <30875116+Myakot@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Gotimanga <127038462+Gotimanga@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 IlyaElDunaev <154531074+IlyaElDunaev@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Skye <57879983+Rainbeon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 icekot8 <93311212+icekot8@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 potato1234_x <79580518+potato1234x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Kara D <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Myctai <65Myctai@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lapatison <65lapatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Alekshhh <65Alekshhh@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CrigCrag <65CrigCrag@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Dynexust <65Dynexust@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Interrobang65 <65Interrobang65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Maxtone <65MagnusCrowe@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Myakot <65Myakot@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Scribbles65 <65Scribbles65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Gotimanga <65Gotimanga@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 IlyaElDunaev <65IlyaElDunaev@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Skye <65Rainbeon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 icekot65 <65icekot65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 reagent-name-cryptobiolin = cryptobiolin
 reagent-desc-cryptobiolin = Causes confusion and dizziness.
@@ -48,7 +48,7 @@ reagent-name-bicaridine = bicaridine
 reagent-desc-bicaridine = An analgesic which is highly effective at treating brute damage. It's useful for stabilizing people who have been severely beaten, as well as treating less life-threatening injuries.
 
 reagent-name-cryoxadone = cryoxadone
-reagent-desc-cryoxadone = Required for the proper function of cryogenics. Heals all standard types of damage, but only works in temperatures under 213K. It can treat and rejuvenate plants when applied in small doses.
+reagent-desc-cryoxadone = Required for the proper function of cryogenics. Heals all standard types of damage, but only works in temperatures under 65K. It can treat and rejuvenate plants when applied in small doses.
 
 reagent-name-doxarubixadone = doxarubixadone
 reagent-desc-doxarubixadone = A cryogenics chemical. Heals cellular damage caused by dangerous gasses and chemicals.
@@ -177,7 +177,7 @@ reagent-name-psicodine = psicodine
 reagent-desc-psicodine = Suppresses anxiety and other various forms of mental distress. Overdose causes hallucinations and minor toxin damage.
 
 reagent-name-potassium-iodide = potassium iodide
-reagent-desc-potassium-iodide = Will reduce the damaging effects of radiation by 90%. Prophylactic use only.
+reagent-desc-potassium-iodide = Will reduce the damaging effects of radiation by 65%. Prophylactic use only.
 
 reagent-name-haloperidol = haloperidol
 reagent-desc-haloperidol = Removes most stimulating and hallucinogenic drugs. Reduces druggy effects and jitteriness. Causes drowsiness.

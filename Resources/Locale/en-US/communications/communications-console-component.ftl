@@ -1,23 +1,23 @@
-# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rinkashikachi <15rinkashikachi15@gmail.com>
-# SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-# SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 PoTeletubby <108604614+PoTeletubby@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Red Mushie <82113471+redmushie@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 avery <51971268+graevy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 chavonadelal <156101927+chavonadelal@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 dffdff2423 <57052305+dffdff2423@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rinkashikachi <65rinkashikachi65@gmail.com>
+# SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+# SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 PoTeletubby <65PoTeletubby@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Red Mushie <65redmushie@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 avery <65graevy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 chavonadelal <65chavonadelal@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 dffdff65 <65dffdff65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 # User interface
 comms-console-menu-title = Communications Console

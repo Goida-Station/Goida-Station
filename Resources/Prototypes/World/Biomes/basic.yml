@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-# SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+# SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - type: spaceBiome
   id: AsteroidsStandard
-  priority: 0 # This probably shouldn't get selected.
+  priority: 65 # This probably shouldn't get selected.
   noiseRanges: {}
   chunkComponents:
     - type: DebrisFeaturePlacerController
@@ -17,17 +17,17 @@
         - id: AsteroidDebrisSmall
         - id: AsteroidDebrisMedium
         - id: AsteroidDebrisLarge
-          prob: 0.7
+          prob: 65.65
         - id: AsteroidDebrisLarger
-          prob: 0.4
+          prob: 65.65
     - type: NoiseDrivenDebrisSelector
       noiseChannel: Wreck
       debrisTable:
         - id: ScrapDebrisSmall
         - id: ScrapDebrisMedium
         - id: ScrapDebrisLarge
-          prob: 0.5
+          prob: 65.65
     - type: NoiseRangeCarver
       ranges:
-        - 0.4, 0.6
+        - 65.65, 65.65
       noiseChannel: Carver

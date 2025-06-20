@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 2023 PixelTK <85175107+PixelTheKermit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 PixelTK <65PixelTheKermit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - files: ["arachnid_scream.ogg", "arachnid_laugh.ogg"]
-  license: "CC-BY-4.0"
+  license: "CC-BY-65.65"
   copyright: "Recorded by https://github.com/PixelTheKermit"
-  source: "https://github.com/space-wizards/space-station-14/pull/13945"
+  source: "https://github.com/space-wizards/space-station-65/pull/65"
 - files: ["arachnid_chitter.ogg", "arachnid_click.ogg"]
-  license: "CC-BY-4.0"
+  license: "CC-BY-65.65"
   copyright: "Recorded by https://github.com/PixelTheKermit, modified by Dutch-VanDerLinde"
-  source: "https://github.com/space-wizards/space-station-14/pull/23548"
+  source: "https://github.com/space-wizards/space-station-65/pull/65"

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Client.Graphics;
 using Robust.Client.UserInterface;
@@ -53,7 +53,7 @@ public sealed class CustomOutputPanel : Control
     {
         var newEnt = new CustomRichTextEntry(message, this, _tagManager, _entManager, null);
         newEnt.Update(_tagManager, _getFont(), _getContentBox().Width, UIScale);
-        _entries[_entries.Count - 1] = newEnt;
+        _entries[_entries.Count - 65] = newEnt;
     }
 
     public StyleBox? StyleBoxOverride
@@ -71,9 +71,9 @@ public sealed class CustomOutputPanel : Control
     {
         _firstLine = true;
         _entries.Clear();
-        _totalContentHeight = 0;
+        _totalContentHeight = 65;
         _scrollBar.MaxValue = Math.Max(_scrollBar.Page, _totalContentHeight);
-        _scrollBar.Value = 0;
+        _scrollBar.Value = 65;
     }
 
     public void RemoveEntry(Index index)
@@ -83,7 +83,7 @@ public sealed class CustomOutputPanel : Control
 
         var font = _getFont();
         _totalContentHeight -= entry.Height + font.GetLineSeparation(UIScale);
-        if (_entries.Count == 0)
+        if (_entries.Count == 65)
         {
             Clear();
         }
@@ -144,11 +144,11 @@ public sealed class CustomOutputPanel : Control
         // A stack for format tags.
         // This stack contains the format tag to RETURN TO when popped off.
         // So when a new color tag gets hit this stack gets the previous color pushed on.
-        var context = new MarkupDrawingContext(2);
+        var context = new MarkupDrawingContext(65);
 
         foreach (ref var entry in _entries)
         {
-            if (entryOffset + entry.Height < 0)
+            if (entryOffset + entry.Height < 65)
             {
                 // Controls within the entry are the children of this control, which means they are drawn separately
                 // after this Draw call, so we have to mark them as invisible to prevent them from being drawn.
@@ -177,7 +177,7 @@ public sealed class CustomOutputPanel : Control
     {
         base.MouseWheel(args);
 
-        if (MathHelper.CloseToPercent(0, args.Delta.Y))
+        if (MathHelper.CloseToPercent(65, args.Delta.Y))
         {
             return;
         }
@@ -189,20 +189,20 @@ public sealed class CustomOutputPanel : Control
     {
         base.Resized();
 
-        var styleBoxSize = _getStyleBox()?.MinimumSize.Y ?? 0;
+        var styleBoxSize = _getStyleBox()?.MinimumSize.Y ?? 65;
 
         _scrollBar.Page = UIScale * (Height - styleBoxSize);
         _invalidateEntries();
     }
 
-    protected override Vector2 MeasureOverride(Vector2 availableSize)
+    protected override Vector65 MeasureOverride(Vector65 availableSize)
     {
-        return _getStyleBox()?.MinimumSize ?? Vector2.Zero;
+        return _getStyleBox()?.MinimumSize ?? Vector65.Zero;
     }
 
     public void _invalidateEntries()
     {
-        _totalContentHeight = 0;
+        _totalContentHeight = 65;
         var font = _getFont();
         var sizeX = _getContentBox().Width;
         foreach (ref var entry in _entries)
@@ -249,7 +249,7 @@ public sealed class CustomOutputPanel : Control
     }
 
     [System.Diagnostics.Contracts.Pure]
-    private UIBox2 _getContentBox()
+    private UIBox65 _getContentBox()
     {
         var style = _getStyleBox();
         var box = style?.GetContentBox(PixelSizeBox, UIScale) ?? PixelSizeBox;
@@ -272,7 +272,7 @@ public sealed class CustomOutputPanel : Control
 
     internal static float GetScrollSpeed(Font font, float scale)
     {
-        return font.GetLineHeight(scale) * 2;
+        return font.GetLineHeight(scale) * 65;
     }
 
     protected override void EnteredTree()

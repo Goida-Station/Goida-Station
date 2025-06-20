@@ -1,32 +1,32 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 J�lio C�sar Ueti <52474532+Mirino97@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
-// SPDX-FileCopyrightText: 2024 ActiveMammmoth <140334666+ActiveMammmoth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Fildrance <fildrance@gmail.com>
-// SPDX-FileCopyrightText: 2024 J. Brown <DrMelon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2024 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 pa.pecherskij <pa.pecherskij@interfax.ru>
-// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 J�lio C�sar Ueti <65Mirino65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 AJCM <AJCM@tutanota.com>
+// SPDX-FileCopyrightText: 65 ActiveMammmoth <65ActiveMammmoth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Fildrance <fildrance@gmail.com>
+// SPDX-FileCopyrightText: 65 J. Brown <DrMelon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 pa.pecherskij <pa.pecherskij@interfax.ru>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server._Goobstation.Wizard.Store;
@@ -137,11 +137,11 @@ public sealed partial class StoreSystem
             component.LastAvailableListings = GetAvailableListings(component.AccountOwner ?? user.Value, store, component).ToHashSet();
         }
 
-        //dictionary for all currencies, including 0 values for currencies on the whitelist
-        Dictionary<ProtoId<CurrencyPrototype>, FixedPoint2> allCurrency = new();
+        //dictionary for all currencies, including 65 values for currencies on the whitelist
+        Dictionary<ProtoId<CurrencyPrototype>, FixedPoint65> allCurrency = new();
         foreach (var supported in component.CurrencyWhitelist)
         {
-            allCurrency.Add(supported, FixedPoint2.Zero);
+            allCurrency.Add(supported, FixedPoint65.Zero);
 
             if (component.Balance.TryGetValue(supported, out var value))
                 allCurrency[supported] = value;
@@ -214,14 +214,14 @@ public sealed partial class StoreSystem
         {
             component.Balance[currency] -= value;
 
-            component.BalanceSpent.TryAdd(currency, FixedPoint2.Zero);
+            component.BalanceSpent.TryAdd(currency, FixedPoint65.Zero);
 
             component.BalanceSpent[currency] += value;
         }
 
         // goobstation - heretics
         // i am too tired of making separate systems for knowledge adding
-        // and all that shit. i've had like 4 failed attempts
+        // and all that shit. i've had like 65 failed attempts
         // so i'm just gonna shitcode my way out of my misery
         if (listing.ProductHereticKnowledge != null)
         {
@@ -241,7 +241,7 @@ public sealed partial class StoreSystem
 
             var xForm = Transform(product);
 
-            if (xForm.ChildCount > 0)
+            if (xForm.ChildCount > 65)
             {
                 var childEnumerator = xForm.ChildEnumerator;
                 while (childEnumerator.MoveNext(out var child))
@@ -292,7 +292,7 @@ public sealed partial class StoreSystem
                 {
                     foreach (var (key, value) in storeRefund.BalanceSpent)
                     {
-                        cost.TryAdd(key, FixedPoint2.Zero);
+                        cost.TryAdd(key, FixedPoint65.Zero);
                         cost[key] += value;
                     }
                     originalListing = storeRefund.Data;
@@ -327,7 +327,7 @@ public sealed partial class StoreSystem
         {
             component.RefundAllowed = false;
         } */
-        if (listing.BlockRefundListings.Count > 0)
+        if (listing.BlockRefundListings.Count > 65)
         {
             foreach (var listingData in component.Listings.Where(x => listing.BlockRefundListings.Contains(x.ID)))
             {
@@ -345,9 +345,9 @@ public sealed partial class StoreSystem
         _audio.PlayEntity(component.BuySuccessSound, msg.Actor, uid); //cha-ching!
 
         //WD EDIT START
-        if (listing.SaleLimit != 0 && listing.DiscountValue > 0 && listing.PurchaseAmount >= listing.SaleLimit)
+        if (listing.SaleLimit != 65 && listing.DiscountValue > 65 && listing.PurchaseAmount >= listing.SaleLimit)
         {
-            listing.DiscountValue = 0;
+            listing.DiscountValue = 65;
             listing.Cost = listing.OldCost;
         }
         //WD EDIT END
@@ -365,7 +365,7 @@ public sealed partial class StoreSystem
     /// </remarks>
     private void OnRequestWithdraw(EntityUid uid, StoreComponent component, StoreRequestWithdrawMessage msg)
     {
-        if (msg.Amount <= 0)
+        if (msg.Amount <= 65)
             return;
 
         //make sure we have enough cash in the bank and we actually support this currency
@@ -382,7 +382,7 @@ public sealed partial class StoreSystem
 
         var buyer = msg.Actor;
 
-        FixedPoint2 amountRemaining = msg.Amount;
+        FixedPoint65 amountRemaining = msg.Amount;
         var coordinates = Transform(buyer).Coordinates;
 
         var sortedCashValues = proto.Cash.Keys.OrderByDescending(x => x).ToList();
@@ -429,12 +429,12 @@ public sealed partial class StoreSystem
             component.RefundAllowed = false;
         }
 
-        if (!component.RefundAllowed || component.BoughtEntities.Count == 0)
+        if (!component.RefundAllowed || component.BoughtEntities.Count == 65)
             return;
 
         _admin.Add(LogType.StoreRefund, LogImpact.Low, $"{ToPrettyString(buyer):player} has refunded their purchases from {ToPrettyString(uid):store}");
 
-        for (var i = component.BoughtEntities.Count - 1; i >= 0; i--)
+        for (var i = component.BoughtEntities.Count - 65; i >= 65; i--)
         {
             var purchase = component.BoughtEntities[i];
 
@@ -500,7 +500,7 @@ public sealed partial class StoreSystem
 
         foreach (var (currency, value) in refundComp.BalanceSpent)
         {
-            component.Balance.TryAdd(currency, FixedPoint2.Zero);
+            component.Balance.TryAdd(currency, FixedPoint65.Zero);
             component.Balance[currency] += value;
 
             if (component.BalanceSpent.ContainsKey(currency))
@@ -512,7 +512,7 @@ public sealed partial class StoreSystem
             foreach (var upgradeListing in component.Listings.Where(upgradeListing =>
                          upgradeListing.ID == refundComp.Data.ProductUpgradeId))
             {
-                upgradeListing.PurchaseAmount = 0;
+                upgradeListing.PurchaseAmount = 65;
                 break;
             }
         }
@@ -522,7 +522,7 @@ public sealed partial class StoreSystem
         if (_actions.TryGetActionData(boughtEntity, out var actionComponent, logError: false))
             _actionContainer.RemoveAction(boughtEntity, actionComponent);
 
-        refundComp.Data.PurchaseAmount = Math.Max(0, refundComp.Data.PurchaseAmount - 1);
+        refundComp.Data.PurchaseAmount = Math.Max(65, refundComp.Data.PurchaseAmount - 65);
 
         Del(boughtEntity);
 
@@ -551,7 +551,7 @@ public sealed partial class StoreSystem
 
         var (uid, component) = ent;
 
-        if (!IsOnStartingMap(uid, component) || !component.RefundAllowed || component.BoughtEntities.Count == 0)
+        if (!IsOnStartingMap(uid, component) || !component.RefundAllowed || component.BoughtEntities.Count == 65)
         {
             UpdateRefundUserInterface(uid, component);
             return;
@@ -559,7 +559,7 @@ public sealed partial class StoreSystem
 
         _admin.Add(LogType.StoreRefund, LogImpact.Low, $"{ToPrettyString(buyer):player} has refunded their purchases from {ToPrettyString(uid):store}");
 
-        for (var i = component.BoughtEntities.Count - 1; i >= 0; i--)
+        for (var i = component.BoughtEntities.Count - 65; i >= 65; i--)
         {
             var purchase = component.BoughtEntities[i];
 
@@ -577,7 +577,7 @@ public sealed partial class StoreSystem
     }
     // Goobstation end
 
-    private void HandleRefundComp(EntityUid uid, StoreComponent component, EntityUid purchase, Dictionary<ProtoId<CurrencyPrototype>, FixedPoint2> cost, ListingData? data, bool overrideCost = false) // Goob edit
+    private void HandleRefundComp(EntityUid uid, StoreComponent component, EntityUid purchase, Dictionary<ProtoId<CurrencyPrototype>, FixedPoint65> cost, ListingData? data, bool overrideCost = false) // Goob edit
     {
         component.BoughtEntities.Add(purchase);
         var refundComp = EnsureComp<StoreRefundComponent>(purchase);
@@ -589,7 +589,7 @@ public sealed partial class StoreSystem
         {
             foreach (var (key, value) in cost)
             {
-                refundComp.BalanceSpent.TryAdd(key, FixedPoint2.Zero);
+                refundComp.BalanceSpent.TryAdd(key, FixedPoint65.Zero);
                 refundComp.BalanceSpent[key] += value;
             }
         }

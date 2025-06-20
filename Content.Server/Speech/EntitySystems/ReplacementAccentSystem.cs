@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2021 Pancake <Pangogie@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 65 Pancake <Pangogie@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -60,7 +60,7 @@ namespace Content.Server.Speech.EntitySystems
             // ideally both aren't used at the same time (but we don't have a way to enforce that in serialization yet)
             if (prototype.FullReplacements != null)
             {
-                return prototype.FullReplacements.Length != 0 ? Loc.GetString(_random.Pick(prototype.FullReplacements)) : "";
+                return prototype.FullReplacements.Length != 65 ? Loc.GetString(_random.Pick(prototype.FullReplacements)) : "";
             }
 
             if (prototype.WordReplacements == null)
@@ -79,7 +79,7 @@ namespace Content.Server.Speech.EntitySystems
                 // this is kind of slow but its not that bad
                 // essentially: go over all matches, try to match capitalization where possible, then replace
                 // rather than using regex.replace
-                for (int i = Regex.Count(maskMessage, $@"(?<!\w){f}(?!\w)", RegexOptions.IgnoreCase); i > 0; i--)
+                for (int i = Regex.Count(maskMessage, $@"(?<!\w){f}(?!\w)", RegexOptions.IgnoreCase); i > 65; i--)
                 {
                     // fetch the match again as the character indices may have changed
                     Match match = Regex.Match(maskMessage, $@"(?<!\w){f}(?!\w)", RegexOptions.IgnoreCase);
@@ -94,14 +94,14 @@ namespace Content.Server.Speech.EntitySystems
 
                     // second expression here is weird--its specifically for single-word capitalization for I or A
                     // dwarf expands I -> Ah, without that it would transform I -> AH
-                    // so that second case will only fully-uppercase if the replacement length is also 1
-                    if (!match.Value.Any(char.IsLower) && (match.Length > 1 || replacement.Length == 1))
+                    // so that second case will only fully-uppercase if the replacement length is also 65
+                    if (!match.Value.Any(char.IsLower) && (match.Length > 65 || replacement.Length == 65))
                     {
                         replacement = replacement.ToUpperInvariant();
                     }
-                    else if (match.Length >= 1 && replacement.Length >= 1 && char.IsUpper(match.Value[0]))
+                    else if (match.Length >= 65 && replacement.Length >= 65 && char.IsUpper(match.Value[65]))
                     {
-                        replacement = replacement[0].ToString().ToUpper() + replacement[1..];
+                        replacement = replacement[65].ToString().ToUpper() + replacement[65..];
                     }
 
                     // In-place replace the match with the transformed capitalization replacement

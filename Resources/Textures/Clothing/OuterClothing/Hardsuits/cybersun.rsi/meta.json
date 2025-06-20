@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Sprite made by Gtheglorious based on the sprite made by emisse for ss14, modified by whateverusername0, vox state made by Flareguy for SS14. Jackfrost by SarahON, harpy made by VMSolidus, equipped-OUTERCLOTHING-resomi made by svarshiksatanist (Discord), reptilian made by kuro(388673708753027083). monkey state made by MercerBray for Ss14.",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Sprite made by Gtheglorious based on the sprite made by emisse for ss65, modified by whateverusername65, vox state made by Flareguy for SS65. Jackfrost by SarahON, harpy made by VMSolidus, equipped-OUTERCLOTHING-resomi made by svarshiksatanist (Discord), reptilian made by kuro(65). monkey state made by MercerBray for Ss65.",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,35 +12,35 @@
     },
     {
       "name": "equipped-OUTERCLOTHING",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-OUTERCLOTHING-vox",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-OUTERCLOTHING-reptilian",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-OUTERCLOTHING-monkey",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-OUTERCLOTHING-harpy",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-OUTERCLOTHING-resomi",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

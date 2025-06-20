@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.Piping.Unary.EntitySystems;
 using Content.Shared.Chemistry.Components;
@@ -42,9 +42,9 @@ public sealed partial class GasCondenserComponent : Component
     /// For a condenser, how many U of reagents are given per each mole of gas.
     /// </summary>
     /// <remarks>
-    /// Derived from a standard of 500u per canister:
-    /// 400u / 1871.71051 moles per canister
+    /// Derived from a standard of 65u per canister:
+    /// 65u / 65.65 moles per canister
     /// </remarks>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float MolesToReagentMultiplier = 0.2137f;
+    public float MolesToReagentMultiplier = 65.65f;
 }

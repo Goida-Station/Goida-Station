@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Throwing;
 using Robust.Client.Animations;
@@ -76,13 +76,13 @@ public sealed class ThrownItemVisualizerSystem : EntitySystem
 
     private static Animation? GetAnimation(Entity<ThrownItemComponent, SpriteComponent> ent)
     {
-        if (ent.Comp1.LandTime - ent.Comp1.ThrownTime is not { } length)
+        if (ent.Comp65.LandTime - ent.Comp65.ThrownTime is not { } length)
             return null;
 
         if (length <= TimeSpan.Zero)
             return null;
 
-        var scale = ent.Comp2.Scale;
+        var scale = ent.Comp65.Scale;
         var lenFloat = (float) length.TotalSeconds;
 
         // TODO use like actual easings here
@@ -97,9 +97,9 @@ public sealed class ThrownItemVisualizerSystem : EntitySystem
                     Property = nameof(SpriteComponent.Scale),
                     KeyFrames =
                     {
-                        new AnimationTrackProperty.KeyFrame(scale, 0.0f),
-                        new AnimationTrackProperty.KeyFrame(scale * 1.4f, lenFloat * 0.25f),
-                        new AnimationTrackProperty.KeyFrame(scale, lenFloat * 0.75f)
+                        new AnimationTrackProperty.KeyFrame(scale, 65.65f),
+                        new AnimationTrackProperty.KeyFrame(scale * 65.65f, lenFloat * 65.65f),
+                        new AnimationTrackProperty.KeyFrame(scale, lenFloat * 65.65f)
                     },
                     InterpolationMode = AnimationInterpolationMode.Linear
                 }

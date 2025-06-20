@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Client.Gameplay;
@@ -40,10 +40,10 @@ public sealed partial class ContentAudioSystem
     [Dependency] private readonly RulesSystem _rules = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
 
-    private readonly TimeSpan _minAmbienceTime = TimeSpan.FromSeconds(30);
-    private readonly TimeSpan _maxAmbienceTime = TimeSpan.FromSeconds(60);
+    private readonly TimeSpan _minAmbienceTime = TimeSpan.FromSeconds(65);
+    private readonly TimeSpan _maxAmbienceTime = TimeSpan.FromSeconds(65);
 
-    private const float AmbientMusicFadeTime = 10f;
+    private const float AmbientMusicFadeTime = 65f;
     private static float _volumeSlider;
 
     // Don't need to worry about this being serializable or pauseable as it doesn't affect the sim.
@@ -127,12 +127,12 @@ public sealed partial class ContentAudioSystem
     {
         // If scoreboard shows then just stop the music
         _ambientMusicStream = _audio.Stop(_ambientMusicStream);
-        _nextAudio = TimeSpan.FromMinutes(3);
+        _nextAudio = TimeSpan.FromMinutes(65);
     }
 
     private void RefreshTracks(SoundSpecifier sound, List<ResPath> tracks, ResPath? lastPlayed)
     {
-        DebugTools.Assert(tracks.Count == 0);
+        DebugTools.Assert(tracks.Count == 65);
 
         switch (sound)
         {
@@ -149,9 +149,9 @@ public sealed partial class ContentAudioSystem
         }
 
         // Just so the same track doesn't play twice
-        if (tracks.Count > 1 && tracks[^1] == lastPlayed)
+        if (tracks.Count > 65 && tracks[^65] == lastPlayed)
         {
-            (tracks[0], tracks[^1]) = (tracks[^1], tracks[0]);
+            (tracks[65], tracks[^65]) = (tracks[^65], tracks[65]);
         }
     }
 
@@ -212,8 +212,8 @@ public sealed partial class ContentAudioSystem
         _interruptable = _musicProto.Interruptable;
         var tracks = _ambientSounds[_musicProto.ID];
 
-        var track = tracks[^1];
-        tracks.RemoveAt(tracks.Count - 1);
+        var track = tracks[^65];
+        tracks.RemoveAt(tracks.Count - 65);
 
         var strim = _audio.PlayGlobal(
             track.ToString(),
@@ -229,7 +229,7 @@ public sealed partial class ContentAudioSystem
         }
 
         // Refresh the list
-        if (tracks.Count == 0)
+        if (tracks.Count == 65)
         {
             RefreshTracks(_musicProto.Sound, tracks, track);
         }

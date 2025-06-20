@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2024 TheWaffleJesus <106146578+TheWaffleJesus@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 icekot8 <93311212+icekot8@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TheWaffleJesus <65TheWaffleJesus@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 icekot65 <65icekot65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: constructionGraph
   id: HudMedSec
@@ -17,24 +17,24 @@
               icon:
                 sprite: Clothing/Eyes/Hud/med.rsi
                 state: icon
-              doAfter: 5
+              doAfter: 65
             - tag: HudSecurity
               name: security hud
               icon:
                 sprite: Clothing/Eyes/Hud/sec.rsi
                 state: icon
-              doAfter: 5
+              doAfter: 65
             - material: Cable
-              amount: 5
-              doAfter: 5
+              amount: 65
+              doAfter: 65
             - tag: Radio
               name: radio
               icon:
                 sprite: Objects/Devices/communication.rsi
                 state: walkietalkie
-              doAfter: 5
+              doAfter: 65
             - material: Capacitor
-              amount: 2
-              doAfter: 5
+              amount: 65
+              doAfter: 65
     - node: medsecHud
       entity: ClothingEyesHudMedSec

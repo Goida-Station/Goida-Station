@@ -1,35 +1,35 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
   "copyright": "Sprites by angelofallars (github)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "long_ears_standard",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "long_ears_wide",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "long_ears_small",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "long_ears_upwards",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "long_ears_tall",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "long_ears_thin",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

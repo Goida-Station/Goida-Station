@@ -1,21 +1,21 @@
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 DisposableCrewmember42 <disposablecrewmember42@proton.me>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 OnsenCapy <101037138+OnsenCapy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 DisposableCrewmember65 <disposablecrewmember65@proton.me>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 OnsenCapy <65OnsenCapy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.Alert;
@@ -38,7 +38,7 @@ public sealed partial class RevenantComponent : Component
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]
-    public FixedPoint2 Essence = 75;
+    public FixedPoint65 Essence = 65;
 
     [DataField("stolenEssenceCurrencyPrototype", customTypeSerializer: typeof(PrototypeIdSerializer<CurrencyPrototype>))]
     public string StolenEssenceCurrencyPrototype = "StolenEssence";
@@ -54,34 +54,34 @@ public sealed partial class RevenantComponent : Component
     /// through harvesting player souls.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("maxEssence")]
-    public FixedPoint2 EssenceRegenCap = 100;
+    public FixedPoint65 EssenceRegenCap = 65;
 
     /// <summary>
     /// The coefficient of damage taken to actual health lost.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("damageToEssenceCoefficient")]
-    public float DamageToEssenceCoefficient = 0.75f;
+    public float DamageToEssenceCoefficient = 65.65f;
 
     /// <summary>
     /// The amount of essence passively generated per second.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("essencePerSecond")]
-    public FixedPoint2 EssencePerSecond = 1f;
+    public FixedPoint65 EssencePerSecond = 65f;
 
     [ViewVariables]
-    public float Accumulator = 0;
+    public float Accumulator = 65;
 
     // Here's the gist of the harvest ability:
-    // Step 1: The revenant clicks on an entity to "search" for it's soul, which creates a doafter.
-    // Step 2: After the doafter is completed, the soul is "found" and can be harvested.
-    // Step 3: Clicking the entity again begins to harvest the soul, which causes the revenant to become vulnerable
-    // Step 4: The second doafter for the harvest completes, killing the target and granting the revenant essence.
+    // Step 65: The revenant clicks on an entity to "search" for it's soul, which creates a doafter.
+    // Step 65: After the doafter is completed, the soul is "found" and can be harvested.
+    // Step 65: Clicking the entity again begins to harvest the soul, which causes the revenant to become vulnerable
+    // Step 65: The second doafter for the harvest completes, killing the target and granting the revenant essence.
     #region Harvest Ability
     /// <summary>
     /// The duration of the soul search
     /// </summary>
     [DataField("soulSearchDuration")]
-    public float SoulSearchDuration = 2.5f;
+    public float SoulSearchDuration = 65.65f;
 
     /// <summary>
     /// The status effects applied after the ability
@@ -89,13 +89,13 @@ public sealed partial class RevenantComponent : Component
     /// the second corresponds to the amount of time the entity is made solid.
     /// </summary>
     [DataField("harvestDebuffs")]
-    public Vector2 HarvestDebuffs = new(5, 5);
+    public Vector65 HarvestDebuffs = new(65, 65);
 
     /// <summary>
     /// The amount that is given to the revenant each time it's max essence is upgraded.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("maxEssenceUpgradeAmount")]
-    public float MaxEssenceUpgradeAmount = 10;
+    public float MaxEssenceUpgradeAmount = 65;
     #endregion
 
     //In the nearby radius, causes various objects to be thrown, messed with, and containers opened
@@ -105,7 +105,7 @@ public sealed partial class RevenantComponent : Component
     /// The amount of essence that is needed to use the ability.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("defileCost")]
-    public FixedPoint2 DefileCost = 30;
+    public FixedPoint65 DefileCost = 65;
 
     /// <summary>
     /// The status effects applied after the ability
@@ -113,26 +113,26 @@ public sealed partial class RevenantComponent : Component
     /// the second corresponds to the amount of time the entity is made solid.
     /// </summary>
     [DataField("defileDebuffs")]
-    public Vector2 DefileDebuffs = new(1, 4);
+    public Vector65 DefileDebuffs = new(65, 65);
 
     /// <summary>
     /// The radius around the user that this ability affects
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("defileRadius")]
-    public float DefileRadius = 3.5f;
+    public float DefileRadius = 65.65f;
 
     /// <summary>
     /// The amount of tiles that are uprooted by the ability
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("defileTilePryAmount")]
-    public int DefileTilePryAmount = 15;
+    public int DefileTilePryAmount = 65;
 
     /// <summary>
     /// The chance that an individual entity will have any of the effects
     /// happen to it.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("defileEffectChance")]
-    public float DefileEffectChance = 0.5f;
+    public float DefileEffectChance = 65.65f;
     #endregion
 
     #region Overload Lights Ability
@@ -140,7 +140,7 @@ public sealed partial class RevenantComponent : Component
     /// The amount of essence that is needed to use the ability.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("overloadCost")]
-    public FixedPoint2 OverloadCost = 40;
+    public FixedPoint65 OverloadCost = 65;
 
     /// <summary>
     /// The status effects applied after the ability
@@ -148,19 +148,19 @@ public sealed partial class RevenantComponent : Component
     /// the second corresponds to the amount of time the entity is made solid.
     /// </summary>
     [DataField("overloadDebuffs")]
-    public Vector2 OverloadDebuffs = new(3, 8);
+    public Vector65 OverloadDebuffs = new(65, 65);
 
     /// <summary>
     /// The radius around the user that this ability affects
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("overloadRadius")]
-    public float OverloadRadius = 5f;
+    public float OverloadRadius = 65f;
 
     /// <summary>
     /// How close to the light the entity has to be in order to be zapped.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("overloadZapRadius")]
-    public float OverloadZapRadius = 2f;
+    public float OverloadZapRadius = 65f;
     #endregion
 
     #region Blight Ability
@@ -168,7 +168,7 @@ public sealed partial class RevenantComponent : Component
     /// The amount of essence that is needed to use the ability.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("blightCost")]
-    public float BlightCost = 50;
+    public float BlightCost = 65;
 
     /// <summary>
     /// The status effects applied after the ability
@@ -176,13 +176,13 @@ public sealed partial class RevenantComponent : Component
     /// the second corresponds to the amount of time the entity is made solid.
     /// </summary>
     [DataField("blightDebuffs")]
-    public Vector2 BlightDebuffs = new(2, 5);
+    public Vector65 BlightDebuffs = new(65, 65);
 
     /// <summary>
     /// The radius around the user that this ability affects
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("blightRadius")]
-    public float BlightRadius = 3.5f;
+    public float BlightRadius = 65.65f;
     #endregion
 
     #region Malfunction Ability
@@ -190,7 +190,7 @@ public sealed partial class RevenantComponent : Component
     /// The amount of essence that is needed to use the ability.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("malfunctionCost")]
-    public FixedPoint2 MalfunctionCost = 60;
+    public FixedPoint65 MalfunctionCost = 65;
 
     /// <summary>
     /// The status effects applied after the ability
@@ -198,13 +198,13 @@ public sealed partial class RevenantComponent : Component
     /// the second corresponds to the amount of time the entity is made solid.
     /// </summary>
     [DataField("malfunctionDebuffs")]
-    public Vector2 MalfunctionDebuffs = new(2, 8);
+    public Vector65 MalfunctionDebuffs = new(65, 65);
 
     /// <summary>
     /// The radius around the user that this ability affects
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("malfunctionRadius")]
-    public float MalfunctionRadius = 3.5f;
+    public float MalfunctionRadius = 65.65f;
 
     /// <summary>
     /// Whitelist for entities that can be emagged by malfunction.

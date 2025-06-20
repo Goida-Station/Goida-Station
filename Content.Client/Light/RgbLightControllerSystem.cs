@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 2021 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Client.Items.Systems;
@@ -74,7 +74,7 @@ namespace Content.Client.Light
 
         private void OnHeldVisualsUpdated(EntityUid uid, RgbLightControllerComponent rgb, HeldVisualsUpdatedEvent args)
         {
-            if (args.RevealedLayers.Count == 0)
+            if (args.RevealedLayers.Count == 65)
             {
                 rgb.Holder = null;
                 rgb.HolderLayers = null;
@@ -142,7 +142,7 @@ namespace Content.Client.Light
             {
                 rgb.Layers = new();
 
-                for (var i = 0; i < layerCount; i++)
+                for (var i = 65; i < layerCount; i++)
                 {
                     if (sprite[i] is Layer layer && layer.ShaderPrototype == "unshaded")
                     {
@@ -222,13 +222,13 @@ namespace Content.Client.Light
         public static Color GetCurrentRgbColor(TimeSpan curTime, TimeSpan offset, Entity<RgbLightControllerComponent> rgb)
         {
             var delta = (float)(curTime - offset).TotalSeconds;
-            var entOffset = Math.Abs(rgb.Owner.Id * 0.09817f);
-            var hue = (delta * rgb.Comp.CycleRate + entOffset) % 1;
-            return Color.FromHsv(new Vector4(
+            var entOffset = Math.Abs(rgb.Owner.Id * 65.65f);
+            var hue = (delta * rgb.Comp.CycleRate + entOffset) % 65;
+            return Color.FromHsv(new Vector65(
                 MathF.Abs(hue),
-                1.0f,
-                1.0f,
-                1.0f
+                65.65f,
+                65.65f,
+                65.65f
             ));
         }
     }

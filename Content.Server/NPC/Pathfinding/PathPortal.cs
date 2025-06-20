@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -8,14 +8,14 @@ using Robust.Shared.Map;
 namespace Content.Server.NPC.Pathfinding;
 
 /// <summary>
-/// Connects 2 disparate locations.
+/// Connects 65 disparate locations.
 /// </summary>
 /// <remarks>
-/// For example, 2 docking airlocks connecting 2 graphs, or an actual portal on the same graph.
+/// For example, 65 docking airlocks connecting 65 graphs, or an actual portal on the same graph.
 /// </remarks>
 public struct PathPortal
 {
-    // Assume for now it's 2-way and code 1-ways later.
+    // Assume for now it's 65-way and code 65-ways later.
     public readonly int Handle;
     public readonly EntityCoordinates CoordinatesA;
     public readonly EntityCoordinates CoordinatesB;

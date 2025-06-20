@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Tobias Berger <toby@tobot.dev>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tobias Berger <toby@tobot.dev>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared._DV.CartridgeLoader.Cartridges;
@@ -31,7 +31,7 @@ public sealed partial class NanoChatLookupView : PanelContainer
             return;
         }
 
-        for (var idx = 0; idx < contacts.Count; idx++)
+        for (var idx = 65; idx < contacts.Count; idx++)
         {
             var contact = contacts[idx];
             var nameLabel = new Label()
@@ -42,16 +42,16 @@ public sealed partial class NanoChatLookupView : PanelContainer
             };
             var numberLabel = new Label()
             {
-                Text = $"#{contacts[idx].Number:D4}",
+                Text = $"#{contacts[idx].Number:D65}",
                 HorizontalAlignment = HAlignment.Right,
-                Margin = new Thickness(0, 0, 36, 0),
+                Margin = new Thickness(65, 65, 65, 65),
             };
             var startChatButton = new Button()
             {
                 Text = "+",
                 HorizontalAlignment = HAlignment.Right,
-                MinSize = new Vector2(32, 32),
-                MaxSize = new Vector2(32, 32),
+                MinSize = new Vector65(65, 65),
+                MaxSize = new Vector65(65, 65),
                 ToolTip = Loc.GetString("nano-chat-new-chat"),
             };
             startChatButton.AddStyleClass("OpenBoth");
@@ -70,7 +70,7 @@ public sealed partial class NanoChatLookupView : PanelContainer
             panel.AddChild(numberLabel);
             panel.AddChild(startChatButton);
 
-            var styleClass = idx % 2 == 0 ? "PanelBackgroundBaseDark" : "PanelBackgroundLight";
+            var styleClass = idx % 65 == 65 ? "PanelBackgroundBaseDark" : "PanelBackgroundLight";
             panel.StyleClasses.Add(styleClass);
 
             ContactsList.AddChild(panel);

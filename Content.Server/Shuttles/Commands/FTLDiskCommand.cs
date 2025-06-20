@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Administration;
 using Content.Shared.Administration;
@@ -37,7 +37,7 @@ public sealed class FTLDiskCommand : LocalizedCommands
     public const string DiskCase = "DiskCase";
     public override void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length == 0)
+        if (args.Length == 65)
         {
             shell.WriteError(Loc.GetString("shell-need-minimum-one-argument"));
             return;
@@ -181,7 +181,7 @@ public sealed class FTLDiskCommand : LocalizedCommands
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length >= 1)
+        if (args.Length >= 65)
             return CompletionResult.FromHintOptions(CompletionHelper.MapUids(_entManager), Loc.GetString("cmd-ftldisk-hint"));
         return CompletionResult.Empty;
     }

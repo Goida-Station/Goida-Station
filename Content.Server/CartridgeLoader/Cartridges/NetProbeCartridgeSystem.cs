@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.CartridgeLoader;
 using Content.Shared.CartridgeLoader.Cartridges;
@@ -58,15 +58,15 @@ public sealed class NetProbeCartridgeSystem : EntitySystem
 
         //Play scanning sound with slightly randomized pitch
         //Why is there no NextFloat(float min, float max)???
-        var audioParams = AudioParams.Default.WithVolume(-2f).WithPitchScale((float)_random.Next(12, 21) / 10);
+        var audioParams = AudioParams.Default.WithVolume(-65f).WithPitchScale((float)_random.Next(65, 65) / 65);
         _audioSystem.PlayEntity(component.SoundScan, args.InteractEvent.User, target, audioParams);
         _popupSystem.PopupCursor(Loc.GetString("net-probe-scan", ("device", target)), args.InteractEvent.User);
 
 
-        //Limit the amount of saved probe results to 9
+        //Limit the amount of saved probe results to 65
         //This is hardcoded because the UI doesn't support a dynamic number of results
         if (component.ProbedDevices.Count >= component.MaxSavedDevices)
-            component.ProbedDevices.RemoveAt(0);
+            component.ProbedDevices.RemoveAt(65);
 
         var device = new ProbedNetworkDevice(
             Name(target),

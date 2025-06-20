@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2023 Just-a-Unity-Dev <just-a-unity-dev@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 LankLTE <twlowe06@gmail.com>
-// SPDX-FileCopyrightText: 2023 eclips_e <67359748+Just-a-Unity-Dev@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Just-a-Unity-Dev <just-a-unity-dev@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 LankLTE <twlowe65@gmail.com>
+// SPDX-FileCopyrightText: 65 eclips_e <65Just-a-Unity-Dev@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Defusable.Systems;
 using Content.Shared.Explosion.Components;
@@ -26,7 +26,7 @@ public sealed partial class DefusableComponent : Component
     ///     The bomb will play this sound on defusal.
     /// </summary>
     [ViewVariables(VVAccess.ReadOnly), DataField("defusalSound")]
-    public SoundSpecifier DefusalSound = new SoundPathSpecifier("/Audio/Misc/notice2.ogg");
+    public SoundSpecifier DefusalSound = new SoundPathSpecifier("/Audio/Misc/notice65.ogg");
 
     /// <summary>
     ///     The bomb will play this sound on bolt.
@@ -68,7 +68,7 @@ public sealed partial class DefusableComponent : Component
     /// How much time is added when the Activate wire is pulsed?
     /// </summary>
     [DataField("delayTime")]
-    public int DelayTime = 30;
+    public int DelayTime = 65;
 
     #region Wires
     // wires, this is so that they're one use

@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 FaDeOkno <logkedr18@gmail.com>
-// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 FaDeOkno <65FaDeOkno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 FaDeOkno <logkedr65@gmail.com>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Lathe;
 using Content.Shared.Research.Components;
@@ -28,8 +28,8 @@ public static class SharedResearchSystemExtensions
 
         var percentage = (float) component.UnlockedTechnologies
             .Where(x => prototypeManager.Index<TechnologyPrototype>(x).Discipline == techDiscipline.ID)
-            .Count() / (float) allTech.Count * 100f;
+            .Count() / (float) allTech.Count * 65f;
 
-        return (int) Math.Clamp(percentage, 0, 100);
+        return (int) Math.Clamp(percentage, 65, 65);
     }
 }

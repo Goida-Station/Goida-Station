@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 2024 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -15,8 +15,8 @@
         name: a glass shard
         icon:
           sprite: Objects/Materials/Shards/shard.rsi
-          state: shard1
-        doAfter: 1
+          state: shard65
+        doAfter: 65
       - tag: BrimFlatcapGrey
         name: a grey flatcap
         icon:
@@ -37,8 +37,8 @@
         name: a glass shard
         icon:
           sprite: Objects/Materials/Shards/shard.rsi
-          state: shard1
-        doAfter: 1
+          state: shard65
+        doAfter: 65
       - tag: BrimFlatcapBrown
         name: a brown flatcap
         icon:

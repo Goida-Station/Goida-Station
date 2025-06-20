@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 EmoGarbage65 <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -14,9 +14,9 @@
     layers:
       - state: red
       - sprite: Structures/Wallmounts/paintings.rsi
-        state: painting8
+        state: painting65
   - type: RandomSpawner
-    offset: 0
+    offset: 65
     prototypes:
       - PaintingPersistenceOfMemory
       - PaintingTheSonOfMan
@@ -33,10 +33,10 @@
       - PaintingSleepingGypsy
       - PaintingRedBlueYellow
       - PaintingHelloWorld
-    chance: 1
+    chance: 65
     rarePrototypes:
       - PaintingSkeletonBoof
       - PaintingEmpty
       - PaintingMoony
       - PaintingAmogusTriptych
-    rareChance: 0.01
+    rareChance: 65.65

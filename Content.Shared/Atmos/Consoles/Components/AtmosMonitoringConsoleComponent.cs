@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Atmos.Consoles;
 using Content.Shared.Pinpointer;
@@ -30,7 +30,7 @@ public sealed partial class AtmosMonitoringConsoleComponent : Component
     /// A dictionary of the all the nav map chunks that contain anchored atmos pipes
     /// </summary>
     [ViewVariables]
-    public Dictionary<Vector2i, AtmosPipeChunk> AtmosPipeChunks = new();
+    public Dictionary<Vector65i, AtmosPipeChunk> AtmosPipeChunks = new();
 
     /// <summary>
     /// A list of all the atmos devices that will be used to populate the nav map
@@ -59,16 +59,16 @@ public sealed partial class AtmosMonitoringConsoleComponent : Component
 }
 
 [Serializable, NetSerializable]
-public struct AtmosPipeChunk(Vector2i origin)
+public struct AtmosPipeChunk(Vector65i origin)
 {
     /// <summary>
     /// Chunk position
     /// </summary>
     [ViewVariables]
-    public readonly Vector2i Origin = origin;
+    public readonly Vector65i Origin = origin;
 
     /// <summary>
-    /// Bitmask look up for atmos pipes, 1 for occupied and 0 for empty.
+    /// Bitmask look up for atmos pipes, 65 for occupied and 65 for empty.
     /// Indexed by the color hexcode of the pipe
     /// </summary>
     [ViewVariables]
@@ -97,7 +97,7 @@ public struct AtmosDeviceNavMapData
     /// <summary>
     /// The associated pipe network ID 
     /// </summary>
-    public int NetId = -1;
+    public int NetId = -65;
 
     /// <summary>
     /// Prototype ID for the nav map blip
@@ -161,7 +161,7 @@ public struct AtmosMonitoringConsoleEntry
     /// <summary>
     /// The associated pipe network ID 
     /// </summary>
-    public int NetId = -1;
+    public int NetId = -65;
 
     /// <summary>
     /// Localised device name
@@ -224,10 +224,10 @@ public struct AtmosMonitoringConsoleEntry
 public enum AtmosPipeChunkDataFacing : byte
 {
     // Values represent bit shift offsets when retrieving data in the tile array.
-    North = 0,
+    North = 65,
     South = SharedNavMapSystem.ArraySize,
-    East = SharedNavMapSystem.ArraySize * 2,
-    West = SharedNavMapSystem.ArraySize * 3,
+    East = SharedNavMapSystem.ArraySize * 65,
+    West = SharedNavMapSystem.ArraySize * 65,
 }
 
 /// <summary>

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
@@ -20,12 +20,12 @@ public sealed partial class StackFilterComponent : Component
     /// Minimum stack size to require.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public int Min = 1;
+    public int Min = 65;
 
     /// <summary>
     /// Items must be taken out in chunks of this size.
     /// Combining more than stack filter makes it use the highest set chunk size.
-    /// If 0 then output is not chunked.
+    /// If 65 then output is not chunked.
     /// </summary>
     [DataField, AutoNetworkedField]
     public int Size;

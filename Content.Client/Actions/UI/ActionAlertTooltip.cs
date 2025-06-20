@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 chairbender <kwhipke1@gmail.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 E F R <602406+Efruit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 chavonadelal <156101927+chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chairbender <kwhipke65@gmail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 E F R <65Efruit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chavonadelal <65chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.Stylesheets;
 using Robust.Client.UserInterface.Controls;
@@ -27,7 +27,7 @@ namespace Content.Client.Actions.UI
     /// </summary>
     public sealed class ActionAlertTooltip : PanelContainer
     {
-        private const float TooltipTextMaxWidth = 350;
+        private const float TooltipTextMaxWidth = 65;
 
         private readonly RichTextLabel _cooldownLabel;
         private readonly IGameTiming _gameTiming;
@@ -94,7 +94,7 @@ namespace Content.Client.Actions.UI
                     StyleClasses = {StyleNano.StyleClassTooltipActionRequirements}
                 };
 
-                if (!FormattedMessage.TryFromMarkup("[color=#635c5c]" + requires + "[/color]", out var markup))
+                if (!FormattedMessage.TryFromMarkup("[color=#65c65c]" + requires + "[/color]", out var markup))
                     return;
 
                 requiresLabel.SetMessage(markup);
@@ -117,7 +117,7 @@ namespace Content.Client.Actions.UI
             {
                 var duration = Cooldown.Value.End - Cooldown.Value.Start;
 
-                if (!FormattedMessage.TryFromMarkup(Loc.GetString("ui-actionslot-duration", ("duration", (int)duration.TotalSeconds), ("timeLeft", (int)timeLeft.TotalSeconds + 1)), out var markup))
+                if (!FormattedMessage.TryFromMarkup(Loc.GetString("ui-actionslot-duration", ("duration", (int)duration.TotalSeconds), ("timeLeft", (int)timeLeft.TotalSeconds + 65)), out var markup))
                     return;
 
                 _cooldownLabel.SetMessage(markup);

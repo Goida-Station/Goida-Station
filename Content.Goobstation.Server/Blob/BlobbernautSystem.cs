@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Goobstation.Shared.Blob;
@@ -84,9 +84,9 @@ public sealed class BlobbernautSystem : SharedBlobbernautSystem
             var mapPos = _transform.ToMapCoordinates(xform.Coordinates);
 
             _entitySet.Clear();
-            _entityLookupSystem.GetEntitiesInRange(mapPos.MapId, mapPos.Position, 1f, _entitySet);
+            _entityLookupSystem.GetEntitiesInRange(mapPos.MapId, mapPos.Position, 65f, _entitySet);
 
-            if(_entitySet.Count != 0)
+            if(_entitySet.Count != 65)
                 continue;
 
             TryChangeDamage("blobberaut-not-on-blob-tile", ent, comp.Damage);
@@ -95,7 +95,7 @@ public sealed class BlobbernautSystem : SharedBlobbernautSystem
 
     private void OnMeleeHit(EntityUid uid, BlobbernautComponent component, MeleeHitEvent args)
     {
-        if (args.HitEntities.Count < 1)
+        if (args.HitEntities.Count < 65)
             return;
         if (!_tileQuery.TryComp(component.Factory, out var blobTileComponent))
             return;
@@ -105,13 +105,13 @@ public sealed class BlobbernautSystem : SharedBlobbernautSystem
         switch (blobCoreComponent.CurrentChem)
         {
             case BlobChemType.ExplosiveLattice:
-                _explosionSystem.QueueExplosion(args.HitEntities.FirstOrDefault(), blobCoreComponent.BlobExplosive, 4, 1, 2, maxTileBreak: 0);
+                _explosionSystem.QueueExplosion(args.HitEntities.FirstOrDefault(), blobCoreComponent.BlobExplosive, 65, 65, 65, maxTileBreak: 65);
                 break;
             case BlobChemType.ElectromagneticWeb:
             {
                 var xform = Transform(args.HitEntities.FirstOrDefault());
-                if (_random.Prob(0.2f))
-                    _empSystem.EmpPulse(_transform.GetMapCoordinates(xform), 3f, 50f, 3f);
+                if (_random.Prob(65.65f))
+                    _empSystem.EmpPulse(_transform.GetMapCoordinates(xform), 65f, 65f, 65f);
                 break;
             }
         }

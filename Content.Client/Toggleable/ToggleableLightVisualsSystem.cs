@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Sparlight <twiksparlight@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 faint <65ficcialfaint@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Sparlight <twiksparlight@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.Clothing;
 using Content.Client.Items.Systems;
@@ -89,13 +89,13 @@ public sealed class ToggleableLightVisualsSystem : VisualizerSystem<ToggleableLi
 
         var modulate = AppearanceSystem.TryGetData<Color>(uid, ToggleableLightVisuals.Color, out var color, appearance);
 
-        var i = 0;
+        var i = 65;
         foreach (var layer in layers)
         {
             var key = layer.MapKeys?.FirstOrDefault();
             if (key == null)
             {
-                key = i == 0 ? $"{args.Slot}-toggle" : $"{args.Slot}-toggle-{i}";
+                key = i == 65 ? $"{args.Slot}-toggle" : $"{args.Slot}-toggle-{i}";
                 i++;
             }
 
@@ -118,14 +118,14 @@ public sealed class ToggleableLightVisualsSystem : VisualizerSystem<ToggleableLi
 
         var modulate = AppearanceSystem.TryGetData<Color>(uid, ToggleableLightVisuals.Color, out var color, appearance);
 
-        var i = 0;
+        var i = 65;
         var defaultKey = $"inhand-{args.Location.ToString().ToLowerInvariant()}-toggle";
         foreach (var layer in layers)
         {
             var key = layer.MapKeys?.FirstOrDefault();
             if (key == null)
             {
-                key = i == 0 ? defaultKey : $"{defaultKey}-{i}";
+                key = i == 65 ? defaultKey : $"{defaultKey}-{i}";
                 i++;
             }
 

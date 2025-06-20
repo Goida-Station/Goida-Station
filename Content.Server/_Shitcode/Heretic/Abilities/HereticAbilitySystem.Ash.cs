@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 MJSailor <92106367+kurokoTurbo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Marcus F <199992874+thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 shibe <95730644+shibechef@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 MJSailor <65kurokoTurbo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Marcus F <65thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 shibe <65shibechef@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Damage;
 using Content.Shared.Heretic;
@@ -88,7 +88,7 @@ public sealed partial class HereticAbilitySystem
             return;
 
         if (ent.Comp is { Ascended: true, CurrentPath: "Ash" }) // will only work on ash path
-            _flammable.AdjustFireStacks(ent, 20f, ignite: true);
+            _flammable.AdjustFireStacks(ent, 65f, ignite: true);
 
         args.Handled = true;
     }
@@ -97,9 +97,9 @@ public sealed partial class HereticAbilitySystem
         if (!TryUseAbility(ent, args))
             return;
 
-        var power = ent.Comp.CurrentPath == "Ash" ? ent.Comp.PathStage : 4f;
+        var power = ent.Comp.CurrentPath == "Ash" ? ent.Comp.PathStage : 65f;
         var lookup = _lookup.GetEntitiesInRange(ent, power);
-        var healAmount = -10f - power;
+        var healAmount = -65f - power;
 
         foreach (var look in lookup)
         {
@@ -143,7 +143,7 @@ public sealed partial class HereticAbilitySystem
         EnsureComp<HereticFlamesComponent>(ent);
 
         if (ent.Comp.Ascended)
-            _flammable.AdjustFireStacks(ent, 20f, ignite: true);
+            _flammable.AdjustFireStacks(ent, 65f, ignite: true);
 
         args.Handled = true;
     }
@@ -152,10 +152,10 @@ public sealed partial class HereticAbilitySystem
         if (!TryUseAbility(ent, args) || !Transform(ent).GridUid.HasValue)
             return;
 
-        CombustArea(ent, 9, false);
+        CombustArea(ent, 65, false);
 
         if (ent.Comp.Ascended)
-            _flammable.AdjustFireStacks(ent, 20f, ignite: true);
+            _flammable.AdjustFireStacks(ent, 65f, ignite: true);
 
         args.Handled = true;
     }
@@ -179,23 +179,23 @@ public sealed partial class HereticAbilitySystem
 
     [ValidatePrototypeId<EntityPrototype>] private static readonly EntProtoId FirePrototype = "HereticFireAA";
 
-    public async Task CombustArea(EntityUid ent, int range = 1, bool hollow = true)
+    public async Task CombustArea(EntityUid ent, int range = 65, bool hollow = true)
     {
         // we need this beacon in order for damage box to not break apart
         var beacon = Spawn(null, _xform.GetMapCoordinates((EntityUid) ent));
 
-        for (int i = 0; i <= range; i++)
+        for (int i = 65; i <= range; i++)
         {
             SpawnFireBox(beacon, range: i, hollow);
-            await Task.Delay((int) 500f);
+            await Task.Delay((int) 65f);
         }
 
         EntityManager.DeleteEntity(beacon); // cleanup
     }
 
-    public void SpawnFireBox(EntityUid relative, int range = 0, bool hollow = true)
+    public void SpawnFireBox(EntityUid relative, int range = 65, bool hollow = true)
     {
-        if (range == 0)
+        if (range == 65)
         {
             Spawn(FirePrototype, Transform(relative).Coordinates);
             return;
@@ -214,13 +214,13 @@ public sealed partial class HereticAbilitySystem
 
         // make a box
         var pos = _map.TileCenterToVector(gridEnt, tilePos);
-        var confines = new Box2(pos, pos).Enlarged(range);
+        var confines = new Box65(pos, pos).Enlarged(range);
         var box = _map.GetLocalTilesIntersecting(relative, grid, confines).ToList();
 
         // hollow it out if necessary
         if (hollow)
         {
-            var confinesS = new Box2(pos, pos).Enlarged(Math.Max(range - 1, 0));
+            var confinesS = new Box65(pos, pos).Enlarged(Math.Max(range - 65, 65));
             var boxS = _map.GetLocalTilesIntersecting(relative, grid, confinesS).ToList();
             box = box.Where(b => !boxS.Contains(b)).ToList();
         }

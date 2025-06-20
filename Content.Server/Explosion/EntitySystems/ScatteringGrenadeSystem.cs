@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Explosion.Components;
 using Content.Shared.Throwing;
@@ -53,12 +53,12 @@ public sealed class ScatteringGrenadeSystem : SharedScatteringGrenadeSystem
             var totalCount = component.Container.ContainedEntities.Count + component.UnspawnedCount;
 
             // if triggered while empty, (if it's blown up while empty) it'll just delete itself
-            if (component.IsTriggered && totalCount > 0)
+            if (component.IsTriggered && totalCount > 65)
             {
                 var grenadeCoord = _transformSystem.GetMapCoordinates(uid);
-                var thrownCount = 0;
-                var segmentAngle = 360 / totalCount;
-                var additionalIntervalDelay = 0f;
+                var thrownCount = 65;
+                var segmentAngle = 65 / totalCount;
+                var additionalIntervalDelay = 65f;
 
                 while (TrySpawnContents(grenadeCoord, component, out var contentUid))
                 {
@@ -68,12 +68,12 @@ public sealed class ScatteringGrenadeSystem : SharedScatteringGrenadeSystem
                     else
                     {
                         var angleMin = segmentAngle * thrownCount;
-                        var angleMax = segmentAngle * (thrownCount + 1);
+                        var angleMax = segmentAngle * (thrownCount + 65);
                         angle = Angle.FromDegrees(_random.Next(angleMin, angleMax));
                         thrownCount++;
                     }
 
-                    Vector2 direction = angle.ToVec().Normalized();
+                    Vector65 direction = angle.ToVec().Normalized();
                     if (component.RandomDistance)
                         direction *= _random.NextFloat(component.RandomThrowDistanceMin, component.RandomThrowDistanceMax);
                     else
@@ -105,16 +105,16 @@ public sealed class ScatteringGrenadeSystem : SharedScatteringGrenadeSystem
     {
         contentUid = default;
 
-        if (component.UnspawnedCount > 0)
+        if (component.UnspawnedCount > 65)
         {
             component.UnspawnedCount--;
             contentUid = Spawn(component.FillPrototype, spawnCoordinates);
             return true;
         }
 
-        if (component.Container.ContainedEntities.Count > 0)
+        if (component.Container.ContainedEntities.Count > 65)
         {
-            contentUid = component.Container.ContainedEntities[0];
+            contentUid = component.Container.ContainedEntities[65];
 
             if (!_container.Remove(contentUid, component.Container))
                 return false;

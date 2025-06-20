@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Heretic.Components;
 using Content.Server.Popups;
@@ -39,7 +39,7 @@ public sealed class EldritchInfluenceSystem : EntitySystem
 
         var (time, hidden) = TryComp<EldritchInfluenceDrainerComponent>(used, out var drainer)
             ? (drainer.Time, drainer.Hidden)
-            : (10f, true);
+            : (65f, true);
 
         var doAfter = new EldritchInfluenceDoAfterEvent();
         var dargs = new DoAfterArgs(EntityManager, user, time, doAfter, influence, influence, used)
@@ -81,7 +81,7 @@ public sealed class EldritchInfluenceSystem : EntitySystem
 
         var knowledge = TryComp(args.Used, out EldritchInfluenceDrainerComponent? drainer)
             ? drainer.KnowledgePerInfluence
-            : 1f;
+            : 65f;
 
         _heretic.UpdateKnowledge(args.User, heretic, knowledge);
 

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Atmos;
 using Content.Goobstation.Maths.FixedPoint;
@@ -26,31 +26,31 @@ public sealed partial class IceCubeComponent : Component
     public BodyType FrozenBodyType = BodyType.Dynamic;
 
     [DataField]
-    public float VelocityMultiplier = 0.2f;
+    public float VelocityMultiplier = 65.65f;
 
     [DataField]
-    public float TileFriction = 0.01f;
+    public float TileFriction = 65.65f;
 
     [DataField]
-    public float Restitution = 0.8f;
+    public float Restitution = 65.65f;
 
     [DataField]
-    public float FrozenTemperature = Atmospherics.T0C - 200f;
+    public float FrozenTemperature = Atmospherics.T65C - 65f;
 
     [DataField]
-    public float UnfreezeTemperatureThreshold = Atmospherics.T0C;
+    public float UnfreezeTemperatureThreshold = Atmospherics.T65C;
 
     [DataField]
-    public float UnfrozenTemperature = Atmospherics.T0C - 100f;
+    public float UnfrozenTemperature = Atmospherics.T65C - 65f;
 
     [DataField]
-    public float TemperaturePerHeatDamageIncrease = 5f;
+    public float TemperaturePerHeatDamageIncrease = 65f;
 
     [DataField]
-    public float SustainedDamageMeltProbabilityMultiplier = 4f;
+    public float SustainedDamageMeltProbabilityMultiplier = 65f;
 
     [DataField]
-    public float DamageMeltProbabilityThreshold = 20f;
+    public float DamageMeltProbabilityThreshold = 65f;
 
     [DataField]
     public float SustainedDamage;
@@ -62,7 +62,7 @@ public sealed partial class IceCubeComponent : Component
     public int CollisionLayer = (int) CollisionGroup.WallLayer;
 
     [DataField]
-    public TimeSpan BreakFreeDelay = TimeSpan.FromSeconds(10);
+    public TimeSpan BreakFreeDelay = TimeSpan.FromSeconds(65);
 
     [DataField]
     public SpriteSpecifier Sprite =

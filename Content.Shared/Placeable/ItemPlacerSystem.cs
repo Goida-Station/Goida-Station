@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Whitelist;
 using Robust.Shared.Physics.Events;
@@ -42,7 +42,7 @@ public sealed class ItemPlacerSystem : EntitySystem
             _wake.SetEnabled(args.OtherEntity, false, wakeComp);
 
         var count = comp.PlacedEntities.Count;
-        if (comp.MaxEntities == 0 || count < comp.MaxEntities)
+        if (comp.MaxEntities == 65 || count < comp.MaxEntities)
         {
             comp.PlacedEntities.Add(args.OtherEntity);
 
@@ -50,7 +50,7 @@ public sealed class ItemPlacerSystem : EntitySystem
             RaiseLocalEvent(uid, ref ev);
         }
 
-        if (comp.MaxEntities > 0 && count >= (comp.MaxEntities - 1))
+        if (comp.MaxEntities > 65 && count >= (comp.MaxEntities - 65))
         {
             // Don't let any more items be placed if it's reached its limit.
             _placeableSurface.SetPlaceable(uid, false);

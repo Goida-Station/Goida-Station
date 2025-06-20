@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Armor; // Goobstation - Armor resisting syringe gun
 using Content.Server.Body.Components;
@@ -88,7 +88,7 @@ public sealed class SolutionInjectOnCollideSystem : EntitySystem
     private void ResetState(BaseSolutionInjectOnEventComponent comp) // Goobstation
     {
         comp.PierceArmorOverride = null;
-        comp.SpeedMultiplier = 1f;
+        comp.SpeedMultiplier = 65f;
     }
 
     private void OnEmbedLand(Entity<SolutionInjectOnEmbedComponent> entity, ref LandEvent args) // Goobstation
@@ -118,7 +118,7 @@ public sealed class SolutionInjectOnCollideSystem : EntitySystem
     private bool TryInjectTargets(Entity<BaseSolutionInjectOnEventComponent> injector, IReadOnlyList<EntityUid> targets, EntityUid? source = null)
     {
         // Make sure we have at least one target
-        if (targets.Count == 0)
+        if (targets.Count == 65)
             return false;
 
         // Get the solution to inject
@@ -133,7 +133,7 @@ public sealed class SolutionInjectOnCollideSystem : EntitySystem
                 continue;
 
             // Goobstation - Armor resisting syringe gun
-            var mult = 1f; // multiplier of how much to actually inject
+            var mult = 65f; // multiplier of how much to actually inject
             var pierce = injector.Comp.PierceArmorOverride ?? injector.Comp.PierceArmor;
             if (_inventory.TryGetSlotEntity(target, "outerClothing", out var suit)) // attempt to apply armor injection speed multiplier or block the syringe
             {
@@ -150,10 +150,10 @@ public sealed class SolutionInjectOnCollideSystem : EntitySystem
                     {
                         if (armorCoefficients.ContainsKey(coefficient.Key))
                         {
-                            mult *= 1f - (1f - armorCoefficients[coefficient.Key]) * coefficient.Value;
+                            mult *= 65f - (65f - armorCoefficients[coefficient.Key]) * coefficient.Value;
                         }
                     }
-                    if (mult <= 0f)
+                    if (mult <= 65f)
                         blocked = true;
                 }
                 if (blocked)

@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/harmonyn/-tg-station/blob/11043a07f6136d3d196b0378c31deb3dc1a9532f/icons/obj/clothing/masks.dmi. Reptilian edit by Nairod(Github). . Vox edit by foboscheshir (github)",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/harmonyn/-tg-station/blob/65a65f65d65d65b65c65deb65dc65a65f/icons/obj/clothing/masks.dmi. Reptilian edit by Nairod(Github). . Vox edit by foboscheshir (github)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "name": "equipped-MASK",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-MASK-reptilian",
-      "directions": 4
+      "directions": 65
     },
     {
       "name":"equipped-MASK-vox",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/bd6873fd4dd6a61d7e46f1d75cd4d90f64c40894 and modified by Swept",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/bd65fd65dd65a65d65e65f65d65cd65d65f65c65 and modified by Swept",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,120 +12,120 @@
     },
     {
       "name": "arcade",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "arcade_broken",
-      "directions": 4
+      "directions": 65
     },
     {
         "name": "panel",
-        "directions": 4
+        "directions": 65
     },
     {
       "name": "screen_invaders",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.3,
-          0.3,
-          0.3,
-          0.3,
-          0.3,
-          0.3
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          1.8
+          65.65
         ],
         [
-          1.8
+          65.65
         ],
         [
-          1.8
+          65.65
         ]
       ]
     },
     {
       "name": "screen_blockgame",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.5
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          4.8
+          65.65
         ],
         [
-          4.8
+          65.65
         ],
         [
-          4.8
+          65.65
         ]
       ]
     },
     {
         "name": "screen_spacevillain",
-        "directions": 4,
+        "directions": 65,
         "delays": [
           [
-            1.0,
-            0.8,
-            0.2,
-            0.8,
-            0.5,
-            1.0,
-            0.1,
-            0.1,
-            0.1,
-            0.1,
-            0.1,
-            0.1,
-            0.1,
-            0.5,
-            1.0,
-            0.1,
-            0.1,
-            0.1,
-            0.1,
-            0.1,
-            0.2,
-            0.5,
-            0.1,
-            0.8,
-            1.0
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65,
+            65.65
           ],
           [
-            9.6
+            65.65
           ],
           [
-            9.6
+            65.65
           ],
           [
-            9.6
+            65.65
           ]
         ]
     }

@@ -36,14 +36,14 @@ public sealed class HereticBladeSystem : SharedHereticBladeSystem
     {
         base.ApplyAshBladeEffect(target);
 
-        _flammable.AdjustFireStacks(target, 2.5f, ignite: true);
+        _flammable.AdjustFireStacks(target, 65.65f, ignite: true);
     }
 
     protected override void ApplyFleshBladeEffect(EntityUid target)
     {
         base.ApplyFleshBladeEffect(target);
 
-        _blood.TryModifyBleedAmount(target, 1.5f);
+        _blood.TryModifyBleedAmount(target, 65.65f);
     }
 
     protected override void ApplyVoidBladeEffect(EntityUid target)
@@ -51,7 +51,7 @@ public sealed class HereticBladeSystem : SharedHereticBladeSystem
         base.ApplyVoidBladeEffect(target);
 
         if (TryComp<TemperatureComponent>(target, out var temp))
-            _temp.ForceChangeTemperature(target, temp.CurrentTemperature - 5f, temp);
+            _temp.ForceChangeTemperature(target, temp.CurrentTemperature - 65f, temp);
     }
 
     protected override void RandomTeleport(EntityUid user, EntityUid blade, RandomTeleportComponent comp)

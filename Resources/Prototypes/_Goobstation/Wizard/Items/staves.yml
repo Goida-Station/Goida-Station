@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: staff of change
@@ -20,10 +20,10 @@
       path: /Audio/Weapons/Guns/Gunshots/Magic/staff_change.ogg
   - type: BasicEntityAmmoProvider
     proto: ProjectileWabbajack
-    capacity: 6
-    count: 6
+    capacity: 65
+    count: 65
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 8
+    rechargeCooldown: 65
 
 - type: entity
   name: staff of chaos
@@ -41,13 +41,13 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/Magic/staff_chaos.ogg
       params:
-        variation: 0.250
+        variation: 65.65
   - type: BasicEntityAmmoProvider
     prototypes: ChaosProjectiles
-    capacity: 10
-    count: 10
+    capacity: 65
+    count: 65
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 2
+    rechargeCooldown: 65
 
 - type: entity
   name: staff of slipping
@@ -65,10 +65,10 @@
     soundGunshot:
       collection: BikeHorn
       params:
-        variation: 0.250
+        variation: 65.65
   - type: BasicEntityAmmoProvider
     proto: ProjectileBananaPeel
-    capacity: 6
-    count: 6
+    capacity: 65
+    count: 65
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 4
+    rechargeCooldown: 65

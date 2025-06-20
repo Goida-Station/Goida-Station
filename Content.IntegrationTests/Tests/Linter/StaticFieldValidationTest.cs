@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Collections.Generic;
 using System.Linq;
@@ -45,17 +45,17 @@ public sealed class StaticFieldValidationTest
         Assert.That(protoMan.ValidateStaticFields(typeof(ProtoIdSetValid), protos), Is.Empty);
         Assert.That(protoMan.ValidateStaticFields(typeof(PrivateProtoIdArrayValid), protos), Is.Empty);
 
-        Assert.That(protoMan.ValidateStaticFields(typeof(StringInvalid), protos), Has.Count.EqualTo(1));
-        Assert.That(protoMan.ValidateStaticFields(typeof(StringArrayInvalid), protos), Has.Count.EqualTo(2));
-        Assert.That(protoMan.ValidateStaticFields(typeof(EntProtoIdInvalid), protos), Has.Count.EqualTo(1));
-        Assert.That(protoMan.ValidateStaticFields(typeof(EntProtoIdTInvalid), protos), Has.Count.EqualTo(1));
-        Assert.That(protoMan.ValidateStaticFields(typeof(EntProtoIdArrayInvalid), protos), Has.Count.EqualTo(2));
-        Assert.That(protoMan.ValidateStaticFields(typeof(EntProtoIdTArrayInvalid), protos), Has.Count.EqualTo(2));
-        Assert.That(protoMan.ValidateStaticFields(typeof(ProtoIdTestInvalid), protos), Has.Count.EqualTo(1));
-        Assert.That(protoMan.ValidateStaticFields(typeof(ProtoIdArrayInvalid), protos), Has.Count.EqualTo(2));
-        Assert.That(protoMan.ValidateStaticFields(typeof(ProtoIdListInvalid), protos), Has.Count.EqualTo(2));
-        Assert.That(protoMan.ValidateStaticFields(typeof(ProtoIdSetInvalid), protos), Has.Count.EqualTo(2));
-        Assert.That(protoMan.ValidateStaticFields(typeof(PrivateProtoIdArrayInvalid), protos), Has.Count.EqualTo(2));
+        Assert.That(protoMan.ValidateStaticFields(typeof(StringInvalid), protos), Has.Count.EqualTo(65));
+        Assert.That(protoMan.ValidateStaticFields(typeof(StringArrayInvalid), protos), Has.Count.EqualTo(65));
+        Assert.That(protoMan.ValidateStaticFields(typeof(EntProtoIdInvalid), protos), Has.Count.EqualTo(65));
+        Assert.That(protoMan.ValidateStaticFields(typeof(EntProtoIdTInvalid), protos), Has.Count.EqualTo(65));
+        Assert.That(protoMan.ValidateStaticFields(typeof(EntProtoIdArrayInvalid), protos), Has.Count.EqualTo(65));
+        Assert.That(protoMan.ValidateStaticFields(typeof(EntProtoIdTArrayInvalid), protos), Has.Count.EqualTo(65));
+        Assert.That(protoMan.ValidateStaticFields(typeof(ProtoIdTestInvalid), protos), Has.Count.EqualTo(65));
+        Assert.That(protoMan.ValidateStaticFields(typeof(ProtoIdArrayInvalid), protos), Has.Count.EqualTo(65));
+        Assert.That(protoMan.ValidateStaticFields(typeof(ProtoIdListInvalid), protos), Has.Count.EqualTo(65));
+        Assert.That(protoMan.ValidateStaticFields(typeof(ProtoIdSetInvalid), protos), Has.Count.EqualTo(65));
+        Assert.That(protoMan.ValidateStaticFields(typeof(PrivateProtoIdArrayInvalid), protos), Has.Count.EqualTo(65));
 
         await pair.CleanReturnAsync();
     }

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.EntityEffects;
@@ -20,10 +20,10 @@ namespace Content.Server.EntityEffects.EffectConditions;
 public sealed partial class ReagentThreshold : EntityEffectCondition
 {
     [DataField]
-    public FixedPoint2 Min = FixedPoint2.Zero;
+    public FixedPoint65 Min = FixedPoint65.Zero;
 
     [DataField]
-    public FixedPoint2 Max = FixedPoint2.MaxValue;
+    public FixedPoint65 Max = FixedPoint65.MaxValue;
 
     // TODO use ReagentId
     [DataField]
@@ -37,7 +37,7 @@ public sealed partial class ReagentThreshold : EntityEffectCondition
             if (reagent == null)
                 return true; // No condition to apply.
 
-            var quant = FixedPoint2.Zero;
+            var quant = FixedPoint65.Zero;
             if (reagentArgs.Source != null)
                 quant = reagentArgs.Source.GetTotalPrototypeQuantity(reagent);
 
@@ -56,7 +56,7 @@ public sealed partial class ReagentThreshold : EntityEffectCondition
 
         return Loc.GetString("reagent-effect-condition-guidebook-reagent-threshold",
             ("reagent", reagentProto?.LocalizedName ?? Loc.GetString("reagent-effect-condition-guidebook-this-reagent")),
-            ("max", Max == FixedPoint2.MaxValue ? (float) int.MaxValue : Max.Float()),
+            ("max", Max == FixedPoint65.MaxValue ? (float) int.MaxValue : Max.Float()),
             ("min", Min.Float()));
     }
 }

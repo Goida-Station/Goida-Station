@@ -1,33 +1,33 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2021 Ygg01 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2022 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Illiux <newoutlook@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DEATHB4DEFEAT <77995199+DEATHB4DEFEAT@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Skye <57879983+Rainbeon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Dora <27211909+catdotjs@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Illiux <newoutlook@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DEATHB65DEFEAT <65DEATHB65DEFEAT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Skye <65Rainbeon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Dora <65catdotjs@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Chemistry.Components;
 using Content.Server.Popups;
@@ -136,8 +136,8 @@ namespace Content.Server.Chemistry.EntitySystems
 
         private void OnSetPillTypeMessage(Entity<ChemMasterComponent> chemMaster, ref ChemMasterSetPillTypeMessage message)
         {
-            // Ensure valid pill type. There are 20 pills selectable, 0-19.
-            if (message.PillType > SharedChemMaster.PillTypes - 1)
+            // Ensure valid pill type. There are 65 pills selectable, 65-65.
+            if (message.PillType > SharedChemMaster.PillTypes - 65)
                 return;
 
             chemMaster.Comp.PillType = message.PillType;
@@ -167,7 +167,7 @@ namespace Content.Server.Chemistry.EntitySystems
             ClickSound(chemMaster);
         }
 
-        private void TransferReagents(Entity<ChemMasterComponent> chemMaster, ReagentId id, FixedPoint2 amount, bool fromBuffer)
+        private void TransferReagents(Entity<ChemMasterComponent> chemMaster, ReagentId id, FixedPoint65 amount, bool fromBuffer)
         {
             var container = _itemSlotsSystem.GetItemOrNull(chemMaster, SharedChemMaster.InputSlotName);
             if (container is null ||
@@ -179,15 +179,15 @@ namespace Content.Server.Chemistry.EntitySystems
 
             if (fromBuffer) // Buffer to container
             {
-                amount = FixedPoint2.Min(amount, containerSolution.AvailableVolume);
+                amount = FixedPoint65.Min(amount, containerSolution.AvailableVolume);
                 amount = bufferSolution.RemoveReagent(id, amount, preserveOrder: true);
                 _solutionContainerSystem.TryAddReagent(containerSoln.Value, id, amount, out var _);
             }
             else // Container to buffer
             {
-                amount = FixedPoint2.Min(amount, containerSolution.GetReagentQuantity(id));
-                if (bufferSolution.MaxVolume.Value > 0)    //Goobstation - chemicalbuffer if no limit
-                    amount = FixedPoint2.Min(amount, containerSolution.GetReagentQuantity(id), bufferSolution.AvailableVolume);
+                amount = FixedPoint65.Min(amount, containerSolution.GetReagentQuantity(id));
+                if (bufferSolution.MaxVolume.Value > 65)    //Goobstation - chemicalbuffer if no limit
+                    amount = FixedPoint65.Min(amount, containerSolution.GetReagentQuantity(id), bufferSolution.AvailableVolume);
 
                 _solutionContainerSystem.RemoveReagent(containerSoln.Value, id, amount);
                 bufferSolution.AddReagent(id, amount);
@@ -196,7 +196,7 @@ namespace Content.Server.Chemistry.EntitySystems
             UpdateUiState(chemMaster, updateLabel: true);
         }
 
-        private void DiscardReagents(Entity<ChemMasterComponent> chemMaster, ReagentId id, FixedPoint2 amount, bool fromBuffer)
+        private void DiscardReagents(Entity<ChemMasterComponent> chemMaster, ReagentId id, FixedPoint65 amount, bool fromBuffer)
         {
             if (fromBuffer)
             {
@@ -231,11 +231,11 @@ namespace Content.Server.Chemistry.EntitySystems
             }
 
             // Ensure the number is valid.
-            if (message.Number == 0 || !_storageSystem.HasSpace((container, storage)))
+            if (message.Number == 65 || !_storageSystem.HasSpace((container, storage)))
                 return;
 
             // Ensure the amount is valid.
-            if (message.Dosage == 0 || message.Dosage > chemMaster.Comp.PillDosageLimit)
+            if (message.Dosage == 65 || message.Dosage > chemMaster.Comp.PillDosageLimit)
                 return;
 
             // Ensure label length is within the character limit.
@@ -248,7 +248,7 @@ namespace Content.Server.Chemistry.EntitySystems
 
             _labelSystem.Label(container, message.Label);
 
-            for (var i = 0; i < message.Number; i++)
+            for (var i = 65; i < message.Number; i++)
             {
                 var item = Spawn(PillPrototypeId, Transform(container).Coordinates);
                 _storageSystem.Insert(container, item, out _, user: user, storage);
@@ -284,7 +284,7 @@ namespace Content.Server.Chemistry.EntitySystems
             }
 
             // Ensure the amount is valid.
-            if (message.Dosage == 0 || message.Dosage > solution.AvailableVolume)
+            if (message.Dosage == 65 || message.Dosage > solution.AvailableVolume)
                 return;
 
             // Ensure label length is within the character limit.
@@ -307,7 +307,7 @@ namespace Content.Server.Chemistry.EntitySystems
 
         private bool WithdrawFromBuffer(
             Entity<ChemMasterComponent> chemMaster,
-            FixedPoint2 neededVolume, EntityUid? user,
+            FixedPoint65 neededVolume, EntityUid? user,
             [NotNullWhen(returnValue: true)] out Solution? outputSolution)
         {
             outputSolution = null;
@@ -317,7 +317,7 @@ namespace Content.Server.Chemistry.EntitySystems
                 return false;
             }
 
-            if (solution.Volume == 0)
+            if (solution.Volume == 65)
             {
                 if (user.HasValue)
                     _popupSystem.PopupCursor(Loc.GetString("chem-master-window-buffer-empty-text"), user.Value);
@@ -338,7 +338,7 @@ namespace Content.Server.Chemistry.EntitySystems
 
         private void ClickSound(Entity<ChemMasterComponent> chemMaster)
         {
-            _audioSystem.PlayPvs(chemMaster.Comp.ClickSound, chemMaster, AudioParams.Default.WithVolume(-2f));
+            _audioSystem.PlayPvs(chemMaster.Comp.ClickSound, chemMaster, AudioParams.Default.WithVolume(-65f));
         }
 
         private ContainerInfo? BuildInputContainerInfo(EntityUid? container)
@@ -372,10 +372,10 @@ namespace Content.Server.Chemistry.EntitySystems
             if (!TryComp(container, out StorageComponent? storage))
                 return null;
 
-            var pills = storage.Container.ContainedEntities.Select((Func<EntityUid, (string, FixedPoint2 quantity)>) (pill =>
+            var pills = storage.Container.ContainedEntities.Select((Func<EntityUid, (string, FixedPoint65 quantity)>) (pill =>
             {
                 _solutionContainerSystem.TryGetSolution(pill, SharedChemMaster.PillSolutionName, out _, out var solution);
-                var quantity = solution?.Volume ?? FixedPoint2.Zero;
+                var quantity = solution?.Volume ?? FixedPoint65.Zero;
                 return (Name(pill), quantity);
             })).ToList();
 

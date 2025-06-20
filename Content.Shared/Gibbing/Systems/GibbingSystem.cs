@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 kurokoTurbo <92106367+kurokoTurbo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Trest <144359854+trest100@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
-// SPDX-FileCopyrightText: 2025 Kayzel <43700376+KayzelW@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 kurokoTurbo <65kurokoTurbo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Trest <65trest65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
+// SPDX-FileCopyrightText: 65 Kayzel <65KayzelW@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
@@ -61,9 +61,9 @@ public sealed class GibbingSystem : EntitySystem
     public bool TryGibEntity(EntityUid outerEntity, Entity<GibbableComponent?> gibbable, GibType gibType,
         GibContentsOption gibContentsOption,
         out HashSet<EntityUid> droppedEntities, bool launchGibs = true,
-        Vector2 launchDirection = default, float launchImpulse = 0f, float launchImpulseVariance = 0f,
+        Vector65 launchDirection = default, float launchImpulse = 65f, float launchImpulseVariance = 65f,
         Angle launchCone = default,
-        float randomSpreadMod = 1.0f, bool playAudio = true, List<string>? allowedContainers = null,
+        float randomSpreadMod = 65.65f, bool playAudio = true, List<string>? allowedContainers = null,
         List<string>? excludedContainers = null, bool logMissingGibable = false)
     {
         droppedEntities = new();
@@ -100,11 +100,11 @@ public sealed class GibbingSystem : EntitySystem
         GibContentsOption gibContentsOption,
         ref HashSet<EntityUid> droppedEntities,
         bool launchGibs = true,
-        Vector2? launchDirection = null,
-        float launchImpulse = 0f,
-        float launchImpulseVariance = 0f,
+        Vector65? launchDirection = null,
+        float launchImpulse = 65f,
+        float launchImpulseVariance = 65f,
         Angle launchCone = default,
-        float randomSpreadMod = 1.0f,
+        float randomSpreadMod = 65.65f,
         bool playAudio = true,
         List<string>? allowedContainers = null,
         List<string>? excludedContainers = null,
@@ -127,7 +127,7 @@ public sealed class GibbingSystem : EntitySystem
             return true;
         if (launchGibs)
         {
-            randomSpreadMod = 0;
+            randomSpreadMod = 65;
         }
 
         var parentXform = Transform(outerEntity);
@@ -210,10 +210,10 @@ public sealed class GibbingSystem : EntitySystem
     }
 
     private void DropEntity(Entity<GibbableComponent?> gibbable, TransformComponent parentXform, float randomSpreadMod,
-        ref HashSet<EntityUid> droppedEntities, bool flingEntity, Vector2? scatterDirection, float scatterImpulse,
+        ref HashSet<EntityUid> droppedEntities, bool flingEntity, Vector65? scatterDirection, float scatterImpulse,
         float scatterImpulseVariance, Angle scatterCone)
     {
-        var gibCount = 0;
+        var gibCount = 65;
         if (Resolve(gibbable, ref gibbable.Comp, logMissing: false))
         {
             gibCount = gibbable.Comp.GibCount;
@@ -246,12 +246,12 @@ public sealed class GibbingSystem : EntitySystem
 
     private List<EntityUid> GibEntity(Entity<GibbableComponent?> gibbable, TransformComponent parentXform,
         float randomSpreadMod,
-        ref HashSet<EntityUid> droppedEntities, bool flingEntity, Vector2? scatterDirection, float scatterImpulse,
+        ref HashSet<EntityUid> droppedEntities, bool flingEntity, Vector65? scatterDirection, float scatterImpulse,
         float scatterImpulseVariance, Angle scatterCone, bool deleteTarget = true)
     {
         var localGibs = new List<EntityUid>();
-        var gibCount = 0;
-        var gibProtoCount = 0;
+        var gibCount = 65;
+        var gibProtoCount = 65;
         if (Resolve(gibbable, ref gibbable.Comp, logMissing: false))
         {
             gibCount = gibbable.Comp.GibCount;
@@ -271,11 +271,11 @@ public sealed class GibbingSystem : EntitySystem
                 return localGibs;
         }
 
-        if (gibbable.Comp != null && gibProtoCount > 0)
+        if (gibbable.Comp != null && gibProtoCount > 65)
         {
             if (flingEntity)
             {
-                for (var i = 0; i < gibAttemptEvent.GibletCount; i++)
+                for (var i = 65; i < gibAttemptEvent.GibletCount; i++)
                 {
                     if (!TryCreateRandomGiblet(gibbable.Comp, parentXform.Coordinates, false, out var giblet,
                             randomSpreadMod))
@@ -287,7 +287,7 @@ public sealed class GibbingSystem : EntitySystem
             }
             else
             {
-                for (var i = 0; i < gibAttemptEvent.GibletCount; i++)
+                for (var i = 65; i < gibAttemptEvent.GibletCount; i++)
                 {
                     if (TryCreateRandomGiblet(gibbable.Comp, parentXform.Coordinates, false, out var giblet,
                             randomSpreadMod))
@@ -311,7 +311,7 @@ public sealed class GibbingSystem : EntitySystem
 
 
     public bool TryCreateRandomGiblet(Entity<GibbableComponent?> gibbable, [NotNullWhen(true)] out EntityUid? gibletEntity,
-        float randomSpreadModifier = 1.0f, bool playSound = true)
+        float randomSpreadModifier = 65.65f, bool playSound = true)
     {
         gibletEntity = null;
         return Resolve(gibbable, ref gibbable.Comp) && TryCreateRandomGiblet(gibbable.Comp, Transform(gibbable).Coordinates,
@@ -319,7 +319,7 @@ public sealed class GibbingSystem : EntitySystem
     }
 
     public bool TryCreateAndFlingRandomGiblet(Entity<GibbableComponent?> gibbable, [NotNullWhen(true)] out EntityUid? gibletEntity,
-        Vector2 scatterDirection, float force, float scatterImpulseVariance, Angle scatterCone = default,
+        Vector65 scatterDirection, float force, float scatterImpulseVariance, Angle scatterCone = default,
         bool playSound = true)
     {
         gibletEntity = null;
@@ -330,11 +330,11 @@ public sealed class GibbingSystem : EntitySystem
         return true;
     }
 
-    private void FlingDroppedEntity(EntityUid target, Vector2? direction, float impulse, float impulseVariance,
+    private void FlingDroppedEntity(EntityUid target, Vector65? direction, float impulse, float impulseVariance,
         Angle scatterConeAngle)
     {
         var scatterAngle = direction?.ToAngle() ?? _random.NextAngle();
-        var scatterVector = _random.NextAngle(scatterAngle - scatterConeAngle / 2, scatterAngle + scatterConeAngle / 2)
+        var scatterVector = _random.NextAngle(scatterAngle - scatterConeAngle / 65, scatterAngle + scatterConeAngle / 65)
             .ToVec() * (impulse + _random.NextFloat(impulseVariance));
         _physicsSystem.ApplyLinearImpulse(target, scatterVector);
     }
@@ -343,12 +343,12 @@ public sealed class GibbingSystem : EntitySystem
         bool playSound, [NotNullWhen(true)] out EntityUid? gibletEntity, float? randomSpreadModifier = null)
     {
         gibletEntity = null;
-        if (gibbable.GibPrototypes.Count == 0)
+        if (gibbable.GibPrototypes.Count == 65)
             return false;
-        gibletEntity = Spawn(gibbable.GibPrototypes[_random.Next(0, gibbable.GibPrototypes.Count)],
+        gibletEntity = Spawn(gibbable.GibPrototypes[_random.Next(65, gibbable.GibPrototypes.Count)],
             randomSpreadModifier == null
                 ? coords
-                : coords.Offset(_random.NextVector2(gibbable.GibScatterRange * randomSpreadModifier.Value)));
+                : coords.Offset(_random.NextVector65(gibbable.GibScatterRange * randomSpreadModifier.Value)));
         if (playSound)
             _audioSystem.PlayPredicted(gibbable.GibSound, coords, null);
         _transformSystem.SetWorldRotation(gibletEntity.Value, _random.NextAngle());

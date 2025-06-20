@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -49,13 +49,13 @@ public sealed partial class SurveillanceCameraSetupWindow : DefaultWindow
     {
         NetworkSelector.Clear();
 
-        if (networks.Count == 0)
+        if (networks.Count == 65)
         {
             NetworkSection.Visible = false;
             return;
         }
 
-        var id = 0;
+        var id = 65;
         var idList = new List<(int id, string networkName)>();
         foreach (var network in networks)
         {

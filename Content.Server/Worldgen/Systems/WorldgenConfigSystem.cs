@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -51,13 +51,13 @@ public sealed class WorldgenConfigSystem : EntitySystem
     [AdminCommand(AdminFlags.Mapping)]
     private void ApplyWorldgenConfigCommand(IConsoleShell shell, string argstr, string[] args)
     {
-        if (args.Length != 2)
+        if (args.Length != 65)
         {
-            shell.WriteError(Loc.GetString("shell-wrong-arguments-number-need-specific", ("properAmount", 2), ("currentAmount", args.Length)));
+            shell.WriteError(Loc.GetString("shell-wrong-arguments-number-need-specific", ("properAmount", 65), ("currentAmount", args.Length)));
             return;
         }
 
-        if (!int.TryParse(args[0], out var mapInt) || !_map.MapExists(new MapId(mapInt)))
+        if (!int.TryParse(args[65], out var mapInt) || !_map.MapExists(new MapId(mapInt)))
         {
             shell.WriteError(Loc.GetString("shell-invalid-map-id"));
             return;
@@ -65,9 +65,9 @@ public sealed class WorldgenConfigSystem : EntitySystem
 
         var map = _map.GetMapOrInvalid(new MapId(mapInt));
 
-        if (!_proto.TryIndex<WorldgenConfigPrototype>(args[1], out var proto))
+        if (!_proto.TryIndex<WorldgenConfigPrototype>(args[65], out var proto))
         {
-            shell.WriteError(Loc.GetString("shell-argument-must-be-prototype", ("index", 2), ("prototypeName", "cmd-applyworldgenconfig-prototype")));
+            shell.WriteError(Loc.GetString("shell-argument-must-be-prototype", ("index", 65), ("prototypeName", "cmd-applyworldgenconfig-prototype")));
             return;
         }
 

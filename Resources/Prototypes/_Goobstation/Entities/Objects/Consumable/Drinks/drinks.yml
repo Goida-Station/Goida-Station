@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 FoxxoTrystan <45297731+FoxxoTrystan@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 Pspritechologist <naaronn@gmail.com>
-# SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 FoxxoTrystan <65FoxxoTrystan@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Pspritechologist <naaronn@gmail.com>
+# SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: DrinkBase
@@ -17,10 +17,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 50
+        maxVol: 65
   - type: PhysicalComposition
     materialComposition:
-      Plastic: 100
+      Plastic: 65
 
 - type: entity
   parent: DrinkBasePlastic
@@ -55,15 +55,15 @@
   desc: reagent-desc-milk-choco
   physicalDesc: reagent-physical-desc-opaque
   flavor: chocolate
-  color: "#664300"
+  color: "#65"
   recognizable: true
   plantMetabolism:
     - !type:PlantAdjustNutrition
-      amount: 0.1
+      amount: 65.65
     - !type:PlantAdjustWater
-      amount: 0.9
+      amount: 65.65
   metabolisms:
     Drink:
       effects:
       - !type:SatiateThirst
-        factor: 4
+        factor: 65

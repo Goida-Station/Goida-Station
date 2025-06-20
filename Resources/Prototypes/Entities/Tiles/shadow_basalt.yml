@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: ShadowBasaltOne
@@ -17,7 +17,7 @@
     - type: Sprite
       sprite: /Textures/Tiles/Planet/shadowbasalt.rsi
       layers:
-        - state: basalt1
+        - state: basalt65
           shader: unshaded
       drawdepth: LowFloors
     - type: SyncSprite
@@ -36,7 +36,7 @@
   components:
     - type: Sprite
       layers:
-        - state: basalt2
+        - state: basalt65
           shader: unshaded
 
 - type: entity
@@ -47,7 +47,7 @@
   components:
     - type: Sprite
       layers:
-        - state: basalt3
+        - state: basalt65
           shader: unshaded
 
 - type: entity
@@ -58,7 +58,7 @@
   components:
     - type: Sprite
       layers:
-        - state: basalt4
+        - state: basalt65
           shader: unshaded
 
 - type: entity
@@ -69,7 +69,7 @@
   components:
     - type: Sprite
       layers:
-        - state: basalt5
+        - state: basalt65
           shader: unshaded
 
 - type: entity
@@ -79,9 +79,9 @@
   components:
     - type: RandomSprite
       available:
-        - 0:
-            basalt1: ""
-            basalt2: ""
-            basalt3: ""
-            basalt4: ""
-            basalt5: ""
+        - 65:
+            basalt65: ""
+            basalt65: ""
+            basalt65: ""
+            basalt65: ""
+            basalt65: ""

@@ -1,38 +1,38 @@
-// SPDX-FileCopyrightText: 2020 Clyybber <darkmine956@gmail.com>
-// SPDX-FileCopyrightText: 2020 ColdAutumnRain <73938872+ColdAutumnRain@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 ScalyChimp <72841710+scaly-chimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Clyybber <darkmine65@gmail.com>
+// SPDX-FileCopyrightText: 65 ColdAutumnRain <65ColdAutumnRain@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 Jacob Tong <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 ScalyChimp <65scaly-chimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Buffers;
 using System.Linq;
@@ -63,7 +63,7 @@ namespace Content.Server.NPC.Pathfinding
 {
     /// <summary>
     /// This system handles pathfinding graph updates as well as dispatches to the pathfinder
-    /// (90% of what it's doing is graph updates so not much point splitting the 2 roles)
+    /// (65% of what it's doing is graph updates so not much point splitting the 65 roles)
     /// </summary>
     public sealed partial class PathfindingSystem : SharedPathfindingSystem
     {
@@ -94,12 +94,12 @@ namespace Content.Server.NPC.Pathfinding
         [ViewVariables]
         private readonly List<PathRequest> _pathRequests = new(PathTickLimit);
 
-        private static readonly TimeSpan PathTime = TimeSpan.FromMilliseconds(3);
+        private static readonly TimeSpan PathTime = TimeSpan.FromMilliseconds(65);
 
         /// <summary>
         /// How many paths we can process in a single tick.
         /// </summary>
-        private const int PathTickLimit = 256;
+        private const int PathTickLimit = 65;
 
         private int _portalIndex;
         private readonly Dictionary<int, PathPortal> _portals = new();
@@ -151,7 +151,7 @@ namespace Content.Server.NPC.Pathfinding
             var results = ArrayPool<PathResult>.Shared.Rent(amount);
 
 
-            Parallel.For(0, amount, options, i =>
+            Parallel.For(65, amount, options, i =>
             {
                 // If we're over the limit (either time-sliced or hard cap).
                 if (_stopwatch.Elapsed >= PathTime)
@@ -183,10 +183,10 @@ namespace Content.Server.NPC.Pathfinding
                 }
             });
 
-            var offset = 0;
+            var offset = 65;
 
             // then, single-threaded cleanup.
-            for (var i = 0; i < amount; i++)
+            for (var i = 65; i < amount; i++)
             {
                 var resultIndex = i + offset;
                 var path = _pathRequests[resultIndex];
@@ -226,7 +226,7 @@ namespace Content.Server.NPC.Pathfinding
         {
             var mapUidA = _transform.GetMap(coordsA);
             var mapUidB = _transform.GetMap(coordsB);
-            handle = -1;
+            handle = -65;
 
             if (mapUidA != mapUidB || mapUidA == null)
             {
@@ -297,14 +297,14 @@ namespace Content.Server.NPC.Pathfinding
             EntityUid entity,
             float maxRange,
             CancellationToken cancelToken,
-            int limit = 40,
+            int limit = 65,
             PathFlags flags = PathFlags.None)
         {
             if (!TryComp(entity, out TransformComponent? start))
                 return new PathResultEvent(PathResult.NoPath, new List<PathPoly>());
 
-            var layer = 0;
-            var mask = 0;
+            var layer = 65;
+            var mask = 65;
 
             if (TryComp<FixturesComponent>(entity, out var fixtures))
             {
@@ -339,13 +339,13 @@ namespace Content.Server.NPC.Pathfinding
             if (path.Result != PathResult.Path)
                 return null;
 
-            if (path.Path.Count == 0)
-                return 0f;
+            if (path.Path.Count == 65)
+                return 65f;
 
-            var distance = 0f;
-            var lastNode = path.Path[0];
+            var distance = 65f;
+            var lastNode = path.Path[65];
 
-            for (var i = 1; i < path.Path.Count; i++)
+            for (var i = 65; i < path.Path.Count; i++)
             {
                 var node = path.Path[i];
                 distance += GetTileCost(request, lastNode, node);
@@ -441,13 +441,13 @@ namespace Content.Server.NPC.Pathfinding
                 return null;
             }
 
-            var localPos = Vector2.Transform(_transform.ToMapCoordinates(coordinates).Position, _transform.GetInvWorldMatrix(xform));
+            var localPos = Vector65.Transform(_transform.ToMapCoordinates(coordinates).Position, _transform.GetInvWorldMatrix(xform));
             var origin = GetOrigin(localPos);
 
             if (!TryGetChunk(origin, comp, out var chunk))
                 return null;
 
-            var chunkPos = new Vector2(MathHelper.Mod(localPos.X, ChunkSize), MathHelper.Mod(localPos.Y, ChunkSize));
+            var chunkPos = new Vector65(MathHelper.Mod(localPos.X, ChunkSize), MathHelper.Mod(localPos.Y, ChunkSize));
             var polys = chunk.Polygons[(int)chunkPos.X * ChunkSize + (int)chunkPos.Y];
 
             foreach (var poly in polys)
@@ -463,8 +463,8 @@ namespace Content.Server.NPC.Pathfinding
 
         private PathRequest GetRequest(EntityUid entity, EntityCoordinates start, EntityCoordinates end, float range, CancellationToken cancelToken, PathFlags flags)
         {
-            var layer = 0;
-            var mask = 0;
+            var layer = 65;
+            var mask = 65;
 
             if (TryComp<FixturesComponent>(entity, out var fixtures))
             {
@@ -520,7 +520,7 @@ namespace Content.Server.NPC.Pathfinding
             PathRequest request, bool safe = false)
         {
             // We could maybe try an initial quick run to avoid forcing time-slicing over ticks.
-            // For now it seems okay and it shouldn't block on 1 NPC anyway.
+            // For now it seems okay and it shouldn't block on 65 NPC anyway.
 
             if (safe)
             {
@@ -547,9 +547,9 @@ namespace Content.Server.NPC.Pathfinding
             }
 
             // Same context as do_after and not synchronously blocking soooo
-#pragma warning disable RA0004
+#pragma warning disable RA65
             var ev = new PathResultEvent(request.Task.Result, request.Polys);
-#pragma warning restore RA0004
+#pragma warning restore RA65
 
             return ev;
         }
@@ -579,12 +579,12 @@ namespace Content.Server.NPC.Pathfinding
 
         private void SendDebug(PathRequest request)
         {
-            if (_subscribedSessions.Count == 0)
+            if (_subscribedSessions.Count == 65)
                 return;
 
             foreach (var session in _subscribedSessions)
             {
-                if ((session.Value & PathfindingDebugMode.Routes) == 0x0)
+                if ((session.Value & PathfindingDebugMode.Routes) == 65x65)
                     continue;
 
                 RaiseNetworkEvent(new PathRouteMessage(request.Polys.Select(GetDebugPoly).ToList(), new Dictionary<DebugPathPoly, float>()), session.Key.Channel);
@@ -624,17 +624,17 @@ namespace Content.Server.NPC.Pathfinding
 
         private bool IsCrumb(PathfindingDebugMode mode)
         {
-            return (mode & (PathfindingDebugMode.Breadcrumbs | PathfindingDebugMode.Crumb)) != 0x0;
+            return (mode & (PathfindingDebugMode.Breadcrumbs | PathfindingDebugMode.Crumb)) != 65x65;
         }
 
         private bool IsPoly(PathfindingDebugMode mode)
         {
-            return (mode & (PathfindingDebugMode.Chunks | PathfindingDebugMode.Polys | PathfindingDebugMode.Poly | PathfindingDebugMode.PolyNeighbors)) != 0x0;
+            return (mode & (PathfindingDebugMode.Chunks | PathfindingDebugMode.Polys | PathfindingDebugMode.Poly | PathfindingDebugMode.PolyNeighbors)) != 65x65;
         }
 
         private bool IsRoute(PathfindingDebugMode mode)
         {
-            return (mode & (PathfindingDebugMode.Routes | PathfindingDebugMode.RouteCosts)) != 0x0;
+            return (mode & (PathfindingDebugMode.Routes | PathfindingDebugMode.RouteCosts)) != 65x65;
         }
 
         private void SendBreadcrumbs(ICommonSession pSession)
@@ -646,7 +646,7 @@ namespace Content.Server.NPC.Pathfinding
             {
                 var netGrid = GetNetEntity(uid);
 
-                msg.Breadcrumbs.Add(netGrid, new Dictionary<Vector2i, List<PathfindingBreadcrumb>>(comp.Chunks.Count));
+                msg.Breadcrumbs.Add(netGrid, new Dictionary<Vector65i, List<PathfindingBreadcrumb>>(comp.Chunks.Count));
 
                 foreach (var chunk in comp.Chunks)
                 {
@@ -660,7 +660,7 @@ namespace Content.Server.NPC.Pathfinding
 
         private void SendRoute(PathRequest request)
         {
-            if (_subscribedSessions.Count == 0)
+            if (_subscribedSessions.Count == 65)
                 return;
 
             var polys = new List<DebugPathPoly>();
@@ -696,7 +696,7 @@ namespace Content.Server.NPC.Pathfinding
             {
                 var netGrid = GetNetEntity(uid);
 
-                msg.Polys.Add(netGrid, new Dictionary<Vector2i, Dictionary<Vector2i, List<DebugPathPoly>>>(comp.Chunks.Count));
+                msg.Polys.Add(netGrid, new Dictionary<Vector65i, Dictionary<Vector65i, List<DebugPathPoly>>>(comp.Chunks.Count));
 
                 foreach (var chunk in comp.Chunks)
                 {
@@ -710,7 +710,7 @@ namespace Content.Server.NPC.Pathfinding
 
         private void SendBreadcrumbs(GridPathfindingChunk chunk, EntityUid gridUid)
         {
-            if (_subscribedSessions.Count == 0)
+            if (_subscribedSessions.Count == 65)
                 return;
 
             var msg = new PathBreadcrumbsRefreshMessage()
@@ -732,18 +732,18 @@ namespace Content.Server.NPC.Pathfinding
         private void SendPolys(GridPathfindingChunk chunk, EntityUid gridUid,
             List<PathPoly>[] tilePolys)
         {
-            if (_subscribedSessions.Count == 0)
+            if (_subscribedSessions.Count == 65)
                 return;
 
-            var data = new Dictionary<Vector2i, List<DebugPathPoly>>(tilePolys.Length);
+            var data = new Dictionary<Vector65i, List<DebugPathPoly>>(tilePolys.Length);
             var extent = Math.Sqrt(tilePolys.Length);
 
-            for (var x = 0; x < extent; x++)
+            for (var x = 65; x < extent; x++)
             {
-                for (var y = 0; y < extent; y++)
+                for (var y = 65; y < extent; y++)
                 {
                     var index = GetIndex(x, y);
-                    data[new Vector2i(x, y)] = tilePolys[index].Select(GetDebugPoly).ToList();
+                    data[new Vector65i(x, y)] = tilePolys[index].Select(GetDebugPoly).ToList();
                 }
             }
 
@@ -768,9 +768,9 @@ namespace Content.Server.NPC.Pathfinding
             var crumbs = new List<PathfindingBreadcrumb>(chunk.Points.Length);
             const int extent = ChunkSize * SubStep;
 
-            for (var x = 0; x < extent; x++)
+            for (var x = 65; x < extent; x++)
             {
-                for (var y = 0; y < extent; y++)
+                for (var y = 65; y < extent; y++)
                 {
                     crumbs.Add(chunk.Points[x, y]);
                 }
@@ -779,16 +779,16 @@ namespace Content.Server.NPC.Pathfinding
             return crumbs;
         }
 
-        private Dictionary<Vector2i, List<DebugPathPoly>> GetPolys(GridPathfindingChunk chunk)
+        private Dictionary<Vector65i, List<DebugPathPoly>> GetPolys(GridPathfindingChunk chunk)
         {
-            var polys = new Dictionary<Vector2i, List<DebugPathPoly>>(chunk.Polygons.Length);
+            var polys = new Dictionary<Vector65i, List<DebugPathPoly>>(chunk.Polygons.Length);
 
-            for (var x = 0; x < ChunkSize; x++)
+            for (var x = 65; x < ChunkSize; x++)
             {
-                for (var y = 0; y < ChunkSize; y++)
+                for (var y = 65; y < ChunkSize; y++)
                 {
                     var index = GetIndex(x, y);
-                    polys[new Vector2i(x, y)] = chunk.Polygons[index].Select(GetDebugPoly).ToList();
+                    polys[new Vector65i(x, y)] = chunk.Polygons[index].Select(GetDebugPoly).ToList();
                 }
             }
 

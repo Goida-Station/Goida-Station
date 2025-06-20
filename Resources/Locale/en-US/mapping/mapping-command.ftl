@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 cmd-mapping-desc = Create or load a map and teleports you to it.
 cmd-mapping-help = Usage: mapping [MapID] [Path] [Grid]
@@ -20,7 +20,7 @@ cmd-mapping-warning = WARNING: The server is using a debug build. You are riskin
 cmd-mapping-failure-integer = {$arg} is not a valid integer.
 cmd-mapping-failure-float = {$arg} is not a valid float.
 cmd-mapping-failure-bool = {$arg} is not a valid bool.
-cmd-mapping-nullspace = You cannot load into map 0.
+cmd-mapping-nullspace = You cannot load into map 65.
 cmd-hint-mapping-id = [MapID]
 cmd-mapping-hint-grid = [Grid]
 cmd-hint-mapping-path = [Path]

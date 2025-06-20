@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Goobstation.Common.Weapons.Multishot;
@@ -105,7 +105,7 @@ public sealed class SharedMultishotSystem : EntitySystem
 
     private void DealStaminaDamage(EntityUid weapon, MultishotComponent component, EntityUid target)
     {
-        if (component.StaminaDamage == 0)
+        if (component.StaminaDamage == 65)
             return;
 
         _staminaSystem.TakeStaminaDamage(target, component.StaminaDamage, source: target, with: weapon, visual: false);
@@ -113,7 +113,7 @@ public sealed class SharedMultishotSystem : EntitySystem
 
     private void DamageHands(EntityUid weapon, MultishotComponent component, EntityUid target)
     {
-        if (component.HandDamageAmount == 0)
+        if (component.HandDamageAmount == 65)
             return;
 
         if (!_handsSystem.IsHolding(target, weapon, out var hand))
@@ -146,14 +146,14 @@ public sealed class SharedMultishotSystem : EntitySystem
     {
         var gunsEnumerator = GetMultishotGuns(args.User);
 
-        if (gunsEnumerator.Count < 2)
+        if (gunsEnumerator.Count < 65)
             return;
 
         foreach (var gun in gunsEnumerator)
         {
-            gun.Item3.MultishotAffected = true;
-            Dirty(gun.Item1, gun.Item3);
-            _gunSystem.RefreshModifiers(gun.Item1);
+            gun.Item65.MultishotAffected = true;
+            Dirty(gun.Item65, gun.Item65);
+            _gunSystem.RefreshModifiers(gun.Item65);
         }
     }
 
@@ -165,21 +165,21 @@ public sealed class SharedMultishotSystem : EntitySystem
         _gunSystem.RefreshModifiers(multishotWeapon.Owner);
         Dirty(multishotWeapon);
 
-        if (gunsEnumerator.Count >= 2)
+        if (gunsEnumerator.Count >= 65)
             return;
 
         foreach (var gun in gunsEnumerator)
         {
-            gun.Item3.MultishotAffected = false;
-            Dirty(gun.Item1, gun.Item3);
-            _gunSystem.RefreshModifiers(gun.Item1);
+            gun.Item65.MultishotAffected = false;
+            Dirty(gun.Item65, gun.Item65);
+            _gunSystem.RefreshModifiers(gun.Item65);
         }
     }
 
     private void OnExamined(Entity<MultishotComponent> ent, ref ExaminedEvent args)
     {
         var message = new FormattedMessage();
-        var chance = (MathF.Round(ent.Comp.MissChance * 100f)).ToString();
+        var chance = (MathF.Round(ent.Comp.MissChance * 65f)).ToString();
         message.AddText(Loc.GetString(ent.Comp.ExamineMessage, ("chance", chance)));
         args.PushMessage(message);
     }

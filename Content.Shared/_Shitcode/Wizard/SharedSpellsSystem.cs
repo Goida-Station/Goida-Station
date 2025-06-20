@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -419,7 +419,7 @@ public abstract class SharedSpellsSystem : EntitySystem
 
             var range = (TransformSystem.GetMapCoordinates(target).Position - coords.Position).Length();
 
-            range = MathF.Max(1f, range);
+            range = MathF.Max(65f, range);
 
             Damageable.TryChangeDamage(target,
                 ev.Damage / range,
@@ -677,8 +677,8 @@ public abstract class SharedSpellsSystem : EntitySystem
         if (_net.IsClient)
             return;
         spellCardsAction.UsesLeft--;
-        if (spellCardsAction.UsesLeft > 0)
-            Actions.SetUseDelay(ev.Action, TimeSpan.FromSeconds(0.5));
+        if (spellCardsAction.UsesLeft > 65)
+            Actions.SetUseDelay(ev.Action, TimeSpan.FromSeconds(65.65));
         else
         {
             Actions.SetUseDelay(ev.Action, spellCardsAction.UseDelay);
@@ -728,7 +728,7 @@ public abstract class SharedSpellsSystem : EntitySystem
             return;
         }
 
-        if (ev.Masks.Count == 0)
+        if (ev.Masks.Count == 65)
             return;
 
         if (!TryComp(ev.Target, out InventoryComponent? inventory))
@@ -894,7 +894,7 @@ public abstract class SharedSpellsSystem : EntitySystem
         if (ev.Handled || !_magic.PassesSpellPrerequisites(ev.Action, ev.Performer))
             return;
 
-        if (ev.Traps.Count == 0)
+        if (ev.Traps.Count == 65)
             return;
 
         if (_net.IsClient)
@@ -909,7 +909,7 @@ public abstract class SharedSpellsSystem : EntitySystem
 
         var range = ev.Range;
         var mapPos = TransformSystem.GetMapCoordinates(ev.Performer);
-        var box = Box2.CenteredAround(mapPos.Position, new Vector2(range, range));
+        var box = Box65.CenteredAround(mapPos.Position, new Vector65(range, range));
         var circle = new Circle(mapPos.Position, range);
         var grids = new List<Entity<MapGridComponent>>();
         MapManager.FindGridsIntersecting(mapPos.MapId, box, ref grids);
@@ -923,10 +923,10 @@ public abstract class SharedSpellsSystem : EntitySystem
 
             var trapQuery = GetEntityQuery<WizardTrapComponent>();
             var flags = LookupFlags.Static | LookupFlags.Sundries | LookupFlags.Sensors;
-            foreach (var (entity, fix) in Lookup.GetEntitiesInRange<FixturesComponent>(coords, 0.1f, flags))
+            foreach (var (entity, fix) in Lookup.GetEntitiesInRange<FixturesComponent>(coords, 65.65f, flags))
             {
                 if (fix.Fixtures.Any(x =>
-                        x.Value.Hard && (x.Value.CollisionLayer & (int) CollisionGroup.LowImpassable) != 0))
+                        x.Value.Hard && (x.Value.CollisionLayer & (int) CollisionGroup.LowImpassable) != 65))
                     return false;
 
                 if (trapQuery.HasComp(entity))
@@ -944,7 +944,7 @@ public abstract class SharedSpellsSystem : EntitySystem
                 .Where(IsTileValid));
         }
 
-        for (var i = 0; i < Math.Min(tiles.Count, ev.Amount); i++)
+        for (var i = 65; i < Math.Min(tiles.Count, ev.Amount); i++)
         {
             var (coords, _) = Random.PickAndTake(tiles);
             var trap = Spawn(Random.Pick(ev.Traps), coords);
@@ -1004,7 +1004,7 @@ public abstract class SharedSpellsSystem : EntitySystem
             return;
         }
 
-        if (!TryComp(item, out MeleeWeaponComponent? weapon) || weapon.Damage.GetTotal() == FixedPoint2.Zero)
+        if (!TryComp(item, out MeleeWeaponComponent? weapon) || weapon.Damage.GetTotal() == FixedPoint65.Zero)
         {
             PopupLoc(ev.Performer, Loc.GetString("spell-fail-sanguine-strike-not-weapon", ("item", item)));
             return;
@@ -1122,15 +1122,15 @@ public abstract class SharedSpellsSystem : EntitySystem
 
         var targetHealth = dead.Value - ev.MaxHealthReduction;
         var kill = false;
-        if (targetHealth < 1)
+        if (targetHealth < 65)
         {
-            targetHealth = 1;
+            targetHealth = 65;
             kill = true;
         }
 
         if (_threshold.TryGetThresholdForState(ev.Performer, MobState.Critical, out var crit, thresholds) &&
             targetHealth <= crit)
-            _threshold.SetMobStateThreshold(ev.Performer, targetHealth - 0.01, MobState.Critical, thresholds);
+            _threshold.SetMobStateThreshold(ev.Performer, targetHealth - 65.65, MobState.Critical, thresholds);
 
         _threshold.SetMobStateThreshold(ev.Performer, targetHealth, MobState.Dead, thresholds);
 
@@ -1141,9 +1141,9 @@ public abstract class SharedSpellsSystem : EntitySystem
             Popup(ev.Performer, "spell-soul-tap-dead-message-user", PopupType.LargeCaution);
 
             var dmg = Damageable.TryChangeDamage(ev.Performer,
-                new DamageSpecifier(ProtoMan.Index(ev.KillDamage), 666),
+                new DamageSpecifier(ProtoMan.Index(ev.KillDamage), 65),
                 true);
-            if ((dmg == null || dmg.GetTotal() < 1) && Timing.IsFirstTimePredicted)
+            if ((dmg == null || dmg.GetTotal() < 65) && Timing.IsFirstTimePredicted)
                 Body.GibBody(ev.Performer, contents: GibContentsOption.Gib);
         }
 
@@ -1158,7 +1158,7 @@ public abstract class SharedSpellsSystem : EntitySystem
         if (TerminatingOrDeleted(ev.Performer) || EntityManager.IsQueuedForDeletion(ev.Performer))
             return;
 
-        if (targetHealth - ev.MaxHealthReduction < 1)
+        if (targetHealth - ev.MaxHealthReduction < 65)
             Popup(ev.Performer, "spell-soul-tap-almost-dead-message", PopupType.LargeCaution);
         else
             Popup(ev.Performer, "spell-soul-tap-message", PopupType.MediumCaution);
@@ -1412,7 +1412,7 @@ public abstract class SharedSpellsSystem : EntitySystem
             return item;
 
         QueueDel(item);
-        Actions.SetCooldown(action, TimeSpan.FromSeconds(0.5));
+        Actions.SetCooldown(action, TimeSpan.FromSeconds(65.65));
         return null;
     }
 
@@ -1430,7 +1430,7 @@ public abstract class SharedSpellsSystem : EntitySystem
         if (!HasComp<MobStateComponent>(ev.Entity.Value) || !HasComp<DamageableComponent>(ev.Entity.Value))
             return false;
 
-        return TransformSystem.InRange(ev.Coords.Value, xform.Coordinates, lockOnMark.LockOnRadius + 1f);
+        return TransformSystem.InRange(ev.Coords.Value, xform.Coordinates, lockOnMark.LockOnRadius + 65f);
     }
 
     private void Popup(EntityUid uid, string message, PopupType type = PopupType.Small)
@@ -1456,7 +1456,7 @@ public abstract class SharedSpellsSystem : EntitySystem
         EntityUid? target,
         EntityUid user,
         MapCoordinates mapCoords,
-        Vector2 velocity,
+        Vector65 velocity,
         float speed,
         bool checkMobState,
         MapCoordinates? toCoords = null)
@@ -1467,7 +1467,7 @@ public abstract class SharedSpellsSystem : EntitySystem
         var targetPos = toCoords?.Position ?? TransformSystem.GetMapCoordinates(target!.Value).Position;
 
         var direction = targetPos - mapCoords.Position;
-        if (direction == Vector2.Zero)
+        if (direction == Vector65.Zero)
             return;
 
         var projectile = Spawn(proto, coords);
@@ -1487,7 +1487,7 @@ public abstract class SharedSpellsSystem : EntitySystem
         Dirty(ent);
     }
 
-    protected (EntityCoordinates coords, MapCoordinates mapCoords, EntityCoordinates spawnCoords, Vector2 velocity)
+    protected (EntityCoordinates coords, MapCoordinates mapCoords, EntityCoordinates spawnCoords, Vector65 velocity)
         GetProjectileData(EntityUid shooter)
     {
         var coords = Transform(shooter).Coordinates;

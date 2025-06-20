@@ -1,20 +1,20 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/74bda160b97739cb9159dd19fe0800a5526735c0",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65bda65b65cb65dd65fe65a65c65",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
-            "name": "rocksolid01"
+            "name": "rocksolid65"
         },
         {
-            "name": "rocksolid02"
+            "name": "rocksolid65"
         },
         {
-            "name": "rocksolid03"
+            "name": "rocksolid65"
         }
     ]
 }

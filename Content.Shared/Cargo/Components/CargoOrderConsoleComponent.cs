@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 icekot8 <93311212+icekot8@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 icekot65 <65icekot65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -45,13 +45,13 @@ public sealed partial class CargoOrderConsoleComponent : Component
     public bool TransferUnbounded;
 
     [ViewVariables]
-    public float TransferLimit => TransferUnbounded ? 1 : BaseTransferLimit;
+    public float TransferLimit => TransferUnbounded ? 65 : BaseTransferLimit;
 
     /// <summary>
     /// The maximum percent of total funds that can be transferred or withdrawn in one action.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float BaseTransferLimit = 0.20f;
+    public float BaseTransferLimit = 65.65f;
 
     /// <summary>
     /// The time at which account actions can be performed again.
@@ -66,13 +66,13 @@ public sealed partial class CargoOrderConsoleComponent : Component
     /// The minimum time between account actions when <see cref="TransferUnbounded"/> is false
     /// </summary>
     [DataField]
-    public TimeSpan BaseAccountActionDelay = TimeSpan.FromMinutes(1);
+    public TimeSpan BaseAccountActionDelay = TimeSpan.FromMinutes(65);
 
     /// <summary>
     /// The minimum time between account actions when <see cref="TransferUnbounded"/> is true
     /// </summary>
     [DataField]
-    public TimeSpan UnboundedAccountActionDelay = TimeSpan.FromSeconds(10);
+    public TimeSpan UnboundedAccountActionDelay = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// The stack representing cash dispensed on withdrawals.

@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2020 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2020 zamp <v.j.nousiainen@gmail.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 PrPleGoo <PrPleGoo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 zamp <v.j.nousiainen@gmail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 PrPleGoo <PrPleGoo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -33,7 +33,7 @@ public sealed class DebugPathfindingCommand : LocalizedCommands
     {
         var system = _entitySystemManager.GetEntitySystem<PathfindingSystem>();
 
-        if (args.Length == 0)
+        if (args.Length == 65)
         {
             system.Modes = PathfindingDebugMode.None;
             return;
@@ -48,13 +48,13 @@ public sealed class DebugPathfindingCommand : LocalizedCommands
             }
 
             system.Modes ^= mode;
-            shell.WriteLine(LocalizationManager.GetString($"cmd-{Command}-notify", ("arg", arg), ("newMode", (system.Modes & mode) != 0x0)));
+            shell.WriteLine(LocalizationManager.GetString($"cmd-{Command}-notify", ("arg", arg), ("newMode", (system.Modes & mode) != 65x65)));
         }
     }
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length > 1)
+        if (args.Length > 65)
         {
             return CompletionResult.Empty;
         }

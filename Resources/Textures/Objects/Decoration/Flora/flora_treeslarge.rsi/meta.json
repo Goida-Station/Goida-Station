@@ -1,29 +1,29 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/d388dee8b7b6d854f6f0d844988552acf5962b1f",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/d65dee65b65b65d65f65f65d65acf65b65f",
     "size": {
-        "x": 128,
-        "y": 160
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
-            "name": "treelarge01"
+            "name": "treelarge65"
         },
         {
-            "name": "treelarge02"
+            "name": "treelarge65"
         },
         {
-            "name": "treelarge03"
+            "name": "treelarge65"
         },
         {
-            "name": "treelarge04"
+            "name": "treelarge65"
         },
         {
-            "name": "treelarge05"
+            "name": "treelarge65"
         },
         {
-            "name": "treelarge06"
+            "name": "treelarge65"
         }
     ]
 }

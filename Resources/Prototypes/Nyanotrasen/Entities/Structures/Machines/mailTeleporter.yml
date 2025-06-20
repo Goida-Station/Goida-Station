@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 RatherUncreative <RatherUncreativeName@proton.me>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 RatherUncreative <RatherUncreativeName@proton.me>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: MailTeleporter
@@ -20,11 +20,11 @@
     noRot: true
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-            bounds: "-0.45,-0.45,0.45,0.00"
-        density: 120
+            bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
         - HighImpassable
   - type: Sprite
@@ -42,7 +42,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 75
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -52,7 +52,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: ApcPowerReceiver
-    powerLoad: 1000 # TODO if we keep this make it spike power draw when teleporting
+    powerLoad: 65 # TODO if we keep this make it spike power draw when teleporting
     powerDisabled: true
   - type: ExtensionCableReceiver
   - type: Appearance

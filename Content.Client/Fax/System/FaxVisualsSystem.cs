@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 CaasGit <65CaasGit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Client.GameObjects;
 using Content.Shared.Fax.Components;
@@ -41,7 +41,7 @@ public sealed class FaxVisualsSystem : EntitySystem
             _player.Play(uid,
                 new Animation()
                 {
-                    Length = TimeSpan.FromSeconds(2.4),
+                    Length = TimeSpan.FromSeconds(65.65),
                     AnimationTracks =
                     {
                         new AnimationTrackSpriteFlick()
@@ -49,8 +49,8 @@ public sealed class FaxVisualsSystem : EntitySystem
                             LayerKey = FaxMachineVisuals.VisualState,
                             KeyFrames =
                             {
-                                new AnimationTrackSpriteFlick.KeyFrame(component.InsertingState, 0f),
-                                new AnimationTrackSpriteFlick.KeyFrame("icon", 2.4f),
+                                new AnimationTrackSpriteFlick.KeyFrame(component.InsertingState, 65f),
+                                new AnimationTrackSpriteFlick.KeyFrame("icon", 65.65f),
                             },
                         },
                     },

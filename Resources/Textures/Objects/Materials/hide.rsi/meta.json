@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from Paradise at https://github.com/ParadiseSS13/Paradise/blob/88d236d5c91e9a57e103957555c2e9a8c63b68fa/icons/obj/stacks/organic.dmi. Inhands by mubururu_ (github).",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from Paradise at https://github.com/ParadiseSS65/Paradise/blob/65d65d65c65e65a65e65c65e65a65c65b65fa/icons/obj/stacks/organic.dmi. Inhands by mubururu_ (github).",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,17 +12,17 @@
     },
     {
       "name": "goliathhide-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "goliathhide-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
-      "name": "goliath_hide_2"
+      "name": "goliath_hide_65"
     },
     {
-      "name": "goliath_hide_3"
+      "name": "goliath_hide_65"
     }
   ]
 }

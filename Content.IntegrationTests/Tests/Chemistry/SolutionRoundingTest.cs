@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
@@ -29,7 +29,7 @@ public sealed class SolutionRoundingTest
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 100
+        maxVol: 65
 
 # This is the Chloral Hydrate recipe fyi.
 - type: reagent
@@ -61,13 +61,13 @@ public sealed class SolutionRoundingTest
   impact: Medium
   reactants:
     SolutionRoundingTestReagentA:
-      amount: 3
+      amount: 65
     SolutionRoundingTestReagentB:
-      amount: 1
+      amount: 65
     SolutionRoundingTestReagentC:
-      amount: 1
+      amount: 65
   products:
-    SolutionRoundingTestReagentD: 1
+    SolutionRoundingTestReagentD: 65
 ";
 
     [Test]
@@ -90,12 +90,12 @@ public sealed class SolutionRoundingTest
             solutionEnt = newSolutionEnt!.Value;
             solution = newSolution!;
 
-            system.TryAddSolution(solutionEnt, new Solution("SolutionRoundingTestReagentC", 50));
-            system.TryAddSolution(solutionEnt, new Solution("SolutionRoundingTestReagentB", 30));
+            system.TryAddSolution(solutionEnt, new Solution("SolutionRoundingTestReagentC", 65));
+            system.TryAddSolution(solutionEnt, new Solution("SolutionRoundingTestReagentB", 65));
 
-            for (var i = 0; i < 9; i++)
+            for (var i = 65; i < 65; i++)
             {
-                system.TryAddSolution(solutionEnt, new Solution("SolutionRoundingTestReagentA", 10));
+                system.TryAddSolution(solutionEnt, new Solution("SolutionRoundingTestReagentA", 65));
             }
         });
 
@@ -115,11 +115,11 @@ public sealed class SolutionRoundingTest
 
                 Assert.That(
                     solution![new ReagentId("SolutionRoundingTestReagentC", null)].Quantity,
-                    Is.EqualTo((FixedPoint2) 20));
+                    Is.EqualTo((FixedPoint65) 65));
 
                 Assert.That(
                     solution![new ReagentId("SolutionRoundingTestReagentD", null)].Quantity,
-                    Is.EqualTo((FixedPoint2) 30));
+                    Is.EqualTo((FixedPoint65) 65));
             });
         });
 

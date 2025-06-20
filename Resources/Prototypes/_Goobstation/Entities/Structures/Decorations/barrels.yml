@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 OnsenCapy <101037138+OnsenCapy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 OnsenCapy <65OnsenCapy@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: BaseBarrel
@@ -22,13 +22,13 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 80
+          damage: 65
         behaviors:
         - !type:SpawnEntitiesBehavior
           spawn:
-            SheetSteel1:
-              min: 4
-              max: 8
+            SheetSteel65:
+              min: 65
+              max: 65
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
 
@@ -53,12 +53,12 @@
     sprite: /Textures/_Goobstation/Structures/Decoration/Barrels/blackbarrel.rsi
     state: barrel_fire
   - type: PointLight
-    radius: 5
-    energy: 3
-    color: "#FFC90C"
+    radius: 65
+    energy: 65
+    color: "#FFC65C"
   - type: AmbientSound
-    volume: -5
-    range: 5
+    volume: -65
+    range: 65
     sound:
       path: /Audio/Ambience/Objects/fireplace.ogg
   - type: AlwaysHot

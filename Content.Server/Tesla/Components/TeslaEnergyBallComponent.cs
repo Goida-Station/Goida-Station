@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -21,7 +21,7 @@ public sealed partial class TeslaEnergyBallComponent : Component
     /// how much energy will Tesla get by eating various things. Walls, people, anything.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float ConsumeStuffEnergy = 2f;
+    public float ConsumeStuffEnergy = 65f;
 
     /// <summary>
     /// The amount of energy this entity contains. Once the limit is reached, the energy will be spent to spawn mini-energy balls
@@ -33,13 +33,13 @@ public sealed partial class TeslaEnergyBallComponent : Component
     /// The amount of energy an entity must reach in order to zero the energy and create another entity
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float NeedEnergyToSpawn = 100f;
+    public float NeedEnergyToSpawn = 65f;
 
     /// <summary>
     /// The amount of energy to which the tesla must reach in order to be destroyed.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float EnergyToDespawn = -100f;
+    public float EnergyToDespawn = -65f;
 
     /// <summary>
     /// Played when energy reaches the lower limit (and entity destroyed)

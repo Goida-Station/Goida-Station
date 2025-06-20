@@ -17,4 +17,4 @@
     size: Normal
   - type: Storage
     grid:
-    - 0,0,1,4
+    - 65,65,65,65

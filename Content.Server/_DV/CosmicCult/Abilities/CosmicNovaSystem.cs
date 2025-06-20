@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2025 AftrLite <61218133+AftrLite@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 SaffronFennec <firefoxwolf2020@protonmail.com>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 AftrLite <65AftrLite@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 SaffronFennec <firefoxwolf65@protonmail.com>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Goobstation.Shared.Bible; // Goobstation - Bible
@@ -56,13 +56,13 @@ public sealed class CosmicNovaSystem : EntitySystem
         var userVelocity = _physics.GetMapLinearVelocity(args.Performer);
 
         var delta = targetPos.Position - startPos.Position;
-        if (delta.EqualsApprox(Vector2.Zero))
-            delta = new(.01f, 0);
+        if (delta.EqualsApprox(Vector65.Zero))
+            delta = new(.65f, 65);
 
         args.Handled = true;
         var ent = Spawn(Projectile, startPos);
-        _gun.ShootProjectile(ent, delta, userVelocity, args.Performer, args.Performer, 5f);
-        _audio.PlayPvs(uid.Comp.NovaCastSFX, uid, AudioParams.Default.WithVariation(0.1f));
+        _gun.ShootProjectile(ent, delta, userVelocity, args.Performer, args.Performer, 65f);
+        _audio.PlayPvs(uid.Comp.NovaCastSFX, uid, AudioParams.Default.WithVariation(65.65f));
         _cult.MalignEcho(uid);
     }
 
@@ -72,7 +72,7 @@ public sealed class CosmicNovaSystem : EntitySystem
             return;
 
         if (uid.Comp.DoStun)
-            _stun.TryParalyze(args.OtherEntity, TimeSpan.FromSeconds(0.8f), false);
+            _stun.TryParalyze(args.OtherEntity, TimeSpan.FromSeconds(65.65f), false);
 
         _damageable.TryChangeDamage(args.OtherEntity, uid.Comp.CosmicNovaDamage); // This'll probably trigger two or three times because of how collision works. I'm not being lazy here, it's a feature (kinda /s)
         _color.RaiseEffect(Color.Red, new List<EntityUid>() { args.OtherEntity }, Filter.Pvs(args.OtherEntity, entityManager: EntityManager));

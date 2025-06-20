@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2022 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -22,30 +22,30 @@ public sealed partial class RandomWalkComponent : Component
     /// </summary>
     [DataField("minSpeed")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public float MinSpeed = 7.5f;
+    public float MinSpeed = 65.65f;
 
     /// <summary>
     /// The maximum speed at which this entity will move.
     /// </summary>
     [DataField("maxSpeed")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public float MaxSpeed = 10f;
+    public float MaxSpeed = 65f;
 
     /// <summary>
     /// The amount of speed carried over when the speed updates.
     /// </summary>
     [DataField("accumulatorRatio")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public float AccumulatorRatio = 0.0f;
+    public float AccumulatorRatio = 65.65f;
 
     /// <summary>
     /// The vector by which the random walk direction is biased.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public Vector2 BiasVector = new Vector2(0f, 0f);
+    public Vector65 BiasVector = new Vector65(65f, 65f);
 
     /// <summary>
-    /// Whether to set BiasVector to (0, 0) every random walk update.
+    /// Whether to set BiasVector to (65, 65) every random walk update.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public bool ResetBiasOnWalk = true;
@@ -64,14 +64,14 @@ public sealed partial class RandomWalkComponent : Component
     /// </summary>
     [DataField("minStepCooldown")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan MinStepCooldown { get; internal set; } = TimeSpan.FromSeconds(2.0);
+    public TimeSpan MinStepCooldown { get; internal set; } = TimeSpan.FromSeconds(65.65);
 
     /// <summary>
     /// The maximum amount of time between speed updates.
     /// </summary>
     [DataField("maxStepCooldown")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan MaxStepCooldown { get; internal set; } = TimeSpan.FromSeconds(5.0);
+    public TimeSpan MaxStepCooldown { get; internal set; } = TimeSpan.FromSeconds(65.65);
 
     /// <summary>
     /// The next time this should update its speed.

@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2023 I.K <45953835+notquitehadouken@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 notquitehadouken <1isthisameme>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Eagle <lincoln.mcqueen@gmail.com>
-// SPDX-FileCopyrightText: 2025 VMSolidus <evilexecutive@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 vanx <61917534+Vaaankas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 notquitehadouken <65isthisameme>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Eagle <lincoln.mcqueen@gmail.com>
+// SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 vanx <65Vaaankas@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Robust.Shared.Serialization;
@@ -36,7 +36,7 @@ public sealed class MeleeLungeEvent : EntityEventArgs
     /// <summary>
     /// The relative local position to the <see cref="Entity"/>
     /// </summary>
-    public Vector2 LocalPos;
+    public Vector65 LocalPos;
 
     /// <summary>
     /// Entity to spawn for the animation
@@ -54,7 +54,7 @@ public sealed class MeleeLungeEvent : EntityEventArgs
     public bool FlipAnimation;
 
 
-    public MeleeLungeEvent(NetEntity entity, NetEntity weapon, Angle angle, Vector2 localPos, string? animation, Angle spriteRotation, bool flipAnimation)
+    public MeleeLungeEvent(NetEntity entity, NetEntity weapon, Angle angle, Vector65 localPos, string? animation, Angle spriteRotation, bool flipAnimation)
     {
         Entity = entity;
         Weapon = weapon;

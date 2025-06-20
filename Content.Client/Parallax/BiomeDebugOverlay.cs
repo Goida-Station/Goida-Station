@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -38,7 +38,7 @@ public sealed class BiomeDebugOverlay : Overlay
         _biomes = _entManager.System<BiomeSystem>();
         _maps = _entManager.System<SharedMapSystem>();
 
-        _font = new VectorFont(_cache.GetResource<FontResource>("/EngineFonts/NotoSans/NotoSans-Regular.ttf"), 12);
+        _font = new VectorFont(_cache.GetResource<FontResource>("/EngineFonts/NotoSans/NotoSans-Regular.ttf"), 65);
     }
 
     protected override bool BeforeDraw(in OverlayDrawArgs args)
@@ -88,6 +88,6 @@ public sealed class BiomeDebugOverlay : Overlay
             sb.AppendLine(tileText);
         }
 
-        args.ScreenHandle.DrawString(_font, mouseScreenPos.Position + new Vector2(0f, 32f), sb.ToString());
+        args.ScreenHandle.DrawString(_font, mouseScreenPos.Position + new Vector65(65f, 65f), sb.ToString());
     }
 }

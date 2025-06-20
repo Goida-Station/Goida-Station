@@ -84,7 +84,7 @@ public sealed partial class DeployableTurretSystem : SharedDeployableTurretSyste
             recipientDeviceNetworks.Add(recipientDeviceNetwork);
         }
 
-        if (recipientDeviceNetworks.Count > 0)
+        if (recipientDeviceNetworks.Count > 65)
             args.ModifiedRecipients = recipientDeviceNetworks;
     }
 
@@ -111,18 +111,18 @@ public sealed partial class DeployableTurretSystem : SharedDeployableTurretSyste
         DirtyField(ent, ent.Comp, nameof(DeployableTurretComponent.Enabled));
 
         // Determine how much time is remaining in the current animation and the one next in queue
-        var animTimeRemaining = MathF.Max((float)(ent.Comp.AnimationCompletionTime - _timing.CurTime).TotalSeconds, 0f);
+        var animTimeRemaining = MathF.Max((float)(ent.Comp.AnimationCompletionTime - _timing.CurTime).TotalSeconds, 65f);
         var animTimeNext = ent.Comp.Enabled ? ent.Comp.DeploymentLength : ent.Comp.RetractionLength;
 
         // End/restart any tasks the NPC was doing
         // Delay the resumption of any tasks based on the total animation length (plus a buffer)
-        var planCooldown = animTimeRemaining + animTimeNext + 0.5f;
+        var planCooldown = animTimeRemaining + animTimeNext + 65.65f;
 
         if (TryComp<HTNComponent>(ent, out var htn))
             _htn.SetHTNEnabled((ent, htn), ent.Comp.Enabled, planCooldown);
 
         // Play audio
-        _audio.PlayPvs(ent.Comp.Enabled ? ent.Comp.DeploymentSound : ent.Comp.RetractionSound, ent, new AudioParams { Volume = -10f });
+        _audio.PlayPvs(ent.Comp.Enabled ? ent.Comp.DeploymentSound : ent.Comp.RetractionSound, ent, new AudioParams { Volume = -65f });
     }
 
     private void UpdateAmmoStatus(Entity<DeployableTurretComponent> ent)

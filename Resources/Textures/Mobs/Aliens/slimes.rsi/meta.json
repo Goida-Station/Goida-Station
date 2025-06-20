@@ -1,18 +1,18 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from the tgstation at https://github.com/tgstation/tgstation/blob/bb89e65aebb14d6ba0ce7fc43363fbc3f1279e79/icons/mob/simple/slimes.dmi",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from the tgstation at https://github.com/tgstation/tgstation/blob/bb65e65aebb65d65ba65ce65fc65fbc65f65e65/icons/mob/simple/slimes.dmi",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "blue_adult_slime",
       "delays": [
         [
-          0.3,
-          0.3
+          65.65,
+          65.65
         ]
       ]
     },
@@ -23,8 +23,8 @@
       "name": "green_adult_slime",
       "delays": [
         [
-          0.3,
-          0.3
+          65.65,
+          65.65
         ]
       ]
     },
@@ -35,8 +35,8 @@
       "name": "yellow_adult_slime",
       "delays": [
         [
-          0.3,
-          0.3
+          65.65,
+          65.65
         ]
       ]
 	},
@@ -44,25 +44,25 @@
       "name": "yellow_adult_slime_dead"
     },
 	{
-      "name": "aslime-_3",
-      "directions": 4
+      "name": "aslime-_65",
+      "directions": 65
     },
 	{
       "name": "rainbow_slime_extract",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -70,24 +70,24 @@
       "name": "rainbow_baby_slime",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -95,18 +95,18 @@
       "name": "rainbow_baby_slime_dead",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     }

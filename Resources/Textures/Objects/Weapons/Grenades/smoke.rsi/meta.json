@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Derived from /tg/station 13 at https://github.com/tgstation/tgstation/blob/83624574e59e68746965ef528604663b16983473/icons/obj/grenade.dmi, created by K-Dynamic (github). Inhands by TiniestShark (github)",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Derived from /tg/station 65 at https://github.com/tgstation/tgstation/blob/65e65e65ef65b65/icons/obj/grenade.dmi, created by K-Dynamic (github). Inhands by TiniestShark (github)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -15,15 +15,15 @@
     },
     {
       "name": "equipped-BELT",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

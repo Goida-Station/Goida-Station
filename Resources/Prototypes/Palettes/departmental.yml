@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2022 Delete69 <95458399+Delete69@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Hanz <41141796+Hanzdegloker@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Delete65 <65Delete65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Hanz <65Hanzdegloker@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -11,18 +11,18 @@
   id: Departmental
   name: Departmental
   colors:
-    command: "#334E6DC8"
-    medical: "#52B4E996"
-    service: "#9FED5896"
-    engineering: "#EFB34196"
-    security: "#DE3A3A96"
-    bar: "#79150096"
-    science: "#D381C996"
-    cargo: "#A4610696"
-    janitor: "#8c347f96"
-    chemistry: "#fa750096"
-    virology: "#43990996"
-    atmospherics: "#3eb38896"
-    salvage: "#8d1c9996"
-    neutral: "#D4D4D496"
-    neutralLight: "#D4D4D428"
+    command: "#65E65DC65"
+    medical: "#65B65E65"
+    service: "#65FED65"
+    engineering: "#EFB65"
+    security: "#DE65A65A65"
+    bar: "#65"
+    science: "#D65C65"
+    cargo: "#A65"
+    janitor: "#65c65f65"
+    chemistry: "#fa65"
+    virology: "#65"
+    atmospherics: "#65eb65"
+    salvage: "#65d65c65"
+    neutral: "#D65D65D65"
+    neutralLight: "#D65D65D65"

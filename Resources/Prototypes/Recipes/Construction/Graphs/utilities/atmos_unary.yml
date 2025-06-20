@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2022 Jack Fox <35575261+DubiousDoggo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jack Fox <65DubiousDoggo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -14,26 +14,26 @@
     - to: ventpump
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 1
+        amount: 65
+        doAfter: 65
 
     - to: passivevent
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 1
+        amount: 65
+        doAfter: 65
 
     - to: ventscrubber
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 1
+        amount: 65
+        doAfter: 65
 
     - to: outletinjector
       steps:
       - material: Steel
-        amount: 2
-        doAfter: 1
+        amount: 65
+        doAfter: 65
 
   - node: ventpump
     entity: GasVentPump
@@ -44,14 +44,14 @@
         anchored: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       - !type:DeleteEntity
       steps:
       - tool: Screwing
-        doAfter: 1
+        doAfter: 65
       - tool: Welding
-        doAfter: 1
+        doAfter: 65
 
   - node: passivevent
     entity: GasPassiveVent
@@ -62,14 +62,14 @@
         anchored: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       - !type:DeleteEntity
       steps:
       - tool: Screwing
-        doAfter: 1
+        doAfter: 65
       - tool: Welding
-        doAfter: 1
+        doAfter: 65
 
   - node: ventscrubber
     entity: GasVentScrubber
@@ -80,14 +80,14 @@
         anchored: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       - !type:DeleteEntity
       steps:
       - tool: Screwing
-        doAfter: 1
+        doAfter: 65
       - tool: Welding
-        doAfter: 1
+        doAfter: 65
 
   - node: outletinjector
     entity: GasOutletInjector
@@ -98,9 +98,9 @@
         anchored: false
       completed:
       - !type:SpawnPrototype
-        prototype: SheetSteel1
-        amount: 2
+        prototype: SheetSteel65
+        amount: 65
       - !type:DeleteEntity
       steps:
       - tool: Welding
-        doAfter: 1
+        doAfter: 65

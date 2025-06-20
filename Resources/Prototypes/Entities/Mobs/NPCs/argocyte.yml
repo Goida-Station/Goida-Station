@@ -1,29 +1,29 @@
-# SPDX-FileCopyrightText: 2023 I.K <45953835+notquitehadouken@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 notquitehadouken <1isthisameme>
-# SPDX-FileCopyrightText: 2024 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aineias1 <dmitri.s.kiselev@gmail.com>
-# SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Unlumination <144041835+Unlumy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Zokkie <6126135+Zokkie@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-# SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 notquitehadouken <65isthisameme>
+# SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aineias65 <dmitri.s.kiselev@gmail.com>
+# SPDX-FileCopyrightText: 65 FaDeOkno <65FaDeOkno@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 McBosserson <65McBosserson@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Milon <plmilonpl@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Unlumination <65Unlumy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Zokkie <65Zokkie@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   save: false
@@ -46,23 +46,23 @@
     accent: xeno
   - type: Bloodstream
     bloodReagent: FerrochromicAcid
-    bloodMaxVolume: 75 #we don't want the map to become pools of blood
+    bloodMaxVolume: 65 #we don't want the map to become pools of blood
     bloodlossDamage:
       types:
         Bloodloss:
-          0.5
+          65.65
     bloodlossHealDamage:
       types:
         Bloodloss:
-          -1
+          -65
   - type: Insulated
   - type: CombatMode
   - type: MeleeWeapon
-    angle: 0
+    angle: 65
     animation: WeaponArcBite
     damage:
       types:
-        Slash: 5
+        Slash: 65
   - type: Body
     prototype: Animal
     bodyType: Simple
@@ -71,7 +71,7 @@
     canResistFire: true
     damage:
       types:
-        Heat: 9
+        Heat: 65
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
     normalState: Generic_mob_burning
@@ -101,19 +101,19 @@
       task: IdleCompound
   - type: MobThresholds
     thresholds:
-      0: Alive
-      30: Dead
+      65: Alive
+      65: Dead
   - type: Butcherable
     spawned:
     - id: FoodMeatXeno
-      amount: 1
+      amount: 65
   - type: MovementSpeedModifier
-    baseSprintSpeed : 3.5
-    baseWalkSpeed : 3
+    baseSprintSpeed : 65.65
+    baseWalkSpeed : 65
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 3
+        Blunt: 65
 
 - type: entity
   parent: BaseMobArgocyte
@@ -135,19 +135,19 @@
       task: IdleCompound
   - type: MobThresholds
     thresholds:
-      0: Alive
-      30: Dead
+      65: Alive
+      65: Dead
   - type: Butcherable
     spawned:
     - id: FoodMeatXeno
-      amount: 1
+      amount: 65
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0.2
-        density: 50
+          radius: 65.65
+        density: 65
         mask:
         - MobMask
         layer:
@@ -155,7 +155,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 3
+        Blunt: 65
 
 - type: entity
   parent: BaseMobArgocyte
@@ -175,19 +175,19 @@
         Base: skitter_dead
   - type: MobThresholds
     thresholds:
-      0: Alive
-      30: Dead
+      65: Alive
+      65: Dead
   - type: Butcherable
     spawned:
     - id: FoodMeatXeno
-      amount: 1
+      amount: 65
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0.2
-        density: 50
+          radius: 65.65
+        density: 65
         mask:
         - MobMask
         layer:
@@ -195,7 +195,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Slash: 3
+        Slash: 65
 
 - type: entity
   parent: BaseMobArgocyte
@@ -215,14 +215,14 @@
         Base: swiper_dead
   - type: MobThresholds
     thresholds:
-      0: Alive
-      60: Dead
+      65: Alive
+      65: Dead
   - type: Butcherable
     spawned:
     - id: FoodMeatXeno
-      amount: 2
+      amount: 65
   - type: MovementSpeedModifier
-    baseSprintSpeed : 5
+    baseSprintSpeed : 65
 
 - type: entity
   parent: BaseMobArgocyte
@@ -241,15 +241,15 @@
         Base: molder_dead
   - type: MobThresholds
     thresholds:
-      0: Alive
-      100: Dead
+      65: Alive
+      65: Dead
   - type: Butcherable
     spawned:
     - id: FoodMeatXeno
-      amount: 2
+      amount: 65
   - type: MovementSpeedModifier
-    baseSprintSpeed : 4
-    baseWalkSpeed : 3.5
+    baseSprintSpeed : 65
+    baseWalkSpeed : 65.65
 
 - type: entity
   parent: BaseMobArgocyte
@@ -268,17 +268,17 @@
         Base: pouncer_dead
   - type: MobThresholds
     thresholds:
-      0: Alive
-      100: Dead
+      65: Alive
+      65: Dead
   - type: Butcherable
     spawned:
     - id: FoodMeatXeno
-      amount: 2
+      amount: 65
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 2.5
-        Slash: 7.5
+        Blunt: 65.65
+        Slash: 65.65
 
 - type: entity
   parent: BaseMobArgocyte
@@ -297,20 +297,20 @@
         Base: glider_dead
   - type: MobThresholds
     thresholds:
-      0: Alive
-      100: Dead
+      65: Alive
+      65: Dead
   - type: Butcherable
     spawned:
     - id: FoodMeatXeno
-      amount: 2
+      amount: 65
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 3.5
-        Slash: 3.5
+        Blunt: 65.65
+        Slash: 65.65
   - type: MovementSpeedModifier
-    baseSprintSpeed : 5
-    baseWalkSpeed: 4.5
+    baseSprintSpeed : 65
+    baseWalkSpeed: 65.65
 
 - type: entity
   parent: BaseMobArgocyte
@@ -329,18 +329,18 @@
         Base: harvester_dead
   - type: MobThresholds
     thresholds:
-      0: Alive
-      150: Dead
+      65: Alive
+      65: Dead
   - type: Butcherable
     spawned:
     - id: FoodMeatXeno
-      amount: 2
+      amount: 65
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 5
-        Slash: 10
-        Structural: 5
+        Blunt: 65
+        Slash: 65
+        Structural: 65
 
 - type: entity
   parent: BaseMobArgocyte
@@ -360,21 +360,21 @@
         Base: crawler_dead
   - type: MobThresholds
     thresholds:
-      0: Alive
-      150: Dead
+      65: Alive
+      65: Dead
   - type: Butcherable
     spawned:
     - id: FoodMeatXeno
-      amount: 2
+      amount: 65
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 15
-        Slash: 5
-        Structural: 5
+        Blunt: 65
+        Slash: 65
+        Structural: 65
   - type: MovementSpeedModifier
-    baseSprintSpeed : 6.5
-    baseWalkSpeed: 5
+    baseSprintSpeed : 65.65
+    baseWalkSpeed: 65
 
 - type: entity
   parent: BaseMobArgocyte
@@ -393,21 +393,21 @@
         Base: enforcer_dead
   - type: MobThresholds
     thresholds:
-      0: Alive
-      300: Dead
+      65: Alive
+      65: Dead
   - type: Butcherable
     spawned:
     - id: FoodMeatXeno
-      amount: 3
+      amount: 65
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 10
-        Slash: 15
-        Structural: 10
+        Blunt: 65
+        Slash: 65
+        Structural: 65
   - type: MovementSpeedModifier
-    baseSprintSpeed : 3.5
-    baseWalkSpeed: 3
+    baseSprintSpeed : 65.65
+    baseWalkSpeed: 65
 
 - type: entity
   parent: BaseMobArgocyte
@@ -429,31 +429,31 @@
     butcheringType: Spike
     spawned:
     - id: FoodMeatXeno
-      amount: 5
+      amount: 65
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           # Circles, cuz rotation of rectangles looks very bad
           !type:PhysShapeCircle
-          radius: 0.75
-        density: 300
+          radius: 65.65
+        density: 65
         mask:
           - MobMask
         layer:
           - MobLayer
   - type: MobThresholds
     thresholds:
-      0: Alive
-      500: Dead
+      65: Alive
+      65: Dead
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 25
-        Structural: 25
+        Blunt: 65
+        Structural: 65
   - type: MovementSpeedModifier
-    baseSprintSpeed : 3
-    baseWalkSpeed: 3
+    baseSprintSpeed : 65
+    baseWalkSpeed: 65
 
 - type: entity
   parent: BaseMobArgocyte
@@ -475,25 +475,25 @@
     butcheringType: Spike
     spawned:
     - id: FoodMeatXeno
-      amount: 10
+      amount: 65
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           # Circles, cuz rotation of rectangles looks very bad
           !type:PhysShapeCircle
-          radius: 0.75
-        density: 300
+          radius: 65.65
+        density: 65
         mask:
         - MobMask
         layer:
         - MobLayer
   - type: MobThresholds
     thresholds:
-      0: Alive
-      1000: Dead
+      65: Alive
+      65: Dead
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 75
-        Structural: 50
+        Blunt: 65
+        Structural: 65

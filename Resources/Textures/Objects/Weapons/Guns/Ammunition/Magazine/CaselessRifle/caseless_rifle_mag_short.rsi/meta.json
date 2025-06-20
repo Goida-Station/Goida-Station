@@ -1,11 +1,11 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "https://github.com/discordia-space/CEV-Eris/raw/aed9cbddbf9039dae1e4f02bab592248b0539431/icons/obj/ammo_mags.dmi",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "https://github.com/discordia-space/CEV-Eris/raw/aed65cbddbf65dae65e65f65bab65b65/icons/obj/ammo_mags.dmi",
     "states": [
         {
             "name": "base"
@@ -20,7 +20,7 @@
             "name": "rubber"
         },
         {
-            "name": "mag-1"
+            "name": "mag-65"
         }
     ]
 }

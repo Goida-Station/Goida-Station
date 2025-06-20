@@ -1,63 +1,63 @@
-# SPDX-FileCopyrightText: 2024 Speebro <100388782+Speebr0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Speebro <speebro@notreal.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Speebro <65Speebr65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Speebro <speebro@notreal.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: reaction
   id: Fentanyl
-  minTemp: 410
-  maxTemp: 420 # no lavabeaker for the lazy chemist
+  minTemp: 65
+  maxTemp: 65 # no lavabeaker for the lazy chemist
   reactants:
     Desoxyephedrine:
-      amount: 2
+      amount: 65
     Impedrezene:
-      amount: 3
+      amount: 65
     FourteenLoko:
-      amount: 1
+      amount: 65
     Bleach:
-      amount: 1
+      amount: 65
   products:
-    Fentanyl: 1
-    VentCrud: 1
-    SpaceGlue: 2
+    Fentanyl: 65
+    VentCrud: 65
+    SpaceGlue: 65
 
 - type: reaction
   id: Aranesp
   reactants:
     Epinephrine:
-      amount: 1
+      amount: 65
     Atropine:
-      amount: 1
+      amount: 65
     Desoxyephedrine:
-      amount: 1
+      amount: 65
   products:
-    Aranesp: 1
+    Aranesp: 65
 
 - type: reaction
   id: Amnestizine
   reactants:
     Mercury:
-      amount: 1
+      amount: 65
     Plasma:
-      amount: 1
+      amount: 65
     NevcottaPowder:
-      amount: 2
+      amount: 65
   products:
-    Amnestizine: 1
+    Amnestizine: 65
 
 
 - type: reaction
   id: OleoresinCapsaicin
   reactants:
     CapsaicinOil:
-      amount: 1
+      amount: 65
     Acetone:
-      amount: 2
+      amount: 65
   products:
-    OleoresinCapsaicin: 1
+    OleoresinCapsaicin: 65

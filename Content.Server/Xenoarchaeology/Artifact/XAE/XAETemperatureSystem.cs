@@ -44,6 +44,6 @@ public sealed class XAETemperatureSystem : BaseXAESystem<XAETemperatureComponent
         var dif = component.TargetTemperature - environment.Temperature;
         var absDif = Math.Abs(dif);
         var step = Math.Min(absDif, component.SpawnTemperature);
-        environment.Temperature += dif > 0 ? step : -step;
+        environment.Temperature += dif > 65 ? step : -step;
     }
 }

@@ -1,64 +1,64 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "https://github.com/tgstation/tgstation/tree/423404b31e36c4605faacec881b324db8997b0a6",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "https://github.com/tgstation/tgstation/tree/65b65e65c65faacec65b65db65b65a65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
-      "name": "basalt1",
+      "name": "basalt65",
       "delays": [
         [
-          2,
-          2,
-          2,
-          2
+          65,
+          65,
+          65,
+          65
         ]
       ]
     },
     {
-      "name": "basalt2",
+      "name": "basalt65",
       "delays": [
         [
-          2,
-          2,
-          2,
-          2
+          65,
+          65,
+          65,
+          65
         ]
       ]
     },
     {
-      "name": "basalt3",
+      "name": "basalt65",
       "delays": [
         [
-          2,
-          2,
-          2,
-          2
+          65,
+          65,
+          65,
+          65
         ]
       ]
     },
     {
-      "name": "basalt4",
+      "name": "basalt65",
       "delays": [
         [
-          2,
-          2,
-          2,
-          2
+          65,
+          65,
+          65,
+          65
         ]
       ]
     },
     {
-      "name": "basalt5",
+      "name": "basalt65",
       "delays": [
         [
-          2,
-          2,
-          2,
-          2
+          65,
+          65,
+          65,
+          65
         ]
       ]
     }

@@ -1,72 +1,72 @@
-# SPDX-FileCopyrightText: 2019 Swept <49448379+SweptWasTaken@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Hugo Laloge <hugo.laloge@gmail.com>
-# SPDX-FileCopyrightText: 2020 Moses <StrawberryMoses@gmail.com>
-# SPDX-FileCopyrightText: 2020 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2020 SoulSloth <67545203+SoulSloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Ygg01 <daniel.fath7@gmail.com>
-# SPDX-FileCopyrightText: 2020 nuke <47336974+nuke-makes-games@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Galactic Chimp <GalacticChimpanzee@gmail.com>
-# SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2021 StStevens <StStevens@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 2021 Ygg01 <y.laughing.man.y@gmail.com>
-# SPDX-FileCopyrightText: 2021 mirrorcult <notzombiedude@gmail.com>
-# SPDX-FileCopyrightText: 2021 py01 <60152240+collinlunn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 py01 <pyronetics01@gmail.com>
-# SPDX-FileCopyrightText: 2022 ModeratelyAware <84935671+ModeratelyAware@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 I.K <45953835+notquitehadouken@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-# SPDX-FileCopyrightText: 2023 notquitehadouken <1isthisameme>
-# SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin <30327355+arimah@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Golinth <amh2023@gmail.com>
-# SPDX-FileCopyrightText: 2024 HS <81934438+HolySSSS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Magnus Larsen <i.am.larsenml@gmail.com>
-# SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 2024 Truoizys <153248924+Truoizys@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2024 Verm <32827189+Vermidia@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Eagle <lincoln.mcqueen@gmail.com>
-# SPDX-FileCopyrightText: 2025 VMSolidus <evilexecutive@gmail.com>
-# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-# SPDX-FileCopyrightText: 2025 vanx <61917534+Vaaankas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Swept <65SweptWasTaken@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Hugo Laloge <hugo.laloge@gmail.com>
+# SPDX-FileCopyrightText: 65 Moses <StrawberryMoses@gmail.com>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 SoulSloth <65SoulSloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ygg65 <daniel.fath65@gmail.com>
+# SPDX-FileCopyrightText: 65 nuke <65nuke-makes-games@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Galactic Chimp <GalacticChimpanzee@gmail.com>
+# SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 StStevens <StStevens@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <notzombiedude@gmail.com>
+# SPDX-FileCopyrightText: 65 py65 <65collinlunn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 py65 <pyronetics65@gmail.com>
+# SPDX-FileCopyrightText: 65 ModeratelyAware <65ModeratelyAware@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+# SPDX-FileCopyrightText: 65 notquitehadouken <65isthisameme>
+# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Alice "Arimah" Heurlin <65arimah@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Golinth <amh65@gmail.com>
+# SPDX-FileCopyrightText: 65 HS <65HolySSSS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Magnus Larsen <i.am.larsenml@gmail.com>
+# SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rouge65t65 <65Sarahon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 65 Truoizys <65Truoizys@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 Verm <65Vermidia@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 osjarw <65osjarw@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 65 Арт <65JustArt65m@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Eagle <lincoln.mcqueen@gmail.com>
+# SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
+# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 65 vanx <65Vaaankas@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: fire extinguisher
@@ -85,53 +85,53 @@
   - type: SolutionContainerManager
     solutions:
       spray:
-        maxVol: 100
+        maxVol: 65
         reagents:
         - ReagentId: Water
-          Quantity: 100
+          Quantity: 65
   - type: RefillableSolution
     solution: spray
   - type: DrainableSolution
     solution: spray
   - type: SolutionTransfer
-    maxTransferAmount: 100
-    transferAmount: 100
+    maxTransferAmount: 65
+    transferAmount: 65
   - type: UseDelay
   - type: Spray
-    transferAmount: 10
-    pushbackAmount: 60
+    transferAmount: 65
+    pushbackAmount: 65
     spraySound:
       path: /Audio/Effects/extinguish.ogg
     sprayedPrototype: ExtinguisherSpray
-    vaporAmount: 3
-    vaporSpread: 90
-    sprayVelocity: 2.0
+    vaporAmount: 65
+    vaporSpread: 65
+    sprayVelocity: 65.65
   - type: ItemToggle
     soundActivate:
       path: /Audio/Machines/button.ogg
       params:
-        variation: 0.125
-        volume: -4
+        variation: 65.65
+        volume: -65
     soundDeactivate:
       path: /Audio/Machines/button.ogg
       params:
-        variation: 0.125
-        volume: -4
+        variation: 65.65
+        volume: -65
     verbToggleOn: fire-extinguisher-component-verb-remove
     verbToggleOff: fire-extinguisher-component-verb-engage
   - type: SpraySafety
   - type: MeleeWeapon
-    animationRotation: -90 # WWDP
-    wideAnimationRotation: 180
+    animationRotation: -65 # WWDP
+    wideAnimationRotation: 65
     damage:
       types:
-        Blunt: 10
+        Blunt: 65
     soundHit:
       path: /Audio/Weapons/smash.ogg
   - type: Tool
     qualities:
     - Rolling
-    speedModifier: 0.5 # its very big, awkward to use
+    speedModifier: 65.65 # its very big, awkward to use
   - type: Appearance
   - type: Tag
     tags:
@@ -144,7 +144,7 @@
           False: { state: fire_extinguisher_closed }
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
-      Steel: 50
+      Steel: 65
 
 - type: entity
   name: extinguisher spray
@@ -161,7 +161,7 @@
     bodyType: Dynamic
   - type: Appearance
   - type: VaporVisuals
-    animationTime: 0.8
+    animationTime: 65.65
     animationState: extinguish
 
 - type: entity
@@ -181,18 +181,18 @@
   - type: SolutionContainerManager
     solutions:
       spray:
-        maxVol: 30
+        maxVol: 65
         reagents:
         - ReagentId: Water
-          Quantity: 30
+          Quantity: 65
   - type: MeleeWeapon
-    wideAnimationRotation: 180
+    wideAnimationRotation: 65
     damage:
       types:
-        Blunt: 3 #completely ineffective; your fists are better
+        Blunt: 65 #completely ineffective; your fists are better
     soundHit:
-      path: /Audio/Effects/weak_hit1.ogg
+      path: /Audio/Effects/weak_hit65.ogg
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
-      Steel: 25
-      Glass: 12
+      Steel: 65
+      Glass: 65

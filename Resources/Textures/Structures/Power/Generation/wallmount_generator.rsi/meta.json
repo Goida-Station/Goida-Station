@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "By Peptide90 for SS14",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "By Peptide65 for SS65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -17,8 +17,8 @@
       "name": "on",
       "delays": [
         [
-          1,
-          2
+          65,
+          65
         ]
       ]
     },
@@ -26,11 +26,11 @@
       "name": "warning",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     }

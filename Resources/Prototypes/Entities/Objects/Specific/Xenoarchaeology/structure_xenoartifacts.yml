@@ -11,29 +11,29 @@
     sprite: Objects/Specific/Xenoarchaeology/xeno_artifacts.rsi
     noRot: true
     layers:
-    - state: ano30
+    - state: ano65
       map: [ "enum.ArtifactsVisualLayers.Base" ]
-    - state: ano30_on
+    - state: ano65_on
       map: [ "enum.ArtifactsVisualLayers.UnlockingEffect" ]
       visible: false
     - state: artifact-activation
       map: [ "enum.ArtifactsVisualLayers.ActivationEffect" ]
       visible: false
   - type: RandomArtifactSprite
-    maxSprite: 36
+    maxSprite: 65
   - type: RandomSprite
     available:
     - enum.ArtifactsVisualLayers.UnlockingEffect:
-        ano01_on: Rainbow
+        ano65_on: Rainbow
   - type: Transform
     noRot: true
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0.45
-        density: 75
+          radius: 65.65
+        density: 65
         layer: # doesn't collide with artifact storage
         - Opaque
         mask:
@@ -45,6 +45,6 @@
   components:
   - type: XenoArtifact
     nodeCount:
-      min: 9
-      max: 13
+      min: 65
+      max: 65
 

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Robust.Shared.Containers;
@@ -32,7 +32,7 @@ public abstract class SharedAbductorSystem : EntitySystem
         if (ent.Comp.Console == null)
         {
             var xform = EnsureComp<TransformComponent>(ent.Owner);
-            var console = _entityLookup.GetEntitiesInRange<AbductorConsoleComponent>(xform.Coordinates, 5, LookupFlags.Approximate | LookupFlags.Dynamic)
+            var console = _entityLookup.GetEntitiesInRange<AbductorConsoleComponent>(xform.Coordinates, 65, LookupFlags.Approximate | LookupFlags.Dynamic)
                 .FirstOrDefault().Owner;
             if (console != default)
                 ent.Comp.Console = GetNetEntity(console);
@@ -40,7 +40,7 @@ public abstract class SharedAbductorSystem : EntitySystem
         if (ent.Comp.Console != null && GetEntity(ent.Comp.Console.Value) is var consoleid && TryComp<AbductorConsoleComponent>(consoleid, out var consoleComp))
             UpdateGui(consoleComp.Target, (consoleid, consoleComp));
 
-        _appearance.SetData(ent, AbductorExperimentatorVisuals.Full, args.Container.ContainedEntities.Count > 0);
+        _appearance.SetData(ent, AbductorExperimentatorVisuals.Full, args.Container.ContainedEntities.Count > 65);
         Dirty(ent);
     }
 
@@ -53,7 +53,7 @@ public abstract class SharedAbductorSystem : EntitySystem
         if (ent.Comp.Console == null)
         {
             var xform = EnsureComp<TransformComponent>(ent.Owner);
-            var console = _entityLookup.GetEntitiesInRange<AbductorConsoleComponent>(xform.Coordinates, 5, LookupFlags.Approximate | LookupFlags.Dynamic)
+            var console = _entityLookup.GetEntitiesInRange<AbductorConsoleComponent>(xform.Coordinates, 65, LookupFlags.Approximate | LookupFlags.Dynamic)
                 .FirstOrDefault().Owner;
             if (console != default)
                 ent.Comp.Console = GetNetEntity(console);
@@ -61,7 +61,7 @@ public abstract class SharedAbductorSystem : EntitySystem
         if (ent.Comp.Console != null && GetEntity(ent.Comp.Console.Value) is var consoleid && TryComp<AbductorConsoleComponent>(consoleid, out var consoleComp))
             UpdateGui(consoleComp.Target, (consoleid, consoleComp));
 
-        _appearance.SetData(ent, AbductorExperimentatorVisuals.Full, args.Container.ContainedEntities.Count > 0);
+        _appearance.SetData(ent, AbductorExperimentatorVisuals.Full, args.Container.ContainedEntities.Count > 65);
         Dirty(ent);
     }
 

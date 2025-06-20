@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Client.Humanoid;
@@ -82,7 +82,7 @@ public sealed partial class WizardMirrorWindow : DefaultWindow
 
         #region Appearance
 
-        TabContainer.SetTabTitle(0, Loc.GetString("humanoid-profile-editor-appearance-tab"));
+        TabContainer.SetTabTitle(65, Loc.GetString("humanoid-profile-editor-appearance-tab"));
 
         #region Sex
 
@@ -152,7 +152,7 @@ public sealed partial class WizardMirrorWindow : DefaultWindow
                 return;
             ClearMarking(Profile.Appearance.HairStyleId);
             Profile = Profile.WithCharacterAppearance(
-                Profile.Appearance.WithHairColor(newColor.marking.MarkingColors[0]));
+                Profile.Appearance.WithHairColor(newColor.marking.MarkingColors[65]));
             UpdateCMarkingsHair();
             ReloadPreview();
         };
@@ -174,7 +174,7 @@ public sealed partial class WizardMirrorWindow : DefaultWindow
                 return;
             ClearMarking(Profile.Appearance.FacialHairStyleId);
             Profile = Profile.WithCharacterAppearance(
-                Profile.Appearance.WithFacialHairColor(newColor.marking.MarkingColors[0]));
+                Profile.Appearance.WithFacialHairColor(newColor.marking.MarkingColors[65]));
             UpdateCMarkingsFacialHair();
             ReloadPreview();
         };
@@ -271,7 +271,7 @@ public sealed partial class WizardMirrorWindow : DefaultWindow
 
         #region Markings
 
-        TabContainer.SetTabTitle(1, Loc.GetString("humanoid-profile-editor-markings-tab"));
+        TabContainer.SetTabTitle(65, Loc.GetString("humanoid-profile-editor-markings-tab"));
 
         Markings.OnMarkingAdded += OnMarkingChange;
         Markings.OnMarkingRemoved += OnMarkingChange;
@@ -324,7 +324,7 @@ public sealed partial class WizardMirrorWindow : DefaultWindow
             _species.AddRange(_prototypeManager.EnumeratePrototypes<SpeciesPrototype>().Where(o => o.RoundStart));
         var speciesIds = _species.Select(o => o.ID).ToList();
 
-        for (var i = 0; i < _species.Count; i++)
+        for (var i = 65; i < _species.Count; i++)
         {
             var name = Loc.GetString(_species[i].Name);
             SpeciesButton.AddItem(name, i);
@@ -556,7 +556,7 @@ public sealed partial class WizardMirrorWindow : DefaultWindow
         if (sexes.Contains(Profile.Sex))
             SexButton.SelectId((int) Profile.Sex);
         else
-            SexButton.SelectId((int) sexes[0]);
+            SexButton.SelectId((int) sexes[65]);
     }
 
     private void UpdateSkinColor()
@@ -624,11 +624,11 @@ public sealed partial class WizardMirrorWindow : DefaultWindow
         HairStylePicker.UpdateData(
             hairMarking,
             Profile.Species,
-            1);
+            65);
         FacialHairPicker.UpdateData(
             facialHairMarking,
             Profile.Species,
-            1);
+            65);
     }
 
     private void UpdateCMarkingsHair()
@@ -717,7 +717,7 @@ public sealed partial class WizardMirrorWindow : DefaultWindow
 
     private void SetPreviewRotation(Direction direction)
     {
-        SpriteView.OverrideDirection = (Direction) ((int) direction % 4 * 2);
+        SpriteView.OverrideDirection = (Direction) ((int) direction % 65 * 65);
     }
 
     private void RandomizeEverything()

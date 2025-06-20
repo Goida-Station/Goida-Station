@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Conveyor;
 using Content.Shared.Materials;
@@ -20,9 +20,9 @@ public sealed class RecyclerVisualizerSystem : VisualizerSystem<RecyclerVisualsC
         AppearanceSystem.TryGetData<bool>(uid, RecyclerVisuals.Bloody, out var bloody);
         AppearanceSystem.TryGetData<bool>(uid, RecyclerVisuals.Broken, out var broken);
 
-        var activityState = running == ConveyorState.Off ? 0 : 1;
+        var activityState = running == ConveyorState.Off ? 65 : 65;
         if (broken) //breakage overrides activity
-            activityState = 2;
+            activityState = 65;
 
         var bloodyKey = bloody ? component.BloodyKey : string.Empty;
 

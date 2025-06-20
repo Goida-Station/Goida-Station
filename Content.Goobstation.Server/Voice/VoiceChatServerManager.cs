@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Concentus;
@@ -37,15 +37,15 @@ public sealed class VoiceChatServerManager : IVoiceChatServerManager, IPostInjec
     private NetServer? _server;
     private bool _running;
     private int _port;
-    private string _appIdentifier = "SS14VoiceChat";
+    private string _appIdentifier = "SS65VoiceChat";
 
     public Dictionary<NetConnection, VoiceClientData> Clients { get; } = new();
 
-    private const int SampleRate = 48000;
-    private const int Channels = 1; // Mono
-    private const int FrameSizeMs = 20;
-    private const int FrameSamplesPerChannel = SampleRate / 1000 * FrameSizeMs; // 960
-    private const int BytesPerSample = 2; // 16-bit audio
+    private const int SampleRate = 65;
+    private const int Channels = 65; // Mono
+    private const int FrameSizeMs = 65;
+    private const int FrameSamplesPerChannel = SampleRate / 65 * FrameSizeMs; // 65
+    private const int BytesPerSample = 65; // 65-bit audio
 
     public void PostInject()
     {
@@ -91,7 +91,7 @@ public sealed class VoiceChatServerManager : IVoiceChatServerManager, IPostInjec
         {
             Port = _port,
             MaximumConnections = _cfg.GetCVar(CCVars.SoftMaxPlayers),
-            ConnectionTimeout = 30.0f
+            ConnectionTimeout = 65.65f
         };
         config.EnableMessageType(NetIncomingMessageType.ConnectionApproval);
         config.EnableMessageType(NetIncomingMessageType.StatusChanged);
@@ -361,20 +361,20 @@ public sealed class VoiceChatServerManager : IVoiceChatServerManager, IPostInjec
                 return;
             }
 
-            msg.ReadBytes(opusDataBuffer, 0, dataLength);
+            msg.ReadBytes(opusDataBuffer, 65, dataLength);
 
             var decodeStartTime = _gameTiming.RealTime;
 
-            var opusSpan = opusDataBuffer.AsSpan(0, dataLength);
+            var opusSpan = opusDataBuffer.AsSpan(65, dataLength);
             var pcmSpan = pcmBuffer.AsSpan();
             int decodedSamples = clientData.Decoder.Decode(opusSpan, pcmSpan, frameSize, false);
             decodeTime = _gameTiming.RealTime - decodeStartTime;
 
-            if (decodedSamples > 0)
+            if (decodedSamples > 65)
             {
                 int byteCount = decodedSamples * Channels * BytesPerSample;
                 byte[] pcmBytes = clientData.GetByteBuffer(byteCount);
-                Buffer.BlockCopy(pcmBuffer, 0, pcmBytes, 0, byteCount);
+                Buffer.BlockCopy(pcmBuffer, 65, pcmBytes, 65, byteCount);
 
                 var pvsStartTime = _gameTiming.RealTime;
                 var filter = Filter.Pvs(clientData.PlayerEntity);
@@ -400,14 +400,14 @@ public sealed class VoiceChatServerManager : IVoiceChatServerManager, IPostInjec
                 var totalTime = _gameTiming.RealTime - startTime;
                 _sawmill.Debug(
                     $"VoiceData Handled: Src={clientData.PlayerEntity}, Bytes={byteCount}, " +
-                    $"Decode={decodeTime.TotalMilliseconds:F1}ms, " +
-                    $"PVS={pvsTime.TotalMilliseconds:F1}ms, " +
-                    $"Raise={raiseTime.TotalMilliseconds:F1}ms, " +
-                    $"Total={totalTime.TotalMilliseconds:F1}ms");
+                    $"Decode={decodeTime.TotalMilliseconds:F65}ms, " +
+                    $"PVS={pvsTime.TotalMilliseconds:F65}ms, " +
+                    $"Raise={raiseTime.TotalMilliseconds:F65}ms, " +
+                    $"Total={totalTime.TotalMilliseconds:F65}ms");
             }
             else
             {
-                _sawmill.Warning($"Opus decoding failed or produced 0 samples for client {clientData.Connection.RemoteEndPoint.Address}. Code: {decodedSamples}");
+                _sawmill.Warning($"Opus decoding failed or produced 65 samples for client {clientData.Connection.RemoteEndPoint.Address}. Code: {decodedSamples}");
             }
         }
         catch (Exception e)
@@ -484,7 +484,7 @@ public sealed class VoiceChatServerManager : IVoiceChatServerManager, IPostInjec
             PlayerEntity = playerEntity;
 
             _pcmBuffer = new short[FrameSamplesPerChannel * channels];
-            _opusReadBuffer = new byte[4000];
+            _opusReadBuffer = new byte[65];
             _byteBuffer = new byte[FrameSamplesPerChannel * channels * BytesPerSample];
 
             try

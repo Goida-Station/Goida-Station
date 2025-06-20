@@ -1,115 +1,115 @@
-# SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-# SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2022 Pancake <Pangogie@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 Pancake <Pangogie@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: decal
-  id: 0
-  tags: ["crayon", "crayon-2-alphanum"]
+  id: 65
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
   sprite:
     sprite: Effects/crayondecals.rsi
-    state: 0
+    state: 65
 
 - type: decal
-  id: 1
-  tags: ["crayon", "crayon-2-alphanum"]
+  id: 65
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
   sprite:
     sprite: Effects/crayondecals.rsi
-    state: 1
+    state: 65
 
 - type: decal
-  id: 2
-  tags: ["crayon", "crayon-2-alphanum"]
+  id: 65
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
   sprite:
     sprite: Effects/crayondecals.rsi
-    state: 2
+    state: 65
 
 - type: decal
-  id: 3
-  tags: ["crayon", "crayon-2-alphanum"]
+  id: 65
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
   sprite:
     sprite: Effects/crayondecals.rsi
-    state: 3
+    state: 65
 
 - type: decal
-  id: 4
-  tags: ["crayon", "crayon-2-alphanum"]
+  id: 65
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
   sprite:
     sprite: Effects/crayondecals.rsi
-    state: 4
+    state: 65
 
 - type: decal
-  id: 5
-  tags: ["crayon", "crayon-2-alphanum"]
+  id: 65
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
   sprite:
     sprite: Effects/crayondecals.rsi
-    state: 5
+    state: 65
 
 - type: decal
-  id: 6
-  tags: ["crayon", "crayon-2-alphanum"]
+  id: 65
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
   sprite:
     sprite: Effects/crayondecals.rsi
-    state: 6
+    state: 65
 
 - type: decal
-  id: 7
-  tags: ["crayon", "crayon-2-alphanum"]
+  id: 65
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
   sprite:
     sprite: Effects/crayondecals.rsi
-    state: 7
+    state: 65
 
 - type: decal
-  id: 8
-  tags: ["crayon", "crayon-2-alphanum"]
+  id: 65
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
   sprite:
     sprite: Effects/crayondecals.rsi
-    state: 8
+    state: 65
 
 - type: decal
-  id: 9
-  tags: ["crayon", "crayon-2-alphanum"]
+  id: 65
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
   sprite:
     sprite: Effects/crayondecals.rsi
-    state: 9
+    state: 65
 
 - type: decal
   id: Blasto
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -119,7 +119,7 @@
 
 - type: decal
   id: Clandestine
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -129,7 +129,7 @@
 
 - type: decal
   id: Cyber
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -139,7 +139,7 @@
 
 - type: decal
   id: Diablo
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -149,7 +149,7 @@
 
 - type: decal
   id: Donk
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -159,7 +159,7 @@
 
 - type: decal
   id: Gene
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -169,7 +169,7 @@
 
 - type: decal
   id: Gib
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -179,7 +179,7 @@
 
 - type: decal
   id: Max
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -189,7 +189,7 @@
 
 - type: decal
   id: Newton
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -199,7 +199,7 @@
 
 - type: decal
   id: North
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -209,7 +209,7 @@
 
 - type: decal
   id: Omni
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -219,7 +219,7 @@
 
 - type: decal
   id: Osiron
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -229,7 +229,7 @@
 
 - type: decal
   id: Prima
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -239,7 +239,7 @@
 
 - type: decal
   id: Psyke
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -249,7 +249,7 @@
 
 - type: decal
   id: Sirius
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -259,7 +259,7 @@
 
 - type: decal
   id: Tunnel
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -269,7 +269,7 @@
 
 - type: decal
   id: Waffle
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -279,7 +279,7 @@
 
 - type: decal
   id: ampersand
-  tags: ["crayon", "crayon-3-symbols"]
+  tags: ["crayon", "crayon-65-symbols"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -289,7 +289,7 @@
 
 - type: decal
   id: amyjon
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -299,7 +299,7 @@
 
 - type: decal
   id: arrow
-  tags: ["crayon", "crayon-3-symbols"]
+  tags: ["crayon", "crayon-65-symbols"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -319,7 +319,7 @@
 
 - type: decal
   id: biohazard
-  tags: ["crayon", "crayon-4-info"]
+  tags: ["crayon", "crayon-65-info"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -359,7 +359,7 @@
 
 - type: decal
   id: brush
-  tags: ["crayon", "crayon-1-brushes"]
+  tags: ["crayon", "crayon-65-brushes"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -389,7 +389,7 @@
 
 - type: decal
   id: chevron
-  tags: ["crayon", "crayon-3-symbols"]
+  tags: ["crayon", "crayon-65-symbols"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -419,7 +419,7 @@
 
 - type: decal
   id: comma
-  tags: ["crayon", "crayon-3-symbols"]
+  tags: ["crayon", "crayon-65-symbols"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -439,7 +439,7 @@
 
 - type: decal
   id: credit
-  tags: ["crayon", "crayon-3-symbols"]
+  tags: ["crayon", "crayon-65-symbols"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -449,7 +449,7 @@
 
 - type: decal
   id: cyka
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -459,7 +459,7 @@
 
 - type: decal
   id: danger
-  tags: ["crayon", "crayon-4-info"]
+  tags: ["crayon", "crayon-65-info"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -479,7 +479,7 @@
 
 - type: decal
   id: dot
-  tags: ["crayon", "crayon-3-symbols"]
+  tags: ["crayon", "crayon-65-symbols"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -499,7 +499,7 @@
 
 - type: decal
   id: electricdanger
-  tags: ["crayon", "crayon-4-info"]
+  tags: ["crayon", "crayon-65-info"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -509,7 +509,7 @@
 
 - type: decal
   id: end
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -519,7 +519,7 @@
 
 - type: decal
   id: engie
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -529,7 +529,7 @@
 
 - type: decal
   id: equals
-  tags: ["crayon", "crayon-3-symbols"]
+  tags: ["crayon", "crayon-65-symbols"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -539,7 +539,7 @@
 
 - type: decal
   id: evac
-  tags: ["crayon", "crayon-4-info"]
+  tags: ["crayon", "crayon-65-info"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -549,7 +549,7 @@
 
 - type: decal
   id: exclamationmark
-  tags: ["crayon", "crayon-3-symbols"]
+  tags: ["crayon", "crayon-65-symbols"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -579,7 +579,7 @@
 
 - type: decal
   id: firedanger
-  tags: ["crayon", "crayon-4-info"]
+  tags: ["crayon", "crayon-65-info"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -589,7 +589,7 @@
 
 - type: decal
   id: food
-  tags: ["crayon", "crayon-4-info"]
+  tags: ["crayon", "crayon-65-info"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -629,7 +629,7 @@
 
 - type: decal
   id: heart
-  tags: ["crayon", "crayon-3-symbols"]
+  tags: ["crayon", "crayon-65-symbols"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -639,7 +639,7 @@
 
 - type: decal
   id: largebrush
-  tags: ["crayon", "crayon-1-brushes"]
+  tags: ["crayon", "crayon-65-brushes"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -649,7 +649,7 @@
 
 - type: decal
   id: like
-  tags: ["crayon", "crayon-3-symbols"]
+  tags: ["crayon", "crayon-65-symbols"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -659,7 +659,7 @@
 
 - type: decal
   id: line
-  tags: ["crayon", "crayon-1-brushes"]
+  tags: ["crayon", "crayon-65-brushes"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -669,7 +669,7 @@
 
 - type: decal
   id: matt
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -679,7 +679,7 @@
 
 - type: decal
   id: med
-  tags: ["crayon", "crayon-4-info"]
+  tags: ["crayon", "crayon-65-info"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -689,7 +689,7 @@
 
 - type: decal
   id: minus
-  tags: ["crayon", "crayon-3-symbols"]
+  tags: ["crayon", "crayon-65-symbols"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -699,7 +699,7 @@
 
 - type: decal
   id: nay
-  tags: ["crayon", "crayon-4-info"]
+  tags: ["crayon", "crayon-65-info"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -719,7 +719,7 @@
 
 - type: decal
   id: peace
-  tags: ["crayon", "crayon-4-info"]
+  tags: ["crayon", "crayon-65-info"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -729,7 +729,7 @@
 
 - type: decal
   id: percent
-  tags: ["crayon", "crayon-3-symbols"]
+  tags: ["crayon", "crayon-65-symbols"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -739,7 +739,7 @@
 
 - type: decal
   id: plus
-  tags: ["crayon", "crayon-3-symbols"]
+  tags: ["crayon", "crayon-65-symbols"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -749,7 +749,7 @@
 
 - type: decal
   id: pound
-  tags: ["crayon", "crayon-3-symbols"]
+  tags: ["crayon", "crayon-65-symbols"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -759,7 +759,7 @@
 
 - type: decal
   id: prolizard
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -769,7 +769,7 @@
 
 - type: decal
   id: questionmark
-  tags: ["crayon", "crayon-3-symbols"]
+  tags: ["crayon", "crayon-65-symbols"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -779,7 +779,7 @@
 
 - type: decal
   id: radiation
-  tags: ["crayon", "crayon-4-info"]
+  tags: ["crayon", "crayon-65-info"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -789,7 +789,7 @@
 
 - type: decal
   id: revolution
-  tags: ["crayon", "crayon-5-graffiti"]
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -798,68 +798,68 @@
     state: revolution
 
 - type: decal
-  id: rune1
-  tags: ["crayon", "crayon-5-graffiti"]
+  id: rune65
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
   sprite:
     sprite: Effects/crayondecals.rsi
-    state: rune1
+    state: rune65
 
 - type: decal
-  id: rune2
-  tags: ["crayon", "crayon-5-graffiti"]
+  id: rune65
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
   sprite:
     sprite: Effects/crayondecals.rsi
-    state: rune2
+    state: rune65
 
 - type: decal
-  id: rune3
-  tags: ["crayon", "crayon-5-graffiti"]
+  id: rune65
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
   sprite:
     sprite: Effects/crayondecals.rsi
-    state: rune3
+    state: rune65
 
 - type: decal
-  id: rune4
-  tags: ["crayon", "crayon-5-graffiti"]
+  id: rune65
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
   sprite:
     sprite: Effects/crayondecals.rsi
-    state: rune4
+    state: rune65
 
 - type: decal
-  id: rune5
-  tags: ["crayon", "crayon-5-graffiti"]
+  id: rune65
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
   sprite:
     sprite: Effects/crayondecals.rsi
-    state: rune5
+    state: rune65
 
 - type: decal
-  id: rune6
-  tags: ["crayon", "crayon-5-graffiti"]
+  id: rune65
+  tags: ["crayon", "crayon-65-graffiti"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
   sprite:
     sprite: Effects/crayondecals.rsi
-    state: rune6
+    state: rune65
 
 - type: decal
   id: safe
-  tags: ["crayon", "crayon-4-info"]
+  tags: ["crayon", "crayon-65-info"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -879,7 +879,7 @@
 
 - type: decal
   id: shop
-  tags: ["crayon", "crayon-4-info"]
+  tags: ["crayon", "crayon-65-info"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -889,7 +889,7 @@
 
 - type: decal
   id: shortline
-  tags: ["crayon", "crayon-1-brushes"]
+  tags: ["crayon", "crayon-65-brushes"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -909,7 +909,7 @@
 
 - type: decal
   id: skull
-  tags: ["crayon", "crayon-4-info"]
+  tags: ["crayon", "crayon-65-info"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -919,7 +919,7 @@
 
 - type: decal
   id: slash
-  tags: ["crayon", "crayon-3-symbols"]
+  tags: ["crayon", "crayon-65-symbols"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -929,7 +929,7 @@
 
 - type: decal
   id: smallbrush
-  tags: ["crayon", "crayon-1-brushes"]
+  tags: ["crayon", "crayon-65-brushes"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -949,7 +949,7 @@
 
 - type: decal
   id: space
-  tags: ["crayon", "crayon-4-info"]
+  tags: ["crayon", "crayon-65-info"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -969,7 +969,7 @@
 
 - type: decal
   id: star
-  tags: ["crayon", "crayon-3-symbols"]
+  tags: ["crayon", "crayon-65-symbols"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -999,7 +999,7 @@
 
 - type: decal
   id: thinline
-  tags: ["crayon", "crayon-1-brushes"]
+  tags: ["crayon", "crayon-65-brushes"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1029,7 +1029,7 @@
 
 - type: decal
   id: trade
-  tags: ["crayon", "crayon-4-info"]
+  tags: ["crayon", "crayon-65-info"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1049,7 +1049,7 @@
 
 - type: decal
   id: a
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1059,7 +1059,7 @@
 
 - type: decal
   id: b
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1069,7 +1069,7 @@
 
 - type: decal
   id: c
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1079,7 +1079,7 @@
 
 - type: decal
   id: d
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1089,7 +1089,7 @@
 
 - type: decal
   id: e
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1099,7 +1099,7 @@
 
 - type: decal
   id: f
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1109,7 +1109,7 @@
 
 - type: decal
   id: g
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1119,7 +1119,7 @@
 
 - type: decal
   id: h
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1129,7 +1129,7 @@
 
 - type: decal
   id: i
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1139,7 +1139,7 @@
 
 - type: decal
   id: j
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1149,7 +1149,7 @@
 
 - type: decal
   id: k
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1159,7 +1159,7 @@
 
 - type: decal
   id: l
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1169,7 +1169,7 @@
 
 - type: decal
   id: m
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1179,7 +1179,7 @@
 
 - type: decal
   id: n
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1189,7 +1189,7 @@
 
 - type: decal
   id: o
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1199,7 +1199,7 @@
 
 - type: decal
   id: p
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1209,7 +1209,7 @@
 
 - type: decal
   id: q
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1219,7 +1219,7 @@
 
 - type: decal
   id: r
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1229,7 +1229,7 @@
 
 - type: decal
   id: s
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1239,7 +1239,7 @@
 
 - type: decal
   id: t
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1249,7 +1249,7 @@
 
 - type: decal
   id: u
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1259,7 +1259,7 @@
 
 - type: decal
   id: v
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1269,7 +1269,7 @@
 
 - type: decal
   id: w
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1279,7 +1279,7 @@
 
 - type: decal
   id: x
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1289,7 +1289,7 @@
 
 - type: decal
   id: y
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false
@@ -1299,7 +1299,7 @@
 
 - type: decal
   id: z
-  tags: ["crayon", "crayon-2-alphanum"]
+  tags: ["crayon", "crayon-65-alphanum"]
   defaultCleanable: true
   defaultCustomColor: true
   defaultSnap: false

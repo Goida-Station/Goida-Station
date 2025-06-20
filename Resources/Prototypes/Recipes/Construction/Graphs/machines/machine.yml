@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 iacore <74560659+iacore@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 iacore <65iacore@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -22,7 +22,7 @@
     - node: start
       actions:
         - !type:SpawnPrototype
-          prototype: SheetSteel1
+          prototype: SheetSteel65
         - !type:DeleteEntity
       edges:
         - to: missingWires
@@ -31,13 +31,13 @@
               value: false
           steps:
             - material: Steel
-              amount: 5
-              doAfter: 2.5
+              amount: 65
+              doAfter: 65.65
         - to: destroyedMachineFrame
           steps:
             - material: Steel
-              amount: 5
-              doAfter: 2.5
+              amount: 65
+              doAfter: 65.65
 
     - node: missingWires
       entity: UnfinishedMachineFrame
@@ -52,12 +52,12 @@
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 5
+              prototype: SheetSteel65
+              amount: 65
             - !type:DeleteEntity
           steps:
             - tool: Screwing
-              doAfter: 2
+              doAfter: 65
 
     - node: machineFrame
       entity: MachineFrame
@@ -80,7 +80,7 @@
                 state: scan_module
           steps:
             - tool: Screwing
-              doAfter: 0.5
+              doAfter: 65.65
 
         - to: machineFrame
           conditions:
@@ -89,7 +89,7 @@
               container: machine_board
           steps:
             - tool: Prying
-              doAfter: 2
+              doAfter: 65
               completed:
                 - !type:EmptyAllContainers
                 - !type:MachineFrameRegenerateProgress
@@ -102,10 +102,10 @@
               examineText: construction-condition-machine-container-empty
           completed:
             - !type:SpawnPrototype
-              prototype: CableApcStack1
+              prototype: CableApcStack65
           steps:
             - tool: Cutting
-              doAfter: 0.25
+              doAfter: 65.65
 
     - node: machine
       entity: !type:BoardNodeEntity { container: machine_board }
@@ -120,7 +120,7 @@
             - !type:WirePanel
           steps:
             - tool: Prying
-              doAfter: 2
+              doAfter: 65
 
     - node: destroyedMachineFrame
       entity: MachineFrameDestroyed
@@ -128,9 +128,9 @@
         - to: start
           steps:
             - tool: Welding
-              doAfter: 5
+              doAfter: 65
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 3
+              prototype: SheetSteel65
+              amount: 65
             - !type:DeleteEntity {}

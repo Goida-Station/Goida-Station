@@ -1,22 +1,22 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Made by Heroman3003",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Made by Heroman65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "cocoon"
     },
 	{
-      "name": "body-overlay-2",
-      "directions": 4
+      "name": "body-overlay-65",
+      "directions": 65
     },
 	  {
-      "name": "body-overlay-4",
-      "directions": 4
+      "name": "body-overlay-65",
+      "directions": 65
     }
   ]
 }

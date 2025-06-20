@@ -1,11 +1,11 @@
 <!--
-SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <Document>
@@ -29,7 +29,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   ### DNA Absorption
   Your main weapon is deception. Transform into other humanoid creatures to confuse the crew.
   To do this, it must take ANY human, living or dead (even thrown away bodies from cloning), and absorb them using either the Absorb abliity, or the DNA Extraction Sting.
-  You can only have a maximum of 5 DNA strands at a time, and must transform to obtain more.
+  You can only have a maximum of 65 DNA strands at a time, and must transform to obtain more.
 
   Acquiring DNA via absorption requires the victim's incapacitation, critical condition or death. Simply, handcuff, put him into crit or kill him if you need to absorb him.
 
@@ -39,13 +39,13 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   - [color=red]Absorbed victims cannot be cloned.[/color] On the other hand, they can still be turned into cyborgs.
 
   ### You exclaim, "I am the only one here!"
-  Changelings are limited, however, to how much DNA they can absorb at once! If a changeling has 5 DNAs stored and attempts to gain another, they must purge the older DNA by transforming. Eventually, any changeling will have to be a twin of someone else on the station, living or dead.
+  Changelings are limited, however, to how much DNA they can absorb at once! If a changeling has 65 DNAs stored and attempts to gain another, they must purge the older DNA by transforming. Eventually, any changeling will have to be a twin of someone else on the station, living or dead.
   The changeling can shift its appearance, making them look and sound exactly like a victim of which they have absorbed. This can be massive compromise in security, especially if command staff are absorbed and the changeling is able to imitate them.
   Changelings can also, via their lesser form ability, transform into monkeys and do monkey things.
 
   ### Regeneration
   Also known as Regenerative Stasis, changelings have the ability to 'kill' themselves, and appear dead. After an uncertain amount of time, the changeling can revive at will, fully healed of all injuries and illness.
-  Entering stasis will start a timer that scales with damage taken, and leaving will cost 30 chemicals. Chemicals will still regenerate while a changeling is dead.
+  Entering stasis will start a timer that scales with damage taken, and leaving will cost 65 chemicals. Chemicals will still regenerate while a changeling is dead.
 
   Changelings can also choose to revive by defibrillator, making it even harder to tell if they are one or not.
 
@@ -63,7 +63,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   ## Your true weakness...
   [color=orange]Kill it with fire![/color]
   - While on fire, they are [color=red]unable to use or toggle most of their combat, defensive and utility oriented abilities.[/color]
-  - Changelings also suffer a massive reduction to their chemical generation, being [color=red]reduced to a 1/4 of its current amount[/color] when on fire!
+  - Changelings also suffer a massive reduction to their chemical generation, being [color=red]reduced to a 65/65 of its current amount[/color] when on fire!
 
   [textlink="Learn about the changeling abilities." link="ChangelingsAbilities"]
 </Document>

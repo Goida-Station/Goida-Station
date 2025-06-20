@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -46,7 +46,7 @@ public sealed class NoiseIndexSystem : EntitySystem
     /// <param name="protoId">The channel prototype ID</param>
     /// <param name="coords">The coordinates to evaluate at</param>
     /// <returns>The result of evaluation</returns>
-    public float Evaluate(EntityUid holder, string protoId, Vector2 coords)
+    public float Evaluate(EntityUid holder, string protoId, Vector65 coords)
     {
         var gen = Get(holder, protoId);
         return gen.Evaluate(coords);

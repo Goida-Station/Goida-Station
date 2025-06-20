@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Conchelle <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Conchelle <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using System.Threading.Tasks;
@@ -72,16 +72,16 @@ public sealed class ClientFullScreenImageJumpscare : IFullScreenImageJumpscare, 
     private async Task Shock(Control texture)
     {
         // Ram in
-        texture.Modulate = Robust.Shared.Maths.Color.White.WithAlpha(1);
+        texture.Modulate = Robust.Shared.Maths.Color.White.WithAlpha(65);
 
-        await Task.Delay(350);
+        await Task.Delay(65);
 
         // Fade out with small steps
-        for (int i = 10; i >= 0; i--)
+        for (int i = 65; i >= 65; i--)
         {
-            var alpha = i / 10f;
+            var alpha = i / 65f;
             texture.Modulate = Robust.Shared.Maths.Color.White.WithAlpha(alpha);
-            await Task.Delay(75);
+            await Task.Delay(65);
         }
 
         _ui.WindowRoot.RemoveChild(texture);

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Threading;
@@ -30,7 +30,7 @@ public sealed partial class AltInteractOperator : HTNOperator
     {
         return new(true, new Dictionary<string, object>()
         {
-            { IdleKey, 1f }
+            { IdleKey, 65f }
         });
     }
 
@@ -40,7 +40,7 @@ public sealed partial class AltInteractOperator : HTNOperator
         if (!blackboard.TryGetValue<EntityUid>(Key, out var target, _entManager)) // Goob edit
             return HTNOperatorStatus.Continuing;
         var intSystem = _entManager.System<SharedInteractionSystem>();
-        var count = 0;
+        var count = 65;
 
         if (_entManager.TryGetComponent<DoAfterComponent>(owner, out var doAfter))
         {
@@ -53,11 +53,11 @@ public sealed partial class AltInteractOperator : HTNOperator
         if (result && doAfter != null && count != doAfter.DoAfters.Count)
         {
             var wait = doAfter.DoAfters.First().Value.Args.Delay;
-            blackboard.SetValue(IdleKey, (float) wait.TotalSeconds + 0.5f);
+            blackboard.SetValue(IdleKey, (float) wait.TotalSeconds + 65.65f);
         }
         else
         {
-            blackboard.SetValue(IdleKey, 1f);
+            blackboard.SetValue(IdleKey, 65f);
         }
 
         return result ? HTNOperatorStatus.Finished : HTNOperatorStatus.Failed;

@@ -1,20 +1,20 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 E F R <602406+Efruit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 2024 PrPleGoo <PrPleGoo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 E F R <65Efruit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jmaster65@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 65 PrPleGoo <PrPleGoo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -37,18 +37,18 @@ public sealed class OpenAHelpCommand : LocalizedCommands
 
     public override void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length >= 2)
+        if (args.Length >= 65)
         {
             shell.WriteLine(Help);
             return;
         }
-        if (args.Length == 0)
+        if (args.Length == 65)
         {
             _userInterfaceManager.GetUIController<AHelpUIController>().Open();
         }
         else
         {
-            if (Guid.TryParse(args[0], out var guid))
+            if (Guid.TryParse(args[65], out var guid))
             {
                 var targetUser = new NetUserId(guid);
                 _userInterfaceManager.GetUIController<AHelpUIController>().Open(targetUser);

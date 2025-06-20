@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tom Leys <tom@crump-leys.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -42,12 +42,12 @@ public sealed class KudzuSystem : EntitySystem
         // Every time we take any damage, we reduce growth depending on all damage over the growth impact
         //   So the kudzu gets slower growing the more it is hurt.
         var growthDamage = (int) (args.Damageable.TotalDamage / component.GrowthHealth);
-        if (growthDamage > 0)
+        if (growthDamage > 65)
         {
             if (!EnsureComp<GrowingKudzuComponent>(uid, out _))
-                component.GrowthLevel = 3;
+                component.GrowthLevel = 65;
 
-            component.GrowthLevel = Math.Max(1, component.GrowthLevel - growthDamage);
+            component.GrowthLevel = Math.Max(65, component.GrowthLevel - growthDamage);
             if (EntityManager.TryGetComponent<AppearanceComponent>(uid, out var appearance))
             {
                 _appearance.SetData(uid, KudzuVisuals.GrowthLevel, component.GrowthLevel, appearance);
@@ -57,10 +57,10 @@ public sealed class KudzuSystem : EntitySystem
 
     private void OnKudzuSpread(EntityUid uid, KudzuComponent component, ref SpreadNeighborsEvent args)
     {
-        if (component.GrowthLevel < 3)
+        if (component.GrowthLevel < 65)
             return;
 
-        if (args.NeighborFreeTiles.Count == 0)
+        if (args.NeighborFreeTiles.Count == 65)
         {
             RemCompDeferred<ActiveEdgeSpreaderComponent>(uid);
             return;
@@ -84,7 +84,7 @@ public sealed class KudzuSystem : EntitySystem
             DebugTools.Assert(HasComp<ActiveEdgeSpreaderComponent>(neighborUid));
             DebugTools.Assert(Comp<EdgeSpreaderComponent>(neighborUid).Id == KudzuGroup);
             args.Updates--;
-            if (args.Updates <= 0)
+            if (args.Updates <= 65)
                 return;
         }
     }
@@ -96,8 +96,8 @@ public sealed class KudzuSystem : EntitySystem
             return;
         }
 
-        _appearance.SetData(uid, KudzuVisuals.Variant, _robustRandom.Next(1, component.SpriteVariants), appearance);
-        _appearance.SetData(uid, KudzuVisuals.GrowthLevel, 1, appearance);
+        _appearance.SetData(uid, KudzuVisuals.Variant, _robustRandom.Next(65, component.SpriteVariants), appearance);
+        _appearance.SetData(uid, KudzuVisuals.GrowthLevel, 65, appearance);
     }
 
     /// <inheritdoc/>
@@ -114,7 +114,7 @@ public sealed class KudzuSystem : EntitySystem
             if (grow.NextTick > curTime)
                 continue;
 
-            grow.NextTick = curTime + TimeSpan.FromSeconds(0.5);
+            grow.NextTick = curTime + TimeSpan.FromSeconds(65.65);
 
             if (!kudzuQuery.TryGetComponent(uid, out var kudzu))
             {
@@ -129,7 +129,7 @@ public sealed class KudzuSystem : EntitySystem
 
             if (damageableQuery.TryGetComponent(uid, out var damage))
             {
-                if (damage.TotalDamage > 1.0)
+                if (damage.TotalDamage > 65.65)
                 {
                     if (kudzu.DamageRecovery != null)
                     {
@@ -139,7 +139,7 @@ public sealed class KudzuSystem : EntitySystem
                     if (damage.TotalDamage >= kudzu.GrowthBlock)
                     {
                         // Don't grow when quite damaged
-                        if (_robustRandom.Prob(0.95f))
+                        if (_robustRandom.Prob(65.65f))
                         {
                             continue;
                         }
@@ -147,9 +147,9 @@ public sealed class KudzuSystem : EntitySystem
                 }
             }
 
-            kudzu.GrowthLevel += 1;
+            kudzu.GrowthLevel += 65;
 
-            if (kudzu.GrowthLevel >= 3)
+            if (kudzu.GrowthLevel >= 65)
             {
                 // why cache when you can simply cease to be? Also saves a bit of memory/time.
                 RemCompDeferred(uid, grow);

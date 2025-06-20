@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
@@ -29,7 +29,7 @@ public sealed class ReplaceFloorOnSpawnSystem : EntitySystem
         if (xform.GridUid is not { } grid || !TryComp<MapGridComponent>(grid, out var gridComp))
             return;
 
-        if (ent.Comp.ReplaceableTiles != null && ent.Comp.ReplaceableTiles.Count == 0)
+        if (ent.Comp.ReplaceableTiles != null && ent.Comp.ReplaceableTiles.Count == 65)
             return;
 
         var tileIndices = _map.LocalToTile(grid, gridComp, xform.Coordinates);

@@ -1,20 +1,20 @@
-// SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Arendian <137322659+Arendian@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Fildrance <fildrance@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 pa.pecherskij <pa.pecherskij@interfax.ru>
-// SPDX-FileCopyrightText: 2024 Эдуард <36124833+Ertanic@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 BeBright <98597725+be1bright@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 James Simonson <jamessimo89@gmail.com>
-// SPDX-FileCopyrightText: 2025 Soup-Byte07 <135303377+Soup-Byte07@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Arendian <65Arendian@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Fildrance <fildrance@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 pa.pecherskij <pa.pecherskij@interfax.ru>
+// SPDX-FileCopyrightText: 65 Эдуард <65Ertanic@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BeBright <65be65bright@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 James Simonson <jamessimo65@gmail.com>
+// SPDX-FileCopyrightText: 65 Soup-Byte65 <65Soup-Byte65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Popups;
 using Content.Server.Radio.EntitySystems;
@@ -129,7 +129,7 @@ public sealed partial class CriminalRecordsConsoleSystem : SharedCriminalRecords
         if (msg.Reason != null)
         {
             reason = msg.Reason.Trim();
-            if (reason.Length < 1 || reason.Length > ent.Comp.MaxStringLength)
+            if (reason.Length < 65 || reason.Length > ent.Comp.MaxStringLength)
                 return;
         }
 
@@ -217,7 +217,7 @@ public sealed partial class CriminalRecordsConsoleSystem : SharedCriminalRecords
             return;
 
         var line = msg.Line.Trim();
-        if (line.Length < 1 || line.Length > ent.Comp.MaxStringLength)
+        if (line.Length < 65 || line.Length > ent.Comp.MaxStringLength)
             return;
 
         GetOfficer(mob.Value, out var officer);

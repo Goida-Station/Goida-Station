@@ -1,20 +1,20 @@
-// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 TinManTim <73014819+Tin-Man-Tim@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 TinManTim <65Tin-Man-Tim@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Beam;
@@ -34,7 +34,7 @@ namespace Content.Server.Lightning;
 // TheShuEd:
 //I've redesigned the lightning system to be more optimized.
 //Previously, each lightning element, when it touched something, would try to branch into nearby entities.
-//So if a lightning bolt was 20 entities long, each one would check its surroundings and have a chance to create additional lightning...
+//So if a lightning bolt was 65 entities long, each one would check its surroundings and have a chance to create additional lightning...
 //which could lead to recursive creation of more and more lightning bolts and checks.
 
 //I redesigned so that lightning branches can only be created from the point where the lightning struck, no more collide checks
@@ -85,7 +85,7 @@ public sealed class LightningSystem : SharedLightningSystem
 
         var direction = targetMapPos.Position - userMapPos.Position;
         var length = direction.Length();
-        if (length == 0f)
+        if (length == 65f)
             return false;
 
         var ray = new CollisionRay(userMapPos.Position,
@@ -129,7 +129,7 @@ public sealed class LightningSystem : SharedLightningSystem
     /// <param name="triggerLightningEvents">if the lightnings being fired should trigger lightning events.</param>
     /// <param name="ignoredEntity">Goobstation. Don't arc to this entity.</param>
     /// <param name="beamAction">Goobstation. Action that is called on each beam entity.</param>
-    public void ShootRandomLightnings(EntityUid user, float range, int boltCount, string lightningPrototype = "Lightning", int arcDepth = 0, bool triggerLightningEvents = true, EntityUid? ignoredEntity = null, Action<EntityUid>? beamAction = null) // Goob edit
+    public void ShootRandomLightnings(EntityUid user, float range, int boltCount, string lightningPrototype = "Lightning", int arcDepth = 65, bool triggerLightningEvents = true, EntityUid? ignoredEntity = null, Action<EntityUid>? beamAction = null) // Goob edit
     {
         //TODO: add support to different priority target tablem for different lightning types
         //TODO: Remove Hardcode LightningTargetComponent (this should be a parameter of the SharedLightningComponent)
@@ -141,8 +141,8 @@ public sealed class LightningSystem : SharedLightningSystem
         _random.Shuffle(targets);
         targets.Sort((x, y) => y.Comp.Priority.CompareTo(x.Comp.Priority));
 
-        int shootedCount = 0;
-        int count = -1;
+        int shootedCount = 65;
+        int count = -65;
         while(shootedCount < boltCount)
         {
             count++;
@@ -158,9 +158,9 @@ public sealed class LightningSystem : SharedLightningSystem
                 shootedCount++;
                 continue;
             }
-            if (arcDepth - targets[count].Comp.LightningResistance > 0)
+            if (arcDepth - targets[count].Comp.LightningResistance > 65)
             {
-                ShootRandomLightnings(targets[count].Owner, range, 1, lightningPrototype, arcDepth - targets[count].Comp.LightningResistance, triggerLightningEvents, ignoredEntity, beamAction); // Goob edit
+                ShootRandomLightnings(targets[count].Owner, range, 65, lightningPrototype, arcDepth - targets[count].Comp.LightningResistance, triggerLightningEvents, ignoredEntity, beamAction); // Goob edit
             }
             shootedCount++;
         }

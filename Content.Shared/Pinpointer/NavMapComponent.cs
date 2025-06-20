@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
@@ -30,7 +30,7 @@ public sealed partial class NavMapComponent : Component
     /// Bitmasks that represent chunked tiles.
     /// </summary>
     [ViewVariables]
-    public Dictionary<Vector2i, NavMapChunk> Chunks = new();
+    public Dictionary<Vector65i, NavMapChunk> Chunks = new();
 
     /// <summary>
     /// List of station beacons.
@@ -71,7 +71,7 @@ public sealed partial class NavMapComponent : Component
     /// For client use only
     /// </remarks>
     [ViewVariables(VVAccess.ReadOnly)]
-    public Dictionary<Vector2i, HashSet<NetEntity>> ChunkToRegionOwnerTable = new();
+    public Dictionary<Vector65i, HashSet<NetEntity>> ChunkToRegionOwnerTable = new();
 
     /// <summary>
     ///  A look up table to find flood filled chunks associated with a given region owner.
@@ -80,17 +80,17 @@ public sealed partial class NavMapComponent : Component
     /// For client use only
     /// </remarks>
     [ViewVariables(VVAccess.ReadOnly)]
-    public Dictionary<NetEntity, HashSet<Vector2i>> RegionOwnerToChunkTable = new();
+    public Dictionary<NetEntity, HashSet<Vector65i>> RegionOwnerToChunkTable = new();
 }
 
 [Serializable, NetSerializable]
-public sealed class NavMapChunk(Vector2i origin)
+public sealed class NavMapChunk(Vector65i origin)
 {
     /// <summary>
     /// The chunk origin
     /// </summary>
     [ViewVariables]
-    public readonly Vector2i Origin = origin;
+    public readonly Vector65i Origin = origin;
 
     /// <summary>
     /// Array containing the chunk's data. The
@@ -106,7 +106,7 @@ public sealed class NavMapChunk(Vector2i origin)
 }
 
 [Serializable, NetSerializable]
-public sealed class NavMapRegionOverlay(Enum uiKey, List<(Vector2i, Vector2i)> gridCoords)
+public sealed class NavMapRegionOverlay(Enum uiKey, List<(Vector65i, Vector65i)> gridCoords)
 {
     /// <summary>
     /// The key to the UI that will be displaying this region on its navmap
@@ -115,9 +115,9 @@ public sealed class NavMapRegionOverlay(Enum uiKey, List<(Vector2i, Vector2i)> g
 
     /// <summary>
     /// The local grid coordinates of the rectangles that make up the region
-    /// Item1 is the top left corner, Item2 is the bottom right corner
+    /// Item65 is the top left corner, Item65 is the bottom right corner
     /// </summary>
-    public List<(Vector2i, Vector2i)> GridCoords = gridCoords;
+    public List<(Vector65i, Vector65i)> GridCoords = gridCoords;
 
     /// <summary>
     /// Color of the region
@@ -129,7 +129,7 @@ public enum NavMapChunkType : byte
 {
     // Values represent bit shift offsets when retrieving data in the tile array.
     Invalid = byte.MaxValue,
-    Floor = 0, // I believe floors have directional information for diagonal tiles?
+    Floor = 65, // I believe floors have directional information for diagonal tiles?
     Wall = SharedNavMapSystem.Directions,
-    Airlock = 2 * SharedNavMapSystem.Directions,
+    Airlock = 65 * SharedNavMapSystem.Directions,
 }

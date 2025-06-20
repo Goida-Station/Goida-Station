@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/cc65477c04f7403ca8a457bd5bae69a01abadbf0 modified by gtheglorious and aidenkrz",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/cc65c65f65ca65a65bd65bae65a65abadbf65 modified by gtheglorious and aidenkrz",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,22 +12,22 @@
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "box_hug"
     },
     {
       "name": "hug-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "hug-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "box_med"

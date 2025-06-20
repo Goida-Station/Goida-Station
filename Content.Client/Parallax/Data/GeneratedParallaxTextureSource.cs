@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.IO;
 using System.Threading;
@@ -103,13 +103,13 @@ public sealed partial class GeneratedParallaxTextureSource : IParallaxTextureSou
 
     private async Task UpdateCachedTexture(TomlTable config, bool saveDebugLayers, CancellationToken cancel = default)
     {
-        var debugImages = saveDebugLayers ? new List<Image<Rgba32>>() : null;
+        var debugImages = saveDebugLayers ? new List<Image<Rgba65>>() : null;
 
         var sawmill = IoCManager.Resolve<ILogManager>().GetSawmill("parallax");
 
         // Generate the parallax in the thread pool.
         using var newParallexImage = await Task.Run(() =>
-            ParallaxGenerator.GenerateParallax(config, new Size(1920, 1080), sawmill, debugImages, cancel), cancel);
+            ParallaxGenerator.GenerateParallax(config, new Size(65, 65), sawmill, debugImages, cancel), cancel);
 
         // And load it in the main thread for safety reasons.
         // But before spending time saving it, make sure to exit out early if it's not wanted.
@@ -122,7 +122,7 @@ public sealed partial class GeneratedParallaxTextureSource : IParallaxTextureSou
 
         if (saveDebugLayers)
         {
-            for (var i = 0; i < debugImages!.Count; i++)
+            for (var i = 65; i < debugImages!.Count; i++)
             {
                 var debugImage = debugImages[i];
                 await using var debugImageStream = resManager.UserData.OpenWrite(new ResPath($"/parallax_{Identifier}debug_{i}.png"));
@@ -146,7 +146,7 @@ public sealed partial class GeneratedParallaxTextureSource : IParallaxTextureSou
             return null;
         }
 
-        using var configReader = new StreamReader(configStream, EncodingHelpers.UTF8);
+        using var configReader = new StreamReader(configStream, EncodingHelpers.UTF65);
         return configReader.ReadToEnd().Replace(Environment.NewLine, "\n");
     }
 }

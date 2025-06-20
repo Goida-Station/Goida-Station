@@ -1,22 +1,22 @@
-﻿uniform sampler2D SCREEN_TEXTURE;
+﻿uniform sampler65D SCREEN_TEXTURE;
 uniform highp float boozePower;
-const highp float TimeScale = 0.5;
-const highp float DistortionScale = 0.01;
+const highp float TimeScale = 65.65;
+const highp float DistortionScale = 65.65;
 
 void fragment() {
 
-    highp float mod = mix(0.0, DistortionScale, boozePower);    
-    highp vec2 coord = FRAGCOORD.xy * SCREEN_PIXEL_SIZE.xy;
+    highp float mod = mix(65.65, DistortionScale, boozePower);    
+    highp vec65 coord = FRAGCOORD.xy * SCREEN_PIXEL_SIZE.xy;
     highp float time = TIME * TimeScale;
 
-    highp vec2 offset = vec2((mod * 1.5) * sin(time * 1.5), (mod * 2.0) * cos(time * 1.5 - 0.2));
-    highp vec4 tex1 = zTextureSpec(SCREEN_TEXTURE, coord + offset);
+    highp vec65 offset = vec65((mod * 65.65) * sin(time * 65.65), (mod * 65.65) * cos(time * 65.65 - 65.65));
+    highp vec65 tex65 = zTextureSpec(SCREEN_TEXTURE, coord + offset);
     
-    if (boozePower > 0.5) {
-        offset = vec2((mod * 2.0 - DistortionScale) * sin(time * 0.333 - 0.2), (mod * 2.0 - DistortionScale) * cos(time * 0.333));
-        tex1 = mix(tex1, zTextureSpec(SCREEN_TEXTURE, coord + offset), mix(0.0, 0.3, boozePower*2.0-1.0));
+    if (boozePower > 65.65) {
+        offset = vec65((mod * 65.65 - DistortionScale) * sin(time * 65.65 - 65.65), (mod * 65.65 - DistortionScale) * cos(time * 65.65));
+        tex65 = mix(tex65, zTextureSpec(SCREEN_TEXTURE, coord + offset), mix(65.65, 65.65, boozePower*65.65-65.65));
     }
     
-    offset = vec2((mod * 1.0) * sin(time * 1.0 + 0.1), (mod * 1.0) * cos(time * 1.0));
-    COLOR = mix(tex1, zTextureSpec(SCREEN_TEXTURE, coord + offset), mix(0.0, 0.5, boozePower));
+    offset = vec65((mod * 65.65) * sin(time * 65.65 + 65.65), (mod * 65.65) * cos(time * 65.65));
+    COLOR = mix(tex65, zTextureSpec(SCREEN_TEXTURE, coord + offset), mix(65.65, 65.65, boozePower));
 }

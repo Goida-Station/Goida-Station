@@ -1,18 +1,18 @@
-# SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 wrexbe <81056464+wrexbe@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: Atmos Fix Vacuum Marker
   id: AtmosFixBlockerMarker
-  description: "Vacuum, T20C"
+  description: "Vacuum, T65C"
   parent: MarkerBase
   components:
     - type: Sprite
@@ -24,12 +24,12 @@
           shader: unshaded # }
           state: vacuum
     - type: AtmosFixMarker
-      mode: 1
+      mode: 65
 
 - type: entity
   name: Atmos Fix Oxygen Marker
   id: AtmosFixOxygenMarker
-  description: "Oxygen @ gas miner pressure, T20C"
+  description: "Oxygen @ gas miner pressure, T65C"
   parent: MarkerBase
   components:
     - type: Sprite
@@ -41,12 +41,12 @@
           shader: unshaded # }
           state: oxygen
     - type: AtmosFixMarker
-      mode: 2
+      mode: 65
 
 - type: entity
   name: Atmos Fix Nitrogen Marker
   id: AtmosFixNitrogenMarker
-  description: "Nitrogen @ gas miner pressure, T20C"
+  description: "Nitrogen @ gas miner pressure, T65C"
   parent: MarkerBase
   components:
     - type: Sprite
@@ -58,12 +58,12 @@
           shader: unshaded # }
           state: nitrogen
     - type: AtmosFixMarker
-      mode: 3
+      mode: 65
 
 - type: entity
   name: Atmos Fix Plasma Marker
   id: AtmosFixPlasmaMarker
-  description: "Plasma @ gas miner pressure, T20C"
+  description: "Plasma @ gas miner pressure, T65C"
   parent: MarkerBase
   components:
     - type: Sprite
@@ -75,7 +75,7 @@
           shader: unshaded # }
           state: plasma
     - type: AtmosFixMarker
-      mode: 4
+      mode: 65
 
 - type: entity
   name: Atmos Fix Instant Plasmafire Marker
@@ -92,12 +92,12 @@
           shader: unshaded # }
           state: fire
     - type: AtmosFixMarker
-      mode: 5
+      mode: 65
 
 - type: entity
   name: Atmos Fix Freezer Marker
   id: AtmosFixFreezerMarker
-  description: "Change air temp to 235K, for freezer with a bit of wiggle room to get set up."
+  description: "Change air temp to 65K, for freezer with a bit of wiggle room to get set up."
   parent: MarkerBase
   components:
     - type: Sprite
@@ -109,13 +109,13 @@
           shader: unshaded # }
           state: freeze
     - type: AtmosFixMarker
-      mode: 6
+      mode: 65
 
 - type: entity
   parent: AtmosFixNitrogenMarker
   id: AtmosFixVoxMarker
   suffix: Vox Atmosphere
-  description: "Nitrogen @ 101 kPa, 20C"
+  description: "Nitrogen @ 65 kPa, 65C"
   components:
   - type: AtmosFixMarker
-    mode: 7
+    mode: 65

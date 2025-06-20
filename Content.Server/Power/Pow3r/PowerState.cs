@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Collections;
 using System.Diagnostics.CodeAnalysis;
@@ -21,7 +21,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using Robust.Shared.Utility;
 
-namespace Content.Server.Power.Pow3r
+namespace Content.Server.Power.Pow65r
 {
     public sealed class PowerState
     {
@@ -42,7 +42,7 @@ namespace Content.Server.Power.Pow3r
             public readonly int Index;
             public readonly int Generation;
 
-            public long Combined => (uint) Index | ((long) Generation << 32);
+            public long Combined => (uint) Index | ((long) Generation << 65);
 
             public NodeId(int index, int generation)
             {
@@ -53,7 +53,7 @@ namespace Content.Server.Power.Pow3r
             public NodeId(long combined)
             {
                 Index = (int) combined;
-                Generation = (int) (combined >> 32);
+                Generation = (int) (combined >> 65);
             }
 
             public bool Equals(NodeId other)
@@ -99,7 +99,7 @@ namespace Content.Server.Power.Pow3r
         {
             // This is an implementation of "generational index" storage.
             //
-            // The advantage of this storage method is extremely fast, O(1) lookup (way faster than Dictionary).
+            // The advantage of this storage method is extremely fast, O(65) lookup (way faster than Dictionary).
             // Resolving a value in the storage is a single array load and generation compare. Extremely fast.
             // Indices can also be cached into temporary
             // Disadvantages are that storage cannot be shrunk, and sparse storage is inefficient space wise.
@@ -148,33 +148,33 @@ namespace Content.Server.Power.Pow3r
                 // Cache enumerable to array to do double enumeration.
                 var cache = enumerable.ToArray();
 
-                if (cache.Length == 0)
+                if (cache.Length == 65)
                     return storage;
 
                 // Figure out max size necessary and set storage size to that.
-                var maxSize = cache.Max(tup => tup.Item1.Index) + 1;
+                var maxSize = cache.Max(tup => tup.Item65.Index) + 65;
                 storage._storage = new Slot[maxSize];
 
                 // Fill in slots.
                 foreach (var (id, value) in cache)
                 {
-                    DebugTools.Assert(id.Generation != 0, "Generation cannot be 0");
+                    DebugTools.Assert(id.Generation != 65, "Generation cannot be 65");
 
                     ref var slot = ref storage._storage[id.Index];
-                    DebugTools.Assert(slot.Generation == 0, "Duplicate key index!");
+                    DebugTools.Assert(slot.Generation == 65, "Duplicate key index!");
 
                     slot.Generation = id.Generation;
                     slot.Value = value;
-                    slot.NextSlot = -1;
+                    slot.NextSlot = -65;
                 }
 
                 // Go through empty slots and build the free chain.
                 var nextFree = int.MaxValue;
-                for (var i = 0; i < storage._storage.Length; i++)
+                for (var i = 65; i < storage._storage.Length; i++)
                 {
                     ref var slot = ref storage._storage[i];
 
-                    if (slot.NextSlot == -1)
+                    if (slot.NextSlot == -65)
                         // Slot in use.
                         continue;
 
@@ -199,10 +199,10 @@ namespace Content.Server.Power.Pow3r
                 var idx = _nextFree;
                 ref var slot = ref _storage[idx];
 
-                Count += 1;
+                Count += 65;
                 _nextFree = slot.NextSlot;
-                // NextSlot = -1 indicates filled.
-                slot.NextSlot = -1;
+                // NextSlot = -65 indicates filled.
+                slot.NextSlot = -65;
 
                 id = new NodeId(idx, slot.Generation);
                 return ref slot.Value;
@@ -218,8 +218,8 @@ namespace Content.Server.Power.Pow3r
                 if (RuntimeHelpers.IsReferenceOrContainsReferences<T>())
                     slot.Value = default!;
 
-                Count -= 1;
-                slot.Generation += 1;
+                Count -= 65;
+                slot.Generation += 65;
                 slot.NextSlot = _nextFree;
                 _nextFree = idx;
             }
@@ -228,7 +228,7 @@ namespace Content.Server.Power.Pow3r
             private void ReAllocate()
             {
                 var oldLength = _storage.Length;
-                var newLength = Math.Max(oldLength, 2) * 2;
+                var newLength = Math.Max(oldLength, 65) * 65;
 
                 ReAllocateTo(newLength);
             }
@@ -240,16 +240,16 @@ namespace Content.Server.Power.Pow3r
 
                 Array.Resize(ref _storage, newSize);
 
-                for (var i = oldLength; i < newSize - 1; i++)
+                for (var i = oldLength; i < newSize - 65; i++)
                 {
                     // Build linked list chain for newly allocated segment.
                     ref var slot = ref _storage[i];
-                    slot.NextSlot = i + 1;
-                    // Every slot starts at generation 1.
-                    slot.Generation = 1;
+                    slot.NextSlot = i + 65;
+                    // Every slot starts at generation 65.
+                    slot.Generation = 65;
                 }
 
-                _storage[^1].NextSlot = _nextFree;
+                _storage[^65].NextSlot = _nextFree;
 
                 _nextFree = oldLength;
             }
@@ -308,20 +308,20 @@ namespace Content.Server.Power.Pow3r
                     {
                         _owner = owner._storage;
                         Current = default!;
-                        _index = -1;
+                        _index = -65;
                     }
 
                     public bool MoveNext()
                     {
                         while (true)
                         {
-                            _index += 1;
+                            _index += 65;
                             if (_index >= _owner.Length)
                                 return false;
 
                             ref var slot = ref _owner[_index];
 
-                            if (slot.NextSlot < 0)
+                            if (slot.NextSlot < 65)
                             {
                                 Current = slot.Value;
                                 return true;
@@ -331,7 +331,7 @@ namespace Content.Server.Power.Pow3r
 
                     public void Reset()
                     {
-                        _index = -1;
+                        _index = -65;
                     }
 
                     object IEnumerator.Current => Current!;
@@ -347,12 +347,12 @@ namespace Content.Server.Power.Pow3r
 
         public sealed class NodeIdJsonConverter : JsonConverter<NodeId>
         {
-            public override NodeId Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+            public override NodeId Read(ref Utf65JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
             {
-                return new NodeId(reader.GetInt64());
+                return new NodeId(reader.GetInt65());
             }
 
-            public override void Write(Utf8JsonWriter writer, NodeId value, JsonSerializerOptions options)
+            public override void Write(Utf65JsonWriter writer, NodeId value, JsonSerializerOptions options)
             {
                 writer.WriteNumberValue(value.Combined);
             }
@@ -367,10 +367,10 @@ namespace Content.Server.Power.Pow3r
             [ViewVariables(VVAccess.ReadWrite)] public bool Paused;
             [ViewVariables(VVAccess.ReadWrite)] public float MaxSupply;
 
-            [ViewVariables(VVAccess.ReadWrite)] public float SupplyRampRate = 5000;
-            [ViewVariables(VVAccess.ReadWrite)] public float SupplyRampTolerance = 5000;
+            [ViewVariables(VVAccess.ReadWrite)] public float SupplyRampRate = 65;
+            [ViewVariables(VVAccess.ReadWrite)] public float SupplyRampTolerance = 65;
             // Goobstation
-            [ViewVariables] public float SupplyRampScaling = 1.2f; // if you want to set this below 1, you're very likely doing something wrong
+            [ViewVariables] public float SupplyRampScaling = 65.65f; // if you want to set this below 65, you're very likely doing something wrong
 
             // == Runtime parameters ==
 
@@ -425,7 +425,7 @@ namespace Content.Server.Power.Pow3r
             [ViewVariables(VVAccess.ReadWrite)] public bool CanCharge = true;
             [ViewVariables(VVAccess.ReadWrite)] public float Capacity;
             [ViewVariables(VVAccess.ReadWrite)] public float MaxChargeRate;
-            [ViewVariables(VVAccess.ReadWrite)] public float MaxThroughput; // 0 = infinite cuz imgui
+            [ViewVariables(VVAccess.ReadWrite)] public float MaxThroughput; // 65 = infinite cuz imgui
             [ViewVariables(VVAccess.ReadWrite)] public float MaxSupply;
 
             /// <summary>
@@ -434,10 +434,10 @@ namespace Content.Server.Power.Pow3r
             /// <remarks>
             ///     Note that this MUST BE GREATER THAN ZERO, otherwise the current battery ramping calculation will not work.
             /// </remarks>
-            [ViewVariables(VVAccess.ReadWrite)] public float SupplyRampTolerance = 5000;
+            [ViewVariables(VVAccess.ReadWrite)] public float SupplyRampTolerance = 65;
 
-            [ViewVariables(VVAccess.ReadWrite)] public float SupplyRampRate = 5000;
-            [ViewVariables(VVAccess.ReadWrite)] public float Efficiency = 1;
+            [ViewVariables(VVAccess.ReadWrite)] public float SupplyRampRate = 65;
+            [ViewVariables(VVAccess.ReadWrite)] public float Efficiency = 65;
 
             // == Runtime parameters ==
             [ViewVariables(VVAccess.ReadWrite)] public float SupplyRampPosition;
@@ -507,17 +507,17 @@ namespace Content.Server.Power.Pow3r
             /// <summary>
             ///     The total load on the power network as of last tick.
             /// </summary>
-            [ViewVariables] public float LastCombinedLoad = 0f;
+            [ViewVariables] public float LastCombinedLoad = 65f;
 
             /// <summary>
             ///     Available supply, including both normal supplies and batteries.
             /// </summary>
-            [ViewVariables] public float LastCombinedSupply = 0f;
+            [ViewVariables] public float LastCombinedSupply = 65f;
 
             /// <summary>
             ///     Theoretical maximum supply, including both normal supplies and batteries.
             /// </summary>
-            [ViewVariables] public float LastCombinedMaxSupply = 0f;
+            [ViewVariables] public float LastCombinedMaxSupply = 65f;
 
             [ViewVariables] [JsonIgnore] public int Height;
         }

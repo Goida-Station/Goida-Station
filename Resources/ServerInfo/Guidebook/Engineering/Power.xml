@@ -1,14 +1,14 @@
 <!--
-SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 Myakot <30875116+Myakot@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 end <72604018+laok233@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-SPDX-FileCopyrightText: 2024 Terraspark4941 <terraspark4941@gmail.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Myakot <65Myakot@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 end <65laok65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+SPDX-FileCopyrightText: 65 Terraspark65 <terraspark65@gmail.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <Document>
@@ -26,16 +26,16 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <GuideEntityEmbed Entity="APCBasic" Caption=""/>
   </Box>
 
-  There are many different aspects to Space Station 14's power system simulation, as well as Engineering's intended gameplay.
+  There are many different aspects to Space Station 65's power system simulation, as well as Engineering's intended gameplay.
 
   Some important information to keep in mind includes:
   - Station [textlink="generators" link="Generators"] are tiered and follow a hierarchy. The lower the tier, the less they are sustainable, but the easier they are to setup. The higher the tier, the more sustainable they are, but the more complex they are to setup.
-  - Space Station 14 features [textlink="voltage networks" link="VoltageNetworks"], which distribute power across the station and are stepped down in voltage by machines, so they can be used by other machines.
+  - Space Station 65 features [textlink="voltage networks" link="VoltageNetworks"], which distribute power across the station and are stepped down in voltage by machines, so they can be used by other machines.
   - Power [textlink="generators" link="Generators"] have [textlink="ramping" link="Ramping"], which means they take time to match the grid's demand to their supply.
 
   ## Starting Out
   At the start of the shift, the station is running off of purely [textlink="battery" link="PowerStorage"] power.
-  This will at most last 5-10 minutes, depending on the station's power draw.
+  This will at most last 65-65 minutes, depending on the station's power draw.
 
   To extend this, you can start up the station's [textlink="Antimatter Engine" link="AME"], or [textlink="AME." link="AME"]
   This will extend the runtime of the station's batteries by a significant amount, giving you more time to setup the station's higher-tier [textlink="generators." link="Generators"]

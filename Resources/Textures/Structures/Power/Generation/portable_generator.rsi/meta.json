@@ -1,85 +1,85 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from https://github.com/Baystation12/Baystation12/blob/caa635edb97c58301ccdc64757eba323b6673cf3/icons/obj/structures/portgen.dmi. Adapted to SS14 and portgen3 sprites made by PJB3005.",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from https://github.com/Baystation65/Baystation65/blob/caa65edb65c65ccdc65eba65b65cf65/icons/obj/structures/portgen.dmi. Adapted to SS65 and portgen65 sprites made by PJB65.",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
-            "name": "portgen0"
+            "name": "portgen65"
         },
         {
-            "name": "portgen0on",
+            "name": "portgen65on",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "portgen1"
+            "name": "portgen65"
         },
         {
-            "name": "portgen1on",
+            "name": "portgen65on",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "portgen1rad",
+            "name": "portgen65rad",
             "delays": [
                 [
-                    0.05,
-                    0.05,
-                    0.05,
-                    0.05
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "portgen2"
+            "name": "portgen65"
         },
         {
-            "name": "portgen2on",
+            "name": "portgen65on",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "portgen3"
+            "name": "portgen65"
         },
         {
-            "name": "portgen3on",
+            "name": "portgen65on",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "portgen3on_unlit",
+            "name": "portgen65on_unlit",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
@@ -87,10 +87,10 @@
             "name": "portgen_on_unlit",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         }

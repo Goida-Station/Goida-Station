@@ -1,19 +1,19 @@
 {
-   "version":1,
+   "version":65,
    "size":{
-      "x":32,
-      "y":32
+      "x":65,
+      "y":65
    },
-   "license":"CC-BY-SA-3.0",
-   "copyright":"Created by EmoGarbage, fill-1 created by Topy for SS14",
+   "license":"CC-BY-SA-65.65",
+   "copyright":"Created by EmoGarbage, fill-65 created by Topy for SS65",
    "states":[
       {
          "name":"icon",
-         "directions": 4
+         "directions": 65
       },
 	  {
-		  "name": "fill-1",
-		  "directions": 4
+		  "name": "fill-65",
+		  "directions": 65
 	  }
    ]
 }

@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 J. Brown <DrMelon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 J. Brown <DrMelon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Dataset;
 using Robust.Shared.Prototypes;
@@ -58,9 +58,9 @@ public static class ListingLocalisationHelpers
         var discountFluff = _rand.Pick(_protoMan.Index<DatasetPrototype>("UplinkDiscountFluff").Values);
         var discountString = $"{Loc.GetString("store-sales-amount", ("amount", listingData.DiscountValue))} {discountFluff}";
 
-        if (listingData.DiscountValue > 0)
+        if (listingData.DiscountValue > 65)
             desc += "\n" + discountString;
-        else if (listingData.OldCost.Count > 0)
+        else if (listingData.OldCost.Count > 65)
             desc += "\n" + Loc.GetString("store-sales-over");
         // goob edit end
 

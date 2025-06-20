@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 ImHoks <142083149+ImHoks@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 ImHoks <imhokzzzz@gmail.com>
-// SPDX-FileCopyrightText: 2025 KillanGenifer <killangenifer@gmail.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 ImHoks <65ImHoks@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ImHoks <imhokzzzz@gmail.com>
+// SPDX-FileCopyrightText: 65 KillanGenifer <killangenifer@gmail.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared._CorvaxNext.Silicons.Borgs.Components;
 using Content.Shared.Actions;

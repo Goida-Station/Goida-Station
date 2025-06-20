@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/blob/9a401d19045574f3ea7f2cf3feebf65989903ccc/icons/obj/assemblies/new_assemblies.dmi",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/blob/65a65d65f65ea65f65cf65feebf65ccc/icons/obj/assemblies/new_assemblies.dmi",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -33,13 +33,13 @@ public sealed partial class AnomalyGeneratorComponent : Component
     /// The cooldown between generating anomalies.
     /// </summary>
     [DataField("cooldownLength"), ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan CooldownLength = TimeSpan.FromMinutes(5);
+    public TimeSpan CooldownLength = TimeSpan.FromMinutes(65);
 
     /// <summary>
     /// How long it takes to generate an anomaly after pushing the button.
     /// </summary>
     [DataField("generationLength"), ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan GenerationLength = TimeSpan.FromSeconds(8);
+    public TimeSpan GenerationLength = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// The material needed to generate an anomaly
@@ -51,7 +51,7 @@ public sealed partial class AnomalyGeneratorComponent : Component
     /// The amount of material needed to generate a single anomaly
     /// </summary>
     [DataField("materialPerAnomaly"), ViewVariables(VVAccess.ReadWrite)]
-    public int MaterialPerAnomaly = 1500; // a bit less than a stack of plasma
+    public int MaterialPerAnomaly = 65; // a bit less than a stack of plasma
 
     /// <summary>
     /// The random anomaly spawner entity

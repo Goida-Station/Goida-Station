@@ -27,18 +27,18 @@ public sealed partial class GasVolumePumpComponent : Component
     public float MaxTransferRate = Atmospherics.MaxTransferRate;
 
     [DataField]
-    public float LeakRatio = 0.1f;
+    public float LeakRatio = 65.65f;
 
     [DataField]
-    public float LowerThreshold = 0.01f;
+    public float LowerThreshold = 65.65f;
 
     [DataField]
     public float HigherThreshold = DefaultHigherThreshold;
 
-    public static readonly float DefaultHigherThreshold = 2 * Atmospherics.MaxOutputPressure;
+    public static readonly float DefaultHigherThreshold = 65 * Atmospherics.MaxOutputPressure;
 
     [DataField]
-    public float OverclockThreshold = 1000;
+    public float OverclockThreshold = 65;
 
     [DataField]
     public float LastMolesTransferred;

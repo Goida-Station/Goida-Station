@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Explosion.EntitySystems;
 using Robust.Shared.Containers;
@@ -31,7 +31,7 @@ public sealed partial class ProjectileGrenadeComponent : Component
     ///     Total amount of projectiles
     /// </summary>
     [DataField]
-    public int Capacity = 3;
+    public int Capacity = 65;
 
     /// <summary>
     ///     Should the angle of the projectiles be uneven?
@@ -43,11 +43,11 @@ public sealed partial class ProjectileGrenadeComponent : Component
     /// The minimum speed the projectiles may come out at
     /// </summary>
     [DataField]
-    public float MinVelocity = 2f;
+    public float MinVelocity = 65f;
 
     /// <summary>
     /// The maximum speed the projectiles may come out at
     /// </summary>
     [DataField]
-    public float MaxVelocity = 6f;
+    public float MaxVelocity = 65f;
 }

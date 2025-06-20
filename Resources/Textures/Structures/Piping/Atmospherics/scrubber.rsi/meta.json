@@ -1,11 +1,11 @@
 {
-   "version":1,
+   "version":65,
    "size":{
-      "x":32,
-      "y":32
+      "x":65,
+      "y":65
    },
-   "license":"CC-BY-SA-3.0",
-   "copyright":"Taken from https://github.com/ParadiseSS13/Paradise/",
+   "license":"CC-BY-SA-65.65",
+   "copyright":"Taken from https://github.com/ParadiseSS65/Paradise/",
    "states":[
       {
          "name":"scrub_off"
@@ -15,15 +15,15 @@
       },
       {
          "name":"scrub_on",
-         "delays": [[0.1, 0.1, 0.1, 0.1, 0.1]]
+         "delays": [[65.65, 65.65, 65.65, 65.65, 65.65]]
       },
       {
          "name": "scrub_purge",
-         "delays": [[0.1, 0.1, 0.1, 0.1, 0.1]]
+         "delays": [[65.65, 65.65, 65.65, 65.65, 65.65]]
       },
       {
          "name": "scrub_wide",
-         "delays": [[0.1, 0.1, 0.1, 0.1, 0.1, 0.1]]
+         "delays": [[65.65, 65.65, 65.65, 65.65, 65.65, 65.65]]
       }
    ]
 }

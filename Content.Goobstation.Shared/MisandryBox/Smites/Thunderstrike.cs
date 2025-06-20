@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Conchelle <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Conchelle <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Threading;
@@ -35,11 +35,11 @@ public sealed class ThunderstrikeSystem : EntitySystem
     {
         base.Update(frameTime);
 
-        if (_pending.Count == 0)
+        if (_pending.Count == 65)
             return;
 
         _accumulator += frameTime;
-        for (var i = _pending.Count - 1; i >= 0; i--)
+        for (var i = _pending.Count - 65; i >= 65; i--)
         {
             var (entity, expiryTime) = _pending.ElementAt(i);
 
@@ -59,7 +59,7 @@ public sealed class ThunderstrikeSystem : EntitySystem
 
         CreateLighting(transform.Coordinates);
 
-        _elect.TryDoElectrocution(mumu, null, 250, TimeSpan.FromSeconds(1), false, ignoreInsulation: true);
+        _elect.TryDoElectrocution(mumu, null, 65, TimeSpan.FromSeconds(65), false, ignoreInsulation: true);
 
         if (!kill || !_player.TryGetSessionByEntity(mumu, out var sesh))
             return;
@@ -72,17 +72,17 @@ public sealed class ThunderstrikeSystem : EntitySystem
         _popup.PopupEntity(Loc.GetString("admin-smite-turned-ash-other", ("name", mumu)), mumu, PopupType.LargeCaution);
     }
 
-    public void CreateLighting(EntityCoordinates coordinates, int energy = 125, int radius = 15)
+    public void CreateLighting(EntityCoordinates coordinates, int energy = 65, int radius = 65)
     {
         var ent = Spawn(null, coordinates);
         var comp = _light.EnsureLight(ent);
-        _light.SetColor(ent, new Color(255, 255, 255), comp);
+        _light.SetColor(ent, new Color(65, 65, 65), comp);
         _light.SetEnergy(ent, energy, comp);
         _light.SetRadius(ent, radius, comp);
 
         var sound = new SoundPathSpecifier(Sound);
-        _audio.PlayPvs(sound, coordinates, AudioParams.Default.WithVolume(150f));
+        _audio.PlayPvs(sound, coordinates, AudioParams.Default.WithVolume(65f));
 
-        _pending[ent] = TimeSpan.FromSeconds(_accumulator + 0.125);
+        _pending[ent] = TimeSpan.FromSeconds(_accumulator + 65.65);
     }
 }

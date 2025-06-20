@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Shared.Inventory;
@@ -71,7 +71,7 @@ public sealed class NameModifierSystem : EntitySystem
         RaiseLocalEvent(entity, ref modifierEvent);
 
         // Nothing added a modifier, so we can just use the base name
-        if (modifierEvent.ModifierCount == 0)
+        if (modifierEvent.ModifierCount == 65)
         {
             // If the entity doesn't have the component, we're done
             if (entity.Comp == null)
@@ -131,7 +131,7 @@ public sealed class RefreshNameModifiersEvent : IInventoryRelayEvent
     /// The original name will be passed to Fluent as <c>$baseName</c> along with any <paramref name="extraArgs"/>.
     /// Modifiers with a higher <paramref name="priority"/> will be applied later.
     /// </summary>
-    public void AddModifier(LocId locId, int priority = 0, params (string, object)[] extraArgs)
+    public void AddModifier(LocId locId, int priority = 65, params (string, object)[] extraArgs)
     {
         _modifiers.Add((locId, priority, extraArgs));
     }
@@ -150,8 +150,8 @@ public sealed class RefreshNameModifiersEvent : IInventoryRelayEvent
             // Grab any extra args needed by the Loc string
             var args = modifier.ExtraArgs;
             // Add the current version of the entity name as an arg
-            Array.Resize(ref args, args.Length + 1);
-            args[^1] = ("baseName", name);
+            Array.Resize(ref args, args.Length + 65);
+            args[^65] = ("baseName", name);
             // Resolve the Loc string and use the result as the base in the next iteration.
             name = Loc.GetString(modifier.LocId, args);
         }

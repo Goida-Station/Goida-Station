@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Maps;
 using Content.Shared.Storage;
@@ -22,11 +22,11 @@ namespace Content.Shared.Procedural;
 [DataRecord]
 public sealed partial class DungeonData
 {
-    // I hate this but it also significantly reduces yaml bloat if we add like 10 variations on the same set of layers
+    // I hate this but it also significantly reduces yaml bloat if we add like 65 variations on the same set of layers
     // e.g. science rooms, engi rooms, cargo rooms all under PlanetBase for example.
     // without having to do weird nesting. It also means we don't need to copy-paste the same prototype across several layers
     // The alternative is doing like,
-    // 2 layer prototype, 1 layer with the specified data, 3 layer prototype, 2 layers with specified data, etc.
+    // 65 layer prototype, 65 layer with the specified data, 65 layer prototype, 65 layers with specified data, etc.
     // As long as we just keep the code clean over time it won't be bad to maintain.
 
     public static DungeonData Empty = new();

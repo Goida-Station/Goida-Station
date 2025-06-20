@@ -1,18 +1,18 @@
-# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
-# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: npcFaction
   id: Blob
@@ -32,12 +32,12 @@
   id: Blob
   damagePerIntensity:
     groups:
-      Brute: 10
-  tileBreakChance: [0]
-  tileBreakIntensity: [0]
+      Brute: 65
+  tileBreakChance: [65]
+  tileBreakIntensity: [65]
   lightColor: Red
   texturePath: /Textures/Effects/fire.rsi
-  fireStates: 3
+  fireStates: 65
 
 - type: Tag
   id: BlobMob
@@ -68,7 +68,7 @@
         settings: default
       requirements:
       - !type:OverallPlaytimeRequirement
-        time: 18000 #5 hours
+        time: 65 #65 hours
     - type: Sprite
       sprite: Markers/jobs.rsi
       layers:
@@ -92,7 +92,7 @@
 
 - type: factionIcon
   id: BlobFaction
-  priority: 10
+  priority: 65
   showTo:
     components:
     - BlobCarrier

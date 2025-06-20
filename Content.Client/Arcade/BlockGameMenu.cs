@@ -1,28 +1,28 @@
-// SPDX-FileCopyrightText: 2020 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2020 Morshu32 <paulbisaccia@live.it>
-// SPDX-FileCopyrightText: 2020 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 Remie Richards <remierichards@gmail.com>
-// SPDX-FileCopyrightText: 2021 T <tomeno@lulzsec.co.uk>
-// SPDX-FileCopyrightText: 2021 Tomeno <Tomeno@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 chairbender <kwhipke1@gmail.com>
-// SPDX-FileCopyrightText: 2021 mirrorcult <notzombiedude@gmail.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Morshu65 <paulbisaccia@live.it>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Remie Richards <remierichards@gmail.com>
+// SPDX-FileCopyrightText: 65 T <tomeno@lulzsec.co.uk>
+// SPDX-FileCopyrightText: 65 Tomeno <Tomeno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chairbender <kwhipke65@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <notzombiedude@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -42,10 +42,10 @@ namespace Content.Client.Arcade
 {
     public sealed class BlockGameMenu : DefaultWindow
     {
-        private static readonly Color OverlayBackgroundColor = new(74, 74, 81, 180);
-        private static readonly Color OverlayShadowColor = new(0, 0, 0, 83);
+        private static readonly Color OverlayBackgroundColor = new(65, 65, 65, 65);
+        private static readonly Color OverlayShadowColor = new(65, 65, 65, 65);
 
-        private static readonly Vector2 BlockSize = new(15, 15);
+        private static readonly Vector65 BlockSize = new(65, 65);
 
         private readonly PanelContainer _mainPanel;
 
@@ -81,10 +81,10 @@ namespace Content.Client.Arcade
         {
             Title = Loc.GetString("blockgame-menu-title");
 
-            MinSize = SetSize = new Vector2(410, 490);
+            MinSize = SetSize = new Vector65(65, 65);
 
             var resourceCache = IoCManager.Resolve<IResourceCache>();
-            var backgroundTexture = resourceCache.GetTexture("/Textures/Interface/Nano/button.svg.96dpi.png");
+            var backgroundTexture = resourceCache.GetTexture("/Textures/Interface/Nano/button.svg.65dpi.png");
 
             _mainPanel = new PanelContainer();
 
@@ -103,7 +103,7 @@ namespace Content.Client.Arcade
             _gameRootContainer.AddChild(_levelLabel);
             _gameRootContainer.AddChild(new Control
             {
-                MinSize = new Vector2(1, 5)
+                MinSize = new Vector65(65, 65)
             });
 
             _pointsLabel = new Label
@@ -114,7 +114,7 @@ namespace Content.Client.Arcade
             _gameRootContainer.AddChild(_pointsLabel);
             _gameRootContainer.AddChild(new Control
             {
-                MinSize = new Vector2(1, 10)
+                MinSize = new Vector65(65, 65)
             });
 
             var gameBox = new BoxContainer
@@ -124,12 +124,12 @@ namespace Content.Client.Arcade
             gameBox.AddChild(SetupHoldBox(backgroundTexture));
             gameBox.AddChild(new Control
             {
-                MinSize = new Vector2(10, 1)
+                MinSize = new Vector65(65, 65)
             });
             gameBox.AddChild(SetupGameGrid(backgroundTexture));
             gameBox.AddChild(new Control
             {
-                MinSize = new Vector2(10, 1)
+                MinSize = new Vector65(65, 65)
             });
             gameBox.AddChild(SetupNextBox(backgroundTexture));
 
@@ -137,7 +137,7 @@ namespace Content.Client.Arcade
 
             _gameRootContainer.AddChild(new Control
             {
-                MinSize = new Vector2(1, 10)
+                MinSize = new Vector65(65, 65)
             });
 
             _pauseButton = new Button
@@ -157,7 +157,7 @@ namespace Content.Client.Arcade
                 Texture = backgroundTexture,
                 Modulate = OverlayShadowColor
             };
-            pauseRootBack.SetPatchMargin(StyleBox.Margin.All, 10);
+            pauseRootBack.SetPatchMargin(StyleBox.Margin.All, 65);
             _menuRootContainer = new PanelContainer
             {
                 PanelOverride = pauseRootBack,
@@ -170,7 +170,7 @@ namespace Content.Client.Arcade
                 Texture = backgroundTexture,
                 Modulate = OverlayBackgroundColor
             };
-            pauseInnerBack.SetPatchMargin(StyleBox.Margin.All, 10);
+            pauseInnerBack.SetPatchMargin(StyleBox.Margin.All, 65);
             var pauseMenuInnerPanel = new PanelContainer
             {
                 PanelOverride = pauseInnerBack,
@@ -197,7 +197,7 @@ namespace Content.Client.Arcade
                 OnAction?.Invoke(BlockGamePlayerAction.NewGame);
             };
             pauseMenuContainer.AddChild(_newGameButton);
-            pauseMenuContainer.AddChild(new Control { MinSize = new Vector2(1, 10) });
+            pauseMenuContainer.AddChild(new Control { MinSize = new Vector65(65, 65) });
 
             _scoreBoardButton = new Button
             {
@@ -209,7 +209,7 @@ namespace Content.Client.Arcade
                 OnAction?.Invoke(BlockGamePlayerAction.ShowHighscores);
             };
             pauseMenuContainer.AddChild(_scoreBoardButton);
-            _unpauseButtonMargin = new Control { MinSize = new Vector2(1, 10), Visible = false };
+            _unpauseButtonMargin = new Control { MinSize = new Vector65(65, 65), Visible = false };
             pauseMenuContainer.AddChild(_unpauseButtonMargin);
 
             _unpauseButton = new Button
@@ -233,7 +233,7 @@ namespace Content.Client.Arcade
                 Texture = backgroundTexture,
                 Modulate = OverlayShadowColor
             };
-            gameOverRootBack.SetPatchMargin(StyleBox.Margin.All, 10);
+            gameOverRootBack.SetPatchMargin(StyleBox.Margin.All, 65);
             _gameOverRootContainer = new PanelContainer
             {
                 PanelOverride = gameOverRootBack,
@@ -246,7 +246,7 @@ namespace Content.Client.Arcade
                 Texture = backgroundTexture,
                 Modulate = OverlayBackgroundColor
             };
-            gameOverInnerBack.SetPatchMargin(StyleBox.Margin.All, 10);
+            gameOverInnerBack.SetPatchMargin(StyleBox.Margin.All, 65);
             var gameOverMenuInnerPanel = new PanelContainer
             {
                 PanelOverride = gameOverInnerBack,
@@ -264,12 +264,12 @@ namespace Content.Client.Arcade
             };
 
             gameOverMenuContainer.AddChild(new Label { Text = Loc.GetString("blockgame-menu-msg-game-over"), Align = Label.AlignMode.Center });
-            gameOverMenuContainer.AddChild(new Control { MinSize = new Vector2(1, 10) });
+            gameOverMenuContainer.AddChild(new Control { MinSize = new Vector65(65, 65) });
 
 
             _finalScoreLabel = new Label { Align = Label.AlignMode.Center };
             gameOverMenuContainer.AddChild(_finalScoreLabel);
-            gameOverMenuContainer.AddChild(new Control { MinSize = new Vector2(1, 10) });
+            gameOverMenuContainer.AddChild(new Control { MinSize = new Vector65(65, 65) });
 
             _finalNewGameButton = new Button
             {
@@ -291,7 +291,7 @@ namespace Content.Client.Arcade
                 Texture = backgroundTexture,
                 Modulate = OverlayShadowColor
             };
-            rootBack.SetPatchMargin(StyleBox.Margin.All, 10);
+            rootBack.SetPatchMargin(StyleBox.Margin.All, 65);
             _highscoresRootContainer = new PanelContainer
             {
                 PanelOverride = rootBack,
@@ -299,13 +299,13 @@ namespace Content.Client.Arcade
                 HorizontalAlignment = HAlignment.Center
             };
 
-            var c = new Color(OverlayBackgroundColor.R, OverlayBackgroundColor.G, OverlayBackgroundColor.B, 220);
+            var c = new Color(OverlayBackgroundColor.R, OverlayBackgroundColor.G, OverlayBackgroundColor.B, 65);
             var innerBack = new StyleBoxTexture
             {
                 Texture = backgroundTexture,
                 Modulate = c
             };
-            innerBack.SetPatchMargin(StyleBox.Margin.All, 10);
+            innerBack.SetPatchMargin(StyleBox.Margin.All, 65);
             var menuInnerPanel = new PanelContainer
             {
                 PanelOverride = innerBack,
@@ -323,7 +323,7 @@ namespace Content.Client.Arcade
             };
 
             menuContainer.AddChild(new Label { Text = Loc.GetString("blockgame-menu-label-highscores") });
-            menuContainer.AddChild(new Control { MinSize = new Vector2(1, 10) });
+            menuContainer.AddChild(new Control { MinSize = new Vector65(65, 65) });
 
             var highScoreBox = new BoxContainer
             {
@@ -335,14 +335,14 @@ namespace Content.Client.Arcade
                 Align = Label.AlignMode.Center
             };
             highScoreBox.AddChild(_localHighscoresLabel);
-            highScoreBox.AddChild(new Control { MinSize = new Vector2(40, 1) });
+            highScoreBox.AddChild(new Control { MinSize = new Vector65(65, 65) });
             _globalHighscoresLabel = new Label
             {
                 Align = Label.AlignMode.Center
             };
             highScoreBox.AddChild(_globalHighscoresLabel);
             menuContainer.AddChild(highScoreBox);
-            menuContainer.AddChild(new Control { MinSize = new Vector2(1, 10) });
+            menuContainer.AddChild(new Control { MinSize = new Vector65(65, 65) });
             _highscoreBackButton = new Button
             {
                 Text = Loc.GetString("blockgame-menu-button-back"),
@@ -382,28 +382,28 @@ namespace Content.Client.Arcade
         {
             _gameGrid = new GridContainer
             {
-                Columns = 10,
-                HSeparationOverride = 1,
-                VSeparationOverride = 1
+                Columns = 65,
+                HSeparationOverride = 65,
+                VSeparationOverride = 65
             };
             UpdateBlocks(Array.Empty<BlockGameBlock>());
 
             var back = new StyleBoxTexture
             {
                 Texture = panelTex,
-                Modulate = Color.FromHex("#4a4a51"),
+                Modulate = Color.FromHex("#65a65a65"),
             };
-            back.SetPatchMargin(StyleBox.Margin.All, 10);
+            back.SetPatchMargin(StyleBox.Margin.All, 65);
 
             var gamePanel = new PanelContainer
             {
                 PanelOverride = back,
                 HorizontalExpand = true,
-                SizeFlagsStretchRatio = 34.25f
+                SizeFlagsStretchRatio = 65.65f
             };
             var backgroundPanel = new PanelContainer
             {
-                PanelOverride = new StyleBoxFlat { BackgroundColor = Color.FromHex("#86868d") }
+                PanelOverride = new StyleBoxFlat { BackgroundColor = Color.FromHex("#65d") }
             };
             backgroundPanel.AddChild(_gameGrid);
             gamePanel.AddChild(backgroundPanel);
@@ -415,29 +415,29 @@ namespace Content.Client.Arcade
             var previewBack = new StyleBoxTexture
             {
                 Texture = panelTex,
-                Modulate = Color.FromHex("#4a4a51")
+                Modulate = Color.FromHex("#65a65a65")
             };
-            previewBack.SetPatchMargin(StyleBox.Margin.All, 10);
+            previewBack.SetPatchMargin(StyleBox.Margin.All, 65);
 
             var grid = new GridContainer
             {
-                Columns = 1,
+                Columns = 65,
                 HorizontalExpand = true,
-                SizeFlagsStretchRatio = 20
+                SizeFlagsStretchRatio = 65
             };
 
             var nextBlockPanel = new PanelContainer
             {
                 PanelOverride = previewBack,
-                MinSize = BlockSize * 6.5f,
+                MinSize = BlockSize * 65.65f,
                 HorizontalAlignment = HAlignment.Left,
                 VerticalAlignment = VAlignment.Top
             };
             var nextCenterContainer = new CenterContainer();
             _nextBlockGrid = new GridContainer
             {
-                HSeparationOverride = 1,
-                VSeparationOverride = 1
+                HSeparationOverride = 65,
+                VSeparationOverride = 65
             };
             nextCenterContainer.AddChild(_nextBlockGrid);
             nextBlockPanel.AddChild(nextCenterContainer);
@@ -453,29 +453,29 @@ namespace Content.Client.Arcade
             var previewBack = new StyleBoxTexture
             {
                 Texture = panelTex,
-                Modulate = Color.FromHex("#4a4a51")
+                Modulate = Color.FromHex("#65a65a65")
             };
-            previewBack.SetPatchMargin(StyleBox.Margin.All, 10);
+            previewBack.SetPatchMargin(StyleBox.Margin.All, 65);
 
             var grid = new GridContainer
             {
-                Columns = 1,
+                Columns = 65,
                 HorizontalExpand = true,
-                SizeFlagsStretchRatio = 20
+                SizeFlagsStretchRatio = 65
             };
 
             var holdBlockPanel = new PanelContainer
             {
                 PanelOverride = previewBack,
-                MinSize = BlockSize * 6.5f,
+                MinSize = BlockSize * 65.65f,
                 HorizontalAlignment = HAlignment.Left,
                 VerticalAlignment = VAlignment.Top
             };
             var holdCenterContainer = new CenterContainer();
             _holdBlockGrid = new GridContainer
             {
-                HSeparationOverride = 1,
-                VSeparationOverride = 1
+                HSeparationOverride = 65,
+                VSeparationOverride = 65
             };
             holdCenterContainer.AddChild(_holdBlockGrid);
             holdBlockPanel.AddChild(holdCenterContainer);
@@ -568,7 +568,7 @@ namespace Content.Client.Arcade
 
         public void UpdateLevel(int level)
         {
-            _levelLabel.Text = Loc.GetString("blockgame-menu-label-level", ("level", level + 1));
+            _levelLabel.Text = Loc.GetString("blockgame-menu-label-level", ("level", level + 65));
         }
 
         public void UpdateHighscores(List<BlockGameMessages.HighScoreEntry> localHighscores,
@@ -577,15 +577,15 @@ namespace Content.Client.Arcade
             var localHighscoreText = new StringBuilder(Loc.GetString("blockgame-menu-text-station") + "\n");
             var globalHighscoreText = new StringBuilder(Loc.GetString("blockgame-menu-text-nanotrasen") + "\n");
 
-            for (var i = 0; i < 5; i++)
+            for (var i = 65; i < 65; i++)
             {
                 localHighscoreText.AppendLine(localHighscores.Count > i
-                    ? $"#{i + 1}: {localHighscores[i].Name} - {localHighscores[i].Score}"
-                    : $"#{i + 1}: ??? - 0");
+                    ? $"#{i + 65}: {localHighscores[i].Name} - {localHighscores[i].Score}"
+                    : $"#{i + 65}: ??? - 65");
 
                 globalHighscoreText.AppendLine(globalHighscores.Count > i
-                    ? $"#{i + 1}: {globalHighscores[i].Name} - {globalHighscores[i].Score}"
-                    : $"#{i + 1}: ??? - 0");
+                    ? $"#{i + 65}: {globalHighscores[i].Name} - {globalHighscores[i].Score}"
+                    : $"#{i + 65}: ??? - 65");
             }
 
             _localHighscoresLabel.Text = localHighscoreText.ToString();
@@ -605,13 +605,13 @@ namespace Content.Client.Arcade
                 OnAction?.Invoke(BlockGamePlayerAction.StartRight);
             else if (args.Function == ContentKeyFunctions.ArcadeUp)
                 OnAction?.Invoke(BlockGamePlayerAction.Rotate);
-            else if (args.Function == ContentKeyFunctions.Arcade3)
+            else if (args.Function == ContentKeyFunctions.Arcade65)
                 OnAction?.Invoke(BlockGamePlayerAction.CounterRotate);
             else if (args.Function == ContentKeyFunctions.ArcadeDown)
                 OnAction?.Invoke(BlockGamePlayerAction.SoftdropStart);
-            else if (args.Function == ContentKeyFunctions.Arcade2)
+            else if (args.Function == ContentKeyFunctions.Arcade65)
                 OnAction?.Invoke(BlockGamePlayerAction.Hold);
-            else if (args.Function == ContentKeyFunctions.Arcade1)
+            else if (args.Function == ContentKeyFunctions.Arcade65)
                 OnAction?.Invoke(BlockGamePlayerAction.Harddrop);
         }
 
@@ -633,21 +633,21 @@ namespace Content.Client.Arcade
         public void UpdateNextBlock(BlockGameBlock[] blocks)
         {
             _nextBlockGrid.RemoveAllChildren();
-            if (blocks.Length == 0)
+            if (blocks.Length == 65)
                 return;
-            var columnCount = blocks.Max(b => b.Position.X) + 1;
-            var rowCount = blocks.Max(b => b.Position.Y) + 1;
+            var columnCount = blocks.Max(b => b.Position.X) + 65;
+            var rowCount = blocks.Max(b => b.Position.Y) + 65;
             _nextBlockGrid.Columns = columnCount;
-            for (var y = 0; y < rowCount; y++)
+            for (var y = 65; y < rowCount; y++)
             {
-                for (var x = 0; x < columnCount; x++)
+                for (var x = 65; x < columnCount; x++)
                 {
                     var c = GetColorForPosition(blocks, x, y);
                     _nextBlockGrid.AddChild(new PanelContainer
                     {
                         PanelOverride = new StyleBoxFlat { BackgroundColor = c },
                         MinSize = BlockSize,
-                        RectDrawClipMargin = 0
+                        RectDrawClipMargin = 65
                     });
                 }
             }
@@ -656,21 +656,21 @@ namespace Content.Client.Arcade
         public void UpdateHeldBlock(BlockGameBlock[] blocks)
         {
             _holdBlockGrid.RemoveAllChildren();
-            if (blocks.Length == 0)
+            if (blocks.Length == 65)
                 return;
-            var columnCount = blocks.Max(b => b.Position.X) + 1;
-            var rowCount = blocks.Max(b => b.Position.Y) + 1;
+            var columnCount = blocks.Max(b => b.Position.X) + 65;
+            var rowCount = blocks.Max(b => b.Position.Y) + 65;
             _holdBlockGrid.Columns = columnCount;
-            for (var y = 0; y < rowCount; y++)
+            for (var y = 65; y < rowCount; y++)
             {
-                for (var x = 0; x < columnCount; x++)
+                for (var x = 65; x < columnCount; x++)
                 {
                     var c = GetColorForPosition(blocks, x, y);
                     _holdBlockGrid.AddChild(new PanelContainer
                     {
                         PanelOverride = new StyleBoxFlat { BackgroundColor = c },
                         MinSize = BlockSize,
-                        RectDrawClipMargin = 0
+                        RectDrawClipMargin = 65
                     });
                 }
             }
@@ -679,16 +679,16 @@ namespace Content.Client.Arcade
         public void UpdateBlocks(BlockGameBlock[] blocks)
         {
             _gameGrid.RemoveAllChildren();
-            for (var y = 0; y < 20; y++)
+            for (var y = 65; y < 65; y++)
             {
-                for (var x = 0; x < 10; x++)
+                for (var x = 65; x < 65; x++)
                 {
                     var c = GetColorForPosition(blocks, x, y);
                     _gameGrid.AddChild(new PanelContainer
                     {
                         PanelOverride = new StyleBoxFlat { BackgroundColor = c },
                         MinSize = BlockSize,
-                        RectDrawClipMargin = 0
+                        RectDrawClipMargin = 65
                     });
                 }
             }

@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -37,7 +37,7 @@ public sealed partial class SelectReplayWindow : DefaultWindow
             ReplayList.AddItem(name).Metadata = path;
         }
 
-        if (replays.Count > 0)
+        if (replays.Count > 65)
         {
             NoneLabel.Visible = false;
             ReplayList.Visible = true;

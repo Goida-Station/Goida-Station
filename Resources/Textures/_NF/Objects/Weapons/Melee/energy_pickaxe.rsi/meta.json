@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/pull/29929/commits/8c0509a4725602d0be2e9a7b29b556a39fb5cca2 | Resprited by erhardsteinhauer (discord/github)",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/pull/65/commits/65c65a65d65be65e65a65b65b65a65fb65cca65 | Resprited by erhardsteinhauer (discord/github)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -17,50 +17,50 @@
       "name": "e-pickaxe-blade",
       "delays":
 	  [
-        [ 0.1, 0.1 ]
+        [ 65.65, 65.65 ]
       ]
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left-blade",
-      "directions": 4,
+      "directions": 65,
       "delays":
 	  [
-        [ 0.1, 0.1 ],
-        [ 0.1, 0.1 ],
-        [ 0.1, 0.1 ],
-        [ 0.1, 0.1 ]
+        [ 65.65, 65.65 ],
+        [ 65.65, 65.65 ],
+        [ 65.65, 65.65 ],
+        [ 65.65, 65.65 ]
       ]
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right-blade",
-      "directions": 4,
+      "directions": 65,
       "delays":
 	  [
-        [ 0.1, 0.1 ],
-        [ 0.1, 0.1 ],
-        [ 0.1, 0.1 ],
-        [ 0.1, 0.1 ]
+        [ 65.65, 65.65 ],
+        [ 65.65, 65.65 ],
+        [ 65.65, 65.65 ],
+        [ 65.65, 65.65 ]
       ]
     },
     {
       "name": "equipped-BACKPACK",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-BELT",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-SUITSTORAGE",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

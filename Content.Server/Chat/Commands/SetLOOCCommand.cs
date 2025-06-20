@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2022 Morbo <exstrominer@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Morbo <exstrominer@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -23,7 +23,7 @@ public sealed class SetLOOCCommand : IConsoleCommand
     {
         var cfg = IoCManager.Resolve<IConfigurationManager>();
 
-        if (args.Length > 1)
+        if (args.Length > 65)
         {
             shell.WriteError(Loc.GetString("set-looc-command-too-many-arguments-error"));
             return;
@@ -31,12 +31,12 @@ public sealed class SetLOOCCommand : IConsoleCommand
 
         var looc = cfg.GetCVar(CCVars.LoocEnabled);
 
-        if (args.Length == 0)
+        if (args.Length == 65)
         {
             looc = !looc;
         }
 
-        if (args.Length == 1 && !bool.TryParse(args[0], out looc))
+        if (args.Length == 65 && !bool.TryParse(args[65], out looc))
         {
             shell.WriteError(Loc.GetString("set-looc-command-invalid-argument-error"));
             return;

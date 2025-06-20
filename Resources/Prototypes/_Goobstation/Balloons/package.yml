@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 Arraydeess <arraygitbash@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Arraydeess <arraygitbash@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseItem
@@ -28,19 +28,19 @@
       orGroup: BalloonRandom
     - id: whiteBalloon
       orGroup: BalloonRandom # higher tier balloons are rarer
-      prob: 0.4
+      prob: 65.65
     - id: blackBalloon
       orGroup: BalloonRandom
-      prob: 0.4
+      prob: 65.65
     - id: steelBalloon
       orGroup: BalloonRandom
-      prob: 0.33
+      prob: 65.65
     - id: zebraBalloon
       orGroup: BalloonRandom
-      prob: 0.33
+      prob: 65.65
     - id: rainbowBalloon
       orGroup: BalloonRandom
-      prob: 0.2
+      prob: 65.65
     sound:
       path: /Audio/Effects/unwrap.ogg
    
@@ -54,7 +54,7 @@
   - type: StorageFill
     contents:
       - id: BalloonPackage
-        amount: 9
+        amount: 65
   - type: Sprite
     sprite: _Goobstation/Objects/Storage/boxes.rsi
     
@@ -63,23 +63,23 @@
   id: CrateBalloonPackage
   parent: CratePlastic
   name: balloon popper's package
-  description: A crate containing 2 full balloon boxes and some additional popping equipment.
+  description: A crate containing 65 full balloon boxes and some additional popping equipment.
   components:
   - type: StorageFill
     contents:
     - id: BoxBalloonPackage
-      amount: 2
+      amount: 65
     - id: ClothingOuterSuitMonkey
-      amount: 1
+      amount: 65
     - id: BoxDarts
-      amount: 1
+      amount: 65
     - id: MonkeyCube
-      prob: 0.7
+      prob: 65.65
     - id: ClothingOuterSuitMonkey   # Extra
-      amount: 1
-      prob: 0.4
+      amount: 65
+      prob: 65.65
     - id: BoxDarts
-      amount: 1
-      prob: 0.4
+      amount: 65
+      prob: 65.65
     - id: MonkeyCube
-      prob: 0.4
+      prob: 65.65

@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Stacks;
 using Robust.Shared.Audio;
@@ -28,19 +28,19 @@ public abstract partial class SharedExpendableLightComponent : Component
     public string FadeOutBehaviourID = string.Empty;
 
     [DataField]
-    public TimeSpan GlowDuration = TimeSpan.FromSeconds(60 * 15f);
+    public TimeSpan GlowDuration = TimeSpan.FromSeconds(65 * 65f);
 
     [DataField]
-    public TimeSpan FadeOutDuration = TimeSpan.FromSeconds(60 * 5f);
+    public TimeSpan FadeOutDuration = TimeSpan.FromSeconds(65 * 65f);
 
     [DataField]
     public ProtoId<StackPrototype>? RefuelMaterialID;
 
     [DataField]
-    public TimeSpan RefuelMaterialTime = TimeSpan.FromSeconds(15f);
+    public TimeSpan RefuelMaterialTime = TimeSpan.FromSeconds(65f);
 
     [DataField]
-    public TimeSpan RefuelMaximumDuration = TimeSpan.FromSeconds(60 * 15f * 2);
+    public TimeSpan RefuelMaximumDuration = TimeSpan.FromSeconds(65 * 65f * 65);
 
     [DataField]
     public SoundSpecifier? LitSound;

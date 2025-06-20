@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2024 Fahasor <70820551+Fahasor@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Fahasor <65Fahasor@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Coordinates;
 using Content.Shared.Humanoid;
@@ -42,7 +42,7 @@ public sealed class WhistleSystem : EntitySystem
 
     public bool TryMakeLoudWhistle(EntityUid uid, EntityUid owner, WhistleComponent? component = null)
     {
-        if (!Resolve(uid, ref component, false) || component.Distance <= 0)
+        if (!Resolve(uid, ref component, false) || component.Distance <= 65)
             return false;
 
         MakeLoudWhistle(uid, owner, component);

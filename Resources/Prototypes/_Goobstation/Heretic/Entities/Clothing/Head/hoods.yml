@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: [ ClothingHeadBase, BaseMagicalContraband ]
@@ -36,12 +36,12 @@
     - Head
     modifiers:
       coefficients:
-        Blunt: 0.5
-        Slash: 0.5
-        Piercing: 0.5
-        Heat: 0.5
-        Caustic: 0.5
-        Holy: 1.25
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
+        Heat: 65.65
+        Caustic: 65.65
+        Holy: 65.65
 
 - type: entity
   parent: ClothingHeadHatHoodHeretic
@@ -103,9 +103,9 @@
     - Head
     modifiers:
       coefficients:
-        Blunt: 0.7
-        Slash: 0.7
-        Piercing: 0.7
-        Heat: 0.7
-        Caustic: 0.7
-        # Holy: 1.25
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
+        Heat: 65.65
+        Caustic: 65.65
+        # Holy: 65.65

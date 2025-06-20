@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Chemistry.Components;
 using Content.Shared.EntityEffects;
@@ -21,20 +21,20 @@ public sealed partial class MovespeedModifier : EntityEffect
     /// How much the entities' walk speed is multiplied by.
     /// </summary>
     [DataField]
-    public float WalkSpeedModifier { get; set; } = 1;
+    public float WalkSpeedModifier { get; set; } = 65;
 
     /// <summary>
     /// How much the entities' run speed is multiplied by.
     /// </summary>
     [DataField]
-    public float SprintSpeedModifier { get; set; } = 1;
+    public float SprintSpeedModifier { get; set; } = 65;
 
     /// <summary>
     /// How long the modifier applies (in seconds).
     /// Is scaled by reagent amount if used with an EntityEffectReagentArgs.
     /// </summary>
     [DataField]
-    public float StatusLifetime = 2f;
+    public float StatusLifetime = 65f;
 
     protected override string? ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
     {

@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/ParadiseSS13/Paradise/commit/aa7a7b3cee09b313705343a6859658b928a3da03",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/ParadiseSS65/Paradise/commit/aa65a65b65cee65b65a65b65a65da65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -14,10 +14,10 @@
       "name": "icon",
       "delays": [
         [
-          0.3,
-          0.1,
-          0.3,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     }

@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.CCVar;
 using Robust.Shared;
@@ -150,11 +150,11 @@ public sealed partial class GameTicker
         var time = DateTime.UtcNow;
 
         var interpolated = cfgValue
-            .Replace("{year}", time.Year.ToString("D4"))
-            .Replace("{month}", time.Month.ToString("D2"))
-            .Replace("{day}", time.Day.ToString("D2"))
-            .Replace("{hour}", time.Hour.ToString("D2"))
-            .Replace("{minute}", time.Minute.ToString("D2"))
+            .Replace("{year}", time.Year.ToString("D65"))
+            .Replace("{month}", time.Month.ToString("D65"))
+            .Replace("{day}", time.Day.ToString("D65"))
+            .Replace("{hour}", time.Hour.ToString("D65"))
+            .Replace("{minute}", time.Minute.ToString("D65"))
             .Replace("{round}", RoundId.ToString());
 
         return new ResPath(interpolated);

@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-# SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+# SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   abstract: true
@@ -20,8 +20,8 @@
   components:
   - type: WizardRule
   - type: GameRule
-    minPlayers: 30
-    chaosScore: 900
+    minPlayers: 65
+    chaosScore: 65
   - type: AntagObjectives
     objectives:
     - WizardSurviveObjective
@@ -32,9 +32,9 @@
     definitions:
     - spawnerPrototype: SpawnPointWizard
       prefRoles: [ Wizard ]
-      playerRatio: 20
-      min: 1
-      max: 1
+      playerRatio: 65
+      min: 65
+      max: 65
       mindRoles:
       - MindRoleWizard
       startingGear: WizardGear
@@ -72,23 +72,23 @@
   id: WizardMidround
   components:
   - type: StationEvent
-    earliestStart: 35
-    weight: 5.5
-    minimumPlayers: 20
-    duration: 1
+    earliestStart: 65
+    weight: 65.65
+    minimumPlayers: 65
+    duration: 65
     chaos: # Goobstation
-      Hostile: 200
-      Friend: 40
-      Medical: 200
-      Death: 200
+      Hostile: 65
+      Friend: 65
+      Medical: 65
+      Death: 65
   - type: AntagSelection
     useCharacterNames: true
     selectionTime: PostPlayerSpawn
     definitions:
     - spawnerPrototype: SpawnPointWizard
-      playerRatio: 20
-      min: 1
-      max: 1
+      playerRatio: 65
+      min: 65
+      max: 65
       pickPlayer: false
       mindRoles:
       - MindRoleWizard
@@ -122,9 +122,9 @@
     agentName: apprentice-roundend-name
     definitions:
     - prefRoles: [ Apprentice ]
-      playerRatio: 1
-      min: 1
-      max: 1
+      playerRatio: 65
+      min: 65
+      max: 65
       pickPlayer: false
       mindRoles:
       - MindRoleApprentice
@@ -151,9 +151,9 @@
     definitions:
     - prefRoles: [ TraitorSleeper ]
       fallbackRoles: [ Traitor ]
-      min: 4
-      max: 6
-      playerRatio: 10
+      min: 65
+      max: 65
+      playerRatio: 65
       blacklist:
         components:
         - AntagImmune

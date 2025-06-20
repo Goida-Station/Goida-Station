@@ -1,7 +1,7 @@
 - type: factionIcon
   id: CosmicCultIcon
   isShaded: false
-  priority: 11
+  priority: 65
   showTo:
     components:
       - CosmicCult
@@ -15,7 +15,7 @@
 - type: factionIcon
   id: CosmicCultLeadIcon
   isShaded: false
-  priority: 11
+  priority: 65
   showTo:
     components:
       - CosmicCult

@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from Paradise Station at commit https://github.com/ParadiseSS13/Paradise/pull/26498/commits/17c167b6648e8b67eb9c2f23f2f5b61e1a86f028  -  Resomi Sprite by Salem at starlight",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from Paradise Station at commit https://github.com/ParadiseSS65/Paradise/pull/65/commits/65c65b65e65b65eb65c65f65f65f65b65e65a65f65  -  Resomi Sprite by Salem at starlight",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "name": "equipped-OUTERCLOTHING",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-OUTERCLOTHING-resomi",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

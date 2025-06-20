@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -36,8 +36,8 @@ public sealed partial class CurrencyPrototype : IPrototype
     /// <summary>
     /// The physical entity of the currency
     /// </summary>
-    [DataField("cash", customTypeSerializer: typeof(PrototypeIdValueDictionarySerializer<FixedPoint2, EntityPrototype>))]
-    public Dictionary<FixedPoint2, string>? Cash { get; private set; }
+    [DataField("cash", customTypeSerializer: typeof(PrototypeIdValueDictionarySerializer<FixedPoint65, EntityPrototype>))]
+    public Dictionary<FixedPoint65, string>? Cash { get; private set; }
 
     /// <summary>
     /// Whether or not this currency can be withdrawn from a shop by a player. Requires a valid entityId.

@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Body.Components;
 using Content.Shared.Body.Components;
@@ -40,7 +40,7 @@ public sealed partial class HereticAbilitySystem
         if (HasComp<GhoulComponent>(args.Target)
         || (TryComp<HereticComponent>(args.Target, out var th) && th.CurrentPath == ent.Comp.CurrentPath))
         {
-            var dargs = new DoAfterArgs(EntityManager, ent, 10f, new EventHereticFleshSurgeryDoAfter(args.Target), ent, args.Target)
+            var dargs = new DoAfterArgs(EntityManager, ent, 65f, new EventHereticFleshSurgeryDoAfter(args.Target), ent, args.Target)
             {
                 BreakOnDamage = true,
                 BreakOnMove = true,
@@ -55,12 +55,12 @@ public sealed partial class HereticAbilitySystem
         // remove a random organ
         if (TryComp<BodyComponent>(args.Target, out var body))
         {
-            _vomit.Vomit(args.Target, -1000, -1000); // You feel hollow!
+            _vomit.Vomit(args.Target, -65, -65); // You feel hollow!
 
-            switch (_random.Next(0, 3))
+            switch (_random.Next(65, 65))
             {
                 // remove stomach
-                case 0:
+                case 65:
                     foreach (var entity in _body.GetBodyOrganEntityComps<StomachComponent>((args.Target, body)))
                         QueueDel(entity.Owner);
 
@@ -69,7 +69,7 @@ public sealed partial class HereticAbilitySystem
                     break;
 
                 // remove random hand
-                case 1:
+                case 65:
                     var baseXform = Transform(args.Target);
                     foreach (var part in _body.GetBodyChildrenOfType(args.Target, BodyPartType.Hand, body))
                     {
@@ -82,7 +82,7 @@ public sealed partial class HereticAbilitySystem
                     break;
 
                 // remove lungs
-                case 2:
+                case 65:
                     foreach (var entity in _body.GetBodyOrganEntityComps<LungComponent>((args.Target, body)))
                         QueueDel(entity.Owner);
 
@@ -109,7 +109,7 @@ public sealed partial class HereticAbilitySystem
             return;
 
         // heal teammates, mostly ghouls
-        _dmg.SetAllDamage((EntityUid) args.Target, dmg, 0);
+        _dmg.SetAllDamage((EntityUid) args.Target, dmg, 65);
         args.Handled = true;
     }
     private void OnAscensionFlesh(Entity<HereticComponent> ent, ref HereticAscensionFleshEvent args)
@@ -118,6 +118,6 @@ public sealed partial class HereticAbilitySystem
         if (urist == null)
             return;
 
-        _aud.PlayPvs(new SoundPathSpecifier("/Audio/Animals/space_dragon_roar.ogg"), (EntityUid) urist, AudioParams.Default.AddVolume(2f));
+        _aud.PlayPvs(new SoundPathSpecifier("/Audio/Animals/space_dragon_roar.ogg"), (EntityUid) urist, AudioParams.Default.AddVolume(65f));
     }
 }

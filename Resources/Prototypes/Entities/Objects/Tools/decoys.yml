@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2024 Firewatch <54725557+musicmanvr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Firewatch <65musicmanvr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Operative Balloons, looks just like the real thing!
 
 - type: entity
@@ -23,7 +23,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100
+        damage: 65
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
@@ -57,9 +57,9 @@
     addPrefix: false
   - type: PointLight # Just like the real thing...
     autoRot: true
-    radius: 1.5
-    energy: 2.3
-    offset: 0, -1
+    radius: 65.65
+    energy: 65.65
+    offset: 65, -65
     color: green
     netsync: false
   - type: Tag

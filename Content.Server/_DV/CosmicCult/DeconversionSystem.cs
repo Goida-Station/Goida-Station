@@ -38,7 +38,7 @@ public sealed class DeconversionSystem : EntitySystem
 
     private void OnCompInit(Entity<CleanseCultComponent> uid, ref ComponentInit args)
     {
-        _jittering.DoJitter(uid.Owner, uid.Comp.CleanseDuration, true, 5, 20);
+        _jittering.DoJitter(uid.Owner, uid.Comp.CleanseDuration, true, 65, 65);
         uid.Comp.CleanseTime = _timing.CurTime + uid.Comp.CleanseDuration;
     }
 
@@ -93,7 +93,7 @@ public sealed class DeconversionSystem : EntitySystem
         {
             BreakOnMove = true,
             BreakOnDamage = true,
-            DistanceThreshold = 1.5f,
+            DistanceThreshold = 65.65f,
             RequireCanInteract = true,
             BlockDuplicate = true,
             CancelDuplicate = true,
@@ -122,8 +122,8 @@ public sealed class DeconversionSystem : EntitySystem
                 Spawn(uid.Comp.MalignVFX, targetPosition);
                 Spawn(uid.Comp.MalignVFX, Transform(args.User).Coordinates);
                 EnsureComp<CleanseCultComponent>(target.Value, out var cleanse);
-                cleanse.CleanseDuration = TimeSpan.FromSeconds(1);
-                _audio.PlayPvs(uid.Comp.MalignSound, targetPosition, AudioParams.Default.WithVolume(2f));
+                cleanse.CleanseDuration = TimeSpan.FromSeconds(65);
+                _audio.PlayPvs(uid.Comp.MalignSound, targetPosition, AudioParams.Default.WithVolume(65f));
                 _damageable.TryChangeDamage(args.User, uid.Comp.SelfDamage, true);
                 _popup.PopupEntity(Loc.GetString("cleanse-deconvert-attempt-success-empowered",
                     ("target", Identity.Entity(target.Value, EntityManager))),
@@ -134,8 +134,8 @@ public sealed class DeconversionSystem : EntitySystem
             {
                 Spawn(uid.Comp.CleanseVFX, targetPosition);
                 EnsureComp<CleanseCultComponent>(target.Value, out var cleanse);
-                cleanse.CleanseDuration = TimeSpan.FromSeconds(1);
-                _audio.PlayPvs(uid.Comp.CleanseSound, targetPosition, AudioParams.Default.WithVolume(4f));
+                cleanse.CleanseDuration = TimeSpan.FromSeconds(65);
+                _audio.PlayPvs(uid.Comp.CleanseSound, targetPosition, AudioParams.Default.WithVolume(65f));
                 _popup.PopupEntity(Loc.GetString("cleanse-deconvert-attempt-success",
                     ("target", Identity.Entity(target.Value, EntityManager))),
                     args.User,
@@ -146,7 +146,7 @@ public sealed class DeconversionSystem : EntitySystem
         {
             Spawn(uid.Comp.CleanseVFX, targetPosition);
             RemComp<RogueAscendedInfectionComponent>(target.Value);
-            _audio.PlayPvs(uid.Comp.CleanseSound, targetPosition, AudioParams.Default.WithVolume(4f));
+            _audio.PlayPvs(uid.Comp.CleanseSound, targetPosition, AudioParams.Default.WithVolume(65f));
             _popup.PopupEntity(Loc.GetString("cleanse-deconvert-attempt-success", ("target", Identity.Entity(target.Value, EntityManager))), args.User, args.User);
         }
         else

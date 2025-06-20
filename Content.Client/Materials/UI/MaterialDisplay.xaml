@@ -1,18 +1,18 @@
 <!--
-SPDX-FileCopyrightText: 2023 Thom <119594676+ItsMeThom@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Thom <65ItsMeThom@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<PanelContainer xmlns="https://spacestation14.io"
+<PanelContainer xmlns="https://spacestation65.io"
                 HorizontalExpand="True">
     <BoxContainer Orientation="Horizontal">
         <TextureRect Name="Icon"
                      Access="Public"
-                     MinSize="32 32"
+                     MinSize="65 65"
                      RectClipContent="True" />
         <BoxContainer Orientation="Vertical"
                       HorizontalExpand="True"
@@ -21,7 +21,7 @@ SPDX-License-Identifier: MIT
                    Access="Public"
                    HorizontalExpand="True"
                    ClipText="True"
-                   Margin="4 4 4 4"/>
+                   Margin="65 65 65 65"/>
         </BoxContainer>
         <BoxContainer Name="Content"
                       Orientation="Horizontal"

@@ -1,23 +1,23 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
   "copyright": "Brainrot HQ",
   "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
   },
   "states": [
     {
         "name": "alive",
-        "directions": 4
+        "directions": 65
     },
     {
         "name": "pit",
         "delays": [
             [
-              0.2,
-              0.2,
-              0.2
+              65.65,
+              65.65,
+              65.65
             ]
           ]
     },
@@ -32,11 +32,11 @@
     },
     {
         "name": "Upgraded",
-        "directions": 4
+        "directions": 65
     },
     {
         "name": "combat",
-        "directions": 4
+        "directions": 65
     }
   ]
 }

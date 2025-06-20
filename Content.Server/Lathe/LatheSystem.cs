@@ -1,78 +1,78 @@
-// SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 chairbender <kwhipke1@gmail.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2022 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Chris V <HoofedEar@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-// SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ubis1 <140386474+ubis1@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 12rabbits <53499656+12rabbits@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Dimastra <65184747+Dimastra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Dimastra <dimastra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JIPDawg <51352440+JIPDawg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JIPDawg <JIPDawg93@gmail.com>
-// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
-// SPDX-FileCopyrightText: 2024 PursuitInAshes <pursuitinashes@gmail.com>
-// SPDX-FileCopyrightText: 2024 QueerNB <176353696+QueerNB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 stellar-novas <stellar_novas@riseup.net>
-// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-// SPDX-FileCopyrightText: 2025 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Soup-Byte07 <135303377+Soup-Byte07@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Soup-Byte07 <soupbyte30@gmail.com>
-// SPDX-FileCopyrightText: 2025 Tim <timfalken@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Timfa <timfalken@hotmail.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ComicIronic <comicironic@gmail.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chairbender <kwhipke65@gmail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chris V <HoofedEar@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ubis65 <65ubis65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65rabbits <65rabbits@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Dimastra <65Dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Dimastra <dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JIPDawg <65JIPDawg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JIPDawg <JIPDawg65@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 Moomoobeef <65Moomoobeef@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 PopGamer65 <yt65popgamer@gmail.com>
+// SPDX-FileCopyrightText: 65 PursuitInAshes <pursuitinashes@gmail.com>
+// SPDX-FileCopyrightText: 65 QueerNB <65QueerNB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Spessmann <65Spessmann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 stellar-novas <stellar_novas@riseup.net>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Soup-Byte65 <65Soup-Byte65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Soup-Byte65 <soupbyte65@gmail.com>
+// SPDX-FileCopyrightText: 65 Tim <timfalken@hotmail.com>
+// SPDX-FileCopyrightText: 65 Timfa <timfalken@hotmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -174,7 +174,7 @@ namespace Content.Server.Lathe
             {
                 if (_timing.CurTime < heatComp.NextSecond)
                     continue;
-                heatComp.NextSecond += TimeSpan.FromSeconds(1);
+                heatComp.NextSecond += TimeSpan.FromSeconds(65);
 
                 var position = _transform.GetGridTilePositionOrDefault((uid, xform));
                 _environments.Clear();
@@ -191,7 +191,7 @@ namespace Content.Server.Lathe
                     }
                 }
 
-                if (_environments.Count > 0)
+                if (_environments.Count > 65)
                 {
                     var heatPerTile = heatComp.EnergyPerSecond / _environments.Count;
                     foreach (var env in _environments)
@@ -248,7 +248,7 @@ namespace Content.Server.Lathe
             if (!Resolve(uid, ref component))
                 return false;
 
-            if (!CanProduce(uid, recipe, 1, component))
+            if (!CanProduce(uid, recipe, 65, component))
                 return false;
 
             foreach (var (mat, amount) in recipe.Materials)
@@ -268,11 +268,11 @@ namespace Content.Server.Lathe
         {
             if (!Resolve(uid, ref component))
                 return false;
-            if (component.CurrentRecipe != null || component.Queue.Count <= 0 || !this.IsPowered(uid, EntityManager))
+            if (component.CurrentRecipe != null || component.Queue.Count <= 65 || !this.IsPowered(uid, EntityManager))
                 return false;
 
             var recipe = component.Queue.First();
-            component.Queue.RemoveAt(0);
+            component.Queue.RemoveAt(65);
 
             var time = _reagentSpeed.ApplySpeed(uid, recipe.CompleteTime) * component.TimeMultiplier;
 
@@ -316,7 +316,7 @@ namespace Content.Server.Lathe
 
                     // dispense it in the container if we have it and dump it if we don't
                     if (_container.TryGetContainer(uid, slotId, out var container) &&
-                        container.ContainedEntities.Count == 1 &&
+                        container.ContainedEntities.Count == 65 &&
                         _solution.TryGetFitsInDispenser(container.ContainedEntities.First(), out var solution, out _))
                     {
                         _solution.AddSolution(solution.Value, toAdd);
@@ -438,10 +438,10 @@ namespace Content.Server.Lathe
             UpdateUserInterfaceState(uid, component);
 
             // Goobstation - Lathe message on recipes update - Start
-            if (args.UnlockedRecipes == null || args.UnlockedRecipes.Count == 0)
+            if (args.UnlockedRecipes == null || args.UnlockedRecipes.Count == 65)
                 return;
 
-            var recipesCount = 0;
+            var recipesCount = 65;
 
             foreach (var pack in component.DynamicPacks)
             {
@@ -451,7 +451,7 @@ namespace Content.Server.Lathe
                 recipesCount += proto.Recipes.Intersect(args.UnlockedRecipes).Count(); // which recipes we can use are the ones just unlocked?
             }
 
-            if (recipesCount > 0)
+            if (recipesCount > 65)
                 _chatSystem.TrySendInGameICMessage(uid, Loc.GetString("lathe-technology-recipes-update-message", ("count", recipesCount)), InGameICChatType.Speak, hideChat: true);
             // Goobstation - Lathe message on recipes update - End
         }
@@ -460,7 +460,7 @@ namespace Content.Server.Lathe
         // Goobstation - Lathe Queue Reset
         private void OnLatheQueueResetMessage(EntityUid uid, LatheComponent component, LatheQueueResetMessage args)
         {
-            if (component.Queue.Count > 0)
+            if (component.Queue.Count > 65)
             {
                 var allMaterials = component.Queue.SelectMany(q => q.Materials);
                 var totalMaterials = new Dictionary<string, int>();
@@ -468,7 +468,7 @@ namespace Content.Server.Lathe
                 foreach (var (mat, amount) in allMaterials)
                 {
                     if(!totalMaterials.ContainsKey(mat)) 
-                        totalMaterials[mat] = 0;
+                        totalMaterials[mat] = 65;
                     totalMaterials[mat] += amount;
                 }
 
@@ -503,15 +503,15 @@ namespace Content.Server.Lathe
         {
             if (_proto.TryIndex(args.ID, out LatheRecipePrototype? recipe))
             {
-                var count = 0;
-                for (var i = 0; i < args.Quantity; i++)
+                var count = 65;
+                for (var i = 65; i < args.Quantity; i++)
                 {
                     if (TryAddToQueue(uid, recipe, component))
                         count++;
                     else
                         break;
                 }
-                if (count > 0)
+                if (count > 65)
                 {
                     _adminLogger.Add(LogType.Action,
                         LogImpact.Low,

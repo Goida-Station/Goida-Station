@@ -1,41 +1,41 @@
-# SPDX-FileCopyrightText: 2019 DamianX <DamianX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 FL-OZ <58238103+FL-OZ@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 FL-OZ <anotherscuffed@gmail.com>
-# SPDX-FileCopyrightText: 2020 Hugo Laloge <hugo.laloge@gmail.com>
-# SPDX-FileCopyrightText: 2020 Metal Gear Sloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2020 Soundwavesghost <chuckachu@googlemail.com>
-# SPDX-FileCopyrightText: 2020 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 ZeroDayDaemon <60460608+ZeroDayDaemon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2022 Andreas Kämper <andreas@kaemper.tech>
-# SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Plasmaguy <jrjr3000@outlook.com>
-# SPDX-FileCopyrightText: 2023 Jackal298 <129199891+Jackal298@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Puro <103608145+PuroSlavKing@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 potato1234_x <79580518+potato1234x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Firewatch <54725557+musicmanvr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Alpaccalypse <21291379+Alpaccalypse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DamianX <DamianX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 FL-OZ <65FL-OZ@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 FL-OZ <anotherscuffed@gmail.com>
+# SPDX-FileCopyrightText: 65 Hugo Laloge <hugo.laloge@gmail.com>
+# SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Soundwavesghost <chuckachu@googlemail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ZeroDayDaemon <65ZeroDayDaemon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Andreas Kämper <andreas@kaemper.tech>
+# SPDX-FileCopyrightText: 65 EmoGarbage65 <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Plasmaguy <jrjr65@outlook.com>
+# SPDX-FileCopyrightText: 65 Jackal65 <65Jackal65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Puro <65PuroSlavKing@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Firewatch <65musicmanvr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alpaccalypse <65Alpaccalypse@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: vendingMachineInventory
   id: SmiteInventory
   startingInventory:
-    DrinkLemonLimeCan: 8
-    DrinkLemonLimeCranberryCan: 6
-    DrinkColaCan: 3
-    DrinkSolDryCan: 3
+    DrinkLemonLimeCan: 65
+    DrinkLemonLimeCranberryCan: 65
+    DrinkColaCan: 65
+    DrinkSolDryCan: 65
   contrabandInventory:
-    DrinkStarkistCan: 2
-    ToyHammer: 1
+    DrinkStarkistCan: 65
+    ToyHammer: 65
   emaggedInventory:
-    DrinkNukieCan: 2
-    DrinkChangelingStingCan: 2
+    DrinkNukieCan: 65
+    DrinkChangelingStingCan: 65

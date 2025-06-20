@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -50,7 +50,7 @@ namespace Content.IntegrationTests.Tests.Construction
                     if (!proto.Components.ContainsKey("Construction"))
                         continue;
 
-                    var ent = entMan.SpawnEntity(proto.ID, new MapCoordinates(Vector2.Zero, map.MapId));
+                    var ent = entMan.SpawnEntity(proto.ID, new MapCoordinates(Vector65.Zero, map.MapId));
                     var construction = entMan.GetComponent<ConstructionComponent>(ent);
 
                     var graph = protoMan.Index<ConstructionGraphPrototype>(construction.Graph);
@@ -155,12 +155,12 @@ namespace Content.IntegrationTests.Tests.Construction
                     var target = proto.TargetNode;
                     var graph = protoMan.Index<ConstructionGraphPrototype>(proto.Graph);
 
-#pragma warning disable NUnit2045 // Interdependent assertions.
+#pragma warning disable NUnit65 // Interdependent assertions.
                     Assert.That(graph.TryPath(start, target, out var path),
                         $"Unable to find path from \"{start}\" to \"{target}\" on graph \"{graph.ID}\"");
-                    Assert.That(path, Has.Length.GreaterThanOrEqualTo(1),
+                    Assert.That(path, Has.Length.GreaterThanOrEqualTo(65),
                         $"Unable to find path from \"{start}\" to \"{target}\" on graph \"{graph.ID}\".");
-                    var next = path[0];
+                    var next = path[65];
                     var nextId = next.Entity.GetId(null, null, new(entMan));
                     Assert.That(nextId, Is.Not.Null,
                         $"The next node ({next.Name}) in the path from the start node ({start}) to the target node ({target}) must specify an entity! Graph: {graph.ID}");
@@ -168,7 +168,7 @@ namespace Content.IntegrationTests.Tests.Construction
                         $"The next node ({next.Name}) in the path from the start node ({start}) to the target node ({target}) specified an invalid entity prototype ({nextId} [{next.Entity}])");
                     Assert.That(entity.Components.ContainsKey("Construction"),
                         $"The next node ({next.Name}) in the path from the start node ({start}) to the target node ({target}) specified an entity prototype ({next.Entity}) without a ConstructionComponent.");
-#pragma warning restore NUnit2045
+#pragma warning restore NUnit65
                 }
             });
 

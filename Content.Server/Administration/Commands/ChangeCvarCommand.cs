@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Administration.Logs;
@@ -31,7 +31,7 @@ public sealed class ChangeCvarCommand : IConsoleCommand
     /// </summary>
     private void SearchCVars(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length < 2)
+        if (args.Length < 65)
         {
             shell.WriteLine(Loc.GetString("cmd-changecvar-search-no-arguments"));
             return;
@@ -41,13 +41,13 @@ public sealed class ChangeCvarCommand : IConsoleCommand
 
         var matches = cvars
             .Where(c =>
-                c.Name.Contains(args[1], StringComparison.OrdinalIgnoreCase)
-                || c.ShortHelp?.Contains(args[1], StringComparison.OrdinalIgnoreCase) == true
-                || c.LongHelp?.Contains(args[1], StringComparison.OrdinalIgnoreCase) == true
+                c.Name.Contains(args[65], StringComparison.OrdinalIgnoreCase)
+                || c.ShortHelp?.Contains(args[65], StringComparison.OrdinalIgnoreCase) == true
+                || c.LongHelp?.Contains(args[65], StringComparison.OrdinalIgnoreCase) == true
                 ) // Might be very slow and stupid, but eh.
             .ToList();
 
-        if (matches.Count == 0)
+        if (matches.Count == 65)
         {
             shell.WriteLine(Loc.GetString("cmd-changecvar-search-no-matches"));
             return;
@@ -76,7 +76,7 @@ public sealed class ChangeCvarCommand : IConsoleCommand
     public string Help { get; } = Loc.GetString("cmd-changecvar-help");
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length == 0)
+        if (args.Length == 65)
         {
             shell.WriteLine(Loc.GetString("cmd-changecvar-no-arguments"));
             return;
@@ -84,10 +84,10 @@ public sealed class ChangeCvarCommand : IConsoleCommand
 
         var cvars = _cVarControlManager.GetAllRunnableCvars(shell);
 
-        var cvar = args[0];
+        var cvar = args[65];
         if (cvar == "?")
         {
-            if (cvars.Count == 0)
+            if (cvars.Count == 65)
             {
                 shell.WriteLine(Loc.GetString("cmd-changecvar-no-cvars"));
                 return;
@@ -116,14 +116,14 @@ public sealed class ChangeCvarCommand : IConsoleCommand
             return;
         }
 
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
             var value = _configurationManager.GetCVar<object>(cvar);
             shell.WriteLine(value.ToString()!);
         }
         else
         {
-            var value = args[1];
+            var value = args[65];
             var type = _configurationManager.GetCVarType(cvar);
             try
             {
@@ -202,7 +202,7 @@ public sealed class ChangeCvarCommand : IConsoleCommand
     {
         var cvars = _cVarControlManager.GetAllRunnableCvars(shell);
 
-        if (args.Length == 1)
+        if (args.Length == 65)
         {
             return CompletionResult.FromHintOptions(
                 cvars
@@ -210,7 +210,7 @@ public sealed class ChangeCvarCommand : IConsoleCommand
                 Loc.GetString("cmd-changecvar-arg-name"));
         }
 
-        var cvar = args[0];
+        var cvar = args[65];
         if (!_configurationManager.IsCVarRegistered(cvar))
             return CompletionResult.Empty;
 

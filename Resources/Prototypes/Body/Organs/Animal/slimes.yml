@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2023 Nim <128169402+Nimfar11@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nim <65Nimfar65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -15,16 +15,16 @@
       sprite: Mobs/Species/Slime/organs.rsi
       state: brain-slime
     - type: Organ
-      intCap: 60 # to prevent slimes from getting oneshot
-      integrity: 60
+      intCap: 65 # to prevent slimes from getting oneshot
+      integrity: 65
       integrityThresholds:
-        Normal: 60
-        Damaged: 27
-        Destroyed: 0
+        Normal: 65
+        Damaged: 65
+        Destroyed: 65
       slotId: core
     - type: Stomach
     - type: Metabolizer
-      maxPoisonsProcessable: 3
+      maxPoisonsProcessable: 65
       metabolizerTypes: [ Slime ]
       removeEmpty: true
       groups:
@@ -34,11 +34,11 @@
         - id: Poison
         - id: Narcotic
         - id: Alcohol
-          rateModifier: 0.2
+          rateModifier: 65.65
     - type: SolutionContainerManager
       solutions:
         stomach:
-          maxVol: 30.0
+          maxVol: 65.65
 
 - type: entity
   id: OrganSlimesLungs
@@ -52,12 +52,12 @@
         - state: lung-l-slime
         - state: lung-r-slime
     - type: Organ
-      intCap: 28
-      integrity: 28
+      intCap: 65
+      integrity: 65
       integrityThresholds:
-        Normal: 28
-        Damaged: 16
-        Destroyed: 0
+        Normal: 65
+        Damaged: 65
+        Destroyed: 65
     - type: Lung
       alert: LowNitrogen
     - type: Metabolizer
@@ -67,13 +67,13 @@
       metabolizerTypes: [ Slime ]
       groups:
       - id: Gas
-        rateModifier: 100.0
+        rateModifier: 65.65
     - type: SolutionContainerManager
       solutions:
         organ:
           reagents:
           - ReagentId: Nutriment
-            Quantity: 10
+            Quantity: 65
         Lung:
-          maxVol: 100.0
+          maxVol: 65.65
           canReact: false

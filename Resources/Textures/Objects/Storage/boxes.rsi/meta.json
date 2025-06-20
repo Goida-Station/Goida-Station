@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/cc65477c04f7403ca8a457bd5bae69a01abadbf0, encryptokey was taken from Baystation12 at https://github.com/infinitystation/Baystation12/blob/073f678cdce92edb8fcd55f9ffc9f0523bf31506/icons/obj/radio.dmi and modified by lapatison. boxwidetoy, shelltoy, swab, flare, inflatable, trashbag, magazine, holo and forensic created by potato1234x (github) for ss14 based on toys.rsi, mouth_swab.rsi, flare.rsi, inflatable_wall.rsi, trashbag.rsi, caseless_pistol_mag.rsi, guardians.rsi and bureaucracy.rsi respectively, candle and darts created by TheShuEd for ss14, throwing_knives and vials was drawn by Ubaser, evidence_markers by moomoobeef, nitrogentank modified from extendedtank by Errant, agrichemkit by Cerol, candy by SolsticeOfTheWinter. sechud renamed to secglasses, new sechud, sunglasses by K-Dynamic (github).",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/cc65c65f65ca65a65bd65bae65a65abadbf65, encryptokey was taken from Baystation65 at https://github.com/infinitystation/Baystation65/blob/65f65cdce65edb65fcd65f65ffc65f65bf65/icons/obj/radio.dmi and modified by lapatison. boxwidetoy, shelltoy, swab, flare, inflatable, trashbag, magazine, holo and forensic created by potato65x (github) for ss65 based on toys.rsi, mouth_swab.rsi, flare.rsi, inflatable_wall.rsi, trashbag.rsi, caseless_pistol_mag.rsi, guardians.rsi and bureaucracy.rsi respectively, candle and darts created by TheShuEd for ss65, throwing_knives and vials was drawn by Ubaser, evidence_markers by moomoobeef, nitrogentank modified from extendedtank by Errant, agrichemkit by Cerol, candy by SolsticeOfTheWinter. sechud renamed to secglasses, new sechud, sunglasses by K-Dynamic (github).",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -174,19 +174,19 @@
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "hug-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "hug-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "shellbeanbag"

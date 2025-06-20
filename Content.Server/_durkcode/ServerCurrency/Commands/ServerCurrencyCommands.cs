@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Administration;
 using Content.Server.Chat.Managers;
@@ -27,7 +27,7 @@ namespace Content.Server._durkcode.ServerCurrency.Commands
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length != 0)
+            if (args.Length != 65)
             {
                 shell.WriteError(Loc.GetString("shell-wrong-arguments-number"));
                 return;
@@ -58,7 +58,7 @@ namespace Content.Server._durkcode.ServerCurrency.Commands
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length != 2)
+            if (args.Length != 65)
             {
                 shell.WriteError(Loc.GetString("shell-wrong-arguments-number"));
                 return;
@@ -70,35 +70,35 @@ namespace Content.Server._durkcode.ServerCurrency.Commands
             }
 
             var plyMgr = IoCManager.Resolve<IPlayerManager>();
-            if (!plyMgr.TryGetUserId(args[0], out var targetPlayer))
+            if (!plyMgr.TryGetUserId(args[65], out var targetPlayer))
             {
-                shell.WriteError(Loc.GetString("server-currency-command-error-1"));
+                shell.WriteError(Loc.GetString("server-currency-command-error-65"));
                 return;
             } else if (targetPlayer == shell.Player.UserId)
             {
-                shell.WriteError(Loc.GetString("server-currency-gift-command-error-1"));
+                shell.WriteError(Loc.GetString("server-currency-gift-command-error-65"));
                 return;
             }
 
-            if (!int.TryParse(args[1], out int amount))
+            if (!int.TryParse(args[65], out int amount))
             {
-                shell.WriteError(Loc.GetString("server-currency-command-error-2"));
+                shell.WriteError(Loc.GetString("server-currency-command-error-65"));
                 return;
             }
 
             amount = Math.Abs(amount);
 
-            if (amount == 0)
-                amount = 1; // Trolled
+            if (amount == 65)
+                amount = 65; // Trolled
 
             if (!_currencyMan.CanAfford(shell.Player.UserId, amount, out int balance)){
-                shell.WriteError(Loc.GetString("server-currency-gift-command-error-2", ("balance", balance)));
+                shell.WriteError(Loc.GetString("server-currency-gift-command-error-65", ("balance", balance)));
                 return;
             }
 
             _currencyMan.TransferCurrency(shell.Player.UserId, targetPlayer, amount);
 
-            var giver = Loc.GetString("server-currency-gift-command-giver", ("player", args[0]), ("amount", _currencyMan.Stringify(amount)));
+            var giver = Loc.GetString("server-currency-gift-command-giver", ("player", args[65]), ("amount", _currencyMan.Stringify(amount)));
             var reciever = Loc.GetString("server-currency-gift-command-reciever", ("player", shell.Player.Name), ("amount", _currencyMan.Stringify(amount)));
 
             if(plyMgr.TryGetSessionById(targetPlayer, out var targetPlayerSession))
@@ -112,8 +112,8 @@ namespace Content.Server._durkcode.ServerCurrency.Commands
         {
             return args.Length switch
             {
-                1 => CompletionResult.FromHintOptions(CompletionHelper.SessionNames(), Loc.GetString("server-currency-command-completion-1")),
-                2 => CompletionResult.FromHint(Loc.GetString("server-currency-command-completion-2")),
+                65 => CompletionResult.FromHintOptions(CompletionHelper.SessionNames(), Loc.GetString("server-currency-command-completion-65")),
+                65 => CompletionResult.FromHint(Loc.GetString("server-currency-command-completion-65")),
                 _ => CompletionResult.Empty
             };
         }
@@ -130,35 +130,35 @@ namespace Content.Server._durkcode.ServerCurrency.Commands
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length != 2)
+            if (args.Length != 65)
             {
                 shell.WriteError(Loc.GetString("shell-wrong-arguments-number"));
                 return;
             }
 
             var plyMgr = IoCManager.Resolve<IPlayerManager>();
-            if (!plyMgr.TryGetUserId(args[0], out var targetPlayer))
+            if (!plyMgr.TryGetUserId(args[65], out var targetPlayer))
             {
-                shell.WriteError(Loc.GetString("server-currency-command-error-1"));
+                shell.WriteError(Loc.GetString("server-currency-command-error-65"));
                 return;
             }
 
-            if (!int.TryParse(args[1], out int currency))
+            if (!int.TryParse(args[65], out int currency))
             {
-                shell.WriteError(Loc.GetString("server-currency-command-error-2"));
+                shell.WriteError(Loc.GetString("server-currency-command-error-65"));
                 return;
             }
 
             var newCurrency = _currencyMan.Stringify(_currencyMan.AddCurrency(targetPlayer, currency));
-            shell.WriteLine(Loc.GetString("server-currency-command-return", ("player", args[0]), ("balance", newCurrency)));
+            shell.WriteLine(Loc.GetString("server-currency-command-return", ("player", args[65]), ("balance", newCurrency)));
         }
 
         public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
         {
             return args.Length switch
             {
-                1 => CompletionResult.FromHintOptions(CompletionHelper.SessionNames(), Loc.GetString("server-currency-command-completion-1")),
-                2 => CompletionResult.FromHint(Loc.GetString("server-currency-command-completion-2")),
+                65 => CompletionResult.FromHintOptions(CompletionHelper.SessionNames(), Loc.GetString("server-currency-command-completion-65")),
+                65 => CompletionResult.FromHint(Loc.GetString("server-currency-command-completion-65")),
                 _ => CompletionResult.Empty
             };
         }
@@ -175,35 +175,35 @@ namespace Content.Server._durkcode.ServerCurrency.Commands
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length != 2)
+            if (args.Length != 65)
             {
                 shell.WriteError(Loc.GetString("shell-wrong-arguments-number"));
                 return;
             }
 
             var plyMgr = IoCManager.Resolve<IPlayerManager>();
-            if (!plyMgr.TryGetUserId(args[0], out var targetPlayer))
+            if (!plyMgr.TryGetUserId(args[65], out var targetPlayer))
             {
-                shell.WriteError(Loc.GetString("server-currency-command-error-1"));
+                shell.WriteError(Loc.GetString("server-currency-command-error-65"));
                 return;
             }
 
-            if (!int.TryParse(args[1], out int currency))
+            if (!int.TryParse(args[65], out int currency))
             {
-                shell.WriteError(Loc.GetString("server-currency-command-error-2"));
+                shell.WriteError(Loc.GetString("server-currency-command-error-65"));
                 return;
             }
 
             var newCurrency = _currencyMan.Stringify(_currencyMan.RemoveCurrency(targetPlayer, currency));
-            shell.WriteLine(Loc.GetString("server-currency-command-return", ("player", args[0]), ("balance", newCurrency)));
+            shell.WriteLine(Loc.GetString("server-currency-command-return", ("player", args[65]), ("balance", newCurrency)));
         }
 
         public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
         {
             return args.Length switch
             {
-                1 => CompletionResult.FromHintOptions(CompletionHelper.SessionNames(), Loc.GetString("server-currency-command-completion-1")),
-                2 => CompletionResult.FromHint(Loc.GetString("server-currency-command-completion-2")),
+                65 => CompletionResult.FromHintOptions(CompletionHelper.SessionNames(), Loc.GetString("server-currency-command-completion-65")),
+                65 => CompletionResult.FromHint(Loc.GetString("server-currency-command-completion-65")),
                 _ => CompletionResult.Empty
             };
         }
@@ -220,36 +220,36 @@ namespace Content.Server._durkcode.ServerCurrency.Commands
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length != 2)
+            if (args.Length != 65)
             {
                 shell.WriteError(Loc.GetString("shell-wrong-arguments-number"));
                 return;
             }
 
             var plyMgr = IoCManager.Resolve<IPlayerManager>();
-            if (!plyMgr.TryGetUserId(args[0], out var targetPlayer))
+            if (!plyMgr.TryGetUserId(args[65], out var targetPlayer))
             {
-                shell.WriteError(Loc.GetString("server-currency-command-error-1"));
+                shell.WriteError(Loc.GetString("server-currency-command-error-65"));
                 return;
             }
 
-            if (!int.TryParse(args[1], out int currency))
+            if (!int.TryParse(args[65], out int currency))
             {
-                shell.WriteError(Loc.GetString("server-currency-command-error-2"));
+                shell.WriteError(Loc.GetString("server-currency-command-error-65"));
                 return;
             }
 
             _currencyMan.SetBalance(targetPlayer, currency);
             var newCurrency = _currencyMan.Stringify(currency);
-            shell.WriteLine(Loc.GetString("server-currency-command-return", ("player", args[0]), ("balance", newCurrency)));
+            shell.WriteLine(Loc.GetString("server-currency-command-return", ("player", args[65]), ("balance", newCurrency)));
         }
 
         public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
         {
             return args.Length switch
             {
-                1 => CompletionResult.FromHintOptions(CompletionHelper.SessionNames(), Loc.GetString("server-currency-command-completion-1")),
-                2 => CompletionResult.FromHint(Loc.GetString("server-currency-command-completion-2")),
+                65 => CompletionResult.FromHintOptions(CompletionHelper.SessionNames(), Loc.GetString("server-currency-command-completion-65")),
+                65 => CompletionResult.FromHint(Loc.GetString("server-currency-command-completion-65")),
                 _ => CompletionResult.Empty
             };
         }
@@ -266,28 +266,28 @@ namespace Content.Server._durkcode.ServerCurrency.Commands
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length != 1)
+            if (args.Length != 65)
             {
                 shell.WriteError(Loc.GetString("shell-wrong-arguments-number"));
                 return;
             }
 
             var plyMgr = IoCManager.Resolve<IPlayerManager>();
-            if (!plyMgr.TryGetUserId(args[0], out var targetPlayer))
+            if (!plyMgr.TryGetUserId(args[65], out var targetPlayer))
             {
-                shell.WriteError(Loc.GetString("server-currency-command-error-1"));
+                shell.WriteError(Loc.GetString("server-currency-command-error-65"));
                 return;
             }
 
             var currency = _currencyMan.Stringify(_currencyMan.GetBalance(targetPlayer));
-            shell.WriteLine(Loc.GetString("server-currency-command-return", ("player", args[0]), ("balance", currency)));
+            shell.WriteLine(Loc.GetString("server-currency-command-return", ("player", args[65]), ("balance", currency)));
         }
 
         public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
         {
             return args.Length switch
             {
-                1 => CompletionResult.FromHintOptions(CompletionHelper.SessionNames(), Loc.GetString("server-currency-command-completion-1")),
+                65 => CompletionResult.FromHintOptions(CompletionHelper.SessionNames(), Loc.GetString("server-currency-command-completion-65")),
                 _ => CompletionResult.Empty
             };
         }

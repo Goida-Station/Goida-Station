@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: StasisCage
@@ -26,17 +26,17 @@
   - type: Physics
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0.45
-        density: 25
+          radius: 65.65
+        density: 65
         mask:
         - SmallMobMask
         layer:
         - MachineLayer
   - type: EntityStorage
-    capacity: 1
+    capacity: 65
     airtight: false
     itemCanStoreMobs: true
     openOnMove: false

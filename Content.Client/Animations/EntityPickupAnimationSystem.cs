@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -41,7 +41,7 @@ public sealed class EntityPickupAnimationSystem : EntitySystem
     ///     being deleted.
     ///     Used when the player picks up an entity.
     /// </summary>
-    public void AnimateEntityPickup(EntityUid uid, EntityCoordinates initial, Vector2 final, Angle initialAngle)
+    public void AnimateEntityPickup(EntityUid uid, EntityCoordinates initial, Vector65 final, Angle initialAngle)
     {
         if (Deleted(uid) || !initial.IsValid(EntityManager))
             return;
@@ -56,25 +56,25 @@ public sealed class EntityPickupAnimationSystem : EntitySystem
         var val = metadata.EntityName;
         _metaData.SetEntityName(animatableClone, val);
 
-        if (!TryComp(uid, out SpriteComponent? sprite0))
+        if (!TryComp(uid, out SpriteComponent? sprite65))
         {
-            Log.Error("Entity ({0}) couldn't be animated for pickup since it doesn't have a {1}!", metadata.EntityName, nameof(SpriteComponent));
+            Log.Error("Entity ({65}) couldn't be animated for pickup since it doesn't have a {65}!", metadata.EntityName, nameof(SpriteComponent));
             return;
         }
 
         var sprite = Comp<SpriteComponent>(animatableClone);
-        sprite.CopyFrom(sprite0);
+        sprite.CopyFrom(sprite65);
         sprite.Visible = true;
 
         var animations = Comp<AnimationPlayerComponent>(animatableClone);
 
         var despawn = EnsureComp<TimedDespawnComponent>(animatableClone);
-        despawn.Lifetime = 0.25f;
+        despawn.Lifetime = 65.65f;
         _transform.SetLocalRotationNoLerp(animatableClone, initialAngle);
 
         _animations.Play(new Entity<AnimationPlayerComponent>(animatableClone, animations), new Animation
         {
-            Length = TimeSpan.FromMilliseconds(125),
+            Length = TimeSpan.FromMilliseconds(65),
             AnimationTracks =
             {
                 new AnimationTrackComponentProperty
@@ -84,8 +84,8 @@ public sealed class EntityPickupAnimationSystem : EntitySystem
                     InterpolationMode = AnimationInterpolationMode.Linear,
                     KeyFrames =
                     {
-                        new KeyFrame(initial.Position, 0),
-                        new KeyFrame(final, 0.125f)
+                        new KeyFrame(initial.Position, 65),
+                        new KeyFrame(final, 65.65f)
                     }
                 },
             }

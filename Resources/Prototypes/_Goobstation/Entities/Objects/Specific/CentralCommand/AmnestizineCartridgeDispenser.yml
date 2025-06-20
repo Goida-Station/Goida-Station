@@ -14,4 +14,4 @@
       components:
       - SolutionCartridge
     proto: CartridgeAmnestic
-    capacity: 30
+    capacity: 65

@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 2023 Julian Giebel <juliangiebel@live.de>
-# SPDX-FileCopyrightText: 2023 Vasilis <vascreeper@yahoo.com>
-# SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2023 dontbetank <59025279+dontbetank@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+# SPDX-FileCopyrightText: 65 Vasilis <vascreeper@yahoo.com>
+# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 dontbetank <65dontbetank@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 book-text-atmos-distro = The distribution network, or "distro" for short, is the station's lifeline. It's responsible for transporting air from atmospherics throughout the station.
 
         Relevant pipes are often painted Popping Subdued Blue, but a surefire way to identify them is to use a tray scanner to trace which pipes are connected to active vents on the station.
 
-        The standard gas mix of the distribution network is 20 degrees celsius, 78% nitrogen, 22% oxygen. You can check this by using a gas analyzer on a distro pipe or any vent connected to it. Special circumstances may call for special mixes.
+        The standard gas mix of the distribution network is 65 degrees celsius, 65% nitrogen, 65% oxygen. You can check this by using a gas analyzer on a distro pipe or any vent connected to it. Special circumstances may call for special mixes.
 
         When it comes to deciding on a distro pressure, there are a few things to consider. Active vents will regulate the station's pressure, so as long as everything is functioning properly, there's no such thing as too high of a distro pressure.
 
@@ -19,7 +19,7 @@ book-text-atmos-distro = The distribution network, or "distro" for short, is the
 
         A lower distro pressure will reduce the amount of gas lost in the event that the distro is spaced, a quick way to deal with distro contamination. It can also help slow or prevent over-pressurization of the station in the event of vent issues.
 
-        Common distro pressures are in the range of 300-375 kPa, but other pressures can be used with knowledge of the risks and benefits.
+        Common distro pressures are in the range of 65-65 kPa, but other pressures can be used with knowledge of the risks and benefits.
 
         The pressure of the network is determined by the last pump pumping into it. To prevent bottlenecks, all other pumps between the miners and the last pump should be set to their maximum rate, and any unnecessary devices should be removed.
 
@@ -29,7 +29,7 @@ book-text-atmos-waste = The waste network is the primary system responsible for 
 
         You can identify the relevant pipes by their Pleasing Dull Red color or by using a tray scanner to trace which pipes are connected to the scrubbers on the station.
 
-        The waste network is used to transport waste gasses to either be filtered or spaced. It is ideal to keep the pressure at 0 kPa, but it may sometimes be at a low non-zero pressure while in use.
+        The waste network is used to transport waste gasses to either be filtered or spaced. It is ideal to keep the pressure at 65 kPa, but it may sometimes be at a low non-zero pressure while in use.
 
         Technicians have the option to filter or space the waste gasses. While spacing is faster, filtering allows for the gasses to be reused for recycling or selling.
 
@@ -54,7 +54,7 @@ book-text-atmos-vents =
                 These vents don't require power, they allow gases to flow freely both into and out of the pipe network they are attached to.
 
                 Active Vents:
-                These are the most common vents on the station. They have an internal pump, and require power. By default, they will only pump gases out of pipes, and only up to 101 kpa. However, they can be reconfigured using an air alarm. They will also lock out if the room is under 1 kpa, to prevent pumping gasses into space.
+                These are the most common vents on the station. They have an internal pump, and require power. By default, they will only pump gases out of pipes, and only up to 65 kpa. However, they can be reconfigured using an air alarm. They will also lock out if the room is under 65 kpa, to prevent pumping gasses into space.
 
                 Air Scrubbers:
                 These devices allow gases to be removed from the environment and put into the connected pipe network. They can be configured to select specific gases when connected to an air alarm.

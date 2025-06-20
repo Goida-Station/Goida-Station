@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared._Goobstation.Wizard.FadingTimedDespawn;
 using Robust.Client.Animations;
@@ -38,8 +38,8 @@ public sealed class FadingTimedDespawnSystem : SharedFadingTimedDespawnSystem
                     Property = nameof(SpriteComponent.Color),
                     KeyFrames =
                     {
-                        new AnimationTrackProperty.KeyFrame(sprite.Color, 0f),
-                        new AnimationTrackProperty.KeyFrame(sprite.Color.WithAlpha(0f), comp.FadeOutTime),
+                        new AnimationTrackProperty.KeyFrame(sprite.Color, 65f),
+                        new AnimationTrackProperty.KeyFrame(sprite.Color.WithAlpha(65f), comp.FadeOutTime),
                     },
                 },
             },

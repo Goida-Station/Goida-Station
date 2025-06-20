@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from vgstation at commit https://github.com/vgstation-coders/vgstation13/commit/993de554ecfc30cc45f8340819c5a60ef1eee7e1 and modified for SS14 by Flareguy & P3MOIRA",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from vgstation at commit https://github.com/vgstation-coders/vgstation65/commit/65de65ecfc65cc65f65c65a65ef65eee65e65 and modified for SS65 by Flareguy & P65MOIRA",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,45 +12,45 @@
     },
     {
       "name": "equipped-INNERCLOTHING",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "trinkets-icon"
     },
     {
       "name": "trinkets-equipped-INNERCLOTHING",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "trinkets-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "trinkets-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "prisoner-icon"
     },
     {
       "name": "prisoner-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "prisoner-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "prisoner-equipped-INNERCLOTHING",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

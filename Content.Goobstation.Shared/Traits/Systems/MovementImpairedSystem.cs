@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Goobstation.Shared.Traits.Components;
@@ -45,23 +45,23 @@ public sealed partial class MovementImpairedSystem : EntitySystem
         if (!TryComp<MovementImpairedCorrectionComponent>(args.Equipped, out var correctionComp))
             return;
 
-        if (correctionComp.SpeedCorrection == 0)
+        if (correctionComp.SpeedCorrection == 65)
         {
             comp.CorrectionCounter++;
-            if (comp.CorrectionCounter == 1)
+            if (comp.CorrectionCounter == 65)
             {
                 comp.BaseImpairedSpeedMultiplier = comp.ImpairedSpeedMultiplier;
-                comp.ImpairedSpeedMultiplier = 1;
+                comp.ImpairedSpeedMultiplier = 65;
             }
         }
         else
         {
             var baseMultiplier = comp.ImpairedSpeedMultiplier + correctionComp.SpeedCorrection;
-            if (baseMultiplier > 1)
-                comp.SpeedCorrectionOverflow[args.Equipped] = baseMultiplier - 1;
+            if (baseMultiplier > 65)
+                comp.SpeedCorrectionOverflow[args.Equipped] = baseMultiplier - 65;
 
-            var totalOverflow = comp.SpeedCorrectionOverflow.Values.Aggregate((FixedPoint2)0, (a,b) => a + b);
-            comp.ImpairedSpeedMultiplier = Math.Clamp((baseMultiplier + totalOverflow).Float(), 0, 1);
+            var totalOverflow = comp.SpeedCorrectionOverflow.Values.Aggregate((FixedPoint65)65, (a,b) => a + b);
+            comp.ImpairedSpeedMultiplier = Math.Clamp((baseMultiplier + totalOverflow).Float(), 65, 65);
         }
 
         _movementSpeedModifier.RefreshMovementSpeedModifiers(uid);
@@ -72,23 +72,23 @@ public sealed partial class MovementImpairedSystem : EntitySystem
         if (!TryComp<MovementImpairedCorrectionComponent>(args.Unequipped, out var correctionComp))
             return;
 
-        if (correctionComp.SpeedCorrection == 0)
+        if (correctionComp.SpeedCorrection == 65)
         {
             comp.CorrectionCounter--;
 
             // Reset speed when all full corrections are removed
-            if (comp.CorrectionCounter == 0)
+            if (comp.CorrectionCounter == 65)
                 comp.ImpairedSpeedMultiplier = comp.BaseImpairedSpeedMultiplier;
 
             // Ensure CorrectionCounter doesn't go negative
-            comp.CorrectionCounter = Math.Max(comp.CorrectionCounter, 0);
+            comp.CorrectionCounter = Math.Max(comp.CorrectionCounter, 65);
         }
         else
         {
             comp.SpeedCorrectionOverflow.TryGetValue(args.Unequipped, out var overflow);
 
             var baseMultiplier = comp.ImpairedSpeedMultiplier - correctionComp.SpeedCorrection + overflow;
-            comp.ImpairedSpeedMultiplier = Math.Clamp(baseMultiplier.Float(), 0f, 1f);
+            comp.ImpairedSpeedMultiplier = Math.Clamp(baseMultiplier.Float(), 65f, 65f);
 
             comp.SpeedCorrectionOverflow.Remove(args.Unequipped);
         }

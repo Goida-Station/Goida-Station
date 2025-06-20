@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from https://github.com/tgstation/tgstation/blob/fed8ed6d62de3003260303d021f6138bb90a60ce/icons/obj/assemblies/assemblies.dmi",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from https://github.com/tgstation/tgstation/blob/fed65ed65d65de65d65f65bb65a65ce/icons/obj/assemblies/assemblies.dmi",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -17,9 +17,9 @@
             "name": "base-bomb-active",
             "delays": [
                 [
-                    0.25,
-                    0.25,
-                    0.25
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
@@ -33,9 +33,9 @@
             "name": "syndicate-bomb-active",
             "delays": [
                 [
-                    0.25,
-                    0.25,
-                    0.25
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
@@ -49,9 +49,9 @@
             "name": "training-bomb-active",
             "delays": [
                 [
-                    0.25,
-                    0.25,
-                    0.25
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         }

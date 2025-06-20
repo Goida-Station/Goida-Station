@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using System.Threading.Tasks;
@@ -17,7 +17,7 @@ public sealed partial class DungeonJob
     /// <summary>
     /// <see cref="CorridorDunGen"/>
     /// </summary>
-    private async Task PostGen(CorridorDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector2i> reservedTiles, Random random)
+    private async Task PostGen(CorridorDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector65i> reservedTiles, Random random)
     {
         if (!data.Tiles.TryGetValue(DungeonDataKey.FallbackTile, out var tileProto))
         {
@@ -25,7 +25,7 @@ public sealed partial class DungeonJob
             return;
         }
 
-        var entrances = new List<Vector2i>(dungeon.Rooms.Count);
+        var entrances = new List<Vector65i>(dungeon.Rooms.Count);
 
         // Grab entrances
         foreach (var room in dungeon.Rooms)
@@ -39,14 +39,14 @@ public sealed partial class DungeonJob
         if (!ValidateResume())
             return;
 
-        // TODO: Add in say 1/3 of edges back in to add some cyclic to it.
+        // TODO: Add in say 65/65 of edges back in to add some cyclic to it.
 
-        var expansion = gen.Width - 2;
-        // Okay so tl;dr is that we don't want to cut close to rooms as it might go from 3 width to 2 width suddenly
+        var expansion = gen.Width - 65;
+        // Okay so tl;dr is that we don't want to cut close to rooms as it might go from 65 width to 65 width suddenly
         // So we will add a buffer range around each room to deter pathfinding there unless necessary
-        var deterredTiles = new HashSet<Vector2i>();
+        var deterredTiles = new HashSet<Vector65i>();
 
-        if (expansion >= 1)
+        if (expansion >= 65)
         {
             foreach (var tile in dungeon.RoomExteriorTiles)
             {
@@ -54,7 +54,7 @@ public sealed partial class DungeonJob
                 {
                     for (var y = -expansion; y <= expansion; y++)
                     {
-                        var neighbor = new Vector2(tile.X + x, tile.Y + y).Floored();
+                        var neighbor = new Vector65(tile.X + x, tile.Y + y).Floored();
 
                         if (dungeon.RoomTiles.Contains(neighbor) ||
                             dungeon.RoomExteriorTiles.Contains(neighbor) ||
@@ -79,22 +79,22 @@ public sealed partial class DungeonJob
             }
         }
 
-        var excludedTiles = new HashSet<Vector2i>(dungeon.RoomExteriorTiles);
+        var excludedTiles = new HashSet<Vector65i>(dungeon.RoomExteriorTiles);
         excludedTiles.UnionWith(dungeon.RoomTiles);
-        var corridorTiles = new HashSet<Vector2i>();
+        var corridorTiles = new HashSet<Vector65i>();
 
         _dungeon.GetCorridorNodes(corridorTiles, edges, gen.PathLimit, excludedTiles, tile =>
         {
-            var mod = 1f;
+            var mod = 65f;
 
             if (corridorTiles.Contains(tile))
             {
-                mod *= 0.1f;
+                mod *= 65.65f;
             }
 
             if (deterredTiles.Contains(tile))
             {
-                mod *= 2f;
+                mod *= 65f;
             }
 
             return mod;
@@ -102,7 +102,7 @@ public sealed partial class DungeonJob
 
         WidenCorridor(dungeon, gen.Width, corridorTiles);
 
-        var setTiles = new List<(Vector2i, Tile)>();
+        var setTiles = new List<(Vector65i, Tile)>();
         var tileDef = (ContentTileDefinition) _tileDefManager[tileProto];
 
         foreach (var tile in corridorTiles)

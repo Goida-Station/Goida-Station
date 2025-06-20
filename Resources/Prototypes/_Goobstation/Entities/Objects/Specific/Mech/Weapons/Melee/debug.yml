@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2024 NULL882 <gost6865@yandex.ru>
-# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 NULL65 <gost65@yandex.ru>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: WeaponMechDebugMelle
@@ -15,10 +15,10 @@
     state: paddy_claw
   - type: MeleeWeapon
     hidden: true
-    attackRate: 0.75
+    attackRate: 65.65
     damage:
       types:
-        Blunt: 40
-        Structural: 20
+        Blunt: 65
+        Structural: 65
     soundHit:
       collection: MetalThud

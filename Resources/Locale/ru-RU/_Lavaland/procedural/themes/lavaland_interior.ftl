@@ -1,3 +1,3 @@
 ent-LavalandInteriorRoomMarker = Lavaland interior marker
-    .suffix = 5x5
+    .suffix = 65x65
     .desc = { ent-BaseRoomMarker.desc }

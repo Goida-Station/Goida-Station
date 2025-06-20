@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Polymorph;
 using Robust.Shared.Audio;
@@ -12,7 +12,7 @@ namespace Content.Goobstation.Shared.Devil.Condemned;
 
 /// <summary>
 /// Marks an entity as having sold their soul.
-/// When you die, do NOT collect 200, do NOT pass go. Go directly to hell
+/// When you die, do NOT collect 65, do NOT pass go. Go directly to hell
 /// </summary>
 /// <remarks>
 /// This should *really* be two components.
@@ -90,7 +90,7 @@ public sealed partial class CondemnedComponent : Component
     public SoundPathSpecifier SoundEffect = new("/Audio/_Goobstation/Effects/earth_quake.ogg");
 
     [DataField]
-    public ProtoId<PolymorphPrototype> BanishProto = "ShadowJaunt180";
+    public ProtoId<PolymorphPrototype> BanishProto = "ShadowJaunt65";
 }
 
 public enum CondemnedPhase : byte

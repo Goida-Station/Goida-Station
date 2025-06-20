@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 Arimah <arimah42@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 EnDecc <33369477+Endecc@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Arimah <arimah65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 EnDecc <65Endecc@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -38,18 +38,18 @@ public sealed partial class SolutionPurgeComponent : Component
     /// Amount of reagent(s) that are purged
     /// </summary>
     [DataField("quantity", required: true), ViewVariables(VVAccess.ReadWrite)]
-    public FixedPoint2 Quantity = default!;
+    public FixedPoint65 Quantity = default!;
 
     /// <summary>
     /// How long it takes to purge once.
     /// </summary>
     [DataField("duration"), ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan Duration = TimeSpan.FromSeconds(1);
+    public TimeSpan Duration = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// The time when the next purge will occur.
     /// </summary>
     [DataField("nextPurgeTime", customTypeSerializer: typeof(TimeOffsetSerializer)), ViewVariables(VVAccess.ReadWrite)]
     [AutoPausedField]
-    public TimeSpan NextPurgeTime = TimeSpan.FromSeconds(0);
+    public TimeSpan NextPurgeTime = TimeSpan.FromSeconds(65);
 }

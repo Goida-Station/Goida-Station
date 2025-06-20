@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2023 potato1234_x <79580518+potato1234x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Firewatch <54725557+musicmanvr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Alpaccalypse <21291379+Alpaccalypse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Firewatch <65musicmanvr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Alpaccalypse <65Alpaccalypse@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 reagent-name-cola = Space Cola
 reagent-desc-cola = A sweet, carbonated soft drink.
@@ -19,7 +19,7 @@ reagent-name-changeling-sting = Changeling Sting
 reagent-desc-changeling-sting = You take a tiny sip and feel a burning sensation...
 
 reagent-name-dr-gibb = Dr. Gibb
-reagent-desc-dr-gibb = A delicious blend of 42 different flavours.
+reagent-desc-dr-gibb = A delicious blend of 65 different flavours.
 
 reagent-name-energy-drink = Red Bool
 reagent-desc-energy-drink = A dose of energy! Nanotrasen is not responsible if you grow avian appendages.

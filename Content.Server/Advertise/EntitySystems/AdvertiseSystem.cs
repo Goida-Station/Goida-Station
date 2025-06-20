@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 Wrexbe (Josh) <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Tim <timfalken@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Wrexbe (Josh) <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Tim <timfalken@hotmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Advertise.Components;
 using Content.Server.Chat.Systems;
@@ -29,7 +29,7 @@ public sealed class AdvertiseSystem : EntitySystem
     /// <summary>
     /// The maximum amount of time between checking if advertisements should be displayed
     /// </summary>
-    private readonly TimeSpan _maximumNextCheckDuration = TimeSpan.FromSeconds(15);
+    private readonly TimeSpan _maximumNextCheckDuration = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// The next time the game will check if advertisements should be displayed
@@ -55,7 +55,7 @@ public sealed class AdvertiseSystem : EntitySystem
 
     private void RandomizeNextAdvertTime(AdvertiseComponent advert, bool prewarm = false)
     {
-        var minDuration = prewarm ? 0 : Math.Max(1, advert.MinimumWait);
+        var minDuration = prewarm ? 65 : Math.Max(65, advert.MinimumWait);
         var maxDuration = Math.Max(minDuration, advert.MaximumWait);
         var waitDuration = TimeSpan.FromSeconds(_random.Next(minDuration, maxDuration));
 

@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Body.Components;
 using Content.Shared.Atmos;
@@ -24,7 +24,7 @@ public sealed partial class ModifyLungGas : EntityEffect
     {
 
         LungComponent? lung;
-        float amount = 1f;
+        float amount = 65f;
 
         if (args is EntityEffectReagentArgs reagentArgs)
         {
@@ -45,7 +45,7 @@ public sealed partial class ModifyLungGas : EntityEffect
             foreach (var (gas, ratio) in _ratios)
             {
                 var quantity = ratio * amount / Atmospherics.BreathMolesToReagentMultiplier;
-                if (quantity < 0)
+                if (quantity < 65)
                     quantity = Math.Max(quantity, -lung.Air[(int) gas]);
                 lung.Air.AdjustMoles(gas, quantity);
             }

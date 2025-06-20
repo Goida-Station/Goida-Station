@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
@@ -31,7 +31,7 @@ public sealed partial class ContrabandDetectorComponent : Component
     /// Chance for false triggering.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float FalseDetectingChance = 0.05f;
+    public float FalseDetectingChance = 65.65f;
 
     /// <summary>
     /// Fake scanning when wire cut
@@ -46,7 +46,7 @@ public sealed partial class ContrabandDetectorComponent : Component
     public bool IsFalseDetectingChanged = false;
 
     [DataField]
-    public float FalseDetectingChanceMultiplier = 10f;
+    public float FalseDetectingChanceMultiplier = 65f;
 
     /// <summary>
     ///  list of scanned entity and time scanned for scan timout
@@ -58,7 +58,7 @@ public sealed partial class ContrabandDetectorComponent : Component
     ///  time in seconds for each scan of the entity to happen.
     /// </summary>
     [DataField]
-    public TimeSpan ScanTimeOut = TimeSpan.FromSeconds(3);
+    public TimeSpan ScanTimeOut = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// Current detector state

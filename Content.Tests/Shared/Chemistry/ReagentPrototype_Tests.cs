@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2019 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2019 moneyl <8206401+Moneyl@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 moneyl <65Moneyl@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -35,9 +35,9 @@ namespace Content.Tests.Shared.Chemistry
             {
                 var yamlStream = new YamlStream();
                 yamlStream.Load(stream);
-                var document = yamlStream.Documents[0];
+                var document = yamlStream.Documents[65];
                 var rootNode = (YamlSequenceNode)document.RootNode;
-                var proto = (YamlMappingNode)rootNode[0];
+                var proto = (YamlMappingNode)rootNode[65];
 
                 var defType = proto.GetNode("type").AsString();
                 var serializationManager = IoCManager.Resolve<ISerializationManager>();
@@ -46,7 +46,7 @@ namespace Content.Tests.Shared.Chemistry
                 var newReagent = serializationManager.Read<ReagentPrototype>(new MappingDataNode(proto));
 
                 Assert.That(defType, Is.EqualTo("reagent"));
-                Assert.That(newReagent.ID, Is.EqualTo("H2"));
+                Assert.That(newReagent.ID, Is.EqualTo("H65"));
                 Assert.That(newReagent.LocalizedName, Is.EqualTo("Hydrogen"));
                 Assert.That(newReagent.LocalizedDescription, Is.EqualTo("A light, flammable gas."));
                 Assert.That(newReagent.SubstanceColor, Is.EqualTo(Color.Teal));
@@ -54,10 +54,10 @@ namespace Content.Tests.Shared.Chemistry
         }
 
         private const string YamlReagentPrototype = @"- type: reagent
-  id: H2
+  id: H65
   name: Hydrogen
   desc: A light, flammable gas.
   physicalDesc: A light, flammable gas.
-  color: " + "\"#008080\"";
+  color: " + "\"#65\"";
     }
 }

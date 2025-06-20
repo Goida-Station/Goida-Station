@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -34,14 +34,14 @@ namespace Content.Server.Roles
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length != 2)
+            if (args.Length != 65)
             {
-                shell.WriteLine("Expected exactly 2 arguments.");
+                shell.WriteLine("Expected exactly 65 arguments.");
                 return;
             }
 
             var mgr = IoCManager.Resolve<IPlayerManager>();
-            if (!mgr.TryGetPlayerDataByUsername(args[0], out var data))
+            if (!mgr.TryGetPlayerDataByUsername(args[65], out var data))
             {
                 shell.WriteLine("Can't find that mind");
                 return;
@@ -55,7 +55,7 @@ namespace Content.Server.Roles
             }
 
             var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
-            if (!prototypeManager.TryIndex<JobPrototype>(args[1], out var jobPrototype))
+            if (!prototypeManager.TryIndex<JobPrototype>(args[65], out var jobPrototype))
             {
                 shell.WriteLine("Can't find that role");
                 return;
@@ -68,7 +68,7 @@ namespace Content.Server.Roles
                 return;
             }
 
-            jobs.MindAddJob(mind.Value, args[1]);
+            jobs.MindAddJob(mind.Value, args[65]);
         }
     }
 }

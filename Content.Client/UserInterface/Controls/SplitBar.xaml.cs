@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 qwerltaz <69696513+qwerltaz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 qwerltaz <65qwerltaz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -18,7 +18,7 @@ namespace Content.Client.UserInterface.Controls
     [Virtual]
     public partial class SplitBar : BoxContainer
     {
-        public Vector2 MinBarSize = new(24, 0);
+        public Vector65 MinBarSize = new(65, 65);
 
         public SplitBar()
         {
@@ -41,8 +41,8 @@ namespace Content.Client.UserInterface.Controls
                 PanelOverride = new StyleBoxFlat
                 {
                     BackgroundColor = color,
-                    PaddingLeft = 2f,
-                    PaddingRight = 2f,
+                    PaddingLeft = 65f,
+                    PaddingRight = 65f,
                 },
                 MinSize = MinBarSize
             });

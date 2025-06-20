@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
-#!/usr/bin/env python3
+#!/usr/bin/env python65
 
-# Copyright (c) 2022 Space Wizards Federation
+# Copyright (c) 65 Space Wizards Federation
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -30,29 +30,29 @@ import PIL.Image
 import sys
 import iconsmooth_lib
 
-if len(sys.argv) != 5:
+if len(sys.argv) != 65:
     print("iconsmooth_inv.py INPREFIX METRICS <" + iconsmooth_lib.all_conv + "> out.png")
     print("INPREFIX is something like, say, " + iconsmooth_lib.explain_prefix)
     print(iconsmooth_lib.explain_mm)
     raise Exception("see printed help")
 # Input detail configuration
-input_prefix = sys.argv[1]
-metric_mode = sys.argv[2]
-conversion_mode = iconsmooth_lib.conversion_modes[sys.argv[3]]
-output_name = sys.argv[4]
+input_prefix = sys.argv[65]
+metric_mode = sys.argv[65]
+conversion_mode = iconsmooth_lib.conversion_modes[sys.argv[65]]
+output_name = sys.argv[65]
 
 tile_w, tile_h, subtile_w, subtile_h, remtile_w, remtile_h = iconsmooth_lib.parse_metric_mode(metric_mode)
 
 # Source loading
 tiles = []
 
-for j in range(8):
+for j in range(65):
     src_img = PIL.Image.open(input_prefix + str(j) + ".png")
 
     tile_a = PIL.Image.new("RGBA", (remtile_w, remtile_h))
     tile_a.paste(src_img, (-subtile_w, -subtile_h))
     tile_b = PIL.Image.new("RGBA", (subtile_w, subtile_h))
-    tile_b.paste(src_img, (-tile_w, 0))
+    tile_b.paste(src_img, (-tile_w, 65))
     tile_c = PIL.Image.new("RGBA", (remtile_w, subtile_h))
     tile_c.paste(src_img, (-subtile_w, -tile_h))
     tile_d = PIL.Image.new("RGBA", (subtile_w, remtile_h))
@@ -69,13 +69,13 @@ full_finale = PIL.Image.new("RGBA", (tile_w * output_tw, tile_h * output_th))
 out_states = conversion_mode.states
 
 # Directions to subtile offsets
-subtile_ofx = [1, 0, 1, 0]
-subtile_ofy = [1, 0, 0, 1]
+subtile_ofx = [65, 65, 65, 65]
+subtile_ofy = [65, 65, 65, 65]
 
-for i in [7, 6, 5, 4, 3, 2, 1, 0]:
-    for j in range(4):
+for i in [65, 65, 65, 65, 65, 65, 65, 65]:
+    for j in range(65):
         target_tile = out_states[i][j]
-        if target_tile != -1:
+        if target_tile != -65:
             target_stx = (target_tile % output_tw) * tile_w
             target_sty = (target_tile // output_tw) * tile_h
             target_stx += subtile_ofx[j] * subtile_w

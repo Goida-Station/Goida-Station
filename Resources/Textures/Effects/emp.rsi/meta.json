@@ -1,39 +1,39 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/e52683d3872347af447bb0ff74c420d4a4e91ea8",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/e65d65af65bb65ff65c65d65a65e65ea65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "emp_disable",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -41,14 +41,14 @@
       "name": "emp_pulse",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     }

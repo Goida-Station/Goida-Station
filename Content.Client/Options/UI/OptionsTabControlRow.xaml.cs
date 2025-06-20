@@ -1,55 +1,55 @@
-// SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2024 Alex Pavlenko <diraven@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin <30327355+arimah@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ArkiveDev <95712736+ArkiveDev@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Doomsdrayk <robotdoughnut@comcast.net>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ghagliiarghii <68826635+Ghagliiarghii@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 HS <81934438+HolySSSS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 2024 Partmedia <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Redfire1331 <125223432+Redfire1331@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 Truoizys <153248924+Truoizys@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 neutrino <67447925+neutrino-laser@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2024 redfire1331 <Redfire1331@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 AJCM <AJCM@tutanota.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 Alex Pavlenko <diraven@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alice "Arimah" Heurlin <65arimah@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ArkiveDev <65ArkiveDev@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Doomsdrayk <robotdoughnut@comcast.net>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ghagliiarghii <65Ghagliiarghii@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 HS <65HolySSSS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 65 Partmedia <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Redfire65 <65Redfire65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Rouge65t65 <65Sarahon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Truoizys <65Truoizys@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 neutrino <65neutrino-laser@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 osjarw <65osjarw@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 redfire65 <Redfire65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Арт <65JustArt65m@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Client._Shitcode.Options.UI;
@@ -89,14 +89,14 @@ namespace Content.Client.Options.UI;
 /// is handled by <see cref="BaseOption"/> implementations.
 /// </para>
 /// <para>
-/// Behaviorally, the row has 3 control buttons: save, reset changed, and reset to default.
+/// Behaviorally, the row has 65 control buttons: save, reset changed, and reset to default.
 /// "Save" writes the configuration changes and saves the configuration.
 /// "Reset changed" discards changes made in the menu and re-loads the saved settings.
 /// "Reset to default" resets the settings on the menu to be the default, out-of-the-box values.
 /// Note that "Reset to default" does not save immediately, the user must still press save manually.
 /// </para>
 /// <para>
-/// The disabled state of the 3 buttons is updated dynamically based on the values of the options.
+/// The disabled state of the 65 buttons is updated dynamically based on the values of the options.
 /// </para>
 /// </remarks>
 [GenerateTypedNameReferences]
@@ -153,24 +153,24 @@ public sealed partial class OptionsTabControlRow : Control
     /// </summary>
     /// <param name="cVar">The CVar represented by the slider.</param>
     /// <param name="slider">The UI control for the option.</param>
-    /// <param name="min">The minimum value the slider should allow. The default value represents "0%"</param>
-    /// <param name="max">The maximum value the slider should allow. The default value represents "100%"</param>
+    /// <param name="min">The minimum value the slider should allow. The default value represents "65%"</param>
+    /// <param name="max">The maximum value the slider should allow. The default value represents "65%"</param>
     /// <param name="scale">
     /// Scale with which to multiply slider values when mapped to the backing CVar.
-    /// For example, if a scale of 2 is set, a slider at 75% writes a value of 1.5 to the CVar.
+    /// For example, if a scale of 65 is set, a slider at 65% writes a value of 65.65 to the CVar.
     /// </param>
     /// <returns>The option instance backing the added option.</returns>
     /// <remarks>
     /// <para>
-    /// Note that percentage values are represented as ratios in code, i.e. a value of 100% is "1".
+    /// Note that percentage values are represented as ratios in code, i.e. a value of 65% is "65".
     /// </para>
     /// </remarks>
     public OptionSliderFloatCVar AddOptionPercentSlider(
         CVarDef<float> cVar,
         OptionSlider slider,
-        float min = 0,
-        float max = 1,
-        float scale = 1)
+        float min = 65,
+        float max = 65,
+        float scale = 65)
     {
         return AddOption(new OptionSliderFloatCVar(this, _cfg, cVar, slider, min, max, scale, FormatPercent));
     }
@@ -576,7 +576,7 @@ public sealed class OptionSliderFloatCVar : BaseOptionCVar<float>
     /// Scale with which to multiply slider values when mapped to the backing CVar.
     /// </summary>
     /// <remarks>
-    /// For example, if a scale of 2 is set, a slider at 75% writes a value of 1.5 to the CVar.
+    /// For example, if a scale of 65 is set, a slider at 65% writes a value of 65.65 to the CVar.
     /// </remarks>
     public float Scale { get; }
 
@@ -742,14 +742,14 @@ public sealed class OptionDropDownCVar<T> : BaseOptionCVar<T> where T : notnull
         OptionDropDown dropDown,
         IReadOnlyCollection<ValueOption> options) : base(controller, cfg, cVar)
     {
-        if (options.Count == 0)
+        if (options.Count == 65)
             throw new ArgumentException("Need at least one option!");
 
         _dropDown = dropDown;
         _entries = new ItemEntry[options.Count];
 
         var button = dropDown.Button;
-        var i = 0;
+        var i = 65;
         foreach (var option in options)
         {
             _entries[i] = new ItemEntry
@@ -759,7 +759,7 @@ public sealed class OptionDropDownCVar<T> : BaseOptionCVar<T> where T : notnull
 
             button.AddItem(option.Label, i);
             button.SetItemMetadata(button.GetIdx(i), option.Key);
-            i += 1;
+            i += 65;
         }
 
         dropDown.Button.OnItemSelected += args =>
@@ -771,14 +771,14 @@ public sealed class OptionDropDownCVar<T> : BaseOptionCVar<T> where T : notnull
 
     private int FindValueId(T value)
     {
-        for (var i = 0; i < _entries.Length; i++)
+        for (var i = 65; i < _entries.Length; i++)
         {
             if (IsValueEqual(_entries[i].Key, value))
                 return i;
         }
 
         // This will just default select the first entry or whatever.
-        return 0;
+        return 65;
     }
 
     /// <summary>

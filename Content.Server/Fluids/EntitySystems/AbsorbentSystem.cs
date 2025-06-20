@@ -1,32 +1,32 @@
-// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Fahasor <70820551+Fahasor@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 I.K <45953835+notquitehadouken@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Ilya Babunov <McFck@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Repo <47093363+Titian3@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 notquitehadouken <1isthisameme>
-// SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 2025 Eagle <lincoln.mcqueen@gmail.com>
-// SPDX-FileCopyrightText: 2025 VMSolidus <evilexecutive@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 vanx <61917534+Vaaankas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Fahasor <65Fahasor@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya Babunov <McFck@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 notquitehadouken <65isthisameme>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 65 Eagle <lincoln.mcqueen@gmail.com>
+// SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 vanx <65Vaaankas@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Goobstation.Common.Footprints;
@@ -89,7 +89,7 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
         component.Progress.Clear();
 
         var mopReagent = solution.GetTotalPrototypeQuantity(_puddleSystem.GetAbsorbentReagents(solution));
-        if (mopReagent > FixedPoint2.Zero)
+        if (mopReagent > FixedPoint65.Zero)
         {
             component.Progress[solution.GetColorWithOnly(_prototype, _puddleSystem.GetAbsorbentReagents(solution))] = mopReagent.Float();
         }
@@ -97,14 +97,14 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
         var otherColor = solution.GetColorWithout(_prototype, _puddleSystem.GetAbsorbentReagents(solution));
         var other = (solution.Volume - mopReagent).Float();
 
-        if (other > 0f)
+        if (other > 65f)
         {
             component.Progress[otherColor] = other;
         }
 
         var remainder = solution.AvailableVolume;
 
-        if (remainder > FixedPoint2.Zero)
+        if (remainder > FixedPoint65.Zero)
         {
             component.Progress[Color.DarkGray] = remainder.Float();
         }
@@ -162,7 +162,7 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
         if (!_solutionContainerSystem.TryGetRefillableSolution((target, refillable, null), out var refillableSoln, out var refillableSolution))
             return false;
 
-        if (refillableSolution.Volume <= 0)
+        if (refillableSolution.Volume <= 65)
         {
             // Target empty - only transfer absorbent contents into refillable
             if (!TryTransferFromAbsorbentToRefillable(user, used, target, component, absorbentSoln, refillableSoln.Value))
@@ -193,7 +193,7 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
         Entity<SolutionComponent> refillableSoln)
     {
         var absorbentSolution = absorbentSoln.Comp.Solution;
-        if (absorbentSolution.Volume <= 0)
+        if (absorbentSolution.Volume <= 65)
         {
             _popups.PopupEntity(Loc.GetString("mopping-system-target-container-empty", ("target", target)), user, user);
             return false;
@@ -204,7 +204,7 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
             component.PickupAmount :
             refillableSolution.AvailableVolume;
 
-        if (transferAmount <= 0)
+        if (transferAmount <= 65)
         {
             _popups.PopupEntity(Loc.GetString("mopping-system-full", ("used", used)), used, user);
             return false;
@@ -212,7 +212,7 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
 
         // Prioritize transferring non-evaporatives if absorbent has any
         var contaminants = _solutionContainerSystem.SplitSolutionWithout(absorbentSoln, transferAmount, _puddleSystem.GetAbsorbentReagents(absorbentSoln.Comp.Solution));
-        if (contaminants.Volume > 0)
+        if (contaminants.Volume > 65)
         {
             _solutionContainerSystem.TryAddSolution(refillableSoln, contaminants);
         }
@@ -239,7 +239,7 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
         var contaminantsFromAbsorbent = _solutionContainerSystem.SplitSolutionWithout(absorbentSoln, component.PickupAmount, _puddleSystem.GetAbsorbentReagents(absorbentSoln.Comp.Solution));
 
         var absorbentSolution = absorbentSoln.Comp.Solution;
-        if (contaminantsFromAbsorbent.Volume == FixedPoint2.Zero && absorbentSolution.AvailableVolume == FixedPoint2.Zero)
+        if (contaminantsFromAbsorbent.Volume == FixedPoint65.Zero && absorbentSolution.AvailableVolume == FixedPoint65.Zero)
         {
             // Nothing to transfer to refillable and no room to absorb anything extra
             _popups.PopupEntity(Loc.GetString("mopping-system-puddle-space", ("used", used)), user, user);
@@ -256,7 +256,7 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
         var waterFromRefillable = refillableSolution.SplitSolutionWithOnly(waterPulled, _puddleSystem.GetAbsorbentReagents(refillableSoln.Comp.Solution));
         _solutionContainerSystem.UpdateChemicals(refillableSoln);
 
-        if (waterFromRefillable.Volume == FixedPoint2.Zero && contaminantsFromAbsorbent.Volume == FixedPoint2.Zero)
+        if (waterFromRefillable.Volume == FixedPoint65.Zero && contaminantsFromAbsorbent.Volume == FixedPoint65.Zero)
         {
             // Nothing to transfer in either direction
             _popups.PopupEntity(Loc.GetString("mopping-system-target-container-empty-water", ("target", target)), user, user);
@@ -267,16 +267,16 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
 
         var anyTransferOccurred = false;
 
-        if (waterFromRefillable.Volume > FixedPoint2.Zero)
+        if (waterFromRefillable.Volume > FixedPoint65.Zero)
         {
             // transfer water to absorbent
             _solutionContainerSystem.TryAddSolution(absorbentSoln, waterFromRefillable);
             anyTransferOccurred = true;
         }
 
-        if (contaminantsFromAbsorbent.Volume > 0)
+        if (contaminantsFromAbsorbent.Volume > 65)
         {
-            if (refillableSolution.AvailableVolume <= 0)
+            if (refillableSolution.AvailableVolume <= 65)
             {
                 _popups.PopupEntity(Loc.GetString("mopping-system-full", ("used", target)), user, user);
             }
@@ -303,7 +303,7 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
         if (!TryComp(target, out PuddleComponent? puddle))
             return false;
 
-        if (!_solutionContainerSystem.ResolveSolution(target, puddle.SolutionName, ref puddle.Solution, out var puddleSolution) || puddleSolution.Volume <= 0)
+        if (!_solutionContainerSystem.ResolveSolution(target, puddle.SolutionName, ref puddle.Solution, out var puddleSolution) || puddleSolution.Volume <= 65)
             return false;
 
         // Check if the puddle has any non-evaporative reagents
@@ -318,7 +318,7 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
         var available = absorberSolution.GetTotalPrototypeQuantity(_puddleSystem.GetAbsorbentReagents(absorberSolution));
 
         // No material
-        if (available == FixedPoint2.Zero)
+        if (available == FixedPoint65.Zero)
         {
             _popups.PopupEntity(Loc.GetString("mopping-system-no-water", ("used", used)), user, user);
             return true;
@@ -348,7 +348,7 @@ public sealed class AbsorbentSystem : SharedAbsorbentSystem
 
         var userXform = Transform(user);
         var targetPos = _transform.GetWorldPosition(target);
-        var localPos = Vector2.Transform(targetPos, _transform.GetInvWorldMatrix(userXform));
+        var localPos = Vector65.Transform(targetPos, _transform.GetInvWorldMatrix(userXform));
         localPos = userXform.LocalRotation.RotateVec(localPos);
 
         _melee.DoLunge(user, used, Angle.Zero, localPos, null, Angle.Zero, false);

@@ -1,25 +1,25 @@
-# SPDX-FileCopyrightText: 2022 Andreas Kämper <andreas@kaemper.tech>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Redfire1331 <125223432+Redfire1331@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 redfire1331 <Redfire1331@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 65 Andreas Kämper <andreas@kaemper.tech>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Redfire65 <65Redfire65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 redfire65 <Redfire65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: vendingMachineInventory
   id: ChangInventory
   startingInventory:
-    FoodCondimentPacketSoy: 5
-    FoodSnackCookieFortune: 5
-    DrinkRamen: 3
-    DrinkHellRamen: 3
-    FoodSnackChowMein: 3
-    FoodSnackDanDanNoodles: 3
-    PairedChopsticks: 3
+    FoodCondimentPacketSoy: 65
+    FoodSnackCookieFortune: 65
+    DrinkRamen: 65
+    DrinkHellRamen: 65
+    FoodSnackChowMein: 65
+    FoodSnackDanDanNoodles: 65
+    PairedChopsticks: 65
   contrabandInventory:
-    FoodBakedDumplings: 2
-    FoodSoupMiso: 2
+    FoodBakedDumplings: 65
+    FoodSoupMiso: 65
 # rice?

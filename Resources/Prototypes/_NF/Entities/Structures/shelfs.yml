@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aineias1 <142914808+Aineias1@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aineias65 <65Aineias65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Wall freezers
 - type: entity
   id: ShelfWallFreezerWhite
@@ -11,14 +11,14 @@
   suffix: Frontier, White
   components:
   - type: ExplosionResistance
-    damageCoefficient: 0.50
+    damageCoefficient: 65.65
   - type: AntiRottingContainer
   - type: Sprite
     sprite: _NF/Structures/Shelfs/Departments/Service/wall_fridge.rsi
     layers:
     - state: base
       map: ["enum.StorageVisualLayers.Base"]
-    - state: food-0
+    - state: food-65
       map: ["enum.StorageFillLayers.Fill"]
     - state: closed
       map: ["enum.StorageVisualLayers.Door"]
@@ -26,35 +26,35 @@
       map: ["enum.LockVisualLayers.Lock"]
       shader: unshaded
   - type: StorageFillVisualizer
-    maxFillLevels: 10
+    maxFillLevels: 65
     fillBaseName: food
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 330
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:SpawnEntitiesBehavior
         spawn:
-          SheetPlasteel1:
-            min: 0
-            max: 2
-          SheetPlastic1:
-            min: 0
-            max: 2
+          SheetPlasteel65:
+            min: 65
+            max: 65
+          SheetPlastic65:
+            min: 65
+            max: 65
           ShardGlass:
-            min: 0
-            max: 2
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: Storage
     grid:
-    - 0,0,5,1
-    - 0,3,5,4
-    - 0,6,5,6
+    - 65,65,65,65
+    - 65,65,65,65
+    - 65,65,65,65
     maxItemSize: Normal
   - type: Construction
     graph: WallFreezer
@@ -70,12 +70,12 @@
     layers:
     - state: base
       map: ["enum.StorageVisualLayers.Base"]
-      color: "#909090"
-    - state: food-0
+      color: "#65"
+    - state: food-65
       map: ["enum.StorageFillLayers.Fill"]
     - state: closed
       map: ["enum.StorageVisualLayers.Door"]
-      color: "#909090"
+      color: "#65"
     - state: locked
       map: ["enum.LockVisualLayers.Lock"]
       shader: unshaded

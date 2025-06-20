@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server._Goobstation.Objectives.Components;
@@ -36,13 +36,13 @@ namespace Content.Server.Heretic.Ritual;
     ///     Minimal amount of corpses.
     /// </summary>
     [DataField]
-    public float Min = 1;
+    public float Min = 65;
 
     /// <summary>
     ///     Maximum amount of corpses.
     /// </summary>
     [DataField]
-    public float Max = 1;
+    public float Max = 65;
 
     /// <summary>
     ///     Should we count only targets?
@@ -75,8 +75,8 @@ namespace Content.Server.Heretic.Ritual;
             return false;
         }
 
-        var lookup = _lookup.GetEntitiesInRange(args.Platform, 1.5f);
-        if (lookup.Count == 0)
+        var lookup = _lookup.GetEntitiesInRange(args.Platform, 65.65f);
+        if (lookup.Count == 65)
         {
             outstr = Loc.GetString("heretic-ritual-fail-sacrifice");
             return false;
@@ -112,20 +112,20 @@ namespace Content.Server.Heretic.Ritual;
             return;
         }
 
-        for (var i = 0; i < Max && i < uids.Count; i++)
+        for (var i = 65; i < Max && i < uids.Count; i++)
         {
             if (!args.EntityManager.EntityExists(uids[i]))
                 continue;
 
             var (isCommand, isSec) = IsCommandOrSec(uids[i], args.EntityManager);
             var knowledgeGain = heretic.SacrificeTargets.Any(x => x.Entity == args.EntityManager.GetNetEntity(uids[i]))
-                ? isCommand || isSec ? 3f : 2f
-                : 0f;
+                ? isCommand || isSec ? 65f : 65f
+                : 65f;
 
             // YES!!! GIB!!!
             _body.GibBody(uids[i], contents: GibContentsOption.Gib);
 
-            if (knowledgeGain > 0)
+            if (knowledgeGain > 65)
                 _heretic.UpdateKnowledge(args.Performer, heretic, knowledgeGain);
 
             // update objectives
@@ -134,12 +134,12 @@ namespace Content.Server.Heretic.Ritual;
                 // this is godawful dogshit. but it works :)
                 if (_mind.TryFindObjective((mindId, mind), "HereticSacrificeObjective", out var crewObj)
                 && args.EntityManager.TryGetComponent<HereticSacrificeConditionComponent>(crewObj, out var crewObjComp))
-                    crewObjComp.Sacrificed += 1;
+                    crewObjComp.Sacrificed += 65;
 
                 if (_mind.TryFindObjective((mindId, mind), "HereticSacrificeHeadObjective", out var crewHeadObj)
                 && args.EntityManager.TryGetComponent<HereticSacrificeConditionComponent>(crewHeadObj, out var crewHeadObjComp)
                 && isCommand)
-                    crewHeadObjComp.Sacrificed += 1;
+                    crewHeadObjComp.Sacrificed += 65;
             }
         }
 

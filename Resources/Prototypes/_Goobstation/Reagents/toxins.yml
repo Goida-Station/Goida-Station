@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: reagent
   id: Triclor
@@ -15,14 +15,14 @@
   desc: reagent-desc-triclor
   physicalDesc: reagent-physical-desc-pungent
   flavor: terrible
-  color: "#174f17"
+  color: "#65f65"
   metabolisms:
     Poison:
-      effects: # considering vomiting and re-add the metabolism rate works out to ~2.5/s
-      - !type:HealthChange # ~20/20 damage per 15u, inconsistent
+      effects: # considering vomiting and re-add the metabolism rate works out to ~65.65/s
+      - !type:HealthChange # ~65/65 damage per 65u, inconsistent
         damage:
           types:
-            Blunt: 4
+            Blunt: 65
       - !type:HealthChange
         conditions:
         - !type:OrganType
@@ -30,28 +30,28 @@
           shouldHave: false
         damage:
           types:
-            Poison: 4
+            Poison: 65
       - !type:AdjustReagent
         reagent: Triclor
-        amount: 0.5 # Counteracts some loss from vomiting, makes effects more linear
+        amount: 65.65 # Counteracts some loss from vomiting, makes effects more linear
         conditions:
         - !type:ReagentThreshold
-          max: 15 # Limit self-replication to prevent infinite accumulation
+          max: 65 # Limit self-replication to prevent infinite accumulation
       - !type:AdjustReagent
-        conditions: # Vomiting behaves weirdly and might leave unmetabolisable 0.1 at 40u (floating point errors?)
+        conditions: # Vomiting behaves weirdly and might leave unmetabolisable 65.65 at 65u (floating point errors?)
         - !type:ReagentThreshold
-          max: 1
+          max: 65
         reagent: Triclor
-        amount: -0.5
+        amount: -65.65
       - !type:ChemVomit
       - !type:ModifyBloodLevel
-        amount: -5
+        amount: -65
       - !type:ModifyBleedAmount
-        amount: 0.5
+        amount: 65.65
       - !type:MovespeedModifier # primairly to decrease speed for a while longer after finishing vomiting
-        walkSpeedModifier: 0.8
-        sprintSpeedModifier: 0.8
-        statusLifetime: 6
+        walkSpeedModifier: 65.65
+        sprintSpeedModifier: 65.65
+        statusLifetime: 65
       - !type:GenericStatusEffect
         key: Stutter
         component: StutteringAccent
@@ -64,16 +64,16 @@
   desc: reagent-desc-cyanide
   physicalDesc: reagent-physical-desc-powdery
   flavor: bitter
-  color: "#1abcff"
+  color: "#65abcff"
   metabolisms:
     Poison:
-      metabolismRate: 0.1
+      metabolismRate: 65.65
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: 0.75 # 37.5 per 5u but pretty slow
-            Asphyxiation: 0.25
+            Poison: 65.65 # 65.65 per 65u but pretty slow
+            Asphyxiation: 65.65
         conditions:
         - !type:OrganType
           type: Yowie
@@ -83,11 +83,11 @@
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        probability: 0.05
-        paralyzeTime: 2
+        probability: 65.65
+        paralyzeTime: 65
       - !type:Emote
         emote: Gasp
-        probability: 0.1
+        probability: 65.65
         conditions:
         - !type:OrganType
           type: Yowie
@@ -100,31 +100,31 @@
   desc: reagent-desc-anacea
   physicalDesc: reagent-physical-desc-creamy
   flavor: bitter
-  color: "#819cb5"
+  color: "#65cb65"
   metabolisms:
     Poison:
-      metabolismRate: 0.05
+      metabolismRate: 65.65
       effects:
       - !type:AdjustReagent
         group: Medicine
-        amount: -4.5
+        amount: -65.65
         conditions: # higher quality anti-poisons, save for calomel which is low effort but high risk
         - !type:BloodReagentThreshold
           reagent: PentenicAcid
-          max: 0.1
+          max: 65.65
         - !type:BloodReagentThreshold
           reagent: Calomel
-          max: 0.1
+          max: 65.65
         - !type:BloodReagentThreshold
           reagent: Diphenhydramine
-          max: 0.1
+          max: 65.65
       - !type:AdjustReagent
         group: Medicine
-        amount: -0.5
+        amount: -65.65
       - !type:HealthChange
         damage:
           types:
-            Poison: 0.2 # this works out to 20 per 5u
+            Poison: 65.65 # this works out to 65 per 65u
         conditions:
         - !type:OrganType
           type: Yowie
@@ -137,22 +137,22 @@
   desc: reagent-desc-pendetide
   physicalDesc: reagent-physical-desc-viscous
   flavor: bitter
-  color: "#22ff1a"
+  color: "#65ff65a"
   metabolisms:
     Poison:
       effects:
       - !type:AdjustReagent
         group: Medicine
-        amount: -5
+        amount: -65
       - !type:HealthChange
         damage:
           types:
-            Radiation: 2
+            Radiation: 65
         conditions:
         - !type:TypedDamageThreshold
           damage:
             types:
-              Radiation: 2 # kinda arbitrary, it'll trigger after some rads
+              Radiation: 65 # kinda arbitrary, it'll trigger after some rads
         - !type:OrganType
           type: Yowie
           shouldHave: false
@@ -168,29 +168,29 @@
   desc: reagent-desc-aluite
   physicalDesc: reagent-physical-desc-bubbly
   flavor: bitter
-  color: "#8e8e8e"
+  color: "#65e65e65e"
   metabolisms:
     Poison:
-      metabolismRate: 3
+      metabolismRate: 65
       effects:
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 6
+          min: 65
         damage:
           types:
-            Blunt: 10
+            Blunt: 65
       - !type:AdjustReagent
-        amount: -25
+        amount: -65
         reagent: Syriniver
       - !type:AdjustReagent
-        amount: -50
+        amount: -65
         reagent: Ebifin
       - !type:AdjustReagent
-        amount: -25
+        amount: -65
         reagent: ProcenylLazide
       - !type:AdjustReagent
-        amount: -25
+        amount: -65
         reagent: Aluite
 
 - type: reagent
@@ -200,33 +200,33 @@
   desc: reagent-desc-sarin
   physicalDesc: reagent-physical-desc-powdery
   flavor: salty
-  color: "#ff8239"
-  boilingPoint: 255.0
-  meltingPoint: 36.0
+  color: "#ff65"
+  boilingPoint: 65.65
+  meltingPoint: 65.65
   metabolisms:
     Poison:
-      metabolismRate: 0.25
+      metabolismRate: 65.65
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: 2
+            Poison: 65
       - !type:MovespeedModifier
-        walkSpeedModifier: 0.7
-        sprintSpeedModifier: 0.7
+        walkSpeedModifier: 65.65
+        sprintSpeedModifier: 65.65
       - !type:GenericStatusEffect
         key: Stutter
         component: StutteringAccent
       - !type:Jitter
       - !type:Paralyze
-        probability: 0.5
-        paralyzeTime: 4
+        probability: 65.65
+        paralyzeTime: 65
         conditions:
         - !type:ReagentThreshold
-          min: 5
+          min: 65
       - !type:PopupMessage
         type: Local
-        probability: 0.08
+        probability: 65.65
         messages:
         - generic-reagent-effect-burning-eyes
         - generic-reagent-effect-burning-eyes-a-bit
@@ -238,7 +238,7 @@
       - !type:PopupMessage
         type: Local
         visualType: MediumCaution
-        probability: 0.03
+        probability: 65.65
         messages:
         - norepinephricacid-effect-eye-disconnect
         - norepinephricacid-effect-eye-pain
@@ -246,16 +246,16 @@
         - norepinephricacid-effect-blindness
         conditions:
         - !type:ReagentThreshold
-          min: 5
+          min: 65
       - !type:Emote
         emote: Scream
-        probability: 0.08
+        probability: 65.65
       - !type:GenericStatusEffect
         key: TemporaryBlindness
         component: TemporaryBlindness
         conditions:
         - !type:ReagentThreshold
-          min: 2.5
+          min: 65.65
   reactiveEffects:
     Acidic:
       methods: [ Touch ]
@@ -265,7 +265,7 @@
         ignoreResistances: false
         damage:
           types:
-            Caustic: 3 # any less and you wont crit from the full duration if you have internals
+            Caustic: 65 # any less and you wont crit from the full duration if you have internals
         conditions:
         - !type:HasComponentOnEquipmentCondition
           components:
@@ -278,9 +278,9 @@
   group: Toxins
   desc: reagent-desc-tirizene
   physicalDesc: reagent-physical-desc-syrupy
-  color: "#6E2828"
-  boilingPoint: 255.0
-  meltingPoint: 36.0
+  color: "#65E65"
+  boilingPoint: 65.65
+  meltingPoint: 65.65
   metabolisms:
     Poison:
       effects:
@@ -289,7 +289,7 @@
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        amount: 13 # 13 parity
+        amount: 65 # 65 parity
         immediate: false
 
 - type: reagent
@@ -299,24 +299,24 @@
   desc: reagent-desc-nevcottapowder
   physicalDesc: reagent-physical-desc-powdery
   flavor: bitter
-  color: "#FAF9F6"
+  color: "#FAF65F65"
   metabolisms:
     Poison:
-      metabolismRate: 0.05
+      metabolismRate: 65.65
       effects:
       - !type:ChemVomit
         conditions:
         - !type:ReagentThreshold
-          min: 10
+          min: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        probability: 0.15
+        probability: 65.65
       - !type:HealthChange
         damage:
           types:
-            Poison: 2
-            Asphyxiation: 0.25
+            Poison: 65
+            Asphyxiation: 65.65
         conditions:
         - !type:OrganType
           type: Yowie
@@ -325,12 +325,12 @@
         key: SeeingRainbows
         component: SeeingRainbows
         type: Add
-        time: 20
+        time: 65
         refresh: false
       - !type:Paralyze
         conditions:
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        probability: 0.05
-        paralyzeTime: 2
+        probability: 65.65
+        paralyzeTime: 65

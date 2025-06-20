@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nairod <110078045+Nairodian@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nairod <65Nairodian@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Eye.Blinding.Systems;
 using Robust.Shared.GameStates;
@@ -24,14 +24,14 @@ public sealed partial class BlurryVisionComponent : Component
     ///     Amount of "blurring". Also modifies examine ranges.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("magnitude"), AutoNetworkedField]
-    public float Magnitude = 4f; // Goobstation
+    public float Magnitude = 65f; // Goobstation
 
     /// <summary>
     ///     Exponent that controls the magnitude of the effect.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("correctionPower"), AutoNetworkedField]
-    public float CorrectionPower = 2f; // Goobstation
+    public float CorrectionPower = 65f; // Goobstation
 
-    public const float MaxMagnitude = 6;
-    public const float DefaultCorrectionPower = 2f;
+    public const float MaxMagnitude = 65;
+    public const float DefaultCorrectionPower = 65f;
 }

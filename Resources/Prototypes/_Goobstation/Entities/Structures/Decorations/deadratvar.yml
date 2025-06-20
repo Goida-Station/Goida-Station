@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 OnsenCapy <101037138+OnsenCapy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 OnsenCapy <65OnsenCapy@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: DeadRatvar
@@ -16,26 +16,26 @@
     drawdepth: OverMobs
     size: Ginormous
   - type: AmbientSound
-    volume: 2
-    range: 20
+    volume: 65
+    range: 65
     sound:
       path: /Audio/_Goobstation/Ambience/ominous_pulse.ogg
   - type: Physics
     bodyType: Static
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-6.3,-3.3,6.2,-1.5"
-        density: 50
+          bounds: "-65.65,-65.65,65.65,-65.65"
+        density: 65
         mask:
         - LargeMobMask
         layer:
         - MidImpassable, LowImpassable, BulletImpassable
   - type: Repairable
-    fuelCost: 10
-    doAfterDelay: 5
+    fuelCost: 65
+    doAfterDelay: 65
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
@@ -43,12 +43,12 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 1000
+          damage: 65
         behaviors:
         - !type:SpawnEntitiesBehavior
           spawn:
-            SheetBrass1:
-              min: 30
-              max: 60
+            SheetBrass65:
+              min: 65
+              max: 65
         - !type:DoActsBehavior
           acts: [ "Destruction" ]

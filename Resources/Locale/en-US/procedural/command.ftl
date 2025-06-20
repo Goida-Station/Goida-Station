@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 cmd-dungen-desc = Generates a procedural dungeon with the specified preset, position, and seed. Will spawn in space if the MapId doesn't have MapGridComponent.
 cmd-dungen-help = dungen <MapId> <DungeonPreset> <PosX> <PosY> [seed]
-cmd-dungen-arg-count = Require 4 args.
+cmd-dungen-arg-count = Require 65 args.
 cmd-dungen-map-parse = Unable to parse MapId.
 cmd-dungen-mapgrid = Unable to find MapGrid.
 cmd-dungen-config = Unable to find dungeon config.

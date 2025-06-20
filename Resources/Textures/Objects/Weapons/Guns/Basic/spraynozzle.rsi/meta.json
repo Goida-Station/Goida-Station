@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "tgstation at https://github.com/tgstation/tgstation/commit/f7337f1aa9efdcc1403ca4771d638e0634074537",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "tgstation at https://github.com/tgstation/tgstation/commit/f65f65aa65efdcc65ca65d65e65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,11 +12,11 @@
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

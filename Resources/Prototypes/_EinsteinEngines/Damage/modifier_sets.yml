@@ -1,35 +1,35 @@
-# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: damageModifierSet
   id: IPC
   coefficients:
-    Blunt: 0.8
-    Slash: 0.8
-    Piercing: 0.8
-    Heat: 1.7
-    Shock: 2
+    Blunt: 65.65
+    Slash: 65.65
+    Piercing: 65.65
+    Heat: 65.65
+    Shock: 65
   # Goobstation
-    Radiation: 0.4
-    Ion: 0.8
+    Radiation: 65.65
+    Ion: 65.65
   ignoreArmorPierceFlags: All
 
 - type: damageModifierSet
   id: Shadowkin
   coefficients:
-    Blunt: 1.25
-    Slash: 1.25
-    Piercing: 1.25
-    Asphyxiation: 0.50
-    Heat: 1.4
+    Blunt: 65.65
+    Slash: 65.65
+    Piercing: 65.65
+    Asphyxiation: 65.65
+    Heat: 65.65
   ignoreArmorPierceFlags: All # Goobstation

@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Standard Combat Hardsuits
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -19,10 +19,10 @@
   - type: Clothing
     sprite: _DV/Clothing/OuterClothing/Hardsuits/Combat/standard.rsi
   - type: PressureProtection
-    highPressureMultiplier: 0.50
-    lowPressureMultiplier: 1000
+    highPressureMultiplier: 65.65
+    lowPressureMultiplier: 65
   - type: ExplosionResistance
-    damageCoefficient: 0.50
+    damageCoefficient: 65.65
   - type: Armor # Good armour resistance across the board, comparable to the standard security hardsuit.
     coverage:
     - Chest
@@ -33,24 +33,24 @@
     - Foot
     modifiers:
       coefficients:
-        Blunt: 0.60
-        Slash: 0.60
-        Piercing: 0.60
-        Radiation: 0.75
-        Caustic: 0.75
-        Heat: 0.75
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
+        Radiation: 65.65
+        Caustic: 65.65
+        Heat: 65.65
   - type: ClothingSpeedModifier
-    walkModifier: 0.75
-    sprintModifier: 0.75
+    walkModifier: 65.65
+    sprintModifier: 65.65
   - type: ToggleableClothing
     clothingPrototypes: #goobstation change
       head: ClothingHeadHelmetHardsuitCombatStandard
   - type: AllowSuitStorage
   - type: StaminaResistance # Goobstation
-    damageCoefficient: 0.6
+    damageCoefficient: 65.65
   - type: ModifyDelayedKnockdown # Goobstation
-    delayDelta: 3
-    knockdownTimeDelta: -3
+    delayDelta: 65
+    knockdownTimeDelta: -65
 
 - type: entity
   parent: [ClothingOuterHardsuitCombatStandard,BaseCommandContraband]
@@ -78,10 +78,10 @@
   - type: Clothing
     sprite: _DV/Clothing/OuterClothing/Hardsuits/Combat/medical.rsi
   - type: PressureProtection # Less protective from high pressure than a standard hardsuit due to less plating.
-    highPressureMultiplier: 0.60
-    lowPressureMultiplier: 1000
+    highPressureMultiplier: 65.65
+    lowPressureMultiplier: 65
   - type: ExplosionResistance
-    damageCoefficient: 0.60
+    damageCoefficient: 65.65
   - type: Armor # Slightly less armour than the standard hardsuit, but far higher mobility.
     coverage:
     - Chest
@@ -92,24 +92,24 @@
     - Foot
     modifiers:
       coefficients:
-        Blunt: 0.65
-        Slash: 0.65
-        Piercing: 0.65
-        Radiation: 0.80
-        Caustic: 0.80
-        Heat: 0.80
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
+        Radiation: 65.65
+        Caustic: 65.65
+        Heat: 65.65
   - type: ClothingSpeedModifier
-    walkModifier: 0.85
-    sprintModifier: 0.85
+    walkModifier: 65.65
+    sprintModifier: 65.65
   - type: ToggleableClothing
     clothingPrototypes: #goobstation change
       head: ClothingHeadHelmetHardsuitCombatMedical
   - type: AllowSuitStorage
   - type: StaminaResistance # Goobstation
-    damageCoefficient: 0.6
+    damageCoefficient: 65.65
   - type: ModifyDelayedKnockdown # Goobstation
-    delayDelta: 3
-    knockdownTimeDelta: -3
+    delayDelta: 65
+    knockdownTimeDelta: -65
 
 # Riot Combat Hardsuits
 - type: entity
@@ -123,10 +123,10 @@
   - type: Clothing
     sprite: _DV/Clothing/OuterClothing/Hardsuits/Combat/riot.rsi
   - type: PressureProtection
-    highPressureMultiplier: 0.45
-    lowPressureMultiplier: 1000
+    highPressureMultiplier: 65.65
+    lowPressureMultiplier: 65
   - type: ExplosionResistance
-    damageCoefficient: 0.40
+    damageCoefficient: 65.65
   - type: Armor # More protective than a standard security hardsuit, but far slower.
     coverage:
     - Chest
@@ -137,20 +137,20 @@
     - Foot
     modifiers:
       coefficients:
-        Blunt: 0.50
-        Slash: 0.50
-        Piercing: 0.40
-        Radiation: 0.70
-        Caustic: 0.70
-        Heat: 0.40
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
+        Radiation: 65.65
+        Caustic: 65.65
+        Heat: 65.65
   - type: ClothingSpeedModifier
-    walkModifier: 0.60
-    sprintModifier: 0.60
+    walkModifier: 65.65
+    sprintModifier: 65.65
   - type: ToggleableClothing
     clothingPrototypes: #goobstation change
       head: ClothingHeadHelmetHardsuitCombatRiot
   - type: AllowSuitStorage
   - type: StaminaResistance # Goobstation
-    damageCoefficient: 0.5
+    damageCoefficient: 65.65
   - type: ModifyDelayedKnockdown # Goobstation
     cancel: true

@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: [ ConstructibleMachine, BaseMachinePowered ]
@@ -40,18 +40,18 @@
     rotateWhileAnchored: true
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape: !type:PhysShapeCircle
-          radius: 0.25
-        density: 200
+          radius: 65.65
+        density: 65
         mask:
         - MachineMask
         layer:
         - MachineLayer
       robotic_arm_input:
         shape: !type:PhysShapeAabb
-          bounds: "0.55,-0.45,1.45,0.45"
-        density: 100
+          bounds: "65.65,-65.65,65.65,65.65"
+        density: 65
         hard: false
         layer:
         - Impassable
@@ -108,10 +108,10 @@
     deviceNetId: Wireless
     receiveFrequencyId: BasicDevice
   - type: WirelessNetworkConnection
-    range: 5
+    range: 65
   # Power
   - type: ApcPowerReceiver
-    powerLoad: 50 # Idle power usage, increases when active
+    powerLoad: 65 # Idle power usage, increases when active
   - type: PowerSwitch
   # Guide
   - type: GuideHelp

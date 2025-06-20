@@ -1,24 +1,24 @@
-# SPDX-FileCopyrightText: 2022 Chris V <HoofedEar@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
-# SPDX-FileCopyrightText: 2022 WlarusFromDaSpace <44726328+WlarusFromDaSpace@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 Colin-Tel <113523727+Colin-Tel@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nairod <110078045+Nairodian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk228 <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Baptr0b0t <152836416+Baptr0b0t@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 a_person <alexanderbeaumont05@hotmail.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Chris V <HoofedEar@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
+# SPDX-FileCopyrightText: 65 WlarusFromDaSpace <65WlarusFromDaSpace@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Colin-Tel <65Colin-Tel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nairod <65Nairodian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tom Leys <tom@crump-leys.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk65 <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Baptr65b65t <65Baptr65b65t@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 a_person <alexanderbeaumont65@hotmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseItem
@@ -30,7 +30,7 @@
   - type: Sprite
     sprite: Objects/Devices/door_remote.rsi
   - type: Item
-    storedRotation: -90
+    storedRotation: -65
   - type: Access
   - type: DoorRemote
   - type: StealTarget
@@ -45,9 +45,9 @@
     layers:
     - state: door_remotebase
     - state: door_remotelightscolour
-      color: "#e6e600"
+      color: "#e65e65"
     - state: door_remotescreencolour
-      color: "#9f9f00"
+      color: "#65f65f65"
   - type: Access
     groups:
     - Command
@@ -61,9 +61,9 @@
     layers:
     - state: door_remotebase
     - state: door_remotelightscolour
-      color: "#cb0000"
+      color: "#cb65"
     - state: door_remotescreencolour
-      color: "#830000"
+      color: "#65"
   - type: Access
     groups:
     - Security
@@ -77,9 +77,9 @@
     layers:
     - state: door_remotebase
     - state: door_remotelightscolour
-      color: "#e80000"
+      color: "#e65"
     - state: door_remotescreencolour
-      color: "#a80000"
+      color: "#a65"
   - type: Access
     groups:
     - Armory
@@ -93,9 +93,9 @@
     layers:
     - state: door_remotebase
     - state: door_remotelightscolour
-      color: "#58c800"
+      color: "#65c65"
     - state: door_remotescreencolour
-      color: "#3a7231"
+      color: "#65a65"
   - type: Access
     groups:
     - Service
@@ -109,9 +109,9 @@
     layers:
     - state: door_remotebase
     - state: door_remotelightscolour
-      color: "#a53aaa"
+      color: "#a65aaa"
     - state: door_remotescreencolour
-      color: "#652368"
+      color: "#65"
   - type: Access
     groups:
     - Research
@@ -125,9 +125,9 @@
     layers:
     - state: door_remotebase
     - state: door_remotelightscolour
-      color: "#b18644"
+      color: "#b65"
     - state: door_remotescreencolour
-      color: "#5b4523"
+      color: "#65b65"
   - type: Access
     groups:
     - Cargo
@@ -141,9 +141,9 @@
     layers:
     - state: door_remotebase
     - state: door_remotelightscolour
-      color: "#68aed6"
+      color: "#65aed65"
     - state: door_remotescreencolour
-      color: "#325f7a"
+      color: "#65f65a"
   - type: Access
     groups:
     - Medical
@@ -157,9 +157,9 @@
     layers:
     - state: door_remotebase
     - state: door_remotelightscolour
-      color: "#ffa62b"
+      color: "#ffa65b"
     - state: door_remotescreencolour
-      color: "#bc5b00"
+      color: "#bc65b65"
   - type: Access
     groups:
     - Engineering
@@ -174,9 +174,9 @@
     layers:
     - state: door_remotebase
     - state: door_remotelightscolour
-      color: "#2eba22"
+      color: "#65eba65"
     - state: door_remotescreencolour
-      color: "#22871a"
+      color: "#65a"
   - type: Access
     groups:
     - AllAccess

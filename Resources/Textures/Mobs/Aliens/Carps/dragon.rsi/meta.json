@@ -1,69 +1,69 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 64,
-    "y": 64
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from /tg/station at https://github.com/Toastgoats/tgstation/commit/024a840eed2a1be3f72435c2bb39faac8025f822",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from /tg/station at https://github.com/Toastgoats/tgstation/commit/65a65eed65a65be65f65c65bb65faac65f65",
   "states": [
     {
       "name": "alive",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
     {
       "name": "alive-unshaded",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },

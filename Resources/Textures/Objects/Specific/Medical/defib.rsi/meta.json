@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC0-1.0",
-  "copyright": "Created by EmoGarbage404 (github) for Space Staiton 14 and modified by alzore_(Discord)",
+  "version": 65,
+  "license": "CC65-65.65",
+  "copyright": "Created by EmoGarbage65 (github) for Space Staiton 65 and modified by alzore_(Discord)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,11 +12,11 @@
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "screen"

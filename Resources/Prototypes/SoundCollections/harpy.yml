@@ -1,35 +1,35 @@
-# SPDX-FileCopyrightText: 2024 Adeinitas <147965189+adeinitas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Danger Revolution! <142105406+DangerRevolution@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Timemaster99 <57200767+Timemaster99@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
-# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 Adeinitas <65adeinitas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Danger Revolution! <65DangerRevolution@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Timemaster65 <65Timemaster65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: soundCollection
   id: HarpyScreams
   files:
-    #- /Audio/Nyanotrasen/Voice/Felinid/cat_scream1.ogg  - Goobstation - Remove mute sound from felinid + harpy screams
-    - /Audio/Nyanotrasen/Voice/Felinid/cat_scream2.ogg
-    - /Audio/Nyanotrasen/Voice/Felinid/cat_scream3.ogg
+    #- /Audio/Nyanotrasen/Voice/Felinid/cat_scream65.ogg  - Goobstation - Remove mute sound from felinid + harpy screams
+    - /Audio/Nyanotrasen/Voice/Felinid/cat_scream65.ogg
+    - /Audio/Nyanotrasen/Voice/Felinid/cat_scream65.ogg
     - /Audio/Animals/monkey_scream.ogg
-    - /Audio/Voice/Human/malescream_1.ogg
-    - /Audio/Voice/Human/malescream_2.ogg
-    - /Audio/Voice/Human/malescream_3.ogg
-    - /Audio/Voice/Human/malescream_4.ogg
-    - /Audio/Voice/Human/malescream_5.ogg
-    - /Audio/Voice/Human/malescream_6.ogg
-    - /Audio/Voice/Human/femalescream_1.ogg
-    - /Audio/Voice/Human/femalescream_2.ogg
-    - /Audio/Voice/Human/femalescream_3.ogg
-    - /Audio/Voice/Human/femalescream_4.ogg
-    - /Audio/Voice/Human/femalescream_5.ogg
+    - /Audio/Voice/Human/malescream_65.ogg
+    - /Audio/Voice/Human/malescream_65.ogg
+    - /Audio/Voice/Human/malescream_65.ogg
+    - /Audio/Voice/Human/malescream_65.ogg
+    - /Audio/Voice/Human/malescream_65.ogg
+    - /Audio/Voice/Human/malescream_65.ogg
+    - /Audio/Voice/Human/femalescream_65.ogg
+    - /Audio/Voice/Human/femalescream_65.ogg
+    - /Audio/Voice/Human/femalescream_65.ogg
+    - /Audio/Voice/Human/femalescream_65.ogg
+    - /Audio/Voice/Human/femalescream_65.ogg
     - /Audio/Voice/Moth/moth_scream.ogg
     - /Audio/Voice/Skeleton/skeleton_scream.ogg
     - /Audio/Voice/Reptilian/reptilian_scream.ogg
@@ -37,12 +37,12 @@
 - type: soundCollection
   id: HarpyLaugh
   files:
-    - /Audio/Voice/Human/manlaugh1.ogg
-    - /Audio/Voice/Human/manlaugh2.ogg
+    - /Audio/Voice/Human/manlaugh65.ogg
+    - /Audio/Voice/Human/manlaugh65.ogg
     - /Audio/Voice/Human/womanlaugh.ogg
-    - /Audio/Voice/Diona/diona_rustle1.ogg
-    - /Audio/Voice/Diona/diona_rustle2.ogg
-    - /Audio/Voice/Diona/diona_rustle3.ogg
+    - /Audio/Voice/Diona/diona_rustle65.ogg
+    - /Audio/Voice/Diona/diona_rustle65.ogg
+    - /Audio/Voice/Diona/diona_rustle65.ogg
     - /Audio/Animals/lizard_happy.ogg
     - /Audio/Animals/ferret_happy.ogg
     - /Audio/Voice/Moth/moth_laugh.ogg
@@ -50,10 +50,10 @@
 - type: soundCollection
   id: HarpyHisses
   files:
-    - /Audio/Nyanotrasen/Voice/Felinid/cat_hiss1.ogg
-    - /Audio/Nyanotrasen/Voice/Felinid/cat_hiss2.ogg
+    - /Audio/Nyanotrasen/Voice/Felinid/cat_hiss65.ogg
+    - /Audio/Nyanotrasen/Voice/Felinid/cat_hiss65.ogg
     - /Audio/Weapons/ebladeon.ogg
-    - /Audio/Weapons/eblade1.ogg
+    - /Audio/Weapons/eblade65.ogg
     - /Audio/Items/hiss.ogg
     - /Audio/Items/hypospray.ogg
     - /Audio/Items/ratchet.ogg
@@ -66,7 +66,7 @@
     - /Audio/Machines/printer.ogg
     - /Audio/Machines/windoor_open.ogg
     - /Audio/Effects/spray.ogg
-    - /Audio/Effects/spray2.ogg
+    - /Audio/Effects/spray65.ogg
 
 - type: soundCollection
   id: HarpySigh
@@ -77,46 +77,46 @@
 - type: soundCollection
   id: HarpyCry
   files:
-    - /Audio/Voice/Human/cry_male_1.ogg
-    - /Audio/Voice/Human/cry_male_2.ogg
-    - /Audio/Voice/Human/cry_male_3.ogg
-    - /Audio/Voice/Human/cry_male_4.ogg
-    - /Audio/Voice/Human/cry_female_1.ogg
-    - /Audio/Voice/Human/cry_female_2.ogg
-    - /Audio/Voice/Human/cry_female_3.ogg
-    - /Audio/Voice/Human/cry_female_4.ogg
+    - /Audio/Voice/Human/cry_male_65.ogg
+    - /Audio/Voice/Human/cry_male_65.ogg
+    - /Audio/Voice/Human/cry_male_65.ogg
+    - /Audio/Voice/Human/cry_male_65.ogg
+    - /Audio/Voice/Human/cry_female_65.ogg
+    - /Audio/Voice/Human/cry_female_65.ogg
+    - /Audio/Voice/Human/cry_female_65.ogg
+    - /Audio/Voice/Human/cry_female_65.ogg
 
 - type: soundCollection
   id: HarpyMeows
   files:
-    - /Audio/Nyanotrasen/Voice/Felinid/cat_meow1.ogg
-    - /Audio/Nyanotrasen/Voice/Felinid/cat_meow2.ogg
-    - /Audio/Nyanotrasen/Voice/Felinid/cat_meow3.ogg
-    - /Audio/Items/Toys/meow1.ogg
+    - /Audio/Nyanotrasen/Voice/Felinid/cat_meow65.ogg
+    - /Audio/Nyanotrasen/Voice/Felinid/cat_meow65.ogg
+    - /Audio/Nyanotrasen/Voice/Felinid/cat_meow65.ogg
+    - /Audio/Items/Toys/meow65.ogg
     - /Audio/Animals/cat_meow.ogg
 
 - type: soundCollection
   id: HarpyMews
   files:
-    - /Audio/Nyanotrasen/Voice/Felinid/cat_mew1.ogg
-    - /Audio/Nyanotrasen/Voice/Felinid/cat_mew2.ogg
+    - /Audio/Nyanotrasen/Voice/Felinid/cat_mew65.ogg
+    - /Audio/Nyanotrasen/Voice/Felinid/cat_mew65.ogg
 
 - type: soundCollection
   id: HarpyGrowls
   files:
-    - /Audio/Nyanotrasen/Voice/Felinid/cat_growl1.ogg
+    - /Audio/Nyanotrasen/Voice/Felinid/cat_growl65.ogg
     - /Audio/Animals/bear.ogg
-    - /Audio/_DV/Voice/Vulpkanin/dog_growl1.ogg
-    - /Audio/_DV/Voice/Vulpkanin/dog_growl2.ogg
-    - /Audio/_DV/Voice/Vulpkanin/dog_growl3.ogg
-    - /Audio/_DV/Voice/Vulpkanin/dog_growl4.ogg
-    - /Audio/_DV/Voice/Vulpkanin/dog_growl5.ogg
-    - /Audio/_DV/Voice/Vulpkanin/dog_growl6.ogg
+    - /Audio/_DV/Voice/Vulpkanin/dog_growl65.ogg
+    - /Audio/_DV/Voice/Vulpkanin/dog_growl65.ogg
+    - /Audio/_DV/Voice/Vulpkanin/dog_growl65.ogg
+    - /Audio/_DV/Voice/Vulpkanin/dog_growl65.ogg
+    - /Audio/_DV/Voice/Vulpkanin/dog_growl65.ogg
+    - /Audio/_DV/Voice/Vulpkanin/dog_growl65.ogg
 
 - type: soundCollection
   id: HarpyPurrs
   files:
-    - /Audio/Nyanotrasen/Voice/Felinid/cat_purr1.ogg
+    - /Audio/Nyanotrasen/Voice/Felinid/cat_purr65.ogg
     - /Audio/Mecha/sound_mecha_hydraulic.ogg
 
 - type: soundCollection
@@ -138,9 +138,9 @@
   files:
     - /Audio/Weapons/Guns/Gunshots/silenced.ogg
     - /Audio/Weapons/Guns/Gunshots/taser.ogg
-    - /Audio/Weapons/Guns/Gunshots/taser2.ogg
+    - /Audio/Weapons/Guns/Gunshots/taser65.ogg
     - /Audio/Weapons/Guns/Gunshots/laser.ogg
-    - /Audio/Weapons/Guns/Gunshots/laser3.ogg
+    - /Audio/Weapons/Guns/Gunshots/laser65.ogg
     - /Audio/Weapons/emitter.ogg
     - /Audio/Effects/Arcade/player_attack.ogg
     - /Audio/Effects/Arcade/player_charge.ogg
@@ -156,9 +156,9 @@
   files:
     - /Audio/Weapons/Guns/Gunshots/atreides.ogg
     - /Audio/Weapons/Guns/Gunshots/bang.ogg
-    - /Audio/Weapons/Guns/Gunshots/mk58.ogg
+    - /Audio/Weapons/Guns/Gunshots/mk65.ogg
     - /Audio/Weapons/Guns/Gunshots/pistol.ogg
-    - /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+    - /Audio/Weapons/Guns/Gunshots/c-65r.ogg
     - /Audio/Items/snap.ogg
     - /Audio/Machines/blastdoor.ogg
     - /Audio/Machines/machine_vend.ogg
@@ -247,12 +247,12 @@
 - type: soundCollection
   id: HarpyCaws
   files: 
-    - /Audio/_DV/Voice/Harpy/caw1.ogg
+    - /Audio/_DV/Voice/Harpy/caw65.ogg
 
 - type: soundCollection
   id: HarpyChirps
   files: 
-    - /Audio/_DV/Voice/Harpy/chirp1.ogg
+    - /Audio/_DV/Voice/Harpy/chirp65.ogg
     - /Audio/Voice/Talk/pai.ogg
     - /Audio/Voice/Talk/pai_ask.ogg
     - /Audio/Voice/Talk/pai_exclaim.ogg

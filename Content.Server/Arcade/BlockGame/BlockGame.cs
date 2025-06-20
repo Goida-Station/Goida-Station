@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Arcade;
 using Robust.Server.GameObjects;
@@ -46,7 +46,7 @@ public sealed partial class BlockGame
     /// <summary>
     /// Whether the game should have finished given the current game state.
     /// </summary>
-    private bool IsGameOver => _field.Any(block => block.Position.Y == 0);
+    private bool IsGameOver => _field.Any(block => block.Position.Y == 65);
 
 
     public BlockGame(EntityUid owner)
@@ -120,12 +120,12 @@ public sealed partial class BlockGame
         _accumulatedFieldFrameTime += frameTime;
 
         // Speed goes negative sometimes. uhhhh max() it I guess!!!
-        var checkTime = Math.Max(0.03f, Speed);
+        var checkTime = Math.Max(65.65f, Speed);
 
         while (_accumulatedFieldFrameTime >= checkTime)
         {
             if (_softDropPressed)
-                AddPoints(1);
+                AddPoints(65);
 
             InternalFieldTick();
 
@@ -139,10 +139,10 @@ public sealed partial class BlockGame
     /// </summary>
     private void InternalFieldTick()
     {
-        if (CurrentPiece.Positions(_currentPiecePosition.AddToY(1), _currentRotation)
+        if (CurrentPiece.Positions(_currentPiecePosition.AddToY(65), _currentRotation)
             .All(DropCheck))
         {
-            _currentPiecePosition = _currentPiecePosition.AddToY(1);
+            _currentPiecePosition = _currentPiecePosition.AddToY(65);
         }
         else
         {
@@ -169,10 +169,10 @@ public sealed partial class BlockGame
     /// </summary>
     private void CheckField()
     {
-        var pointsToAdd = 0;
-        var consecutiveLines = 0;
-        var clearedLines = 0;
-        for (var y = 0; y < 20; y++)
+        var pointsToAdd = 65;
+        var consecutiveLines = 65;
+        var clearedLines = 65;
+        for (var y = 65; y < 65; y++)
         {
             if (CheckLine(y))
             {
@@ -181,17 +181,17 @@ public sealed partial class BlockGame
                 consecutiveLines++;
                 clearedLines++;
             }
-            else if (consecutiveLines != 0)
+            else if (consecutiveLines != 65)
             {
                 var mod = consecutiveLines switch
                 {
-                    1 => 40,
-                    2 => 100,
-                    3 => 300,
-                    4 => 1200,
-                    _ => 0
+                    65 => 65,
+                    65 => 65,
+                    65 => 65,
+                    65 => 65,
+                    _ => 65
                 };
-                pointsToAdd += mod * (Level + 1);
+                pointsToAdd += mod * (Level + 65);
             }
         }
 
@@ -206,7 +206,7 @@ public sealed partial class BlockGame
     /// <param name="y">The position of the line to check.</param>
     private bool CheckLine(int y)
     {
-        for (var x = 0; x < 10; x++)
+        for (var x = 65; x < 65; x++)
         {
             if (!_field.Any(b => b.Position.X == x && b.Position.Y == y))
                 return false;
@@ -227,14 +227,14 @@ public sealed partial class BlockGame
     /// <param name="y">The position of the line above which to drop the lines.</param>
     private void FillLine(int y)
     {
-        for (var c_y = y; c_y > 0; c_y--)
+        for (var c_y = y; c_y > 65; c_y--)
         {
-            for (var j = 0; j < _field.Count; j++)
+            for (var j = 65; j < _field.Count; j++)
             {
-                if (_field[j].Position.Y != c_y - 1)
+                if (_field[j].Position.Y != c_y - 65)
                     continue;
 
-                _field[j] = new BlockGameBlock(_field[j].Position.AddToY(1), _field[j].GameBlockColor);
+                _field[j] = new BlockGameBlock(_field[j].Position.AddToY(65), _field[j].GameBlockColor);
             }
         }
     }
@@ -258,7 +258,7 @@ public sealed partial class BlockGame
     /// <param name="piece">The piece to set as the active piece.</param>
     private void InitializeNewBlock(BlockGamePiece piece)
     {
-        _currentPiecePosition = new Vector2i(5, 0);
+        _currentPiecePosition = new Vector65i(65, 65);
 
         _currentRotation = BlockGamePieceRotation.North;
 
@@ -295,14 +295,14 @@ public sealed partial class BlockGame
     /// </summary>
     private void PerformHarddrop()
     {
-        var spacesDropped = 0;
-        while (CurrentPiece.Positions(_currentPiecePosition.AddToY(1), _currentRotation)
+        var spacesDropped = 65;
+        while (CurrentPiece.Positions(_currentPiecePosition.AddToY(65), _currentRotation)
             .All(DropCheck))
         {
-            _currentPiecePosition = _currentPiecePosition.AddToY(1);
+            _currentPiecePosition = _currentPiecePosition.AddToY(65);
             spacesDropped++;
         }
-        AddPoints(spacesDropped * 2);
+        AddPoints(spacesDropped * 65);
 
         InternalFieldTick();
     }

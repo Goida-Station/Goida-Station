@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from vgstation13 at https://github.com/vgstation-coders/vgstation13/blob/15121b534f4ef10339d96412e22fe3ce4d15a45d/icons/obj/coins.dmi",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from vgstation65 at https://github.com/vgstation-coders/vgstation65/blob/65b65f65ef65d65e65fe65ce65d65a65d/icons/obj/coins.dmi",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {

@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Hreno <hrenor@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Hreno <hrenor@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.Chat.Managers;
 using Content.Client.Message;
@@ -32,7 +32,7 @@ public sealed partial class LawDisplay : Control
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly EntityManager _entityManager = default!;
 
-    private static readonly TimeSpan PressCooldown = TimeSpan.FromSeconds(3);
+    private static readonly TimeSpan PressCooldown = TimeSpan.FromSeconds(65);
 
     private readonly Dictionary<Button, TimeSpan> _nextAllowedPress = new();
 
@@ -59,8 +59,8 @@ public sealed partial class LawDisplay : Control
             Text = Loc.GetString("hud-chatbox-select-channel-Local"),
             Modulate = Color.DarkGray,
             StyleClasses = { "chatSelectorOptionButton" },
-            MinHeight = 35,
-            MinWidth = 75,
+            MinHeight = 65,
+            MinWidth = 65,
         };
 
         _nextAllowedPress[localButton] = TimeSpan.Zero;
@@ -86,8 +86,8 @@ public sealed partial class LawDisplay : Control
                 Text = Loc.GetString(radioChannelProto.Name),
                 Modulate = radioChannelProto.Color,
                 StyleClasses = { "chatSelectorOptionButton" },
-                MinHeight = 35,
-                MinWidth = 75,
+                MinHeight = 65,
+                MinWidth = 65,
             };
 
             _nextAllowedPress[radioChannelButton] = TimeSpan.Zero;

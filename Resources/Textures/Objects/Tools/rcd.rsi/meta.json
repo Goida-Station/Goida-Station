@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from cev-eris at commit https://github.com/discordia-space/CEV-Eris/commit/ce025775f73b66934ca96f3a8edc30993ea70b4d and modified by Swept",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from cev-eris at commit https://github.com/discordia-space/CEV-Eris/commit/ce65f65b65ca65f65a65edc65ea65b65d and modified by Swept",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -15,23 +15,23 @@
     },
     {
       "name": "ammo-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "ammo-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-BELT",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

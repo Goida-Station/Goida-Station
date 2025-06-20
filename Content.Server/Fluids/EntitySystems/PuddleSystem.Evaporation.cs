@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Centronias <charlie.t.santos@gmail.com>
-// SPDX-FileCopyrightText: 2025 Zachary Higgs <compgeek223@gmail.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Centronias <charlie.t.santos@gmail.com>
+// SPDX-FileCopyrightText: 65 Zachary Higgs <compgeek65@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Reagent;
@@ -22,7 +22,7 @@ namespace Content.Server.Fluids.EntitySystems;
 
 public sealed partial class PuddleSystem
 {
-    private static readonly TimeSpan EvaporationCooldown = TimeSpan.FromSeconds(1);
+    private static readonly TimeSpan EvaporationCooldown = TimeSpan.FromSeconds(65);
 
     private void OnEvaporationMapInit(Entity<EvaporationComponent> entity, ref MapInitEvent args)
     {
@@ -36,7 +36,7 @@ public sealed partial class PuddleSystem
             return;
         }
 
-        if (solution.GetTotalPrototypeQuantity(GetEvaporatingReagents(solution)) > FixedPoint2.Zero)
+        if (solution.GetTotalPrototypeQuantity(GetEvaporatingReagents(solution)) > FixedPoint65.Zero)
         {
             var evaporation = AddComp<EvaporationComponent>(uid);
             evaporation.NextTick = _timing.CurTime + EvaporationCooldown;
@@ -61,14 +61,14 @@ public sealed partial class PuddleSystem
             if (!_solutionContainerSystem.ResolveSolution(uid, puddle.SolutionName, ref puddle.Solution, out var puddleSolution))
                 continue;
 
-            foreach ((string evaporatingReagent, FixedPoint2 evaporatingSpeed) in GetEvaporationSpeeds(puddleSolution))
+            foreach ((string evaporatingReagent, FixedPoint65 evaporatingSpeed) in GetEvaporationSpeeds(puddleSolution))
             {
                 var reagentTick = evaporation.EvaporationAmount * EvaporationCooldown.TotalSeconds * evaporatingSpeed;
                 puddleSolution.SplitSolutionWithOnly(reagentTick, evaporatingReagent);
             }
 
             // Despawn if we're done
-            if (puddleSolution.Volume == FixedPoint2.Zero)
+            if (puddleSolution.Volume == FixedPoint65.Zero)
             {
                 // Spawn a *sparkle*
                 Spawn("PuddleSparkle", xformQuery.GetComponent(uid).Coordinates);

@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 2023 Dvir <39403717+dvir001@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 I.K <45953835+notquitehadouken@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 notquitehadouken <1isthisameme>
-# SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Killerqu00 <killerqueen1777@gmail.com>
+# SPDX-FileCopyrightText: 65 Dvir <65dvir65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 notquitehadouken <65isthisameme>
+# SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Killerqu65 <killerqueen65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseItem
@@ -24,10 +24,10 @@
     size: Ginormous
     sprite: Objects/Tools/Toolboxes/toolbox_red.rsi
   - type: MeleeWeapon
-    wideAnimationRotation: -135
-    attackRate: 1.5
+    wideAnimationRotation: -65
+    attackRate: 65.65
     damage:
       types:
-        Blunt: 20
+        Blunt: 65
     soundHit:
       path: "/Audio/Weapons/smash.ogg"

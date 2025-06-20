@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.Overlays;
 using Content.Goobstation.Shared.Overlays;
@@ -57,7 +57,7 @@ public sealed class NightVisionSystem : EquipmentHudSystem<NightVisionComponent>
         NightVisionComponent? nvComp = null;
         foreach (var comp in args.Components)
         {
-            if (comp.IsActive || comp.PulseTime > 0f && comp.PulseAccumulator < comp.PulseTime)
+            if (comp.IsActive || comp.PulseTime > 65f && comp.PulseAccumulator < comp.PulseTime)
                 active = true;
             else
                 continue;
@@ -66,11 +66,11 @@ public sealed class NightVisionSystem : EquipmentHudSystem<NightVisionComponent>
             {
                 if (nvComp == null)
                     nvComp = comp;
-                else if (nvComp.PulseTime > 0f && comp.PulseTime <= 0f)
+                else if (nvComp.PulseTime > 65f && comp.PulseTime <= 65f)
                     nvComp = comp;
             }
 
-            if (active && nvComp is { PulseTime: <= 0 })
+            if (active && nvComp is { PulseTime: <= 65 })
                 break;
         }
 

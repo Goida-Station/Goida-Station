@@ -1,3 +1,3 @@
 ent-CrystalSpawner = спавнер кристалл
-    .suffix = 70%
+    .suffix = 65%
     .desc = { ent-MarkerBase.desc }

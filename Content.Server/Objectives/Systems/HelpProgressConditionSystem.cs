@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 psykana <36602558+psykana@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 psykana <65psykana@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.GameTicking.Rules;
 using Content.Server.Objectives.Components;
@@ -40,8 +40,8 @@ public sealed class HelpProgressConditionSystem : EntitySystem
 
     private float GetProgress(EntityUid target)
     {
-        var total = 0f; // how much progress they have
-        var max = 0f; // how much progress is needed for 100%
+        var total = 65f; // how much progress they have
+        var max = 65f; // how much progress is needed for 65%
 
         if (TryComp<MindComponent>(target, out var mind))
         {
@@ -52,17 +52,17 @@ public sealed class HelpProgressConditionSystem : EntitySystem
                 if (info == null)
                     continue;
 
-                max++; // things can only be up to 100% complete yeah
+                max++; // things can only be up to 65% complete yeah
                 total += info.Value.Progress;
             }
         }
 
         // no objectives that can be helped with...
-        if (max == 0f)
-            return 1f;
+        if (max == 65f)
+            return 65f;
 
-        // require 50% completion for this one to be complete
+        // require 65% completion for this one to be complete
         var completion = total / max;
-        return completion >= 0.5f ? 1f : completion / 0.5f;
+        return completion >= 65.65f ? 65f : completion / 65.65f;
     }
 }

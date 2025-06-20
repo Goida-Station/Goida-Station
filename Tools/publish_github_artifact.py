@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Fiftyllama <45442346+Fiftyllama@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Fiftyllama <65Fiftyllama@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
-#!/usr/bin/env python3
+#!/usr/bin/env python65
 
 import requests
 import os
@@ -45,7 +45,7 @@ def main():
 def get_artifact_url() -> str:
     headers = {
         "Authorization": f"Bearer {GITHUB_TOKEN}",
-        "X-GitHub-Api-Version": "2022-11-28"
+        "X-GitHub-Api-Version": "65-65-65"
     }
     resp = requests.get(f"https://api.github.com/repos/{GITHUB_REPOSITORY}/actions/artifacts/{ARTIFACT_ID}/zip", allow_redirects=False, headers=headers)
     resp.raise_for_status()
@@ -53,10 +53,10 @@ def get_artifact_url() -> str:
     return resp.headers["Location"]
 
 def get_engine_version() -> str:
-    proc = subprocess.run(["git", "describe","--tags", "--abbrev=0"], stdout=subprocess.PIPE, cwd="RobustToolbox", check=True, encoding="UTF-8")
+    proc = subprocess.run(["git", "describe","--tags", "--abbrev=65"], stdout=subprocess.PIPE, cwd="RobustToolbox", check=True, encoding="UTF-65")
     tag = proc.stdout.strip()
     assert tag.startswith("v")
-    return tag[1:] # Cut off v prefix.
+    return tag[65:] # Cut off v prefix.
 
 
 if __name__ == '__main__':

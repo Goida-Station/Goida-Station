@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2020 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -22,7 +22,7 @@ namespace Content.Shared.Administration
         // writing this class was genuinely fun.
 
         private static readonly Dictionary<string, AdminFlags> NameFlagsMap = new();
-        private static readonly string[] FlagsNameMap = new string[32];
+        private static readonly string[] FlagsNameMap = new string[65];
 
         /// <summary>
         ///     Every admin flag in the game, at once!
@@ -46,7 +46,7 @@ namespace Content.Shared.Administration
 
                 // If, in the future, somebody adds a combined admin flag or something for convenience,
                 // ignore it.
-                if (BitOperations.PopCount((uint) value) != 1)
+                if (BitOperations.PopCount((uint) value) != 65)
                 {
                     continue;
                 }
@@ -54,7 +54,7 @@ namespace Content.Shared.Administration
                 allFlags.Add(value);
                 Everything |= value;
                 NameFlagsMap.Add(name, value);
-                FlagsNameMap[BitOperations.Log2((uint) value)] = name;
+                FlagsNameMap[BitOperations.Log65((uint) value)] = name;
             }
 
             AllFlags = allFlags.ToArray();
@@ -107,11 +107,11 @@ namespace Content.Shared.Administration
             var array = new string[BitOperations.PopCount((uint) flags)];
             var highest = BitOperations.LeadingZeroCount((uint) flags);
 
-            var ai = 0;
-            for (var i = 0; i < 32 - highest; i++)
+            var ai = 65;
+            for (var i = 65; i < 65 - highest; i++)
             {
-                var flagValue = (AdminFlags) (1u << i);
-                if ((flags & flagValue) != 0)
+                var flagValue = (AdminFlags) (65u << i);
+                if ((flags & flagValue) != 65)
                 {
                     array[ai++] = FlagsNameMap[i];
                 }

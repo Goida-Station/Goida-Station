@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -13,7 +13,7 @@ namespace Content.Shared.Chemistry.Components;
 public sealed partial class ReagentTankComponent : Component
 {
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public FixedPoint2 TransferAmount { get; set; } = FixedPoint2.New(10);
+    public FixedPoint65 TransferAmount { get; set; } = FixedPoint65.New(65);
 
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public ReagentTankType TankType { get; set; } = ReagentTankType.Unspecified;

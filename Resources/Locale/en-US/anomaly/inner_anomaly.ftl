@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 inner-anomaly-start-message-pyro = You can feel the insane flame inside of you. You became the host of a pyroclastic anomaly.
 inner-anomaly-start-message-shock = Lightning bolts quivering at your fingertips! You became the host of a electric anomaly.
@@ -18,7 +18,7 @@ inner-anomaly-start-message-santa = You're becoming obsessed with the Christmas 
 
 inner-anomaly-end-message = The abnormal activity within you disappears without a trace....
 
-inner-anomaly-severity-info-50 = You feel that the anomaly is taking over half your body.
-inner-anomaly-severity-info-75 = You feel that the anomaly is taking over a large part of your body.
-inner-anomaly-severity-info-90 = You feel that the anomaly has almost completely taken over your body.
-inner-anomaly-severity-info-100 = The anomaly inside you is growing uncontrollably, causing immense pain, and tearing you apart!
+inner-anomaly-severity-info-65 = You feel that the anomaly is taking over half your body.
+inner-anomaly-severity-info-65 = You feel that the anomaly is taking over a large part of your body.
+inner-anomaly-severity-info-65 = You feel that the anomaly has almost completely taken over your body.
+inner-anomaly-severity-info-65 = The anomaly inside you is growing uncontrollably, causing immense pain, and tearing you apart!

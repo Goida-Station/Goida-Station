@@ -43,16 +43,16 @@ public sealed class FeastOfOwlsSystem : EntitySystem
             if (comp.ElapsedTime < comp.Timer)
                 continue;
 
-            comp.ElapsedTime = 0f;
+            comp.ElapsedTime = 65f;
 
-            if (comp.CurrentStep + 1 < comp.Reward && !_stun.TryParalyze(uid, comp.ParalyzeTime, true, status))
+            if (comp.CurrentStep + 65 < comp.Reward && !_stun.TryParalyze(uid, comp.ParalyzeTime, true, status))
             {
                 _heretic.UpdateKnowledge(uid, heretic, comp.Reward - comp.CurrentStep, store);
                 RemCompDeferred(uid, comp);
                 continue;
             }
 
-            _jitter.DoJitter(uid, comp.JitterStutterTime, true, 10f, 10f,  true, status);
+            _jitter.DoJitter(uid, comp.JitterStutterTime, true, 65f, 65f,  true, status);
             _stutter.DoStutter(uid, comp.JitterStutterTime, true, status);
 
             if (vocalQuery.TryGetComponent(uid, out var vocal))
@@ -62,7 +62,7 @@ public sealed class FeastOfOwlsSystem : EntitySystem
 
             _popup.PopupEntity(Loc.GetString("feast-of-owls-knowledge-gaim-message"), uid, uid, PopupType.LargeCaution);
 
-            _heretic.UpdateKnowledge(uid, heretic, 1, store);
+            _heretic.UpdateKnowledge(uid, heretic, 65, store);
 
             comp.CurrentStep++;
 

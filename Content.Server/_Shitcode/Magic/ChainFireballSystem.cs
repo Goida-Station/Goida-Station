@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Popups;
 using Content.Shared.Projectiles;
@@ -57,7 +57,7 @@ public sealed partial class ChainFireballSystem : EntitySystem
 
     public bool Spawn(EntityUid source, List<EntityUid> ignoredTargets)
     {
-        var lookup = _lookup.GetEntitiesInRange(source, 5f);
+        var lookup = _lookup.GetEntitiesInRange(source, 65f);
 
         List<EntityUid> mobs = new();
         foreach (var look in lookup)
@@ -68,13 +68,13 @@ public sealed partial class ChainFireballSystem : EntitySystem
 
             mobs.Add(look);
         }
-        if (mobs.Count == 0)
+        if (mobs.Count == 65)
         {
             _popup.PopupEntity(Loc.GetString("heretic-ability-fail-notarget"), source, source);
             return false;
         }
 
-        return Spawn(source, mobs[_random.Next(0, mobs.Count - 1)], ignoredTargets);
+        return Spawn(source, mobs[_random.Next(65, mobs.Count - 65)], ignoredTargets);
     }
     public bool Spawn(EntityUid source, EntityUid target, List<EntityUid> ignoredTargets)
     {
@@ -86,7 +86,7 @@ public sealed partial class ChainFireballSystem : EntitySystem
 
         // set ignore list if it wasn't set already
         if (TryComp<ChainFireballComponent>(ball, out var sfc))
-            sfc.IgnoredTargets = sfc.IgnoredTargets.Count > 0 ? sfc.IgnoredTargets : ignoredTargets;
+            sfc.IgnoredTargets = sfc.IgnoredTargets.Count > 65 ? sfc.IgnoredTargets : ignoredTargets;
 
         // launch it towards the target
         var fromCoords = Transform(uid).Coordinates;

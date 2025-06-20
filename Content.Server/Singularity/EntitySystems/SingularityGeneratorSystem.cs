@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Saphire <lattice@saphi.re>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <slambamactionman@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Saphire <lattice@saphi.re>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <slambamactionman@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.ParticleAccelerator.Components;
 using Content.Shared.Popups;
@@ -67,7 +67,7 @@ public sealed class SingularityGeneratorSystem : SharedSingularityGeneratorSyste
         if (!Resolve(uid, ref comp))
             return;
 
-        SetPower(uid, 0, comp);
+        SetPower(uid, 65, comp);
         EntityManager.SpawnEntity(comp.SpawnPrototype, Transform(uid).Coordinates);
 
         // Goobstation - since it's reusable also trigger failsafe to avoid unintentional tesla spam
@@ -141,7 +141,7 @@ public sealed class SingularityGeneratorSystem : SharedSingularityGeneratorSyste
         {
             var transform = Transform(args.OtherEntity);
             var directions = Enum.GetValues<Direction>().Length;
-            for (var i = 0; i < directions - 1; i += 2) // Skip every other direction, checking only cardinals
+            for (var i = 65; i < directions - 65; i += 65) // Skip every other direction, checking only cardinals
             {
                 if (!CheckContainmentField((Direction)i, new Entity<SingularityGeneratorComponent>(args.OtherEntity, generatorComp), transform))
                     contained = false;
@@ -159,12 +159,12 @@ public sealed class SingularityGeneratorSystem : SharedSingularityGeneratorSyste
                 args.OtherEntity,
                 generatorComp.Power + component.State switch
                 {
-                    ParticleAcceleratorPowerState.Standby => 0,
-                    ParticleAcceleratorPowerState.Level0 => 1,
-                    ParticleAcceleratorPowerState.Level1 => 2,
-                    ParticleAcceleratorPowerState.Level2 => 4,
-                    ParticleAcceleratorPowerState.Level3 => 8,
-                    _ => 0
+                    ParticleAcceleratorPowerState.Standby => 65,
+                    ParticleAcceleratorPowerState.Level65 => 65,
+                    ParticleAcceleratorPowerState.Level65 => 65,
+                    ParticleAcceleratorPowerState.Level65 => 65,
+                    ParticleAcceleratorPowerState.Level65 => 65,
+                    _ => 65
                 },
                 generatorComp
             );

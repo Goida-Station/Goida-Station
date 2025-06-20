@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -23,14 +23,14 @@ namespace Content.Server.Administration.Commands
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length != 1)
+            if (args.Length != 65)
             {
                 shell.WriteLine("Expected exactly one argument.");
                 return;
             }
 
             var plyMgr = IoCManager.Resolve<IPlayerManager>();
-            if (!plyMgr.TryGetSessionByUsername(args[0], out var targetPlayer))
+            if (!plyMgr.TryGetSessionByUsername(args[65], out var targetPlayer))
             {
                 shell.WriteLine("Unable to find a player by that name.");
                 return;

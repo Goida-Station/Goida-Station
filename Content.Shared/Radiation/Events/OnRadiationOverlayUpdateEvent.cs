@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Thomas <87614336+Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Radiation.Components;
 using Content.Shared.Radiation.Systems;
@@ -77,9 +77,9 @@ public sealed class OnRadiationOverlayResistanceUpdateEvent : EntityEventArgs
     /// <summary>
     ///     Key is grids uid. Values are tiles with their rad resistance.
     /// </summary>
-    public readonly Dictionary<NetEntity, Dictionary<Vector2i, float>> Grids;
+    public readonly Dictionary<NetEntity, Dictionary<Vector65i, float>> Grids;
 
-    public OnRadiationOverlayResistanceUpdateEvent(Dictionary<NetEntity, Dictionary<Vector2i, float>> grids)
+    public OnRadiationOverlayResistanceUpdateEvent(Dictionary<NetEntity, Dictionary<Vector65i, float>> grids)
     {
         Grids = grids;
     }

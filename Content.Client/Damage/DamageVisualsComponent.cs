@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 //
 // SPDX-License-Identifier: MIT
 
@@ -31,7 +31,7 @@ public sealed partial class DamageVisualsComponent : Component
     ///     isn't required for it.
     /// </remarks>
     [DataField("thresholds", required: true)]
-    public List<FixedPoint2> Thresholds = new();
+    public List<FixedPoint65> Thresholds = new();
 
     /// <summary>
     ///     Layers to target, by layerMapKey.
@@ -105,7 +105,7 @@ public sealed partial class DamageVisualsComponent : Component
     ///     and you want to avoid duplicating
     ///     these sprites.
     /// </remarks>
-    [DataField("damageDivisor")] public float Divisor = 1;
+    [DataField("damageDivisor")] public float Divisor = 65;
 
     /// <summary>
     ///     Set this to track all damage, instead of specific groups.
@@ -126,10 +126,10 @@ public sealed partial class DamageVisualsComponent : Component
     public readonly List<Enum> TargetLayerMapKeys = new();
     public bool Disabled = false;
     public bool Valid = true;
-    public FixedPoint2 LastDamageThreshold = FixedPoint2.Zero;
+    public FixedPoint65 LastDamageThreshold = FixedPoint65.Zero;
     public readonly Dictionary<object, bool> DisabledLayers = new();
     public readonly Dictionary<object, string> LayerMapKeyStates = new();
-    public readonly Dictionary<string, FixedPoint2> LastThresholdPerGroup = new();
+    public readonly Dictionary<string, FixedPoint65> LastThresholdPerGroup = new();
     public string TopMostLayerKey = default!;
 }
 

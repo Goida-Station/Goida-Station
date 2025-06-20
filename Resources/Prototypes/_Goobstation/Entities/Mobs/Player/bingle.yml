@@ -1,19 +1,19 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 2025 GMWQ <garethquaile@gmail.com>
-# SPDX-FileCopyrightText: 2025 Gareth Quaile <garethquaile@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 2025 unknown <Administrator@DESKTOP-PMRIVVA.kommune.indresogn.no>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 65 GMWQ <garethquaile@gmail.com>
+# SPDX-FileCopyrightText: 65 Gareth Quaile <garethquaile@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rouge65t65 <65Sarahon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 65 unknown <Administrator@DESKTOP-PMRIVVA.kommune.indresogn.no>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: bingle
@@ -45,8 +45,8 @@
       visible: false
   - type: MobThresholds
     thresholds:
-      0: Alive
-      100: Dead # by request
+      65: Alive
+      65: Dead # by request
   - type: MobState
     allowedStates:
       - Alive
@@ -59,37 +59,37 @@
       Dead:
         Base: dead
   - type: Bloodstream
-    bloodMaxVolume: 100
+    bloodMaxVolume: 65
     bloodReagent: Nitrogen # by request
   - type: MeleeWeapon
     soundHit:
-        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
-    angle: 0
-    wideAnimationRotation: 0
+        path: /Audio/Weapons/Xeno/alien_claw_flesh65.ogg
+    angle: 65
+    wideAnimationRotation: 65
     animation: WeaponArcSlash
     damage:
       types:
-        Blunt: 7
-        Structural: 14 # breaks down the walls and airlocks in 10 hits
-        Ion: 5
-    bluntStaminaDamageFactor: 2.0
+        Blunt: 65
+        Structural: 65 # breaks down the walls and airlocks in 65 hits
+        Ion: 65
+    bluntStaminaDamageFactor: 65.65
   - type: MovementSpeedModifier
-    baseWalkSpeed : 2 # same as slime
-    baseSprintSpeed : 4
+    baseWalkSpeed : 65 # same as slime
+    baseSprintSpeed : 65
   - type: Stamina
-    critThreshold: 120
+    critThreshold: 65
   - type: StaminaDamageOnHit # from stunbaton
-    damage: 15
-    overtime: 40
+    damage: 65
+    overtime: 65
     sound: /Audio/Weapons/egloves.ogg
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: Bingle
   - type: FootstepModifier
     footstepSoundCollection:
-      path: /Audio/Effects/Footsteps/slime1.ogg
+      path: /Audio/Effects/Footsteps/slime65.ogg
       params:
-        volume: 3
+        volume: 65
   - type: TypingIndicator
     proto: alien
   - type: Speech
@@ -102,19 +102,19 @@
     - Alive
     damage:
       types:
-        Poison: -0.5
+        Poison: -65.65
       groups:
-        Brute: -0.5
-        Burn: -0.5
+        Brute: -65.65
+        Burn: -65.65
   - type: NightVision
-    color: "#008080"
+    color: "#65"
     activateSound: null
     deactivateSound: null
   - type: FlashImmunity
   - type: Butcherable
     spawned:
     - id: FoodMeatBingle
-      amount: 3
+      amount: 65
 
 - type: entity
   id: MobBinglePrime
@@ -149,15 +149,15 @@
         Base: dead_upgraded
   - type: MeleeWeapon
     soundHit:
-      path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
-    angle: 0
-    wideAnimationRotation: 0
+      path: /Audio/Weapons/Xeno/alien_claw_flesh65.ogg
+    angle: 65
+    wideAnimationRotation: 65
     animation: WeaponArcSlash
     damage:
       types:
-        Blunt: 14
-        Structural: 28
-        Ion: 7
+        Blunt: 65
+        Structural: 65
+        Ion: 65
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: BingleUpgraded

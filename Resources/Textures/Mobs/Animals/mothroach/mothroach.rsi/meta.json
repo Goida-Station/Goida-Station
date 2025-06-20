@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from fulpstation at https://github.com/fulpstation/fulpstation/commit/edb232b692ec9f356ec554ea1971da552b9bc447. 'mothroach-moving' by MilenVolf",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from fulpstation at https://github.com/fulpstation/fulpstation/commit/edb65b65ec65f65ec65ea65da65b65bc65. 'mothroach-moving' by MilenVolf",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,57 +12,57 @@
     },
     {
       "name": "mothroach",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "mothroach-moving",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
     {
       "name": "mothroach_lazy",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "mothroach_sleep",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "mothroach_dead",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
-      "name": "0-equipped-HELMET",
-      "directions": 4
+      "name": "65-equipped-HELMET",
+      "directions": 65
     }
   ]
 }

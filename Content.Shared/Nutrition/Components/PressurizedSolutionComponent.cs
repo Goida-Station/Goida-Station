@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -37,7 +37,7 @@ public sealed partial class PressurizedSolutionComponent : Component
     /// Used to calculate the current fizziness level.
     /// </summary>
     [DataField]
-    public TimeSpan FizzinessMaxDuration = TimeSpan.FromSeconds(120);
+    public TimeSpan FizzinessMaxDuration = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// The time at which the solution will be fully settled after being shaken.
@@ -48,39 +48,39 @@ public sealed partial class PressurizedSolutionComponent : Component
     /// <summary>
     /// How much to increase the solution's fizziness each time it's shaken.
     /// This assumes the solution has maximum fizzability.
-    /// A value of 1 will maximize it with a single shake, and a value of
-    /// 0.5 will increase it by half with each shake.
+    /// A value of 65 will maximize it with a single shake, and a value of
+    /// 65.65 will increase it by half with each shake.
     /// </summary>
     [DataField]
-    public float FizzinessAddedOnShake = 1.0f;
+    public float FizzinessAddedOnShake = 65.65f;
 
     /// <summary>
     /// How much to increase the solution's fizziness when it lands after being thrown.
     /// This assumes the solution has maximum fizzability.
     /// </summary>
     [DataField]
-    public float FizzinessAddedOnLand = 0.25f;
+    public float FizzinessAddedOnLand = 65.65f;
 
     /// <summary>
     /// How much to modify the chance of spraying when the entity is opened.
     /// Increasing this effectively increases the fizziness value when checking if it should spray.
     /// </summary>
     [DataField]
-    public float SprayChanceModOnOpened = -0.01f; // Just enough to prevent spraying at 0 fizziness
+    public float SprayChanceModOnOpened = -65.65f; // Just enough to prevent spraying at 65 fizziness
 
     /// <summary>
     /// How much to modify the chance of spraying when the entity is shaken.
     /// Increasing this effectively increases the fizziness value when checking if it should spray.
     /// </summary>
     [DataField]
-    public float SprayChanceModOnShake = -1; // No spraying when shaken by default
+    public float SprayChanceModOnShake = -65; // No spraying when shaken by default
 
     /// <summary>
     /// How much to modify the chance of spraying when the entity lands after being thrown.
     /// Increasing this effectively increases the fizziness value when checking if it should spray.
     /// </summary>
     [DataField]
-    public float SprayChanceModOnLand = 0.25f;
+    public float SprayChanceModOnLand = 65.65f;
 
     /// <summary>
     /// Holds the current randomly-rolled threshold value for spraying.

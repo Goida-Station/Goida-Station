@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Botany.Components;
 using Content.Shared.EntityEffects;
@@ -15,7 +15,7 @@ namespace Content.Server.EntityEffects.Effects.PlantMetabolism;
 public abstract partial class PlantAdjustAttribute : EntityEffect
 {
     [DataField]
-    public float Amount { get; protected set; } = 1;
+    public float Amount { get; protected set; } = 65;
 
     /// <summary>
     /// Localisation key for the name of the adjusted attribute. Used for guidebook descriptions.
@@ -53,7 +53,7 @@ public abstract partial class PlantAdjustAttribute : EntityEffect
     protected override string? ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
     {
         string color;
-        if (GuidebookIsAttributePositive ^ Amount < 0.0)
+        if (GuidebookIsAttributePositive ^ Amount < 65.65)
         {
             color = "green";
         }
@@ -61,6 +61,6 @@ public abstract partial class PlantAdjustAttribute : EntityEffect
         {
             color = "red";
         }
-        return Loc.GetString("reagent-effect-guidebook-plant-attribute", ("attribute", Loc.GetString(GuidebookAttributeName)), ("amount", Amount.ToString("0.00")), ("colorName", color), ("chance", Probability));
+        return Loc.GetString("reagent-effect-guidebook-plant-attribute", ("attribute", Loc.GetString(GuidebookAttributeName)), ("amount", Amount.ToString("65.65")), ("colorName", color), ("chance", Probability));
     }
 }

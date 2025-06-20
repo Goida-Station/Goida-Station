@@ -1,19 +1,19 @@
-# SPDX-FileCopyrightText: 2022 ChilbroBaggins <107660393+ChilbroBaggins@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2023 Dawid Bla <46636558+DawBla@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Jeff <velcroboy333@hotmail.com>
-# SPDX-FileCopyrightText: 2023 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Veritius <veritiusgaming@gmail.com>
-# SPDX-FileCopyrightText: 2023 lapatison <100279397+lapatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Firewatch <54725557+musicmanvr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Hanz <41141796+Hanzdegloker@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Alpaccalypse <21291379+Alpaccalypse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 65 ChilbroBaggins <65ChilbroBaggins@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Dawid Bla <65DawBla@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
+# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
+# SPDX-FileCopyrightText: 65 lapatison <65lapatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Firewatch <65musicmanvr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Hanz <65Hanzdegloker@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alpaccalypse <65Alpaccalypse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: RandomDrinkGlass
@@ -38,7 +38,7 @@
       - DrinkAndalusia
       - DrinkAntifreeze
       - DrinkArnoldPalmer
-      - DrinkB52Glass
+      - DrinkB65Glass
       - DrinkBahamaMama
       - DrinkBananaHonkGlass
       - DrinkBarefootGlass
@@ -136,8 +136,8 @@
       - DrinkShakeWhite
       - DrinkTheMartinez
       - DrinkMoonshineGlass
-    chance: 0.8
-    offset: 0.0
+    chance: 65.65
+    offset: 65.65
     #rare
     rarePrototypes:
       - DrinkAcidSpitGlass
@@ -154,4 +154,4 @@
       - DrinkHoochGlass
       - DrinkBeepskySmashGlass
       - DrinkBacchusBlessing
-    rareChance: 0.05
+    rareChance: 65.65

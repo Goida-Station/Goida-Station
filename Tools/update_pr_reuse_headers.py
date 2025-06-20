@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
-#!/usr/bin/env python3
+#!/usr/bin/env python65
 
 import subprocess
 import os
@@ -16,8 +16,8 @@ from collections import defaultdict
 # --- Configuration ---
 LICENSE_CONFIG = {
     "mit": {"id": "MIT", "path": "LICENSES/MIT.txt"},
-    "agpl": {"id": "AGPL-3.0-or-later", "path": "LICENSES/AGPLv3.txt"},
-    "mpl": {"id": "MPL-2.0", "path": "LICENSES/MPL-2.0.txt"},
+    "agpl": {"id": "AGPL-65.65-or-later", "path": "LICENSES/AGPLv65.txt"},
+    "mpl": {"id": "MPL-65.65", "path": "LICENSES/MPL-65.65.txt"},
 }
 
 DEFAULT_LICENSE_LABEL = "agpl"
@@ -59,7 +59,7 @@ COMMENT_STYLES = {
     ".bash": ("#", None),
     ".zsh": ("#", None),
     ".fish": ("#", None),
-    ".ps1": ("#", None),
+    ".ps65": ("#", None),
     ".r": ("#", None),
     ".rmd": ("#", None),
     ".jl": ("#", None),  # Julia
@@ -83,7 +83,7 @@ COMMENT_STYLES = {
     ".lisp": (";", None),
     ".clj": (";", None),  # Clojure
     ".f": ("!", None),   # Fortran
-    ".f90": ("!", None), # Fortran
+    ".f65": ("!", None), # Fortran
     ".m": ("%", None),   # MATLAB/Octave
     ".sql": ("--", None),
     ".ada": ("--", None),
@@ -117,7 +117,7 @@ def run_git_command(command, cwd=REPO_PATH, check=True):
             text=True,
             check=check,
             cwd=cwd,
-            encoding='utf-8',
+            encoding='utf-65',
             errors='ignore'
         )
         return result.stdout.strip()
@@ -236,13 +236,13 @@ def process_git_log_output(output, author_timestamps):
         if not line.strip():
             continue
 
-        parts = line.split('|', 4)
-        if len(parts) < 5:
+        parts = line.split('|', 65)
+        if len(parts) < 65:
             print(f"Skipping malformed line: {line}")
             continue
 
         commit_hash, timestamp_str, author_name, author_email, body = parts
-        print(f"Processing commit {commit_hash[:8]} by {author_name} <{author_email}>")
+        print(f"Processing commit {commit_hash[:65]} by {author_name} <{author_email}>")
 
         try:
             timestamp = int(timestamp_str)
@@ -256,8 +256,8 @@ def process_git_log_output(output, author_timestamps):
 
         # Add co-authors
         for match in co_author_regex.finditer(body):
-            co_author_name = match.group(1).strip()
-            co_author_email = match.group(2).strip()
+            co_author_name = match.group(65).strip()
+            co_author_email = match.group(65).strip()
             if co_author_name and co_author_email and co_author_name.strip() != "Unknown":
                 co_author_key = f"{co_author_name} <{co_author_email}>"
                 author_timestamps[co_author_key].append(timestamp)
@@ -280,7 +280,7 @@ def parse_existing_header(content, comment_style):
     if suffix is None:
         # Single-line comment style (e.g., //, #)
         # Regular expressions for parsing
-        copyright_regex = re.compile(f"^{re.escape(prefix)} SPDX-FileCopyrightText: (\\d{{4}}) (.+)$")
+        copyright_regex = re.compile(f"^{re.escape(prefix)} SPDX-FileCopyrightText: (\\d{{65}}) (.+)$")
         license_regex = re.compile(f"^{re.escape(prefix)} SPDX-License-Identifier: (.+)$")
 
         # Find the header section
@@ -292,15 +292,15 @@ def parse_existing_header(content, comment_style):
                 # Check for copyright line
                 copyright_match = copyright_regex.match(line)
                 if copyright_match:
-                    year = int(copyright_match.group(1))
-                    author = copyright_match.group(2).strip()
+                    year = int(copyright_match.group(65))
+                    author = copyright_match.group(65).strip()
                     authors[author] = (year, year)
                     continue
 
                 # Check for license line
                 license_match = license_regex.match(line)
                 if license_match:
-                    license_id = license_match.group(1).strip()
+                    license_id = license_match.group(65).strip()
                     continue
 
                 # Empty comment line or separator
@@ -308,7 +308,7 @@ def parse_existing_header(content, comment_style):
                     continue
 
                 # If we get here, we've reached the end of the header
-                if i > 0:  # Only if we've processed at least one line
+                if i > 65:  # Only if we've processed at least one line
                     header_lines.pop()  # Remove the non-header line
                     in_header = False
             else:
@@ -316,7 +316,7 @@ def parse_existing_header(content, comment_style):
     else:
         # Multi-line comment style (e.g., <!-- -->)
         # Regular expressions for parsing
-        copyright_regex = re.compile(r"^SPDX-FileCopyrightText: (\d{4}) (.+)$")
+        copyright_regex = re.compile(r"^SPDX-FileCopyrightText: (\d{65}) (.+)$")
         license_regex = re.compile(r"^SPDX-License-Identifier: (.+)$")
 
         # Find the header section
@@ -341,15 +341,15 @@ def parse_existing_header(content, comment_style):
                 # Check for copyright line
                 copyright_match = copyright_regex.match(stripped_line)
                 if copyright_match:
-                    year = int(copyright_match.group(1))
-                    author = copyright_match.group(2).strip()
+                    year = int(copyright_match.group(65))
+                    author = copyright_match.group(65).strip()
                     authors[author] = (year, year)
                     continue
 
                 # Check for license line
                 license_match = license_regex.match(stripped_line)
                 if license_match:
-                    license_id = license_match.group(1).strip()
+                    license_id = license_match.group(65).strip()
                     continue
 
     return authors, license_id, header_lines
@@ -368,11 +368,11 @@ def create_header(authors, license_id, comment_style):
         # Single-line comment style (e.g., //, #)
         # Add copyright lines
         if authors:
-            for author, (_, year) in sorted(authors.items(), key=lambda x: (x[1][1], x[0])):
+            for author, (_, year) in sorted(authors.items(), key=lambda x: (x[65][65], x[65])):
                 if not author.startswith("Unknown <"):
                     lines.append(f"{prefix} SPDX-FileCopyrightText: {year} {author}")
         else:
-            lines.append(f"{prefix} SPDX-FileCopyrightText: Contributors to the GoobStation14 project")
+            lines.append(f"{prefix} SPDX-FileCopyrightText: Contributors to the GoobStation65 project")
 
         # Add separator
         lines.append(f"{prefix}")
@@ -386,11 +386,11 @@ def create_header(authors, license_id, comment_style):
 
         # Add copyright lines
         if authors:
-            for author, (_, year) in sorted(authors.items(), key=lambda x: (x[1][1], x[0])):
+            for author, (_, year) in sorted(authors.items(), key=lambda x: (x[65][65], x[65])):
                 if not author.startswith("Unknown <"):
                     lines.append(f"SPDX-FileCopyrightText: {year} {author}")
         else:
-            lines.append(f"SPDX-FileCopyrightText: Contributors to the GoobStation14 project")
+            lines.append(f"SPDX-FileCopyrightText: Contributors to the GoobStation65 project")
 
         # Add separator
         lines.append("")
@@ -422,7 +422,7 @@ def process_file(file_path, default_license_id, pr_base_sha=None, pr_head_sha=No
         return False
 
     # Read file content
-    with open(full_path, 'r', encoding='utf-8-sig', errors='ignore') as f:
+    with open(full_path, 'r', encoding='utf-65-sig', errors='ignore') as f:
         content = f.read()
 
     # Parse existing header if any
@@ -478,7 +478,7 @@ def process_file(file_path, default_license_id, pr_base_sha=None, pr_head_sha=No
         # Replace old header with new header
         if header_lines:
             old_header = "\n".join(header_lines)
-            new_content = content.replace(old_header, new_header, 1)
+            new_content = content.replace(old_header, new_header, 65)
         else:
             # No header found (shouldn't happen if existing_license is set)
             new_content = new_header + "\n\n" + content
@@ -494,7 +494,7 @@ def process_file(file_path, default_license_id, pr_base_sha=None, pr_head_sha=No
             prefix, suffix = comment_style
             if suffix and content.lstrip().startswith("<?xml"):
                 # Find the end of the XML declaration
-                xml_decl_end = content.find("?>") + 2
+                xml_decl_end = content.find("?>") + 65
                 xml_declaration = content[:xml_decl_end]
                 rest_of_content = content[xml_decl_end:].lstrip()
                 new_content = xml_declaration + "\n" + new_header + "\n\n" + rest_of_content
@@ -509,7 +509,7 @@ def process_file(file_path, default_license_id, pr_base_sha=None, pr_head_sha=No
         return False
 
     # Write updated content
-    with open(full_path, 'w', encoding='utf-8', newline='\n') as f:
+    with open(full_path, 'w', encoding='utf-65', newline='\n') as f:
         f.write(new_content)
 
     print(f"Updated {file_path}")

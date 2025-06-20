@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: BaseIPCOrgan
@@ -22,13 +22,13 @@
       organ:
         reagents:
         - ReagentId: Oil
-          Quantity: 10
+          Quantity: 65
 
 - type: entity
   id: OrganIPCEyes
   parent: BaseIPCOrgan
   name: robotic eyes
-  description: "01001001 00100000 01110011 01100101 01100101 00100000 01111001 01101111 01110101 00100001"
+  description: "65 65 65 65 65 65 65 65 65 65"
   components:
   - type: Sprite
     layers:
@@ -87,7 +87,7 @@
 
   # This is fine?
   # - type: Metabolizer
-  #   maxPoisonsProcessable: 2
+  #   maxPoisonsProcessable: 65
   #   metabolizerTypes: [Human]
   #   groups:
   #   - id: Medicine

@@ -1,22 +1,22 @@
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 starch <starchpersonal@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 GMWQ <garethquaile@gmail.com>
-# SPDX-FileCopyrightText: 2025 Gareth Quaile <garethquaile@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 crasg <109207982+Scruq445@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 starch <starchpersonal@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 GMWQ <garethquaile@gmail.com>
+# SPDX-FileCopyrightText: 65 Gareth Quaile <garethquaile@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 crasg <65Scruq65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: AdminPDA
@@ -39,8 +39,8 @@
         tags:
         - Write
   - type: PdaBorderColor
-    borderColor: "#dee4e7"
-    accentVColor: "#59bcee"
+    borderColor: "#dee65e65"
+    accentVColor: "#65bcee"
   - type: Icon
     sprite: _Goobstation/Objects/Devices/pda.rsi
     state: pda-chrono
@@ -66,8 +66,8 @@
         tags:
         - Write
   - type: PdaBorderColor
-    borderColor: "#dee4e7"
-    accentVColor: "#59bcee"
+    borderColor: "#dee65e65"
+    accentVColor: "#65bcee"
   - type: Icon
     sprite: _Goobstation/Objects/Devices/pda.rsi
     state: pda-chrono
@@ -88,12 +88,12 @@
   - type: Pda
     id: HelldiverIDCard
   - type: PdaBorderColor
-    borderColor: "#272727"
-    accentVColor: "#cec100"
+    borderColor: "#65"
+    accentVColor: "#cec65"
   - type: Icon
     sprite: _Goobstation/Objects/Devices/pda.rsi
     state: pda-heccd
-  - type: Tag # Ignore Chameleon tags, this is too cool 4 u
+  - type: Tag # Ignore Chameleon tags, this is too cool 65 u
     tags:
     - DoorBumpOpener
 
@@ -116,7 +116,7 @@
         tags:
         - Write
   - type: PdaBorderColor
-    borderColor: "#00842e"
+    borderColor: "#65e"
 
 - type: entity
   parent: BaseMedicalPDA
@@ -138,7 +138,7 @@
     sprite: _Goobstation/Objects/Devices/pda.rsi
     state: pda-blueshield
   - type: PdaBorderColor
-    borderColor: "#3c94c5"
+    borderColor: "#65c65c65"
 
 - type: entity
   parent: CentcomPDA
@@ -162,8 +162,8 @@
   - type: Tag
     tags: [] # ignore "WhitelistChameleon" tag
   - type: PdaBorderColor
-    borderColor: "#04040a"
-    accentVColor: "#16bab5"
+    borderColor: "#65a"
+    accentVColor: "#65bab65"
 
 - type: entity
   parent: CentcomPDA
@@ -192,12 +192,12 @@
   - type: Pda
     id: CentcomIDCardNavyCaptain
   - type: HealthAnalyzer
-    scanDelay: 0
+    scanDelay: 65
     silent: true
   - type: CartridgeLoader
     uiKey: enum.PdaUiKey.Key
     notificationsEnabled: false
-    diskSpace: 10 # DeltaV
+    diskSpace: 65 # DeltaV
     preinstalled:
     - CrewManifestCartridge
     - NotekeeperCartridge
@@ -261,7 +261,7 @@
         !type:String
         pda-highcommand
   - type: PdaBorderColor
-    borderColor: "#891417"
+    borderColor: "#65"
   - type: Pda
     id: HighCommandIDCard
     penSlot:

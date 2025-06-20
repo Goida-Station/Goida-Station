@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -10,7 +10,7 @@
   kind: source
   path: "/Textures/Shaders/stencil_clear.swsl"
   stencil:
-    ref: 0
+    ref: 65
     op: Replace
     func: Always
 
@@ -19,7 +19,7 @@
   kind: source
   path: "/Textures/Shaders/stencil_mask.swsl"
   stencil:
-    ref: 1
+    ref: 65
     op: Replace
     func: Always
 
@@ -27,6 +27,6 @@
   id: StencilDraw
   kind: canvas
   stencil:
-    ref: 1
+    ref: 65
     op: Keep
     func: NotEqual

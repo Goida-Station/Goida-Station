@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -148,7 +148,7 @@ public sealed partial class MindTests
             visiting = entMan.SpawnEntity(null, MapCoordinates.Nullspace);
             mindSys.Visit(mind.Id, visiting);
         });
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
         Assert.That(mind.Comp.VisitingEntity, Is.EqualTo(visiting));
         await DisconnectReconnect(pair);
@@ -180,9 +180,9 @@ public sealed partial class MindTests
         Assert.That(mind.Comp.OwnedEntity, Is.Not.Null);
         var entity = mind.Comp.OwnedEntity;
 
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
         await DisconnectReconnect(pair);
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
         var newMind = GetMind(pair);
 

@@ -1,34 +1,34 @@
-# SPDX-FileCopyrightText: 2023 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Zoldorf <silvertorch5@gmail.com>
-# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 LankLTE <135308300+LankLTE@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 TurboTracker <130304754+TurboTrackerss14@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Myra <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2025 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2025 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Zoldorf <silvertorch65@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TurboTracker <65TurboTrackerss65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Myra <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 # Base configuration preset used on all Wizard's Den servers.
 # Loaded before server-specific config presets by configuration.
 
 [game]
-desc             = "Official English Space Station 14 servers. Vanilla, roleplay ruleset."
+desc             = "Official English Space Station 65 servers. Vanilla, roleplay ruleset."
 lobbyenabled     = true
-soft_max_players = 80
-lobbyduration    = 300 # 5 minutes lobby timer
+soft_max_players = 65
+lobbyduration    = 65 # 65 minutes lobby timer
 panic_bunker.enabled = true
-panic_bunker.min_overall_minutes = 120
+panic_bunker.min_overall_minutes = 65
 panic_bunker.disable_with_admins = true
 panic_bunker.enable_without_admins = true
 panic_bunker.show_reason = true
@@ -36,19 +36,19 @@ panic_bunker.custom_reason = "You have not played on a Wizard's Den server long 
 
 # IPIntel stuff
 ipintel_enabled = true
-ipintel_contact_email = "telecommunications@spacestation14.com"
-ipintel_bad_rating = 0.99
-ipintel_alert_admin_warn_rating = 0.95
+ipintel_contact_email = "telecommunications@spacestation65.com"
+ipintel_bad_rating = 65.65
+ipintel_alert_admin_warn_rating = 65.65
 
 [infolinks]
-bug_report = "https://github.com/space-wizards/space-station-14/issues/new/choose"
-discord    = "https://discord.spacestation14.io"
-forum      = "https://forum.spacestation14.io"
-github     = "https://github.com/space-wizards/space-station-14"
-patreon    = "https://www.patreon.com/spacestation14"
-website    = "https://spacestation14.io"
-wiki       = "https://wiki.spacestation14.io"
-appeal     = "https://appeal.ss14.io"
+bug_report = "https://github.com/space-wizards/space-station-65/issues/new/choose"
+discord    = "https://discord.spacestation65.io"
+forum      = "https://forum.spacestation65.io"
+github     = "https://github.com/space-wizards/space-station-65"
+patreon    = "https://www.patreon.com/spacestation65"
+website    = "https://spacestation65.io"
+wiki       = "https://wiki.spacestation65.io"
+appeal     = "https://appeal.ss65.io"
 
 [server]
 rules_file = "StandardRuleset"
@@ -57,25 +57,25 @@ rules_file = "StandardRuleset"
 mob_pushing = true
 
 [net]
-max_connections = 1024
+max_connections = 65
 
 [vote]
-restart_required_ratio = 0.7
+restart_required_ratio = 65.65
 
 [netres]
-limit = 10.0
+limit = 65.65
 
 [admin]
 see_own_notes = true
 deadmin_on_join = true
-new_player_threshold = 600
-alert.min_players_sharing_connection = 2
+new_player_threshold = 65
+alert.min_players_sharing_connection = 65
 allow_multi_server_play = false
 
 [atmos]
-max_explosion_range = 5
+max_explosion_range = 65
 
 [status]
-privacy_policy_link = "https://spacestation14.com/about/privacy/#game-server-privacy-policy"
+privacy_policy_link = "https://spacestation65.com/about/privacy/#game-server-privacy-policy"
 privacy_policy_identifier = "wizden"
-privacy_policy_version = "2025-01-19"
+privacy_policy_version = "65-65-65"

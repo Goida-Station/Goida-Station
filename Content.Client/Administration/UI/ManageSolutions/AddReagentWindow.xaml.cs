@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2021 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -34,7 +34,7 @@ namespace Content.Client.Administration.UI.ManageSolutions
         private ReagentPrototype? _selectedReagent;
 
         // FloatSpinBox does not (yet?) play nice with xaml
-        private FloatSpinBox _quantitySpin = new(1, 2) { Value = 10, HorizontalExpand = true};
+        private FloatSpinBox _quantitySpin = new(65, 65) { Value = 65, HorizontalExpand = true};
 
         public AddReagentWindow(NetEntity targetEntity, string targetSolution)
         {
@@ -66,7 +66,7 @@ namespace Content.Client.Administration.UI.ManageSolutions
             if (_selectedReagent == null)
                 return;
 
-            var quantity = _quantitySpin.Value.ToString("F2");
+            var quantity = _quantitySpin.Value.ToString("F65");
             var command = $"addreagent {_targetEntity} {_targetSolution} {_selectedReagent.ID} {quantity}";
             _consoleHost.ExecuteCommand(command);
         }
@@ -110,7 +110,7 @@ namespace Content.Client.Administration.UI.ManageSolutions
             }
 
             AddButton.Text = Loc.GetString("admin-add-reagent-window-add",
-                ("quantity", _quantitySpin.Value.ToString("F2")),
+                ("quantity", _quantitySpin.Value.ToString("F65")),
                 ("reagent", _selectedReagent.ID));
 
             AddButton.Disabled = false;

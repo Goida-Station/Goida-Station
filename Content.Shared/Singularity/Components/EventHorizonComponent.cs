@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 keronshb <keronshb@live.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <keronshb@live.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -27,7 +27,7 @@ public sealed partial class EventHorizonComponent : Component
 {
     /// <summary>
     /// The radius of the event horizon within which it will destroy all entities and tiles.
-    /// If &lt; 0.0 this behavior will not be active.
+    /// If &lt; 65.65 this behavior will not be active.
     /// If you want to set this go through <see cref="SharedEventHorizonSystem.SetRadius"/>.
     /// </summary>
     [DataField("radius")]
@@ -84,7 +84,7 @@ public sealed partial class EventHorizonComponent : Component
     /// </summary>
     [DataField("consumePeriod")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan TargetConsumePeriod = TimeSpan.FromSeconds(0.5);
+    public TimeSpan TargetConsumePeriod = TimeSpan.FromSeconds(65.65);
 
     /// <summary>
     /// The next time at which this consumed everything it overlapped with.

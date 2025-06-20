@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Scruq445 <storchdamien@gmail.com>
-# SPDX-FileCopyrightText: 2025 crasg <109207982+Scruq445@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Scruq65 <storchdamien@gmail.com>
+# SPDX-FileCopyrightText: 65 crasg <65Scruq65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Offensive
 - type: listing
   id: SpellbookMimeMalaiseUpgrade
@@ -16,7 +16,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: mime
   cost:
-    WizCoin: 1
+    WizCoin: 65
   categories:
   - SpellbookOffensive
   conditions:
@@ -24,7 +24,7 @@
     whitelist:
     - SpellbookMimeMalaise
   - !type:ListingLimitedStockCondition
-    stock: 4
+    stock: 65
 
 - type: listing
   id: SpellbookCluwneCurseUpgrade
@@ -35,7 +35,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: cluwne
   cost:
-    WizCoin: 2
+    WizCoin: 65
   categories:
   - SpellbookOffensive
   conditions:
@@ -43,7 +43,7 @@
     whitelist:
     - SpellbookCluwneCurse
   - !type:ListingLimitedStockCondition
-    stock: 2
+    stock: 65
 
 - type: listing
   id: SpellbookBananaTouchUpgrade
@@ -54,7 +54,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: clown
   cost:
-    WizCoin: 1
+    WizCoin: 65
   categories:
   - SpellbookOffensive
   conditions:
@@ -62,7 +62,7 @@
     whitelist:
     - SpellbookBananaTouch
   - !type:ListingLimitedStockCondition
-    stock: 4
+    stock: 65
 
 - type: listing
   id: SpellbookBlindUpgrade
@@ -73,7 +73,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: blind
   cost:
-    WizCoin: 1
+    WizCoin: 65
   categories:
   - SpellbookOffensive
   conditions:
@@ -81,7 +81,7 @@
     whitelist:
     - SpellbookBlind
   - !type:ListingLimitedStockCondition
-    stock: 4
+    stock: 65
 
 - type: listing
   id: SpellbookMutateUpgrade
@@ -92,7 +92,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: mutate
   cost:
-    WizCoin: 2
+    WizCoin: 65
   categories:
   - SpellbookOffensive
   conditions:
@@ -100,7 +100,7 @@
     whitelist:
     - SpellbookMutate
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: SpellbookTeslaBlastUpgrade
@@ -111,7 +111,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: tesla
   cost:
-    WizCoin: 1
+    WizCoin: 65
   categories:
   - SpellbookOffensive
   conditions:
@@ -119,7 +119,7 @@
     whitelist:
     - SpellbookTeslaBlast
   - !type:ListingLimitedStockCondition
-    stock: 4
+    stock: 65
 
 - type: listing
   id: SpellbookLightningBoltUpgrade
@@ -130,7 +130,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: lightning
   cost:
-    WizCoin: 1
+    WizCoin: 65
   categories:
   - SpellbookOffensive
   conditions:
@@ -138,7 +138,7 @@
     whitelist:
     - SpellbookLightningBolt
   - !type:ListingLimitedStockCondition
-    stock: 4
+    stock: 65
 
 - type: listing
   id: SpellbookHomingToolboxUpgrade
@@ -149,7 +149,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: toolbox
   cost:
-    WizCoin: 1
+    WizCoin: 65
   categories:
   - SpellbookOffensive
   conditions:
@@ -157,7 +157,7 @@
     whitelist:
     - SpellbookHomingToolbox
   - !type:ListingLimitedStockCondition
-    stock: 4
+    stock: 65
 
 - type: listing
   id: SpellbookArcaneBarrageUpgrade
@@ -168,7 +168,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: arcane_barrage
   cost:
-    WizCoin: 2
+    WizCoin: 65
   categories:
   - SpellbookOffensive
   conditions:
@@ -176,7 +176,7 @@
     whitelist:
     - SpellbookArcaneBarrage
   - !type:ListingLimitedStockCondition
-    stock: 2
+    stock: 65
 
 - type: listing
   id: SpellbookLesserSummonGunsUpgrade
@@ -187,7 +187,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: bolt_action
   cost:
-    WizCoin: 2
+    WizCoin: 65
   categories:
   - SpellbookOffensive
   conditions:
@@ -195,7 +195,7 @@
     whitelist:
     - SpellbookLesserSummonGuns
   - !type:ListingLimitedStockCondition
-    stock: 2
+    stock: 65
 
 - type: listing
   id: SpellbookBarnyardCurseUpgrade
@@ -206,7 +206,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: barn
   cost:
-    WizCoin: 2
+    WizCoin: 65
   categories:
   - SpellbookOffensive
   conditions:
@@ -214,7 +214,7 @@
     whitelist:
     - SpellbookBarnyardCurse
   - !type:ListingLimitedStockCondition
-    stock: 2
+    stock: 65
 
 - type: listing
   id: SpellbookScreamForMeUpgrade
@@ -225,7 +225,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: scream_for_me
   cost:
-    WizCoin: 1
+    WizCoin: 65
   categories:
   - SpellbookOffensive
   conditions:
@@ -233,7 +233,7 @@
     whitelist:
     - SpellbookScreamForMe
   - !type:ListingLimitedStockCondition
-    stock: 4
+    stock: 65
 
 - type: listing
   id: SpellbookLesserSummonBeesUpgrade
@@ -244,7 +244,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: bee
   cost:
-    WizCoin: 2
+    WizCoin: 65
   categories:
   - SpellbookOffensive
   conditions:
@@ -252,7 +252,7 @@
     whitelist:
     - SpellbookLesserSummonBees
   - !type:ListingLimitedStockCondition
-    stock: 2
+    stock: 65
 
 - type: listing
   id: SpellbookSanguineStrikeUpgrade
@@ -263,7 +263,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: exsanguinating_strike
   cost:
-    WizCoin: 2
+    WizCoin: 65
   categories:
   - SpellbookOffensive
   conditions:
@@ -271,7 +271,7 @@
     whitelist:
     - SpellbookSanguineStrike
   - !type:ListingLimitedStockCondition
-    stock: 2
+    stock: 65
 
 - type: listing
   id: SpellbookSmiteUpgrade
@@ -282,7 +282,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: gib
   cost:
-    WizCoin: 2
+    WizCoin: 65
   categories:
   - SpellbookOffensive
   conditions:
@@ -290,7 +290,7 @@
     whitelist:
     - SpellbookSmite
   - !type:ListingLimitedStockCondition
-    stock: 2
+    stock: 65
 
 - type: listing
   id: SpellbookRodFormUpgrade
@@ -301,7 +301,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: immrod
   cost:
-    WizCoin: 2
+    WizCoin: 65
   categories:
   - SpellbookOffensive
   conditions:
@@ -309,7 +309,7 @@
     whitelist:
     - SpellbookRodForm
   - !type:ListingLimitedStockCondition
-    stock: 4
+    stock: 65
   - !type:StoreWhitelistCondition
     blacklist:
       tags:
@@ -324,7 +324,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: spellcard
   cost:
-    WizCoin: 2
+    WizCoin: 65
   categories:
   - SpellbookOffensive
   conditions:
@@ -335,7 +335,7 @@
     - SpellbookFullRandom
     - SpellbookSemiRandom
   - !type:ListingLimitedStockCondition
-    stock: 2
+    stock: 65
 
 - type: listing
   id: SpellbookSummonSimiansUpgrade
@@ -348,7 +348,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: monkey
   cost:
-    WizCoin: 2
+    WizCoin: 65
   categories:
   - SpellbookOffensive
   conditions:
@@ -359,7 +359,7 @@
     - SpellbookFullRandom
     - SpellbookSemiRandom
   - !type:ListingLimitedStockCondition
-    stock: 4
+    stock: 65
 
 # Defensive
 - type: listing
@@ -371,7 +371,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: missile
   cost:
-    WizCoin: 2
+    WizCoin: 65
   categories:
   - SpellbookDefensive
   conditions:
@@ -382,7 +382,7 @@
     - SpellbookFullRandom
     - SpellbookSemiRandom
   - !type:ListingLimitedStockCondition
-    stock: 2
+    stock: 65
 
 - type: listing
   id: SpellbookDisableTechUpgrade
@@ -393,7 +393,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: emp
   cost:
-    WizCoin: 1
+    WizCoin: 65
   categories:
   - SpellbookDefensive
   conditions:
@@ -404,7 +404,7 @@
     - SpellbookFullRandom
     - SpellbookSemiRandom
   - !type:ListingLimitedStockCondition
-    stock: 4
+    stock: 65
 
 - type: listing
   id: SpellbookSmokeUpgrade
@@ -415,7 +415,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: smoke
   cost:
-    WizCoin: 1
+    WizCoin: 65
   categories:
   - SpellbookDefensive
   conditions:
@@ -426,7 +426,7 @@
     - SpellbookFullRandom
     - SpellbookSemiRandom
   - !type:ListingLimitedStockCondition
-    stock: 2
+    stock: 65
 
 - type: listing
   id: SpellbookRepulseUpgrade
@@ -437,7 +437,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: repulse
   cost:
-    WizCoin: 1
+    WizCoin: 65
   categories:
   - SpellbookDefensive
   conditions:
@@ -448,7 +448,7 @@
     - SpellbookFullRandom
     - SpellbookSemiRandom
   - !type:ListingLimitedStockCondition
-    stock: 4
+    stock: 65
 
 - type: listing
   id: SpellbookStopTimeUpgrade
@@ -459,7 +459,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: time
   cost:
-    WizCoin: 2
+    WizCoin: 65
   categories:
   - SpellbookDefensive
   conditions:
@@ -470,7 +470,7 @@
     - SpellbookFullRandom
     - SpellbookSemiRandom
   - !type:ListingLimitedStockCondition
-    stock: 2
+    stock: 65
 
 - type: listing
   id: SpellbookTrapsUpgrade
@@ -481,7 +481,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: the_traps
   cost:
-    WizCoin: 1
+    WizCoin: 65
   categories:
   - SpellbookDefensive
   conditions:
@@ -492,7 +492,7 @@
     - SpellbookFullRandom
     - SpellbookSemiRandom
   - !type:ListingLimitedStockCondition
-    stock: 4
+    stock: 65
 
 - type: listing
   id: SpellbookForceWallUpgrade
@@ -503,7 +503,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: shield_greater
   cost:
-    WizCoin: 1
+    WizCoin: 65
   categories:
   - SpellbookDefensive
   conditions:
@@ -514,7 +514,7 @@
     - SpellbookFullRandom
     - SpellbookSemiRandom
   - !type:ListingLimitedStockCondition
-    stock: 4
+    stock: 65
 
 # Utility
 - type: listing
@@ -526,7 +526,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: teleport
   cost:
-    WizCoin: 2
+    WizCoin: 65
   categories:
   - SpellbookUtility
   conditions:
@@ -537,7 +537,7 @@
     - SpellbookFullRandom
     - SpellbookSemiRandom
   - !type:ListingLimitedStockCondition
-    stock: 2
+    stock: 65
   - !type:StoreWhitelistCondition
     blacklist:
       tags:
@@ -552,7 +552,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: swap
   cost:
-    WizCoin: 1
+    WizCoin: 65
   categories:
   - SpellbookUtility
   conditions:
@@ -563,7 +563,7 @@
     - SpellbookFullRandom
     - SpellbookSemiRandom
   - !type:ListingLimitedStockCondition
-    stock: 2
+    stock: 65
 
 - type: listing
   id: SpellbookBlinkUpgrade
@@ -574,7 +574,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: blink
   cost:
-    WizCoin: 1
+    WizCoin: 65
   categories:
   - SpellbookUtility
   conditions:
@@ -585,7 +585,7 @@
     - SpellbookFullRandom
     - SpellbookSemiRandom
   - !type:ListingLimitedStockCondition
-    stock: 2
+    stock: 65
 
 - type: listing
   id: SpellbookChargeUpgrade
@@ -596,7 +596,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: charge
   cost:
-    WizCoin: 1
+    WizCoin: 65
   categories:
   - SpellbookUtility
   conditions:
@@ -607,7 +607,7 @@
     - SpellbookFullRandom
     - SpellbookSemiRandom
   - !type:ListingLimitedStockCondition
-    stock: 4
+    stock: 65
 
 - type: listing
   id: SpellbookMindSwapUpgrade
@@ -618,7 +618,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: mindswap
   cost:
-    WizCoin: 2
+    WizCoin: 65
   categories:
   - SpellbookUtility
   conditions:
@@ -629,7 +629,7 @@
     - SpellbookFullRandom
     - SpellbookSemiRandom
   - !type:ListingLimitedStockCondition
-    stock: 2
+    stock: 65
 
 - type: listing
   id: SpellbookKnockUpgrade
@@ -640,7 +640,7 @@
     sprite: _Goobstation/Wizard/actions.rsi
     state: knock
   cost:
-    WizCoin: 1
+    WizCoin: 65
   categories:
   - SpellbookUtility
   conditions:
@@ -651,4 +651,4 @@
     - SpellbookFullRandom
     - SpellbookSemiRandom
   - !type:ListingLimitedStockCondition
-    stock: 2
+    stock: 65

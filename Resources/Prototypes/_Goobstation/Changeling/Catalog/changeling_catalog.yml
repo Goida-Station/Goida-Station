@@ -1,19 +1,19 @@
-# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-# SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Marcus F <marcus2008stoke@gmail.com>
-# SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 thebiggestbruh <199992874+thebiggestbruh@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 thebiggestbruh <marcus2008stoke@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+# SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Marcus F <marcus65stoke@gmail.com>
+# SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 thebiggestbruh <65thebiggestbruh@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 thebiggestbruh <marcus65stoke@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # combat
 
 - type: listing
@@ -23,12 +23,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: armblade }
   productAction: ActionToggleArmblade
   cost:
-    EvolutionPoint: 4
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityCombat
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuCombatArmClaw
@@ -37,12 +37,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: claw }
   productAction: ActionToggleClaw
   cost:
-    EvolutionPoint: 4
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityCombat
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuCombatArmHammer
@@ -51,12 +51,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: hammer }
   productAction: ActionToggleHammer
   cost:
-    EvolutionPoint: 4
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityCombat
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuCombatDartGun
@@ -65,12 +65,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: dartgun }
   productAction: ActionToggleDartGun
   cost:
-    EvolutionPoint: 3
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityCombat
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuCombatBoneShard
@@ -79,12 +79,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: bone_shard }
   productAction: ActionCreateBoneShard
   cost:
-    EvolutionPoint: 3
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityCombat
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuCombatChitinousArmor
@@ -93,12 +93,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: chitinous_armor }
   productAction: ActionToggleChitinousArmor
   cost:
-    EvolutionPoint: 4
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityCombat
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuCombatOrganicShield
@@ -107,12 +107,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: organic_shield }
   productAction: ActionToggleOrganicShield
   cost:
-    EvolutionPoint: 2
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityCombat
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuCombatShriekDissonant
@@ -121,12 +121,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: shriek_dissonant }
   productAction: ActionShriekDissonant
   cost:
-    EvolutionPoint: 2
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityCombat
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuCombatShriekResonant
@@ -135,12 +135,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: shriek_resonant }
   productAction: ActionShriekResonant
   cost:
-    EvolutionPoint: 2
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityCombat
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuCombatMuscles
@@ -149,12 +149,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: strained_muscles }
   productAction: ActionToggleStrainedMuscles
   cost:
-    EvolutionPoint: 2
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityCombat
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 #- type: listing
 #  id: EvolutionMenuCombatSpiders
@@ -163,12 +163,12 @@
 #  icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: spiders_spawn }
 #  productAction: ActionSpawnChangelingSpider
 #  cost:
-#    EvolutionPoint: 6
+#    EvolutionPoint: 65
 #  categories:
 #  - ChangelingAbilityCombat
 #  consitions:
 #  - !type:ListingLimitedStockCondition
-#    stock: 1
+#    stock: 65
 
 # sting
 
@@ -179,12 +179,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: sting_blind }
   productAction: ActionStingBlind
   cost:
-    EvolutionPoint: 2
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilitySting
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuStingCryo
@@ -193,12 +193,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: sting_cryo }
   productAction: ActionStingCryo
   cost:
-    EvolutionPoint: 2
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilitySting
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuStingLethargic
@@ -207,12 +207,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: sting_lethargic }
   productAction: ActionStingLethargic
   cost:
-    EvolutionPoint: 3
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilitySting
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuStingMute
@@ -221,12 +221,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: sting_mute }
   productAction: ActionStingMute
   cost:
-    EvolutionPoint: 2
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilitySting
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuStingFakeArmblade
@@ -235,12 +235,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: sting_armblade }
   productAction: ActionStingFakeArmblade
   cost:
-    EvolutionPoint: 4
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilitySting
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 # - type: listing
 #   id: EvolutionMenuStingTransform
@@ -249,12 +249,12 @@
 #   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: sting_transform }
 #   productAction: ActionStingTransform
 #   cost:
-#     EvolutionPoint: 6
+#     EvolutionPoint: 65
 #   categories:
 #   - ChangelingAbilitySting
 #   conditions:
 #   - !type:ListingLimitedStockCondition
-#     stock: 1
+#     stock: 65
 
 # utility
 
@@ -265,12 +265,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: anatomic_panacea }
   productAction: ActionAnatomicPanacea
   cost:
-    EvolutionPoint: 2
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityUtility
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuUtilityEyesight
@@ -281,12 +281,12 @@
   productEvent: !type:AugmentedEyesightPurchasedEvent
   raiseProductEventOnUser: true
   cost:
-    EvolutionPoint: 4
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityUtility
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuUtilityBiodegrade
@@ -295,12 +295,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: biodegrade }
   productAction: ActionBiodegrade
   cost:
-    EvolutionPoint: 4
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityUtility
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuUtilityChameleon
@@ -309,12 +309,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: chameleon_skin }
   productAction: ActionChameleonSkin
   cost:
-    EvolutionPoint: 4
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityUtility
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuUtilityAdaption
@@ -323,12 +323,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: void_adaptation }
   productAction: ActionVoidAdapt
   cost:
-    EvolutionPoint: 4
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityUtility
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuUtilityOverdose
@@ -337,12 +337,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: epinephrine_overdose }
   productAction: ActionAdrenalineReserves
   cost:
-    EvolutionPoint: 4
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityUtility
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuUtilityFleshmend
@@ -351,12 +351,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: fleshmend }
   productAction: ActionFleshmend
   cost:
-    EvolutionPoint: 5
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityUtility
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuUtilityLastResort
@@ -365,12 +365,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: last_resort }
   productAction: ActionLastResort
   cost:
-    EvolutionPoint: 2
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityUtility
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuUtilityLesserForm
@@ -379,12 +379,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: lesser_form }
   productAction: ActionToggleLesserForm
   cost:
-    EvolutionPoint: 2
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityUtility
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuUtilityHivemindAccess
@@ -393,12 +393,12 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: hivemind_access }
   productAction: ActionHivemindAccess
   cost:
-    EvolutionPoint: 4
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityUtility
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65
 
 - type: listing
   id: EvolutionMenuUtilityAbsorbBiomatter
@@ -407,9 +407,9 @@
   icon: { sprite: _Goobstation/Changeling/changeling_abilities.rsi, state: absorb_biomatter }
   productAction: ActionAbsorbBiomatter
   cost:
-    EvolutionPoint: 3
+    EvolutionPoint: 65
   categories:
   - ChangelingAbilityUtility
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 65

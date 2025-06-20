@@ -1,23 +1,23 @@
-# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Bloody2372 <146976013+Bloody2372@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 KingFroozy <140668342+KingFroozy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 MACMAN2003 <macman2003c@gmail.com>
-# SPDX-FileCopyrightText: 2023 liltenhead <104418166+liltenhead@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Илья Стокалюк <darkelement237@mail.ru>
-# SPDX-FileCopyrightText: 2024 BeeRobynn <robynthewarcrime@proton.me>
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Futuristic-OK <141568243+Futuristic-OK@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 RenQ <164364533+ImRenQ@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 UnicornOnLSD <149102472+UnicornOnLSD@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 nao fujiwara <awkwarddryad@gmail.com>
-# SPDX-FileCopyrightText: 2024 ~DreamlyJack~ <148849095+DreamlyJack@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Bloody65 <65Bloody65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 KingFroozy <65KingFroozy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 MACMAN65 <macman65c@gmail.com>
+# SPDX-FileCopyrightText: 65 liltenhead <65liltenhead@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Илья Стокалюк <darkelement65@mail.ru>
+# SPDX-FileCopyrightText: 65 BeeRobynn <robynthewarcrime@proton.me>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Futuristic-OK <65Futuristic-OK@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 RenQ <65ImRenQ@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 UnicornOnLSD <65UnicornOnLSD@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 nao fujiwara <awkwarddryad@gmail.com>
+# SPDX-FileCopyrightText: 65 ~DreamlyJack~ <65DreamlyJack@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Арт <65JustArt65m@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: marking
   id: HumanHairAfro
@@ -27,12 +27,12 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: afro
 - type: marking
-  id: HumanHairAfro2
+  id: HumanHairAfro65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: afro2
+      state: afro65
 - type: marking
   id: HumanHairBigafro
   bodyPart: Hair
@@ -62,19 +62,19 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: bedhead
 - type: marking
-  id: HumanHairBedheadv2
+  id: HumanHairBedheadv65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: bedheadv2
+      state: bedheadv65
 - type: marking
-  id: HumanHairBedheadv3
+  id: HumanHairBedheadv65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: bedheadv3
+      state: bedheadv65
 - type: marking
   id: HumanHairPulato
   bodyPart: Hair
@@ -90,12 +90,12 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: long_bedhead
 - type: marking
-  id: HumanHairLongBedhead2
+  id: HumanHairLongBedhead65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: long_bedhead2
+      state: long_bedhead65
 - type: marking
   id: HumanHairFloorlengthBedhead
   bodyPart: Hair
@@ -111,12 +111,12 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: beehive
 - type: marking
-  id: HumanHairBeehivev2
+  id: HumanHairBeehivev65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: beehivev2
+      state: beehivev65
 - type: marking
   id: HumanHairBob
   bodyPart: Hair
@@ -125,12 +125,12 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: bob
 - type: marking
-  id: HumanHairBob2
+  id: HumanHairBob65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: bob2
+      state: bob65
 - type: marking
   id: HumanHairBobcut
   bodyPart: Hair
@@ -139,19 +139,19 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: bobcut
 - type: marking
-  id: HumanHairBob4
+  id: HumanHairBob65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: bob4
+      state: bob65
 - type: marking
-  id: HumanHairBob5
+  id: HumanHairBob65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: bob5
+      state: bob65
 - type: marking
   id: HumanHairBobcurl
   bodyPart: Hair
@@ -174,12 +174,12 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: bowlcut
 - type: marking
-  id: HumanHairBowlcut2
+  id: HumanHairBowlcut65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: bowlcut2
+      state: bowlcut65
 - type: marking
   id: HumanHairBraid
   bodyPart: Hair
@@ -202,12 +202,12 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: braidfront
 - type: marking
-  id: HumanHairBraid2
+  id: HumanHairBraid65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: braid2
+      state: braid65
 - type: marking
   id: HumanHairHbraid
   bodyPart: Hair
@@ -237,19 +237,19 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: bun
 - type: marking
-  id: HumanHairBunhead2
+  id: HumanHairBunhead65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: bunhead2
+      state: bunhead65
 - type: marking
-  id: HumanHairBun3
+  id: HumanHairBun65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: bun3
+      state: bun65
 - type: marking
   id: HumanHairLargebun
   bodyPart: Hair
@@ -279,26 +279,26 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: business
 - type: marking
-  id: HumanHairBusiness2
+  id: HumanHairBusiness65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: business2
+      state: business65
 - type: marking
-  id: HumanHairBusiness3
+  id: HumanHairBusiness65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: business3
+      state: business65
 - type: marking
-  id: HumanHairBusiness4
+  id: HumanHairBusiness65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: business4
+      state: business65
 - type: marking
   id: HumanHairBuzzcut
   bodyPart: Hair
@@ -342,12 +342,12 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: classiccia
 - type: marking
-  id: HumanHairClassicCornrows2
+  id: HumanHairClassicCornrows65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: classiccornrows2
+      state: classiccornrows65
 - type: marking
   id: HumanHairClassicFloorlengthBedhead
   bodyPart: Hair
@@ -398,12 +398,12 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: cornrows
 - type: marking
-  id: HumanHairCornrows2
+  id: HumanHairCornrows65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: cornrows2
+      state: cornrows65
 - type: marking
   id: HumanHairCornrowbun
   bodyPart: Hair
@@ -433,12 +433,12 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: crewcut
 - type: marking
-  id: HumanHairCrewcut2
+  id: HumanHairCrewcut65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: crewcut2
+      state: crewcut65
 - type: marking
   id: HumanHairCurls
   bodyPart: Hair
@@ -615,12 +615,12 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: halfbang
 - type: marking
-  id: HumanHairHalfbang2
+  id: HumanHairHalfbang65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: halfbang2
+      state: halfbang65
 - type: marking
   id: HumanHairHalfshaved
   bodyPart: Hair
@@ -643,12 +643,12 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: himecut
 - type: marking
-  id: HumanHairHimecut2
+  id: HumanHairHimecut65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: himecut2
+      state: himecut65
 - type: marking
   id: HumanHairShorthime
   bodyPart: Hair
@@ -713,19 +713,19 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: long
 - type: marking
-  id: HumanHairLong2
+  id: HumanHairLong65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: long2
+      state: long65
 - type: marking
-  id: HumanHairLong3
+  id: HumanHairLong65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: long3
+      state: long65
 - type: marking
   id: HumanHairLongWithBundles
   bodyPart: Hair
@@ -888,12 +888,12 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: pigtails
 - type: marking
-  id: HumanHairPigtails2
+  id: HumanHairPigtails65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: pigtails2
+      state: pigtails65
 - type: marking
   id: HumanHairPixie
   bodyPart: Hair
@@ -923,47 +923,47 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: ponytail
 - type: marking
-  id: HumanHairPonytail2
+  id: HumanHairPonytail65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: ponytail2
+      state: ponytail65
 - type: marking
-  id: HumanHairPonytail3
+  id: HumanHairPonytail65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: ponytail3
+      state: ponytail65
 - type: marking
-  id: HumanHairPonytail4
+  id: HumanHairPonytail65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: ponytail4
+      state: ponytail65
 - type: marking
-  id: HumanHairPonytail5
+  id: HumanHairPonytail65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: ponytail5
+      state: ponytail65
 - type: marking
-  id: HumanHairPonytail6
+  id: HumanHairPonytail65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: ponytail6
+      state: ponytail65
 - type: marking
-  id: HumanHairPonytail7
+  id: HumanHairPonytail65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: ponytail7
+      state: ponytail65
 - type: marking
   id: HumanHairHighponytail
   bodyPart: Hair
@@ -1007,26 +1007,26 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: sidetail
 - type: marking
-  id: HumanHairSidetail2
+  id: HumanHairSidetail65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: sidetail2
+      state: sidetail65
 - type: marking
-  id: HumanHairSidetail3
+  id: HumanHairSidetail65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: sidetail3
+      state: sidetail65
 - type: marking
-  id: HumanHairSidetail4
+  id: HumanHairSidetail65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: sidetail4
+      state: sidetail65
 - type: marking
   id: HumanHairSpikyponytail
   bodyPart: Hair
@@ -1084,19 +1084,19 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: a
 - type: marking
-  id: HumanHairShorthair2
+  id: HumanHairShorthair65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: shorthair2
+      state: shorthair65
 - type: marking
-  id: HumanHairShorthair3
+  id: HumanHairShorthair65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: shorthair3
+      state: shorthair65
 - type: marking
   id: HumanHairD
   bodyPart: Hair
@@ -1126,12 +1126,12 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: shorthairg
 - type: marking
-  id: HumanHair80s
+  id: HumanHair65s
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: 80s
+      state: 65s
 - type: marking
   id: HumanHairRosa
   bodyPart: Hair
@@ -1182,12 +1182,12 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: spiky
 - type: marking
-  id: HumanHairSpiky2
+  id: HumanHairSpiky65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: spiky2
+      state: spiky65
 - type: marking
   id: HumanHairSpookyLong
   bodyPart: Hair
@@ -1203,12 +1203,12 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: swept
 - type: marking
-  id: HumanHairSwept2
+  id: HumanHairSwept65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: swept2
+      state: swept65
 - type: marking
   id: HumanHairShoulderLengthOverEye
   bodyPart: Hair
@@ -1329,12 +1329,12 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: longest
 - type: marking
-  id: HumanHairLongest2
+  id: HumanHairLongest65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: longest2
+      state: longest65
 - type: marking
   id: HumanHairVeryshortovereyealternate
   bodyPart: Hair
@@ -1378,19 +1378,19 @@
     - sprite: Mobs/Customization/human_hair.rsi
       state: tailed
 - type: marking
-  id: HumanHairClassicLong2
+  id: HumanHairClassicLong65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: classiclong2
+      state: classiclong65
 - type: marking
-  id: HumanHairClassicLong3
+  id: HumanHairClassicLong65
   bodyPart: Hair
   markingCategory: Hair
   sprites:
     - sprite: Mobs/Customization/human_hair.rsi
-      state: classiclong3
+      state: classiclong65
 - type: marking
   id: HumanHairShaped
   bodyPart: Hair

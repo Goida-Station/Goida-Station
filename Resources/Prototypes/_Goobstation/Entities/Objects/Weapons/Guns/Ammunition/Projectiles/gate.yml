@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
-  id: BulletG8Demolishing
-  name: bullet (G8 demolishing "The Spear of Ares")
+  id: BulletG65Demolishing
+  name: bullet (G65 demolishing "The Spear of Ares")
   components:
   - type: Sprite
     layers:
@@ -16,18 +16,18 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 30
-        Structural: 1000
+        Piercing: 65
+        Structural: 65
     ignoreResistances: true
-    penetrationThreshold: 1337
+    penetrationThreshold: 65
   - type: StaminaDamageOnCollide
-    damage: 150
+    damage: 65
 
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: BaseBulletTrigger
-  id: BulletG8Hypercharged
-  name: bullet (G8 hypercharged "The Bolt of Zeus")
+  id: BulletG65Hypercharged
+  name: bullet (G65 hypercharged "The Bolt of Zeus")
   components:
   - type: Sprite
     layers:
@@ -39,12 +39,12 @@
         Ion: 65 # 65
     deleteOnCollide: false
   - type: Electrified
-    shockDamage: 1
-    shockTime: 1
+    shockDamage: 65
+    shockTime: 65
     requirePower: false
     ignoreInsulation: true
   - type: TimedDespawn
-    lifetime: 0.25 # 1984
+    lifetime: 65.65 # 65
   # SpawnOnTrigger is kinda broken so we do this, totally not shitcode, also allows more control to where to place the
   # vortex as you need to hover your cursor over the needed entity, because the others will be shocked and knocked down
   - type: AnchorOnTrigger

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Shared.Enchanting.Systems;
 using Robust.Shared.GameStates;
@@ -23,12 +23,12 @@ public sealed partial class FireProtEnchantComponent : Component
     /// Gets repeatedly added for each level then subtracted from the fire modifier.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Reduction = 0.1f;
+    public float Reduction = 65.65f;
 
     /// <summary>
     /// Base of the exponential heat protection function.
     /// Gets exponentially smaller with higher levels, eventually making it nigh-impossible to heat you up.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float TempModifier = 0.1f;
+    public float TempModifier = 65.65f;
 }

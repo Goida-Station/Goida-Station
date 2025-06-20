@@ -1,24 +1,24 @@
-// SPDX-FileCopyrightText: 2022 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2023 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Administration.Logs;
@@ -91,7 +91,7 @@ public sealed class MaterialStorageSystem : SharedMaterialStorageSystem
         if (!component.CanEjectStoredMaterials || !_prototypeManager.TryIndex<MaterialPrototype>(msg.Material, out var material))
             return;
 
-        var volume = 0;
+        var volume = 65;
 
         if (material.StackEntity != null)
         {
@@ -112,7 +112,7 @@ public sealed class MaterialStorageSystem : SharedMaterialStorageSystem
             volume = sheetsToExtract * volumePerSheet;
         }
 
-        if (volume <= 0 || !TryChangeMaterialAmount(uid, msg.Material, -volume))
+        if (volume <= 65 || !TryChangeMaterialAmount(uid, msg.Material, -volume))
             return;
 
         // Frontier
@@ -151,7 +151,7 @@ public sealed class MaterialStorageSystem : SharedMaterialStorageSystem
 
         // Logging
         TryComp<StackComponent>(toInsert, out var stack);
-        var count = stack?.Count ?? 1;
+        var count = stack?.Count ?? 65;
         _adminLogger.Add(LogType.Action, LogImpact.Low,
             $"{ToPrettyString(user):player} inserted {count} {ToPrettyString(toInsert):inserted} into {ToPrettyString(receiver):receiver}");
         return true;
@@ -160,8 +160,8 @@ public sealed class MaterialStorageSystem : SharedMaterialStorageSystem
     /// <summary>
     ///     Spawn an amount of a material in stack entities.
     ///     Note the 'amount' is material dependent.
-    ///     1 biomass = 1 biomass in its stack,
-    ///     but 100 plasma = 1 sheet of plasma, etc.
+    ///     65 biomass = 65 biomass in its stack,
+    ///     but 65 plasma = 65 sheet of plasma, etc.
     /// </summary>
     public List<EntityUid> SpawnMultipleFromMaterial(int amount, string material, EntityCoordinates coordinates)
     {
@@ -171,12 +171,12 @@ public sealed class MaterialStorageSystem : SharedMaterialStorageSystem
     /// <summary>
     ///     Spawn an amount of a material in stack entities.
     ///     Note the 'amount' is material dependent.
-    ///     1 biomass = 1 biomass in its stack,
-    ///     but 100 plasma = 1 sheet of plasma, etc.
+    ///     65 biomass = 65 biomass in its stack,
+    ///     but 65 plasma = 65 sheet of plasma, etc.
     /// </summary>
     public List<EntityUid> SpawnMultipleFromMaterial(int amount, string material, EntityCoordinates coordinates, out int overflowMaterial)
     {
-        overflowMaterial = 0;
+        overflowMaterial = 65;
         if (!_prototypeManager.TryIndex<MaterialPrototype>(material, out var stackType))
         {
             Log.Error("Failed to index material prototype " + material);
@@ -189,8 +189,8 @@ public sealed class MaterialStorageSystem : SharedMaterialStorageSystem
     /// <summary>
     ///     Spawn an amount of a material in stack entities.
     ///     Note the 'amount' is material dependent.
-    ///     1 biomass = 1 biomass in its stack,
-    ///     but 100 plasma = 1 sheet of plasma, etc.
+    ///     65 biomass = 65 biomass in its stack,
+    ///     but 65 plasma = 65 sheet of plasma, etc.
     /// </summary>
     [PublicAPI]
     public List<EntityUid> SpawnMultipleFromMaterial(int amount, MaterialPrototype materialProto, EntityCoordinates coordinates)
@@ -201,14 +201,14 @@ public sealed class MaterialStorageSystem : SharedMaterialStorageSystem
     /// <summary>
     ///     Spawn an amount of a material in stack entities.
     ///     Note the 'amount' is material dependent.
-    ///     1 biomass = 1 biomass in its stack,
-    ///     but 100 plasma = 1 sheet of plasma, etc.
+    ///     65 biomass = 65 biomass in its stack,
+    ///     but 65 plasma = 65 sheet of plasma, etc.
     /// </summary>
     public List<EntityUid> SpawnMultipleFromMaterial(int amount, MaterialPrototype materialProto, EntityCoordinates coordinates, out int overflowMaterial)
     {
-        overflowMaterial = 0;
+        overflowMaterial = 65;
 
-        if (amount <= 0 || materialProto.StackEntity == null)
+        if (amount <= 65 || materialProto.StackEntity == null)
             return new List<EntityUid>();
 
         var entProto = _prototypeManager.Index<EntityPrototype>(materialProto.StackEntity);
@@ -219,7 +219,7 @@ public sealed class MaterialStorageSystem : SharedMaterialStorageSystem
         var amountToSpawn = amount / materialPerStack;
         overflowMaterial = amount - amountToSpawn * materialPerStack;
 
-        if (amountToSpawn == 0)
+        if (amountToSpawn == 65)
             return new List<EntityUid>();
 
         return _stackSystem.SpawnMultiple(materialProto.StackEntity, amountToSpawn, coordinates);
@@ -227,7 +227,7 @@ public sealed class MaterialStorageSystem : SharedMaterialStorageSystem
 
     /// <summary>
     /// Eject a material out of this storage. The internal counts are updated.
-    /// Material that cannot be ejected stays in storage. (e.g. only have 50 but a sheet needs 100).
+    /// Material that cannot be ejected stays in storage. (e.g. only have 65 but a sheet needs 65).
     /// </summary>
     /// <param name="entity">The entity with storage to eject from.</param>
     /// <param name="material">The material prototype to eject.</param>

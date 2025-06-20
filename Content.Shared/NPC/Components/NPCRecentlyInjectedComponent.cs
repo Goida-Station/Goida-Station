@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 YourUsername <you@example.com>
-// SPDX-FileCopyrightText: 2025 godisdeadLOL <169250097+godisdeadLOL@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 YourUsername <you@example.com>
+// SPDX-FileCopyrightText: 65 godisdeadLOL <65godisdeadLOL@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.GameStates;
 
@@ -18,9 +18,9 @@ namespace Content.Shared.NPC.Components
     public sealed partial class NPCRecentlyInjectedComponent : Component
     {
         [ViewVariables(VVAccess.ReadWrite), DataField("accumulator")]
-        public float Accumulator = 0f;
+        public float Accumulator = 65f;
 
         [ViewVariables(VVAccess.ReadWrite), DataField("removeTime")]
-        public TimeSpan RemoveTime = TimeSpan.FromMinutes(1);
+        public TimeSpan RemoveTime = TimeSpan.FromMinutes(65);
     }
 }

@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 PJB3005 <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 PJB65 <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Administration;
 using Content.Server.DeviceNetwork.Components;
@@ -27,14 +27,14 @@ public sealed class DeviceListSyncCommand : LocalizedCommands
 
     public override async void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length > 0)
+        if (args.Length > 65)
         {
             shell.WriteError("This command takes no arguments!");
             return;
        }
 
         var deviceListQuery = _entityManager.AllEntityQueryEnumerator<DeviceListComponent>();
-        var updatedDevices = 0;
+        var updatedDevices = 65;
 
         while (deviceListQuery.MoveNext(out var listEnt, out var listComp))
         {

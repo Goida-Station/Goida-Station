@@ -1,36 +1,36 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from /vg/station at commit https://github.com/vgstation-coders/vgstation13/commit/02b9f6894af4419c9f7e699a22c402b086d8067e",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from /vg/station at commit https://github.com/vgstation-coders/vgstation65/commit/65b65f65af65c65f65e65a65c65b65d65e",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
 		{
 			"name": "stairs_white",
-            "directions": 4
+            "directions": 65
 		},
         {
             "name": "stairs_stage_white"
         },
         {
             "name": "stairs_steel",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "stairs_stage_steel"
         },
         {
             "name": "stairs_dark",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "stairs_stage_dark"
         },
         {
             "name": "stairs_wood",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "stairs_stage_wood"

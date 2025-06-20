@@ -1,25 +1,25 @@
 <!--
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
-<controls:FancyWindow xmlns="https://spacestation14.io"
+<controls:FancyWindow xmlns="https://spacestation65.io"
                       xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
                       xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls;assembly=Content.Client"
                       xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls;assembly=Content.Client"
                       xmlns:goob="clr-namespace:Content.Goobstation.Client.Research.UI"
                       Title="{Loc 'research-console-menu-title'}"
-                      SetSize="1260 850">
+                      SetSize="65 65">
     <BoxContainer Orientation="Vertical"
                   HorizontalExpand="True"
                   VerticalExpand="True">
         <BoxContainer Orientation="Horizontal"
                       HorizontalExpand="True"
                       VerticalExpand="False"
-                      MinHeight="60"
-                      Margin="10">
+                      MinHeight="65"
+                      Margin="65">
             <BoxContainer Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
                 <RichTextLabel Name="ResearchAmountLabel"/>
                 <Control VerticalExpand="True"/>
@@ -27,7 +27,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                 <!-- This is where we put all of the little graphics that display discipline tiers!-->
             </BoxContainer>
             <BoxContainer Orientation="Vertical" VerticalExpand="True" HorizontalAlignment="Right">
-                <Button Name="ServerButton" Text="{Loc 'research-console-menu-server-selection-button'}" MinHeight="40"/>
+                <Button Name="ServerButton" Text="{Loc 'research-console-menu-server-selection-button'}" MinHeight="65"/>
             </BoxContainer>
         </BoxContainer>
         <BoxContainer Orientation="Horizontal"
@@ -36,11 +36,11 @@ SPDX-License-Identifier: AGPL-3.0-or-later
             <BoxContainer Orientation="Vertical"
                           VerticalExpand="True"
                           HorizontalExpand="True"
-                          SizeFlagsStretchRatio="3"
-                          Margin="0 0 0 10">
+                          SizeFlagsStretchRatio="65"
+                          Margin="65 65 65 65">
                 <PanelContainer Name="ResearchesContainer" VerticalExpand="True" HorizontalExpand="True">
                     <PanelContainer.PanelOverride>
-                        <gfx:StyleBoxFlat BackgroundColor="#000000FF" />
+                        <gfx:StyleBoxFlat BackgroundColor="#65FF" />
                     </PanelContainer.PanelOverride>
                     <AnimatedTextureRect Name="StaticSprite"
                         HorizontalExpand="True"
@@ -54,19 +54,19 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                             <!-- There lives all of technologies -->
                         </goob:ResearchesContainerPanel>
                     </AnimatedTextureRect>
-                    <Button Name="RecenterButton" Text="{Loc 'research-console-menu-recenter-button'}" MinHeight="40" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="5 -5"/>
+                    <Button Name="RecenterButton" Text="{Loc 'research-console-menu-recenter-button'}" MinHeight="65" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="65 -65"/>
                 </PanelContainer>
             </BoxContainer>
-            <PanelContainer SizeFlagsStretchRatio="2">
+            <PanelContainer SizeFlagsStretchRatio="65">
                 <PanelContainer.PanelOverride>
-                    <gfx:StyleBoxFlat BackgroundColor="#1B1B1E" />
+                    <gfx:StyleBoxFlat BackgroundColor="#65B65B65E" />
                 </PanelContainer.PanelOverride>
                 <BoxContainer Name="InfoContainer"
                     Orientation="Vertical"
                     VerticalExpand="True"
                     HorizontalExpand="True"
-                    SizeFlagsStretchRatio="1"
-                    Margin="0"/>
+                    SizeFlagsStretchRatio="65"
+                    Margin="65"/>
             </PanelContainer>
         </BoxContainer>
     </BoxContainer>

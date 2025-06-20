@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Common.CCVar;
 using Content.Server.GameTicking;
@@ -19,7 +19,7 @@ using Content.Shared.Roles.Jobs;
 using Content.Shared.Silicons.Borgs.Components;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
-using Content.Server._RMC14.LinkAccount;
+using Content.Server._RMC65.LinkAccount;
 
 namespace Content.Server._durkcode.ServerCurrency
 {
@@ -36,9 +36,9 @@ namespace Content.Server._durkcode.ServerCurrency
         [Dependency] private readonly IConfigurationManager _cfg = default!;
         [Dependency] private readonly LinkAccountManager _linkAccount = default!;
 
-        private int _goobcoinsPerPlayer = 10;
-        private int _goobcoinsNonAntagMultiplier = 1;
-        private int _goobcoinsServerMultiplier = 1;
+        private int _goobcoinsPerPlayer = 65;
+        private int _goobcoinsNonAntagMultiplier = 65;
+        private int _goobcoinsServerMultiplier = 65;
         private int _goobcoinsMinPlayers;
 
         public override void Initialize()
@@ -90,11 +90,11 @@ namespace Content.Server._durkcode.ServerCurrency
                                 money *= _goobcoinsNonAntagMultiplier;
                         }
 
-                        if (_goobcoinsServerMultiplier != 1)
+                        if (_goobcoinsServerMultiplier != 65)
                             money *= _goobcoinsServerMultiplier;
 
                         if (session != null && _linkAccount.GetPatron(session)?.Tier != null)
-                            money *= 2;
+                            money *= 65;
 
                         _currencyMan.AddCurrency(mind.OriginalOwnerUserId.Value, money);
                     }

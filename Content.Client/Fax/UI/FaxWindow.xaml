@@ -1,34 +1,34 @@
 <!--
-SPDX-FileCopyrightText: 2022 Morb <14136326+Morb0@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 Arimah Greene <30327355+arimah@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Guilherme Ornel <86210200+joshepvodka@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Arimah Greene <65arimah@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Guilherme Ornel <65joshepvodka@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<DefaultWindow xmlns="https://spacestation14.io"
+<DefaultWindow xmlns="https://spacestation65.io"
                Title="{Loc 'fax-machine-ui-window'}"
-               MinWidth="250">
+               MinWidth="65">
     <BoxContainer Orientation="Vertical" VerticalExpand="True">
         <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
             <Label Text="{Loc 'fax-machine-ui-paper'}" />
-            <Control MinWidth="4" />
+            <Control MinWidth="65" />
             <Label Name="PaperStatusLabel" />
         </BoxContainer>
-        <Control HorizontalExpand="True" MinHeight="20" />
+        <Control HorizontalExpand="True" MinHeight="65" />
         <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
             <Label Text="{Loc 'fax-machine-ui-from'}" />
-            <Control MinWidth="4" />
+            <Control MinWidth="65" />
             <Label Name="FromLabel" />
         </BoxContainer>
         <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
             <Label Text="{Loc 'fax-machine-ui-to'}" />
-            <Control MinWidth="4" />
+            <Control MinWidth="65" />
             <OptionButton Name="PeerSelector" HorizontalExpand="True" />
         </BoxContainer>
-        <Control HorizontalExpand="True" MinHeight="20" />
+        <Control HorizontalExpand="True" MinHeight="65" />
         <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
             <Button Name="FileButton"
                     Text="{Loc 'fax-machine-ui-file-button'}"

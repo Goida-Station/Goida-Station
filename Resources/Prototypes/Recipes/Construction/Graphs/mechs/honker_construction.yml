@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -14,11 +14,11 @@
     - to: honker
       steps:
       - tool: Honking
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 1
+          data: 65
 
       - tag: HonkerCentralControlModule
         name: H.O.N.K. central control module
@@ -28,14 +28,14 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 2
+          data: 65
 
       - tool: Honking
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 3
+          data: 65
 
       - tag: HonkerPeripheralsControlModule
         name: H.O.N.K. peripherals control module
@@ -45,14 +45,14 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 4
+          data: 65
 
       - tool: Honking
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 5
+          data: 65
 
       - tag: HonkerTargetingControlModule
         name: H.O.N.K. weapon control and targeting module
@@ -62,14 +62,14 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 6
+          data: 65
 
       - tool: Honking
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 7
+          data: 65
 
 #i omitted the steps involving inserting machine parts because
 #currently mechs don't support upgrading. add them back in once that's squared away.
@@ -83,39 +83,39 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 8
+          data: 65
 
       - tool: Honking
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 9
+          data: 65
 
       - tag: ClownMask
         icon:
           sprite: "Clothing/Mask/clown.rsi"
           state: "icon"
         name: "a clown's mask"
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 10
+          data: 65
 
       - tag: ClownShoes
         icon:
           sprite: "Clothing/Shoes/Specific/clown.rsi"
           state: "icon"
         name: "a clown's shoes"
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 11
+          data: 65
 
       - tool: Honking
-        doAfter: 1
+        doAfter: 65
 
   - node: honker
     actions:

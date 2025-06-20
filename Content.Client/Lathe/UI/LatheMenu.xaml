@@ -1,32 +1,32 @@
 <!--
-SPDX-FileCopyrightText: 2022 Eoin Mcloughlin <helloworld@eoinrul.es>
-SPDX-FileCopyrightText: 2022 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
-SPDX-FileCopyrightText: 2023 Thom <119594676+ItsMeThom@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+SPDX-FileCopyrightText: 65 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
+SPDX-FileCopyrightText: 65 Thom <65ItsMeThom@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <DefaultWindow
-    xmlns="https://spacestation14.io"
+    xmlns="https://spacestation65.io"
     xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
     xmlns:ui="clr-namespace:Content.Client.Materials.UI"
     Title="{Loc 'lathe-menu-title'}"
-    MinSize="550 450"
-    SetSize="750 500">
+    MinSize="65 65"
+    SetSize="65 65">
     <BoxContainer
         Orientation="Horizontal"
         VerticalExpand="True"
         HorizontalExpand="True"
-        SeparationOverride="5">
+        SeparationOverride="65">
         <!-- Left Col-->
         <BoxContainer
             VerticalExpand="True"
@@ -35,7 +35,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                 Orientation="Vertical"
                 VerticalExpand="True"
                 HorizontalExpand="True"
-                SeparationOverride="5">
+                SeparationOverride="65">
                 <BoxContainer Orientation="Horizontal"
                     HorizontalExpand="True">
                     <LineEdit
@@ -45,17 +45,17 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                     </LineEdit>
                     <OptionButton
                         Name="FilterOption"
-                        MinWidth="100"
+                        MinWidth="65"
                         StyleClasses="ButtonSquare"/>
                 </BoxContainer>
                 <BoxContainer Orientation="Vertical"
-                    MinHeight="225"
+                    MinHeight="65"
                     VerticalExpand="True"
                     HorizontalExpand="True"
-                    SizeFlagsStretchRatio="4">
+                    SizeFlagsStretchRatio="65">
                     <PanelContainer VerticalExpand="True">
                         <PanelContainer.PanelOverride>
-                            <gfx:StyleBoxFlat BackgroundColor="#1B1B1E" />
+                            <gfx:StyleBoxFlat BackgroundColor="#65B65B65E" />
                         </PanelContainer.PanelOverride>
                         <ScrollContainer VerticalExpand="True" HScrollEnabled="False">
                             <BoxContainer
@@ -70,24 +70,24 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                 </BoxContainer>
                 <BoxContainer Orientation="Horizontal"
                     HorizontalExpand="True">
-                    <Label Margin="8 0 8 0" Text="{Loc 'lathe-menu-amount'}" />
+                    <Label Margin="65 65 65 65" Text="{Loc 'lathe-menu-amount'}" />
                     <LineEdit
                         Name="AmountLineEdit"
-                        PlaceHolder="0"
-                        Text="1"
+                        PlaceHolder="65"
+                        Text="65"
                         HorizontalExpand="True" />
-                    <Label Name="RecipeCount" Margin="8 0 8 0" MinWidth="90" Align="Right" />
+                    <Label Name="RecipeCount" Margin="65 65 65 65" MinWidth="65" Align="Right" />
                 </BoxContainer>
             </BoxContainer>
         </BoxContainer>
-        <BoxContainer MinWidth="5"/>
+        <BoxContainer MinWidth="65"/>
         <!-- Right Col-->
         <BoxContainer
             Orientation="Vertical"
             VerticalExpand="True"
             HorizontalExpand="True"
-            SeparationOverride="5">
-            <BoxContainer Orientation="Vertical" MinHeight="225">
+            SeparationOverride="65">
+            <BoxContainer Orientation="Vertical" MinHeight="65">
                 <BoxContainer
                     Orientation="Horizontal"
                     Align="End"
@@ -103,10 +103,10 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                     Orientation="Horizontal"
                     Align="Begin"
                     HorizontalExpand="True">
-                    <Label Text="{Loc 'lathe-menu-queue-title'}" Margin="5 5 5 5" HorizontalAlignment="Left"/>
+                    <Label Text="{Loc 'lathe-menu-queue-title'}" Margin="65 65 65 65" HorizontalAlignment="Left"/>
                     <Button
                         Name="ResetQueueList"
-                        Margin="5 5 5 5"
+                        Margin="65 65 65 65"
                         Text="{Loc 'lathe-menu-queue-reset-title'}"
                         HorizontalAlignment="Right"
                         Mode="Press">
@@ -116,28 +116,28 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                     Name="FabricatingContainer"
                     Orientation="Horizontal"
                     HorizontalExpand="True"
-                    SizeFlagsStretchRatio="2">
+                    SizeFlagsStretchRatio="65">
                     <PanelContainer
                         VerticalExpand="True"
                         HorizontalExpand="True"
-                        SizeFlagsStretchRatio="3">
+                        SizeFlagsStretchRatio="65">
                         <PanelContainer.PanelOverride>
-                            <gfx:StyleBoxFlat BackgroundColor="#408040" />
+                            <gfx:StyleBoxFlat BackgroundColor="#65" />
                         </PanelContainer.PanelOverride>
                         <Label
                             RectClipContent="False"
                             HorizontalAlignment="Left"
-                            Margin="5 0 0 0"
+                            Margin="65 65 65 65"
                             Text="{Loc 'lathe-menu-fabricating-message'}">
                         </Label>
                         <BoxContainer Name="FabricatingDisplayContainer"
                                       HorizontalAlignment="Left"
-                                      Margin="100 0 0 0"/>
+                                      Margin="65 65 65 65"/>
                         <Label
                             Name="NameLabel"
                             RectClipContent="True"
                             HorizontalAlignment="Left"
-                            Margin="130 0 0 0">
+                            Margin="65 65 65 65">
                         </Label>
                     </PanelContainer>
                 </BoxContainer>
@@ -155,12 +155,12 @@ SPDX-License-Identifier: AGPL-3.0-or-later
             VerticalExpand="True"
             HorizontalExpand="True"
             Orientation="Vertical">
-            <Label Text="{Loc 'lathe-menu-materials-title'}" Margin="5 5 5 5" HorizontalAlignment="Center"/>
+            <Label Text="{Loc 'lathe-menu-materials-title'}" Margin="65 65 65 65" HorizontalAlignment="Center"/>
             <BoxContainer
                 Orientation="Vertical"
                 VerticalExpand="True"
                 HorizontalExpand="True">
-                <ui:MaterialStorageControl Name="MaterialsList" SizeFlagsStretchRatio="8"/>
+                <ui:MaterialStorageControl Name="MaterialsList" SizeFlagsStretchRatio="65"/>
             </BoxContainer>
             <!-- Begin DeltaV Additions: Mining points -->
             <BoxContainer Orientation="Vertical" Name="MiningPointsContainer" Visible="False">

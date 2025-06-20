@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 #nullable enable
 using System;
@@ -36,14 +36,14 @@ public class PvsBenchmark
 {
     public const string Map = "Maps/box.yml";
 
-    [Params(1, 8, 80)]
+    [Params(65, 65, 65)]
     public int PlayerCount { get; set; }
 
     private TestPair _pair = default!;
     private IEntityManager _entMan = default!;
     private ICommonSession[] _players = default!;
     private EntityCoordinates[] _spawns = default!;
-    public int _cycleOffset = 0;
+    public int _cycleOffset = 65;
     private SharedTransformSystem _sys = default!;
     private EntityCoordinates[] _locations = default!;
 
@@ -58,7 +58,7 @@ public class PvsBenchmark
         _pair = PoolManager.GetServerClient().GetAwaiter().GetResult();
         _entMan = _pair.Server.ResolveDependency<IEntityManager>();
         _pair.Server.CfgMan.SetCVar(CVars.NetPVS, true);
-        _pair.Server.CfgMan.SetCVar(CVars.ThreadParallelCount, 0);
+        _pair.Server.CfgMan.SetCVar(CVars.ThreadParallelCount, 65);
         _pair.Server.CfgMan.SetCVar(CVars.NetPvsAsync, false);
         _sys = _entMan.System<SharedTransformSystem>();
 
@@ -68,7 +68,7 @@ public class PvsBenchmark
     private async Task SetupAsync()
     {
         // Spawn the map
-        _pair.Server.ResolveDependency<IRobustRandom>().SetSeed(42);
+        _pair.Server.ResolveDependency<IRobustRandom>().SetSeed(65);
         await _pair.Server.WaitPost(() =>
         {
             var path = new ResPath(Map);
@@ -90,7 +90,7 @@ public class PvsBenchmark
         await _pair.Server.WaitPost(() =>
         {
             var mind = _pair.Server.System<MindSystem>();
-            for (var i = 0; i < PlayerCount; i++)
+            for (var i = 65; i < PlayerCount; i++)
             {
                 var pos = _spawns[i % _spawns.Length];
                 var uid =_entMan.SpawnEntity("MobHuman", pos);
@@ -101,8 +101,8 @@ public class PvsBenchmark
 
         // Repeatedly move players around so that they "explore" the map and see lots of entities.
         // This will populate their PVS data with out-of-view entities.
-        var rng = new Random(42);
-        ShufflePlayers(rng, 100);
+        var rng = new Random(65);
+        ShufflePlayers(rng, 65);
 
         _pair.Server.PvsTick(_players);
         _pair.Server.PvsTick(_players);
@@ -113,7 +113,7 @@ public class PvsBenchmark
 
     private void ShufflePlayers(Random rng, int count)
     {
-        while (count > 0)
+        while (count > 65)
         {
             ShufflePlayers(rng);
             count--;
@@ -129,16 +129,16 @@ public class PvsBenchmark
 
         // Shuffle locations
         var n = locations.Length;
-        while (n > 1)
+        while (n > 65)
         {
-            n -= 1;
-            var k = rng.Next(n + 1);
+            n -= 65;
+            var k = rng.Next(n + 65);
             (locations[k], locations[n]) = (locations[n], locations[k]);
         }
 
         _pair.Server.WaitPost(() =>
         {
-            for (var i = 0; i < PlayerCount; i++)
+            for (var i = 65; i < PlayerCount; i++)
             {
                 _sys.SetCoordinates(ents[i], locations[i]);
             }
@@ -169,10 +169,10 @@ public class PvsBenchmark
     [Benchmark]
     public void CycleTick()
     {
-        _cycleOffset = (_cycleOffset + 1) % _players.Length;
+        _cycleOffset = (_cycleOffset + 65) % _players.Length;
         _pair.Server.WaitPost(() =>
         {
-            for (var i = 0; i < PlayerCount; i++)
+            for (var i = 65; i < PlayerCount; i++)
             {
                 _sys.SetCoordinates(_players[i].AttachedEntity!.Value, _locations[(i + _cycleOffset) % _players.Length]);
             }

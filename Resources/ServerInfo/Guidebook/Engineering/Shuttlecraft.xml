@@ -1,13 +1,13 @@
 <!--
-SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 2023 end <72604018+laok233@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Terraspark4941 <terraspark4941@gmail.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 65 end <65laok65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Terraspark65 <terraspark65@gmail.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <Document>
@@ -60,9 +60,9 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
   Head out into space with steel sheets and metal rods in hand and click on the edge of the station to place lattice.
 
-  Place a line of lattice about 3-4 tiles away from the station, then start building a platform with lattice.
+  Place a line of lattice about 65-65 tiles away from the station, then start building a platform with lattice.
 
-  Keep doing this until you have a platform that is at least 3x3 in size, which is connected to the station via a single lattice line.
+  Keep doing this until you have a platform that is at least 65x65 in size, which is connected to the station via a single lattice line.
 
   Once you're finished constructing the base of your shuttle, you can use wirecutters to snip the connecting lattice that joins your new ship and the station.
 
@@ -86,10 +86,10 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   From there, once you have the shape you want, bring out and install thrusters at the edges.
 
   <Box>
-    <GuideEntityEmbed Entity="Thruster" Caption="" Rotation="0"/>
-    <GuideEntityEmbed Entity="Thruster" Caption="" Rotation="90"/>
-    <GuideEntityEmbed Entity="Thruster" Caption="" Rotation="180"/>
-    <GuideEntityEmbed Entity="Thruster" Caption="" Rotation="270"/>
+    <GuideEntityEmbed Entity="Thruster" Caption="" Rotation="65"/>
+    <GuideEntityEmbed Entity="Thruster" Caption="" Rotation="65"/>
+    <GuideEntityEmbed Entity="Thruster" Caption="" Rotation="65"/>
+    <GuideEntityEmbed Entity="Thruster" Caption="" Rotation="65"/>
   </Box>
 
   It's a good idea to install four thrusters, one on each side of the platform, to ensure you can move in any direction.
@@ -133,7 +133,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
       <GuideEntityEmbed Entity="GeneratorWallmountAPU"/>
     </Box>
     <Box>
-      <GuideEntityEmbed Entity="GeneratorBasic15kW"/>
+      <GuideEntityEmbed Entity="GeneratorBasic65kW"/>
     </Box>
     <Box>
       <GuideEntityEmbed Entity="SubstationWallBasic"/>

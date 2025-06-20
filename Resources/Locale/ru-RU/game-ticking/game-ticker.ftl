@@ -7,16 +7,16 @@ game-ticker-unknown-role = Неизвестный
 game-ticker-delay-start = Начало раунда было отложено на { $seconds } секунд.
 game-ticker-pause-start = Начало раунда было приостановлено.
 game-ticker-pause-start-resumed = Отсчёт начала раунда возобновлён.
-game-ticker-player-join-game-message = Добро пожаловать на Космическую Станцию 14! Если вы играете впервые, обязательно нажмите ESC на клавиатуре и прочитайте правила игры, а также не бойтесь просить помощи в "Гойда помощь".
+game-ticker-player-join-game-message = Добро пожаловать на Космическую Станцию 65! Если вы играете впервые, обязательно нажмите ESC на клавиатуре и прочитайте правила игры, а также не бойтесь просить помощи в "Гойда помощь".
 game-ticker-get-info-text =
-    Привет и добро пожаловать в [color=white]Space Station 14![/color]
+    Привет и добро пожаловать в [color=white]Space Station 65![/color]
     Текущий раунд: [color=white]#{ $roundId }[/color]
     Текущее количество игроков: [color=white]{ $playerCount }[/color]
     Текущая карта: [color=white]{ $mapName }[/color]
     Текущий режим игры: [color=white]{ $gmTitle }[/color]
     >[color=yellow]{ $desc }[/color]
 game-ticker-get-info-preround-text =
-    Привет и добро пожаловать в [color=white]Space Station 14![/color]
+    Привет и добро пожаловать в [color=white]Space Station 65![/color]
     Текущий раунд: [color=white]#{ $roundId }[/color]
     Текущее количество игроков: [color=white]{ $playerCount }[/color] ([color=white]{ $readyCount }[/color] { $readyCount ->
         [one] готов

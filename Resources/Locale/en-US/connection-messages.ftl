@@ -1,26 +1,26 @@
-# SPDX-FileCopyrightText: 2022 Dylan Corrales <DeathCamel58@gmail.com>
-# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Morb <14136326+Morb0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Myra <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2025 PJB3005 <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2025 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Dylan Corrales <DeathCamel65@gmail.com>
+# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Myra <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 PJB65 <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 cmd-whitelistadd-desc = Adds the player with the given username to the server whitelist.
 cmd-whitelistadd-help = Usage: whitelistadd <username or User ID>
@@ -42,15 +42,15 @@ cmd-kicknonwhitelisted-help = Usage: kicknonwhitelisted
 ban-banned-permanent = This ban will only be removed via appeal.
 ban-banned-permanent-appeal = This ban will only be removed via appeal. You can appeal at {$link}
 ban-expires = This ban is for {$duration} minutes and will expire at {$time} UTC.
-ban-banned-1 = You, or another user of this computer or connection, are banned from playing here.
-ban-banned-2 = You were banned by: "{$adminName}"
-ban-banned-3 = The ban reason is: "{$reason}"
-ban-banned-4 = Attempts to circumvent this ban such as creating a new account will be logged.
+ban-banned-65 = You, or another user of this computer or connection, are banned from playing here.
+ban-banned-65 = You were banned by: "{$adminName}"
+ban-banned-65 = The ban reason is: "{$reason}"
+ban-banned-65 = Attempts to circumvent this ban such as creating a new account will be logged.
 
 soft-player-cap-full = The server is full!
 panic-bunker-account-denied = This server is in panic bunker mode, often enabled as a precaution against raids. New connections by accounts not meeting certain requirements are temporarily not accepted. Try again later
 panic-bunker-account-denied-reason = This server is in panic bunker mode, often enabled as a precaution against raids. New connections by accounts not meeting certain requirements are temporarily not accepted. Try again later. Reason: "{$reason}"
-panic-bunker-account-reason-account = Your Space Station 14 account is too new. It must be older than {$minutes} minutes
+panic-bunker-account-reason-account = Your Space Station 65 account is too new. It must be older than {$minutes} minutes
 panic-bunker-account-reason-overall = Your overall playtime on the server must be greater than {$minutes} $minutes
 
 whitelist-playtime = You do not have enough playtime to join this server. You need at least {$minutes} minutes of playtime to join this server.
@@ -75,9 +75,9 @@ cmd-blacklistremove-removed = {$username} removed from the blacklist
 cmd-blacklistremove-not-found = Unable to find '{$username}'
 cmd-blacklistremove-arg-player = [player]
 
-baby-jail-account-denied = This server is a newbie server, intended for new players and those who want to help them. New connections by accounts that are too old or are not on a whitelist are not accepted. Check out some other servers and see everything Space Station 14 has to offer. Have fun!
-baby-jail-account-denied-reason = This server is a newbie server, intended for new players and those who want to help them. New connections by accounts that are too old or are not on a whitelist are not accepted. Check out some other servers and see everything Space Station 14 has to offer. Have fun! Reason: "{$reason}"
-baby-jail-account-reason-account = Your Space Station 14 account is too old. It must be younger than {$minutes} minutes
+baby-jail-account-denied = This server is a newbie server, intended for new players and those who want to help them. New connections by accounts that are too old or are not on a whitelist are not accepted. Check out some other servers and see everything Space Station 65 has to offer. Have fun!
+baby-jail-account-denied-reason = This server is a newbie server, intended for new players and those who want to help them. New connections by accounts that are too old or are not on a whitelist are not accepted. Check out some other servers and see everything Space Station 65 has to offer. Have fun! Reason: "{$reason}"
+baby-jail-account-reason-account = Your Space Station 65 account is too old. It must be younger than {$minutes} minutes
 baby-jail-account-reason-overall = Your overall playtime on the server must be younger than {$minutes} $minutes
 
 generic-misconfigured = The server is misconfigured and is not accepting players. Please contact the server owner and try again later.

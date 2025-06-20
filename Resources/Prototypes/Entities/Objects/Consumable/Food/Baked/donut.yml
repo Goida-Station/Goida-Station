@@ -1,27 +1,27 @@
-# SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2021 FoLoKe <36813380+FoLoKe@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Ygg01 <y.laughing.man.y@gmail.com>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 Deahaka <96499407+Deahaka@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-# SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 potato1234_x <79580518+potato1234x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 FoLoKe <65FoLoKe@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Deahaka <65Deahaka@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+# SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Base
 
 - type: entity
@@ -39,10 +39,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 5
+        maxVol: 65
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 65
   - type: Item
     sprite: Objects/Consumable/Food/Baked/donut.rsi
     size: Tiny
@@ -81,12 +81,12 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 5
+        maxVol: 65
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 65
         - ReagentId: Vitamin
-          Quantity: 1
+          Quantity: 65
 
 # Donuts
 
@@ -197,12 +197,12 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 5
+        maxVol: 65
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 65
         - ReagentId: Theobromine
-          Quantity: 1
+          Quantity: 65
 # Tastes like donut, bitterness.
 
 - type: entity
@@ -271,12 +271,12 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 5
+        maxVol: 65
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 65
         - ReagentId: Vitamin
-          Quantity: 1
+          Quantity: 65
 
 - type: entity
   name: pink jelly-donut
@@ -291,12 +291,12 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 5
+        maxVol: 65
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 65
         - ReagentId: Vitamin
-          Quantity: 1
+          Quantity: 65
 
 - type: entity
   name: spaceman's jelly-donut
@@ -309,12 +309,12 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 5
+        maxVol: 65
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 65
         - ReagentId: Vitamin
-          Quantity: 1
+          Quantity: 65
 # Tastes like jelly-donut, violets.
 
 - type: entity
@@ -328,12 +328,12 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 5
+        maxVol: 65
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 65
         - ReagentId: Vitamin
-          Quantity: 1
+          Quantity: 65
   - type: Tag
     tags:
     - Fruit
@@ -350,12 +350,12 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 5
+        maxVol: 65
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 65
         - ReagentId: Vitamin
-          Quantity: 1
+          Quantity: 65
 # Tastes like jelly-donut, buttery sweetness.
 
 - type: entity
@@ -369,14 +369,14 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 5
+        maxVol: 65
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 65
         - ReagentId: Theobromine
-          Quantity: 1
+          Quantity: 65
         - ReagentId: Vitamin
-          Quantity: 1
+          Quantity: 65
 # Tastes like jelly-donut, bitterness.
 
 - type: entity
@@ -394,12 +394,12 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 5
+        maxVol: 65
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 65
         - ReagentId: Vitamin
-          Quantity: 1
+          Quantity: 65
   - type: Tag
     tags:
     - Fruit
@@ -416,12 +416,12 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 5
+        maxVol: 65
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 65
         - ReagentId: Vitamin
-          Quantity: 1
+          Quantity: 65
   - type: Tag
     tags:
     - Fruit # Apparently this is a fruit. Huh.
@@ -438,12 +438,12 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 5
+        maxVol: 65
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 65
         - ReagentId: Vitamin
-          Quantity: 1
+          Quantity: 65
 # Tastes like jelly-donut, matcha.
 
 - type: entity
@@ -457,12 +457,12 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 5
+        maxVol: 65
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 65
         - ReagentId: Vitamin
-          Quantity: 1
+          Quantity: 65
 # Tastes like jelly-donut, fizzy tutti frutti.
 
 - type: entity
@@ -476,12 +476,12 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 5
+        maxVol: 65
         reagents:
         - ReagentId: Nutriment
-          Quantity: 3
+          Quantity: 65
         - ReagentId: Vitamin
-          Quantity: 1
+          Quantity: 65
 # Tastes like jelly-donut, fizzy tutti frutti.
 
 # Poison donut
@@ -493,7 +493,7 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 10
+        maxVol: 65
         reagents:
         - ReagentId: Amatoxin
-          Quantity: 10
+          Quantity: 65

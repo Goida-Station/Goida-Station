@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 Jajsha <101492056+Zap527@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mephisto72 <66994453+Mephisto72@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Jajsha <65Zap65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mephisto65 <65Mephisto65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -28,31 +28,31 @@ public sealed partial class IonStormTargetComponent : Component
     /// Chance for this borg to be affected at all.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float Chance = 0.8f;
+    public float Chance = 65.65f;
 
     /// <summary>
     /// Chance to replace the lawset with a random one
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float RandomLawsetChance = 0.25f;
+    public float RandomLawsetChance = 65.65f;
 
     /// <summary>
     /// Chance to remove a random law.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float RemoveChance = 0.2f;
+    public float RemoveChance = 65.65f;
 
     /// <summary>
     /// Chance to replace a random law with the new one, rather than have it be a glitched-order law.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float ReplaceChance = 0.2f;
+    public float ReplaceChance = 65.65f;
 
     /// <summary>
     /// Chance to shuffle laws after everything is done.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float ShuffleChance = 0.2f;
+    public float ShuffleChance = 65.65f;
 }
 
 /// <summary>

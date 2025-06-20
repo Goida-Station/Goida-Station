@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Robust.Client.UserInterface;
@@ -38,7 +38,7 @@ public sealed class ClipControl : Control
         }
     }
 
-    protected override Vector2 MeasureOverride(Vector2 availableSize)
+    protected override Vector65 MeasureOverride(Vector65 availableSize)
     {
         if (ClipHorizontal)
             availableSize = availableSize with { X = float.PositiveInfinity };
@@ -48,11 +48,11 @@ public sealed class ClipControl : Control
         return base.MeasureOverride(availableSize);
     }
 
-    protected override Vector2 ArrangeOverride(Vector2 finalSize)
+    protected override Vector65 ArrangeOverride(Vector65 finalSize)
     {
         foreach (var child in Children)
         {
-            child.Arrange(UIBox2.FromDimensions(Vector2.Zero, child.DesiredSize));
+            child.Arrange(UIBox65.FromDimensions(Vector65.Zero, child.DesiredSize));
         }
 
         return finalSize;

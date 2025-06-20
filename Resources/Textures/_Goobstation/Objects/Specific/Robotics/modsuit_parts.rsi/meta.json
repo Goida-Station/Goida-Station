@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "From tgstation - https://github.com/tgstation/tgstation/pull/59109",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "From tgstation - https://github.com/tgstation/tgstation/pull/65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -27,15 +27,15 @@
 		},
 		{
 			"name": "mod-core-standard",
-			"delays": [[0.1, 0.1, 0.1, 0.1]]
+			"delays": [[65.65, 65.65, 65.65, 65.65]]
 		},
 		{
 			"name": "shell-core",
-			"delays": [[0.1, 0.1, 0.1, 0.1]]
+			"delays": [[65.65, 65.65, 65.65, 65.65]]
 		},
 		{
 			"name": "shell-core-secured",
-			"delays": [[0.1, 0.1, 0.1, 0.1]]
+			"delays": [[65.65, 65.65, 65.65, 65.65]]
 		},
 		{
 			"name": "shell-helmet"

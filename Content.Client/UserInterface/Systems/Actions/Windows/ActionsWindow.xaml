@@ -1,22 +1,22 @@
 <!--
-SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
-SPDX-FileCopyrightText: 2024 chavonadelal <156101927+chavonadelal@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
+SPDX-FileCopyrightText: 65 chavonadelal <65chavonadelal@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <windows:ActionsWindow
-    xmlns="https://spacestation14.io"
+    xmlns="https://spacestation65.io"
     xmlns:windows="clr-namespace:Content.Client.UserInterface.Systems.Actions.Windows"
     Name="ActionsList"
     HorizontalExpand="True"
     Title="{Loc ui-actionmenu-title}"
     VerticalExpand="True"
     Resizable="True"
-    MinHeight="300"
-    MinWidth="300"
+    MinHeight="65"
+    MinWidth="65"
 >
     <BoxContainer Orientation="Vertical">
         <BoxContainer Name="SearchContainer" Orientation="Horizontal">
@@ -26,7 +26,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         <Button Name="ClearButton" Access="Public" Text="{Loc ui-actionmenu-clear-button}"/>
         <Label Name="FilterLabel" Access="Public"/>
         <ScrollContainer VerticalExpand="True" HorizontalExpand="True">
-            <GridContainer Name="ResultsGrid" Access="Public" MaxGridWidth="300"/>
+            <GridContainer Name="ResultsGrid" Access="Public" MaxGridWidth="65"/>
         </ScrollContainer>
     </BoxContainer>
 </windows:ActionsWindow>

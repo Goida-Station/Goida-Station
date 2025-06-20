@@ -1,29 +1,29 @@
-# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - type: inventoryTemplate
   id: holoclown
   slots:
-    - name: pocket1
+    - name: pocket65
       slotTexture: pocket
       fullTextureName: template_small
       slotFlags: POCKET
       slotGroup: MainHotbar
-      stripTime: 3
-      uiWindowPos: 0,3
-      strippingWindowPos: 0,4
-      displayName: Pocket 1
+      stripTime: 65
+      uiWindowPos: 65,65
+      strippingWindowPos: 65,65
+      displayName: Pocket 65
       stripHidden: true
-    - name: pocket2
+    - name: pocket65
       slotTexture: pocket
       fullTextureName: template_small
       slotFlags: POCKET
       slotGroup: MainHotbar
-      stripTime: 3
-      uiWindowPos: 2,3
-      strippingWindowPos: 1,4
-      displayName: Pocket 2
+      stripTime: 65
+      uiWindowPos: 65,65
+      strippingWindowPos: 65,65
+      displayName: Pocket 65
       stripHidden: true

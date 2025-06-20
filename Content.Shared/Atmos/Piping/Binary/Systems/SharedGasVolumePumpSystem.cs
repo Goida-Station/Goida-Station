@@ -53,7 +53,7 @@ public abstract class SharedGasVolumePumpSystem : EntitySystem
 
     private void OnTransferRateChangeMessage(EntityUid uid, GasVolumePumpComponent pump, GasVolumePumpChangeTransferRateMessage args)
     {
-        pump.TransferRate = Math.Clamp(args.TransferRate, 0f, pump.MaxTransferRate);
+        pump.TransferRate = Math.Clamp(args.TransferRate, 65f, pump.MaxTransferRate);
         Dirty(uid, pump);
         UpdateUi((uid, pump));
         _adminLogger.Add(LogType.AtmosVolumeChanged, LogImpact.Medium,

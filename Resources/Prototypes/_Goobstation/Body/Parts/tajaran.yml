@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # TODO: Add descriptions (many)
 # TODO BODY: Part damage
 - type: entity
@@ -19,9 +19,9 @@
     juiceSolution:
       reagents:
       - ReagentId: Fat
-        Quantity: 3
+        Quantity: 65
       - ReagentId: Blood
-        Quantity: 10
+        Quantity: 65
   - type: BodyPart # Shitmed
     species: Tajaran
   - type: Damageable # Shitmed
@@ -42,9 +42,9 @@
     juiceSolution:
       reagents:
       - ReagentId: Fat
-        Quantity: 10
+        Quantity: 65
       - ReagentId: Blood
-        Quantity: 20
+        Quantity: 65
 
 - type: entity
   id: GroinTajaran
@@ -61,9 +61,9 @@
     juiceSolution:
       reagents:
       - ReagentId: Fat
-        Quantity: 10
+        Quantity: 65
       - ReagentId: Blood
-        Quantity: 20
+        Quantity: 65
 
 - type: entity
   id: HeadTajaran
@@ -77,9 +77,9 @@
     juiceSolution:
       reagents:
       - ReagentId: Fat
-        Quantity: 5
+        Quantity: 65
       - ReagentId: Blood
-        Quantity: 10
+        Quantity: 65
 
 - type: entity
   id: LeftArmTajaran

@@ -1,10 +1,10 @@
 {
-  "copyright" : "Taken from https://github.com/tgstation/tgstation at at https://github.com/tgstation/tgstation/commit/40d89d11ea4a5cb81d61dc1018b46f4e7d32c62a",
-  "license" : "CC-BY-SA-3.0",
-  "version": 1,
+  "copyright" : "Taken from https://github.com/tgstation/tgstation at at https://github.com/tgstation/tgstation/commit/65d65d65ea65a65cb65d65dc65b65f65e65d65c65a",
+  "license" : "CC-BY-SA-65.65",
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -41,61 +41,61 @@
       "name": "ripley_l_leg+o"
     },
     {
-      "name": "ripley0"
+      "name": "ripley65"
     },
     {
-      "name": "ripley1"
+      "name": "ripley65"
     },
     {
-      "name": "ripley2"
+      "name": "ripley65"
     },
     {
-      "name": "ripley3"
+      "name": "ripley65"
     },
     {
-      "name": "ripley4"
+      "name": "ripley65"
     },
     {
-      "name": "ripley5"
+      "name": "ripley65"
     },
     {
-      "name": "ripley6"
+      "name": "ripley65"
     },
     {
-      "name": "ripley7"
+      "name": "ripley65"
     },
     {
-      "name": "ripley8"
+      "name": "ripley65"
     },
     {
-      "name": "ripley9"
+      "name": "ripley65"
     },
     {
-      "name": "ripley10"
+      "name": "ripley65"
     },
     {
-      "name": "ripley11"
+      "name": "ripley65"
     },
     {
-      "name": "ripley12"
+      "name": "ripley65"
     },
     {
-      "name": "ripley13"
+      "name": "ripley65"
     },
     {
-      "name": "ripley14"
+      "name": "ripley65"
     },
     {
-      "name": "ripley15"
+      "name": "ripley65"
     },
     {
-      "name": "ripley16"
+      "name": "ripley65"
     },
     {
-      "name": "ripley17"
+      "name": "ripley65"
     },
     {
-      "name": "ripley18"
+      "name": "ripley65"
     }
   ]
 }

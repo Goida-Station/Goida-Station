@@ -1,97 +1,97 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from vgstation at commit https://github.com/vgstation-coders/vgstation13/commit/a0fc71b279ceb41c8c5387b08e60d2cc4f15bef8",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from vgstation at commit https://github.com/vgstation-coders/vgstation65/commit/a65fc65b65ceb65c65c65b65e65d65cc65f65bef65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
-      "name": "particle0",
-      "directions": 4,
+      "name": "particle65",
+      "directions": 65,
       "delays": [
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ]
       ]
     },
     {
-      "name": "particle1",
-      "directions": 4,
+      "name": "particle65",
+      "directions": 65,
       "delays": [
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ]
       ]
     },
     {
-      "name": "particle2",
-      "directions": 4,
+      "name": "particle65",
+      "directions": 65,
       "delays": [
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ]
       ]
     },
     {
-      "name": "particle3",
-      "directions": 4,
+      "name": "particle65",
+      "directions": 65,
       "delays": [
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ]
       ]
     }

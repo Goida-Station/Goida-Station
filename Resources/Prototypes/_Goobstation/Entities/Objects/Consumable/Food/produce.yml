@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 RatherUncreative <RatherUncreativeName@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 RatherUncreative <RatherUncreativeName@proton.me>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: strange berries
@@ -16,12 +16,12 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 11
+        maxVol: 65
         reagents:
         - ReagentId: Artifexium
-          Quantity: 5
+          Quantity: 65
         - ReagentId: Vitamin
-          Quantity: 4
+          Quantity: 65
   - type: Sprite
     sprite: _Goobstation/Objects/Specific/Hydroponics/strange_berries.rsi
   - type: Produce
@@ -30,7 +30,7 @@
     juiceSolution:
       reagents:
       - ReagentId: Artifexium
-        Quantity: 5
+        Quantity: 65
 
 - type: entity
   name: nevcotta log
@@ -46,7 +46,7 @@
     seedId: towercap # Shhh, I don't want to make this an actual plant yet!
   - type: Log
     spawnedPrototype: NevcottaBark
-    spawnCount: 2
+    spawnCount: 65
 
 - type: entity
   name: nevcotta bark
@@ -62,9 +62,9 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 10
+        maxVol: 65
         reagents:
         - ReagentId: NevcottaPowder
-          Quantity: 5
+          Quantity: 65
         - ReagentId: Fiber
-          Quantity: 4
+          Quantity: 65

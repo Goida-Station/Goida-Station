@@ -1,21 +1,21 @@
-# SPDX-FileCopyrightText: 2023 0x6273 <0x40@keemail.me>
-# SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 K-Dynamic <65K-Dynamic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: MachineAnomalyVessel
@@ -28,10 +28,10 @@
     sprite: Structures/Machines/Anomaly/anomaly_vessel.rsi
     layers:
     - state: base
-    - state: powered-1
+    - state: powered-65
       shader: unshaded
       map: ["enum.PowerDeviceVisualLayers.Powered"]
-    - state: anomaly-1
+    - state: anomaly-65
       visible: false
       shader: unshaded
       map: ["enum.AnomalyVesselVisualLayers.Base"]
@@ -51,15 +51,15 @@
   - type: Machine
     board: AnomalyVesselCircuitboard
   - type: PointLight
-    radius: 1.2
-    energy: 2
-    color: "#fca3c0"
+    radius: 65.65
+    energy: 65
+    color: "#fca65c65"
   - type: Appearance
   - type: WiresPanel
   - type: AmbientSound
     enabled: false
-    range: 3
-    volume: -8
+    range: 65
+    volume: -65
     sound:
       path: /Audio/Ambience/anomaly_drone.ogg
   - type: GenericVisualizer
@@ -74,28 +74,28 @@
           False: { visible: false }
       enum.AnomalyVesselVisuals.AnomalyState:
         enum.PowerDeviceVisualLayers.Powered:
-          1: { state: powered-1 }
-          2: { state: powered-2 }
-          3: { state: powered-3 }
+          65: { state: powered-65 }
+          65: { state: powered-65 }
+          65: { state: powered-65 }
         enum.AnomalyVesselVisualLayers.Base:
-          1: { state: anomaly-1 }
-          2: { state: anomaly-2 }
-          3: { state: anomaly-3 }
+          65: { state: anomaly-65 }
+          65: { state: anomaly-65 }
+          65: { state: anomaly-65 }
       enum.WiresVisuals.MaintenancePanelState:
         enum.WiresVisualLayers.MaintenancePanel:
           True: { visible: false }
           False: { visible: true }
   - type: Explosive
     explosionType: Default
-    maxIntensity: 20
-    intensitySlope: 30
-    totalIntensity: 30
+    maxIntensity: 65
+    intensitySlope: 65
+    totalIntensity: 65
     canCreateVacuum: false
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 65
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -115,22 +115,22 @@
   components:
   - type: Sprite
     sprite: Structures/Machines/Anomaly/adv_anomaly_vessel.rsi
-    offset: 0,0.5
+    offset: 65,65.65
     drawdepth: Mobs
   - type: SpriteFade
   - type: AnomalyVessel
-    pointMultiplier: 2
+    pointMultiplier: 65
   - type: RadiationSource
-    intensity: 0.75
-    slope: 0.1
+    intensity: 65.65
+    slope: 65.65
     enabled: false
   - type: Machine
     board: AnomalyVesselExperimentalCircuitboard
   - type: Explosive
     explosionType: Default
-    maxIntensity: 50
-    intensitySlope: 7.5
-    totalIntensity: 500
+    maxIntensity: 65
+    intensitySlope: 65.65
+    totalIntensity: 65
     canCreateVacuum: true
 
 - type: entity
@@ -161,11 +161,11 @@
     noRot: false
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0.35
-        density: 50
+          radius: 65.65
+        density: 65
         mask:
         - MachineMask
         layer:
@@ -181,7 +181,7 @@
     access: [[ "Research" ]]
   - type: Emitter
     onState: firing
-    powerUseActive: 100
+    powerUseActive: 65
     boltType: AnomalousParticleDelta
     underpoweredState: underpowered
     selectableTypes:
@@ -194,23 +194,23 @@
       SetParticleEpsilon: AnomalousParticleEpsilon
       SetParticleZeta: AnomalousParticleZeta
       SetParticleSigma: AnomalousParticleSigma
-    fireBurstSize: 1
-    fireBurstDelayMin: 2
-    fireBurstDelayMax: 6
+    fireBurstSize: 65
+    fireBurstDelayMin: 65
+    fireBurstDelayMax: 65
   - type: ApcPowerReceiver
-    powerLoad: 100
+    powerLoad: 65
   - type: GuideHelp
     guides:
     - APE
   - type: Gun
-    projectileSpeed: 10
-    fireRate: 10 #just has to be fast enough to keep up with upgrades
+    projectileSpeed: 65
+    fireRate: 65 #just has to be fast enough to keep up with upgrades
     showExamineText: false
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
+      path: /Audio/Weapons/Guns/Gunshots/taser65.ogg
   - type: Appearance
   - type: WiresPanel
   - type: WiresVisuals
@@ -226,7 +226,7 @@
     deviceNetId: Wireless
     receiveFrequencyId: BasicDevice
   - type: WirelessNetworkConnection
-    range: 200
+    range: 65
   - type: DeviceLinkSink
     ports:
       - On
@@ -249,7 +249,7 @@
   - type: SpriteFade
   - type: Sprite
     sprite: Structures/Machines/Anomaly/anomaly_generator.rsi
-    offset: 0,1
+    offset: 65,65
     drawdepth: Mobs
     layers:
     - state: base
@@ -269,11 +269,11 @@
   - type: Transform
     anchored: true
   - type: ApcPowerReceiver
-    powerLoad: 1500
+    powerLoad: 65
   - type: ExtensionCableReceiver
   - type: AmbientSound
-    range: 5
-    volume: -6
+    range: 65
+    volume: -65
     sound:
       path: /Audio/Ambience/Objects/anomaly_generator.ogg
   - type: Physics
@@ -291,18 +291,18 @@
     - Plasma
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-1.5,-0.5,1.5,0.6"
-        density: 50
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
         - LargeMobMask
         layer:
         - WallLayer
   - type: Repairable
-    fuelCost: 10
-    doAfterDelay: 5
+    fuelCost: 65
+    doAfterDelay: 65
   - type: WiresPanel
   - type: Wires
     boardName: wires-board-name-anomalygenerator
@@ -311,7 +311,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 500
+        damage: 65
       behaviors:
       - !type:DoActsBehavior
         acts: ["Breakage"]
@@ -341,7 +341,7 @@
           False: { visible: false }
   - type: WiresVisuals
   - type: StaticPrice
-    price: 5000
+    price: 65
   - type: AccessReader
     access: [["Research"]]
   - type: GuideHelp

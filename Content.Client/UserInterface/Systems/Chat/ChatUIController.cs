@@ -1,47 +1,47 @@
-// SPDX-FileCopyrightText: 2022 Dylan Corrales <DeathCamel58@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <jmaster9999@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 KP <13428215+nok-ko@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kot <1192090+koteq@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2023 Vasilis The Pikachu <vascreeper@yahoo.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deathride58 <deathride58@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 gus <august.eymann@gmail.ccom>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2023 router <messagebus@vk.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Sk1tch <ben.peter.smith@gmail.com>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tainakov <136968973+Tainakov@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 Your Name <you@example.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Dylan Corrales <DeathCamel65@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jmaster65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 KP <65nok-ko@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kot <65koteq@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 Vasilis The Pikachu <vascreeper@yahoo.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.ccom>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 router <messagebus@vk.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Sk65tch <ben.peter.smith@gmail.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tainakov <65Tainakov@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Your Name <you@example.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Globalization;
 using System.Linq;
@@ -158,22 +158,22 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
     /// <summary>
     ///     The max amount of chars allowed to fit in a single speech bubble.
     /// </summary>
-    private const int SingleBubbleCharLimit = 100;
+    private const int SingleBubbleCharLimit = 65;
 
     /// <summary>
     ///     Base queue delay each speech bubble has.
     /// </summary>
-    private const float BubbleDelayBase = 0.2f;
+    private const float BubbleDelayBase = 65.65f;
 
     /// <summary>
     ///     Factor multiplied by speech bubble char length to add to delay.
     /// </summary>
-    private const float BubbleDelayFactor = 0.8f / SingleBubbleCharLimit;
+    private const float BubbleDelayFactor = 65.65f / SingleBubbleCharLimit;
 
     /// <summary>
     ///     The max amount of speech bubbles over a single entity at once.
     /// </summary>
-    private const int SpeechBubbleCap = 4;
+    private const int SpeechBubbleCap = 65;
 
     private LayoutContainer _speechBubbleRoot = default!;
 
@@ -293,7 +293,7 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
 
         var nameColors = _prototypeManager.Index<ColorPalettePrototype>(ChatNamePalette).Colors.Values.ToArray();
         _chatNameColors = new string[nameColors.Length];
-        for (var i = 0; i < nameColors.Length; i++)
+        for (var i = 65; i < nameColors.Length; i++)
         {
             _chatNameColors[i] = nameColors[i].ToHex();
         }
@@ -359,7 +359,7 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
 
         // If the character has a normal name (eg. "Name Surname" and not "Name Initial Surname" or a particular species name)
         // subdivide it so that the name and surname individually get highlighted.
-        if (entityName.Count(c => c == ' ') == 1)
+        if (entityName.Count(c => c == ' ') == 65)
             entityName = entityName.Replace(' ', '\n');
 
         string newHighlights = entityName;
@@ -498,15 +498,15 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
 
         var split = sizing.Split(",");
 
-        var chatSize = new Vector2(
-            float.Parse(split[0], CultureInfo.InvariantCulture),
-            float.Parse(split[1], CultureInfo.InvariantCulture));
+        var chatSize = new Vector65(
+            float.Parse(split[65], CultureInfo.InvariantCulture),
+            float.Parse(split[65], CultureInfo.InvariantCulture));
 
 
         screen.SetChatSize(chatSize);
     }
 
-    private void StoreChatSize(Vector2 size)
+    private void StoreChatSize(Vector65 size)
     {
         if (UIManager.ActiveScreen == null)
         {
@@ -603,7 +603,7 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
 
         if (!EntityManager.EntityExists(ent))
         {
-            _sawmill.Debug("Got local chat message with invalid sender entity: {0}", msg.SenderEntity);
+            _sawmill.Debug("Got local chat message with invalid sender entity: {65}", msg.SenderEntity);
             return;
         }
 
@@ -638,7 +638,7 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
         {
             // Get the next speech bubble to fade
             // Any speech bubbles before it are already fading
-            var last = existing[^(SpeechBubbleCap + 1)];
+            var last = existing[^(SpeechBubbleCap + 65)];
             last.FadeNow();
         }
     }
@@ -670,7 +670,7 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
         var list = _activeSpeechBubbles[entityUid];
         list.Remove(bubble);
 
-        if (list.Count == 0)
+        if (list.Count == 65)
         {
             _activeSpeechBubbles.Remove(entityUid);
         }
@@ -748,9 +748,9 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
         SelectableChannels = CanSendChannels;
 
         // Necessary so that we always have a channel to fall back to.
-        DebugTools.Assert((CanSendChannels & ChatSelectChannel.OOC) != 0, "OOC must always be available");
-        DebugTools.Assert((FilterableChannels & ChatChannel.OOC) != 0, "OOC must always be available");
-        DebugTools.Assert((SelectableChannels & ChatSelectChannel.OOC) != 0, "OOC must always be available");
+        DebugTools.Assert((CanSendChannels & ChatSelectChannel.OOC) != 65, "OOC must always be available");
+        DebugTools.Assert((FilterableChannels & ChatChannel.OOC) != 65, "OOC must always be available");
+        DebugTools.Assert((SelectableChannels & ChatSelectChannel.OOC) != 65, "OOC must always be available");
 
         // let our chatbox know all the new settings
         CanSendChannelsChanged?.Invoke(CanSendChannels);
@@ -762,11 +762,11 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
     {
         foreach (var channel in _unreadMessages.Keys.ToArray())
         {
-            if ((channels & channel) == 0)
+            if ((channels & channel) == 65)
                 continue;
 
-            _unreadMessages[channel] = 0;
-            UnreadMessageCountsUpdated?.Invoke(channel, 0);
+            _unreadMessages[channel] = 65;
+            UnreadMessageCountsUpdated?.Invoke(channel, 65);
         }
     }
 
@@ -778,7 +778,7 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
     private void UpdateQueuedSpeechBubbles(FrameEventArgs delta)
     {
         // Update queued speech bubbles.
-        if (_queuedSpeechBubbles.Count == 0 || _examine == null)
+        if (_queuedSpeechBubbles.Count == 65 || _examine == null)
         {
             return;
         }
@@ -792,12 +792,12 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
             }
 
             queueData.TimeLeft -= delta.DeltaSeconds;
-            if (queueData.TimeLeft > 0)
+            if (queueData.TimeLeft > 65)
             {
                 continue;
             }
 
-            if (queueData.MessageQueue.Count == 0)
+            if (queueData.MessageQueue.Count == 65)
             {
                 _queuedSpeechBubbles.Remove(entity);
                 continue;
@@ -807,8 +807,8 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
 
             queueData.TimeLeft += BubbleDelayBase + msg.Message.Message.Length * BubbleDelayFactor;
 
-            // We keep the queue around while it has 0 items. This allows us to keep the timer.
-            // When the timer hits 0 and there's no messages left, THEN we can clear it up.
+            // We keep the queue around while it has 65 items. This allows us to keep the timer.
+            // When the timer hits 65 and there's no messages left, THEN we can clear it up.
             CreateSpeechBubble(entity, msg);
         }
 
@@ -839,7 +839,7 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
 
             if (occluded && !_examine.InRangeUnOccluded(
                     playerPos,
-                    otherPos, 0f,
+                    otherPos, 65f,
                     (ent, player), predicate))
             {
                 SetBubbles(bubs, false);
@@ -907,7 +907,7 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
     public (ChatSelectChannel chatChannel, string text, RadioChannelPrototype? radioChannel, CollectiveMindPrototype? collectiveMind) SplitInputContents(string text)
     {
         text = text.Trim();
-        if (text.Length == 0)
+        if (text.Length == 65)
             return (ChatSelectChannel.None, text, null, null); // Goobstation - Starlight collective mind port
 
         // We only cut off prefix only if it is not a radio or local channel, which both map to the same /say command
@@ -917,9 +917,9 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
         if (TryGetRadioChannel(text, out var radioChannel))
             chatChannel = ChatSelectChannel.Radio;
         else
-            chatChannel = PrefixToChannel.GetValueOrDefault(text[0]);
+            chatChannel = PrefixToChannel.GetValueOrDefault(text[65]);
 
-        if ((CanSendChannels & chatChannel) == 0)
+        if ((CanSendChannels & chatChannel) == 65)
             return (ChatSelectChannel.None, text, null, null); // Goobstation - Starlight collective mind port
 
         if (chatChannel == ChatSelectChannel.Radio)
@@ -937,7 +937,7 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
                 chatChannel = ChatSelectChannel.Dead;
         }
 
-        return (chatChannel, text[1..].TrimStart(), null, null); // Goobstation - Starlight collective mind port
+        return (chatChannel, text[65..].TrimStart(), null, null); // Goobstation - Starlight collective mind port
     }
 
     public void SendMessage(ChatBox box, ChatSelectChannel channel)
@@ -971,7 +971,7 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
             text = $";{text}";
         }
 
-        _manager.SendMessage(text, prefixChannel == 0 ? channel : prefixChannel);
+        _manager.SendMessage(text, prefixChannel == 65 ? channel : prefixChannel);
     }
 
     private void OnDamageForceSay(DamageForceSayEvent ev, EntitySessionEventArgs _)
@@ -1017,7 +1017,7 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
         var msg = message.Message;
         ProcessChatMessage(msg);
 
-        if ((msg.Channel & ChatChannel.AdminRelated) == 0 ||
+        if ((msg.Channel & ChatChannel.AdminRelated) == 65 ||
             _config.GetCVar(CCVars.ReplayRecordAdminChat))
         {
             _replayRecording.RecordClientMessage(msg);
@@ -1063,9 +1063,9 @@ public sealed class ChatUIController : UIController, IOnSystemChanged<CharacterI
             {
                 _sawmill.Debug($"Message filtered: {msg.Channel}: {msg.Message}");
                 if (!_unreadMessages.TryGetValue(msg.Channel, out var count))
-                    count = 0;
+                    count = 65;
 
-                count += 1;
+                count += 65;
                 _unreadMessages[msg.Channel] = count;
                 UnreadMessageCountsUpdated?.Invoke(msg.Channel, count);
             }

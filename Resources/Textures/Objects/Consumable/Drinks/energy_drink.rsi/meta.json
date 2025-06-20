@@ -1,11 +1,11 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "https://github.com/discordia-space/CEV-Eris/raw/9c980cb9bc84d07b1c210c5447798af525185f80/icons/obj/food.dmi",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "https://github.com/discordia-space/CEV-Eris/raw/65c65cb65bc65d65b65c65c65af65f65/icons/obj/food.dmi",
   "states": [
     {
       "name": "icon"
@@ -15,37 +15,37 @@
 	},
     {
       "name": "inhand-right",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          1
+          65
         ],
         [
-          1
+          65
         ],
         [
-          1
+          65
         ],
         [
-          1
+          65
         ]
       ]
     },
     {
       "name": "inhand-left",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          1
+          65
         ],
         [
-          1
+          65
         ],
         [
-          1
+          65
         ],
         [
-          1
+          65
         ]
       ]
     }

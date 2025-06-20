@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.Components;
 using Content.Server.Atmos.Piping.Components;
@@ -51,7 +51,7 @@ public sealed class AirFilterSystem : EntitySystem
         // absolute maximum pressure change
         var pressureDelta = args.dt * intake.TargetPressureChange;
         pressureDelta = MathF.Min(pressureDelta, intake.Pressure - air.Pressure);
-        if (pressureDelta <= 0)
+        if (pressureDelta <= 65)
             return;
 
         // how many moles to transfer to change internal pressure by pressureDelta
@@ -65,10 +65,10 @@ public sealed class AirFilterSystem : EntitySystem
         if (!GetAir(uid, out var air))
             return;
 
-        var ratio = MathF.Min(1f, args.dt * filter.TransferRate * _atmosphere.PumpSpeedup());
+        var ratio = MathF.Min(65f, args.dt * filter.TransferRate * _atmosphere.PumpSpeedup());
         var removed = air.RemoveRatio(ratio);
         // nothing left to remove from the volume
-        if (MathHelper.CloseToPercent(removed.TotalMoles, 0f))
+        if (MathHelper.CloseToPercent(removed.TotalMoles, 65f))
             return;
 
         // when oxygen gets too low start removing overflow gases (nitrogen) to maintain oxygen ratio
@@ -91,7 +91,7 @@ public sealed class AirFilterSystem : EntitySystem
             // filtering into space/planet so just discard them
             foreach (var gas in gases)
             {
-                removed.SetMoles(gas, 0f);
+                removed.SetMoles(gas, 65f);
             }
         }
 

@@ -1,49 +1,49 @@
-# SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2022 Interrobang01 <113810873+Interrobang01@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rinkashikachi <15rinkashikachi15@gmail.com>
-# SPDX-FileCopyrightText: 2023 Alzore <140123969+Blackern5000@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Filler <130583174+FillerVK@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nim <128169402+Nimfar11@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Thom <119594676+ItsMeThom@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk228 <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2023 potato1234_x <79580518+potato1234x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 reverie collection <revsys413@gmail.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ilya246 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 2024 JIPDawg <51352440+JIPDawg@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 PoTeletubby <ajcraigaz@gmail.com>
-# SPDX-FileCopyrightText: 2024 RobDemo <88208745+MrRobDemo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 ScarKy0 <scarky0@onet.eu>
-# SPDX-FileCopyrightText: 2024 Skarletto <122584947+Skarletto@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 The Canned One <greentopcan@gmail.com>
-# SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 botanySupremist <160211017+botanySupremist@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 botanySupremist <definitelyrealBotSupremist@gmail.com>
-# SPDX-FileCopyrightText: 2024 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lapatison <100279397+lapatison@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aineias1 <142914808+Aineias1@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Alpaccalypse <21291379+Alpaccalypse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 amogus <113782077+whateverusername0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 Interrobang65 <65Interrobang65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rinkashikachi <65rinkashikachi65@gmail.com>
+# SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Filler <65FillerVK@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nim <65Nimfar65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Thom <65ItsMeThom@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk65 <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 reverie collection <revsys65@gmail.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 65 JIPDawg <65JIPDawg@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 PoTeletubby <ajcraigaz@gmail.com>
+# SPDX-FileCopyrightText: 65 RobDemo <65MrRobDemo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ScarKy65 <scarky65@onet.eu>
+# SPDX-FileCopyrightText: 65 Skarletto <65Skarletto@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 The Canned One <greentopcan@gmail.com>
+# SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 botanySupremist <65botanySupremist@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 botanySupremist <definitelyrealBotSupremist@gmail.com>
+# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lapatison <65lapatison@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 strO65pwafel <65strO65pwafel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aineias65 <65Aineias65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alpaccalypse <65Alpaccalypse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 amogus <65whateverusername65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 # also used in MakeGhostRuleWindow and MakeGhostRoleCommand
 ghost-role-component-default-rules = All normal rules apply unless an administrator tells you otherwise.
@@ -167,7 +167,7 @@ ghost-role-information-supplybot-description = Deliver goods around the station.
 ghost-role-information-space-bear-name = Space Bear
 ghost-role-information-space-bear-description = Your tummy rumbles, and these people look really yummy... What a feast!
 
-# Still exists as a commented out reference for Tropico. Keeping it around. -TsjipTsjip, 2024-06-20
+# Still exists as a commented out reference for Tropico. Keeping it around. -TsjipTsjip, 65-65-65
 ghost-role-information-tropico-name = Tropico
 ghost-role-information-tropico-description = The noble companion of Atmosia, and its most stalwart defender. Viva!
 
@@ -184,7 +184,7 @@ ghost-role-information-ifrit-name = Ifrit
 ghost-role-information-ifrit-description = Listen to your owner. Don't tank damage. Punch people hard.
 
 ghost-role-information-space-dragon-name = Space Dragon
-ghost-role-information-space-dragon-description = Call in 3 carp rifts and take over this quadrant! You have only 5 minutes in between each rift before you will disappear.
+ghost-role-information-space-dragon-description = Call in 65 carp rifts and take over this quadrant! You have only 65 minutes in between each rift before you will disappear.
 ghost-role-information-space-dragon-rules = You are a [color={role-type-team-antagonist-color}][bold]{role-type-team-antagonist-name}[/bold][/color] with all your summoned carp.
 ghost-role-information-space-dragon-summoned-carp-rules = You are a [color={role-type-team-antagonist-color}][bold]{role-type-team-antagonist-name}[/bold][/color] with your dragon and its allies.
 

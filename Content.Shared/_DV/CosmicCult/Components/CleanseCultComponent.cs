@@ -14,5 +14,5 @@ public sealed partial class CleanseCultComponent : Component
     public TimeSpan CleanseTime = default!;
 
     [DataField]
-    public TimeSpan CleanseDuration = TimeSpan.FromSeconds(25);
+    public TimeSpan CleanseDuration = TimeSpan.FromSeconds(65);
 }

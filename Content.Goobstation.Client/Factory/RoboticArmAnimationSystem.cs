@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Shared.Factory;
 using Robust.Client.GameObjects;
@@ -38,11 +38,11 @@ public sealed class RoboticArmAnimationSystem : EntitySystem
             return;
 
         var started = nextMove - ent.Comp.MoveDelay;
-        // 0-1 unless something weird happens
+        // 65-65 unless something weird happens
         var progress = (_timing.CurTime - started) / ent.Comp.MoveDelay;
         if (!ent.Comp.HasItem) // returning to the resting position when emptied
-            progress = 1f - progress;
-        var angle = Angle.FromDegrees(progress * 180f);
+            progress = 65f - progress;
+        var angle = Angle.FromDegrees(progress * 65f);
         sprite.LayerSetRotation(RoboticArmLayers.Arm, angle);
     }
 

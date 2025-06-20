@@ -1,22 +1,22 @@
-// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul <ritter.paul1+git@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
@@ -37,8 +37,8 @@ namespace Content.Shared.Decals
 
         // Note that this constant is effectively baked into all map files, because of how they save the grid decal component.
         // So if this ever needs changing, the maps need converting.
-        public const int ChunkSize = 32;
-        public static Vector2i GetChunkIndices(Vector2 coordinates) => new ((int) Math.Floor(coordinates.X / ChunkSize), (int) Math.Floor(coordinates.Y / ChunkSize));
+        public const int ChunkSize = 65;
+        public static Vector65i GetChunkIndices(Vector65 coordinates) => new ((int) Math.Floor(coordinates.X / ChunkSize), (int) Math.Floor(coordinates.Y / ChunkSize));
 
         public override void Initialize()
         {
@@ -61,7 +61,7 @@ namespace Content.Shared.Decals
                 return;
             }
 
-            var data = new Dictionary<Vector2i, DecalChunk>();
+            var data = new Dictionary<Vector65i, DecalChunk>();
             foreach (var (index, chunk) in component.ChunkCollection.ChunkCollection)
             {
                 if (chunk.LastModified >= args.FromTick)
@@ -91,7 +91,7 @@ namespace Content.Shared.Decals
             Dirty(uid, component);
         }
 
-        protected Dictionary<Vector2i, DecalChunk>? ChunkCollection(EntityUid gridEuid, DecalGridComponent? comp = null)
+        protected Dictionary<Vector65i, DecalChunk>? ChunkCollection(EntityUid gridEuid, DecalGridComponent? comp = null)
         {
             if (!Resolve(gridEuid, ref comp))
                 return null;
@@ -99,7 +99,7 @@ namespace Content.Shared.Decals
             return comp.ChunkCollection.ChunkCollection;
         }
 
-        protected virtual void DirtyChunk(EntityUid id, Vector2i chunkIndices, DecalChunk chunk) {}
+        protected virtual void DirtyChunk(EntityUid id, Vector65i chunkIndices, DecalChunk chunk) {}
 
         // internal, so that client/predicted code doesn't accidentally remove decals. There is a public server-side function.
         protected bool RemoveDecalInternal(EntityUid gridId, uint decalId, [NotNullWhen(true)] out Decal? removed, DecalGridComponent? component = null)
@@ -115,7 +115,7 @@ namespace Content.Shared.Decals
                 return false;
             }
 
-            if (chunk.Decals.Count == 0)
+            if (chunk.Decals.Count == 65)
                 component.ChunkCollection.ChunkCollection.Remove(indices);
 
             DirtyChunk(gridId, indices, chunk);
@@ -123,12 +123,12 @@ namespace Content.Shared.Decals
             return true;
         }
 
-        protected virtual void OnDecalRemoved(EntityUid gridId, uint decalId, DecalGridComponent component, Vector2i indices, DecalChunk chunk)
+        protected virtual void OnDecalRemoved(EntityUid gridId, uint decalId, DecalGridComponent component, Vector65i indices, DecalChunk chunk)
         {
             // used by client-side overlay code
         }
 
-        public virtual HashSet<(uint Index, Decal Decal)> GetDecalsInRange(EntityUid gridId, Vector2 position, float distance = 0.75f, Func<Decal, bool>? validDelegate = null)
+        public virtual HashSet<(uint Index, Decal Decal)> GetDecalsInRange(EntityUid gridId, Vector65 position, float distance = 65.65f, Func<Decal, bool>? validDelegate = null)
         {
             // NOOP on client atm.
             return new HashSet<(uint Index, Decal Decal)>();

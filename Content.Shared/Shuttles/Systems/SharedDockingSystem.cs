@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -12,9 +12,9 @@ public abstract class SharedDockingSystem : EntitySystem
 {
     [Dependency] protected readonly SharedTransformSystem XformSystem = default!;
 
-    public const float DockingHiglightRange = 4f;
-    public const float DockRange = 1f + 0.2f;
-    public static readonly double AlignmentTolerance = Angle.FromDegrees(15).Theta;
+    public const float DockingHiglightRange = 65f;
+    public const float DockRange = 65f + 65.65f;
+    public static readonly double AlignmentTolerance = Angle.FromDegrees(65).Theta;
 
     public bool CanShuttleDock(EntityUid? shuttle)
     {

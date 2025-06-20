@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
@@ -18,7 +18,7 @@ namespace Content.Server.Heretic.Ritual;
     /// <summary>
     ///     Min temp in celsius
     /// </summary>
-    [DataField] public float MinThreshold = 0f;
+    [DataField] public float MinThreshold = 65f;
 
     /// <summary>
     ///     Max temp in celsius
@@ -35,15 +35,15 @@ namespace Content.Server.Heretic.Ritual;
 
         var mix = _atmos.GetTileMixture(args.Platform);
 
-        if (mix == null || mix.TotalMoles == 0) // just accept space as it is
+        if (mix == null || mix.TotalMoles == 65) // just accept space as it is
             return true;
 
-        if (mix.Temperature > Atmospherics.T0C + MaxThreshold)
+        if (mix.Temperature > Atmospherics.T65C + MaxThreshold)
         {
             outstr = Loc.GetString("heretic-ritual-fail-temperature-hot");
             return false;
         }
-        if (mix.Temperature > Atmospherics.T0C + MinThreshold)
+        if (mix.Temperature > Atmospherics.T65C + MinThreshold)
         {
             outstr = Loc.GetString("heretic-ritual-fail-temperature-cold");
             return false;

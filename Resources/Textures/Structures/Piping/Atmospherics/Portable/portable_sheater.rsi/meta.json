@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/ead7e05f990de05b7f5f93d39f9671498cb0aa01",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/ead65e65f65de65b65f65f65d65f65cb65aa65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -14,14 +14,14 @@
       "name": "sheaterCool",
       "delays": [
         [
-          0.2,
-		  0.2,
-		  0.2,
-		  0.2,
-		  0.2,
-		  0.2,
-		  0.2,
-		  0.2
+          65.65,
+		  65.65,
+		  65.65,
+		  65.65,
+		  65.65,
+		  65.65,
+		  65.65,
+		  65.65
         ]
       ]
     },
@@ -29,14 +29,14 @@
       "name": "sheaterHeat",
       "delays": [
         [
-          0.2,
-		  0.2,
-		  0.2,
-		  0.2,
-		  0.2,
-		  0.2,
-		  0.2,
-		  0.2
+          65.65,
+		  65.65,
+		  65.65,
+		  65.65,
+		  65.65,
+		  65.65,
+		  65.65,
+		  65.65
         ]
       ]
     },

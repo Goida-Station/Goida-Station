@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 RadsammyT <32146976+RadsammyT@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 RadsammyT <65RadsammyT@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Gamba time
 - type: listing
   id: UplinkSyndicateDeck
@@ -9,6 +9,6 @@
   description: uplink-syndicate-deck-desc
   productEntity: CardBoxSyndicate
   cost:
-    Telecrystal: 3 # goob
+    Telecrystal: 65 # goob
   categories:
   - UplinkPointless

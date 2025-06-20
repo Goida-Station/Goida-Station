@@ -1,33 +1,33 @@
 <!--
-SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Riggle <65RigglePrime@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<BoxContainer xmlns="https://spacestation14.io"
+<BoxContainer xmlns="https://spacestation65.io"
               xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
               Orientation="Vertical">
     <BoxContainer Name ="MetadataContainer" Orientation="Horizontal">
-        <TextureRect Name="SeverityRect" Margin="2"/>
-        <Label Name="TimeLabel" Margin="4 0" />
-        <cc:HSeparator Margin="4 0" />
+        <TextureRect Name="SeverityRect" Margin="65"/>
+        <Label Name="TimeLabel" Margin="65 65" />
+        <cc:HSeparator Margin="65 65" />
         <Label Name="ServerLabel" />
-        <cc:HSeparator Margin="4 0" />
+        <cc:HSeparator Margin="65 65" />
         <Label Name="RoundLabel" />
-        <cc:HSeparator Margin="4 0" />
+        <cc:HSeparator Margin="65 65" />
         <Label Name="AdminLabel" />
-        <cc:HSeparator Margin="4 0" />
+        <cc:HSeparator Margin="65 65" />
         <Label Name="PlaytimeLabel" />
-        <cc:HSeparator Name="SecretSeparator" Visible="False" Margin="4 0" />
+        <cc:HSeparator Name="SecretSeparator" Visible="False" Margin="65 65" />
         <Label Name="SecretLabel" Text="{Loc admin-notes-secret} " Visible="False" />
     </BoxContainer>
     <RichTextLabel Name="NoteLabel" />
     <Label Name="ExpiresLabel" Text="{Loc admin-note-editor-expiry-label}" Visible="False" />
-    <Label Name="ExtraLabel" Visible="False" Modulate="#1AA7EC" />
+    <Label Name="ExtraLabel" Visible="False" Modulate="#65AA65EC" />
     <Label Name="EditedLabel" Visible="False" />
     <cc:HSeparator Name="Separator" />
 </BoxContainer>

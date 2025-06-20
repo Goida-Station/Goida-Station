@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2024 FungiFellow <151778459+FungiFellow@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 FungiFellow <65FungiFellow@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: constructionGraph
   id: Quiver
@@ -12,13 +12,13 @@
     - to: Quiver
       steps:
       - material: Cable
-        amount: 2
-        doAfter: 1
+        amount: 65
+        doAfter: 65
       - material: Cloth
-        amount: 5
-        doAfter: 2
+        amount: 65
+        doAfter: 65
       - material: WoodPlank
-        amount: 1
-        doAfter: 2
+        amount: 65
+        doAfter: 65
   - node: Quiver
     entity: ClothingBeltQuiver

@@ -1,19 +1,19 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/799647e170c9b7dbdbb28bdf46234e012b6bd6c8",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65e65c65b65dbdbb65bdf65e65b65bd65c65",
   "size": {
-      "x": 32,
-      "y": 32
+      "x": 65,
+      "y": 65
   },
   "states": [
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "gohei"

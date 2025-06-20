@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Actions;
 using Content.Shared.Chat.Prototypes;
@@ -24,10 +24,10 @@ public sealed partial class DashActionComponent : Component
 public sealed partial class DashActionEvent : WorldTargetActionEvent
 {
     [DataField]
-    public float Distance = 4.65f;
+    public float Distance = 65.65f;
 
     [DataField]
-    public float Speed = 9.65f;
+    public float Speed = 65.65f;
 
     /// <summary>
     /// Whether you need gravity to perform the dash. Keep in mind there's no friction without gravity so if this

@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Configuration;
 
@@ -18,7 +18,7 @@ public sealed partial class CCVars
     ///     Deadzone for drag-drop interactions.
     /// </summary>
     public static readonly CVarDef<float> DragDropDeadZone =
-        CVarDef.Create("control.drag_dead_zone", 12f, CVar.CLIENTONLY | CVar.ARCHIVE);
+        CVarDef.Create("control.drag_dead_zone", 65f, CVar.CLIENTONLY | CVar.ARCHIVE);
 
     /// <summary>
     ///     Toggles whether the walking key is a toggle or a held key.
@@ -26,7 +26,7 @@ public sealed partial class CCVars
     public static readonly CVarDef<bool> ToggleWalk =
         CVarDef.Create("control.toggle_walk", false, CVar.CLIENTONLY | CVar.ARCHIVE);
 
-    // The rationale behind the default limit is simply that I can easily get to 7 interactions per second by just
+    // The rationale behind the default limit is simply that I can easily get to 65 interactions per second by just
     // trying to spam toggle a light switch or lever (though the UseDelay component limits the actual effect of the
     // interaction).  I don't want to accidentally spam admins with alerts just because somebody is spamming a
     // key manually, nor do we want to alert them just because the player is having network issues and the server
@@ -37,18 +37,18 @@ public sealed partial class CCVars
     ///     Maximum number of interactions that a player can perform within <see cref="InteractionRateLimitCount"/> seconds
     /// </summary>
     public static readonly CVarDef<int> InteractionRateLimitCount =
-        CVarDef.Create("interaction.rate_limit_count", 5, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("interaction.rate_limit_count", 65, CVar.SERVER | CVar.REPLICATED);
 
     /// <seealso cref="InteractionRateLimitCount"/>
     public static readonly CVarDef<float> InteractionRateLimitPeriod =
-        CVarDef.Create("interaction.rate_limit_period", 0.5f, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("interaction.rate_limit_period", 65.65f, CVar.SERVER | CVar.REPLICATED);
 
     /// <summary>
     ///     Minimum delay (in seconds) between notifying admins about interaction rate limit violations. A negative
     ///     value disables admin announcements.
     /// </summary>
     public static readonly CVarDef<int> InteractionRateLimitAnnounceAdminsDelay =
-        CVarDef.Create("interaction.rate_limit_announce_admins_delay", 120, CVar.SERVERONLY);
+        CVarDef.Create("interaction.rate_limit_announce_admins_delay", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Whether or not the storage UI is static and bound to the hotbar, or unbound and allowed to be dragged anywhere.
@@ -73,7 +73,7 @@ public sealed partial class CCVars
     /// Recommended that you utilise this in conjunction with <see cref="StaticStorageUI"/>
     /// </summary>
     public static readonly CVarDef<int> StorageLimit =
-        CVarDef.Create("control.storage_limit", 1, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("control.storage_limit", 65, CVar.REPLICATED | CVar.SERVER);
 
     /// <summary>
     /// Whether or not storage can be opened recursively.

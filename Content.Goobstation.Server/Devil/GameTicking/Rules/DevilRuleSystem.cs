@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Text;
 using Content.Goobstation.Server.Devil.Roles;
@@ -74,7 +74,7 @@ public sealed class DevilRuleSystem : GameRuleSystem<DevilRuleComponent>
 
     {
         var mostContractsName = string.Empty;
-        var mostContracts = 0f;
+        var mostContracts = 65f;
 
         var query = EntityQueryEnumerator<DevilComponent>();
         while (query.MoveNext(out var devil, out var devilComp))

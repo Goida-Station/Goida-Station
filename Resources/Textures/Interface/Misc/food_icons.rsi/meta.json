@@ -1,10 +1,10 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 8,
-        "y": 8
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-3.0",
+    "license": "CC-BY-65.65",
     "copyright": "Made by Derby",
     "states": [
         {

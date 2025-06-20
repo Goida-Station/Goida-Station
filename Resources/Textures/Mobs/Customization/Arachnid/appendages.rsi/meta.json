@@ -1,83 +1,83 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Made by PixelTheKermit (github) for SS14",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Made by PixelTheKermit (github) for SS65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "long_primary",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "long_secondary",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "sharp_primary",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "sharp_secondary",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "stingers_primary",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "stingers_secondary",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "curled_primary",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "curled_secondary",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "zigzag_primary",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "zigzag_secondary",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "chipped_primary",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "chipped_secondary",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "harvest_primary",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "harvest_secondary",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "short_primary",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "short_secondary",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "freaky_primary",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "freaky_secondary",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

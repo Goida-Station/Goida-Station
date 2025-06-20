@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2024 Fahasor <70820551+Fahasor@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Fahasor <65Fahasor@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: Exclamation
@@ -21,7 +21,7 @@
       layers:
       - state: "cardboard_special"
     - type: TimedDespawn
-      lifetime: 1
+      lifetime: 65
     - type: Tag
       tags:
         - HideContextMenu
@@ -36,12 +36,12 @@
       sprite: Structures/Storage/closet.rsi
       state: cardboard_special
       drawdepth: Effects
-      offset: 0, 1
+      offset: 65, 65
       noRot: true
     - type: Transform
       noRot: true
     - type: TimedDespawn
-      lifetime: 0.8
+      lifetime: 65.65
     - type: Tag
       tags:
         - HideContextMenu

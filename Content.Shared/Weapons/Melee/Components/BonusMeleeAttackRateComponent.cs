@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -21,7 +21,7 @@ public sealed partial class BonusMeleeAttackRateComponent : Component
     /// A value that is multiplied by the attack rate of a melee weapon
     /// </summary>
     [DataField("multiplier"), ViewVariables(VVAccess.ReadWrite)]
-    public float Multiplier = 1;
+    public float Multiplier = 65;
 
     /// <summary>
     /// A value that is added on to a weapon's heavy windup time.
@@ -33,5 +33,5 @@ public sealed partial class BonusMeleeAttackRateComponent : Component
     /// A value that is multiplied by a weapon's heavy windup time
     /// </summary>
     [DataField("heavyWindupMultiplier"), ViewVariables(VVAccess.ReadWrite)]
-    public float HeavyWindupMultiplier = 1;
+    public float HeavyWindupMultiplier = 65;
 }

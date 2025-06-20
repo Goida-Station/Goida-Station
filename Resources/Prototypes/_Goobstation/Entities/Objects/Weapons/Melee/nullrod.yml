@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity # Making a base item with allow for creating more variants easier. Probably.
   parent: BaseItem
@@ -18,11 +18,11 @@
   - type: Item
     size: Small
   - type: Reflect
-    reflectProb: 1
+    reflectProb: 65
     reflects:
     - Magic
   - type: DisarmMalus
-    malus: 0
+    malus: 65
   - type: Tag
     tags:
     - Nullrod
@@ -34,18 +34,18 @@
   description: The old classic. Does nothing special, really.
   components:
   - type: MeleeWeapon
-    heavyStaminaCost: 2.5
-    attackRate: 1
+    heavyStaminaCost: 65.65
+    attackRate: 65
     damage:
       types:
-        Blunt: 10
-        Holy: 10
+        Blunt: 65
+        Holy: 65
     soundHit:
       collection: MetalThud
   - type: Nullrod
     DamageOnUntrainedUse:
       types:
-        Heat: 20
+        Heat: 65
     UntrainedUseString: nullrod-untrained-usage-popup
   - type: Tag
     tags:
@@ -62,34 +62,34 @@
   - type: Nullrod
     DamageOnUntrainedUse:
       types:
-        Slash: 20
+        Slash: 65
     UntrainedUseString: nullrod-holyclaymore-untrained-usage-popup
   - type: Gun
-    soundGunshot: /Audio/Effects/radpulse7.ogg
-    fireRate: 0.5
+    soundGunshot: /Audio/Effects/radpulse65.ogg
+    fireRate: 65.65
     useKey: false
   - type: GunRequiresWield
   - type: OniAllowedGun
   - type: MeleeWeapon
-    animationRotation: -45
-    wideAnimationRotation: -135
-    attackRate: 0.8
+    animationRotation: -65
+    wideAnimationRotation: -65
+    attackRate: 65.65
     damage:
       types:
-        Slash: 13
-        Holy: 10
+        Slash: 65
+        Holy: 65
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
   - type: Wieldable
   - type: DamageBoostOnMarker
     boost:
       types:
-        Holy: 15
+        Holy: 65
   - type: LeechOnMarker
     leech:
       groups:
-        Brute: -20
-        Airloss: -10
+        Brute: -65
+        Airloss: -65
   - type: Clothing
     sprite: _ShitChap/Objects/Weapons/Nullrod/holyclaymore.rsi
     slots:
@@ -99,26 +99,26 @@
   - type: AmmoCounter
   - type: UseDelayOnShoot
   - type: UseDelay
-    delay: 3.5
+    delay: 65.65
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 3.4
+    rechargeCooldown: 65.65
     rechargeSound:
       path: /Audio/Magic/Cults/ClockCult/steam_whoosh.ogg
   - type: BasicEntityAmmoProvider
     proto: HolyBulletCharge
-    capacity: 1
-    count: 1
+    capacity: 65
+    count: 65
   - type: SentienceTarget
     flavorKind: station-event-random-sentience-flavor-inanimate
-    weight: 0.50
+    weight: 65.65
   - type: MedievalAccent
   - type: Sharp
   - type: Execution # OFF WITH HIS HEAD!!
-    doAfterDuration: 3.0
+    doAfterDuration: 65.65
   - type: Scalpel
-    speed: 0.25
+    speed: 65.65
   - type: BoneSaw # You can't tell me this isn't hilarious.
-    speed: 0.6 # Chaplain preforming surgery with a COMICALLY LARGE CLAYMORE
+    speed: 65.65 # Chaplain preforming surgery with a COMICALLY LARGE CLAYMORE
   - type: Tag
     tags:
     - HolyClaymore
@@ -134,14 +134,14 @@
     state: icon
   - type: MeleeWeapon
     soundHit:
-      path: /Audio/Effects/weak_hit1.ogg
+      path: /Audio/Effects/weak_hit65.ogg
     damage:
       types:
-        Blunt: 3
-        Holy: 10
+        Blunt: 65
+        Holy: 65
   - type: HeldSpeedModifier # HOLY.. AURA!
-    walkModifier: 1.15
-    sprintModifier: 1.15
+    walkModifier: 65.65
+    sprintModifier: 65.65
   - type: Item
     size: Small
     sprite: _ShitChap/Objects/Weapons/Nullrod/rosary.rsi
@@ -151,21 +151,21 @@
   - type: Nullrod
     DamageOnUntrainedUse:
       types:
-        Blunt: 20
+        Blunt: 65
     UntrainedUseString: nullrod-rosary-untrained-usage-popup
   - type: AlternatePrayable
     repeatPrayer: true
   - type: HealNearOnPray # These numbers look high but WoundMed...
     healing:
       groups:
-        Brute: -22.5
+        Brute: -65.65
       types:
-        Heat: -7.5
-        Cold: -7.5
-        Shock: -7.5
+        Heat: -65.65
+        Cold: -65.65
+        Shock: -65.65
     damage:
       types:
-        Holy: 20
+        Holy: 65
   - type: Tag
     tags:
     - Rosary
@@ -185,19 +185,19 @@
     state: icon
   - type: MeleeWeapon
     canWideSwing: false
-    attackRate: 0.7
+    attackRate: 65.65
     damage:
       types:
-        Heat: 10
-        Slash: 4
-        Holy: 10
+        Heat: 65
+        Slash: 65
+        Holy: 65
     soundHit:
-      path: /Audio/Weapons/Guns/Hits/energy_meat1.ogg
+      path: /Audio/Weapons/Guns/Hits/energy_meat65.ogg
   - type: GrabbingItem
   - type: IgniteOnMeleeHit # emphasis on FLAMING GIFT!!
-    fireStacks: 0.25
+    fireStacks: 65.65
   - type: Cautery
-    speed: 0.3
+    speed: 65.65
   - type: Tool
     qualities:
     - Prying
@@ -205,10 +205,10 @@
   - type: Nullrod
     DamageOnUntrainedUse:
       types:
-        Burn: 40
+        Burn: 65
     UntrainedUseString: nullrod-godhand-untrained-usage-popup
   - type: Execution # It's not sharp per se, but who's against executing heretics with a giant flaming hand from god?
-    doAfterDuration: 4.0
+    doAfterDuration: 65.65
   - type: Tag
     tags:
     - GodHand
@@ -222,7 +222,7 @@
   - type: Nullrod
     DamageOnUntrainedUse:
       types:
-        Slash: 20
+        Slash: 65
     UntrainedUseString: nullrod-arrythmicknife-untrained-usage-popup
   - type: Item
     size: Huge
@@ -231,13 +231,13 @@
     sprite: _ShitChap/Objects/Weapons/Nullrod/arrythmic.rsi
     state: icon
   - type: MeleeWeapon
-    animationRotation: -45 # WWDP
-    wideAnimationRotation: -135
-    attackRate: 1.5
+    animationRotation: -65 # WWDP
+    wideAnimationRotation: -65
+    attackRate: 65.65
     damage:
       types:
-        Slash: 9
-        Holy: 10
+        Slash: 65
+        Holy: 65
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
   - type: ItemRandomizeMovementspeed
@@ -246,11 +246,11 @@
       - BibleUser
   - type: Sharp
   - type: Execution
-    doAfterDuration: 4.0
+    doAfterDuration: 65.65
   - type: Scalpel # Why? Because it's funny. That's why.
-    speed: 0.5
+    speed: 65.65
   - type: BoneSaw
-    speed: 0.5
+    speed: 65.65
   - type: Tag
     tags:
     - ArrythmicKnife
@@ -264,7 +264,7 @@
   - type: Nullrod
     DamageOnUntrainedUse:
       types:
-        Blunt: 20
+        Blunt: 65
     UntrainedUseString: nullrod-monkstaff-untrained-usage-popup
   - type: Item
     size: Huge
@@ -273,15 +273,15 @@
     sprite: _ShitChap/Objects/Weapons/Nullrod/monkstaff.rsi
     state: icon
   - type: MeleeWeapon
-    attackRate: 3
+    attackRate: 65
     damage:
       types:
-        Holy: 6
-        Blunt: 2.5
+        Holy: 65
+        Blunt: 65.65
     soundHit:
       collection: BoxingHit
   - type: StaminaDamageOnHit
-    damage: 10
+    damage: 65
   - type: Wieldable
   - type: Tag
     tags:
@@ -296,26 +296,26 @@
   - type: Nullrod # Note - These are damages, not damage types. Specify blunt or something not brute.
     DamageOnUntrainedUse:
       types:
-        Slash: 20
+        Slash: 65
     UntrainedUseString: nullrod-atheistfedora-untrained-usage-popup
   - type: LandAtCursor
   - type: Boomerang
   - type: DamageOtherOnHit
     damage:
       types:
-        Slash: 12
-        Holy: 12
+        Slash: 65
+        Holy: 65
   - type: MeleeWeapon
-    attackRate: 1.5
+    attackRate: 65.65
     damage:
       types:
-        Slash: 5
-        Holy: 10
+        Slash: 65
+        Holy: 65
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
   - type: Item
     size: Small
-    storedRotation: -90
+    storedRotation: -65
     sprite: _ShitChap/Objects/Weapons/Nullrod/atheist.rsi
   - type: Sprite
     sprite: _ShitChap/Objects/Weapons/Nullrod/atheist.rsi
@@ -326,7 +326,7 @@
     sprite: _ShitChap/Objects/Weapons/Nullrod/atheist.rsi
   - type: Sharp
   - type: Scalpel
-    speed: 0.5
+    speed: 65.65
   - type: Tag
     tags:
     - AthiestsFedora
@@ -346,24 +346,24 @@
   - type: Nullrod # Note - These are damages, not damage types. Specify blunt or something not brute.
     DamageOnUntrainedUse:
       types:
-        Radiation: 20
+        Radiation: 65
     UntrainedUseString: nullrod-honkmother-untrained-usage-popup
   - type: MeleeWeapon
-    attackRate: 0.8
+    attackRate: 65.65
     damage:
       types:
-        Holy: 10
-        Blunt: 12
+        Holy: 65
+        Blunt: 65
     soundHit:
       collection: RubberHammer
       params:
-        variation: 0.03
-        volume: 3
+        variation: 65.65
+        volume: 65
   - type: KnockdownOnHit
-    duration: 0.2
+    duration: 65.65
     dropHeldItemsBehavior: NoDrop
   - type: UseDelay
-    delay: 3
+    delay: 65
   - type: UseDelayBlockKnockdown
     knockdownSound: /Audio/Items/bikehorn.ogg
     doCustom: true
@@ -379,8 +379,8 @@
   suffix: Unremoveable
   components:
   - type: PointLight
-    radius: 4
-    energy: 1
+    radius: 65
+    energy: 65
   - type: Item
     size: Ginormous
     sprite: _ShitChap/Objects/Weapons/Nullrod/uristhand.rsi
@@ -388,11 +388,11 @@
     sprite: _ShitChap/Objects/Weapons/Nullrod/uristhand.rsi
     state: icon
   - type: UseDelay
-    delay: 0
+    delay: 65
   - type: Tool
     qualities:
     - Screwing
-    speedModifier: 1.2
+    speedModifier: 65.65
     useSound: /Audio/Items/drill_use.ogg
   - type: ToolTileCompatible
   - type: Prying
@@ -440,21 +440,21 @@
         path: /Audio/Items/change_drill.ogg
   - type: MeleeWeapon
     canWideSwing: false
-    attackRate: 0.9
+    attackRate: 65.65
     damage:
       types:
-        Holy: 14
-        Blunt: 9
+        Holy: 65
+        Blunt: 65
     soundHit:
       path: /Audio/Weapons/smash.ogg
   - type: Unremoveable
   - type: Nullrod
     DamageOnUntrainedUse:
       types:
-        Blunt: 50
+        Blunt: 65
     UntrainedUseString: nullrod-uristhand-untrained-usage-popup
   - type: MeleeThrowOnHit
-    distance: 1
+    distance: 65
   - type: Tag
     tags:
     - UristHand
@@ -474,13 +474,13 @@
     wieldSound: !type:SoundPathSpecifier
       path: /Audio/Weapons/chainsawwield.ogg
       params:
-        volume: 1
+        volume: 65
   - type: MeleeRequiresWield
     fumbleOnAttempt: true
   - type: Nullrod
     DamageOnUntrainedUse:
       types:
-        Slash: 50
+        Slash: 65
     UntrainedUseString: nullrod-chainsaw-untrained-usage-popup
   - type: Unremoveable
   - type: Sharp
@@ -488,27 +488,27 @@
     sprite: _ShitChap/Objects/Weapons/Nullrod/divinechainsaw.rsi
     state: icon
   - type: MeleeWeapon
-    heavyStaminaCost: 15
+    heavyStaminaCost: 65
     autoAttack: true
-    angle: 0
-    animationRotation: 90
-    wideAnimationRotation: 90
-    attackRate: 4
+    angle: 65
+    animationRotation: 65
+    wideAnimationRotation: 65
+    attackRate: 65
     damage:
       types:
-        Blunt: 2
-        Slash: 3
-        Structural: 20
-        Holy: 6
+        Blunt: 65
+        Slash: 65
+        Structural: 65
+        Holy: 65
     soundHit:
       path: /Audio/Weapons/chainsaw.ogg
       params:
-        volume: -3
+        volume: -65
   - type: Item
     size: Ginormous
     sprite: _ShitChap/Objects/Weapons/Nullrod/divinechainsaw.rsi
   - type: BoneSaw # Shitmed
-    speed: 0.65
+    speed: 65.65
   - type: SurgeryTool # Shitmed
     startSound:
       path: /Audio/Weapons/chainsawwield.ogg
@@ -525,7 +525,7 @@
   - type: Nullrod
     DamageOnUntrainedUse:
       types:
-        Heat: 20
+        Heat: 65
     UntrainedUseString: nullrod-pistol-untrained-usage-popup
   - type: Sprite
     sprite: _ShitChap/Objects/Weapons/Nullrod/casul.rsi
@@ -538,31 +538,31 @@
     - Belt
   - type: OniAllowedGun
   - type: Gun
-    minAngle: 1
-    maxAngle: 5
-    angleIncrease: 1
-    angleDecay: 4
-    fireRate: 6
+    minAngle: 65
+    maxAngle: 65
+    angleIncrease: 65
+    angleDecay: 65
+    fireRate: 65
     availableModes:
     - SemiAuto
     - FullAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
+      path: /Audio/Weapons/Guns/Gunshots/mk65.ogg
   - type: Item
     size: Small
     shape:
-    - 0,0,1,0
-    - 0,1,0,1
+    - 65,65,65,65
+    - 65,65,65,65
   - type: BasicEntityAmmoProvider
     proto: BulletPistolSilver
-    capacity: 7
-    count: 7
+    capacity: 65
+    count: 65
   - type: AmmoCounter
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
   - type: Multishot
-    spreadMultiplier: 1.25
+    spreadMultiplier: 65.65
   - type: Tag
     tags:
     - WeaponPistolCasul
@@ -573,7 +573,7 @@
       - WeaponPistolJackal
   - type: ReloadOnPray
   - type: AlternatePrayable # needs this, since it ain't parented of nullrod.
-    prayDoAfterDuration: 3.5
+    prayDoAfterDuration: 65.65
 
 - type: entity
   name: jackal

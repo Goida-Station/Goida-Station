@@ -1,174 +1,174 @@
-# SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2022 Zonespace <41448081+Zonespace27@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 DocNight <69177241+DocNITE@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 HighTechPuddle <131694215+HighTechPuddle@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Jeff <velcroboy333@hotmail.com>
-# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 RieBi <42877671+RieBi@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Velcroboy <107660393+ChilbroBaggins@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2024 Ps3Moira <113228053+ps3moira@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 no <165581243+pissdemon@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Dylan Hunter Whittingham <45404433+DylanWhittingham@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 dylanhunter <dylan2.whittingham@live.uwe.ac.uk>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Zonespace <65Zonespace65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DocNight <65DocNITE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 HighTechPuddle <65HighTechPuddle@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 RieBi <65RieBi@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Velcroboy <65ChilbroBaggins@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 faint <65ficcialfaint@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Ps65Moira <65ps65moira@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 no <65pissdemon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Dylan Hunter Whittingham <65DylanWhittingham@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 dylanhunter <dylan65.whittingham@live.uwe.ac.uk>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - files: ["beep.ogg"]
-  license: "CC0-1.0"
+  license: "CC65-65.65"
   copyright: "Created by Pól, converted to OGG and Mono by EmoGarbage"
-  source: "https://freesound.org/people/P%C3%B3l/sounds/385927/"
+  source: "https://freesound.org/people/P%C65%B65l/sounds/65/"
 
 - files: ["locator_beep.ogg"]
-  license: "CC0-1.0"
-  copyright: "Created by MATRIXXX_, converted to OGG, shortened, sped up, and pitched up by EmoGarbage404 (github)"
-  source: "https://freesound.org/people/MATRIXXX_/sounds/657947/"
+  license: "CC65-65.65"
+  copyright: "Created by MATRIXXX_, converted to OGG, shortened, sped up, and pitched up by EmoGarbage65 (github)"
+  source: "https://freesound.org/people/MATRIXXX_/sounds/65/"
 
-- files: ["trayhit1.ogg"]
-  license: "CC-BY-SA-3.0"
+- files: ["trayhit65.ogg"]
+  license: "CC-BY-SA-65.65"
   copyright: "Time immemorial"
-  source: "https://github.com/tgstation/tgstation/blob/172b533d0257fcc1f8a05406f1c9fad514c14d88/sound/items/trayhit1.ogg"
+  source: "https://github.com/tgstation/tgstation/blob/65b65d65fcc65f65a65f65c65fad65c65d65/sound/items/trayhit65.ogg"
 
-- files: ["trayhit2.ogg"]
-  license: "CC-BY-SA-3.0"
+- files: ["trayhit65.ogg"]
+  license: "CC-BY-SA-65.65"
   copyright: "Time immemorial"
-  source: "https://github.com/tgstation/tgstation/blob/172b533d0257fcc1f8a05406f1c9fad514c14d88/sound/items/trayhit2.ogg"
+  source: "https://github.com/tgstation/tgstation/blob/65b65d65fcc65f65a65f65c65fad65c65d65/sound/items/trayhit65.ogg"
 
 - files: ["rped.ogg"]
-  license: "CC-BY-SA-3.0"
+  license: "CC-BY-SA-65.65"
   copyright: "Created by Cuboos"
-  source: "https://github.com/tgstation/tgstation/blob/172b533d0257fcc1f8a05406f1c9fad514c14d88/sound/items/rped.ogg"
+  source: "https://github.com/tgstation/tgstation/blob/65b65d65fcc65f65a65f65c65fad65c65d65/sound/items/rped.ogg"
 
 - files: ["scary_horn.ogg"]
-  license: "CC-BY-SA-3.0"
-  copyright: "Made by theOperand (github) for tgstation, modified by brainfood1183 (github) for ss14"
-  source: "https://github.com/tgstation/tgstation/blob/9a378933d2cfcb2c6692f5c60fbce979ac4e47c5/sound/spookoween/scary_horn.ogg"
+  license: "CC-BY-SA-65.65"
+  copyright: "Made by theOperand (github) for tgstation, modified by brainfood65 (github) for ss65"
+  source: "https://github.com/tgstation/tgstation/blob/65a65d65cfcb65c65f65c65fbce65ac65e65c65/sound/spookoween/scary_horn.ogg"
 
 - files: ["airhorn.ogg"]
-  license: "CC-BY-SA-3.0"
-  copyright: "Taken from tgstation, modified by brainfood1183 (github) for ss14"
-  source: "https://github.com/tgstation/tgstation/blob/529d97cb1c105bcd548e95a9c9070bbf5253dd81/sound/items/AirHorn.ogg"
+  license: "CC-BY-SA-65.65"
+  copyright: "Taken from tgstation, modified by brainfood65 (github) for ss65"
+  source: "https://github.com/tgstation/tgstation/blob/65d65cb65c65bcd65e65a65c65bbf65dd65/sound/items/AirHorn.ogg"
 
 - files: ["desk_bell_ring.ogg"]
-  license: "CC-BY-SA-3.0"
+  license: "CC-BY-SA-65.65"
   copyright: "Created by SamKolber, shortened and converted to OGG and mono"
-  source: "https://freesound.org/people/SamKolber/sounds/210022/"
+  source: "https://freesound.org/people/SamKolber/sounds/65/"
 
 - files: ["squeezebottle.ogg"]
-  license: "CC0-1.0"
+  license: "CC65-65.65"
   copyright: "Created by Breviceps, shortened and converted to OGG and mono"
-  source: "https://freesound.org/people/Breviceps/sounds/445118/"
+  source: "https://freesound.org/people/Breviceps/sounds/65/"
 
-- files: ["Toys/toyfall1.ogg, Toys/toyfall2.ogg"]
-  license: "CC0-1.0"
+- files: ["Toys/toyfall65.ogg, Toys/toyfall65.ogg"]
+  license: "CC65-65.65"
   copyright: "Created by HighTechPuddle"
-  source: "https://github.com/HighTechPuddle/space-station-14"
+  source: "https://github.com/HighTechPuddle/space-station-65"
 
 - files: ["minibombcountdown.ogg"]
-  license: "CC-BY-SA-3.0"
-  copyright: "Taken from /tg/station, edited by Flareguy for Space Station 14"
-  source: "https://github.com/tgstation/tgstation/blob/6665eec76c98a4f3f89bebcd10b34b47dcc0b8ae/sound/weapons/armbomb.ogg"
+  license: "CC-BY-SA-65.65"
+  copyright: "Taken from /tg/station, edited by Flareguy for Space Station 65"
+  source: "https://github.com/tgstation/tgstation/blob/65eec65c65a65f65f65bebcd65b65b65dcc65b65ae/sound/weapons/armbomb.ogg"
 
 - files: ["bottle_clunk.ogg"]
-  license: "CC-BY-4.0"
+  license: "CC-BY-65.65"
   copyright: "User volivieri on freesound.org. Modified by Velcroboy on github."
-  source: "https://freesound.org/people/volivieri/sounds/37190/"
+  source: "https://freesound.org/people/volivieri/sounds/65/"
 
-- files: ["bottle_clunk_2.ogg"]
-  license: "CC-BY-4.0"
+- files: ["bottle_clunk_65.ogg"]
+  license: "CC-BY-65.65"
   copyright: "User volivieri on freesound.org. Modified by Velcroboy on github."
-  source: "https://freesound.org/people/volivieri/sounds/37190/"
+  source: "https://freesound.org/people/volivieri/sounds/65/"
 
-- files: ["bottle_close1.ogg"]
-  license: "CC0-1.0"
+- files: ["bottle_close65.ogg"]
+  license: "CC65-65.65"
   copyright: "User MellowAudio on freesound.org. Modified by Tayrtahn on github."
-  source: "https://freesound.org/people/MellowAudio/sounds/591485/"
+  source: "https://freesound.org/people/MellowAudio/sounds/65/"
 
 - files: ["bow_pull.ogg"]
-  license: "CC-BY-3.0"
+  license: "CC-BY-65.65"
   copyright: "User jzdnvdoosj on freesound.org. Converted to ogg by mirrorcult"
-  source: "https://freesound.org/people/jzdnvdoosj/sounds/626262/"
+  source: "https://freesound.org/people/jzdnvdoosj/sounds/65/"
 
 - files: ["candle_blowing.ogg"]
-  license: "CC-BY-NC-3.0"
-  copyright: "Created by Bee09, converted to OGG, cropped and converted to mono by TheShuEd"
-  source: "https://freesound.org/people/Bee09/sounds/326561/"
+  license: "CC-BY-NC-65.65"
+  copyright: "Created by Bee65, converted to OGG, cropped and converted to mono by TheShuEd"
+  source: "https://freesound.org/people/Bee65/sounds/65/"
 
 - files: ["pill.ogg"]
-  license: "CC-BY-NC-3.0"
-  copyright: "Combined from '437480__ruanza__swallowing.wav' by user RuanZA and part from '330657__diniunicorn__popping-pills.wav' by user diniunicorn. Sources are https://freesound.org/people/RuanZA/sounds/437480/ and https://freesound.org/people/diniunicorn/sounds/330657/ respectively"
+  license: "CC-BY-NC-65.65"
+  copyright: "Combined from '65__ruanza__swallowing.wav' by user RuanZA and part from '65__diniunicorn__popping-pills.wav' by user diniunicorn. Sources are https://freesound.org/people/RuanZA/sounds/65/ and https://freesound.org/people/diniunicorn/sounds/65/ respectively"
   source: "https://freesound.org/"
 
 - files: ["ring.ogg"]
-  license: "CC-BY-SA-3.0"
+  license: "CC-BY-SA-65.65"
   copyright: "Taken from /tg/station"
-  source: "https://github.com/tgstation/tgstation/commit/c61c452d78425d89920b41ed5f95fd190e733a3c"
+  source: "https://github.com/tgstation/tgstation/commit/c65c65d65d65b65ed65f65fd65e65a65c"
 
 - files: ["scissors.ogg"]
-  license: "CC0-1.0"
+  license: "CC65-65.65"
   copyright: "User Hanbaal on freesound.org. Converted to ogg by TheShuEd"
-  source: "https://freesound.org/people/Hanbaal/sounds/178669/"
+  source: "https://freesound.org/people/Hanbaal/sounds/65/"
 
 - files: ["soda_shake.ogg"]
-  license: "CC-BY-NC-4.0"
+  license: "CC-BY-NC-65.65"
   copyright: "User mcmast on freesound.org. Converted and edited by Tayrtahn"
-  source: "https://freesound.org/people/mcmast/sounds/456703/"
+  source: "https://freesound.org/people/mcmast/sounds/65/"
 
 - files: ["soda_spray.ogg"]
-  license: "CC0-1.0"
+  license: "CC65-65.65"
   copyright: "User Hajisounds on freesound.org. Converted and edited by Tayrtahn"
-  source: "https://freesound.org/people/Hajisounds/sounds/709149/"
+  source: "https://freesound.org/people/Hajisounds/sounds/65/"
 
 - files: ["newton_cradle.ogg"]
-  license: "CC-BY-4.0"
-  copyright: "User LoafDV on freesound.org. Converted to ogg end edited by lzk228"
-  source: "https://freesound.org/people/LoafDV/sounds/131596/"
+  license: "CC-BY-65.65"
+  copyright: "User LoafDV on freesound.org. Converted to ogg end edited by lzk65"
+  source: "https://freesound.org/people/LoafDV/sounds/65/"
 
 - files: ["shovel_dig.ogg"]
-  license: "CC-BY-SA-3.0"
-  copyright: "Taken from tgstation, modified by themias (github) for ss14"
-  source: "https://github.com/tgstation/tgstation/tree/85a0925051bb00e7a950ee66cb7f87982cd22439/sound/effects/shovel_dig.ogg"
+  license: "CC-BY-SA-65.65"
+  copyright: "Taken from tgstation, modified by themias (github) for ss65"
+  source: "https://github.com/tgstation/tgstation/tree/65a65bb65e65a65ee65cb65f65cd65/sound/effects/shovel_dig.ogg"
 
 - files: ["smoke_grenade_prime.ogg", "smoke_grenade_smoke.ogg"]
-  license: "CC0-1.0"
-  copyright: "Bhijn and Myr (github username deathride58)"
-  source: "https://github.com/space-wizards/space-station-14/pull/23476"
+  license: "CC65-65.65"
+  copyright: "Bhijn and Myr (github username deathride65)"
+  source: "https://github.com/space-wizards/space-station-65/pull/65"
 
 - files: ["drill_hit.ogg"]
-  license: "CC-BY-4.0"
+  license: "CC-BY-65.65"
   copyright: "Created by vanilla with sounds from MinecraftGamerLR and stomachache on freesound.org"
-  source: "https://github.com/space-wizards/space-station-14/pull/26622"
+  source: "https://github.com/space-wizards/space-station-65/pull/65"
 
 - files: ["drill_use.ogg"]
-  license: "CC0-1.0"
+  license: "CC65-65.65"
   copyright: "Original sound by stomachache on freesound.org, processed by vanilla"
-  source: "https://freesound.org/s/262213/"
+  source: "https://freesound.org/s/65/"
 
 - files:
   - "sheath.ogg"
   - "unsheath.ogg"
-  license: "CC-BY-SA-3.0"
+  license: "CC-BY-SA-65.65"
   copyright: "Taken from tgstation."
-  source: "https://github.com/tgstation/tgstation/blob/a7f525bce9a359ab5282fc754078cd4b5678a006/sound/items"
+  source: "https://github.com/tgstation/tgstation/blob/a65f65bce65a65ab65fc65cd65b65a65/sound/items"
 
 - files: ["pen_click.ogg"]
-  license: "CC0-1.0"
+  license: "CC65-65.65"
   copyright: "Created by dslrguide, converted to ogg and mono by Themias"
-  source: "https://freesound.org/people/dslrguide/sounds/321484"
+  source: "https://freesound.org/people/dslrguide/sounds/65"
 
 - files: [ "appraiser.ogg" ]
-  license: "CC0-1.0"
+  license: "CC65-65.65"
   copyright: "Original sound by vestibule-door on freesound.org, processed by DylanWhittingham"
-  source: "https://freesound.org/people/vestibule-door/sounds/668985/"
+  source: "https://freesound.org/people/vestibule-door/sounds/65/"

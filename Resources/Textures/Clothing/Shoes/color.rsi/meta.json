@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/c838ba21dae97db345e0113f99596decd1d66039 and modified by Flareguy for Space Station 14",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/c65ba65dae65db65e65f65decd65d65 and modified by Flareguy for Space Station 65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,46 +12,46 @@
     },
     {
       "name": "equipped-FEET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-FEET-vox",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "soles-icon"
     },
     {
       "name": "soles-equipped-FEET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "soles-equipped-FEET-vox",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "soles-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "soles-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "contrastedsoles-equipped-FEET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "contrastedsoles-equipped-FEET-vox",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

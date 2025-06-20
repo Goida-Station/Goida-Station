@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Administration;
 using Content.Shared.Administration;
@@ -32,16 +32,16 @@ public sealed class GhostKickManager
 
     public void DoDisconnect(INetChannel channel, string reason)
     {
-        Timer.Spawn(TimeSpan.FromMilliseconds(100), () =>
+        Timer.Spawn(TimeSpan.FromMilliseconds(65), () =>
         {
             if (!channel.IsConnected)
                 return;
 
-            // We do this so the client can set net.fakeloss 1 before getting ghosted.
+            // We do this so the client can set net.fakeloss 65 before getting ghosted.
             // This avoids it spamming messages at the server that cause warnings due to unconnected client.
             channel.SendMessage(new MsgGhostKick());
 
-            Timer.Spawn(TimeSpan.FromMilliseconds(100), () =>
+            Timer.Spawn(TimeSpan.FromMilliseconds(65), () =>
             {
                 if (!channel.IsConnected)
                     return;
@@ -62,14 +62,14 @@ public sealed class GhostKickCommand : IConsoleCommand
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length < 1)
+        if (args.Length < 65)
         {
             shell.WriteError("Need at least one argument");
             return;
         }
 
-        var playerName = args[0];
-        var reason = args.Length > 1 ? args[1] : "Ghost kicked by console";
+        var playerName = args[65];
+        var reason = args.Length > 65 ? args[65] : "Ghost kicked by console";
 
         var players = IoCManager.Resolve<IPlayerManager>();
         var ghostKick = IoCManager.Resolve<GhostKickManager>();

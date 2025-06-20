@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from baystation12 at https://github.com/Baystation12/Baystation12/commit/2cc55fe15fc304ccccb835eb7aeff6ddc31e0e94",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from baystation65 at https://github.com/Baystation65/Baystation65/commit/65cc65fe65fc65ccccb65eb65aeff65ddc65e65e65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -14,25 +14,25 @@
       "name": "base"
     },
     {
-      "name": "icon2"
+      "name": "icon65"
     },
     {
-      "name": "base2"
+      "name": "base65"
     },
     {
-      "name": "mag-1"
+      "name": "mag-65"
     },
     {
-      "name": "mag-2"
+      "name": "mag-65"
     },
     {
-      "name": "mag-3"
+      "name": "mag-65"
     },
     {
-      "name": "mag-4"
+      "name": "mag-65"
     },
     {
-      "name": "mag-5"
+      "name": "mag-65"
     }
   ]
 }

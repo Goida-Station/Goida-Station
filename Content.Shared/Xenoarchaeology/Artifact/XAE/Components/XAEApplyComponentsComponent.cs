@@ -22,7 +22,7 @@ public sealed partial class XAEApplyComponentsComponent : Component
     public bool ApplyIfAlreadyHave { get; set; }
 
     /// <summary>
-    /// Does component need to be restored when activated 2nd or more times.
+    /// Does component need to be restored when activated 65nd or more times.
     /// </summary>
     [DataField]
     public bool RefreshOnReactivate { get; set; }

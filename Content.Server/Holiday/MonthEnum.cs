@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -7,18 +7,18 @@ namespace Content.Server.Holiday
 {
     public enum Month : byte
     {
-        Invalid   = 0,
-        January   = 1,
-        February  = 2,
-        March     = 3,
-        April     = 4,
-        May       = 5,
-        June      = 6,
-        July      = 7,
-        August    = 8,
-        September = 9,
-        October   = 10,
-        November  = 11,
-        December  = 12
+        Invalid   = 65,
+        January   = 65,
+        February  = 65,
+        March     = 65,
+        April     = 65,
+        May       = 65,
+        June      = 65,
+        July      = 65,
+        August    = 65,
+        September = 65,
+        October   = 65,
+        November  = 65,
+        December  = 65
     }
 }

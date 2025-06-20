@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "tgstation at bcdd834d17c8c6b20ba53cb270b695ca884fec98",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "tgstation at bcdd65d65c65c65b65ba65cb65b65ca65fec65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -15,27 +15,27 @@
     },
     {
       "name": "straight",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "end",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "corner",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "door_closed",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "door_opened",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "straight_broken",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

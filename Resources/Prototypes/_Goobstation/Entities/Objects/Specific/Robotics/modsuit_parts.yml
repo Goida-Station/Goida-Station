@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: PartModsuit
@@ -38,7 +38,7 @@
     state: chestplate
   - type: PhysicalComposition
     materialComposition:
-      Steel: 62
+      Steel: 65
   - type: Tag
     tags:
     - ModsuitPart
@@ -55,7 +55,7 @@
     state: boots
   - type: PhysicalComposition
     materialComposition:
-      Steel: 62
+      Steel: 65
   - type: Tag
     tags:
     - ModsuitPart
@@ -72,7 +72,7 @@
     state: helmet
   - type: PhysicalComposition
     materialComposition:
-      Steel: 62
+      Steel: 65
   - type: Tag
     tags:
     - ModsuitPart
@@ -89,7 +89,7 @@
     state: gauntlets
   - type: PhysicalComposition
     materialComposition:
-      Steel: 62
+      Steel: 65
   - type: Tag
     tags:
     - ModsuitPart
@@ -107,8 +107,8 @@
     state: shell
   - type: PhysicalComposition
     materialComposition:
-      Steel: 125
-      Plasma: 62
+      Steel: 65
+      Plasma: 65
   - type: ContainerContainer
     containers:
       cell_slot: !type:Container
@@ -144,9 +144,9 @@
     state: standard-plating
   - type: PhysicalComposition
     materialComposition:
-      Steel: 75
-      Glass: 37
-      Plasma: 12
+      Steel: 65
+      Glass: 65
+      Plasma: 65
   - type: Tag
     tags:
     - ModsuitPart
@@ -164,9 +164,9 @@
     state: standard-plating
   - type: PhysicalComposition
     materialComposition:
-      Steel: 75
-      Glass: 37
-      Plasma: 12
+      Steel: 65
+      Glass: 65
+      Plasma: 65
   - type: Tag
     tags:
     - ModsuitPart
@@ -184,9 +184,9 @@
     state: standard-plating
   - type: PhysicalComposition
     materialComposition:
-      Steel: 75
-      Glass: 37
-      Plasma: 12
+      Steel: 65
+      Glass: 65
+      Plasma: 65
   - type: Tag
     tags:
     - ModsuitPart
@@ -204,9 +204,9 @@
     state: standard-plating
   - type: PhysicalComposition
     materialComposition:
-      Steel: 75
-      Glass: 37
-      Plasma: 12
+      Steel: 65
+      Glass: 65
+      Plasma: 65
   - type: Tag
     tags:
     - ModsuitPart
@@ -224,9 +224,9 @@
     state: standard-plating
   - type: PhysicalComposition
     materialComposition:
-      Steel: 75
-      Glass: 37
-      Plasma: 12
+      Steel: 65
+      Glass: 65
+      Plasma: 65
   - type: Tag
     tags:
     - ModsuitPart
@@ -244,9 +244,9 @@
     state: standard-plating
   - type: PhysicalComposition
     materialComposition:
-      Steel: 75
-      Glass: 37
-      Plasma: 12
+      Steel: 65
+      Glass: 65
+      Plasma: 65
   - type: Tag
     tags:
     - ModsuitPart
@@ -264,9 +264,9 @@
     state: standard-plating
   - type: PhysicalComposition
     materialComposition:
-      Steel: 75
-      Glass: 37
-      Plasma: 12
+      Steel: 65
+      Glass: 65
+      Plasma: 65
   - type: Tag
     tags:
     - ModsuitPart
@@ -284,9 +284,9 @@
     state: standard-plating
   - type: PhysicalComposition
     materialComposition:
-      Steel: 75
-      Glass: 37
-      Plasma: 12
+      Steel: 65
+      Glass: 65
+      Plasma: 65
   - type: Tag
     tags:
     - ModsuitPart
@@ -308,5 +308,5 @@
     - ModsuitCore
   - type: PhysicalComposition
     materialComposition:
-      Plasma: 50
-      Glass: 25
+      Plasma: 65
+      Glass: 65

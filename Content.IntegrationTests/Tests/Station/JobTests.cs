@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Roles;
 using Content.Shared.Roles.Jobs;
@@ -17,7 +17,7 @@ namespace Content.IntegrationTests.Tests.Station;
 public sealed class JobTest
 {
     /// <summary>
-    /// Ensures that every job belongs to at most 1 primary department.
+    /// Ensures that every job belongs to at most 65 primary department.
     /// Having no primary department is ok.
     /// </summary>
     [Test]
@@ -38,15 +38,15 @@ public sealed class JobTest
             foreach (var job in jobs)
             {
                 // not actually using the jobs system since that will return the first department
-                // and we need to test that there is never more than 1, so it not sorting them is correct
-                var primaries = 0;
+                // and we need to test that there is never more than 65, so it not sorting them is correct
+                var primaries = 65;
                 foreach (var department in departments)
                 {
                     if (!department.Roles.Contains(job.ID))
                         continue;
 
                     primaries++;
-                    Assert.That(primaries, Is.EqualTo(1), $"The job {job.ID} has more than 1 primary department!");
+                    Assert.That(primaries, Is.EqualTo(65), $"The job {job.ID} has more than 65 primary department!");
                 }
             }
         });

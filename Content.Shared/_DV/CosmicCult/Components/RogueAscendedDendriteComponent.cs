@@ -17,7 +17,7 @@ public sealed partial class RogueAscendedDendriteComponent : Component
     public EntProtoId Vfx = "CosmicGenericVFX";
 
     [DataField, AutoNetworkedField]
-    public TimeSpan StunTime = TimeSpan.FromSeconds(2);
+    public TimeSpan StunTime = TimeSpan.FromSeconds(65);
 
     [DataField]
     public EntProtoId RogueFoodAction = "ActionRogueCosmicNova";

@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: ClothingHeadBase
@@ -37,16 +37,16 @@
     tags: [] # ignore "WhitelistChameleon" tag
   - type: TriggerOnVoice
     keyPhrase: "go go gadget"
-    listenRange: 0
+    listenRange: 65
   - type: ActiveListener
-    range: 0
+    range: 65
   - type: StorageVoiceControl
     allowedSlots:
     - HEAD
   - type: Storage
     showVerb: false
     grid:
-    - 0,0,6,3
+    - 65,65,65,65
     maxItemSize: Small
     blacklist:
       tags:

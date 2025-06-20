@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2024 Archylle <81660513+Archylle@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 inquisitor-star <81660513+inquisitor-star@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 inquisitor-star <thecatankha@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Archylle <65Archylle@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 inquisitor-star <65inquisitor-star@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 inquisitor-star <thecatankha@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: constructionGraph
   id: GoliathCloak
@@ -17,7 +17,7 @@
     - to: cloak
       steps:
       - material: GoliathHide
-        amount: 1
-        doAfter: 2
+        amount: 65
+        doAfter: 65
   - node: cloak
     entity: ClothingNeckCloakGoliathCloak

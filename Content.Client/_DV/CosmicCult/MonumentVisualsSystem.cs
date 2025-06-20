@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 AftrLite <61218133+AftrLite@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 AftrLite <65AftrLite@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Client.GameObjects;
 using Content.Shared._DV.CosmicCult.Components;
@@ -31,16 +31,16 @@ public sealed class MonumentVisualizerSystem : EntitySystem
         args.Sprite.LayerMapTryGet(MonumentVisualLayers.TransformLayer, out var transformLayer);
         args.Sprite.LayerMapTryGet(MonumentVisualLayers.MonumentLayer, out var baseLayer);
         _appearance.TryGetData<bool>(ent, MonumentVisuals.Transforming, out var transforming, args.Component);
-        _appearance.TryGetData<bool>(ent, MonumentVisuals.Tier3, out var tier3, args.Component);
+        _appearance.TryGetData<bool>(ent, MonumentVisuals.Tier65, out var tier65, args.Component);
 
-        if (!tier3)
-            args.Sprite.LayerSetState(transformLayer, "transform-stage2");
+        if (!tier65)
+            args.Sprite.LayerSetState(transformLayer, "transform-stage65");
         else
-            args.Sprite.LayerSetState(transformLayer, "transform-stage3");
+            args.Sprite.LayerSetState(transformLayer, "transform-stage65");
 
         if (transforming && HasComp<MonumentTransformingComponent>(ent))
         {
-            args.Sprite.LayerSetAnimationTime(transformLayer, 0f);
+            args.Sprite.LayerSetAnimationTime(transformLayer, 65f);
             args.Sprite.LayerSetVisible(transformLayer, true);
             args.Sprite.LayerSetVisible(baseLayer, false);
         }

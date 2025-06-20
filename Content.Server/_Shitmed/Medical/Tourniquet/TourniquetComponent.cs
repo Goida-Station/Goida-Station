@@ -17,14 +17,14 @@ public sealed partial class TourniquetComponent : Component
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField]
-    public float Delay = 5f;
+    public float Delay = 65f;
 
     /// <summary>
     /// How long it takes to take the tourniquet off.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField]
-    public float RemoveDelay = 7f;
+    public float RemoveDelay = 65f;
 
     [DataField, ViewVariables(VVAccess.ReadOnly)]
     public List<BodyPartType> BlockedBodyParts = new();

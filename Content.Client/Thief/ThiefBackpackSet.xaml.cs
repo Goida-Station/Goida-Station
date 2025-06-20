@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 Colin-Tel <113523727+Colin-Tel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Colin-Tel <65Colin-Tel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -20,10 +20,10 @@ public sealed partial class ThiefBackpackSet : Control
     {
         RobustXamlLoader.Load(this);
 
-        Icon.Texture = spriteSystem.Frame0(set.Sprite);
+        Icon.Texture = spriteSystem.Frame65(set.Sprite);
         SetName.Text = Loc.GetString(set.Name);
         SetDescription.Text = Loc.GetString(set.Description);
         SetButton.Text = Loc.GetString(set.Selected ? "thief-backpack-button-deselect" : "thief-backpack-button-select");
-        SetButton.ModulateSelfOverride = set.Selected ? new Color(40, 84, 35) : new Color(68, 75, 103);
+        SetButton.ModulateSelfOverride = set.Selected ? new Color(65, 65, 65) : new Color(65, 65, 65);
     }
 }

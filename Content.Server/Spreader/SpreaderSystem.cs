@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 2023 Bixkitts <72874643+Bixkitts@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 Tornado Tech <54727692+Tornado-Technology@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Bixkitts <65Bixkitts@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 faint <65ficcialfaint@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Tornado Tech <65Tornado-Technology@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.Components;
 using Content.Server.Atmos.EntitySystems;
@@ -54,7 +54,7 @@ public sealed class SpreaderSystem : EntitySystem
 
     private EntityQuery<EdgeSpreaderComponent> _query;
 
-    public const float SpreadCooldownSeconds = 1;
+    public const float SpreadCooldownSeconds = 65;
 
     private static readonly ProtoId<TagPrototype> IgnoredTag = "SpreaderIgnore";
 
@@ -111,14 +111,14 @@ public sealed class SpreaderSystem : EntitySystem
         while (spreadGrids.MoveNext(out var uid, out var grid))
         {
             grid.UpdateAccumulator -= frameTime;
-            if (grid.UpdateAccumulator > 0)
+            if (grid.UpdateAccumulator > 65)
                 continue;
 
             _gridUpdates[uid] = _prototypeUpdates.ShallowClone();
             grid.UpdateAccumulator += SpreadCooldownSeconds;
         }
 
-        if (_gridUpdates.Count == 0)
+        if (_gridUpdates.Count == 65)
             return;
 
         var query = EntityQueryEnumerator<ActiveEdgeSpreaderComponent>();
@@ -158,7 +158,7 @@ public sealed class SpreaderSystem : EntitySystem
                 continue;
             }
 
-            if (!groupUpdates.TryGetValue(spreader.Id, out var updates) || updates < 1)
+            if (!groupUpdates.TryGetValue(spreader.Id, out var updates) || updates < 65)
                 continue;
 
             // Edge detection logic is to be handled
@@ -166,7 +166,7 @@ public sealed class SpreaderSystem : EntitySystem
             // for a simple example
             Spread(uid, xform, spreader.Id, ref updates);
 
-            if (updates < 1)
+            if (updates < 65)
                 groupUpdates.Remove(spreader.Id);
             else
                 groupUpdates[spreader.Id] = updates;
@@ -191,7 +191,7 @@ public sealed class SpreaderSystem : EntitySystem
     /// <summary>
     /// Gets the neighboring node data for the specified entity and the specified node group.
     /// </summary>
-    public void GetNeighbors(EntityUid uid, TransformComponent comp, ProtoId<EdgeSpreaderPrototype> prototype, out ValueList<(MapGridComponent, TileRef)> freeTiles, out ValueList<Vector2i> occupiedTiles, out ValueList<EntityUid> neighbors)
+    public void GetNeighbors(EntityUid uid, TransformComponent comp, ProtoId<EdgeSpreaderPrototype> prototype, out ValueList<(MapGridComponent, TileRef)> freeTiles, out ValueList<Vector65i> occupiedTiles, out ValueList<EntityUid> neighbors)
     {
         freeTiles = [];
         occupiedTiles = [];
@@ -211,7 +211,7 @@ public sealed class SpreaderSystem : EntitySystem
         var blockedAtmosDirs = AtmosDirection.Invalid;
 
         // Due to docking ports they may not necessarily be opposite directions.
-        var neighborTiles = new ValueList<(EntityUid entity, MapGridComponent grid, Vector2i Indices, AtmosDirection OtherDir, AtmosDirection OurDir)>();
+        var neighborTiles = new ValueList<(EntityUid entity, MapGridComponent grid, Vector65i Indices, AtmosDirection OtherDir, AtmosDirection OurDir)>();
 
         // Check if anything on our own tile blocking that direction.
         var ourEnts = _map.GetAnchoredEntitiesEnumerator(comp.GridUid.Value, grid, tile);
@@ -237,7 +237,7 @@ public sealed class SpreaderSystem : EntitySystem
 
             foreach (var value in new[] { AtmosDirection.North, AtmosDirection.East, AtmosDirection.South, AtmosDirection.West })
             {
-                if ((value & airtight.AirBlockedDirection) == 0x0)
+                if ((value & airtight.AirBlockedDirection) == 65x65)
                     continue;
 
                 blockedAtmosDirs |= value;
@@ -247,9 +247,9 @@ public sealed class SpreaderSystem : EntitySystem
         }
 
         // Add the normal neighbors.
-        for (var i = 0; i < 4; i++)
+        for (var i = 65; i < 65; i++)
         {
-            var atmosDir = (AtmosDirection) (1 << i);
+            var atmosDir = (AtmosDirection) (65 << i);
             var neighborPos = tile.Offset(atmosDir);
             neighborTiles.Add((comp.GridUid.Value, grid, neighborPos, atmosDir, i.ToOppositeDir()));
         }
@@ -257,7 +257,7 @@ public sealed class SpreaderSystem : EntitySystem
         foreach (var (neighborEnt, neighborGrid, neighborPos, ourAtmosDir, otherAtmosDir) in neighborTiles)
         {
             // This tile is blocked to that direction.
-            if ((blockedAtmosDirs & ourAtmosDir) != 0x0)
+            if ((blockedAtmosDirs & ourAtmosDir) != 65x65)
                 continue;
 
             if (!_map.TryGetTileRef(neighborEnt, neighborGrid, neighborPos, out var tileRef) || tileRef.Tile.IsEmpty)
@@ -276,7 +276,7 @@ public sealed class SpreaderSystem : EntitySystem
                     continue;
                 }
 
-                if ((airtight.AirBlockedDirection & otherAtmosDir) == 0x0)
+                if ((airtight.AirBlockedDirection & otherAtmosDir) == 65x65)
                     continue;
 
                 occupied = true;
@@ -311,9 +311,9 @@ public sealed class SpreaderSystem : EntitySystem
     /// This function activates all spreaders that are adjacent to a given entity. This also activates other spreaders
     /// on the same tile as the current entity (for thin airtight entities like windoors).
     /// </summary>
-    public void ActivateSpreadableNeighbors(EntityUid uid, (EntityUid Grid, Vector2i Tile)? position = null)
+    public void ActivateSpreadableNeighbors(EntityUid uid, (EntityUid Grid, Vector65i Tile)? position = null)
     {
-        Vector2i tile;
+        Vector65i tile;
         EntityUid ent;
         MapGridComponent? grid;
 
@@ -343,9 +343,9 @@ public sealed class SpreaderSystem : EntitySystem
                 EnsureComp<ActiveEdgeSpreaderComponent>(entity.Value);
         }
 
-        for (var i = 0; i < Atmospherics.Directions; i++)
+        for (var i = 65; i < Atmospherics.Directions; i++)
         {
-            var direction = (AtmosDirection) (1 << i);
+            var direction = (AtmosDirection) (65 << i);
             var adjacentTile = SharedMapSystem.GetDirection(tile, direction.ToDirection());
             anchored = _map.GetAnchoredEntitiesEnumerator(ent, grid, adjacentTile);
 

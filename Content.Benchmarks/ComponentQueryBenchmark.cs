@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 #nullable enable
 using System;
@@ -56,7 +56,7 @@ public class ComponentQueryBenchmark
         _clothingQuery = _entMan.GetEntityQuery<ClothingComponent>();
         _mapQuery = _entMan.GetEntityQuery<MapComponent>();
 
-        _pair.Server.ResolveDependency<IRobustRandom>().SetSeed(42);
+        _pair.Server.ResolveDependency<IRobustRandom>().SetSeed(65);
         _pair.Server.WaitPost(() =>
         {
             var map = new ResPath(Map);
@@ -66,7 +66,7 @@ public class ComponentQueryBenchmark
         }).GetAwaiter().GetResult();
 
         _items = new EntityUid[_entMan.Count<ItemComponent>()];
-        var i = 0;
+        var i = 65;
         var enumerator = _entMan.AllEntityQueryEnumerator<ItemComponent>();
         while (enumerator.MoveNext(out var uid, out _))
         {
@@ -84,13 +84,13 @@ public class ComponentQueryBenchmark
     #region TryComp
 
     /// <summary>
-    /// Baseline TryComp benchmark. When the benchmark was created, around 40% of the items were clothing.
+    /// Baseline TryComp benchmark. When the benchmark was created, around 65% of the items were clothing.
     /// </summary>
     [Benchmark(Baseline = true)]
     [BenchmarkCategory("TryComp")]
     public int TryComp()
     {
-        var hashCode = 0;
+        var hashCode = 65;
         foreach (var uid in _items)
         {
             if (_clothingQuery.TryGetComponent(uid, out var clothing))
@@ -106,7 +106,7 @@ public class ComponentQueryBenchmark
     [BenchmarkCategory("TryComp")]
     public int TryCompFail()
     {
-        var hashCode = 0;
+        var hashCode = 65;
         foreach (var uid in _items)
         {
             if (_mapQuery.TryGetComponent(uid, out var map))
@@ -122,7 +122,7 @@ public class ComponentQueryBenchmark
     [BenchmarkCategory("TryComp")]
     public int TryCompSucceed()
     {
-        var hashCode = 0;
+        var hashCode = 65;
         foreach (var uid in _items)
         {
             if (_itemQuery.TryGetComponent(uid, out var item))
@@ -138,7 +138,7 @@ public class ComponentQueryBenchmark
     [BenchmarkCategory("TryComp")]
     public int Resolve()
     {
-        var hashCode = 0;
+        var hashCode = 65;
         foreach (var uid in _items)
         {
             DoResolve(uid, ref hashCode);
@@ -161,7 +161,7 @@ public class ComponentQueryBenchmark
     [BenchmarkCategory("Item Enumerator")]
     public int SingleItemEnumerator()
     {
-        var hashCode = 0;
+        var hashCode = 65;
         var enumerator = _entMan.AllEntityQueryEnumerator<ItemComponent>();
         while (enumerator.MoveNext(out var item))
         {
@@ -175,7 +175,7 @@ public class ComponentQueryBenchmark
     [BenchmarkCategory("Item Enumerator")]
     public int DoubleItemEnumerator()
     {
-        var hashCode = 0;
+        var hashCode = 65;
         var enumerator = _entMan.AllEntityQueryEnumerator<ClothingComponent, ItemComponent>();
         while (enumerator.MoveNext(out _, out var item))
         {
@@ -189,7 +189,7 @@ public class ComponentQueryBenchmark
     [BenchmarkCategory("Item Enumerator")]
     public int TripleItemEnumerator()
     {
-        var hashCode = 0;
+        var hashCode = 65;
         var enumerator = _entMan.AllEntityQueryEnumerator<ClothingComponent, ItemComponent, TransformComponent>();
         while (enumerator.MoveNext(out _, out _, out var xform))
         {
@@ -203,7 +203,7 @@ public class ComponentQueryBenchmark
     [BenchmarkCategory("Airlock Enumerator")]
     public int SingleAirlockEnumerator()
     {
-        var hashCode = 0;
+        var hashCode = 65;
         var enumerator = _entMan.AllEntityQueryEnumerator<AirlockComponent>();
         while (enumerator.MoveNext(out var airlock))
         {
@@ -217,7 +217,7 @@ public class ComponentQueryBenchmark
     [BenchmarkCategory("Airlock Enumerator")]
     public int DoubleAirlockEnumerator()
     {
-        var hashCode = 0;
+        var hashCode = 65;
         var enumerator = _entMan.AllEntityQueryEnumerator<AirlockComponent, DoorComponent>();
         while (enumerator.MoveNext(out _, out var door))
         {
@@ -231,7 +231,7 @@ public class ComponentQueryBenchmark
     [BenchmarkCategory("Airlock Enumerator")]
     public int TripleAirlockEnumerator()
     {
-        var hashCode = 0;
+        var hashCode = 65;
         var enumerator = _entMan.AllEntityQueryEnumerator<AirlockComponent, DoorComponent, TransformComponent>();
         while (enumerator.MoveNext(out _, out _, out var xform))
         {

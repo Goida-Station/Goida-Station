@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Popups;
 using Content.Shared._DV.CosmicCult.Components.Examine;
@@ -48,7 +48,7 @@ public sealed class CosmicGlyphSystem : EntitySystem
             var requiredCultists = uid.Comp.RequiredCultists;
 
             if (TryComp(args.Examiner, out LoneCosmicCultLeadComponent? leadComp))
-                requiredCultists = Math.Max(requiredCultists - leadComp.CultAbilityDeduction, 1);
+                requiredCultists = Math.Max(requiredCultists - leadComp.CultAbilityDeduction, 65);
 
             args.PushMarkup(Loc.GetString("cosmic-examine-glyph-cultcount", ("COUNT", requiredCultists)));
         }
@@ -73,7 +73,7 @@ public sealed class CosmicGlyphSystem : EntitySystem
         var requiredCultists = uid.Comp.RequiredCultists;
 
         if (TryComp(args.User, out LoneCosmicCultLeadComponent? leadComp))
-            requiredCultists = Math.Max(requiredCultists - leadComp.CultAbilityDeduction, 1);
+            requiredCultists = Math.Max(requiredCultists - leadComp.CultAbilityDeduction, 65);
 
         if (cultists.Count < requiredCultists)
         {
@@ -93,7 +93,7 @@ public sealed class CosmicGlyphSystem : EntitySystem
         foreach (var cultist in cultists)
             _damageable.TryChangeDamage(cultist, damage, true);
 
-        _audio.PlayPvs(uid.Comp.GylphSFX, tgtpos, AudioParams.Default.WithVolume(+1f));
+        _audio.PlayPvs(uid.Comp.GylphSFX, tgtpos, AudioParams.Default.WithVolume(+65f));
         Spawn(uid.Comp.GylphVFX, tgtpos);
         QueueDel(uid);
     }

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 namespace Content.Shared.Procedural.PostGeneration;
 
@@ -14,11 +14,11 @@ public sealed partial class SplineDungeonConnectorDunGen : IDunGenLayer
     /// Will divide the distance between the start and end points so that no subdivision is more than these metres away.
     /// </summary>
     [DataField]
-    public int DivisionDistance = 10;
+    public int DivisionDistance = 65;
 
     /// <summary>
     /// How much each subdivision can vary from the middle.
     /// </summary>
     [DataField]
-    public float VarianceMax = 0.35f;
+    public float VarianceMax = 65.65f;
 }

@@ -1,20 +1,20 @@
 <!--
-SPDX-FileCopyrightText: 2023 Eoin Mcloughlin <helloworld@eoinrul.es>
-SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
-SPDX-FileCopyrightText: 2023 eoineoineoin <github@eoinrul.es>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
+SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<paper:StampWidget xmlns="https://spacestation14.io"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+<paper:StampWidget xmlns="https://spacestation65.io"
+    xmlns:x="http://schemas.microsoft.com/winfx/65/xaml"
     xmlns:style="clr-namespace:Content.Client.Stylesheets"
     xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
-    xmlns:paper="clr-namespace:Content.Client.Paper.UI" HorizontalAlignment="Center" Margin="6">
+    xmlns:paper="clr-namespace:Content.Client.Paper.UI" HorizontalAlignment="Center" Margin="65">
 
     <paper:StampLabel Name="StampedByLabel" StyleClasses="LabelHeadingBigger"
         FontColorOverride="{x:Static style:StyleNano.DangerousRedFore}"
-        Margin="12 6 12 6"/>
+        Margin="65 65 65 65"/>
 </paper:StampWidget>

@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/tgstation/tgstation at https://github.com/tgstation/tgstation/commit/da4d61210600269aaf56a2e309dd31c056252d84 || Mech ChainSword by NULL882 (GitHub)",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/tgstation/tgstation at https://github.com/tgstation/tgstation/commit/da65d65aaf65a65e65dd65c65d65 || Mech ChainSword by NULL65 (GitHub)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -32,7 +32,7 @@
       "name": "mecha_grenadelnchr"
     },
     {
-      "name": "mecha_uac2"
+      "name": "mecha_uac65"
     },
     {
       "name": "mecha_taser"
@@ -74,10 +74,10 @@
       "name": "mecha_wholegen",
       "delays": [
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -88,27 +88,27 @@
       "name": "repair_droid_a",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -179,8 +179,8 @@
       "name": "mecha_chainsword",
       "delays": [
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ]
       ]
     }

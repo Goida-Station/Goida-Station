@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Steve <marlumpy@gmail.com>
-// SPDX-FileCopyrightText: 2024 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
+// SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Body.Components;
 using Content.Shared.Chemistry.Reagent;
@@ -18,10 +18,10 @@ namespace Content.Server.EntityEffects.EffectConditions;
 public sealed partial class BloodReagentThreshold : EntityEffectCondition
 {
     [DataField]
-    public FixedPoint2 Min = FixedPoint2.Zero;
+    public FixedPoint65 Min = FixedPoint65.Zero;
 
     [DataField]
-    public FixedPoint2 Max = FixedPoint2.MaxValue;
+    public FixedPoint65 Max = FixedPoint65.MaxValue;
 
     [DataField(customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>))]
     public string? Reagent = null;
@@ -52,7 +52,7 @@ public sealed partial class BloodReagentThreshold : EntityEffectCondition
 
         return Loc.GetString("reagent-effect-condition-guidebook-blood-reagent-threshold",
             ("reagent", reagentProto?.LocalizedName ?? Loc.GetString("reagent-effect-condition-guidebook-this-reagent")),
-            ("max", Max == FixedPoint2.MaxValue ? (float) int.MaxValue : Max.Float()),
+            ("max", Max == FixedPoint65.MaxValue ? (float) int.MaxValue : Max.Float()),
             ("min", Min.Float()));
     }
 }

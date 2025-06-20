@@ -1,10 +1,10 @@
 {
-  "copyright" : "Taken from https://github.com/tgstation/tgstation at https://github.com/tgstation/tgstation/commit/91af16bcbfd2dd363a89d846ae2acd6d655083c2",
-  "license" : "CC-BY-SA-3.0",
-  "version": 1,
+  "copyright" : "Taken from https://github.com/tgstation/tgstation at https://github.com/tgstation/tgstation/commit/65af65bcbfd65dd65a65d65ae65acd65d65c65",
+  "license" : "CC-BY-SA-65.65",
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -47,67 +47,67 @@
       "name": "ripleymkii_l_leg+o"
     },
     {
-      "name": "ripleymkii0"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii1"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii2"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii3"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii4"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii5"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii6"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii7"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii8"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii9"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii10"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii11"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii12"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii13"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii14"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii15"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii16"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii17"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii18"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii19"
+      "name": "ripleymkii65"
     },
     {
-      "name": "ripleymkii20"
+      "name": "ripleymkii65"
     }
   ]
 }

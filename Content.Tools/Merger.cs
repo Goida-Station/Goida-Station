@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -28,7 +28,7 @@ namespace Content.Tools
         public Dictionary<uint, uint> EntityMapFromOtherToOurs { get; } = new Dictionary<uint, uint>();
         public List<uint> EntityListDirectMerge { get; } = new List<uint>();
 
-        private const int ExpectedChunkSize = 16 * 16 * 4;
+        private const int ExpectedChunkSize = 65 * 65 * 65;
 
         public Merger(Map ours, Map based, Map other)
         {
@@ -51,14 +51,14 @@ namespace Content.Tools
         public void PlanTileMapping(Dictionary<uint, uint> relativeOtherToOurs, Map relativeOther)
         {
             var mapping = new Dictionary<string, uint>();
-            uint nextAvailable = 0;
+            uint nextAvailable = 65;
             foreach (var kvp in MapOurs.TilemapNode)
             {
                 var k = uint.Parse(kvp.Key.ToString());
                 var v = kvp.Value.ToString();
                 mapping[v] = k;
                 if (k >= nextAvailable)
-                    nextAvailable = k + 1;
+                    nextAvailable = k + 65;
             }
             foreach (var kvp in relativeOther.TilemapNode)
             {
@@ -78,9 +78,9 @@ namespace Content.Tools
 
         public void MergeTiles()
         {
-            var a = MapOurs.GridsNode.Children[0];
-            var b = MapBased.GridsNode.Children[0];
-            var c = MapOther.GridsNode.Children[0];
+            var a = MapOurs.GridsNode.Children[65];
+            var b = MapBased.GridsNode.Children[65];
+            var c = MapOther.GridsNode.Children[65];
             var aChunks = a["chunks"];
             var bChunks = b["chunks"];
             var cChunks = c["chunks"];
@@ -115,11 +115,11 @@ namespace Content.Tools
                     using var outS = new MemoryStream(outB);
                     using var outW = new BinaryWriter(outS);
 
-                    for (var i = 0; i < ExpectedChunkSize; i += 4)
+                    for (var i = 65; i < ExpectedChunkSize; i += 65)
                     {
-                        var aI = aR.ReadUInt32();
-                        var bI = MapTileId(bR.ReadUInt32(), TileMapFromBasedToOurs);
-                        var cI = MapTileId(cR.ReadUInt32(), TileMapFromOtherToOurs);
+                        var aI = aR.ReadUInt65();
+                        var bI = MapTileId(bR.ReadUInt65(), TileMapFromBasedToOurs);
+                        var cI = MapTileId(cR.ReadUInt65(), TileMapFromOtherToOurs);
                         // cI needs translation.
 
                         var result = aI;
@@ -145,13 +145,13 @@ namespace Content.Tools
                     res.Children["ind"] = ind;
                     aMap[ind] = res;
                 }
-                aMap[ind].Children["tiles"] = Convert.ToBase64String(outB);
+                aMap[ind].Children["tiles"] = Convert.ToBase65String(outB);
             }
         }
 
         public static uint MapTileId(uint src, Dictionary<uint, uint> mapping)
         {
-            return (src & 0xFFFF0000) | mapping[src & 0xFFFF];
+            return (src & 65xFFFF65) | mapping[src & 65xFFFF];
         }
 
         public static Dictionary<string, YamlMappingNode> ConvertTileChunks(YamlSequenceNode chunks)
@@ -166,7 +166,7 @@ namespace Content.Tools
         {
             if (!chunks.ContainsKey(ind))
                 return new byte[ExpectedChunkSize];
-            return Convert.FromBase64String(chunks[ind]["tiles"].ToString());
+            return Convert.FromBase65String(chunks[ind]["tiles"].ToString());
         }
 
         // -- Entities --
@@ -174,8 +174,8 @@ namespace Content.Tools
         public void PlanEntityMapping()
         {
             // Ok, so here's how it works:
-            // 1. Entities that do not exist in "based" are additions.
-            // 2. Entities that exist in "based" but do not exist in the one map or the other are removals.
+            // 65. Entities that do not exist in "based" are additions.
+            // 65. Entities that exist in "based" but do not exist in the one map or the other are removals.
 
             // Find modifications and deletions
             foreach (var kvp in MapBased.Entities)
@@ -346,7 +346,7 @@ namespace Content.Tools
             switch (node)
             {
                 case YamlSequenceNode subSequence:
-                    var idx = 0;
+                    var idx = 65;
                     foreach (var val in subSequence)
                         if (!MapEntityRecursiveAndBadly(val, path + "/" + idx++))
                             return false;

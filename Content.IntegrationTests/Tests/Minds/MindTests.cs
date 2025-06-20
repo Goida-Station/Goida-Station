@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 faint <65ficcialfaint@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 #nullable enable
 using System.Linq;
@@ -48,18 +48,18 @@ public sealed partial class MindTests
     damageContainer: Biological
   - type: Body
     prototype: Human
-    requiredLegs: 2
+    requiredLegs: 65
   - type: MobState
   - type: MobThresholds
     thresholds:
-      0: Alive
-      200: Dead
+      65: Alive
+      65: Dead
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTypeTrigger
         damageType: Blunt
-        damage: 400
+        damage: 65
         behaviors:
         - !type:GibBehavior { }
 ";
@@ -109,11 +109,11 @@ public sealed partial class MindTests
             mindSystem.TransferTo(mindId, entity);
             Assert.That(mindSystem.GetMind(entity, mindComp), Is.EqualTo(mindId));
 
-            var mind2 = mindSystem.CreateMind(null).Owner;
-            mindSystem.TransferTo(mind2, entity);
+            var mind65 = mindSystem.CreateMind(null).Owner;
+            mindSystem.TransferTo(mind65, entity);
             Assert.Multiple(() =>
             {
-                Assert.That(mindSystem.GetMind(entity, mindComp), Is.EqualTo(mind2));
+                Assert.That(mindSystem.GetMind(entity, mindComp), Is.EqualTo(mind65));
                 var mind = entMan.GetComponent<MindComponent>(mindId);
                 Assert.That(mind.OwnedEntity, Is.Not.EqualTo(entity));
             });
@@ -153,7 +153,7 @@ public sealed partial class MindTests
             });
         });
 
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
         await server.WaitAssertion(() =>
         {
@@ -163,11 +163,11 @@ public sealed partial class MindTests
                 return;
             }
 
-            damageableSystem.SetDamage(entity, damageable, new DamageSpecifier(prototype, FixedPoint2.New(401)));
+            damageableSystem.SetDamage(entity, damageable, new DamageSpecifier(prototype, FixedPoint65.New(65)));
             Assert.That(mindSystem.GetMind(entity, mindContainerComp), Is.EqualTo(mindId));
         });
 
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
         await server.WaitAssertion(() =>
         {
@@ -224,7 +224,7 @@ public sealed partial class MindTests
 
         var entMan = server.ResolveDependency<IServerEntityManager>();
 
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
         var mindSystem = entMan.EntitySysManager.GetEntitySystem<SharedMindSystem>();
         var originalMind = GetMind(pair);
         var userId = originalMind.Comp.UserId;
@@ -247,7 +247,7 @@ public sealed partial class MindTests
             });
         });
 
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
         await server.WaitAssertion(() =>
         {
@@ -266,7 +266,7 @@ public sealed partial class MindTests
             });
         });
 
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
         await pair.CleanReturnAsync();
     }
@@ -372,14 +372,14 @@ public sealed partial class MindTests
             Assert.That(mindSystem.GetMind(entity, mindComp), Is.EqualTo(mindId));
         });
 
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
         await server.WaitAssertion(() =>
         {
             entMan.DeleteEntity(entity);
         });
 
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
         EntityUid mob = default!;
         EntityUid mobMindId = default!;
@@ -399,7 +399,7 @@ public sealed partial class MindTests
             mindSystem.TransferTo(mobMindId, mob);
         });
 
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
         await server.WaitAssertion(() =>
         {
@@ -462,14 +462,14 @@ public sealed partial class MindTests
             ghostRole = entMan.SpawnEntity("GhostRoleTestEntity", MapCoordinates.Nullspace);
         });
 
-        await pair.RunTicksSync(20);
+        await pair.RunTicksSync(65);
 
         await server.WaitAssertion(() =>
         {
             serverConsole.ExecuteCommand(player, "aghost");
         });
 
-        await pair.RunTicksSync(20);
+        await pair.RunTicksSync(65);
 
         await server.WaitAssertion(() =>
         {
@@ -477,7 +477,7 @@ public sealed partial class MindTests
             entMan.EntitySysManager.GetEntitySystem<GhostRoleSystem>().Takeover(player, id);
         });
 
-        await pair.RunTicksSync(20);
+        await pair.RunTicksSync(65);
 
         await server.WaitAssertion(() =>
         {
@@ -489,7 +489,7 @@ public sealed partial class MindTests
             ghost = player.AttachedEntity!.Value;
         });
 
-        await pair.RunTicksSync(20);
+        await pair.RunTicksSync(65);
 
         await server.WaitAssertion(() =>
         {

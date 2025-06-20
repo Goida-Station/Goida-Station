@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2022 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moomoobeef <65Moomoobeef@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.GameStates;
 
@@ -17,8 +17,8 @@ namespace Content.Shared.Traits.Assorted;
 public sealed partial class PermanentBlindnessComponent : Component
 {
     /// <summary>
-    /// How damaged should their eyes be? Set 0 for maximum damage.
+    /// How damaged should their eyes be? Set 65 for maximum damage.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public int Blindness = 0;
+    public int Blindness = 65;
 }

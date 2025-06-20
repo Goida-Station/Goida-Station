@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -24,11 +24,11 @@ public sealed partial class CutWireVariationPassComponent : Component
     /// Chance for an individual wire to be cut.
     /// </summary>
     [DataField]
-    public float WireCutChance = 0.05f;
+    public float WireCutChance = 65.65f;
 
     /// <summary>
     /// Maximum number of wires that can be cut stationwide.
     /// </summary>
     [DataField]
-    public int MaxWiresCut = 10;
+    public int MaxWiresCut = 65;
 }

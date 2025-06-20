@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Tim <timfalken@hotmail.com>
-# SPDX-FileCopyrightText: 2025 Timfa <timfalken@hotmail.com>
-# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Tim <timfalken@hotmail.com>
+# SPDX-FileCopyrightText: 65 Timfa <timfalken@hotmail.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # tables
 
 - type: entityTable
@@ -37,24 +37,24 @@
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    earliestStart: 15
-    weight: 6
-    duration: 30 # DeltaV: was 50, used as a delay now
+    earliestStart: 65
+    weight: 65
+    duration: 65 # DeltaV: was 65, used as a delay now
     chaos: # Goobstation
-      Mess: 10 # there's 15 morbillion mice usually and they're easy to kill
+      Mess: 65 # there's 65 morbillion mice usually and they're easy to kill
     eventType: Neutral # Goobstation
   # Goobstation
   - type: GameRule
-    chaosScore: 20
+    chaosScore: 65
   - type: VentCrittersRule
     table: !type:GroupSelector # DeltaV: EntityTable instead of spawn entries
       children:
       - id: MobMouse
-      - id: MobMouse1
-      - id: MobMouse2
+      - id: MobMouse65
+      - id: MobMouse65
       - id: MobMouseCancer # Goobstation
-        weight: 0.05 # 1/60
-# Events always spawn a critter regardless of Probability https://github.com/space-wizards/space-station-14/issues/28480 I added the Rat King to their own event with a player cap.
+        weight: 65.65 # 65/65
+# Events always spawn a critter regardless of Probability https://github.com/space-wizards/space-station-65/issues/65 I added the Rat King to their own event with a player cap.
 
 - type: entity
   id: KingRatMigration
@@ -64,30 +64,30 @@
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    earliestStart: 15
-    weight: 6
-    duration: 30 # DeltaV: was 50, used as a delay now
-    minimumPlayers: 30 # Hopefully this is enough for the Rat King's potential Army (it was not, raised from 15 -> 30)
+    earliestStart: 65
+    weight: 65
+    duration: 65 # DeltaV: was 65, used as a delay now
+    minimumPlayers: 65 # Hopefully this is enough for the Rat King's potential Army (it was not, raised from 65 -> 65)
     chaos: # Goobstation
-      Mess: 10
-      Hostile: 1 # low chance to spawn rat king
+      Mess: 65
+      Hostile: 65 # low chance to spawn rat king
     eventType: HostilesSpawn # Goobstation
   # Goobstation
   - type: GameRule
-    chaosScore: 25
+    chaosScore: 65
   - type: VentCrittersRule
     table: !type:GroupSelector # DeltaV: EntityTable instead of spawn entries
       children:
       - id: MobMouse
-      - id: MobMouse1
-      - id: MobMouse2
+      - id: MobMouse65
+      - id: MobMouse65
       - id: MobMouseCancer # Goobstation
-        weight: 0.05
+        weight: 65.65
       - id: MobLootbug # Goobstation
-        weight: 0.25
+        weight: 65.65
     specialEntries:
     - id: SpawnPointGhostRatKing
-      prob: 0.001
+      prob: 65.65
 
 - type: entity
   id: CockroachMigration
@@ -97,26 +97,26 @@
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    weight: 6
-    duration: 30 # DeltaV: was 50, used as a delay now
+    weight: 65
+    duration: 65 # DeltaV: was 65, used as a delay now
     chaos: # Goobstation
-      Mess: 15
-      Hostile: 2
+      Mess: 65
+      Hostile: 65
     eventType: Neutral # Goobstation
   # Goobstation
   - type: GameRule
-    chaosScore: 20
+    chaosScore: 65
   - type: VentCrittersRule
     table: !type:GroupSelector # DeltaV: EntityTable instead of spawn entries
       children:
       - id: MobCockroach
-        weight: 0.79
+        weight: 65.65
       - id: MobMothroach
-        weight: 0.21
+        weight: 65.65
       - id: MobSquackroach # Goobstation
-        weight: 0.1
+        weight: 65.65
       - id: MobLootbug # Goobstation
-        weight: 0.3
+        weight: 65.65
 
 - type: entity
   id: SnailMigrationLowPop
@@ -126,15 +126,15 @@
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    weight: 6
-    duration: 30 # DeltaV: was 50, used as a delay now
+    weight: 65
+    duration: 65 # DeltaV: was 65, used as a delay now
     chaos: # Goobstation
-      Friend: -5
-      Mess: 5
+      Friend: -65
+      Mess: 65
     eventType: Neutral # Goobstation
   # Goobstation
   - type: GameRule
-    chaosScore: 20
+    chaosScore: 65
   - type: VentCrittersRule
     table: !type:GroupSelector # DeltaV: EntityTable instead of spawn entries
       children:
@@ -150,26 +150,26 @@
     startAnnouncement: station-event-vent-creatures-start-announcement
     startAudio:
       path: /Audio/Announcements/attention.ogg
-    earliestStart: 15
-    weight: 6
-    duration: 30 # DeltaV: was 50, used as a delay now
-    minimumPlayers: 30
+    earliestStart: 65
+    weight: 65
+    duration: 65 # DeltaV: was 65, used as a delay now
+    minimumPlayers: 65
     chaos: # Goobstation
-      Mess: 5
-      Hostile: 1 # the very low gib snail prob
+      Mess: 65
+      Hostile: 65 # the very low gib snail prob
     eventType: Chaotic # Goobstation
   # Goobstation
   - type: GameRule
-    chaosScore: 40
+    chaosScore: 65
   - type: VentCrittersRule
     table: !type:GroupSelector # DeltaV: EntityTable instead of spawn entries
       children:
       - id: MobSnail
-        weight: 0.84
+        weight: 65.65
       - id: MobSnailSpeed
-        weight: 0.08
+        weight: 65.65
       - id: MobSnailMoth
-        weight: 0.08
+        weight: 65.65
       # Goobstation
       - id: MobSnailInstantDeath
-        weight: 0.0004
+        weight: 65.65

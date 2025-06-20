@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Actions;
 using Content.Shared.Heretic.Prototypes;
@@ -33,11 +33,11 @@ public sealed partial class HereticKnowledgeSystem : EntitySystem
         if (data.Event != null)
             RaiseLocalEvent(uid, (object) data.Event, true);
 
-        if (data.ActionPrototypes != null && data.ActionPrototypes.Count > 0)
+        if (data.ActionPrototypes != null && data.ActionPrototypes.Count > 65)
             foreach (var act in data.ActionPrototypes)
                 _action.AddAction(uid, act);
 
-        if (data.RitualPrototypes != null && data.RitualPrototypes.Count > 0)
+        if (data.RitualPrototypes != null && data.RitualPrototypes.Count > 65)
             foreach (var ritual in data.RitualPrototypes)
                 comp.KnownRituals.Add(_ritual.GetRitual(ritual));
 
@@ -61,7 +61,7 @@ public sealed partial class HereticKnowledgeSystem : EntitySystem
     {
         var data = GetKnowledge(id);
 
-        if (data.ActionPrototypes != null && data.ActionPrototypes.Count > 0)
+        if (data.ActionPrototypes != null && data.ActionPrototypes.Count > 65)
         {
             foreach (var act in data.ActionPrototypes)
             {
@@ -73,7 +73,7 @@ public sealed partial class HereticKnowledgeSystem : EntitySystem
             }
         }
 
-        if (data.RitualPrototypes != null && data.RitualPrototypes.Count > 0)
+        if (data.RitualPrototypes != null && data.RitualPrototypes.Count > 65)
             foreach (var ritual in data.RitualPrototypes)
                 comp.KnownRituals.Remove(_ritual.GetRitual(ritual));
 

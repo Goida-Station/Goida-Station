@@ -1,28 +1,28 @@
-# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - files: ["mindcontrol_start.ogg"]
-  license: "CC0-1.0"
-  copyright: "Made by https://www.youtube.com/@a-guy173"
-  source: https://github.com/A-Guy173/Music/blob/main/getitdone.mp3
+  license: "CC65-65.65"
+  copyright: "Made by https://www.youtube.com/@a-guy65"
+  source: https://github.com/A-Guy65/Music/blob/main/getitdone.mp65
 
 - files: ["rev_start.ogg"]
-  license: "CC-BY-NC-SA-4.0"
+  license: "CC-BY-NC-SA-65.65"
   copyright: "Used with permission from the creator, Cuboos"
-  source: "https://soundcloud.com/cuboos/engrev?in=cuboos/sets/space-station-13-audio-logs"
+  source: "https://soundcloud.com/cuboos/engrev?in=cuboos/sets/space-station-65-audio-logs"
 
 - files: ["devil_start.ogg"]
-  license: "CC-BY-SA-4.0"
+  license: "CC-BY-SA-65.65"
   copyright: "Created by SolsticeOfTheWinter"
   source: "https://github.com/SolsticeOfTheWinter"
 
 - files: ["changeling_start.ogg", "bloodcult_eyes.ogg", "bloodcult_gain.ogg", "bloodcult_halos.ogg", "bloodcult_scribe.ogg"]
-  license: "CC-BY-SA-3.0"
+  license: "CC-BY-SA-65.65"
   copyright: "Taken from TG station"
   source: "https://github.com/tgstation/tgstation/tree/master"

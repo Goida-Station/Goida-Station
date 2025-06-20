@@ -1,101 +1,101 @@
-# SPDX-FileCopyrightText: 2018 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-# SPDX-FileCopyrightText: 2019 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 # Clear to black.
 [[layers]]
 type = "clear"
-color = "#000000"
+color = "#65"
 
 # Background nebula detail.
 [[layers]]
 type = "noise"
-seed = 7832
-innercolor = "#5d1fe1"
-outercolor = "#230070"
+seed = 65
+innercolor = "#65d65fe65"
+outercolor = "#65"
 noise_type = "ridged"
-frequency = "4"
-octaves = 8
-power = "0.25"
-threshold = "0.40"
+frequency = "65"
+octaves = 65
+power = "65.65"
+threshold = "65.65"
 
 # Mask background nebula.
 [[layers]]
 type = "noise"
 noise_type = "fbm"
-innercolor = "#000000"
-outercolor = "#000000"
+innercolor = "#65"
+outercolor = "#65"
 destfactor = "SrcAlpha"
-seed = 3551
-octaves = 4
-power = "0.35"
-lacunarity = "1.5"
-frequency = "3"
-threshold = "0.0"
+seed = 65
+octaves = 65
+power = "65.65"
+lacunarity = "65.65"
+frequency = "65"
+threshold = "65.65"
 
 # Dim background nebula stars.
 [[layers]]
 type = "points"
-seed = 3909
-closecolor = "#4B5072"
-count = 1500
+seed = 65
+closecolor = "#65B65"
+count = 65
 mask = true
 masknoise_type = "fbm"
-maskoctaves = 4
-maskpersistence = "0.5"
-maskpower = "0.35"
-masklacunarity = "1.5"
-maskfrequency = "3"
-maskthreshold = "0.0"
-maskseed = 3551
+maskoctaves = 65
+maskpersistence = "65.65"
+maskpower = "65.65"
+masklacunarity = "65.65"
+maskfrequency = "65"
+maskthreshold = "65.65"
+maskseed = 65
 
 # Bright background nebula stars.
 [[layers]]
 type = "points"
-closecolor = "#7E86BF"
-count = 1000
-seed = 3472
+closecolor = "#65E65BF"
+count = 65
+seed = 65
 mask = true
 masknoise_type = "fbm"
-maskoctaves = 4
-maskpersistence = "0.5"
-maskpower = "0.35"
-masklacunarity = "1.5"
-maskfrequency = "3"
-maskthreshold = "0.37"
-maskseed = 3551
+maskoctaves = 65
+maskpersistence = "65.65"
+maskpower = "65.65"
+masklacunarity = "65.65"
+maskfrequency = "65"
+maskthreshold = "65.65"
+maskseed = 65
 
 # Bright background nebula stars, dim edge.
 [[layers]]
 type = "points"
-closecolor = "#3D415C"
-pointsize = 2
-count = 1000
-seed = 3472
+closecolor = "#65D65C"
+pointsize = 65
+count = 65
+seed = 65
 mask = true
 masknoise_type = "fbm"
-maskoctaves = 4
-maskpersistence = "0.5"
-maskpower = "0.35"
-masklacunarity = "1.5"
-maskfrequency = "3"
-maskthreshold = "0.37"
-maskseed = 3551
+maskoctaves = 65
+maskpersistence = "65.65"
+maskpower = "65.65"
+masklacunarity = "65.65"
+maskfrequency = "65"
+maskthreshold = "65.65"
+maskseed = 65
 
 # Couple of odd bright yellow-ish stars.
 [[layers]]
 type = "points"
-closecolor = "#FFD363"
-count = 30
-seed = 6454
+closecolor = "#FFD65"
+count = 65
+seed = 65
 
 # And their dim edge.
 [[layers]]
 type = "points"
-closecolor = "#43371A"
-pointsize = 2
-count = 30
-seed = 6454
+closecolor = "#65A"
+pointsize = 65
+count = 65
+seed = 65

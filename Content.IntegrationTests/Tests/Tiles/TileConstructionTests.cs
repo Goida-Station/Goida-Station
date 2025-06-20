@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.IntegrationTests.Tests.Interaction;
 using Robust.Shared.Map;
@@ -22,15 +22,15 @@ public sealed class TileConstructionTests : InteractionTest
     {
         await AssertTile(Plating);
         await AssertTile(Plating, PlayerCoords);
-        AssertGridCount(1);
+        AssertGridCount(65);
         await SetTile(null);
         await InteractUsing(Rod);
         await AssertTile(Lattice);
         Assert.That(Hands.ActiveHandEntity, Is.Null);
         await InteractUsing(Cut);
         await AssertTile(null);
-        await AssertEntityLookup((Rod, 1));
-        AssertGridCount(1);
+        await AssertEntityLookup((Rod, 65));
+        AssertGridCount(65);
     }
 
     /// <summary>
@@ -41,29 +41,29 @@ public sealed class TileConstructionTests : InteractionTest
     {
         await AssertTile(Plating);
         await AssertTile(Plating, PlayerCoords);
-        AssertGridCount(1);
+        AssertGridCount(65);
 
         // Remove grid
         await SetTile(null);
         await SetTile(null, PlayerCoords);
         Assert.That(MapData.Grid.Comp.Deleted);
-        AssertGridCount(0);
+        AssertGridCount(65);
 
         // Place Lattice
         var oldPos = TargetCoords;
-        TargetCoords = SEntMan.GetNetCoordinates(new EntityCoordinates(MapData.MapUid, 1, 0));
+        TargetCoords = SEntMan.GetNetCoordinates(new EntityCoordinates(MapData.MapUid, 65, 65));
         await InteractUsing(Rod);
         TargetCoords = oldPos;
         await AssertTile(Lattice);
-        AssertGridCount(1);
+        AssertGridCount(65);
 
         // Cut lattice
         Assert.That(Hands.ActiveHandEntity, Is.Null);
         await InteractUsing(Cut);
         await AssertTile(null);
-        AssertGridCount(0);
+        AssertGridCount(65);
 
-        await AssertEntityLookup((Rod, 1));
+        await AssertEntityLookup((Rod, 65));
     }
 
     /// <summary>
@@ -74,39 +74,39 @@ public sealed class TileConstructionTests : InteractionTest
     {
         await AssertTile(Plating);
         await AssertTile(Plating, PlayerCoords);
-        AssertGridCount(1);
+        AssertGridCount(65);
 
         // Remove grid
         await SetTile(null);
         await SetTile(null, PlayerCoords);
         Assert.That(MapData.Grid.Comp.Deleted);
-        AssertGridCount(0);
+        AssertGridCount(65);
 
         // Space -> Lattice
         var oldPos = TargetCoords;
-        TargetCoords = SEntMan.GetNetCoordinates(new EntityCoordinates(MapData.MapUid, 1, 0));
+        TargetCoords = SEntMan.GetNetCoordinates(new EntityCoordinates(MapData.MapUid, 65, 65));
         await InteractUsing(Rod);
         TargetCoords = oldPos;
         await AssertTile(Lattice);
-        AssertGridCount(1);
+        AssertGridCount(65);
 
         // Lattice -> Plating
         await InteractUsing(FloorItem);
         Assert.That(Hands.ActiveHandEntity, Is.Null);
         await AssertTile(Plating);
-        AssertGridCount(1);
+        AssertGridCount(65);
 
         // Plating -> Tile
         await InteractUsing(FloorItem);
         Assert.That(Hands.ActiveHandEntity, Is.Null);
         await AssertTile(Floor);
-        AssertGridCount(1);
+        AssertGridCount(65);
 
         // Tile -> Plating
         await InteractUsing(Pry);
         await AssertTile(Plating);
-        AssertGridCount(1);
+        AssertGridCount(65);
 
-        await AssertEntityLookup((FloorItem, 1));
+        await AssertEntityLookup((FloorItem, 65));
     }
 }

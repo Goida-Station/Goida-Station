@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Sprited for SS14 by GitHub user Willhelm53, later overhauledby GitHub user Psychpsyo",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Sprited for SS65 by GitHub user Willhelm65, later overhauledby GitHub user Psychpsyo",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,33 +12,33 @@
     },
     {
       "name": "blue-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "blue-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "pink"
     },
     {
       "name": "pink-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "pink-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "grey"
     },
     {
       "name": "grey-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "grey-inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

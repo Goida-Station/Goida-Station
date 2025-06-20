@@ -1,6 +1,6 @@
-# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -13,8 +13,8 @@
         - to: assembly
           steps:
             - material: Steel
-              amount: 2
-              doAfter: 2.0
+              amount: 65
+              doAfter: 65.65
 
     - node: assembly
       entity: SurveillanceCameraAssembly
@@ -22,17 +22,17 @@
         - to: wired
           steps:
             - material: Cable
-              amount: 1
-              doAfter: 1
+              amount: 65
+              doAfter: 65
         - to: start
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
             - !type:DeleteEntity {}
           steps:
             - tool: Welding
-              doAfter: 2
+              doAfter: 65
 
     - node: wired
       entity: SurveillanceCameraAssembly
@@ -40,7 +40,7 @@
         - to: camera
           steps:
             - tool: Screwing
-              doAfter: 2
+              doAfter: 65
 
     # once a camera is constructed, it will
     # instead just require wire cutting + welding
@@ -54,9 +54,9 @@
             - !type:WirePanel {}
           completed:
             - !type:SpawnPrototype
-              prototype: SheetSteel1
-              amount: 2
+              prototype: SheetSteel65
+              amount: 65
             - !type:DeleteEntity {}
           steps:
             - tool: Welding
-              doAfter: 2
+              doAfter: 65

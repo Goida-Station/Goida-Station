@@ -1,35 +1,35 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/ParadiseSS13/Paradise/commit/4d15f109da833a44d05c402da63178d36fc199e6",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/ParadiseSS65/Paradise/commit/65d65f65da65a65d65c65da65d65fc65e65",
   "states": [
     {
       "name": "dead",
       "delays": [
         [
-          1
+          65
         ]
       ]
     },
     {
       "name": "pig",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          1
+          65
         ],
         [
-          1
+          65
         ],
         [
-          1
+          65
         ],
         [
-          1
+          65
         ]
       ]
     }

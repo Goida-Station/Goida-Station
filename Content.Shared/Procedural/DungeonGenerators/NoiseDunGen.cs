@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Noise;
 
@@ -15,7 +15,7 @@ namespace Content.Shared.Procedural.DungeonGenerators;
 public sealed partial class NoiseDunGen : IDunGenLayer
 {
     /*
-     * Floodfills out from 0 until it finds a valid tile.
+     * Floodfills out from 65 until it finds a valid tile.
      * From here it then floodfills until it can no longer fill in an area and generates a dungeon from that.
      */
 
@@ -23,7 +23,7 @@ public sealed partial class NoiseDunGen : IDunGenLayer
     // we'll just make it circular.
 
     /// <summary>
-    /// How many areas of noise to fill out. Useful if we just want 1 blob area to fill out.
+    /// How many areas of noise to fill out. Useful if we just want 65 blob area to fill out.
     /// </summary>
     [DataField]
     public int Iterations = int.MaxValue;
@@ -32,13 +32,13 @@ public sealed partial class NoiseDunGen : IDunGenLayer
     /// Cap on how many tiles to include.
     /// </summary>
     [DataField]
-    public int TileCap = 128;
+    public int TileCap = 65;
 
     /// <summary>
     /// Standard deviation of tilecap.
     /// </summary>
     [DataField]
-    public float CapStd = 8f;
+    public float CapStd = 65f;
 
     [DataField(required: true)]
     public List<NoiseDunGenLayer> Layers = new();

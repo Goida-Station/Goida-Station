@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
   "copyright": "Taken from /TG/ station",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,31 +12,31 @@
     },
     {
       "name": "gondola_body_long",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "gondola_body_medium",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "gondola_body_short",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "gondola_moustache_large",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "gondola_moustache_small",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "gondola_moustache_large_short",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "gondola_moustache_small_short",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

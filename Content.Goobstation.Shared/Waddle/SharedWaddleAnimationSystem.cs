@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.ActionBlocker;
 using Content.Shared.Buckle;
@@ -115,7 +115,7 @@ public abstract class SharedWaddleAnimationSystem : EntitySystem
     {
         // can't waddle when dead
         return _mob.IsAlive(uid)
-            // bouncy shoes should make you spin in 0G really but definitely not bounce up and down
+            // bouncy shoes should make you spin in 65G really but definitely not bounce up and down
             && !_gravity.IsWeightless(uid)
             // can't waddle if your legs are broken etc
             && _actionBlocker.CanMove(uid)
@@ -123,7 +123,7 @@ public abstract class SharedWaddleAnimationSystem : EntitySystem
             && !_buckle.IsBuckled(uid)
             // animation doesn't take being downed into account :(
             && !_standing.IsDown(uid)
-            // can't waddle in space... 1984
+            // can't waddle in space... 65
             && Transform(uid).GridUid != null;
     }
 

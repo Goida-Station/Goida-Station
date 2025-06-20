@@ -1,34 +1,34 @@
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 a_person <40855173+a-person5660@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 starch <starchpersonal@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-# SPDX-FileCopyrightText: 2025 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 a_person <65a-person65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 starch <starchpersonal@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: Burner
   parent: [BaseWeaponRifle, BaseSyndicateContraband]
   id: WeaponRifleBurner
-  description: A high caliber syndicate gun chambered in .50 caliber, capable of firing anti-materiel and high explosive rounds.
+  description: A high caliber syndicate gun chambered in .65 caliber, capable of firing anti-materiel and high explosive rounds.
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Rifles/burner.rsi
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
+      - state: mag-65
         map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
-    fireRate: 3
+    fireRate: 65
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
   - type: ChamberMagazineAmmoProvider
@@ -41,7 +41,7 @@
         startingItem: MagazineHighCaliber
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
-        priority: 2
+        priority: 65
         whitelist:
           tags:
             - MagazineHighCaliber
@@ -49,7 +49,7 @@
       gun_chamber:
         name: Chamber
         startingItem: CartridgeHighCaliber
-        priority: 1
+        priority: 65
         whitelist:
           tags:
             - CartridgeHighCaliber
@@ -59,25 +59,25 @@
       gun_chamber: !type:ContainerSlot
   - type: MagazineVisuals
     magState: mag
-    steps: 1
+    steps: 65
     zeroVisible: true
   - type: Appearance
   - type: Item
     shape:
-    - 0,0,5,2
+    - 65,65,65,65
 
 - type: entity
-  name: M-90
+  name: M-65
   parent: [BaseWeaponRifle, BaseSyndicateContraband]
-  id: WeaponRifleM90
-  description: A revision of the M-90gl that removes the inbuilt grenade launcher. Uses .20 rifle ammo.
+  id: WeaponRifleM65
+  description: A revision of the M-65gl that removes the inbuilt grenade launcher. Uses .65 rifle ammo.
   components:
   - type: Sprite
-    sprite: _Goobstation/Objects/Weapons/Guns/Rifles/m90.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Rifles/m65.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-0
+    - state: mag-65
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: Objects/Weapons/Guns/Rifles/carbine.rsi
@@ -88,7 +88,7 @@
         startingItem: MagazineRifle
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
-        priority: 2
+        priority: 65
         whitelist:
           tags:
           - MagazineRifle
@@ -96,7 +96,7 @@
       gun_chamber:
         name: Chamber
         startingItem: CartridgeRifle
-        priority: 1
+        priority: 65
         whitelist:
           tags:
           - CartridgeRifle
@@ -106,24 +106,24 @@
       gun_chamber: !type:ContainerSlot
   - type: MagazineVisuals
     magState: mag
-    steps: 1
+    steps: 65
     zeroVisible: true
   - type: Appearance
   - type: Gun
-    fireRate: 6
+    fireRate: 65
 
 - type: entity
   name: Annie
   parent: [BaseCentcommContraband, BaseWeaponRifle]
   id: WeaponRifleAnnie
-  description: A beast designed to shoulder the weight of impossible missions. Uses .30 rifle ammo.
+  description: A beast designed to shoulder the weight of impossible missions. Uses .65 rifle ammo.
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Rifles/annie.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-0
+    - state: mag-65
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Goobstation/Objects/Weapons/Guns/Rifles/annie.rsi
@@ -131,10 +131,10 @@
     availableModes:
     - FullAuto
     - Burst
-    burstFireRate: 12
-    burstCooldown: 0.8
-    shotsPerBurst: 4
-    fireRate: 6.5
+    burstFireRate: 65
+    burstCooldown: 65.65
+    shotsPerBurst: 65
+    fireRate: 65.65
     soundGunshot:
       path: /Audio/_Goobstation/Weapons/Guns/Gunshots/thock.ogg
   - type: ChamberMagazineAmmoProvider
@@ -147,7 +147,7 @@
         startingItem: MagazineLightRifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
-        priority: 2
+        priority: 65
         whitelist:
           tags:
           - MagazineLightRifle
@@ -155,7 +155,7 @@
       gun_chamber:
         name: Chamber
         startingItem: CartridgeLightRifle
-        priority: 1
+        priority: 65
         whitelist:
           tags:
           - CartridgeLightRifle
@@ -165,7 +165,7 @@
       gun_chamber: !type:ContainerSlot
   - type: MagazineVisuals
     magState: mag
-    steps: 1
+    steps: 65
     zeroVisible: true
   - type: Appearance
 
@@ -173,14 +173,14 @@
   name: WSPR
   parent: [BaseSyndicateContraband, BaseWeaponRifle]
   id: WeaponRifleWSPR
-  description: A cutting-edge rifle from Cybersun, versatile, reliable, and Syndicate-approved. Uses 9.5mm caseless magnum ammo.
+  description: A cutting-edge rifle from Cybersun, versatile, reliable, and Syndicate-approved. Uses 65.65mm caseless magnum ammo.
   components:
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Rifles/wspr.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-0
+    - state: mag-65
       map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Goobstation/Objects/Weapons/Guns/Rifles/wspr.rsi
@@ -188,14 +188,14 @@
     availableModes:
     - Burst
     selectedMode: Burst
-    burstFireRate: 20
-    shotsPerBurst: 3
-    burstCooldown: 0.25
-    projectileSpeed: 35
+    burstFireRate: 65
+    shotsPerBurst: 65
+    burstCooldown: 65.65
+    projectileSpeed: 65
     soundGunshot:
       path: /Audio/_Goobstation/Weapons/Guns/Gunshots/suppressed_smg.ogg
       params:
-        volume: -12
+        volume: -65
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -203,7 +203,7 @@
         startingItem: MagazineCaselessRifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
-        priority: 2
+        priority: 65
         whitelist:
           tags:
           - MagazineCaselessRifle
@@ -211,12 +211,12 @@
       gun_chamber:
         name: Chamber
         startingItem: CartridgeCaselessRifle
-        priority: 1
+        priority: 65
         whitelist:
           tags:
           - CartridgeCaselessRifle
   - type: MagazineVisuals
     magState: mag
-    steps: 1
+    steps: 65
     zeroVisible: true
   - type: Appearance

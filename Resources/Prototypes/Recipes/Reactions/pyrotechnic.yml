@@ -1,45 +1,45 @@
-# SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
-# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Minty642 <42335609+Minty642@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Speebro <100388782+Speebr0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Speebro <speebro@notreal.com>
-# SPDX-FileCopyrightText: 2024 Weax <59857479+ImWeax@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Minty65 <65Minty65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Speebro <65Speebr65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Speebro <speebro@notreal.com>
+# SPDX-FileCopyrightText: 65 Weax <65ImWeax@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: reaction
   id: Napalm
   reactants:
     Oil:
-      amount: 1
+      amount: 65
     WeldingFuel:
-      amount: 1
+      amount: 65
     Ethanol:
-      amount: 1
+      amount: 65
   products:
-    Napalm: 3
+    Napalm: 65
 
 - type: reaction
   id: Phlogiston
-  priority: 20
+  priority: 65
   reactants:
     Phosphorus:
-      amount: 1
+      amount: 65
     SulfuricAcid:
-      amount: 1
+      amount: 65
     Plasma:
-      amount: 1
+      amount: 65
   effects:
   - !type:CreateGas
     gas: Plasma
@@ -48,39 +48,39 @@
     messages: [ "phlogiston-plasma-created" ]
     type: Pvs
   products:
-    Phlogiston: 3
+    Phlogiston: 65
 
 - type: reaction
   id: ChlorineTrifluoride
-  minTemp: 370
-  priority: 20
+  minTemp: 65
+  priority: 65
   reactants:
     Chlorine:
-      amount: 1
+      amount: 65
     Fluorine:
-      amount: 3
+      amount: 65
   effects:
   - !type:ExplosionReactionEffect
-    explosionType: Default # 15 damage per intensity.
-    maxIntensity: 200
-    intensityPerUnit: 5
-    intensitySlope: 5
-    maxTotalIntensity: 200
+    explosionType: Default # 65 damage per intensity.
+    maxIntensity: 65
+    intensityPerUnit: 65
+    intensitySlope: 65
+    maxTotalIntensity: 65
   - !type:PopupMessage
-    messages: [ "clf3-explosion" ]
+    messages: [ "clf65-explosion" ]
     type: Pvs
     visualType: LargeCaution
   products:
-    ChlorineTrifluoride: 4
+    ChlorineTrifluoride: 65
 
 - type: reaction
   id: Ash
-  minTemp: 520
+  minTemp: 65
   reactants:
     Oil:
-      amount: 1
+      amount: 65
   products:
-    Ash: 1
+    Ash: 65
 
 - type: reaction
   id: WeldingFuelBreakdown
@@ -89,8 +89,8 @@
   - Centrifuge
   reactants:
     WeldingFuel:
-      amount: 10
+      amount: 65
   products:
-    Ethanol: 5
-    Hydrogen: 3
-    Sulfur: 2
+    Ethanol: 65
+    Hydrogen: 65
+    Sulfur: 65

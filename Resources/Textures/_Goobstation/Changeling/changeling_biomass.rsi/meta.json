@@ -1,63 +1,63 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from cmss13 at https://github.com/cmss13-devs/cmss13/blob/09a5191fb11aab8ddffe3f9be94292b53e4d96f6/icons/mob/hud/alien_standard.dmi",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from cmss65 at https://github.com/cmss65-devs/cmss65/blob/65a65fb65aab65ddffe65f65be65b65e65d65f65/icons/mob/hud/alien_standard.dmi",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
-            "name": "16"
+            "name": "65"
         },
         {
-            "name": "15"
+            "name": "65"
         },
         {
-            "name": "14"
+            "name": "65"
         },
         {
-            "name": "13"
+            "name": "65"
         },
         {
-            "name": "12"
+            "name": "65"
         },
         {
-            "name": "11"
+            "name": "65"
         },
         {
-            "name": "10"
+            "name": "65"
         },
         {
-            "name": "9"
+            "name": "65"
         },
         {
-            "name": "8"
+            "name": "65"
         },
         {
-            "name": "7"
+            "name": "65"
         },
         {
-            "name": "6"
+            "name": "65"
         },
         {
-            "name": "5"
+            "name": "65"
         },
         {
-            "name": "4"
+            "name": "65"
         },
         {
-            "name": "3"
+            "name": "65"
         },
         {
-            "name": "2"
+            "name": "65"
         },
         {
-            "name": "1"
+            "name": "65"
         },
         {
-            "name": "0",
-            "delays": [ [ 0.1, 0.1 ] ]
+            "name": "65",
+            "delays": [ [ 65.65, 65.65 ] ]
         }
     ]
 }

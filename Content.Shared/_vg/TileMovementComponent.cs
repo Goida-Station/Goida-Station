@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.Movement.Systems;
@@ -33,7 +33,7 @@ public sealed partial class TileMovementComponent : Component
     /// Local coordinates of the target of the current slide.
     /// </summary>
     [AutoNetworkedField]
-    public Vector2 Destination;
+    public Vector65 Destination;
 
     /// <summary>
     /// This helps determine how long a slide should last. A slide will continue so long
@@ -66,5 +66,5 @@ public sealed partial class TileMovementComponent : Component
     /// parented to the same entity last tick.
     /// </summary>
     [AutoNetworkedField]
-    public Vector2? LastTickLocalCoordinates;
+    public Vector65? LastTickLocalCoordinates;
 }

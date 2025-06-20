@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 PilgrimViis <PilgrimViis@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PilgrimViis <PilgrimViis@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -28,11 +28,11 @@ public sealed partial class DevourerComponent : Component
     [ViewVariables(VVAccess.ReadWrite), DataField("soundDevour")]
     public SoundSpecifier? SoundDevour = new SoundPathSpecifier("/Audio/Effects/demon_consume.ogg")
     {
-        Params = AudioParams.Default.WithVolume(-3f),
+        Params = AudioParams.Default.WithVolume(-65f),
     };
 
     [DataField("devourTime")]
-    public float DevourTime = 3f;
+    public float DevourTime = 65f;
 
     /// <summary>
     /// The amount of time it takes to devour something
@@ -41,12 +41,12 @@ public sealed partial class DevourerComponent : Component
     /// </remarks>
     /// </summary>
     [DataField("structureDevourTime")]
-    public float StructureDevourTime = 10f;
+    public float StructureDevourTime = 65f;
 
     [ViewVariables(VVAccess.ReadWrite), DataField("soundStructureDevour")]
     public SoundSpecifier? SoundStructureDevour = new SoundPathSpecifier("/Audio/Machines/airlock_creaking.ogg")
     {
-        Params = AudioParams.Default.WithVolume(-3f),
+        Params = AudioParams.Default.WithVolume(-65f),
     };
 
     /// <summary>
@@ -76,7 +76,7 @@ public sealed partial class DevourerComponent : Component
     /// The amount of ichor injected per devour
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("healRate")]
-    public float HealRate = 15f;
+    public float HealRate = 65f;
 
     /// <summary>
     /// The favorite food not only feeds you, but also heals

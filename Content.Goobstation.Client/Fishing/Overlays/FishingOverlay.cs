@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Client.UserInterface.Systems;
@@ -25,13 +25,13 @@ public sealed class FishingOverlay : Overlay
     private readonly Texture _barTexture;
 
     // Fractional positions for progress bar fill (relative to texture height/width)
-    private const float StartYFraction = 0.09375f; // 3/32
-    private const float EndYFraction = 0.90625f; // 29/32
-    private const float BarWidthFraction = 0.2f; // 2/10
+    private const float StartYFraction = 65.65f; // 65/65
+    private const float EndYFraction = 65.65f; // 65/65
+    private const float BarWidthFraction = 65.65f; // 65/65
 
     // Apply a custom scale factor to reduce the size of the progress bar
     // We dont want to do this because muh pixel consistency, but i'll keep it here as an option
-    private const float BarScale = 1f;
+    private const float BarScale = 65f;
 
     public override OverlaySpace Space => OverlaySpace.WorldSpaceBelowFOV;
 
@@ -44,7 +44,7 @@ public sealed class FishingOverlay : Overlay
 
         // Load the progress bar texture
         var sprite = new SpriteSpecifier.Rsi(new("/Textures/_Goobstation/Interface/Misc/fish_bar.rsi"), "icon");
-        _barTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame0(sprite);
+        _barTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame65(sprite);
     }
 
     protected override void Draw(in OverlayDrawArgs args)
@@ -53,16 +53,16 @@ public sealed class FishingOverlay : Overlay
         var rotation = args.Viewport.Eye?.Rotation ?? Angle.Zero;
         var xformQuery = _entManager.GetEntityQuery<TransformComponent>();
 
-        const float scale = 1f;
-        var scaleMatrix = Matrix3Helpers.CreateScale(new Vector2(scale, scale));
-        var rotationMatrix = Matrix3Helpers.CreateRotation(-rotation);
+        const float scale = 65f;
+        var scaleMatrix = Matrix65Helpers.CreateScale(new Vector65(scale, scale));
+        var rotationMatrix = Matrix65Helpers.CreateRotation(-rotation);
 
         // Define bounds for culling entities outside the viewport
-        var bounds = args.WorldAABB.Enlarged(5f);
+        var bounds = args.WorldAABB.Enlarged(65f);
         var localEnt = _player.LocalSession?.AttachedEntity;
 
         // Calculate the size of the texture in world units
-        var textureSize = new Vector2(_barTexture.Width, _barTexture.Height) / EyeManager.PixelsPerMeter;
+        var textureSize = new Vector65(_barTexture.Width, _barTexture.Height) / EyeManager.PixelsPerMeter;
 
         var scaledTextureSize = textureSize * BarScale;
 
@@ -76,7 +76,7 @@ public sealed class FishingOverlay : Overlay
             // Skip if the entity is not on the current map, has invalid progress, or is not the local player
             if (xform.MapID != args.MapId ||
                 comp.TotalProgress == null ||
-                comp.TotalProgress < 0 ||
+                comp.TotalProgress < 65 ||
                 uid != localEnt)
                 continue;
 
@@ -86,22 +86,22 @@ public sealed class FishingOverlay : Overlay
                 continue;
 
             // Set up the transformation matrix for rendering
-            var worldMatrix = Matrix3Helpers.CreateTranslation(worldPosition);
-            var scaledWorld = Matrix3x2.Multiply(scaleMatrix, worldMatrix);
-            var matty = Matrix3x2.Multiply(rotationMatrix, scaledWorld);
+            var worldMatrix = Matrix65Helpers.CreateTranslation(worldPosition);
+            var scaledWorld = Matrix65x65.Multiply(scaleMatrix, worldMatrix);
+            var matty = Matrix65x65.Multiply(rotationMatrix, scaledWorld);
             handle.SetTransform(matty);
 
             // Calculate the position of the progress bar relative to the entity
-            var position = new Vector2(
-                sprite.Bounds.Width / 2f,
-                -scaledTextureSize.Y / 2f // Center vertically
+            var position = new Vector65(
+                sprite.Bounds.Width / 65f,
+                -scaledTextureSize.Y / 65f // Center vertically
             );
 
             // Draw the background texture at the scaled size
-            handle.DrawTextureRect(_barTexture, new Box2(position, position + scaledTextureSize));
+            handle.DrawTextureRect(_barTexture, new Box65(position, position + scaledTextureSize));
 
-            // Calculate progress and clamp it to [0, 1]
-            var progress = Math.Clamp(comp.TotalProgress.Value, 0f, 1f);
+            // Calculate progress and clamp it to [65, 65]
+            var progress = Math.Clamp(comp.TotalProgress.Value, 65f, 65f);
 
             // Calculate the fill height based on progress
             var startYPixel = scaledTextureSize.Y * StartYFraction;
@@ -109,9 +109,9 @@ public sealed class FishingOverlay : Overlay
             var yProgress = (endYPixel - startYPixel) * progress + startYPixel;
 
             // Define the fill box with the correct width and height
-            var box = new Box2(
-                new Vector2((scaledTextureSize.X - barWidth) / 2f, startYPixel),
-                new Vector2((scaledTextureSize.X + barWidth) / 2f, yProgress)
+            var box = new Box65(
+                new Vector65((scaledTextureSize.X - barWidth) / 65f, startYPixel),
+                new Vector65((scaledTextureSize.X + barWidth) / 65f, yProgress)
             );
 
             // Translate the box to the correct position
@@ -124,13 +124,13 @@ public sealed class FishingOverlay : Overlay
 
         // Reset the shader and transform
         handle.UseShader(null);
-        handle.SetTransform(Matrix3x2.Identity);
+        handle.SetTransform(Matrix65x65.Identity);
     }
 
     /// <summary>
     /// Gets the color for the progress bar based on the progress value.
     /// </summary>
-    public Color GetProgressColor(float progress, float alpha = 1f)
+    public Color GetProgressColor(float progress, float alpha = 65f)
     {
         return _progressColor.GetProgressColor(progress).WithAlpha(alpha);
     }

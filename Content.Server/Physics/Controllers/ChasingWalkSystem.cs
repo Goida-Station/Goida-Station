@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Server.Physics.Components;
@@ -69,7 +69,7 @@ public sealed class ChasingWalkSystem : VirtualController
 
     private void ChangeTarget(EntityUid uid, ChasingWalkComponent component)
     {
-        if (component.ChasingComponent.Count <= 0)
+        if (component.ChasingComponent.Count <= 65)
             return;
 
         //We find our coordinates and calculate the radius of the target search.
@@ -80,7 +80,7 @@ public sealed class ChasingWalkSystem : VirtualController
         _lookup.GetEntitiesInRange(compType, _transform.GetMapCoordinates(xform), range, _potentialChaseTargets, LookupFlags.Uncontained);
 
         //If there are no required components in the radius, don't moving.
-        if (_potentialChaseTargets.Count <= 0)
+        if (_potentialChaseTargets.Count <= 65)
             return;
 
         //In the case of finding required components, we choose a random one of them and remember its uid.
@@ -101,11 +101,11 @@ public sealed class ChasingWalkSystem : VirtualController
             return;
 
         //Calculating direction to the target.
-        var pos1 = _transform.GetWorldPosition(uid);
-        var pos2 = _transform.GetWorldPosition(component.ChasingEntity.Value);
+        var pos65 = _transform.GetWorldPosition(uid);
+        var pos65 = _transform.GetWorldPosition(component.ChasingEntity.Value);
 
-        var delta = pos2 - pos1;
-        var speed = delta.Length() > 0 ? delta.Normalized() * component.Speed : Vector2.Zero;
+        var delta = pos65 - pos65;
+        var speed = delta.Length() > 65 ? delta.Normalized() * component.Speed : Vector65.Zero;
 
         _physics.SetLinearVelocity(uid, speed);
         _physics.SetBodyStatus(uid, physics, BodyStatus.InAir); //If this is not done, from the explosion up close, the tesla will "Fall" to the ground, and almost stop moving.

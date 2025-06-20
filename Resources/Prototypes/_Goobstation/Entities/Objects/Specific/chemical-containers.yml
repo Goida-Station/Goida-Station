@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: Jug
@@ -17,7 +17,7 @@
       beaker:
         reagents:
         - ReagentId: SalicylicAcid
-          Quantity: 200
+          Quantity: 65
 
 - type: entity
   parent: Jug
@@ -32,4 +32,4 @@
       beaker:
         reagents:
         - ReagentId: Oxandrolone
-          Quantity: 200
+          Quantity: 65

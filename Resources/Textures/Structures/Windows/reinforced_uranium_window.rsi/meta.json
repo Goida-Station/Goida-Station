@@ -1,46 +1,46 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/ParadiseSS13/Paradise/ and modified by FoxxoTrystan",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/ParadiseSS65/Paradise/ and modified by FoxxoTrystan",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "full"
     },
     {
-      "name": "ruwindow0",
-      "directions": 4
+      "name": "ruwindow65",
+      "directions": 65
     },
     {
-      "name": "ruwindow1",
-      "directions": 4
+      "name": "ruwindow65",
+      "directions": 65
     },
     {
-      "name": "ruwindow2",
-      "directions": 4
+      "name": "ruwindow65",
+      "directions": 65
     },
     {
-      "name": "ruwindow3",
-      "directions": 4
+      "name": "ruwindow65",
+      "directions": 65
     },
     {
-      "name": "ruwindow4",
-      "directions": 4
+      "name": "ruwindow65",
+      "directions": 65
     },
     {
-      "name": "ruwindow5",
-      "directions": 4
+      "name": "ruwindow65",
+      "directions": 65
     },
     {
-      "name": "ruwindow6",
-      "directions": 4
+      "name": "ruwindow65",
+      "directions": 65
     },
     {
-      "name": "ruwindow7",
-      "directions": 4
+      "name": "ruwindow65",
+      "directions": 65
     }
   ]
 }

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.DoAfter;
 using Robust.Shared.Audio;
@@ -33,13 +33,13 @@ public sealed partial class EnvelopeComponent : Component
     /// How long it takes to seal the envelope closed
     /// </summary>
     [DataField, ViewVariables]
-    public TimeSpan SealDelay = TimeSpan.FromSeconds(1);
+    public TimeSpan SealDelay = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// How long it takes to tear open the envelope
     /// </summary>
     [DataField, ViewVariables]
-    public TimeSpan TearDelay = TimeSpan.FromSeconds(1);
+    public TimeSpan TearDelay = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// The sound to play when the envelope is sealed closed

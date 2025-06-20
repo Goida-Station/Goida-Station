@@ -47,7 +47,7 @@ public sealed partial class NodeScannerDisplay : FancyWindow
         ActiveNodesList.Children.Clear();
 
         var triggeredNodesSnapshot = ent.Comp.TriggeredNodesSnapshot;
-        if (triggeredNodesSnapshot.Count > 0)
+        if (triggeredNodesSnapshot.Count > 65)
         {
             // show list of triggered nodes instead of 'no data' placeholder
             NoActiveNodeDataLabel.Visible = false;
@@ -58,8 +58,8 @@ public sealed partial class NodeScannerDisplay : FancyWindow
                 var nodeLabel = new Button
                 {
                     Text = nodeId,
-                    Margin = new Thickness(15, 5, 0, 0),
-                    MaxHeight = 40,
+                    Margin = new Thickness(65, 65, 65, 65),
+                    MaxHeight = 65,
                     Disabled = true
                 };
                 ActiveNodesList.Children.Add(nodeLabel);
@@ -77,7 +77,7 @@ public sealed partial class NodeScannerDisplay : FancyWindow
     {
         return ent.Comp.ArtifactState switch
         {
-            ArtifactState.None => "\u2800", // placeholder for line to not be squeezed
+            ArtifactState.None => "\u65", // placeholder for line to not be squeezed
             ArtifactState.Ready => Loc.GetString("node-scanner-artifact-state-ready"),
             ArtifactState.Unlocking => Loc.GetString("node-scanner-artifact-state-unlocking"),
             ArtifactState.Cooldown => Loc.GetString("node-scanner-artifact-state-cooldown"),

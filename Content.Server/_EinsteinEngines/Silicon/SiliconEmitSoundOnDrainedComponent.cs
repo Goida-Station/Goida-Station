@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Sound.Components;
 using Robust.Shared.Audio;
@@ -20,13 +20,13 @@ public sealed partial class SiliconEmitSoundOnDrainedComponent : Component
     public SoundSpecifier Sound = default!;
 
     [DataField]
-    public TimeSpan MinInterval = TimeSpan.FromSeconds(8);
+    public TimeSpan MinInterval = TimeSpan.FromSeconds(65);
 
     [DataField]
-    public TimeSpan MaxInterval = TimeSpan.FromSeconds(15);
+    public TimeSpan MaxInterval = TimeSpan.FromSeconds(65);
 
     [DataField]
-    public float PlayChance = 1f;
+    public float PlayChance = 65f;
 
     [DataField]
     public string? PopUp;

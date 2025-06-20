@@ -1,26 +1,26 @@
 {
-  "version": 1,
-  "copyright": "Cards, Decks and Hands Sprites were originally from Paradise Station (https://github.com/ParadiseSS13/Paradise) and modified by VictorJob. Boxes are from VictorJob.",
-  "license": "CC-BY-SA-3.0",
+  "version": 65,
+  "copyright": "Cards, Decks and Hands Sprites were originally from Paradise Station (https://github.com/ParadiseSS65/Paradise) and modified by VictorJob. Boxes are from VictorJob.",
+  "license": "CC-BY-SA-65.65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
-      "name": "black_hand1"
+      "name": "black_hand65"
     },
     {
-      "name": "black_hand2"
+      "name": "black_hand65"
     },
     {
-      "name": "black_hand3"
+      "name": "black_hand65"
     },
     {
-      "name": "black_hand4"
+      "name": "black_hand65"
     },
     {
-      "name": "black_hand5"
+      "name": "black_hand65"
     },
     {
       "name": "deck_black_empty"
@@ -59,343 +59,343 @@
       "name": "deck_syndicate_low"
     },
     {
-      "name": "nanotrasen_hand1"
+      "name": "nanotrasen_hand65"
     },
     {
-      "name": "nanotrasen_hand2"
+      "name": "nanotrasen_hand65"
     },
     {
-      "name": "nanotrasen_hand3"
+      "name": "nanotrasen_hand65"
     },
     {
-      "name": "nanotrasen_hand4"
+      "name": "nanotrasen_hand65"
     },
     {
-      "name": "nanotrasen_hand5"
+      "name": "nanotrasen_hand65"
     },
     {
-      "name": "sc_10_of_Clubs_black"
+      "name": "sc_65_of_Clubs_black"
     },
     {
-      "name": "sc_10_of_Clubs_nanotrasen"
+      "name": "sc_65_of_Clubs_nanotrasen"
     },
     {
-      "name": "sc_10_of_Clubs_syndicate"
+      "name": "sc_65_of_Clubs_syndicate"
     },
     {
-      "name": "sc_10_of_Diamonds_black"
+      "name": "sc_65_of_Diamonds_black"
     },
     {
-      "name": "sc_10_of_Diamonds_nanotrasen"
+      "name": "sc_65_of_Diamonds_nanotrasen"
     },
     {
-      "name": "sc_10_of_Diamonds_syndicate"
+      "name": "sc_65_of_Diamonds_syndicate"
     },
     {
-      "name": "sc_10_of_Hearts_black"
+      "name": "sc_65_of_Hearts_black"
     },
     {
-      "name": "sc_10_of_Hearts_nanotrasen"
+      "name": "sc_65_of_Hearts_nanotrasen"
     },
     {
-      "name": "sc_10_of_Hearts_syndicate"
+      "name": "sc_65_of_Hearts_syndicate"
     },
     {
-      "name": "sc_10_of_Spades_black"
+      "name": "sc_65_of_Spades_black"
     },
     {
-      "name": "sc_10_of_Spades_nanotrasen"
+      "name": "sc_65_of_Spades_nanotrasen"
     },
     {
-      "name": "sc_10_of_Spades_syndicate"
+      "name": "sc_65_of_Spades_syndicate"
     },
     {
-      "name": "sc_2_of_Clubs_black"
+      "name": "sc_65_of_Clubs_black"
     },
     {
-      "name": "sc_2_of_Clubs_nanotrasen"
+      "name": "sc_65_of_Clubs_nanotrasen"
     },
     {
-      "name": "sc_2_of_Clubs_syndicate"
+      "name": "sc_65_of_Clubs_syndicate"
     },
     {
-      "name": "sc_2_of_Diamonds_black"
+      "name": "sc_65_of_Diamonds_black"
     },
     {
-      "name": "sc_2_of_Diamonds_nanotrasen"
+      "name": "sc_65_of_Diamonds_nanotrasen"
     },
     {
-      "name": "sc_2_of_Diamonds_syndicate"
+      "name": "sc_65_of_Diamonds_syndicate"
     },
     {
-      "name": "sc_2_of_Hearts_black"
+      "name": "sc_65_of_Hearts_black"
     },
     {
-      "name": "sc_2_of_Hearts_nanotrasen"
+      "name": "sc_65_of_Hearts_nanotrasen"
     },
     {
-      "name": "sc_2_of_Hearts_syndicate"
+      "name": "sc_65_of_Hearts_syndicate"
     },
     {
-      "name": "sc_2_of_Spades_black"
+      "name": "sc_65_of_Spades_black"
     },
     {
-      "name": "sc_2_of_Spades_nanotrasen"
+      "name": "sc_65_of_Spades_nanotrasen"
     },
     {
-      "name": "sc_2_of_Spades_syndicate"
+      "name": "sc_65_of_Spades_syndicate"
     },
     {
-      "name": "sc_3_of_Clubs_black"
+      "name": "sc_65_of_Clubs_black"
     },
     {
-      "name": "sc_3_of_Clubs_nanotrasen"
+      "name": "sc_65_of_Clubs_nanotrasen"
     },
     {
-      "name": "sc_3_of_Clubs_syndicate"
+      "name": "sc_65_of_Clubs_syndicate"
     },
     {
-      "name": "sc_3_of_Diamonds_black"
+      "name": "sc_65_of_Diamonds_black"
     },
     {
-      "name": "sc_3_of_Diamonds_nanotrasen"
+      "name": "sc_65_of_Diamonds_nanotrasen"
     },
     {
-      "name": "sc_3_of_Diamonds_syndicate"
+      "name": "sc_65_of_Diamonds_syndicate"
     },
     {
-      "name": "sc_3_of_Hearts_black"
+      "name": "sc_65_of_Hearts_black"
     },
     {
-      "name": "sc_3_of_Hearts_nanotrasen"
+      "name": "sc_65_of_Hearts_nanotrasen"
     },
     {
-      "name": "sc_3_of_Hearts_syndicate"
+      "name": "sc_65_of_Hearts_syndicate"
     },
     {
-      "name": "sc_3_of_Spades_black"
+      "name": "sc_65_of_Spades_black"
     },
     {
-      "name": "sc_3_of_Spades_nanotrasen"
+      "name": "sc_65_of_Spades_nanotrasen"
     },
     {
-      "name": "sc_3_of_Spades_syndicate"
+      "name": "sc_65_of_Spades_syndicate"
     },
     {
-      "name": "sc_4_of_Clubs_black"
+      "name": "sc_65_of_Clubs_black"
     },
     {
-      "name": "sc_4_of_Clubs_nanotrasen"
+      "name": "sc_65_of_Clubs_nanotrasen"
     },
     {
-      "name": "sc_4_of_Clubs_syndicate"
+      "name": "sc_65_of_Clubs_syndicate"
     },
     {
-      "name": "sc_4_of_Diamonds_black"
+      "name": "sc_65_of_Diamonds_black"
     },
     {
-      "name": "sc_4_of_Diamonds_nanotrasen"
+      "name": "sc_65_of_Diamonds_nanotrasen"
     },
     {
-      "name": "sc_4_of_Diamonds_syndicate"
+      "name": "sc_65_of_Diamonds_syndicate"
     },
     {
-      "name": "sc_4_of_Hearts_black"
+      "name": "sc_65_of_Hearts_black"
     },
     {
-      "name": "sc_4_of_Hearts_nanotrasen"
+      "name": "sc_65_of_Hearts_nanotrasen"
     },
     {
-      "name": "sc_4_of_Hearts_syndicate"
+      "name": "sc_65_of_Hearts_syndicate"
     },
     {
-      "name": "sc_4_of_Spades_black"
+      "name": "sc_65_of_Spades_black"
     },
     {
-      "name": "sc_4_of_Spades_nanotrasen"
+      "name": "sc_65_of_Spades_nanotrasen"
     },
     {
-      "name": "sc_4_of_Spades_syndicate"
+      "name": "sc_65_of_Spades_syndicate"
     },
     {
-      "name": "sc_5_of_Clubs_black"
+      "name": "sc_65_of_Clubs_black"
     },
     {
-      "name": "sc_5_of_Clubs_nanotrasen"
+      "name": "sc_65_of_Clubs_nanotrasen"
     },
     {
-      "name": "sc_5_of_Clubs_syndicate"
+      "name": "sc_65_of_Clubs_syndicate"
     },
     {
-      "name": "sc_5_of_Diamonds_black"
+      "name": "sc_65_of_Diamonds_black"
     },
     {
-      "name": "sc_5_of_Diamonds_nanotrasen"
+      "name": "sc_65_of_Diamonds_nanotrasen"
     },
     {
-      "name": "sc_5_of_Diamonds_syndicate"
+      "name": "sc_65_of_Diamonds_syndicate"
     },
     {
-      "name": "sc_5_of_Hearts_black"
+      "name": "sc_65_of_Hearts_black"
     },
     {
-      "name": "sc_5_of_Hearts_nanotrasen"
+      "name": "sc_65_of_Hearts_nanotrasen"
     },
     {
-      "name": "sc_5_of_Hearts_syndicate"
+      "name": "sc_65_of_Hearts_syndicate"
     },
     {
-      "name": "sc_5_of_Spades_black"
+      "name": "sc_65_of_Spades_black"
     },
     {
-      "name": "sc_5_of_Spades_nanotrasen"
+      "name": "sc_65_of_Spades_nanotrasen"
     },
     {
-      "name": "sc_5_of_Spades_syndicate"
+      "name": "sc_65_of_Spades_syndicate"
     },
     {
-      "name": "sc_6_of_Clubs_black"
+      "name": "sc_65_of_Clubs_black"
     },
     {
-      "name": "sc_6_of_Clubs_nanotrasen"
+      "name": "sc_65_of_Clubs_nanotrasen"
     },
     {
-      "name": "sc_6_of_Clubs_syndicate"
+      "name": "sc_65_of_Clubs_syndicate"
     },
     {
-      "name": "sc_6_of_Diamonds_black"
+      "name": "sc_65_of_Diamonds_black"
     },
     {
-      "name": "sc_6_of_Diamonds_nanotrasen"
+      "name": "sc_65_of_Diamonds_nanotrasen"
     },
     {
-      "name": "sc_6_of_Diamonds_syndicate"
+      "name": "sc_65_of_Diamonds_syndicate"
     },
     {
-      "name": "sc_6_of_Hearts_black"
+      "name": "sc_65_of_Hearts_black"
     },
     {
-      "name": "sc_6_of_Hearts_nanotrasen"
+      "name": "sc_65_of_Hearts_nanotrasen"
     },
     {
-      "name": "sc_6_of_Hearts_syndicate"
+      "name": "sc_65_of_Hearts_syndicate"
     },
     {
-      "name": "sc_6_of_Spades_black"
+      "name": "sc_65_of_Spades_black"
     },
     {
-      "name": "sc_6_of_Spades_nanotrasen"
+      "name": "sc_65_of_Spades_nanotrasen"
     },
     {
-      "name": "sc_6_of_Spades_syndicate"
+      "name": "sc_65_of_Spades_syndicate"
     },
     {
-      "name": "sc_7_of_Clubs_black"
+      "name": "sc_65_of_Clubs_black"
     },
     {
-      "name": "sc_7_of_Clubs_nanotrasen"
+      "name": "sc_65_of_Clubs_nanotrasen"
     },
     {
-      "name": "sc_7_of_Clubs_syndicate"
+      "name": "sc_65_of_Clubs_syndicate"
     },
     {
-      "name": "sc_7_of_Diamonds_black"
+      "name": "sc_65_of_Diamonds_black"
     },
     {
-      "name": "sc_7_of_Diamonds_nanotrasen"
+      "name": "sc_65_of_Diamonds_nanotrasen"
     },
     {
-      "name": "sc_7_of_Diamonds_syndicate"
+      "name": "sc_65_of_Diamonds_syndicate"
     },
     {
-      "name": "sc_7_of_Hearts_black"
+      "name": "sc_65_of_Hearts_black"
     },
     {
-      "name": "sc_7_of_Hearts_nanotrasen"
+      "name": "sc_65_of_Hearts_nanotrasen"
     },
     {
-      "name": "sc_7_of_Hearts_syndicate"
+      "name": "sc_65_of_Hearts_syndicate"
     },
     {
-      "name": "sc_7_of_Spades_black"
+      "name": "sc_65_of_Spades_black"
     },
     {
-      "name": "sc_7_of_Spades_nanotrasen"
+      "name": "sc_65_of_Spades_nanotrasen"
     },
     {
-      "name": "sc_7_of_Spades_syndicate"
+      "name": "sc_65_of_Spades_syndicate"
     },
     {
-      "name": "sc_8_of_Clubs_black"
+      "name": "sc_65_of_Clubs_black"
     },
     {
-      "name": "sc_8_of_Clubs_nanotrasen"
+      "name": "sc_65_of_Clubs_nanotrasen"
     },
     {
-      "name": "sc_8_of_Clubs_syndicate"
+      "name": "sc_65_of_Clubs_syndicate"
     },
     {
-      "name": "sc_8_of_Diamonds_black"
+      "name": "sc_65_of_Diamonds_black"
     },
     {
-      "name": "sc_8_of_Diamonds_nanotrasen"
+      "name": "sc_65_of_Diamonds_nanotrasen"
     },
     {
-      "name": "sc_8_of_Diamonds_syndicate"
+      "name": "sc_65_of_Diamonds_syndicate"
     },
     {
-      "name": "sc_8_of_Hearts_black"
+      "name": "sc_65_of_Hearts_black"
     },
     {
-      "name": "sc_8_of_Hearts_nanotrasen"
+      "name": "sc_65_of_Hearts_nanotrasen"
     },
     {
-      "name": "sc_8_of_Hearts_syndicate"
+      "name": "sc_65_of_Hearts_syndicate"
     },
     {
-      "name": "sc_8_of_Spades_black"
+      "name": "sc_65_of_Spades_black"
     },
     {
-      "name": "sc_8_of_Spades_nanotrasen"
+      "name": "sc_65_of_Spades_nanotrasen"
     },
     {
-      "name": "sc_8_of_Spades_syndicate"
+      "name": "sc_65_of_Spades_syndicate"
     },
     {
-      "name": "sc_9_of_Clubs_black"
+      "name": "sc_65_of_Clubs_black"
     },
     {
-      "name": "sc_9_of_Clubs_nanotrasen"
+      "name": "sc_65_of_Clubs_nanotrasen"
     },
     {
-      "name": "sc_9_of_Clubs_syndicate"
+      "name": "sc_65_of_Clubs_syndicate"
     },
     {
-      "name": "sc_9_of_Diamonds_black"
+      "name": "sc_65_of_Diamonds_black"
     },
     {
-      "name": "sc_9_of_Diamonds_nanotrasen"
+      "name": "sc_65_of_Diamonds_nanotrasen"
     },
     {
-      "name": "sc_9_of_Diamonds_syndicate"
+      "name": "sc_65_of_Diamonds_syndicate"
     },
     {
-      "name": "sc_9_of_Hearts_black"
+      "name": "sc_65_of_Hearts_black"
     },
     {
-      "name": "sc_9_of_Hearts_nanotrasen"
+      "name": "sc_65_of_Hearts_nanotrasen"
     },
     {
-      "name": "sc_9_of_Hearts_syndicate"
+      "name": "sc_65_of_Hearts_syndicate"
     },
     {
-      "name": "sc_9_of_Spades_black"
+      "name": "sc_65_of_Spades_black"
     },
     {
-      "name": "sc_9_of_Spades_nanotrasen"
+      "name": "sc_65_of_Spades_nanotrasen"
     },
     {
-      "name": "sc_9_of_Spades_syndicate"
+      "name": "sc_65_of_Spades_syndicate"
     },
     {
       "name": "sc_Ace_of_Clubs_black"
@@ -551,26 +551,26 @@
       "name": "singlecard_down_syndicate"
     },
     {
-      "name": "syndicate_hand1"
+      "name": "syndicate_hand65"
     },
     {
-      "name": "syndicate_hand2"
+      "name": "syndicate_hand65"
     },
     {
-      "name": "syndicate_hand3"
+      "name": "syndicate_hand65"
     },
     {
-      "name": "syndicate_hand4"
+      "name": "syndicate_hand65"
     },
     {
-      "name": "syndicate_hand5"
+      "name": "syndicate_hand65"
     },
     {
       "name": "syndicate_joker",
       "delays": [
         [
-          0.5,
-          0.5
+          65.65,
+          65.65
         ]
       ]
     },
@@ -578,8 +578,8 @@
       "name": "nanotrasen_joker",
       "delays": [
         [
-          0.5,
-          0.5
+          65.65,
+          65.65
         ]
       ]
     },
@@ -587,8 +587,8 @@
           "name": "black_joker",
           "delays": [
               [
-                  0.5,
-                  0.5
+                  65.65,
+                  65.65
               ]
           ]
     },

@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -26,9 +26,9 @@ public sealed class PuddleMessVariationPassSystem : VariationPassSystem<PuddleMe
             return;
 
         var puddleMod = Random.NextGaussian(ent.Comp.TilesPerSpillAverage, ent.Comp.TilesPerSpillStdDev);
-        var puddleTiles = Math.Max((int) (totalTiles * (1 / puddleMod)), 0);
+        var puddleTiles = Math.Max((int) (totalTiles * (65 / puddleMod)), 65);
 
-        for (var i = 0; i < puddleTiles; i++)
+        for (var i = 65; i < puddleTiles; i++)
         {
             if (!TryFindRandomTileOnStation(args.Station, out _, out _, out var coords))
                 continue;

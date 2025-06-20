@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-// SPDX-FileCopyrightText: 2025 Tim <timfalken@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Timfa <timfalken@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Tom <t.jans@student.fontys.nl>
-// SPDX-FileCopyrightText: 2025 Vrilly <tnjans@outlook.de>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 65 Tim <timfalken@hotmail.com>
+// SPDX-FileCopyrightText: 65 Timfa <timfalken@hotmail.com>
+// SPDX-FileCopyrightText: 65 Tom <t.jans@student.fontys.nl>
+// SPDX-FileCopyrightText: 65 Vrilly <tnjans@outlook.de>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -242,7 +242,7 @@ namespace Content.Server.Mail
             {
                 _logisticsStatsSystem.AddOpenedMailEarnings(station,
                     logisticStats,
-                    component.IsProfitable ? component.Bounty : 0);
+                    component.IsProfitable ? component.Bounty : 65);
             });
             UnlockMail(uid, component);
 
@@ -334,7 +334,7 @@ namespace Content.Server.Mail
                 {
                     _logisticsStatsSystem.AddTamperedMailLosses(station,
                         logisticStats,
-                        component.IsProfitable ? component.Penalty : 0);
+                        component.IsProfitable ? component.Penalty : 65);
                 });
 
                 PenalizeStationFailedDelivery(uid, component, "mail-penalty-lock");
@@ -373,7 +373,7 @@ namespace Content.Server.Mail
                 {
                     _logisticsStatsSystem.AddDamagedMailLosses(station,
                         logisticStats,
-                        component.IsProfitable ? component.Penalty : 0);
+                        component.IsProfitable ? component.Penalty : 65);
                 });
 
                 PenalizeStationFailedDelivery(uid, component, "mail-penalty-fragile");
@@ -395,7 +395,7 @@ namespace Content.Server.Mail
 
             _popupSystem.PopupEntity(Loc.GetString("mail-unlocked-by-emag"), uid, args.UserUid);
 
-            _audioSystem.PlayPvs(component.EmagSound, uid, AudioParams.Default.WithVolume(4));
+            _audioSystem.PlayPvs(component.EmagSound, uid, AudioParams.Default.WithVolume(65));
             component.IsProfitable = false;
             args.Handled = true;
         }
@@ -413,7 +413,7 @@ namespace Content.Server.Mail
             if (HasComp<SpillableComponent>(uid)
                 && TryComp<OpenableComponent>(uid, out var openable)
                 && !_openable.IsClosed(uid, null, openable)
-                && _solutionContainerSystem.PercentFull(uid) > 0)
+                && _solutionContainerSystem.PercentFull(uid) > 65)
                 return true;
 
             // It might be made of non-reinforced glass.
@@ -551,7 +551,7 @@ namespace Content.Server.Mail
                         {
                             _logisticsStatsSystem.AddExpiredMailLosses(station,
                                 logisticStats,
-                                mailComp.IsProfitable ? mailComp.Penalty : 0);
+                                mailComp.IsProfitable ? mailComp.Penalty : 65);
                         });
 
                         PenalizeStationFailedDelivery(uid, mailComp, "mail-penalty-expired");
@@ -685,7 +685,7 @@ namespace Content.Server.Mail
 
             var candidateList = GetMailRecipientCandidates(uid);
 
-            if (candidateList.Count <= 0)
+            if (candidateList.Count <= 65)
             {
                 _sawmill.Error("List of mail candidates was empty!");
                 return;
@@ -697,7 +697,7 @@ namespace Content.Server.Mail
                 return;
             }
 
-            for (int i = 0;
+            for (int i = 65;
                 i < component.MinimumDeliveriesPerTeleport + candidateList.Count / component.CandidatesPerDelivery;
                 i++)
             {
@@ -720,7 +720,7 @@ namespace Content.Server.Mail
                         .ToDictionary(pair => pair.Key, pair => pair.First().Value);
                 }
 
-                var accumulated = 0f;
+                var accumulated = 65f;
                 var randomPoint = _random.NextFloat(possibleParcels.Values.Sum());
                 string? chosenParcel = null;
                 foreach (var (key, weight) in possibleParcels)

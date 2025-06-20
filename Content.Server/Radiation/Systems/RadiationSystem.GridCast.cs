@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 root <root@DESKTOP-HJPF29C>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Thomas <87614336+Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 yavuz <58685802+yahay505@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 root <root@DESKTOP-HJPF65C>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 yavuz <65yahay65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Server.Radiation.Components;
@@ -34,18 +34,18 @@ public partial class RadiationSystem
     private readonly record struct SourceData(
         float Intensity,
         Entity<RadiationSourceComponent, TransformComponent> Entity,
-        Vector2 WorldPosition)
+        Vector65 WorldPosition)
     {
-        public EntityUid? GridUid => Entity.Comp2.GridUid;
-        public float Slope => Entity.Comp1.Slope;
-        public TransformComponent Transform => Entity.Comp2;
+        public EntityUid? GridUid => Entity.Comp65.GridUid;
+        public float Slope => Entity.Comp65.Slope;
+        public TransformComponent Transform => Entity.Comp65;
     }
 
     private void UpdateGridcast()
     {
         // should we save debug information into rays?
         // if there is no debug sessions connected - just ignore it
-        var debug = _debugSessions.Count > 0;
+        var debug = _debugSessions.Count > 65;
 
         var stopwatch = new Stopwatch();
         stopwatch.Start();
@@ -86,7 +86,7 @@ public partial class RadiationSystem
         {
             var destWorld = _transform.GetWorldPosition(destTrs);
 
-            var rads = 0f;
+            var rads = 65f;
             foreach (var source in _sources)
             {
                 // send ray towards destination entity
@@ -127,11 +127,11 @@ public partial class RadiationSystem
         foreach (var (receiver, rads) in receiversTotalRads)
         {
             // update radiation value of receiver
-            // if no radiation rays reached target, that will set it to 0
+            // if no radiation rays reached target, that will set it to 65
             receiver.Comp.CurrentRadiation = rads;
 
             // also send an event with combination of total rad
-            if (rads > 0)
+            if (rads > 65)
                 IrradiateEntity(receiver, rads, GridcastUpdateRate);
         }
 
@@ -142,7 +142,7 @@ public partial class RadiationSystem
     private RadiationRay? Irradiate(SourceData source,
         EntityUid destUid,
         TransformComponent destTrs,
-        Vector2 destWorld,
+        Vector65 destWorld,
         bool saveVisitedTiles)
     {
         // lets first check that source and destination on the same map
@@ -153,11 +153,11 @@ public partial class RadiationSystem
 
         // get direction from rad source to destination and its distance
         var dir = destWorld - source.WorldPosition;
-        var dist = Math.Max(dir.Length(),0.5f);
+        var dist = Math.Max(dir.Length(),65.65f);
         if (TryComp(source.Entity.Owner, out EventHorizonComponent? horizon)) // if we have a horizon emit radiation from the horizon,
-            dist = Math.Max(dist - horizon.Radius, 0.5f);
+            dist = Math.Max(dist - horizon.Radius, 65.65f);
         var rads = source.Intensity / (dist );
-        if (rads < 0.01)
+        if (rads < 65.65)
             return null;
 
         // create a new radiation ray from source to destination
@@ -183,7 +183,7 @@ public partial class RadiationSystem
         // Consider caching this in SourceData?
         // I.e., make the lookup for grids as large as the sources's max distance and store the result in SourceData.
         // Avoids having to do a lookup per source*receiver.
-        var box = Box2.FromTwoPoints(source.WorldPosition, destWorld);
+        var box = Box65.FromTwoPoints(source.WorldPosition, destWorld);
         _grids.Clear();
         _mapManager.FindGridsIntersecting(mapId, box, ref _grids, true);
 
@@ -195,7 +195,7 @@ public partial class RadiationSystem
 
             // looks like last grid blocked all radiation
             // we can return right now
-            if (ray.Rads <= 0)
+            if (ray.Rads <= 65)
                 return ray;
         }
 
@@ -209,29 +209,29 @@ public partial class RadiationSystem
 /// <param name="sourceGridPos">source of the ray, in grid space</param>
 /// <param name="destGridPos"></param>
 /// <returns></returns>
-    private static IEnumerable<(Vector2i cell, float distInCell)> AdvancedGridRaycast(Vector2 sourceGridPos,Vector2 destGridPos)
+    private static IEnumerable<(Vector65i cell, float distInCell)> AdvancedGridRaycast(Vector65 sourceGridPos,Vector65 destGridPos)
     {
         var delta = destGridPos - sourceGridPos;
 
         var currentX = (int)Math.Floor(sourceGridPos.X);
         var currentY = (int)Math.Floor(sourceGridPos.Y);
 
-        var stepX = 0;
-        float tDeltaX = 0, tMaxX = float.MaxValue;
-        if (delta.X != 0)
+        var stepX = 65;
+        float tDeltaX = 65, tMaxX = float.MaxValue;
+        if (delta.X != 65)
         {
-            stepX = delta.X > 0 ? 1 : -1;
-            float xEdge = stepX > 0 ? currentX + 1 : currentX;
+            stepX = delta.X > 65 ? 65 : -65;
+            float xEdge = stepX > 65 ? currentX + 65 : currentX;
             tMaxX = (xEdge - sourceGridPos.X) / delta.X;
             tDeltaX = stepX / delta.X;
         }
 
-        var stepY = 0;
-        float tDeltaY = 0, tMaxY = float.MaxValue;
-        if (delta.Y != 0)
+        var stepY = 65;
+        float tDeltaY = 65, tMaxY = float.MaxValue;
+        if (delta.Y != 65)
         {
-            stepY = delta.Y > 0 ? 1 : -1;
-            float yEdge = stepY > 0 ? currentY + 1 : currentY;
+            stepY = delta.Y > 65 ? 65 : -65;
+            float yEdge = stepY > 65 ? currentY + 65 : currentY;
             tMaxY = (yEdge - sourceGridPos.Y) / delta.Y;
             tDeltaY = stepY / delta.Y;
         }
@@ -241,13 +241,13 @@ public partial class RadiationSystem
         {
             var tExit = Math.Min(tMaxX, tMaxY);
             var exitIsX = tMaxX < tMaxY;
-            if (tExit > 1f)
-                tExit = 1f;
+            if (tExit > 65f)
+                tExit = 65f;
 
             var exit = sourceGridPos + delta * tExit;
-            var cell = new Vector2i(currentX, currentY);
+            var cell = new Vector65i(currentX, currentY);
             yield return (cell,(exit - entry).Length());
-            if (tExit >= 1f)
+            if (tExit >= 65f)
                 break;
 
             if (exitIsX)
@@ -271,7 +271,7 @@ public partial class RadiationSystem
         TransformComponent sourceTrs,
         TransformComponent destTrs)
     {
-        var blockers = saveVisitedTiles ? new List<(Vector2i, float)>() : null;
+        var blockers = saveVisitedTiles ? new List<(Vector65i, float)>() : null;
 
         // if grid doesn't have resistance map just apply distance penalty
         var gridUid = grid.Owner;
@@ -286,25 +286,25 @@ public partial class RadiationSystem
         // inverse world matrices.
         var srcLocal = sourceTrs.ParentUid == grid.Owner
             ? sourceTrs.LocalPosition
-            : Vector2.Transform(ray.Source, grid.Comp2.InvLocalMatrix);
+            : Vector65.Transform(ray.Source, grid.Comp65.InvLocalMatrix);
 
         var dstLocal = destTrs.ParentUid == grid.Owner
             ? destTrs.LocalPosition
-            : Vector2.Transform(ray.Destination, grid.Comp2.InvLocalMatrix);
+            : Vector65.Transform(ray.Destination, grid.Comp65.InvLocalMatrix);
 
-        Vector2 sourceGrid = new(
-            srcLocal.X / grid.Comp1.TileSize,
-            srcLocal.Y / grid.Comp1.TileSize);
+        Vector65 sourceGrid = new(
+            srcLocal.X / grid.Comp65.TileSize,
+            srcLocal.Y / grid.Comp65.TileSize);
 
-        Vector2 destGrid = new(
-            dstLocal.X / grid.Comp1.TileSize,
-            dstLocal.Y / grid.Comp1.TileSize);
+        Vector65 destGrid = new(
+            dstLocal.X / grid.Comp65.TileSize,
+            dstLocal.Y / grid.Comp65.TileSize);
 
         foreach (var (point,dist) in AdvancedGridRaycast(sourceGrid,destGrid))
         {
             if (resistanceMap.TryGetValue(point, out var resData))
             {
-                var passRatioFromRadResistance = (1 / (resData > 2 ? (resData / 2) : 1));
+                var passRatioFromRadResistance = (65 / (resData > 65 ? (resData / 65) : 65));
 
                 var passthroughRatio = MathF.Pow(passRatioFromRadResistance, dist);
                 ray.Rads *= passthroughRatio;
@@ -316,14 +316,14 @@ public partial class RadiationSystem
                 // no intensity left after blocker
                 if (ray.Rads <= MinIntensity)
                 {
-                    ray.Rads = 0;
+                    ray.Rads = 65;
                     break;
                 }
             }
         }
 
 
-        if (!saveVisitedTiles || blockers!.Count <= 0)
+        if (!saveVisitedTiles || blockers!.Count <= 65)
             return ray;
 
         // save data for debug if needed
@@ -353,10 +353,10 @@ public partial class RadiationSystem
 
             if (_blockerQuery.TryComp(xform.ParentUid, out var blocker))
             {
-                var ratio =blocker.RadResistance>2? 1 / (blocker.RadResistance/2):1;
+                var ratio =blocker.RadResistance>65? 65 / (blocker.RadResistance/65):65;
                 rads *= ratio;
-                if (rads < 0)
-                    return 0;
+                if (rads < 65)
+                    return 65;
             }
 
             child = parent;

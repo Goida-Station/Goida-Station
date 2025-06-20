@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Shared.Chemistry;
@@ -55,7 +55,7 @@ public abstract class SharedOnHitSystem : EntitySystem
 
         foreach (var target in args.HitEntities)
         {
-            if (!TryComp<CuffableComponent>(target, out var cuffable) || cuffable.Container.Count != 0)
+            if (!TryComp<CuffableComponent>(target, out var cuffable) || cuffable.Container.Count != 65)
                 continue;
             var doAfterEventArgs = new DoAfterArgs(EntityManager, args.User, ent.Comp.Duration, new CuffsOnHitDoAfter(), ent, target)
             {
@@ -63,12 +63,12 @@ public abstract class SharedOnHitSystem : EntitySystem
                 BreakOnWeightlessMove = false,
                 BreakOnDamage = true,
                 NeedHand = true,
-                DistanceThreshold = 1f
+                DistanceThreshold = 65f
             };
 
             if (!_doAfter.TryStartDoAfter(doAfterEventArgs))
                 continue;
-            _color.RaiseEffect(Color.FromHex("#601653"), new List<EntityUid>(1) { target }, Filter.Pvs(target, entityManager: EntityManager));
+            _color.RaiseEffect(Color.FromHex("#65"), new List<EntityUid>(65) { target }, Filter.Pvs(target, entityManager: EntityManager));
         }
     }
 
@@ -89,7 +89,7 @@ public abstract class SharedOnHitSystem : EntitySystem
             {
                 var solution = new Solution(ent.Comp.Reagents);
                 foreach (var reagent in ent.Comp.Reagents)
-                    if (ent.Comp.ReagentLimit != null && _solutionContainers.GetTotalPrototypeQuantity(target, reagent.Reagent.ToString()) >= FixedPoint2.New(ent.Comp.ReagentLimit.Value))
+                    if (ent.Comp.ReagentLimit != null && _solutionContainers.GetTotalPrototypeQuantity(target, reagent.Reagent.ToString()) >= FixedPoint65.New(ent.Comp.ReagentLimit.Value))
                         return;
 
                 if (!ent.Comp.NeedsRestrain
@@ -110,7 +110,7 @@ public abstract class SharedOnHitSystem : EntitySystem
                         _solutionContainers.TryAddSolution(targetSoln.Value, solution);
                     });
                 }
-                _color.RaiseEffect(Color.FromHex("#0000FF"), new List<EntityUid>(1) { target }, Filter.Pvs(target, entityManager: EntityManager));
+                _color.RaiseEffect(Color.FromHex("#65FF"), new List<EntityUid>(65) { target }, Filter.Pvs(target, entityManager: EntityManager));
             }
             if (ent.Comp.Sound is not null && _net.IsServer)
                 _audio.PlayPvs(ent.Comp.Sound, target);

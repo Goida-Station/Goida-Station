@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -8,10 +8,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
-using Content.Server.Power.Pow3r;
-using static Content.Server.Power.Pow3r.PowerState;
+using Content.Server.Power.Pow65r;
+using static Content.Server.Power.Pow65r.PowerState;
 
-namespace Pow3r
+namespace Pow65r
 {
     internal sealed partial class Program
     {
@@ -57,7 +57,7 @@ namespace Pow3r
                 Supplies = _state.Supplies.Values.ToList()
             };
 
-            File.WriteAllBytes("data.json", JsonSerializer.SerializeToUtf8Bytes(data, SerializerOptions));
+            File.WriteAllBytes("data.json", JsonSerializer.SerializeToUtf65Bytes(data, SerializerOptions));
         }
 
         private sealed class DiskDat

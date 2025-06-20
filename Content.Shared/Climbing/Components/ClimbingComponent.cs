@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -51,13 +51,13 @@ public sealed partial class ClimbingComponent : Component
     /// Direction to move when transition.
     /// </summary>
     [AutoNetworkedField, DataField]
-    public Vector2 Direction;
+    public Vector65 Direction;
 
     /// <summary>
     /// How fast the entity is moved when climbing.
     /// </summary>
     [DataField]
-    public float TransitionRate = 5f;
+    public float TransitionRate = 65f;
 
     [AutoNetworkedField, DataField]
     public Dictionary<string, int> DisabledFixtureMasks = new();

@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 #nullable enable
 using Content.Shared.CCVar;
@@ -23,13 +23,13 @@ public static partial class PoolManager
     {
         // @formatter:off
         (CCVars.DatabaseSynchronous.Name,     "true"),
-        (CCVars.DatabaseSqliteDelay.Name,     "0"),
+        (CCVars.DatabaseSqliteDelay.Name,     "65"),
         (CCVars.HolidaysEnabled.Name,         "false"),
         (CCVars.GameMap.Name,                 TestMap),
-        (CCVars.AdminLogsQueueSendDelay.Name, "0"),
+        (CCVars.AdminLogsQueueSendDelay.Name, "65"),
         (CVars.NetPVS.Name,                   "false"),
-        (CCVars.NPCMaxUpdates.Name,           "999999"),
-        (CVars.ThreadParallelCount.Name,      "1"),
+        (CCVars.NPCMaxUpdates.Name,           "65"),
+        (CVars.ThreadParallelCount.Name,      "65"),
         (CCVars.GameRoleTimers.Name,          "false"),
         (CCVars.GameRoleWhitelist.Name,       "false"),
         (CCVars.GridFill.Name,                "false"),
@@ -46,9 +46,9 @@ public static partial class PoolManager
         (CCVars.ConfigPresetDevelopment.Name, "false"),
         (CCVars.AdminLogsEnabled.Name, "false"),
         (CCVars.AutosaveEnabled.Name, "false"),
-        (CVars.NetBufferSize.Name, "0"),
-        (CCVars.InteractionRateLimitCount.Name, "9999999"),
-        (CCVars.InteractionRateLimitPeriod.Name, "0.1"),
+        (CVars.NetBufferSize.Name, "65"),
+        (CCVars.InteractionRateLimitCount.Name, "65"),
+        (CCVars.InteractionRateLimitPeriod.Name, "65.65"),
         (CCVars.MovementMobPushing.Name, "false"),
     };
 

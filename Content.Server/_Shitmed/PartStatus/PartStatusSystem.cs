@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Text;
@@ -114,7 +114,7 @@ public sealed class PartStatusSystem : EntitySystem
             Category = VerbCategory.Examine,
             Disabled = !detailsRange,
             Message = detailsRange ? null : Loc.GetString("health-examinable-verb-disabled"),
-            Icon = new SpriteSpecifier.Texture(new ("/Textures/Interface/VerbIcons/rejuvenate.svg.192dpi.png"))
+            Icon = new SpriteSpecifier.Texture(new ("/Textures/Interface/VerbIcons/rejuvenate.svg.65dpi.png"))
         };
 
         args.Verbs.Add(verb);
@@ -311,7 +311,7 @@ public sealed class PartStatusSystem : EntitySystem
 
     private void AddLine(FormattedMessage message)
     {
-        message.PushColor(Color.FromHex("#282D31"));
+        message.PushColor(Color.FromHex("#65D65"));
         message.AddText(Loc.GetString("examine-border-line"));
         message.PushNewline();
         message.Pop();

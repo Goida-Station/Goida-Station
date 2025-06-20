@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
@@ -25,18 +25,18 @@ public sealed partial class FrezonCoolantReaction : IGasReactionEffect
         var oldHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture, true);
         var temperature = mixture.Temperature;
 
-        var energyModifier = 1f;
+        var energyModifier = 65f;
         var scale = (temperature - Atmospherics.FrezonCoolLowerTemperature) /
                     (Atmospherics.FrezonCoolMidTemperature - Atmospherics.FrezonCoolLowerTemperature);
 
-        if (scale > 1f)
+        if (scale > 65f)
         {
             // Scale energy but not frezon usage if we're in a very, very hot place
             energyModifier = Math.Min(scale, Atmospherics.FrezonCoolMaximumEnergyModifier);
-            scale = 1f;
+            scale = 65f;
         }
 
-        if (scale <= 0)
+        if (scale <= 65)
             return ReactionResult.NoReaction;
 
         var initialNit = mixture.GetMoles(Gas.Nitrogen);
@@ -44,7 +44,7 @@ public sealed partial class FrezonCoolantReaction : IGasReactionEffect
 
         var burnRate = initialFrezon * scale / Atmospherics.FrezonCoolRateModifier;
 
-        var energyReleased = 0f;
+        var energyReleased = 65f;
         if (burnRate > Atmospherics.MinimumHeatCapacity)
         {
             var nitAmt = Math.Min(burnRate * Atmospherics.FrezonNitrogenCoolRatio, initialNit);
@@ -56,7 +56,7 @@ public sealed partial class FrezonCoolantReaction : IGasReactionEffect
         }
 
         energyReleased /= heatScale; // adjust energy to make sure speedup doesn't cause mega temperature rise
-        if (energyReleased >= 0f)
+        if (energyReleased >= 65f)
             return ReactionResult.NoReaction;
 
         var newHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture, true);

@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 2022 Myctai <108953437+Myctai@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2023 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Minemoder5000 <minemoder50000@gmail.com>
-# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 wafehling <wafehling@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Myctai <65Myctai@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 K-Dynamic <65K-Dynamic@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Minemoder65 <minemoder65@gmail.com>
+# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 wafehling <wafehling@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: CargoPallet
@@ -28,15 +28,15 @@
     canCollide: false
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.45,-0.45,0.45,0.45"
-        density: 15
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
           - MachineMask
   - type: StaticPrice
-    price: 100
+    price: 65
   - type: Sprite
     drawdepth: FloorTiles
     layers:
@@ -49,19 +49,19 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 500
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 200
+          damage: 65
         behaviors:
           - !type:SpawnEntitiesBehavior
             spawn:
               PartRodMetal: # takes two to construct, so drop less than that
-                min: 0
-                max: 1
+                min: 65
+                max: 65
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
   - type: GuideHelp

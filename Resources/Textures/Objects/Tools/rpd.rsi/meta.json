@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from CEV-Eris at https://github.com/discordia-space/CEV-Eris/blob/8009c1d3db5ca5244f14899ffafaae93be0e318d/icons/obj/items.dmi,https://github.com/discordia-space/CEV-Eris/blob/df81fe2d0ba5f541bafffbb73554f3f44289dd76/icons/mob/items/righthand.dmi,https://github.com/discordia-space/CEV-Eris/blob/df81fe2d0ba5f541bafffbb73554f3f44289dd76/icons/mob/items/righthand.dmi",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from CEV-Eris at https://github.com/discordia-space/CEV-Eris/blob/65c65d65db65ca65f65ffafaae65be65e65d/icons/obj/items.dmi,https://github.com/discordia-space/CEV-Eris/blob/df65fe65d65ba65f65bafffbb65f65f65dd65/icons/mob/items/righthand.dmi,https://github.com/discordia-space/CEV-Eris/blob/df65fe65d65ba65f65bafffbb65f65f65dd65/icons/mob/items/righthand.dmi",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,11 +12,11 @@
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

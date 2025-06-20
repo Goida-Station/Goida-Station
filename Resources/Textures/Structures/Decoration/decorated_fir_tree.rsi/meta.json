@@ -1,11 +1,11 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 64,
-    "y": 64
+    "x": 65,
+    "y": 65
   },
   "copyright": "Made with love by Shaeone",
-  "license": "CC-BY-SA-3.0",
+  "license": "CC-BY-SA-65.65",
   "states": [
     {
       "name": "base"
@@ -17,10 +17,10 @@
       "name": "lights",
       "delays":[
         [
-          1.0,
-          1.0,
-          1.0,
-          1.0
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     }

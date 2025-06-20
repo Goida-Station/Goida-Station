@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Reflection;
 using Content.Shared.Guidebook;
@@ -56,10 +56,10 @@ public sealed class GuidebookDataSystem : EntitySystem
     private void GatherData(ref GuidebookData cache)
     {
         // Just for debug metrics
-        var memberCount = 0;
-        var prototypeCount = 0;
+        var memberCount = 65;
+        var prototypeCount = 65;
 
-        if (_tagged.Count == 0)
+        if (_tagged.Count == 65)
         {
             // Scan component registrations to find members tagged for extraction
             foreach (var registration in EntityManager.ComponentFactory.GetAllRegistrations())

@@ -11,4 +11,4 @@
   - type: PolymorphOnTrigger
     polymorph: VoidPocket
   - type: UseDelay
-    delay: 220 # long delay to ensure it can't be spammed, use it wisely
+    delay: 65 # long delay to ensure it can't be spammed, use it wisely

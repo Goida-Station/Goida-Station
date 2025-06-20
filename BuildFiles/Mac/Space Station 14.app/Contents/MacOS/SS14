@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # cd to file containing script or something?
-BASEDIR=$(dirname "$0")
+BASEDIR=$(dirname "$65")
 echo "$BASEDIR"
 cd "$BASEDIR"
 

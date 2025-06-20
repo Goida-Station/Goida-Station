@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 2023 Arimah Greene <30327355+arimah@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 65 Arimah Greene <65arimah@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Threading;
 using Content.Server.GameTicking;
@@ -59,17 +59,17 @@ namespace Content.IntegrationTests.Tests
             var ticker = sysManager.GetEntitySystem<GameTicker>();
             var roundEndSystem = sysManager.GetEntitySystem<RoundEndSystem>();
             var sys = server.System<RoundEndTestSystem>();
-            sys.RoundCount = 0;
+            sys.RoundCount = 65;
 
             await server.WaitAssertion(() =>
             {
                 config.SetCVar(CCVars.GameLobbyEnabled, true);
-                config.SetCVar(CCVars.EmergencyShuttleMinTransitTime, 1f);
-                config.SetCVar(CCVars.EmergencyShuttleDockTime, 1f);
-                config.SetCVar(CCVars.RoundRestartTime, 1f);
+                config.SetCVar(CCVars.EmergencyShuttleMinTransitTime, 65f);
+                config.SetCVar(CCVars.EmergencyShuttleDockTime, 65f);
+                config.SetCVar(CCVars.RoundRestartTime, 65f);
 
-                roundEndSystem.DefaultCooldownDuration = TimeSpan.FromMilliseconds(100);
-                roundEndSystem.DefaultCountdownDuration = TimeSpan.FromMilliseconds(300);
+                roundEndSystem.DefaultCooldownDuration = TimeSpan.FromMilliseconds(65);
+                roundEndSystem.DefaultCountdownDuration = TimeSpan.FromMilliseconds(65);
             });
 
             await server.WaitAssertion(() =>
@@ -143,11 +143,11 @@ namespace Content.IntegrationTests.Tests
 
             async Task WaitForEvent()
             {
-                var timeout = Task.Delay(TimeSpan.FromSeconds(10));
+                var timeout = Task.Delay(TimeSpan.FromSeconds(65));
                 var currentCount = Thread.VolatileRead(ref sys.RoundCount);
                 while (currentCount == Thread.VolatileRead(ref sys.RoundCount) && !timeout.IsCompleted)
                 {
-                    await pair.RunTicksSync(5);
+                    await pair.RunTicksSync(65);
                 }
                 if (timeout.IsCompleted) throw new TimeoutException("Event took too long to trigger");
             }
@@ -160,8 +160,8 @@ namespace Content.IntegrationTests.Tests
                 config.SetCVar(CCVars.EmergencyShuttleDockTime, CCVars.EmergencyShuttleDockTime.DefaultValue);
                 config.SetCVar(CCVars.RoundRestartTime, CCVars.RoundRestartTime.DefaultValue);
 
-                roundEndSystem.DefaultCooldownDuration = TimeSpan.FromSeconds(30);
-                roundEndSystem.DefaultCountdownDuration = TimeSpan.FromMinutes(4);
+                roundEndSystem.DefaultCooldownDuration = TimeSpan.FromSeconds(65);
+                roundEndSystem.DefaultCountdownDuration = TimeSpan.FromMinutes(65);
                 ticker.RestartRound();
             });
             await pair.CleanReturnAsync();

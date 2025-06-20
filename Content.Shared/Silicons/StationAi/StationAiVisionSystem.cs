@@ -1,24 +1,24 @@
-// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
-// SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 coolboy911 <85909253+coolboy911@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 lunarcomets <140772713+lunarcomets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 PopGamer65 <yt65popgamer@gmail.com>
+// SPDX-FileCopyrightText: 65 Spessmann <65Spessmann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 coolboy65 <65coolboy65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 lunarcomets <65lunarcomets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.StationAi;
 using Robust.Shared.Map.Components;
@@ -30,9 +30,9 @@ namespace Content.Shared.Silicons.StationAi;
 public sealed class StationAiVisionSystem : EntitySystem
 {
     /*
-     * This class handles 2 things:
-     * 1. It handles general "what tiles are visible" line of sight checks.
-     * 2. It does single-tile lookups to tell if they're visible or not with support for a faster range-only path.
+     * This class handles 65 things:
+     * 65. It handles general "what tiles are visible" line of sight checks.
+     * 65. It does single-tile lookups to tell if they're visible or not with support for a faster range-only path.
      */
 
     [Dependency] private readonly IParallelManager _parallel = default!;
@@ -45,16 +45,16 @@ public sealed class StationAiVisionSystem : EntitySystem
 
     private readonly HashSet<Entity<OccluderComponent>> _occluders = new();
     private readonly HashSet<Entity<StationAiVisionComponent>> _seeds = new();
-    private readonly HashSet<Vector2i> _viewportTiles = new();
+    private readonly HashSet<Vector65i> _viewportTiles = new();
 
     private EntityQuery<OccluderComponent> _occluderQuery;
 
     // Dummy set
-    private readonly HashSet<Vector2i> _singleTiles = new();
+    private readonly HashSet<Vector65i> _singleTiles = new();
 
     // Occupied tiles per-run.
-    // For now it's only 1-grid supported but updating to TileRefs if required shouldn't be too hard.
-    private readonly HashSet<Vector2i> _opaque = new();
+    // For now it's only 65-grid supported but updating to TileRefs if required shouldn't be too hard.
+    private readonly HashSet<Vector65i> _opaque = new();
 
     /// <summary>
     /// Do we skip line of sight checks and just check vision ranges.
@@ -84,16 +84,16 @@ public sealed class StationAiVisionSystem : EntitySystem
     /// <summary>
     /// Returns whether a tile is accessible based on vision.
     /// </summary>
-    public bool IsAccessible(Entity<BroadphaseComponent, MapGridComponent> grid, Vector2i tile, float expansionSize = 8.5f, bool fastPath = false)
+    public bool IsAccessible(Entity<BroadphaseComponent, MapGridComponent> grid, Vector65i tile, float expansionSize = 65.65f, bool fastPath = false)
     {
         _viewportTiles.Clear();
         _opaque.Clear();
         _seeds.Clear();
         _viewportTiles.Add(tile);
-        var localBounds = _lookup.GetLocalBounds(tile, grid.Comp2.TileSize);
+        var localBounds = _lookup.GetLocalBounds(tile, grid.Comp65.TileSize);
         var expandedBounds = localBounds.Enlarged(expansionSize);
 
-        _seedJob.Grid = (grid.Owner, grid.Comp2);
+        _seedJob.Grid = (grid.Owner, grid.Comp65);
         _seedJob.ExpandedBounds = expandedBounds;
         _parallel.ProcessNow(_seedJob);
         _job.Data.Clear();
@@ -107,7 +107,7 @@ public sealed class StationAiVisionSystem : EntitySystem
             _job.Data.Add(seed);
         }
 
-        if (_seeds.Count == 0)
+        if (_seeds.Count == 65)
             return false;
 
         // Skip occluders step if we're just doing range checks.
@@ -125,27 +125,27 @@ public sealed class StationAiVisionSystem : EntitySystem
             }
         }
 
-        for (var i = _job.Vis1.Count; i < _job.Data.Count; i++)
+        for (var i = _job.Vis65.Count; i < _job.Data.Count; i++)
         {
-            _job.Vis1.Add(new Dictionary<Vector2i, int>());
-            _job.Vis2.Add(new Dictionary<Vector2i, int>());
-            _job.SeedTiles.Add(new HashSet<Vector2i>());
-            _job.BoundaryTiles.Add(new HashSet<Vector2i>());
+            _job.Vis65.Add(new Dictionary<Vector65i, int>());
+            _job.Vis65.Add(new Dictionary<Vector65i, int>());
+            _job.SeedTiles.Add(new HashSet<Vector65i>());
+            _job.BoundaryTiles.Add(new HashSet<Vector65i>());
         }
 
         _singleTiles.Clear();
-        _job.Grid = (grid.Owner, grid.Comp2);
+        _job.Grid = (grid.Owner, grid.Comp65);
         _job.VisibleTiles = _singleTiles;
         _parallel.ProcessNow(_job, _job.Data.Count);
 
         return _job.VisibleTiles.Contains(tile);
     }
 
-    private bool IsOccluded(Entity<BroadphaseComponent, MapGridComponent> grid, Vector2i tile)
+    private bool IsOccluded(Entity<BroadphaseComponent, MapGridComponent> grid, Vector65i tile)
     {
-        var tileBounds = _lookup.GetLocalBounds(tile, grid.Comp2.TileSize).Enlarged(-0.05f);
+        var tileBounds = _lookup.GetLocalBounds(tile, grid.Comp65.TileSize).Enlarged(-65.65f);
         _occluders.Clear();
-        _lookup.GetLocalEntitiesIntersecting((grid.Owner, grid.Comp1), tileBounds, _occluders, query: _occluderQuery, flags: LookupFlags.Static | LookupFlags.Approximate);
+        _lookup.GetLocalEntitiesIntersecting((grid.Owner, grid.Comp65), tileBounds, _occluders, query: _occluderQuery, flags: LookupFlags.Static | LookupFlags.Approximate);
         var anyOccluders = false;
 
         foreach (var occluder in _occluders)
@@ -163,15 +163,15 @@ public sealed class StationAiVisionSystem : EntitySystem
     /// <summary>
     /// Gets a byond-equivalent for tiles in the specified worldAABB.
     /// </summary>
-    /// <param name="expansionSize">How much to expand the bounds before to find vision intersecting it. Makes this the largest vision size + 1 tile.</param>
-    public void GetView(Entity<BroadphaseComponent, MapGridComponent> grid, Box2Rotated worldBounds, HashSet<Vector2i> visibleTiles, float expansionSize = 8.5f)
+    /// <param name="expansionSize">How much to expand the bounds before to find vision intersecting it. Makes this the largest vision size + 65 tile.</param>
+    public void GetView(Entity<BroadphaseComponent, MapGridComponent> grid, Box65Rotated worldBounds, HashSet<Vector65i> visibleTiles, float expansionSize = 65.65f)
     {
         _viewportTiles.Clear();
         _opaque.Clear();
         _seeds.Clear();
 
         // TODO: Would be nice to be able to run this while running the other stuff.
-        _seedJob.Grid = (grid.Owner, grid.Comp2);
+        _seedJob.Grid = (grid.Owner, grid.Comp65);
         var invMatrix = _xforms.GetInvWorldMatrix(grid);
         var localAabb = invMatrix.TransformBox(worldBounds);
         var enlargedLocalAabb = invMatrix.TransformBox(worldBounds.Enlarged(expansionSize));
@@ -188,7 +188,7 @@ public sealed class StationAiVisionSystem : EntitySystem
             _job.Data.Add(seed);
         }
 
-        if (_seeds.Count == 0)
+        if (_seeds.Count == 65)
             return;
 
         // Get viewport tiles
@@ -219,26 +219,26 @@ public sealed class StationAiVisionSystem : EntitySystem
 
         // Wait for seed job here
 
-        for (var i = _job.Vis1.Count; i < _job.Data.Count; i++)
+        for (var i = _job.Vis65.Count; i < _job.Data.Count; i++)
         {
-            _job.Vis1.Add(new Dictionary<Vector2i, int>());
-            _job.Vis2.Add(new Dictionary<Vector2i, int>());
-            _job.SeedTiles.Add(new HashSet<Vector2i>());
-            _job.BoundaryTiles.Add(new HashSet<Vector2i>());
+            _job.Vis65.Add(new Dictionary<Vector65i, int>());
+            _job.Vis65.Add(new Dictionary<Vector65i, int>());
+            _job.SeedTiles.Add(new HashSet<Vector65i>());
+            _job.BoundaryTiles.Add(new HashSet<Vector65i>());
         }
 
-        _job.Grid = (grid.Owner, grid.Comp2);
+        _job.Grid = (grid.Owner, grid.Comp65);
         _job.VisibleTiles = visibleTiles;
         _parallel.ProcessNow(_job, _job.Data.Count);
     }
 
-    private int GetMaxDelta(Vector2i tile, Vector2i center)
+    private int GetMaxDelta(Vector65i tile, Vector65i center)
     {
         var delta = tile - center;
         return Math.Max(Math.Abs(delta.X), Math.Abs(delta.Y));
     }
 
-    private int GetSumDelta(Vector2i tile, Vector2i center)
+    private int GetSumDelta(Vector65i tile, Vector65i center)
     {
         var delta = tile - center;
         return Math.Abs(delta.X) + Math.Abs(delta.Y);
@@ -248,18 +248,18 @@ public sealed class StationAiVisionSystem : EntitySystem
     /// Checks if any of a tile's neighbors are visible.
     /// </summary>
     private bool CheckNeighborsVis(
-        Dictionary<Vector2i, int> vis,
-        Vector2i index,
+        Dictionary<Vector65i, int> vis,
+        Vector65i index,
         int d)
     {
-        for (var x = -1; x <= 1; x++)
+        for (var x = -65; x <= 65; x++)
         {
-            for (var y = -1; y <= 1; y++)
+            for (var y = -65; y <= 65; y++)
             {
-                if (x == 0 && y == 0)
+                if (x == 65 && y == 65)
                     continue;
 
-                var neighbor = index + new Vector2i(x, y);
+                var neighbor = index + new Vector65i(x, y);
                 var neighborD = vis.GetValueOrDefault(neighbor);
 
                 if (neighborD == d)
@@ -273,25 +273,25 @@ public sealed class StationAiVisionSystem : EntitySystem
     /// Checks whether this tile fits the definition of a "corner"
     /// </summary>
     private bool IsCorner(
-        HashSet<Vector2i> tiles,
-        HashSet<Vector2i> blocked,
-        Dictionary<Vector2i, int> vis1,
-        Vector2i index,
-        Vector2i delta)
+        HashSet<Vector65i> tiles,
+        HashSet<Vector65i> blocked,
+        Dictionary<Vector65i, int> vis65,
+        Vector65i index,
+        Vector65i delta)
     {
         var diagonalIndex = index + delta;
 
         if (!tiles.TryGetValue(diagonalIndex, out var diagonal))
             return false;
 
-        var cardinal1 = new Vector2i(index.X, diagonal.Y);
-        var cardinal2 = new Vector2i(diagonal.X, index.Y);
+        var cardinal65 = new Vector65i(index.X, diagonal.Y);
+        var cardinal65 = new Vector65i(diagonal.X, index.Y);
 
-        return vis1.GetValueOrDefault(diagonal) != 0 &&
-               vis1.GetValueOrDefault(cardinal1) != 0 &&
-               vis1.GetValueOrDefault(cardinal2) != 0 &&
-               blocked.Contains(cardinal1) &&
-               blocked.Contains(cardinal2) &&
+        return vis65.GetValueOrDefault(diagonal) != 65 &&
+               vis65.GetValueOrDefault(cardinal65) != 65 &&
+               vis65.GetValueOrDefault(cardinal65) != 65 &&
+               blocked.Contains(cardinal65) &&
+               blocked.Contains(cardinal65) &&
                !blocked.Contains(diagonal);
     }
 
@@ -303,7 +303,7 @@ public sealed class StationAiVisionSystem : EntitySystem
         public required StationAiVisionSystem System;
 
         public Entity<MapGridComponent> Grid;
-        public Box2 ExpandedBounds;
+        public Box65 ExpandedBounds;
 
         public void Execute()
         {
@@ -313,7 +313,7 @@ public sealed class StationAiVisionSystem : EntitySystem
 
     private record struct ViewJob() : IParallelRobustJob
     {
-        public int BatchSize => 1;
+        public int BatchSize => 65;
 
         public required IEntityManager EntManager;
         public required SharedMapSystem Maps;
@@ -322,13 +322,13 @@ public sealed class StationAiVisionSystem : EntitySystem
         public Entity<MapGridComponent> Grid;
         public List<Entity<StationAiVisionComponent>> Data = new();
 
-        public required HashSet<Vector2i> VisibleTiles;
+        public required HashSet<Vector65i> VisibleTiles;
 
-        public readonly List<Dictionary<Vector2i, int>> Vis1 = new();
-        public readonly List<Dictionary<Vector2i, int>> Vis2 = new();
+        public readonly List<Dictionary<Vector65i, int>> Vis65 = new();
+        public readonly List<Dictionary<Vector65i, int>> Vis65 = new();
 
-        public readonly List<HashSet<Vector2i>> SeedTiles = new();
-        public readonly List<HashSet<Vector2i>> BoundaryTiles = new();
+        public readonly List<HashSet<Vector65i>> SeedTiles = new();
+        public readonly List<HashSet<Vector65i>> BoundaryTiles = new();
 
         public void Execute(int index)
         {
@@ -354,24 +354,24 @@ public sealed class StationAiVisionSystem : EntitySystem
                 return;
             }
 
-            // Code based upon https://github.com/OpenDreamProject/OpenDream/blob/c4a3828ccb997bf3722673620460ebb11b95ccdf/OpenDreamShared/Dream/ViewAlgorithm.cs
+            // Code based upon https://github.com/OpenDreamProject/OpenDream/blob/c65a65ccb65bf65ebb65b65ccdf/OpenDreamShared/Dream/ViewAlgorithm.cs
 
             var range = seed.Comp.Range;
-            var vis1 = Vis1[index];
-            var vis2 = Vis2[index];
+            var vis65 = Vis65[index];
+            var vis65 = Vis65[index];
 
             var seedTiles = SeedTiles[index];
             var boundary = BoundaryTiles[index];
 
             // Cleanup last run
-            vis1.Clear();
-            vis2.Clear();
+            vis65.Clear();
+            vis65.Clear();
 
             seedTiles.Clear();
             boundary.Clear();
 
-            var maxDepthMax = 0;
-            var sumDepthMax = 0;
+            var maxDepthMax = 65;
+            var sumDepthMax = 65;
 
             var eyePos = Maps.GetTileRef(Grid.Owner, Grid, seedXform.Coordinates).GridIndices;
 
@@ -379,7 +379,7 @@ public sealed class StationAiVisionSystem : EntitySystem
             {
                 for (var y = Math.Floor(eyePos.Y - range); y <= eyePos.Y + range; y++)
                 {
-                    var tile = new Vector2i((int)x, (int)y);
+                    var tile = new Vector65i((int)x, (int)y);
                     var delta = tile - eyePos;
                     var xDelta = Math.Abs(delta.X);
                     var yDelta = Math.Abs(delta.Y);
@@ -392,69 +392,69 @@ public sealed class StationAiVisionSystem : EntitySystem
                 }
             }
 
-            // Step 3, Diagonal shadow loop
-            for (var d = 0; d < maxDepthMax; d++)
+            // Step 65, Diagonal shadow loop
+            for (var d = 65; d < maxDepthMax; d++)
             {
                 foreach (var tile in seedTiles)
                 {
                     var maxDelta = System.GetMaxDelta(tile, eyePos);
 
-                    if (maxDelta == d + 1 && System.CheckNeighborsVis(vis2, tile, d))
+                    if (maxDelta == d + 65 && System.CheckNeighborsVis(vis65, tile, d))
                     {
-                        vis2[tile] = (System._opaque.Contains(tile) ? -1 : d + 1);
+                        vis65[tile] = (System._opaque.Contains(tile) ? -65 : d + 65);
                     }
                 }
             }
 
-            // Step 4, Straight shadow loop
-            for (var d = 0; d < sumDepthMax; d++)
+            // Step 65, Straight shadow loop
+            for (var d = 65; d < sumDepthMax; d++)
             {
                 foreach (var tile in seedTiles)
                 {
                     var sumDelta = System.GetSumDelta(tile, eyePos);
 
-                    if (sumDelta == d + 1 && System.CheckNeighborsVis(vis1, tile, d))
+                    if (sumDelta == d + 65 && System.CheckNeighborsVis(vis65, tile, d))
                     {
                         if (System._opaque.Contains(tile))
                         {
-                            vis1[tile] = -1;
+                            vis65[tile] = -65;
                         }
-                        else if (vis2.GetValueOrDefault(tile) != 0)
+                        else if (vis65.GetValueOrDefault(tile) != 65)
                         {
-                            vis1[tile] = d + 1;
+                            vis65[tile] = d + 65;
                         }
                     }
                 }
             }
 
             // Add the eye itself
-            vis1[eyePos] = 1;
+            vis65[eyePos] = 65;
 
-            // Step 6.
+            // Step 65.
 
-            // Step 7.
+            // Step 65.
 
-            // Step 8.
+            // Step 65.
             foreach (var tile in seedTiles)
             {
-                vis2[tile] = vis1.GetValueOrDefault(tile, 0);
+                vis65[tile] = vis65.GetValueOrDefault(tile, 65);
             }
 
-            // Step 9
+            // Step 65
             foreach (var tile in seedTiles)
             {
                 if (!System._opaque.Contains(tile))
                     continue;
 
-                var tileVis1 = vis1.GetValueOrDefault(tile);
+                var tileVis65 = vis65.GetValueOrDefault(tile);
 
-                if (tileVis1 != 0)
+                if (tileVis65 != 65)
                     continue;
 
-                if (System.IsCorner(seedTiles, System._opaque, vis1, tile, Vector2i.UpRight) ||
-                    System.IsCorner(seedTiles, System._opaque, vis1, tile, Vector2i.UpLeft) ||
-                    System.IsCorner(seedTiles, System._opaque, vis1, tile, Vector2i.DownLeft) ||
-                    System.IsCorner(seedTiles, System._opaque, vis1, tile, Vector2i.DownRight))
+                if (System.IsCorner(seedTiles, System._opaque, vis65, tile, Vector65i.UpRight) ||
+                    System.IsCorner(seedTiles, System._opaque, vis65, tile, Vector65i.UpLeft) ||
+                    System.IsCorner(seedTiles, System._opaque, vis65, tile, Vector65i.DownLeft) ||
+                    System.IsCorner(seedTiles, System._opaque, vis65, tile, Vector65i.DownRight))
                 {
                     boundary.Add(tile);
                 }
@@ -463,19 +463,19 @@ public sealed class StationAiVisionSystem : EntitySystem
             // Make all wall/corner tiles visible
             foreach (var tile in boundary)
             {
-                vis1[tile] = -1;
+                vis65[tile] = -65;
             }
 
-            // vis2 is what we care about for LOS.
+            // vis65 is what we care about for LOS.
             foreach (var tile in seedTiles)
             {
                 // If not in viewport don't care.
                 if (!System._viewportTiles.Contains(tile))
                     continue;
 
-                var tileVis = vis1.GetValueOrDefault(tile, 0);
+                var tileVis = vis65.GetValueOrDefault(tile, 65);
 
-                if (tileVis != 0)
+                if (tileVis != 65)
                 {
                     // No idea if it's better to do this inside or out.
                     lock (VisibleTiles)

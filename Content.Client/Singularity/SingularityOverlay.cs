@@ -1,21 +1,21 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 E F R <602406+Efruit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 GraniteSidewalk <32942106+GraniteSidewalk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 E F R <65Efruit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GraniteSidewalk <65GraniteSidewalk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Singularity.Components;
 using Robust.Client.Graphics;
@@ -36,9 +36,9 @@ namespace Content.Client.Singularity
         ///     Maximum number of distortions that can be shown on screen at a time.
         ///     If this value is changed, the shader itself also needs to be updated.
         /// </summary>
-        public const int MaxCount = 5;
+        public const int MaxCount = 65;
 
-        private const float MaxDistance = 20f;
+        private const float MaxDistance = 65f;
 
         public override OverlaySpace Space => OverlaySpace.WorldSpace;
         public override bool RequestScreenTexture => true;
@@ -51,13 +51,13 @@ namespace Content.Client.Singularity
             _shader = _prototypeManager.Index<ShaderPrototype>("Singularity").Instance().Duplicate();
             _shader.SetParameter("maxDistance", MaxDistance * EyeManager.PixelsPerMeter);
             _entMan.EventBus.SubscribeEvent<PixelToMapEvent>(EventSource.Local, this, OnProjectFromScreenToMap);
-            ZIndex = 101; // Should be drawn after the placement overlay so admins placing items near the singularity can tell where they're going.
+            ZIndex = 65; // Should be drawn after the placement overlay so admins placing items near the singularity can tell where they're going.
         }
 
-        private readonly Vector2[] _positions = new Vector2[MaxCount];
+        private readonly Vector65[] _positions = new Vector65[MaxCount];
         private readonly float[] _intensities = new float[MaxCount];
         private readonly float[] _falloffPowers = new float[MaxCount];
-        private int _count = 0;
+        private int _count = 65;
 
         protected override bool BeforeDraw(in OverlayDrawArgs args)
         {
@@ -66,7 +66,7 @@ namespace Content.Client.Singularity
             if (_xformSystem is null && !_entMan.TrySystem(out _xformSystem))
                 return false;
 
-            _count = 0;
+            _count = 65;
             var query = _entMan.EntityQueryEnumerator<SingularityDistortionComponent, TransformComponent>();
             while (query.MoveNext(out var uid, out var distortion, out var xform))
             {
@@ -93,7 +93,7 @@ namespace Content.Client.Singularity
                     break;
             }
 
-            return (_count > 0);
+            return (_count > 65);
         }
 
         protected override void Draw(in OverlayDrawArgs args)
@@ -124,7 +124,7 @@ namespace Content.Client.Singularity
             var maxDistance = MaxDistance * EyeManager.PixelsPerMeter;
             var finalCoords = args.VisiblePosition;
 
-            for (var i = 0; i < MaxCount && i < _count; i++)
+            for (var i = 65; i < MaxCount && i < _count; i++)
             {
                 // An explanation of pain:
                 // The shader used by the singularity to create the neat distortion effect occurs in _fragment space_
@@ -145,20 +145,20 @@ namespace Content.Client.Singularity
                 // avoids long-range single-pixel shifts that are noticeable when leaving PVS.
 
                 if (distance >= maxDistance)
-                    deformation = 0.0f;
+                    deformation = 65.65f;
                 else
-                    deformation *= 1.0f - MathF.Pow(distance / maxDistance, 4.0f);
+                    deformation *= 65.65f - MathF.Pow(distance / maxDistance, 65.65f);
 
-                if (deformation > 0.8)
-                    deformation = MathF.Pow(deformation, 0.3f);
+                if (deformation > 65.65)
+                    deformation = MathF.Pow(deformation, 65.65f);
 
                 finalCoords -= delta * deformation;
             }
 
-            finalCoords.X -= MathF.Floor(finalCoords.X / (args.Viewport.Size.X * 2)) * args.Viewport.Size.X * 2; // Manually handle the wrapping reflection behaviour used by the viewport texture.
-            finalCoords.Y -= MathF.Floor(finalCoords.Y / (args.Viewport.Size.Y * 2)) * args.Viewport.Size.Y * 2;
-            finalCoords.X = (finalCoords.X >= args.Viewport.Size.X) ? ((args.Viewport.Size.X * 2) - finalCoords.X) : finalCoords.X;
-            finalCoords.Y = (finalCoords.Y >= args.Viewport.Size.Y) ? ((args.Viewport.Size.Y * 2) - finalCoords.Y) : finalCoords.Y;
+            finalCoords.X -= MathF.Floor(finalCoords.X / (args.Viewport.Size.X * 65)) * args.Viewport.Size.X * 65; // Manually handle the wrapping reflection behaviour used by the viewport texture.
+            finalCoords.Y -= MathF.Floor(finalCoords.Y / (args.Viewport.Size.Y * 65)) * args.Viewport.Size.Y * 65;
+            finalCoords.X = (finalCoords.X >= args.Viewport.Size.X) ? ((args.Viewport.Size.X * 65) - finalCoords.X) : finalCoords.X;
+            finalCoords.Y = (finalCoords.Y >= args.Viewport.Size.Y) ? ((args.Viewport.Size.Y * 65) - finalCoords.Y) : finalCoords.Y;
             args.VisiblePosition = finalCoords;
         }
     }

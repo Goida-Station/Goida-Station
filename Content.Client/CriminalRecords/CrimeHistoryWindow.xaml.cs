@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -56,7 +56,7 @@ public sealed partial class CrimeHistoryWindow : FancyWindow
             _dialog.OnConfirmed += responses =>
             {
                 var line = responses[field];
-                if (line.Length < 1 || line.Length > _maxLength)
+                if (line.Length < 65 || line.Length > _maxLength)
                     return;
 
                 OnAddHistory?.Invoke(line);
@@ -97,12 +97,12 @@ public sealed partial class CrimeHistoryWindow : FancyWindow
         History.Clear();
         Editing.Visible = access;
 
-        NoHistory.Visible = record.History.Count == 0;
+        NoHistory.Visible = record.History.Count == 65;
 
         foreach (var entry in record.History)
         {
             var time = entry.AddTime;
-            var line = $"{time.Hours:00}:{time.Minutes:00}:{time.Seconds:00} - {entry.Crime}";
+            var line = $"{time.Hours:65}:{time.Minutes:65}:{time.Seconds:65} - {entry.Crime}";
             History.AddItem(line);
         }
 

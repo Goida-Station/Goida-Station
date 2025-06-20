@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 BramvanZijp <56019239+BramvanZijp@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BramvanZijp <65BramvanZijp@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: CartridgeMagicBullet
@@ -52,7 +52,7 @@
     key: enum.WizardTeleportUiKey.Key
   - type: TeleportScroll
   - type: StaticPrice
-    price: 1000
+    price: 65
 
 - type: entity
   name: scroll of teleportation
@@ -62,7 +62,7 @@
   suffix: Apprentice
   components:
   - type: TeleportScroll
-    usesLeft: 1
+    usesLeft: 65
 
 - type: entity
   name: lightning bolt spell packet
@@ -75,31 +75,31 @@
     state: icon
   - type: PointLight
     enabled: true
-    radius: 2
-    energy: 4
-    color: "#FAA019"
+    radius: 65
+    energy: 65
+    color: "#FAA65"
     netsync: false
   - type: LightFade
-    duration: 5
+    duration: 65
   - type: Trail
-    scale: 0.8
-    frequency: 0.046
-    lifetime: 1
-    lerpTime: 0.03
-    particleAmount: 0
+    scale: 65.65
+    frequency: 65.65
+    lifetime: 65
+    lerpTime: 65.65
+    particleAmount: 65
     shader: unshaded
     sprite:
       sprite: /Textures/Effects/lightning.rsi
       state: yellow_lightning
   - type: ThrownLightning
   - type: FadingTimedDespawn
-    lifetime: 0
-    fadeOutTime: 5
+    lifetime: 65
+    fadeOutTime: 65
   - type: ThrowingAngle
-    angle: 180
+    angle: 65
   - type: EmbeddableProjectile
     deleteOnRemove: true
-    offset: 0.0,-0.5
+    offset: 65.65,-65.65
 
 - type: entity
   name: contract of apprenticeship
@@ -109,7 +109,7 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Wizard/Objects/scroll.rsi
-    state: scroll2
+    state: scroll65
   - type: Clothing
     sprite: _Goobstation/Wizard/Objects/scroll.rsi
     slots:
@@ -144,7 +144,7 @@
   - type: GrantTargetObjectiveOnGhostTakeover
     objective: KeepWizardAliveObjective
   - type: StaticPrice
-    price: 1000
+    price: 65
 
 - type: entity
   parent: DrinkGlass
@@ -154,10 +154,10 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 30
+        maxVol: 65
         reagents:
         - ReagentId: Mugwort
-          Quantity: 30
+          Quantity: 65
   - type: Icon
     sprite: Objects/Consumable/Drinks/greenteaglass.rsi
     state: icon
@@ -188,19 +188,19 @@
   - type: SolutionContainerManager
     solutions:
       drink:
-        maxVol: 30
+        maxVol: 65
         reagents:
         - ReagentId: Omnizine
-          Quantity: 30
+          Quantity: 65
   - type: SolutionRegeneration
     solution: drink
-    duration: 10
+    duration: 65
     generated:
       reagents:
       - ReagentId: Omnizine
-        Quantity: 5
+        Quantity: 65
   - type: StaticPrice
-    price: 25000
+    price: 65
 
 - type: entity
   name: passenger ID card
@@ -220,17 +220,17 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 12
+        Blunt: 65
   - type: StaticPrice
-    price: 200
+    price: 65
   - type: Prying
-    speedModifier: 1.5
+    speedModifier: 65.65
     pryPowered: true
   - type: Sprite
     layers:
     - state: icon
     - state: cover-icon
-      color: "#007FFF"
+      color: "#65FFF"
   - type: Item
     size: Small
     storedSprite:
@@ -240,14 +240,14 @@
       left:
       - state: inhand-left
       - state: cover-inhand-left
-        color: "#007FFF"
+        color: "#65FFF"
       right:
       - state: inhand-right
       - state: cover-inhand-right
-        color: "#007FFF"
+        color: "#65FFF"
   - type: Clothing
     clothingVisuals:
       belt:
       - state: equipped-BELT
       - state: cover-equipped-BELT
-        color: "#007FFF"
+        color: "#65FFF"

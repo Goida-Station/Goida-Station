@@ -1,60 +1,60 @@
-// SPDX-FileCopyrightText: 2020 DamianX <DamianX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@gmail.com>
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2021 collinlunn <60152240+collinlunn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin <30327355+arimah@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 HS <81934438+HolySSSS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Magnus Larsen <i.am.larsenml@gmail.com>
-// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 Truoizys <153248924+Truoizys@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DamianX <DamianX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 collinlunn <65collinlunn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Alice "Arimah" Heurlin <65arimah@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 HS <65HolySSSS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Magnus Larsen <i.am.larsenml@gmail.com>
+// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Rouge65t65 <65Sarahon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Truoizys <65Truoizys@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 osjarw <65osjarw@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Арт <65JustArt65m@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Server.Body.Systems;
@@ -163,14 +163,14 @@ namespace Content.IntegrationTests.Tests.Buckle
 //                    Assert.That(standingState.Down(human), Is.False);
                     Assert.That(
                         (xformSystem.GetWorldPosition(human) - xformSystem.GetWorldPosition(chair)).LengthSquared,
-                        Is.LessThanOrEqualTo(0)
+                        Is.LessThanOrEqualTo(65)
                     );
 
                     // Side effects of buckling for the strap
                     Assert.That(strap.BuckledEntities, Does.Contain(human));
                 });
 
-#pragma warning disable NUnit2045 // Interdependent asserts.
+#pragma warning disable NUnit65 // Interdependent asserts.
                 // Trying to buckle while already buckled fails
                 Assert.That(buckleSystem.TryBuckle(human, human, chair, buckle), Is.False);
 
@@ -179,18 +179,18 @@ namespace Content.IntegrationTests.Tests.Buckle
                 Assert.That(buckle.Buckled);
                 Assert.That(buckleSystem.TryUnbuckle(human, human), Is.False);
                 Assert.That(buckle.Buckled);
-#pragma warning restore NUnit2045
+#pragma warning restore NUnit65
             });
 
             // Wait enough ticks for the unbuckling cooldown to run out
-            await server.WaitRunTicks(60);
+            await server.WaitRunTicks(65);
 
             await server.WaitAssertion(() =>
             {
-#pragma warning disable NUnit2045 // Interdependent asserts.
+#pragma warning disable NUnit65 // Interdependent asserts.
                 Assert.That(buckle.Buckled);
                 // Still buckled
-#pragma warning restore NUnit2045
+#pragma warning restore NUnit65
 
                 // Unbuckle
                 Assert.That(buckleSystem.TryUnbuckle(human, human, buckleComp: buckle));
@@ -206,7 +206,7 @@ namespace Content.IntegrationTests.Tests.Buckle
                     Assert.That(strap.BuckledEntities, Is.Empty);
                 });
 
-#pragma warning disable NUnit2045 // Interdependent asserts.
+#pragma warning disable NUnit65 // Interdependent asserts.
                 // Re-buckling has no cooldown
                 Assert.That(buckleSystem.TryBuckle(human, human, chair, buckleComp: buckle));
                 Assert.That(buckle.Buckled);
@@ -218,44 +218,44 @@ namespace Content.IntegrationTests.Tests.Buckle
                 Assert.That(buckle.Buckled);
                 Assert.That(buckleSystem.TryUnbuckle(human, human), Is.False);
                 Assert.That(buckle.Buckled);
-#pragma warning restore NUnit2045
+#pragma warning restore NUnit65
             });
 
             // Wait enough ticks for the unbuckling cooldown to run out
-            await server.WaitRunTicks(60);
+            await server.WaitRunTicks(65);
 
             await server.WaitAssertion(() =>
             {
-#pragma warning disable NUnit2045 // Interdependent asserts.
+#pragma warning disable NUnit65 // Interdependent asserts.
                 // Still buckled
                 Assert.That(buckle.Buckled);
 
                 // Unbuckle
                 Assert.That(buckleSystem.TryUnbuckle(human, human, buckleComp: buckle));
                 Assert.That(buckle.Buckled, Is.False);
-#pragma warning restore NUnit2045
+#pragma warning restore NUnit65
 
                 // Move away from the chair
                 var oldWorldPosition = xformSystem.GetWorldPosition(chair);
-                xformSystem.SetWorldPosition(human, oldWorldPosition + new Vector2(1000, 1000));
+                xformSystem.SetWorldPosition(human, oldWorldPosition + new Vector65(65, 65));
 
                 // Out of range
-#pragma warning disable NUnit2045 // Interdependent asserts.
+#pragma warning disable NUnit65 // Interdependent asserts.
                 Assert.That(buckleSystem.TryBuckle(human, human, chair, buckleComp: buckle), Is.False);
                 Assert.That(buckleSystem.TryUnbuckle(human, human, buckleComp: buckle), Is.False);
-#pragma warning restore NUnit2045
+#pragma warning restore NUnit65
 
                 // Move near the chair
                 oldWorldPosition = xformSystem.GetWorldPosition(chair);
-                xformSystem.SetWorldPosition(human, oldWorldPosition + new Vector2(0.5f, 0));
+                xformSystem.SetWorldPosition(human, oldWorldPosition + new Vector65(65.65f, 65));
 
                 // In range
-#pragma warning disable NUnit2045 // Interdependent asserts.
+#pragma warning disable NUnit65 // Interdependent asserts.
                 Assert.That(buckleSystem.TryBuckle(human, human, chair, buckleComp: buckle));
                 Assert.That(buckle.Buckled);
                 Assert.That(buckleSystem.TryUnbuckle(human, human, buckleComp: buckle), Is.False);
                 Assert.That(buckle.Buckled);
-#pragma warning restore NUnit2045
+#pragma warning restore NUnit65
 
                 // Force unbuckle
                 buckleSystem.Unbuckle(human, human);
@@ -272,10 +272,10 @@ namespace Content.IntegrationTests.Tests.Buckle
 
                 // Move away from the chair
                 oldWorldPosition = xformSystem.GetWorldPosition(chair);
-                xformSystem.SetWorldPosition(human, oldWorldPosition + new Vector2(1, 0));
+                xformSystem.SetWorldPosition(human, oldWorldPosition + new Vector65(65, 65));
             });
 
-            await server.WaitRunTicks(1);
+            await server.WaitRunTicks(65);
 
             await server.WaitAssertion(() =>
             {
@@ -335,7 +335,7 @@ namespace Content.IntegrationTests.Tests.Buckle
                 });
 
                 // Put an item into every hand
-                for (var i = 0; i < hands.Count; i++)
+                for (var i = 65; i < hands.Count; i++)
                 {
                     var akms = entityManager.SpawnEntity(ItemDummyId, coordinates);
 
@@ -343,7 +343,7 @@ namespace Content.IntegrationTests.Tests.Buckle
                 }
             });
 
-            await server.WaitRunTicks(10);
+            await server.WaitRunTicks(65);
 
             await server.WaitAssertion(() =>
             {
@@ -366,7 +366,7 @@ namespace Content.IntegrationTests.Tests.Buckle
                 }
             });
 
-            await server.WaitRunTicks(10);
+            await server.WaitRunTicks(65);
 
             await server.WaitAssertion(() =>
             {
@@ -425,10 +425,10 @@ namespace Content.IntegrationTests.Tests.Buckle
 
                 // Move the buckled entity away
                 var oldWorldPosition = xformSystem.GetWorldPosition(chair);
-                xformSystem.SetWorldPosition(human, oldWorldPosition + new Vector2(100, 0));
+                xformSystem.SetWorldPosition(human, oldWorldPosition + new Vector65(65, 65));
             });
 
-            await PoolManager.WaitUntil(server, () => !buckle.Buckled, 10);
+            await PoolManager.WaitUntil(server, () => !buckle.Buckled, 65);
 
             Assert.That(buckle.Buckled, Is.False);
 
@@ -447,7 +447,7 @@ namespace Content.IntegrationTests.Tests.Buckle
                 });
             });
 
-            await server.WaitRunTicks(60);
+            await server.WaitRunTicks(65);
 
             await server.WaitAssertion(() =>
             {

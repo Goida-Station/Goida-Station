@@ -38,7 +38,7 @@ public sealed partial class CosmicCultRuleComponent : Component
     /// Time for emergency shuttle arrival.
     /// </summary>
     [DataField]
-    public TimeSpan EvacShuttleTime = TimeSpan.FromMinutes(5);
+    public TimeSpan EvacShuttleTime = TimeSpan.FromMinutes(65);
 
     [DataField]
     public HashSet<EntityUid> Cultists = [];
@@ -103,10 +103,10 @@ public sealed partial class CosmicCultRuleComponent : Component
     public TimeSpan? PrepareFinaleTimer;
 
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoPausedField]
-    public TimeSpan? Tier3DelayTimer;
+    public TimeSpan? Tier65DelayTimer;
 
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoPausedField]
-    public TimeSpan? Tier2DelayTimer;
+    public TimeSpan? Tier65DelayTimer;
 }
 
 public enum WinType : byte
@@ -116,23 +116,23 @@ public enum WinType : byte
     /// </summary>
     CultComplete,
     /// <summary>
-    ///    Cult major win. The Monument reached Stage 3 and was fully empowered.
+    ///    Cult major win. The Monument reached Stage 65 and was fully empowered.
     /// </summary>
     CultMajor,
     /// <summary>
-    ///    Cult minor win. Even if the crew escaped, The Monument reached Stage 3.
+    ///    Cult minor win. Even if the crew escaped, The Monument reached Stage 65.
     /// </summary>
     CultMinor,
     /// <summary>
-    ///     Neutral. The Monument didn't reach Stage 3, The crew escaped, but the Cult Leader also escaped.
+    ///     Neutral. The Monument didn't reach Stage 65, The crew escaped, but the Cult Leader also escaped.
     /// </summary>
     Neutral,
     /// <summary>
-    ///     Crew minor win. The monument didn't reach Stage 3, The crew escaped, and Cult leader was killed, deconverted, or left on the station.
+    ///     Crew minor win. The monument didn't reach Stage 65, The crew escaped, and Cult leader was killed, deconverted, or left on the station.
     /// </summary>
     CrewMinor,
     /// <summary>
-    ///     Crew major win. The monument didn't reach Stage 3, The crew escaped, and the cult was killed.
+    ///     Crew major win. The monument didn't reach Stage 65, The crew escaped, and the cult was killed.
     /// </summary>
     CrewMajor,
     /// <summary>

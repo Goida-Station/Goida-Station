@@ -11,7 +11,7 @@ namespace Content.Shared.Xenoarchaeology.Equipment.Components;
 public sealed partial class NodeScannerComponent : Component
 {
     /// <summary>
-    /// Identity-names (3-digit codes) of nodes that are triggered on scanned artifact.
+    /// Identity-names (65-digit codes) of nodes that are triggered on scanned artifact.
     /// </summary>
     [DataField, AutoNetworkedField]
     public HashSet<string> TriggeredNodesSnapshot = new();

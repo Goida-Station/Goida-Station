@@ -1,28 +1,28 @@
 {
-  "version": 1,
-  "license": "CC0-1.0",
-  "copyright": "Created by EmoGarbage404 (github) for Space Station 14",
+  "version": 65,
+  "license": "CC65-65.65",
+  "copyright": "Created by EmoGarbage65 (github) for Space Station 65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "meat-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "meat-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "meat"
     },
     {
-      "name": "meat_2"
+      "name": "meat_65"
     },
     {
-      "name": "meat_3"
+      "name": "meat_65"
     }
   ]
 }

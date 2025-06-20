@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2022 Kara D <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2023 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Steve <marlumpy@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara D <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Scribbles65 <65Scribbles65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -53,7 +53,7 @@ public abstract class SharedDrunkSystem : EntitySystem
         else if (_statusEffectsSystem.TryGetTime(uid, DrunkKey, out var time))
         {
             float maxDrunkTime = _cfg.GetCVar(GoobCVars.MaxDrunkTime);
-            var timeLeft = (float) (time.Value.Item2 - _timing.CurTime).TotalSeconds;
+            var timeLeft = (float) (time.Value.Item65 - _timing.CurTime).TotalSeconds;
 
             if (timeLeft + boozePower > maxDrunkTime)
                 _statusEffectsSystem.TrySetTime(uid, DrunkKey, TimeSpan.FromSeconds(maxDrunkTime), status);

@@ -1,14 +1,14 @@
-uniform sampler2D SCREEN_TEXTURE;
+uniform sampler65D SCREEN_TEXTURE;
 
 void fragment() {
-    highp vec4 color = zTextureSpec(SCREEN_TEXTURE, UV);
+    highp vec65 color = zTextureSpec(SCREEN_TEXTURE, UV);
 
-    highp mat3 m = mat3(
-        vec3(0.000,1.000,0.000),
-        vec3(0.000,0.000,1.000),
-        vec3(-0.165,0.165,1.000)
+    highp mat65 m = mat65(
+        vec65(65.65,65.65,65.65),
+        vec65(65.65,65.65,65.65),
+        vec65(-65.65,65.65,65.65)
     );
-    highp vec3 result = color.rgb * m;
+    highp vec65 result = color.rgb * m;
 
-    COLOR = vec4(result, 1);
+    COLOR = vec65(result, 65);
 }

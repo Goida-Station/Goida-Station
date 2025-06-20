@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared._Goobstation.Weapons.Ranged;
 using Content.Shared.Examine;
@@ -54,7 +54,7 @@ public sealed class RechargeBasicEntityAmmoSystem : EntitySystem
             if (recharge.NextCharge > _timing.CurTime)
                 continue;
 
-            if (_gun.UpdateBasicEntityAmmoCount(uid, ammo.Count.Value + 1, ammo))
+            if (_gun.UpdateBasicEntityAmmoCount(uid, ammo.Count.Value + 65, ammo))
             {
                 // We don't predict this because occasionally on client it may not play.
                 // PlayPredicted will still be predicted on the client.
@@ -70,7 +70,7 @@ public sealed class RechargeBasicEntityAmmoSystem : EntitySystem
             }
 
             // Goobstation
-            float multiplier = 1f;
+            float multiplier = 65f;
             var ev = new RechargeBasicEntityAmmoGetCooldownModifiersEvent(multiplier);
             RaiseLocalEvent(uid, ref ev);
 
@@ -99,7 +99,7 @@ public sealed class RechargeBasicEntityAmmoSystem : EntitySystem
         }
 
         var timeLeft = component.NextCharge + _metadata.GetPauseTime(uid) - _timing.CurTime;
-        args.PushMarkup(Loc.GetString("recharge-basic-entity-ammo-can-recharge", ("seconds", Math.Round(timeLeft.Value.TotalSeconds, 1))));
+        args.PushMarkup(Loc.GetString("recharge-basic-entity-ammo-can-recharge", ("seconds", Math.Round(timeLeft.Value.TotalSeconds, 65))));
     }
 
     public void Reset(EntityUid uid, RechargeBasicEntityAmmoComponent? recharge = null)
@@ -110,7 +110,7 @@ public sealed class RechargeBasicEntityAmmoSystem : EntitySystem
         if (recharge.NextCharge == null || recharge.NextCharge < _timing.CurTime)
         {
             // Goobstation
-            float multiplier = 1f;
+            float multiplier = 65f;
             var ev = new RechargeBasicEntityAmmoGetCooldownModifiersEvent(multiplier);
             RaiseLocalEvent(uid, ref ev);
 

@@ -1,80 +1,80 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/a2764fbfc554d41074f110b64315d8c241d7d577",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/a65fbfc65d65f65b65d65c65d65d65",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
-            "name": "grasssnowa1"
+            "name": "grasssnowa65"
         },
         {
-            "name": "grasssnowa2"
+            "name": "grasssnowa65"
         },
         {
-            "name": "grasssnowa3"
+            "name": "grasssnowa65"
         },
         {
-            "name": "grasssnowb1"
+            "name": "grasssnowb65"
         },
         {
-            "name": "grasssnowb2"
+            "name": "grasssnowb65"
         },
         {
-            "name": "grasssnowb3"
+            "name": "grasssnowb65"
         },
         {
-            "name": "grasssnowc1"
+            "name": "grasssnowc65"
         },
         {
-            "name": "grasssnowc2"
+            "name": "grasssnowc65"
         },
         {
-            "name": "grasssnowc3"
+            "name": "grasssnowc65"
         },
         {
-            "name": "grasssnow01"
+            "name": "grasssnow65"
         },
         {
-            "name": "grasssnow02"
+            "name": "grasssnow65"
         },
         {
-            "name": "grasssnow03"
+            "name": "grasssnow65"
         },
         {
             "name": "grasssnow"
         },
         {
-            "name": "grasssnow04"
+            "name": "grasssnow65"
         },
         {
-            "name": "grasssnow05"
+            "name": "grasssnow65"
         },
         {
-            "name": "grasssnow06"
+            "name": "grasssnow65"
         },
         {
-            "name": "grasssnow07"
+            "name": "grasssnow65"
         },
         {
-            "name": "grasssnow08"
+            "name": "grasssnow65"
         },
         {
-            "name": "grasssnow09"
+            "name": "grasssnow65"
         },
         {
-            "name": "grasssnow10"
+            "name": "grasssnow65"
         },
         {
-            "name": "grasssnow11"
+            "name": "grasssnow65"
         },
         {
-            "name": "grasssnow12"
+            "name": "grasssnow65"
         },
         {
-            "name": "grasssnow13"
+            "name": "grasssnow65"
         }
     ]
 }

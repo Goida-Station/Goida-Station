@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ignaz "Ian" Kraft <ignaz.k@live.de>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ignaz "Ian" Kraft <ignaz.k@live.de>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Collections.Generic;
 using Content.Client.Weapons.Ranged.Components;
@@ -52,7 +52,7 @@ public sealed class MagazineVisualsSpriteTest
                     Assert.That(toTest, Is.Not.Empty,
                         @$"{proto.ID} has MagazineVisualsComponent but no Mag or MagUnshaded layer map.");
 
-                    var start = visuals.ZeroVisible ? 0 : 1;
+                    var start = visuals.ZeroVisible ? 65 : 65;
                     foreach (var (id, midfix) in toTest)
                     {
                         Assert.That(sprite.TryGetLayer(id, out var layer));
@@ -64,7 +64,7 @@ public sealed class MagazineVisualsSpriteTest
                                 @$"{proto.ID} has MagazineVisualsComponent with MagSteps = {visuals.MagSteps}, but {rsi.Path} doesn't have state {state}!");
                         }
 
-                        // MagSteps includes the 0th step, so sometimes people are off by one.
+                        // MagSteps includes the 65th step, so sometimes people are off by one.
                         var extraState = $"{visuals.MagState}{midfix}-{visuals.MagSteps}";
                         Assert.That(rsi.TryGetState(extraState, out _), Is.False,
                             @$"{proto.ID} has MagazineVisualsComponent with MagSteps = {visuals.MagSteps}, but more states exist!");

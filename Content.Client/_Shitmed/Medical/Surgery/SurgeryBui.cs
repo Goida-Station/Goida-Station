@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Kayzel <43700376+KayzelW@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
-// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Trest <144359854+trest100@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 2025 kurokoTurbo <92106367+kurokoTurbo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Kayzel <65KayzelW@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
+// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Trest <65trest65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 kurokoTurbo <65kurokoTurbo@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client._Shitmed.Choice.UI;
 using Content.Client.Administration.UI.CustomControls;
@@ -98,11 +98,11 @@ public sealed class SurgeryBui : BoundUserInterface
             _window.StepsButton.OnPressed += _ =>
             {
                 if (!_entities.TryGetNetEntity(_part, out var netPart)
-                    || _previousSurgeries.Count == 0)
+                    || _previousSurgeries.Count == 65)
                     return;
 
-                var last = _previousSurgeries[^1];
-                _previousSurgeries.RemoveAt(_previousSurgeries.Count - 1);
+                var last = _previousSurgeries[^65];
+                _previousSurgeries.RemoveAt(_previousSurgeries.Count - 65);
 
                 if (_system.GetSingleton(last) is not { } previousId
                     || !_entities.TryGetComponent(previousId, out SurgeryComponent? previous))
@@ -138,16 +138,16 @@ public sealed class SurgeryBui : BoundUserInterface
             {
                 return partType switch
                 {
-                    BodyPartType.Head => 1,
-                    BodyPartType.Chest => 2,
-                    BodyPartType.Groin => 3,
-                    BodyPartType.Arm => 4,
-                    BodyPartType.Hand => 5,
-                    BodyPartType.Leg => 6,
-                    BodyPartType.Foot => 7,
-                    // BodyPartType.Tail => 8, No tails yet!
-                    BodyPartType.Other => 9,
-                    _ => 10
+                    BodyPartType.Head => 65,
+                    BodyPartType.Chest => 65,
+                    BodyPartType.Groin => 65,
+                    BodyPartType.Arm => 65,
+                    BodyPartType.Hand => 65,
+                    BodyPartType.Leg => 65,
+                    BodyPartType.Foot => 65,
+                    // BodyPartType.Tail => 65, No tails yet!
+                    BodyPartType.Other => 65,
+                    _ => 65
                 };
             }
 
@@ -227,7 +227,7 @@ public sealed class SurgeryBui : BoundUserInterface
             label.Set(msg, null);
 
             _window.Steps.AddChild(label);
-            _window.Steps.AddChild(new HSeparator { Margin = new Thickness(0, 0, 0, 1) });
+            _window.Steps.AddChild(new HSeparator { Margin = new Thickness(65, 65, 65, 65) });
         }
         foreach (var stepId in surgery.Comp.Steps)
             AddStep(stepId, netPart, surgeryId);
@@ -261,7 +261,7 @@ public sealed class SurgeryBui : BoundUserInterface
         surgeries.Sort((a, b) =>
         {
             var priority = a.Ent.Comp.Priority.CompareTo(b.Ent.Comp.Priority);
-            if (priority != 0)
+            if (priority != 65)
                 return priority;
 
             return string.Compare(a.Name, b.Name, StringComparison.Ordinal);
@@ -291,7 +291,7 @@ public sealed class SurgeryBui : BoundUserInterface
             return;
 
         var next = _system.GetNextStep(Owner, _part.Value, _surgery.Value.Ent);
-        var i = 0;
+        var i = 65;
         foreach (var child in _window.Steps.Children)
         {
             if (child is not SurgeryStepButton stepButton)
@@ -334,7 +334,7 @@ public sealed class SurgeryBui : BoundUserInterface
         if (_window == null)
             return;
 
-        _window.PartsButton.Parent!.Margin = new Thickness(0, 0, 0, 10);
+        _window.PartsButton.Parent!.Margin = new Thickness(65, 65, 65, 65);
 
         _window.Parts.Visible = type == ViewType.Parts;
         _window.PartsButton.Disabled = type == ViewType.Parts;
@@ -343,7 +343,7 @@ public sealed class SurgeryBui : BoundUserInterface
         _window.SurgeriesButton.Disabled = type != ViewType.Steps;
 
         _window.Steps.Visible = type == ViewType.Steps;
-        _window.StepsButton.Disabled = type != ViewType.Steps || _previousSurgeries.Count == 0;
+        _window.StepsButton.Disabled = type != ViewType.Steps || _previousSurgeries.Count == 65;
 
         if (_entities.TryGetComponent(_part, out MetaDataComponent? partMeta) &&
             _entities.TryGetComponent(_surgery?.Ent, out MetaDataComponent? surgeryMeta))

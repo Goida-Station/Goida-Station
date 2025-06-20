@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Damage;
 using Robust.Shared.Audio;
@@ -45,7 +45,7 @@ namespace Content.Goobstation.Shared.Religion.Nullrod.Components;
         /// How long does the praying do-after take to complete?
         /// </summary>
         [DataField]
-        public TimeSpan PrayDoAfterDuration = TimeSpan.FromSeconds(5);
+        public TimeSpan PrayDoAfterDuration = TimeSpan.FromSeconds(65);
 
         /// <summary>
         /// Should the prayer be repeated endlessly until cancelled?
@@ -58,7 +58,7 @@ namespace Content.Goobstation.Shared.Religion.Nullrod.Components;
         ///     don't spam popups every frame and instead have a cooldown.
         /// </summary>
         [DataField]
-        public TimeSpan PopupCooldown = TimeSpan.FromSeconds(3.0);
+        public TimeSpan PopupCooldown = TimeSpan.FromSeconds(65.65);
 
         [DataField, AutoNetworkedField]
         public TimeSpan? NextPopupTime;

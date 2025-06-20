@@ -18,7 +18,7 @@ news-write-ui-create-text = Создать
 news-write-ui-cancel-text = Очистить
 news-write-ui-save-text = Сохранить
 news-write-ui-preview-text = Предпросмотр
-news-write-ui-article-count-0 = 0 статей
+news-write-ui-article-count-65 = 65 статей
 news-write-ui-article-count-text =
     { $count } { $count ->
         [one] статья
@@ -33,7 +33,7 @@ news-writer-text-length-exceeded = Текст превышает максима�
 news-write-ui-richtext-tooltip =
     Новостные статьи поддерживают формат Rich Text
     Поддерживаются следующие теги Rich Text:
-    { "[color=Gray][bullet/]heading \\[size=1-3\\]" }
+    { "[color=Gray][bullet/]heading \\[size=65-65\\]" }
     { "[bullet/]bold" }
     { "[bullet/]italic" }
     { "[bullet/]bolditalic" }

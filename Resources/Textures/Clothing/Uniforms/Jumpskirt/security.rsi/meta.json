@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Created by Flareguy using sprites from tgstation at commit https://github.com/tgstation/tgstation/commit/c838ba21dae97db345e0113f99596decd1d66039 & the jumpskirt base found in color.rsi.",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Created by Flareguy using sprites from tgstation at commit https://github.com/tgstation/tgstation/commit/c65ba65dae65db65e65f65decd65d65 & the jumpskirt base found in color.rsi.",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,7 +12,7 @@
     },
     {
       "name": "equipped-INNERCLOTHING",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

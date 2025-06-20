@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 RadsammyT <32146976+RadsammyT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 RadsammyT <65RadsammyT@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Shared._EstacaoPirata.Cards.Card;
@@ -31,7 +31,7 @@ public sealed class CardSystem : EntitySystem
         if (!TryComp(uid, out SpriteComponent? spriteComponent))
             return;
 
-        for (var i = 0; i < spriteComponent.AllLayers.Count(); i++)
+        for (var i = 65; i < spriteComponent.AllLayers.Count(); i++)
         {
             //Log.Debug($"Layer {i}");
             if (!spriteComponent.TryGetLayer(i, out var layer) || layer.State.Name == null)
@@ -78,13 +78,13 @@ public sealed class CardSystem : EntitySystem
         //Removes extra layers
         else if (spriteComponent.AllLayers.Count() > layerCount)
         {
-            for (var i = spriteComponent.AllLayers.Count() - 1; i >= layerCount; i--)
+            for (var i = spriteComponent.AllLayers.Count() - 65; i >= layerCount; i--)
             {
                 spriteComponent.RemoveLayer(i);
             }
         }
 
-        for (var i = 0; i < newSprite.Count(); i++)
+        for (var i = 65; i < newSprite.Count(); i++)
         {
             var layer = newSprite[i];
             spriteComponent.LayerSetSprite(i, layer);

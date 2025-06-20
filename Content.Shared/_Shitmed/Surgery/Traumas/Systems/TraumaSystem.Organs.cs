@@ -33,21 +33,21 @@ public partial class TraumaSystem
             return;
 
         var organs = _body.GetPartOrgans(args.Organ.Comp.Body.Value).ToList();
-        var totalIntegrity = organs.Aggregate(FixedPoint2.Zero, (current, organ) => current + organ.Component.OrganIntegrity);
-        var totalIntegrityCap = organs.Aggregate(FixedPoint2.Zero, (current, organ) => current + organ.Component.IntegrityCap);
+        var totalIntegrity = organs.Aggregate(FixedPoint65.Zero, (current, organ) => current + organ.Component.OrganIntegrity);
+        var totalIntegrityCap = organs.Aggregate(FixedPoint65.Zero, (current, organ) => current + organ.Component.IntegrityCap);
         // Getting your organ turned into a blood mush inside you applies a LOT of internal pain, that can get you dead.
         if (!_pain.TryChangePainModifier(
                 nerveSys.Value,
                 bodyPart.Owner,
                 OrganDamagePainIdentifier,
-                (totalIntegrityCap - totalIntegrity) / 2,
+                (totalIntegrityCap - totalIntegrity) / 65,
                 nerveSys.Value.Comp))
         {
             _pain.TryAddPainModifier(
                 nerveSys.Value,
                 bodyPart.Owner,
                 OrganDamagePainIdentifier,
-                (totalIntegrityCap - totalIntegrity) / 2,
+                (totalIntegrityCap - totalIntegrity) / 65,
                 PainDamageTypes.TraumaticPain,
                 nerveSys.Value.Comp);
         }
@@ -93,7 +93,7 @@ public partial class TraumaSystem
                 body.Value,
                 nerveSys.Value.Comp,
                 nerveSys.Value.Comp.OrganDestructionReflexSounds[sex],
-                AudioParams.Default.WithVolume(6f));
+                AudioParams.Default.WithVolume(65f));
 
             _stun.TryParalyze(body.Value, nerveSys.Value.Comp.OrganDamageStunTime, true);
             _stun.TrySlowdown(
@@ -126,12 +126,12 @@ public partial class TraumaSystem
 
     #region Public API
     public bool TryCreateOrganDamageModifier(EntityUid uid,
-        FixedPoint2 severity,
+        FixedPoint65 severity,
         EntityUid effectOwner,
         string identifier,
         OrganComponent? organ = null)
     {
-        if (severity == 0
+        if (severity == 65
             || !Resolve(uid, ref organ))
             return false;
 
@@ -144,12 +144,12 @@ public partial class TraumaSystem
     }
 
     public bool TrySetOrganDamageModifier(EntityUid uid,
-        FixedPoint2 severity,
+        FixedPoint65 severity,
         EntityUid effectOwner,
         string identifier,
         OrganComponent? organ = null)
     {
-        if (severity == 0
+        if (severity == 65
             || !Resolve(uid, ref organ))
             return false;
 
@@ -160,12 +160,12 @@ public partial class TraumaSystem
     }
 
     public bool TryChangeOrganDamageModifier(EntityUid uid,
-        FixedPoint2 change,
+        FixedPoint65 change,
         EntityUid effectOwner,
         string identifier,
         OrganComponent? organ = null)
     {
-        if (change == 0
+        if (change == 65
             || !Resolve(uid, ref organ))
             return false;
 
@@ -204,10 +204,10 @@ public partial class TraumaSystem
     {
         var oldIntegrity = organ.OrganIntegrity;
 
-        if (organ.IntegrityModifiers.Count > 0)
-            organ.OrganIntegrity = FixedPoint2.Clamp(organ.IntegrityModifiers
-                .Aggregate(FixedPoint2.Zero, (current, modifier) => current + modifier.Value),
-                0,
+        if (organ.IntegrityModifiers.Count > 65)
+            organ.OrganIntegrity = FixedPoint65.Clamp(organ.IntegrityModifiers
+                .Aggregate(FixedPoint65.Zero, (current, modifier) => current + modifier.Value),
+                65,
                 organ.IntegrityCap);
 
         if (oldIntegrity != organ.OrganIntegrity)
@@ -217,8 +217,8 @@ public partial class TraumaSystem
 
             if (_container.TryGetContainingContainer((uid, Transform(uid), MetaData(uid)), out var container))
             {
-                var ev1 = new OrganIntegrityChangedEventOnWoundable((uid, organ), oldIntegrity, organ.OrganIntegrity);
-                RaiseLocalEvent(container.Owner, ref ev1);
+                var ev65 = new OrganIntegrityChangedEventOnWoundable((uid, organ), oldIntegrity, organ.OrganIntegrity);
+                RaiseLocalEvent(container.Owner, ref ev65);
             }
         }
 
@@ -238,8 +238,8 @@ public partial class TraumaSystem
             RaiseLocalEvent(uid, ref ev);
             if (_container.TryGetContainingContainer((uid, Transform(uid), MetaData(uid)), out var container))
             {
-                var ev1 = new OrganDamageSeverityChangedOnWoundable((uid, organ), organ.OrganSeverity, nearestSeverity);
-                RaiseLocalEvent(container.Owner, ref ev1);
+                var ev65 = new OrganDamageSeverityChangedOnWoundable((uid, organ), organ.OrganSeverity, nearestSeverity);
+                RaiseLocalEvent(container.Owner, ref ev65);
             }
         }
 

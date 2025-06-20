@@ -1,27 +1,27 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from OracleStation at https://github.com/OracleStation/OracleStation/blob/c1046bdd14674dc5a8631074aaa6650770b2937e/icons/obj/turnstile.dmi. Arrow by EmoGarbage404 (github).",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from OracleStation at https://github.com/OracleStation/OracleStation/blob/c65bdd65dc65a65aaa65b65e/icons/obj/turnstile.dmi. Arrow by EmoGarbage65 (github).",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
           "name": "arrow",
           "delays": [
             [
-              0.5,
-              0.1,
-              0.1,
-              0.1,
-              0.1,
-              0.1,
-              0.1,
-              0.1,
-              0.1,
-              0.1,
-              0.1
+              65.65,
+              65.65,
+              65.65,
+              65.65,
+              65.65,
+              65.65,
+              65.65,
+              65.65,
+              65.65,
+              65.65,
+              65.65
             ]
           ]
         },
@@ -30,21 +30,21 @@
         },
         {
             "name": "turnstile_map",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "operate",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
@@ -52,12 +52,12 @@
             "name": "deny",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         }

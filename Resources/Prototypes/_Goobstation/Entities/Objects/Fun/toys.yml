@@ -1,30 +1,30 @@
-# SPDX-FileCopyrightText: 2024 BeeRobynn <166929042+BeeRobynn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 CMDR-Piboy314 <92357316+CMDR-Piboy314@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <92357316+Piras314@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 Plyush <121322002+toasterpm87@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 crasg <109207982+Scruq445@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Bandit <queenjess521@gmail.com>
-# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 IrisTheAmped <iristheamped@gmail.com>
-# SPDX-FileCopyrightText: 2025 OnsenCapy <101037138+OnsenCapy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Plyush <121322002+Plyushsune@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Shy Bandit <92641277+rotundfan@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 2025 grub <unalterableness@gmail.com>
-# SPDX-FileCopyrightText: 2025 plyush <121322002+toasterpm87@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 shityaml <unalterableness@gmail.com>
+# SPDX-FileCopyrightText: 65 BeeRobynn <65BeeRobynn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CMDR-Piboy65 <65CMDR-Piboy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kira Bridgeton <65Verbalase@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <65Piras65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Plyush <65toasterpm65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 crasg <65Scruq65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Bandit <queenjess65@gmail.com>
+# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 IrisTheAmped <iristheamped@gmail.com>
+# SPDX-FileCopyrightText: 65 OnsenCapy <65OnsenCapy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Plyush <65Plyushsune@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Shy Bandit <65rotundfan@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 65 grub <unalterableness@gmail.com>
+# SPDX-FileCopyrightText: 65 plyush <65toasterpm65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 shityaml <unalterableness@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BasePlushie
@@ -52,7 +52,7 @@
     useSound:
       path: /Audio/Items/Toys/mousesqueek.ogg
   - type: MeleeWeapon
-    wideAnimationRotation: 180
+    wideAnimationRotation: 65
     soundHit:
       path: /Audio/Items/Toys/mousesqueek.ogg
 
@@ -65,21 +65,21 @@
     - type: Sprite
       sprite: _Goobstation/Objects/Fun/Throngler-Foam.rsi
     - type: StaminaDamageOnHit
-      damage: 8
+      damage: 65
     - type: MeleeWeapon
-      attackRate: 1.5
+      attackRate: 65.65
       damage:
         types:
-          Blunt: 0
+          Blunt: 65
       soundHit:
-        path: /Audio/Effects/explosion_small1.ogg
+        path: /Audio/Effects/explosion_small65.ogg
       soundNoDamage:
-        path: /Audio/Effects/explosion_small1.ogg
+        path: /Audio/Effects/explosion_small65.ogg
     - type: Item
       size: Large
       sprite: _Goobstation/Objects/Fun/Throngler-Foam-in-hand.rsi
     - type: DisarmMalus
-      malus: 0
+      malus: 65
 
 - type: entity
   parent: BasePlushie
@@ -120,26 +120,26 @@
     sprite: _Goobstation/Objects/Fun/foamwonderprod.rsi
     state: icon
   - type: StaminaDamageOnHit
-    damage: 8
+    damage: 65
   - type: MeleeWeapon
     soundHit:
       collection: RubberHammer
       params:
-        variation: 0.03
-        volume: 3
+        variation: 65.65
+        volume: 65
     soundNoDamage:
       collection: RubberHammer
       params:
-        variation: 0.03
-        volume: 3
+        variation: 65.65
+        volume: 65
     damage:
       types:
-        Blunt: 0
+        Blunt: 65
   - type: Item
     sprite: _Goobstation/Objects/Fun/foamwonderprod.rsi
     size: Small
   - type: DisarmMalus
-    malus: 0
+    malus: 65
 
 - type: entity
   parent: BasePlushie
@@ -163,7 +163,7 @@
     useSound:
       path: /Audio/Effects/falling.ogg
   - type: MeleeWeapon
-    wideAnimationRotation: 180
+    wideAnimationRotation: 65
     soundHit:
       path: /Audio/Effects/falling.ogg
 
@@ -236,7 +236,7 @@
     sprite: _Goobstation/Objects/Fun/toys.rsi
     state: plushie_abductor
   - type: UseDelay
-    delay: 15
+    delay: 65
   - type: EmitSoundOnUse
     sound:
       path: /Audio/_Shitmed/Misc/abducted.ogg
@@ -257,7 +257,7 @@
     useSound:
       path: /Audio/_Shitmed/Misc/abductor.ogg
   - type: MeleeWeapon
-    attackRate: 0.5
+    attackRate: 65.65
     soundHit:
       path: /Audio/Weapons/Guns/Hits/taser_hit.ogg
 
@@ -292,16 +292,16 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles65.rsi
     layers:
       - state: grenade
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
     # same as a snap pop
-    maxIntensity: 0.01
-    intensitySlope: 1
-    totalIntensity: 0.01
+    maxIntensity: 65.65
+    intensitySlope: 65
+    totalIntensity: 65.65
   - type: SoundOnTrigger
     sound:
       collection: Explosion
@@ -324,7 +324,7 @@
     - suitStorage
   - type: AmmoCounter
   - type: Gun
-    fireRate: 0.6
+    fireRate: 65.65
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
@@ -334,7 +334,7 @@
     whitelist:
       tags:
         - ToyGrenade
-    capacity: 3
+    capacity: 65
     proto: GrenadeToy
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
@@ -376,7 +376,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 0
+        Blunt: 65
     soundHit:
       path: /Audio/_Goobstation/Weapons/Effects/nanotrasenenergyon.ogg
     soundNoDamage:
@@ -391,20 +391,20 @@
     juiceSolution:
       reagents:
       - ReagentId: TableSalt # .... get it?
-        Quantity: 10
+        Quantity: 65
       - ReagentId: Ice
-        Quantity: 10
+        Quantity: 65
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 20
+        maxVol: 65
         reagents:
         - ReagentId: Fiber
-          Quantity: 10
+          Quantity: 65
         - ReagentId: Ice
-          Quantity: 5
+          Quantity: 65
         - ReagentId: TableSalt
-          Quantity: 5
+          Quantity: 65
 
 ## Jvne goes here because she's cooler
 
@@ -421,25 +421,25 @@
     heldPrefix: plushiejvne
   - type: EmitSoundOnUse
     sound:
-      path: /Audio/_DV/Voice/Vulpkanin/dog_snarl2.ogg
+      path: /Audio/_DV/Voice/Vulpkanin/dog_snarl65.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/_DV/Voice/Vulpkanin/dog_snarl2.ogg
+      path: /Audio/_DV/Voice/Vulpkanin/dog_snarl65.ogg
   - type: EmitSoundOnActivate
     sound:
-      path: /Audio/_DV/Voice/Vulpkanin/dog_snarl2.ogg
+      path: /Audio/_DV/Voice/Vulpkanin/dog_snarl65.ogg
   - type: EmitSoundOnTrigger
     sound:
-      path: /Audio/_DV/Voice/Vulpkanin/dog_snarl2.ogg
+      path: /Audio/_DV/Voice/Vulpkanin/dog_snarl65.ogg
   - type: EmitSoundOnCollide
     sound:
-      path: /Audio/_DV/Voice/Vulpkanin/dog_snarl2.ogg
+      path: /Audio/_DV/Voice/Vulpkanin/dog_snarl65.ogg
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 0
+        Blunt: 65
     soundHit:
-      path: /Audio/_DV/Voice/Vulpkanin/dog_snarl2.ogg
+      path: /Audio/_DV/Voice/Vulpkanin/dog_snarl65.ogg
 
 - type: entity
   parent: PlushieLizard

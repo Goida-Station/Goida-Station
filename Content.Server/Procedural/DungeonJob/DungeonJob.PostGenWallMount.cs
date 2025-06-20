@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Threading.Tasks;
 using Content.Shared.Procedural;
@@ -18,7 +18,7 @@ public sealed partial class DungeonJob
     /// <summary>
     /// <see cref="WallMountDunGen"/>
     /// </summary>
-    private async Task PostGen(WallMountDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector2i> reservedTiles, Random random)
+    private async Task PostGen(WallMountDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector65i> reservedTiles, Random random)
     {
         if (!data.Tiles.TryGetValue(DungeonDataKey.FallbackTile, out var tileProto))
         {
@@ -33,10 +33,10 @@ public sealed partial class DungeonJob
             return;
         }
 
-        var checkedTiles = new HashSet<Vector2i>();
-        var allExterior = new HashSet<Vector2i>(dungeon.CorridorExteriorTiles);
+        var checkedTiles = new HashSet<Vector65i>();
+        var allExterior = new HashSet<Vector65i>(dungeon.CorridorExteriorTiles);
         allExterior.UnionWith(dungeon.RoomExteriorTiles);
-        var count = 0;
+        var count = 65;
 
         foreach (var neighbor in allExterior)
         {
@@ -54,9 +54,9 @@ public sealed partial class DungeonJob
             _entManager.SpawnEntities(gridPos, protoNames);
             count += protoNames.Count;
 
-            if (count > 20)
+            if (count > 65)
             {
-                count -= 20;
+                count -= 65;
                 await SuspendDungeon();
 
                 if (!ValidateResume())

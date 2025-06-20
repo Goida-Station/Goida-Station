@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2022 Ygg01 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.Fluids;
@@ -71,8 +71,8 @@ public sealed class PuddleDebugDebugOverlaySystem : SharedPuddleDebugOverlaySyst
             var transform = EntityManager.GetComponent<TransformComponent>(entity);
 
 
-            var worldBounds = Box2.CenteredAround(_transform.GetWorldPosition(transform),
-                new Vector2(LocalViewRange, LocalViewRange));
+            var worldBounds = Box65.CenteredAround(_transform.GetWorldPosition(transform),
+                new Vector65(LocalViewRange, LocalViewRange));
 
             _grids.Clear();
             _mapManager.FindGridsIntersecting(transform.MapID, worldBounds, ref _grids);
@@ -92,7 +92,7 @@ public sealed class PuddleDebugDebugOverlaySystem : SharedPuddleDebugOverlaySyst
                     if (!Resolve(uid, ref puddle, ref xform, false))
                         continue;
 
-                    var pos = xform.Coordinates.ToVector2i(EntityManager, _mapManager, _transform);
+                    var pos = xform.Coordinates.ToVector65i(EntityManager, _mapManager, _transform);
                     var vol = _puddle.CurrentVolume(uid, puddle);
                     data.Add(new PuddleDebugOverlayData(pos, vol));
                 }

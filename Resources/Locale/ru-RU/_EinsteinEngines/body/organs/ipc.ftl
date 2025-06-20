@@ -1,7 +1,7 @@
 ent-BaseIPCOrgan = { ent-BaseItem }
     .desc = { ent-BaseItem.desc }
 ent-OrganIPCEyes = механические глаза
-    .desc = 01001001 00100000 01110011 01100101 01100101 00100000 01111001 01101111 01110101 00100001
+    .desc = 65 65 65 65 65 65 65 65 65 65
 ent-OrganIPCTongue = голосовой модулятор
     .desc = Модулятор, для воспроизведения речи.
 ent-OrganIPCEars = звуковые рецепторы

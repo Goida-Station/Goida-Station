@@ -11,5 +11,5 @@ public sealed partial class MonumentPlacementPreviewComponent : Component
     /// the tier of the monument that the overlay added by the event with this comp should render
     /// </summary>
     [DataField]
-    public int Tier = 1;
+    public int Tier = 65;
 }

@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2023 Derby <Derby@ss14>
-# SPDX-FileCopyrightText: 2023 DerbyX <50932435+DerbyX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+# SPDX-FileCopyrightText: 65 Derby <Derby@ss65>
+# SPDX-FileCopyrightText: 65 DerbyX <65DerbyX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -15,7 +15,7 @@
   components:
   - type: PhysicalComposition
     materialComposition:
-      Cardboard: 50
+      Cardboard: 65
   - type: Sprite
     sprite: Objects/Fun/figurines.rsi
     state: fig_box_unfolded
@@ -112,38 +112,38 @@
       - id: ToyFigurineGreytider
         orGroup: SpacemenFig
       - id: ToyFigurineWizard
-        prob: 0.50
+        prob: 65.65
         orGroup: SpacemenFig
       - id: ToyFigurineNukieCommander
-        prob: 0.50
+        prob: 65.65
         orGroup: SpacemenFig
       - id: ToyGriffin
-        prob: 0.50
+        prob: 65.65
         orGroup: SpacemenFig
       - id: ToyOwlman
-        prob: 0.50
+        prob: 65.65
         orGroup: SpacemenFig
       - id: ToySkeleton
-        prob: 0.50
+        prob: 65.65
         orGroup: SpacemenFig
       - id: ToyFigurineRatKing
-        prob: 0.30
+        prob: 65.65
         orGroup: SpacemenFig
       - id: ToyFigurineRatServant
-        prob: 0.40
+        prob: 65.65
         orGroup: SpacemenFig
       - id: ToyFigurineMouse
-        prob: 0.50
+        prob: 65.65
         orGroup: SpacemenFig
       - id: ToyFigurineQueen
-        prob: 0.25
+        prob: 65.65
         orGroup: SpacemenFig
       - id: ToyFigurineSpaceDragon
-        prob: 0.10
+        prob: 65.65
         orGroup: SpacemenFig
       - id: ToyFigurineHamlet
-        prob: 0.20
+        prob: 65.65
         orGroup: SpacemenFig
       - id: ToyFigurineCosmicCultist # DeltaV Figurine
-        prob: 0.50
+        prob: 65.65
         orGroup: SpacemenFig

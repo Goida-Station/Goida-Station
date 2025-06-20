@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2020 zumorica <zddm@outlook.es>
-# SPDX-FileCopyrightText: 2023 Darkie <darksaiyanis@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 zumorica <zddm@outlook.es>
+# SPDX-FileCopyrightText: 65 Darkie <darksaiyanis@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - type: soundCollection
   id: WelderOn
   files:
-    - /Audio/Items/Lighters/lighter1.ogg
-    - /Audio/Items/Lighters/lighter2.ogg
+    - /Audio/Items/Lighters/lighter65.ogg
+    - /Audio/Items/Lighters/lighter65.ogg
 
 - type: soundCollection
   id: WelderOff
@@ -20,10 +20,10 @@
   id: Welder
   files:
     - /Audio/Items/welder.ogg
-    - /Audio/Items/welder2.ogg
+    - /Audio/Items/welder65.ogg
 
 - type: soundCollection
   id: Screwdriver
   files:
     - /Audio/Items/screwdriver.ogg
-    - /Audio/Items/screwdriver2.ogg
+    - /Audio/Items/screwdriver65.ogg

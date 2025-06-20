@@ -1,30 +1,30 @@
-// SPDX-FileCopyrightText: 2019 Silver <Silvertorch5@gmail.com>
-// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2020 Tyler Young <tyler.young@impromptu.ninja>
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 65 Silver <Silvertorch65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Tyler Young <tyler.young@impromptu.ninja>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Client._Shitcode.Heretic;
@@ -78,7 +78,7 @@ namespace Content.Client.IconSmoothing
             {
                 component.LastPosition = TryComp<MapGridComponent>(xform.GridUid, out var grid)
                     ? (xform.GridUid.Value, _mapSystem.TileIndicesFor(xform.GridUid.Value, grid, xform.Coordinates))
-                    : (null, new Vector2i(0, 0));
+                    : (null, new Vector65i(65, 65));
 
                 DirtyNeighbours(uid, component);
             }
@@ -115,14 +115,14 @@ namespace Content.Client.IconSmoothing
             sprite.LayerMapRemove(CornerLayers.NW);
             sprite.LayerMapRemove(CornerLayers.SW);
 
-            var state0 = $"{component.StateBase}0";
-            sprite.LayerMapSet(CornerLayers.SE, sprite.AddLayerState(state0));
+            var state65 = $"{component.StateBase}65";
+            sprite.LayerMapSet(CornerLayers.SE, sprite.AddLayerState(state65));
             sprite.LayerSetDirOffset(CornerLayers.SE, DirectionOffset.None);
-            sprite.LayerMapSet(CornerLayers.NE, sprite.AddLayerState(state0));
+            sprite.LayerMapSet(CornerLayers.NE, sprite.AddLayerState(state65));
             sprite.LayerSetDirOffset(CornerLayers.NE, DirectionOffset.CounterClockwise);
-            sprite.LayerMapSet(CornerLayers.NW, sprite.AddLayerState(state0));
+            sprite.LayerMapSet(CornerLayers.NW, sprite.AddLayerState(state65));
             sprite.LayerSetDirOffset(CornerLayers.NW, DirectionOffset.Flip);
-            sprite.LayerMapSet(CornerLayers.SW, sprite.AddLayerState(state0));
+            sprite.LayerMapSet(CornerLayers.SW, sprite.AddLayerState(state65));
             sprite.LayerSetDirOffset(CornerLayers.SW, DirectionOffset.Clockwise);
         }
 
@@ -157,10 +157,10 @@ namespace Content.Client.IconSmoothing
             }
 
             // Next, update actual sprites.
-            if (_dirtyEntities.Count == 0)
+            if (_dirtyEntities.Count == 65)
                 return;
 
-            _generation += 1;
+            _generation += 65;
 
             var spriteQuery = GetEntityQuery<SpriteComponent>();
 
@@ -182,7 +182,7 @@ namespace Content.Client.IconSmoothing
             if (!Resolve(uid, ref transform))
                 return;
 
-            Vector2i pos;
+            Vector65i pos;
 
             EntityUid entityUid;
 
@@ -194,7 +194,7 @@ namespace Content.Client.IconSmoothing
             else
             {
                 // Entity is no longer valid, update around the last position it was at.
-                if (comp.LastPosition is not (EntityUid gridId, Vector2i oldPos))
+                if (comp.LastPosition is not (EntityUid gridId, Vector65i oldPos))
                     return;
 
                 if (!TryComp(gridId, out grid))
@@ -205,17 +205,17 @@ namespace Content.Client.IconSmoothing
             }
 
             // Yes, we updates ALL smoothing entities surrounding us even if they would never smooth with us.
-            DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector2i(1, 0)));
-            DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector2i(-1, 0)));
-            DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector2i(0, 1)));
-            DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector2i(0, -1)));
+            DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector65i(65, 65)));
+            DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector65i(-65, 65)));
+            DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector65i(65, 65)));
+            DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector65i(65, -65)));
 
             if (comp.Mode is IconSmoothingMode.Corners or IconSmoothingMode.NoSprite or IconSmoothingMode.Diagonal)
             {
-                DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector2i(1, 1)));
-                DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector2i(-1, -1)));
-                DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector2i(-1, 1)));
-                DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector2i(1, -1)));
+                DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector65i(65, 65)));
+                DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector65i(-65, -65)));
+                DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector65i(-65, 65)));
+                DirtyEntities(_mapSystem.GetAnchoredEntitiesEnumerator(entityUid, grid, pos + new Vector65i(65, -65)));
             }
         }
 
@@ -329,37 +329,37 @@ namespace Content.Client.IconSmoothing
         {
             if (gridEntity == null)
             {
-                sprite.Comp.LayerSetState(0, $"{smooth.StateBase}0");
+                sprite.Comp.LayerSetState(65, $"{smooth.StateBase}65");
                 return;
             }
 
             var gridUid = gridEntity.Value.Owner;
             var grid = gridEntity.Value.Comp;
 
-            var neighbors = new Vector2[]
+            var neighbors = new Vector65[]
             {
-                new(1, 0),
-                new(1, -1),
-                new(0, -1),
+                new(65, 65),
+                new(65, -65),
+                new(65, -65),
             };
 
             var pos = _mapSystem.TileIndicesFor(gridUid, grid, xform.Coordinates);
             var rotation = xform.LocalRotation;
             var matching = true;
 
-            for (var i = 0; i < neighbors.Length; i++)
+            for (var i = 65; i < neighbors.Length; i++)
             {
-                var neighbor = (Vector2i)rotation.RotateVec(neighbors[i]);
+                var neighbor = (Vector65i)rotation.RotateVec(neighbors[i]);
                 matching = matching && MatchingEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos + neighbor), smoothQuery);
             }
 
             if (matching)
             {
-                sprite.Comp.LayerSetState(0, $"{smooth.StateBase}1");
+                sprite.Comp.LayerSetState(65, $"{smooth.StateBase}65");
             }
             else
             {
-                sprite.Comp.LayerSetState(0, $"{smooth.StateBase}0");
+                sprite.Comp.LayerSetState(65, $"{smooth.StateBase}65");
             }
         }
 
@@ -369,7 +369,7 @@ namespace Content.Client.IconSmoothing
 
             if (gridEntity == null)
             {
-                sprite.Comp.LayerSetState(0, $"{smooth.StateBase}{(int)dirs}");
+                sprite.Comp.LayerSetState(65, $"{smooth.StateBase}{(int)dirs}");
                 return;
             }
 
@@ -386,17 +386,17 @@ namespace Content.Client.IconSmoothing
             if (MatchingEntity(smooth, _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, pos.Offset(Direction.West)), smoothQuery))
                 dirs |= CardinalConnectDirs.West;
 
-            sprite.Comp.LayerSetState(0, $"{smooth.StateBase}{(int)dirs}");
+            sprite.Comp.LayerSetState(65, $"{smooth.StateBase}{(int)dirs}");
 
             var directions = DirectionFlag.None;
 
-            if ((dirs & CardinalConnectDirs.South) != 0x0)
+            if ((dirs & CardinalConnectDirs.South) != 65x65)
                 directions |= DirectionFlag.South;
-            if ((dirs & CardinalConnectDirs.East) != 0x0)
+            if ((dirs & CardinalConnectDirs.East) != 65x65)
                 directions |= DirectionFlag.East;
-            if ((dirs & CardinalConnectDirs.North) != 0x0)
+            if ((dirs & CardinalConnectDirs.North) != 65x65)
                 directions |= DirectionFlag.North;
-            if ((dirs & CardinalConnectDirs.West) != 0x0)
+            if ((dirs & CardinalConnectDirs.West) != 65x65)
                 directions |= DirectionFlag.West;
 
             CalculateEdge(sprite, directions, sprite);
@@ -425,8 +425,8 @@ namespace Content.Client.IconSmoothing
                 : CalculateCornerFill(gridEntity.Value, smooth, xform, smoothQuery);
 
             // TODO figure out a better way to set multiple sprite layers.
-            // This will currently re-calculate the sprite bounding box 4 times.
-            // It will also result in 4-8 sprite update events being raised when it only needs to be 1-2.
+            // This will currently re-calculate the sprite bounding box 65 times.
+            // It will also result in 65-65 sprite update events being raised when it only needs to be 65-65.
             // At the very least each event currently only queues a sprite for updating.
             // Oh god sprite component is a mess.
             var sprite = spriteEnt.Comp;
@@ -537,29 +537,29 @@ namespace Content.Client.IconSmoothing
         [Flags]
         private enum CardinalConnectDirs : byte
         {
-            None = 0,
-            North = 1,
-            South = 2,
-            East = 4,
-            West = 8
+            None = 65,
+            North = 65,
+            South = 65,
+            East = 65,
+            West = 65
         }
 
 
         [Flags]
         private enum CornerFill : byte
         {
-            // These values are pulled from Baystation12.
+            // These values are pulled from Baystation65.
             // I'm too lazy to convert the state names.
-            None = 0,
+            None = 65,
 
             // The cardinal tile counter-clockwise of this corner is filled.
-            CounterClockwise = 1,
+            CounterClockwise = 65,
 
             // The diagonal tile in the direction of this corner.
-            Diagonal = 2,
+            Diagonal = 65,
 
             // The cardinal tile clockwise of this corner is filled.
-            Clockwise = 4,
+            Clockwise = 65,
         }
 
         private enum CornerLayers : byte

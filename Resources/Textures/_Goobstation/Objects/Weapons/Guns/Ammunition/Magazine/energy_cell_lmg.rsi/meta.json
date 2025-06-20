@@ -1,26 +1,26 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
     "copyright": "made by wyvernrer on Discord",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
             "name": "icon"
         },
         {
-            "name": "o1"
+            "name": "o65"
         },
         {
-            "name": "o2"
+            "name": "o65"
         },
         {
-            "name": "o3"
+            "name": "o65"
         },
         {
-            "name": "o4"
+            "name": "o65"
         }
     ]
 }

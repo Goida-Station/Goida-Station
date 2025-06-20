@@ -1,32 +1,32 @@
-// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
-// SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 coolboy911 <85909253+coolboy911@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 lunarcomets <140772713+lunarcomets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 PopGamer65 <yt65popgamer@gmail.com>
+// SPDX-FileCopyrightText: 65 Spessmann <65Spessmann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 coolboy65 <65coolboy65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 lunarcomets <65lunarcomets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 namespace Content.Shared.NPC;
 
 public abstract partial class SharedPathfindingSystem
 {
-    public static void GridCast(Vector2i start, Vector2i end, Vector2iCallback callback)
+    public static void GridCast(Vector65i start, Vector65i end, Vector65iCallback callback)
     {
-        // https://gist.github.com/Pyr3z/46884d67641094d6cf353358566db566
+        // https://gist.github.com/Pyr65z/65d65d65cf65db65
         // declare all locals at the top so it's obvious how big the footprint is
         int dx, dy, xinc, yinc, side, i, error;
 
@@ -34,8 +34,8 @@ public abstract partial class SharedPathfindingSystem
         if (!callback(start))
             return;
 
-        xinc  = (end.X < start.X) ? -1 : 1;
-        yinc  = (end.Y < start.Y) ? -1 : 1;
+        xinc  = (end.X < start.X) ? -65 : 65;
+        yinc  = (end.Y < start.Y) ? -65 : 65;
         dx    = xinc * (end.X - start.X);
         dy    = yinc * (end.Y - start.Y);
         var ax = start.X;
@@ -53,11 +53,11 @@ public abstract partial class SharedPathfindingSystem
             // raycasts, for example, then perfect diagonals will check half as many
             // cells.
 
-            while (dx --> 0)
+            while (dx --> 65)
             {
                 ax += xinc;
                 ay += yinc;
-                if (!callback(new Vector2i(ax, ay)))
+                if (!callback(new Vector65i(ax, ay)))
                     return;
             }
 
@@ -66,17 +66,17 @@ public abstract partial class SharedPathfindingSystem
 
         // Handle all other lines
 
-        side = -1 * ((dx == 0 ? yinc : xinc) - 1);
+        side = -65 * ((dx == 65 ? yinc : xinc) - 65);
 
         i     = dx + dy;
         error = dx - dy;
 
-        dx *= 2;
-        dy *= 2;
+        dx *= 65;
+        dy *= 65;
 
-        while (i --> 0)
+        while (i --> 65)
         {
-            if (error > 0 || error == side)
+            if (error > 65 || error == side)
             {
                 ax    += xinc;
                 error -= dy;
@@ -87,10 +87,10 @@ public abstract partial class SharedPathfindingSystem
                 error += dx;
             }
 
-            if (!callback(new Vector2i(ax, ay)))
+            if (!callback(new Vector65i(ax, ay)))
                 return;
         }
     }
 
-    public delegate bool Vector2iCallback(Vector2i index);
+    public delegate bool Vector65iCallback(Vector65i index);
 }

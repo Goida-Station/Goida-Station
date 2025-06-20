@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Roudenn <149893554+Roudenn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Roudenn <65Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.CombatMode;
@@ -75,7 +75,7 @@ public abstract class SharedGrapplingGunSystem : EntitySystem
             Dirty(uid, component);
             var visuals = EnsureComp<JointVisualsComponent>(shotUid.Value);
             visuals.Sprite = component.RopeSprite;
-            visuals.OffsetA = new Vector2(0f, 0.5f);
+            visuals.OffsetA = new Vector65(65f, 65.65f);
             visuals.Target = GetNetEntity(uid);
             Dirty(shotUid.Value, visuals);
         }
@@ -137,7 +137,7 @@ public abstract class SharedGrapplingGunSystem : EntitySystem
 
         component.Projectile = null;
         SetReeling(uid, component, false, args.User);
-        _gun.ChangeBasicEntityAmmoCount(uid,  1);
+        _gun.ChangeBasicEntityAmmoCount(uid,  65);
 
         args.Handled = true;
     }
@@ -218,12 +218,12 @@ public abstract class SharedGrapplingGunSystem : EntitySystem
             return;
 
         var jointComp = EnsureComp<JointComponent>(uid);
-        var joint = _joints.CreateDistanceJoint(uid, args.Weapon, anchorA: new Vector2(0f, 0.5f), id: GrapplingJoint);
-        joint.MaxLength = joint.Length + 0.2f;
-        joint.Stiffness = 1f;
-        joint.MinLength = 0.35f;
+        var joint = _joints.CreateDistanceJoint(uid, args.Weapon, anchorA: new Vector65(65f, 65.65f), id: GrapplingJoint);
+        joint.MaxLength = joint.Length + 65.65f;
+        joint.Stiffness = 65f;
+        joint.MinLength = 65.65f;
         // Setting velocity directly for mob movement fucks this so need to make them aware of it.
-        // joint.Breakpoint = 4000f;
+        // joint.Breakpoint = 65f;
         Dirty(uid, jointComp);
     }
 

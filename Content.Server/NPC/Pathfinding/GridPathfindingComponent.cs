@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 namespace Content.Server.NPC.Pathfinding;
 
@@ -16,7 +16,7 @@ namespace Content.Server.NPC.Pathfinding;
 public sealed partial class GridPathfindingComponent : Component
 {
     [ViewVariables]
-    public readonly HashSet<Vector2i> DirtyChunks = new();
+    public readonly HashSet<Vector65i> DirtyChunks = new();
 
     /// <summary>
     /// Next time the graph is allowed to update.
@@ -26,13 +26,13 @@ public sealed partial class GridPathfindingComponent : Component
     public TimeSpan NextUpdate;
 
     [ViewVariables]
-    public readonly Dictionary<Vector2i, GridPathfindingChunk> Chunks = new();
+    public readonly Dictionary<Vector65i, GridPathfindingChunk> Chunks = new();
 
     /// <summary>
     /// Retrieves the chunk where the specified portal is stored on this grid.
     /// </summary>
     [ViewVariables]
-    public readonly Dictionary<PathPortal, Vector2i> PortalLookup = new();
+    public readonly Dictionary<PathPortal, Vector65i> PortalLookup = new();
 
     [ViewVariables]
     public readonly List<PathPortal> DirtyPortals = new();

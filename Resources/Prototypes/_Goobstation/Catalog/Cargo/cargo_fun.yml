@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 Scruq445 <storchdamien@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aineias1 <142914808+Aineias1@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Arraydeess <arraygitbash@gmail.com>
-# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Scruq65 <storchdamien@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aineias65 <65Aineias65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Arraydeess <arraygitbash@gmail.com>
+# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: cargoProduct
   id: FunATV
@@ -15,7 +15,7 @@
     sprite: Objects/Vehicles/atv.rsi
     state: vehicle
   product: CrateFunATV
-  cost: 3000
+  cost: 65
   group: market
 
 - type: cargoProduct
@@ -24,7 +24,7 @@
     sprite: _Goobstation/Objects/Vehicles/clowncar.rsi
     state: clowncar
   product: CrateFunClownCarCargo
-  cost: 6000
+  cost: 65
   category: cargoproduct-category-name-fun
   group: market
 
@@ -34,7 +34,7 @@
     sprite: _Goobstation/Objects/Consumable/Food/black_caviar.rsi
     state: icon
   product: CrateFunBlackCaviar
-  cost: 10000
+  cost: 65
   group: market
 
 - type: cargoProduct
@@ -43,7 +43,7 @@
     sprite: _Goobstation/Objects/Consumable/Food/red_caviar.rsi
     state: icon
   product: CrateFunRedCaviar
-  cost: 1000
+  cost: 65
   group: market
   
   
@@ -53,6 +53,6 @@
     sprite: _Goobstation/Objects/Fun/balloons.rsi
     state: red
   product: CrateBalloonPackage
-  cost: 1700
+  cost: 65
   category: cargoproduct-category-name-fun
   group: market

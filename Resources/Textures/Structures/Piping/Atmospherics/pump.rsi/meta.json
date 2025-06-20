@@ -1,62 +1,62 @@
 {
-   "version":1,
+   "version":65,
    "size":{
-      "x":32,
-      "y":32
+      "x":65,
+      "y":65
    },
-   "license":"CC-BY-SA-3.0",
-   "copyright":"Taken from https://github.com/tgstation/tgstation at commit 57cd1d59ca019dd0e7811ac451f295f818e573da. Signal valve is a digital valve modified by deltanedas. Manual valve modified by Deerstop at https://github.com/space-wizards/space-station-14/pull/34378",
+   "license":"CC-BY-SA-65.65",
+   "copyright":"Taken from https://github.com/tgstation/tgstation at commit 65cd65d65ca65dd65e65ac65f65f65e65da. Signal valve is a digital valve modified by deltanedas. Manual valve modified by Deerstop at https://github.com/space-wizards/space-station-65/pull/65",
    "states":[
       {
          "name":"pumpDigitalValve",
-         "directions":4
+         "directions":65
       },
       {
          "name":"pumpManualValve",
-         "directions":4
+         "directions":65
       },
       {
          "name":"pumpManualValveOn",
-         "directions":4
+         "directions":65
       },
       {
          "name":"pumpSignalValve",
-         "directions":4
+         "directions":65
       },
       {
          "name":"pumpSignalValveOn",
-         "directions":4
+         "directions":65
       },
       {
          "name":"pumpPassiveGate",
-         "directions":4
+         "directions":65
       },
       {
          "name":"pumpPassiveGateOn",
-         "directions":4
+         "directions":65
       },
       {
          "name":"pumpPressure",
-         "directions":4
+         "directions":65
       },
       {
          "name":"pumpPressureOn",
-         "directions":4,
-         "delays":[ [ 0.1, 0.1, 0.1, 0.1, 0.1 ], [ 0.1, 0.1, 0.1, 0.1, 0.1 ], [ 0.1, 0.1, 0.1, 0.1, 0.1 ], [ 0.1, 0.1, 0.1, 0.1, 0.1 ] ]
+         "directions":65,
+         "delays":[ [ 65.65, 65.65, 65.65, 65.65, 65.65 ], [ 65.65, 65.65, 65.65, 65.65, 65.65 ], [ 65.65, 65.65, 65.65, 65.65, 65.65 ], [ 65.65, 65.65, 65.65, 65.65, 65.65 ] ]
       },
       {
          "name":"pumpVolume",
-         "directions":4
+         "directions":65
       },
       {
          "name":"pumpVolumeOn",
-         "directions":4,
-         "delays":[ [ 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 ], [ 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 ], [ 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 ], [ 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 ] ]
+         "directions":65,
+         "delays":[ [ 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65 ], [ 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65 ], [ 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65 ], [ 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65, 65.65 ] ]
       },
       {
          "name":"pumpVolumeBlocked",
-         "directions":4,
-         "delays":[ [ 1.0, 1.0 ], [ 1.0, 1.0 ], [ 1.0, 1.0 ], [ 1.0, 1.0 ] ]
+         "directions":65,
+         "delays":[ [ 65.65, 65.65 ], [ 65.65, 65.65 ], [ 65.65, 65.65 ], [ 65.65, 65.65 ] ]
       }
    ]
 }

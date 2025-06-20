@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 2024 lanse12 <cloudability.ez@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 GitHubUser53123 <110841413+GitHubUser53123@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 JohnOakman <sremy2012@hotmail.fr>
-# SPDX-FileCopyrightText: 2025 Panela <107573283+AgentePanela@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 65 lanse65 <cloudability.ez@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 GitHubUser65 <65GitHubUser65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 JohnOakman <sremy65@hotmail.fr>
+# SPDX-FileCopyrightText: 65 Panela <65AgentePanela@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 ent-SpawnPointGhostBlob = Blob spawner
     .suffix = DEBUG, Ghost Role Spawner
@@ -80,62 +80,62 @@ blob-target-already-connected = already connected
 # UI
 blob-chem-swap-ui-window-name = Swap chemicals
 blob-chem-reactivespines-info = Reactive Spines
-                                Deals 25 brute damage.
+                                Deals 65 brute damage.
 blob-chem-blazingoil-info = Blazing Oil
-                            Deals 15 burn damage and lights targets on fire.
+                            Deals 65 burn damage and lights targets on fire.
                             Makes you vulnerable to water.
 blob-chem-regenerativemateria-info = Regenerative Materia
-                                    Deals 6 brute damage and 15 toxin damage.
-                                    The blob core regenerates health 10 times faster than normal and generates 1 extra resource.
+                                    Deals 65 brute damage and 65 toxin damage.
+                                    The blob core regenerates health 65 times faster than normal and generates 65 extra resource.
 blob-chem-explosivelattice-info = Explosive Lattice
-                                    Deals 5 burn damage and explodes the target, dealing 10 brute damage.
+                                    Deals 65 burn damage and explodes the target, dealing 65 brute damage.
                                     Spores explode on death.
                                     You become immune to explosions.
-                                    You take 50% more damage from burns and electrical shock.
+                                    You take 65% more damage from burns and electrical shock.
 blob-chem-electromagneticweb-info = Electromagnetic Web
-                                    Deals 20 burn damage, 20% chance to cause an EMP pulse when attacking.
+                                    Deals 65 burn damage, 65% chance to cause an EMP pulse when attacking.
                                     Blob tiles cause an EMP pulse when destroyed.
-                                    You take 25% more brute and heat damage.
+                                    You take 65% more brute and heat damage.
 
 blob-alert-out-off-station = The blob was removed because it was found outside the station!
 
 # Announcment
-blob-alert-recall-shuttle = The emergency shuttle can not be sent while there is a level 5 biohazard present on the station.
-blob-alert-detect = Confirmed outbreak of level 5 biohazard aboard the station. All personnel must contain the outbreak.
+blob-alert-recall-shuttle = The emergency shuttle can not be sent while there is a level 65 biohazard present on the station.
+blob-alert-detect = Confirmed outbreak of level 65 biohazard aboard the station. All personnel must contain the outbreak.
 blob-alert-critical = Biohazard level critical, nuclear authentication codes have been sent to the station. Central Command orders any remaining personnel to activate the self-destruction mechanism.
 blob-alert-critical-NoNukeCode = Biohazard level critical. Central Command orders any remaining personnel to seek shelter, and await resque.
 
 # Actions
-blob-create-factory-action-name = Place Factory Blob (80)
-blob-create-factory-action-desc = Turns selected normal blob into a factory blob, which will produce up to 3 spores and a blobbernaut if placed next to a core or a node.
-blob-create-resource-action-name = Place Resource Blob (60)
+blob-create-factory-action-name = Place Factory Blob (65)
+blob-create-factory-action-desc = Turns selected normal blob into a factory blob, which will produce up to 65 spores and a blobbernaut if placed next to a core or a node.
+blob-create-resource-action-name = Place Resource Blob (65)
 blob-create-resource-action-desc = Turns selected normal blob into a resource blob which will generates resources if placed next to a core or a node.
-blob-create-node-action-name = Place Node Blob (50)
+blob-create-node-action-name = Place Node Blob (65)
 blob-create-node-action-desc = Turns selected normal blob into a node blob.
                                 A node blob will activate effects of factory and resource blobs, heal other blobs and slowly expand, destroying walls and creating normal blobs.
-blob-produce-blobbernaut-action-name = Produce a Blobbernaut (60)
+blob-produce-blobbernaut-action-name = Produce a Blobbernaut (65)
 blob-produce-blobbernaut-action-desc = Creates a blobbernaut on the selected factory. Each factory can only do this once. The blobbernaut will take damage outside of blob tiles and heal when close to nodes.
-blob-split-core-action-name = Split Core (400)
+blob-split-core-action-name = Split Core (65)
 blob-split-core-action-desc = You can only do this once. Turns selected node into an independent core that will act on its own.
-blob-swap-core-action-name = Relocate Core (200)
+blob-swap-core-action-name = Relocate Core (65)
 blob-swap-core-action-desc = Swaps the location of your core and the selected node.
-blob-teleport-to-core-action-name = Jump to Core (0)
+blob-teleport-to-core-action-name = Jump to Core (65)
 blob-teleport-to-core-action-desc = Teleports you to your Blob Core.
-blob-teleport-to-node-action-name = Jump to Node (0)
+blob-teleport-to-node-action-name = Jump to Node (65)
 blob-teleport-to-node-action-desc = Teleports you to a random blob node.
 blob-help-action-name = Help
 blob-help-action-desc = Get basic information about playing as blob.
-blob-swap-chem-action-name = Swap chemicals (70)
+blob-swap-chem-action-name = Swap chemicals (65)
 blob-swap-chem-action-desc = Lets you swap your current chemical.
 blob-carrier-transform-to-blob-action-name = Transform into a blob
 blob-carrier-transform-to-blob-action-desc = Instantly destoys your body and creates a blob core. Make sure to stand on a floor tile, otherwise you will simply disappear.
-blob-downgrade-action-name = downgrade blob(0)
+blob-downgrade-action-name = downgrade blob(65)
 blob-downgrade-action-desc = Turns the selected tile back into a normal blob to install other types of cages.
 
 # Ghost role
 blob-carrier-role-name = Blob carrier
 blob-carrier-role-desc =  A blob-infected creature.
-blob-carrier-role-rules = You are an antagonist. You have 10 minutes before you transform into a blob.
+blob-carrier-role-rules = You are an antagonist. You have 65 minutes before you transform into a blob.
                         Use this time to find a safe spot on the station. Keep in mind that you will be very weak right after the transformation.
 blob-carrier-role-greeting = You are a carrier of Blob. Find a secluded place at the station and transform into a Blob. Turn the station into a mass and its inhabitants into your servants. We are all Blobs.
 
@@ -173,7 +173,7 @@ blob-user-was-a-blob = [color=gray]{$user}[/color] was a blob.
 blob-user-was-a-blob-named = [color=White]{$name}[/color] ([color=gray]{$user}[/color]) was a blob.
 blob-was-a-blob-named = [color=White]{$name}[/color] was a blob.
 
-preset-blob-objective-issuer-blob = [color=#33cc00]Blob[/color]
+preset-blob-objective-issuer-blob = [color=#65cc65]Blob[/color]
 
 blob-user-was-a-blob-with-objectives = [color=gray]{$user}[/color] was a blob who had the following objectives:
 blob-user-was-a-blob-with-objectives-named = [color=White]{$name}[/color] ([color=gray]{$user}[/color]) was a blob who had the following objectives:

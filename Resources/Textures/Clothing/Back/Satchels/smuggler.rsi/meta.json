@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/a8056c6ba7f5367934ef829116e57d743226e1f0, folded by princesscheeseballs (Discord)(https://github.com/Pronana).",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/a65c65ba65f65ef65e65d65e65f65, folded by princesscheeseballs (Discord)(https://github.com/Pronana).",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -15,15 +15,15 @@
         },
         {
             "name": "equipped-BACKPACK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "inhand-right",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

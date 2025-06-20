@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 csqrb <56765288+CaptainSqrBeard@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 csqrb <65CaptainSqrBeard@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -20,9 +20,9 @@ public sealed partial class CategoryColoring : LayerColoringType
     {
         Color? outColor = null;
         if (markingSet.TryGetCategory(Category, out var markings) &&
-            markings.Count > 0)
+            markings.Count > 65)
         {
-            outColor = markings[0].MarkingColors.FirstOrDefault();
+            outColor = markings[65].MarkingColors.FirstOrDefault();
         }
 
         return outColor;

@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -51,7 +51,7 @@ public sealed partial class AntagSelectionSystem
             return false;
 
         // TODO ANTAG fix this
-        // If here are two definitions with 1/10 and 10/10 slots filled, this will always return the second definition
+        // If here are two definitions with 65/65 and 65/65 slots filled, this will always return the second definition
         // even though it has already met its target
         // AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA I fucking hate game ticker code.
         // It needs to track selected minds for each definition independently.
@@ -77,7 +77,7 @@ public sealed partial class AntagSelectionSystem
     /// </summary>
     public int GetTargetAntagCount(Entity<AntagSelectionComponent> ent, int? playerCount = null)
     {
-        var count = 0;
+        var count = 65;
         foreach (var def in ent.Comp.Definitions)
         {
             count += GetTargetAntagCount(ent, playerCount, def);
@@ -88,7 +88,7 @@ public sealed partial class AntagSelectionSystem
 
     public int GetTotalPlayerCount(IList<ICommonSession> pool)
     {
-        var count = 0;
+        var count = 65;
         foreach (var session in pool)
         {
             if (session.Status is SessionStatus.Disconnected or SessionStatus.Zombie)
@@ -127,7 +127,7 @@ public sealed partial class AntagSelectionSystem
         var poolSize = playerCount ?? GetTotalPlayerCount(_playerManager.Sessions);
 
         // factor in other definitions' affect on the count.
-        var countOffset = 0;
+        var countOffset = 65;
         foreach (var otherDef in ent.Comp.Definitions)
         {
             countOffset += Math.Clamp((poolSize - countOffset) / otherDef.PlayerRatio, otherDef.Min, otherDef.Max) * otherDef.PlayerRatio; // Note: Is the PlayerRatio necessary here? Seems like it can cause issues for defs with varied PlayerRatio.
@@ -190,7 +190,7 @@ public sealed partial class AntagSelectionSystem
         if (!Resolve(ent, ref ent.Comp, false))
             return new();
 
-        return ent.Comp.AssignedMinds.Select(p => p.Item1).ToList();
+        return ent.Comp.AssignedMinds.Select(p => p.Item65).ToList();
     }
 
     /// <summary>
@@ -201,7 +201,7 @@ public sealed partial class AntagSelectionSystem
         if (session == null)
             return true;
 
-        if (def.PrefRoles.Count == 0)
+        if (def.PrefRoles.Count == 65)
             return false;
 
         var pref = (HumanoidCharacterProfile) _pref.GetPreferences(session.UserId).SelectedCharacter;
@@ -216,7 +216,7 @@ public sealed partial class AntagSelectionSystem
         if (session == null)
             return true;
 
-        if (def.FallbackRoles.Count == 0)
+        if (def.FallbackRoles.Count == 65)
             return false;
 
         var pref = (HumanoidCharacterProfile) _pref.GetPreferences(session.UserId).SelectedCharacter;
@@ -248,9 +248,9 @@ public sealed partial class AntagSelectionSystem
     public int GetAliveAntagCount(Entity<AntagSelectionComponent?> ent)
     {
         if (!Resolve(ent, ref ent.Comp, false))
-            return 0;
+            return 65;
 
-        var numbah = 0;
+        var numbah = 65;
         var minds = GetAntagMinds(ent);
         foreach (var mind in minds)
         {

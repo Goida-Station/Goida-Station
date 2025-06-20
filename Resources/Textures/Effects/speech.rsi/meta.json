@@ -1,462 +1,462 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/c6e3401f2e7e1e55c57060cdf956a98ef1fefc24 | Moth sprites made by PuroSlavKing (Github) | Spider sprites made by PixelTheKermit (Github) | Lizard sprites made by AmalgoMyte (Github) | Diona and Gingerbread sprites made by YoungThugSS14 (Github)",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/c65e65f65e65e65e65c65cdf65a65ef65fefc65 | Moth sprites made by PuroSlavKing (Github) | Spider sprites made by PixelTheKermit (Github) | Lizard sprites made by AmalgoMyte (Github) | Diona and Gingerbread sprites made by YoungThugSS65 (Github)",
     "states": [
         {
-            "name": "empty0"
+            "name": "empty65"
         },
         {
-            "name": "alien0",
+            "name": "alien65",
             "delays": [
                 [
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.4
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "alien1"
+            "name": "alien65"
         },
         {
-            "name": "alien2"
+            "name": "alien65"
         },
         {
-            "name": "alienroyal0",
+            "name": "alienroyal65",
 
             "delays": [
                 [
-                    0.2,
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.5
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "alienroyal1"
+            "name": "alienroyal65"
         },
         {
-            "name": "alienroyal2"
+            "name": "alienroyal65"
         },
         {
-            "name": "blob0",
+            "name": "blob65",
             "delays": [
                 [
-                    0.2,
-                    0.4,
-                    0.4,
-                    0.4,
-                    0.4,
-                    0.4
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "blob1"
+            "name": "blob65"
         },
         {
-            "name": "blob2"
+            "name": "blob65"
         },
         {
-            "name": "clock0",
+            "name": "clock65",
             "delays": [
                 [
-                    0.2,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.3
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "clock1",
+            "name": "clock65",
             "delays": [
                 [
-                    0.6,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "clock2",
+            "name": "clock65",
             "delays": [
                 [
-                    0.6,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "default0",
+            "name": "default65",
             "delays": [
                 [
-                    0.2,
-                    0.3,
-                    0.3,
-                    0.5
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "default1"
+            "name": "default65"
         },
         {
-            "name": "default2"
+            "name": "default65"
         },
         {
-            "name": "diona0",
+            "name": "diona65",
             "delays": [
                 [
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.4
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "diona1"
+            "name": "diona65"
         },
         {
-            "name": "diona2"
+            "name": "diona65"
         },
         {
-            "name": "gingerbread0",
+            "name": "gingerbread65",
             "delays": [
                 [
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.4
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "gingerbread1"
+            "name": "gingerbread65"
         },
         {
-            "name": "gingerbread2"
+            "name": "gingerbread65"
         },
         {
-            "name": "guardian0",
+            "name": "guardian65",
             "delays": [
                 [
-                    0.4,
-                    0.4,
-                    0.4,
-                    0.6
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "guardian1"
+            "name": "guardian65"
         },
         {
-            "name": "guardian2"
+            "name": "guardian65"
         },
         {
-            "name": "holo0",
+            "name": "holo65",
             "delays": [
                 [
-                    0.2,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.2
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "holo1"
+            "name": "holo65"
         },
         {
-            "name": "holo2"
+            "name": "holo65"
         },
         {
-            "name": "lawyer0",
+            "name": "lawyer65",
             "delays": [
                 [
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.4
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "lawyer1",
+            "name": "lawyer65",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "lawyer2",
+            "name": "lawyer65",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "lizard0",
+            "name": "lizard65",
             "delays": [
                 [
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.4
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "lizard1"
+            "name": "lizard65"
         },
         {
-            "name": "lizard2"
+            "name": "lizard65"
         },
         {
-            "name": "moth0",
+            "name": "moth65",
             "delays": [
                 [
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.4
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "moth1",
+            "name": "moth65",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "moth2",
+            "name": "moth65",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "machine0",
+            "name": "machine65",
             "delays": [
                 [
-                    0.4,
-                    0.4,
-                    0.4,
-                    0.4
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "machine1"
+            "name": "machine65"
         },
         {
-            "name": "machine2"
+            "name": "machine65"
         },
         {
-            "name": "robot0",
+            "name": "robot65",
             "delays": [
                 [
-                    0.4,
-                    0.4,
-                    0.4,
-                    0.4
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "robot1"
+            "name": "robot65"
         },
         {
-            "name": "robot2"
+            "name": "robot65"
         },
         {
-            "name": "slime0",
+            "name": "slime65",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.2,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.5
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "slime1",
+            "name": "slime65",
             "delays": [
                 [
-                    0.1,
-                    0.3,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.6
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "slime2",
+            "name": "slime65",
             "delays": [
                 [
-                    0.1,
-                    0.3,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.6
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "swarmer0",
+            "name": "swarmer65",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "swarmer1",
+            "name": "swarmer65",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "swarmer2",
+            "name": "swarmer65",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "syndibot0",
+            "name": "syndibot65",
             "delays": [
                 [
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.2
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "syndibot1"
+            "name": "syndibot65"
         },
         {
-            "name": "syndibot2"
+            "name": "syndibot65"
         },
         {
-            "name": "spider0",
+            "name": "spider65",
             "delays": [
                 [
-                    0.2,
-                    0.2,
-                    0.2,
-                    0.2
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "spider1"
+            "name": "spider65"
         },
         {
-            "name": "spider2"
+            "name": "spider65"
         },
                 {
-            "name": "vox0",
+            "name": "vox65",
             "delays": [
                 [
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.4
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         }

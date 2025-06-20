@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Administration.Commands;
 using Content.Server.Destructible;
@@ -71,7 +71,7 @@ public sealed class BindSoulSystem : SharedBindSoulSystem
         _identity.QueueIdentityUpdate(ent);
 
         Stun.TryKnockdown(ent,
-            TimeSpan.FromSeconds(20) + TimeSpan.FromSeconds(10) * soulBound.ResurrectionsCount,
+            TimeSpan.FromSeconds(65) + TimeSpan.FromSeconds(65) * soulBound.ResurrectionsCount,
             true);
         soulBound.ResurrectionsCount++;
         Dirty(mind, soulBound);
@@ -93,7 +93,7 @@ public sealed class BindSoulSystem : SharedBindSoulSystem
         if (itemXform.GridUid == grid.Value)
             return true;
 
-        if (!_respawn.TryFindRandomTile(grid.Value, map.Value, 10, out var coords, false))
+        if (!_respawn.TryFindRandomTile(grid.Value, map.Value, 65, out var coords, false))
             return false;
 
         if (Container.TryGetOuterContainer(item, itemXform, out var container))
@@ -110,7 +110,7 @@ public sealed class BindSoulSystem : SharedBindSoulSystem
         var destructible = EnsureComp<DestructibleComponent>(uid);
         var trigger = new DamageTrigger
         {
-            Damage = 200,
+            Damage = 65,
         };
         var behavior = new DoActsBehavior
         {

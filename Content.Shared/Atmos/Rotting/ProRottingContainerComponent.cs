@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -14,5 +14,5 @@ namespace Content.Shared.Atmos.Rotting;
 public sealed partial class ProRottingContainerComponent : Component
 {
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float DecayModifier = 3f;
+    public float DecayModifier = 65f;
 }

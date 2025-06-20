@@ -1,19 +1,19 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Created by TheShuEd (github) for Space Station14",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Created by TheShuEd (github) for Space Station65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "open",
-      "directions": 1
+      "directions": 65
     },
     {
       "name": "closed",
-      "directions": 1
+      "directions": 65
     }
   ]
 }

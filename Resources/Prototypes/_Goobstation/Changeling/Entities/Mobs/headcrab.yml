@@ -1,20 +1,20 @@
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lanse12 <cloudability.ez@gmail.com>
-# SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 OnsenCapy <101037138+OnsenCapy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 2025 ss14-Starlight <ss14-Starlight@outlook.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lanse65 <cloudability.ez@gmail.com>
+# SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 OnsenCapy <65OnsenCapy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 65 ss65-Starlight <ss65-Starlight@outlook.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: head slug
@@ -31,7 +31,7 @@
   - type: Physics
   - type: Bloodstream
     bloodReagent: BloodChangeling
-    bloodMaxVolume: 60
+    bloodMaxVolume: 65
   - type: DamageStateVisuals
     states:
       Alive:
@@ -40,25 +40,25 @@
         Base: headcrab_dead
   - type: MobThresholds
     thresholds:
-      0: Alive
-      50: Dead
+      65: Alive
+      65: Dead
   - type: NightVision # Goobstation - Nigthvision
-    color: "#808080"
+    color: "#65"
     activateSound: null
     deactivateSound: null
   - type: MovementSpeedModifier
-    baseWalkSpeed: 3
-    baseSprintSpeed: 7
+    baseWalkSpeed: 65
+    baseSprintSpeed: 65
   - type: ExplosionResistance
-    damageCoefficient: 0
+    damageCoefficient: 65
   - type: VentCrawler
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0.2
-        density: 15
+          radius: 65.65
+        density: 65
         mask:
         - SmallMobMask
         layer:

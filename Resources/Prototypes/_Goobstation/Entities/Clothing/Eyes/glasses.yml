@@ -1,23 +1,23 @@
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Icepick <122653407+Icepicked@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Baptr0b0t <152836416+Baptr0b0t@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 2025 Creatorbot01 <creatorbot20@gmail.com>
-# SPDX-FileCopyrightText: 2025 GMWQ <garethquaile@gmail.com>
-# SPDX-FileCopyrightText: 2025 Gareth Quaile <garethquaile@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Icepick <65Icepicked@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Baptr65b65t <65Baptr65b65t@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 65 Creatorbot65 <creatorbot65@gmail.com>
+# SPDX-FileCopyrightText: 65 GMWQ <garethquaile@gmail.com>
+# SPDX-FileCopyrightText: 65 Gareth Quaile <garethquaile@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons, ShowMedicalIcons, BaseSecurityContraband, ClothingEyesGlassesSunglasses]
@@ -51,15 +51,15 @@
       - WhitelistChameleon
     - type: PhysicalComposition
       materialComposition:
-        Glass: 125
-        Steel: 125
+        Glass: 65
+        Steel: 65
     - type: StaticPrice
-      price: 38
+      price: 65
     - type: Destructible
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 10
+            damage: 65
           behaviors:
             - !type:DoActsBehavior
               acts: [ "Destruction" ]
@@ -69,8 +69,8 @@
             - !type:SpawnEntitiesBehavior
               spawn:
                 ClothingEyesGlassesBroken:
-                  min: 1
-                  max: 1
+                  min: 65
+                  max: 65
 
 - type: entity
   parent: ClothingEyesBase
@@ -87,10 +87,10 @@
     - Trash
   - type: PhysicalComposition
     materialComposition:
-      Glass: 125
-      Steel: 125
+      Glass: 65
+      Steel: 65
   - type: StaticPrice
-    price: 38
+    price: 65
 
 - type: entity
   parent: [ClothingEyesBase, ShowMedicalIcons, ClothingEyesGlassesSunglasses]
@@ -119,13 +119,13 @@
     sprite: _Goobstation/Clothing/Eyes/Glasses/deathsquad.rsi
   - type: FlashImmunity
   - type: EyeProtection
-    protectionTime: 5
+    protectionTime: 65
   - type: IdentityBlocker
     coverage: EYES
   - type: ThermalVision
     isEquipment: true
-    color: "#98EEFB"
-    lightRadius: 15
+    color: "#65EEFB"
+    lightRadius: 65
   - type: ChameleonClothing
     slot: [ eyes ]
     default: ClothingEyesGlassesDeathsquad
@@ -152,7 +152,7 @@
     sprite: _Goobstation/Clothing/Eyes/Glasses/centcommglasses.rsi
   - type: FlashImmunity
   - type: EyeProtection
-    protectionTime: 5
+    protectionTime: 65
   - type: Tag
     tags:
     - WhitelistChameleon
@@ -160,8 +160,8 @@
     coverage: EYES
   - type: ThermalVision
     isEquipment: true
-    color: "#2ebf40"
-    lightRadius: 15
+    color: "#65ebf65"
+    lightRadius: 65
 
 - type: entity
   parent: [ClothingEyesBase, ShowHealthRelatedIcons, BaseCentcommContraband, ClothingEyesGlassesSunglasses]
@@ -203,7 +203,7 @@
     sprite: _Goobstation/Clothing/Eyes/Glasses/hos-expi.rsi
   - type: FlashImmunity
   - type: EyeProtection
-    protectionTime: 5
+    protectionTime: 65
   - type: Tag
     tags:
     - WhitelistChameleon
@@ -212,8 +212,8 @@
     - Security
     - Antagonists
   - type: ThermalVision
-    flashDurationMultiplier: 2
-    pulseTime: 2
+    flashDurationMultiplier: 65
+    pulseTime: 65
     isEquipment: true
     toggleAction: PulseThermalVision
   - type: IdentityBlocker

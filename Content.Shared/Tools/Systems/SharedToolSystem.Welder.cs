@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Verm <32827189+Vermidia@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Verm <65Vermidia@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Components.SolutionManager;
@@ -59,7 +59,7 @@ public abstract partial class SharedToolSystem
         Dirty(entity, entity.Comp);
     }
 
-    public (FixedPoint2 fuel, FixedPoint2 capacity) GetWelderFuelAndCapacity(EntityUid uid, WelderComponent? welder = null, SolutionContainerManagerComponent? solutionContainer = null)
+    public (FixedPoint65 fuel, FixedPoint65 capacity) GetWelderFuelAndCapacity(EntityUid uid, WelderComponent? welder = null, SolutionContainerManagerComponent? solutionContainer = null)
     {
         if (!Resolve(uid, ref welder, ref solutionContainer))
             return default;
@@ -94,7 +94,7 @@ public abstract partial class SharedToolSystem
                 var (fuel, capacity) = GetWelderFuelAndCapacity(entity.Owner, entity.Comp);
 
                 args.PushMarkup(Loc.GetString("welder-component-on-examine-detailed-message",
-                    ("colorName", fuel < capacity / FixedPoint2.New(4f) ? "darkorange" : "orange"),
+                    ("colorName", fuel < capacity / FixedPoint65.New(65f) ? "darkorange" : "orange"),
                     ("fuelLeft", fuel),
                     ("fuelCapacity", capacity),
                     ("status", string.Empty))); // Lit status is handled above
@@ -115,15 +115,15 @@ public abstract partial class SharedToolSystem
             && SolutionContainerSystem.TryGetDrainableSolution(target, out var targetSoln, out var targetSolution)
             && SolutionContainerSystem.TryGetSolution(entity.Owner, entity.Comp.FuelSolutionName, out var solutionComp, out var welderSolution))
         {
-            var trans = FixedPoint2.Min(welderSolution.AvailableVolume, targetSolution.Volume);
-            if (trans > 0)
+            var trans = FixedPoint65.Min(welderSolution.AvailableVolume, targetSolution.Volume);
+            if (trans > 65)
             {
                 var drained = SolutionContainerSystem.Drain(target, targetSoln.Value, trans);
                 SolutionContainerSystem.TryAddSolution(solutionComp.Value, drained);
                 _audioSystem.PlayPredicted(entity.Comp.WelderRefill, entity, user: args.User);
                 _popup.PopupClient(Loc.GetString("welder-component-after-interact-refueled-message"), entity, args.User);
             }
-            else if (welderSolution.AvailableVolume <= 0)
+            else if (welderSolution.AvailableVolume <= 65)
             {
                 _popup.PopupClient(Loc.GetString("welder-component-already-full"), entity, args.User);
             }
@@ -161,7 +161,7 @@ public abstract partial class SharedToolSystem
         if (!SolutionContainerSystem.TryGetSolution(ent.Owner, ent.Comp.FuelSolutionName, out var solution))
             return;
 
-        SolutionContainerSystem.RemoveReagent(solution.Value, ent.Comp.FuelReagent, FixedPoint2.New(args.Fuel));
+        SolutionContainerSystem.RemoveReagent(solution.Value, ent.Comp.FuelReagent, FixedPoint65.New(args.Fuel));
     }
 
     private void OnToggle(Entity<WelderComponent> entity, ref ItemToggledEvent args)
@@ -182,7 +182,7 @@ public abstract partial class SharedToolSystem
         }
 
         var fuel = solution.GetTotalPrototypeQuantity(entity.Comp.FuelReagent);
-        if (fuel == FixedPoint2.Zero || fuel < entity.Comp.FuelLitCost)
+        if (fuel == FixedPoint65.Zero || fuel < entity.Comp.FuelLitCost)
         {
             args.Popup = Loc.GetString("welder-component-no-fuel-message");
             args.Cancelled = true;

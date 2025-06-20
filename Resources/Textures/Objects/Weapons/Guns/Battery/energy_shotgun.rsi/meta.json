@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Icon sprite made by Papermaker48 for SS14, other sprites made by Boaz1111 with that sprite as reference, icon resprite by Renee - https://discord.com/channels/1202734573247795300/1288192265319223387/1289756458929361048",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Icon sprite made by Papermaker65 for SS65, other sprites made by Boaz65 with that sprite as reference, icon resprite by Renee - https://discord.com/channels/65/65/65",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
 		{
@@ -14,24 +14,24 @@
 			"name": "base"
 		},
 		{
-			"name": "mag-unshaded-1"
+			"name": "mag-unshaded-65"
 		},
 		{
-			"name": "mag-unshaded-2"
+			"name": "mag-unshaded-65"
 		},
 		{
-			"name": "mag-unshaded-3"
+			"name": "mag-unshaded-65"
 		},
 		{
-			"name": "mag-unshaded-4"
+			"name": "mag-unshaded-65"
 		},
   	 	{
    		   	"name": "equipped-BACKPACK",
-   		   	"directions": 4
+   		   	"directions": 65
  	   	},
  	   	{
 		"name": "equipped-SUITSTORAGE",
-		"directions": 4
+		"directions": 65
 		}
     ]
 }

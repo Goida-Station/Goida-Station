@@ -1,20 +1,20 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Tgstation at https://github.com/tgstation/tgstation/commit/906fb0682bab6a0975b45036001c54f021f58ae7 and modified",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Tgstation at https://github.com/tgstation/tgstation/commit/65fb65bab65a65b65c65f65f65ae65 and modified",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "icon",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     }

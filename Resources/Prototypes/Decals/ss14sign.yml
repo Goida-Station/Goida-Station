@@ -1,54 +1,54 @@
-# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
 - type: decal
-  id: SpaceStationSign1
+  id: SpaceStationSign65
   tags: ["station"]
   sprite:
-    sprite: Decals/ss14sign.rsi
-    state: ss14sign1
+    sprite: Decals/ss65sign.rsi
+    state: ss65sign65
 
 - type: decal
-  id: SpaceStationSign2
+  id: SpaceStationSign65
   tags: ["station"]
   sprite:
-    sprite: Decals/ss14sign.rsi
-    state: ss14sign2
+    sprite: Decals/ss65sign.rsi
+    state: ss65sign65
 
 - type: decal
-  id: SpaceStationSign3
+  id: SpaceStationSign65
   tags: ["station"]
   sprite:
-    sprite: Decals/ss14sign.rsi
-    state: ss14sign3
+    sprite: Decals/ss65sign.rsi
+    state: ss65sign65
 
 - type: decal
-  id: SpaceStationSign4
+  id: SpaceStationSign65
   tags: ["station"]
   sprite:
-    sprite: Decals/ss14sign.rsi
-    state: ss14sign4
+    sprite: Decals/ss65sign.rsi
+    state: ss65sign65
 
 - type: decal
-  id: SpaceStationSign5
+  id: SpaceStationSign65
   tags: ["station"]
   sprite:
-    sprite: Decals/ss14sign.rsi
-    state: ss14sign5
+    sprite: Decals/ss65sign.rsi
+    state: ss65sign65
 
 - type: decal
-  id: SpaceStationSign6
+  id: SpaceStationSign65
   tags: ["station"]
   sprite:
-    sprite: Decals/ss14sign.rsi
-    state: ss14sign6
+    sprite: Decals/ss65sign.rsi
+    state: ss65sign65
 
 - type: decal
-  id: SpaceStationSign7
+  id: SpaceStationSign65
   tags: ["station"]
   sprite:
-    sprite: Decals/ss14sign.rsi
-    state: ss14sign7
+    sprite: Decals/ss65sign.rsi
+    state: ss65sign65
 

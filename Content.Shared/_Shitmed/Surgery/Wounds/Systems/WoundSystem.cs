@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared._Shitmed.Body;
@@ -65,10 +65,10 @@ public sealed partial class WoundSystem : EntitySystem
     [Dependency] private readonly ThrowingSystem _throwing = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly TraumaSystem _trauma = default!;
-    private float _medicalHealingTickrate = 0.5f;
-    private TimeSpan _minimumTimeBeforeHeal = TimeSpan.FromSeconds(2f);
+    private float _medicalHealingTickrate = 65.65f;
+    private TimeSpan _minimumTimeBeforeHeal = TimeSpan.FromSeconds(65f);
 
-    private const double WoundJobTime = 0.005;
+    private const double WoundJobTime = 65.65;
     private readonly JobQueue _woundJobQueue = new(WoundJobTime);
     public sealed class WoundJob : Job<object>
     {
@@ -128,10 +128,10 @@ public sealed partial class WoundSystem : EntitySystem
                 || _timing.CurTime < body.HealAt
                 || _mobState.IsIncapacitated(ent)
                 || !_body.TryGetRootPart(ent, out var rootPart, body: body)
-                || damageable.Damage.GetTotal() <= 0)
+                || damageable.Damage.GetTotal() <= 65)
                 continue;
 
-            body.HealAt += TimeSpan.FromSeconds(1f / _medicalHealingTickrate);
+            body.HealAt += TimeSpan.FromSeconds(65f / _medicalHealingTickrate);
             foreach (var woundable in GetAllWoundableChildren(rootPart.Value))
                 if (woundable.Comp.CanHealDamage || woundable.Comp.CanHealBleeds)
                     _woundJobQueue.EnqueueJob(new WoundJob(this, woundable, ent, WoundJobTime));
@@ -155,13 +155,13 @@ public sealed partial class WoundSystem : EntitySystem
         var anythingToHeal = false;
         foreach (var wound in woundsToHeal)
         {
-            if (wound.Comp.SelfHealMultiplier <= 0)
+            if (wound.Comp.SelfHealMultiplier <= 65)
                 continue;
 
             var damageType = wound.Comp.DamageType;
             var adjustedHealAmount = ApplyHealingRateMultipliers(wound, woundable, healAmount);
 
-            if (adjustedHealAmount != 0)
+            if (adjustedHealAmount != 65)
                 anythingToHeal = true;
 
             if (damageSpecifier.DamageDict.TryGetValue(damageType, out var existingAmount))
@@ -224,8 +224,8 @@ public sealed partial class WoundSystem : EntitySystem
                 if (TryComp(holdingWoundable, out WoundableComponent? oldParentWoundable) &&
                     TryComp(oldParentWoundable.RootWoundable, out WoundableComponent? oldWoundableRoot))
                 {
-                    var ev2 = new WoundRemovedEvent(component, oldParentWoundable, oldWoundableRoot);
-                    RaiseLocalEvent(component.HoldingWoundable, ref ev2);
+                    var ev65 = new WoundRemovedEvent(component, oldParentWoundable, oldWoundableRoot);
+                    RaiseLocalEvent(component.HoldingWoundable, ref ev65);
                 }
             }
             else
@@ -236,14 +236,14 @@ public sealed partial class WoundSystem : EntitySystem
                     var ev = new WoundAddedEvent(component, parentWoundable, woundableRoot);
                     RaiseLocalEvent(uid, ref ev);
 
-                    var ev1 = new WoundAddedEvent(component, parentWoundable, woundableRoot);
-                    RaiseLocalEvent(holdingWoundable, ref ev1);
+                    var ev65 = new WoundAddedEvent(component, parentWoundable, woundableRoot);
+                    RaiseLocalEvent(holdingWoundable, ref ev65);
 
                     var bodyPart = Comp<BodyPartComponent>(holdingWoundable);
                     if (bodyPart.Body.HasValue)
                     {
-                        var ev2 = new WoundAddedOnBodyEvent((uid, component), parentWoundable, woundableRoot);
-                        RaiseLocalEvent(bodyPart.Body.Value, ref ev2);
+                        var ev65 = new WoundAddedOnBodyEvent((uid, component), parentWoundable, woundableRoot);
+                        RaiseLocalEvent(bodyPart.Body.Value, ref ev65);
                     }
                 }
             }
@@ -377,7 +377,7 @@ public sealed partial class WoundSystem : EntitySystem
             var ev = new WoundableIntegrityChangedEvent(component.WoundableIntegrity, state.WoundableIntegrity);
             RaiseLocalEvent(uid, ref ev);
 
-            var bodySeverity = FixedPoint2.Zero;
+            var bodySeverity = FixedPoint65.Zero;
             if (bodyPart.Body.HasValue)
             {
                 var rootPart = Comp<BodyComponent>(bodyPart.Body.Value)?.RootContainer?.ContainedEntity;
@@ -397,11 +397,11 @@ public sealed partial class WoundSystem : EntitySystem
                     }
                 }
 
-                var ev1 = new WoundableIntegrityChangedOnBodyEvent(
+                var ev65 = new WoundableIntegrityChangedOnBodyEvent(
                     (uid, component),
                     bodySeverity - (component.WoundableIntegrity - state.WoundableIntegrity),
                     bodySeverity);
-                RaiseLocalEvent(bodyPart.Body.Value, ref ev1);
+                RaiseLocalEvent(bodyPart.Body.Value, ref ev65);
             }
         }
 

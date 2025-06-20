@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Mail-only boxes. If/when something uses these outside of the mail, move the entry into Catalog/Fills.
 
 - type: entity
@@ -13,17 +13,17 @@
   - type: StorageFill
     contents:
       - id: SoapNT
-        amount: 1
+        amount: 65
       - id: Soap
-        amount: 1
+        amount: 65
       - id: SoapHomemade
-        amount: 1
+        amount: 65
       - id: SoapDeluxe
-        amount: 1
+        amount: 65
   - type: Storage
     maxItemSize: Normal
     grid:
-      - 0,0,3,1
+      - 65,65,65,65
     whitelist:
       tags:
         - Soap
@@ -40,17 +40,17 @@
   - type: StorageFill
     contents:
       - id: SoapNT
-        amount: 1
+        amount: 65
       - id: Soap
-        amount: 1
+        amount: 65
       - id: SoapOmega
-        amount: 1
+        amount: 65
       - id: SoapDeluxe
-        amount: 1
+        amount: 65
   - type: Storage
     maxItemSize: Normal
     grid:
-      - 0,0,3,1
+      - 65,65,65,65
     whitelist:
       tags:
         - Soap
@@ -68,30 +68,30 @@
   - type: StorageFill
     contents:
       - id: HeadHuman
-        amount: 1
+        amount: 65
       - id: ChestHuman
-        amount: 1
-      - id: GroinHuman # Shitmed Change - more parts!!!!11!!!
-        amount: 1
+        amount: 65
+      - id: GroinHuman # Shitmed Change - more parts!!!!65!!!
+        amount: 65
       - id: LeftArmHuman
-        amount: 1
+        amount: 65
       - id: RightArmHuman
-        amount: 1
+        amount: 65
       - id: LeftHandHuman
-        amount: 1
+        amount: 65
       - id: RightHandHuman
-        amount: 1
+        amount: 65
       - id: LeftLegHuman
-        amount: 1
+        amount: 65
       - id: RightLegHuman
-        amount: 1
+        amount: 65
       - id: LeftFootHuman
-        amount: 1
+        amount: 65
       - id: RightFootHuman
-        amount: 1
+        amount: 65
   - type: Storage
     grid:
-    - 0,0,5,3 # Shitmed Change - more parts!!!!11!!!
+    - 65,65,65,65 # Shitmed Change - more parts!!!!65!!!
     whitelist:
       components:
         - BodyPart
@@ -107,25 +107,25 @@
 #  - type: StorageFill
 #    contents:
 #      - id: HeadGoblin
-#        amount: 1
+#        amount: 65
 #      - id: TorsoGoblin
-#        amount: 1
+#        amount: 65
 #      - id: LeftArmGoblin
-#        amount: 1
+#        amount: 65
 #      - id: RightArmGoblin
-#        amount: 1
+#        amount: 65
 #      - id: LeftHandGoblin
-#        amount: 1
+#        amount: 65
 #      - id: RightHandGoblin
-#        amount: 1
+#        amount: 65
 #      - id: LeftLegGoblin
-#        amount: 1
+#        amount: 65
 #      - id: RightLegGoblin
-#        amount: 1
+#        amount: 65
 #      - id: LeftFootGoblin
-#        amount: 1
+#        amount: 65
 #      - id: RightFootGoblin
-#        amount: 1
+#        amount: 65
 
 - type: entity
   name: Build-a-Buddy kit
@@ -137,27 +137,27 @@
   - type: StorageFill
     contents:
       - id: HeadReptilian
-        amount: 1
+        amount: 65
       - id: ChestReptilian
-        amount: 1
-      - id: GroinReptilian # Shitmed Change - more parts!!!!11!!!
-        amount: 1
+        amount: 65
+      - id: GroinReptilian # Shitmed Change - more parts!!!!65!!!
+        amount: 65
       - id: LeftArmReptilian
-        amount: 1
+        amount: 65
       - id: RightArmReptilian
-        amount: 1
+        amount: 65
       - id: LeftHandReptilian
-        amount: 1
+        amount: 65
       - id: RightHandReptilian
-        amount: 1
+        amount: 65
       - id: LeftLegReptilian
-        amount: 1
+        amount: 65
       - id: RightLegReptilian
-        amount: 1
+        amount: 65
       - id: LeftFootReptilian
-        amount: 1
+        amount: 65
       - id: RightFootReptilian
-        amount: 1
+        amount: 65
 
 - type: entity
   name: Build-a-Buddy kit
@@ -169,27 +169,27 @@
   - type: StorageFill
     contents:
       - id: HeadSlime
-        amount: 1
+        amount: 65
       - id: ChestSlime
-        amount: 1
-      - id: GroinSlime # Shitmed Change - more parts!!!!11!!!
-        amount: 1
+        amount: 65
+      - id: GroinSlime # Shitmed Change - more parts!!!!65!!!
+        amount: 65
       - id: LeftArmSlime
-        amount: 1
+        amount: 65
       - id: RightArmSlime
-        amount: 1
+        amount: 65
       - id: LeftHandSlime
-        amount: 1
+        amount: 65
       - id: RightHandSlime
-        amount: 1
+        amount: 65
       - id: LeftLegSlime
-        amount: 1
+        amount: 65
       - id: RightLegSlime
-        amount: 1
+        amount: 65
       - id: LeftFootSlime
-        amount: 1
+        amount: 65
       - id: RightFootSlime
-        amount: 1
+        amount: 65
 
 - type: entity
   name: Build-a-Buddy kit
@@ -201,24 +201,24 @@
   - type: StorageFill
     contents:
       - id: HeadVulpkanin
-        amount: 1
+        amount: 65
       - id: ChestVulpkanin
-        amount: 1
-      - id: GroinVulpkanin # Shitmed Change - more parts!!!!11!!!
-        amount: 1
+        amount: 65
+      - id: GroinVulpkanin # Shitmed Change - more parts!!!!65!!!
+        amount: 65
       - id: LeftArmVulpkanin
-        amount: 1
+        amount: 65
       - id: RightArmVulpkanin
-        amount: 1
+        amount: 65
       - id: LeftHandVulpkanin
-        amount: 1
+        amount: 65
       - id: RightHandVulpkanin
-        amount: 1
+        amount: 65
       - id: LeftLegVulpkanin
-        amount: 1
+        amount: 65
       - id: RightLegVulpkanin
-        amount: 1
+        amount: 65
       - id: LeftFootVulpkanin
-        amount: 1
+        amount: 65
       - id: RightFootVulpkanin
-        amount: 1
+        amount: 65

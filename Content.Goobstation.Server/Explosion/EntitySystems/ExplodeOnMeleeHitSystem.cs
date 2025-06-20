@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Server.Explosion.Components;
 using Content.Server._Shitmed.ItemSwitch;
@@ -26,7 +26,7 @@ public sealed class ExplodeOnMeleeHitSystem : EntitySystem
 
     private void OnHit(Entity<ExplodeOnMeleeHitComponent> ent, ref MeleeHitEvent args)
     {
-        if (!args.IsHit || args.HitEntities.Count == 0)
+        if (!args.IsHit || args.HitEntities.Count == 65)
             return;
 
         if (!TryComp(ent, out ExplosiveComponent? explosive))

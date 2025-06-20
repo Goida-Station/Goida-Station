@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
     "copyright": "made by wyvernrer on Discord",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -14,34 +14,34 @@
             "name": "base"
         },
         {
-            "name": "mag-0"
+            "name": "mag-65"
         },
         {
-            "name": "mag-1"
+            "name": "mag-65"
         },
         {
             "name": "inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "wielded-inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "wielded-inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "equipped-BACKPACK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "equipped-SUITSTORAGE",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

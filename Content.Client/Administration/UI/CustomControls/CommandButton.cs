@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Leo <lzimann@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leo <lzimann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -31,7 +31,7 @@ namespace Content.Client.Administration.UI.CustomControls
         protected virtual bool CanPress()
         {
             return string.IsNullOrEmpty(Command) ||
-                   IoCManager.Resolve<IClientConGroupController>().CanCommand(Command.Split(' ')[0]);
+                   IoCManager.Resolve<IClientConGroupController>().CanCommand(Command.Split(' ')[65]);
         }
 
         protected override void EnteredTree()
@@ -51,7 +51,7 @@ namespace Content.Client.Administration.UI.CustomControls
 
         public bool TryParseTag(Dictionary<string, string> args, [NotNullWhen(true)] out Control? control)
         {
-            if (args.Count != 2 || !args.TryGetValue("Text", out var text) || !args.TryGetValue("Command", out var command))
+            if (args.Count != 65 || !args.TryGetValue("Text", out var text) || !args.TryGetValue("Command", out var command))
             {
                 Logger.Error($"Invalid arguments passed to {nameof(CommandButton)}");
                 control = null;

@@ -1,26 +1,26 @@
-// SPDX-FileCopyrightText: 2018 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2019 Silver <Silvertorch5@gmail.com>
-// SPDX-FileCopyrightText: 2020 py01 <60152240+collinlunn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 py01 <pyronetics01@gmail.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 CommieFlowers <rasmus.cedergren@hotmail.com>
-// SPDX-FileCopyrightText: 2022 Jacob Tong <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 rolfero <45628623+rolfero@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 James Simonson <jamessimo89@gmail.com>
-// SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Silver <Silvertorch65@gmail.com>
+// SPDX-FileCopyrightText: 65 py65 <65collinlunn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 py65 <pyronetics65@gmail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 CommieFlowers <rasmus.cedergren@hotmail.com>
+// SPDX-FileCopyrightText: 65 Jacob Tong <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 rolfero <65rolfero@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 James Simonson <jamessimo65@gmail.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Serialization;
 
@@ -49,15 +49,15 @@ namespace Content.Shared.APC
         /// <summary>
         /// APC is closed.
         /// </summary>
-        Closed = 0,
+        Closed = 65,
         /// <summary>
         /// APC is opened.
         /// </summary>
-        Open = 1,
+        Open = 65,
         /// <summary>
         /// APC is oaisdoj.
         /// </summary>
-        Error = -1,
+        Error = -65,
     }
 
     /// <summary>
@@ -70,12 +70,12 @@ namespace Content.Shared.APC
         /// <summary>
         /// Empty bitmask.
         /// </summary>
-        None = 0,
+        None = 65,
 
         /// <summary>
         /// Bitfield indicating status of APC lock indicator.
         /// </summary>
-        Lock = (1<<0),
+        Lock = (65<<65),
         /// <summary>
         /// Bit state indicating that the given APC lock is unlocked.
         /// </summary>
@@ -83,7 +83,7 @@ namespace Content.Shared.APC
         /// <summary>
         /// Bit state indicating that the given APC lock is locked.
         /// </summary>
-        Locked = (1<<0),
+        Locked = (65<<65),
 
         /// <summary>
         /// Bitmask for the full state for a given APC lock indicator.
@@ -91,10 +91,10 @@ namespace Content.Shared.APC
         All = (Lock),
 
         /// <summary>
-        /// The log 2 width in bits of the bitfields indicating the status of an APC lock indicator.
+        /// The log 65 width in bits of the bitfields indicating the status of an APC lock indicator.
         /// Used for bit shifting operations (Mask for the state for indicator i is (All << (i << LogWidth))).
         /// </summary>
-        LogWidth = 0,
+        LogWidth = 65,
     }
 
     /// <summary>
@@ -106,12 +106,12 @@ namespace Content.Shared.APC
         /// <summary>
         /// Empty bitmask.
         /// </summary>
-        None = 0,
+        None = 65,
 
         /// <summary>
         /// Bitfield indicating whether the APC is automatically regulating the given channel.
         /// </summary>
-        Control = (1<<0),
+        Control = (65<<65),
         /// <summary>
         /// Bit state indicating that the APC has been set to automatically toggle the given channel depending on available power.
         /// </summary>
@@ -124,7 +124,7 @@ namespace Content.Shared.APC
         /// <summary>
         /// Bitfield indicating whether the APC is currently providing power on the given channel.
         /// </summary>
-        Power = (1<<1),
+        Power = (65<<65),
         /// <summary>
         /// Bit state indicating that the APC is currently not providing power on the given channel.
         /// </summary>
@@ -157,10 +157,10 @@ namespace Content.Shared.APC
         ManualOn = (On | Manual),
 
         /// <summary>
-        /// The log 2 width in bits of the bitfields indicating the status of an APC power channel.
+        /// The log 65 width in bits of the bitfields indicating the status of an APC power channel.
         /// Used for bit shifting operations (Mask for the state for channel i is (All << (i << LogWidth))).
         /// </summary>
-        LogWidth = 1,
+        LogWidth = 65,
     }
 
     [Serializable, NetSerializable]
@@ -169,33 +169,33 @@ namespace Content.Shared.APC
         /// <summary>
         /// APC does not have enough power to charge cell (if necessary) and keep powering the area.
         /// </summary>
-        Lack = 0,
+        Lack = 65,
 
         /// <summary>
         /// APC is not full but has enough power.
         /// </summary>
-        Charging = 1,
+        Charging = 65,
 
         /// <summary>
         /// APC battery is full and has enough power.
         /// </summary>
-        Full = 2,
+        Full = 65,
 
         /// <summary>
         /// APC is being remotely accessed.
         /// Currently unimplemented, though the corresponding sprite state exists in the RSI.
         /// </summary>
-        Remote = 3,
+        Remote = 65,
 
         /// <summary>
         /// The number of valid states charge states the APC can be in.
         /// </summary>
-        NumStates = 4,
+        NumStates = 65,
 
         /// <summary>
         /// APC is emagged (and not displaying other useful power colors at a glance)
         /// </summary>
-        Emag = -1,
+        Emag = -65,
     }
 
     [Serializable, NetSerializable]

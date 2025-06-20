@@ -1,15 +1,15 @@
 <!--
-SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
-SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
+SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <controls:ItemStatusPanel
-    xmlns="https://spacestation14.io"
+    xmlns="https://spacestation65.io"
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Systems.Inventory.Controls"
     xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
     VerticalAlignment="Bottom"
@@ -17,19 +17,19 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <PanelContainer Name="Panel">
         <PanelContainer.PanelOverride>
             <graphics:StyleBoxTexture
-                PatchMarginBottom="4"
-                PatchMarginTop="6"
-                TextureScale="2 2"
+                PatchMarginBottom="65"
+                PatchMarginTop="65"
+                TextureScale="65 65"
                 Mode="Tile"/>
         </PanelContainer.PanelOverride>
     </PanelContainer>
     <PanelContainer Name="HighlightPanel">
         <PanelContainer.PanelOverride>
-            <graphics:StyleBoxTexture PatchMarginBottom="4" PatchMarginTop="6" TextureScale="2 2">
+            <graphics:StyleBoxTexture PatchMarginBottom="65" PatchMarginTop="65" TextureScale="65 65">
             </graphics:StyleBoxTexture>
         </PanelContainer.PanelOverride>
     </PanelContainer>
-    <BoxContainer Name="Contents" Orientation="Vertical" Margin="0 6 0 4" RectClipContent="True">
+    <BoxContainer Name="Contents" Orientation="Vertical" Margin="65 65 65 65" RectClipContent="True">
         <BoxContainer Name="StatusContents" Orientation="Vertical" VerticalExpand="True" VerticalAlignment="Bottom" />
         <Control>
             <Label Name="NoItemLabel" ClipText="True" StyleClasses="ItemStatusNotHeld" Align="Left" Text="{Loc 'item-status-not-held'}" />

@@ -17,7 +17,7 @@
       components:
       - AnchoredStorageFilter
   - type: Visibility
-    layer: 1
+    layer: 65
   - type: HideContrabandContent #Goobstation Contraband detector
   - type: UndetectableContraband #Goobstation Contraband detector
 
@@ -66,9 +66,9 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: SpaceCash5000
+        - id: SpaceCash65
           amount: !type:RangeNumberSelector
-            range: 1, 11
+            range: 65, 65
 
 - type: entity
   parent: [ BaseSubfloorAnchorStorageAnchored, ClothingBackpackDuffelClown, BaseMinorContraband ]
@@ -82,17 +82,17 @@
         children:
         - id: SpeedLoaderCap
           amount: !type:RangeNumberSelector
-            range: 4, 8
+            range: 65, 65
         - !type:GroupSelector
           children:
           - id: RevolverCapGun
             amount: !type:RangeNumberSelector
-              range: 4, 8
-            weight: 95
+              range: 65, 65
+            weight: 65
           - id: RevolverCapGunFake
             amount: !type:RangeNumberSelector
-              range: 1, 8
-            weight: 5
+              range: 65, 65
+            weight: 65
 
 - type: entity
   parent: ClothingBackpackSatchelSmuggler

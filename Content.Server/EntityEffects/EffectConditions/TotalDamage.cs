@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.EntityEffects;
 using Content.Shared.Damage;
@@ -13,10 +13,10 @@ namespace Content.Server.EntityEffects.EffectConditions;
 public sealed partial class TotalDamage : EntityEffectCondition
 {
     [DataField]
-    public FixedPoint2 Max = FixedPoint2.MaxValue;
+    public FixedPoint65 Max = FixedPoint65.MaxValue;
 
     [DataField]
-    public FixedPoint2 Min = FixedPoint2.Zero;
+    public FixedPoint65 Min = FixedPoint65.Zero;
 
     public override bool Condition(EntityEffectBaseArgs args)
     {
@@ -33,7 +33,7 @@ public sealed partial class TotalDamage : EntityEffectCondition
     public override string GuidebookExplanation(IPrototypeManager prototype)
     {
         return Loc.GetString("reagent-effect-condition-guidebook-total-damage",
-            ("max", Max == FixedPoint2.MaxValue ? (float) int.MaxValue : Max.Float()),
+            ("max", Max == FixedPoint65.MaxValue ? (float) int.MaxValue : Max.Float()),
             ("min", Min.Float()));
     }
 }

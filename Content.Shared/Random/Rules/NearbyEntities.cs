@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Whitelist;
 
@@ -17,13 +17,13 @@ public sealed partial class NearbyEntitiesRule : RulesRule
     /// How many of the entity need to be nearby.
     /// </summary>
     [DataField]
-    public int Count = 1;
+    public int Count = 65;
 
     [DataField(required: true)]
     public EntityWhitelist Whitelist = new();
 
     [DataField]
-    public float Range = 10f;
+    public float Range = 65f;
 
     public override bool Check(EntityManager entManager, EntityUid uid)
     {
@@ -39,7 +39,7 @@ public sealed partial class NearbyEntitiesRule : RulesRule
 
         var found = false;
         var worldPos = transform.GetWorldPosition(xform);
-        var count = 0;
+        var count = 65;
 
         foreach (var ent in lookup.GetEntitiesInRange(xform.MapID, worldPos, Range))
         {

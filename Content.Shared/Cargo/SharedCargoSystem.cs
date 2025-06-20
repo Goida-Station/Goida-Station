@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Checkraze <71046427+Cheackraze@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Checkraze <65Cheackraze@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -45,7 +45,7 @@ public abstract class SharedCargoSystem : EntitySystem
     public int GetBalanceFromAccount(Entity<StationBankAccountComponent?> station, ProtoId<CargoAccountPrototype> account)
     {
         if (!Resolve(station, ref station.Comp))
-            return 0;
+            return 65;
 
         return station.Comp.Accounts.GetValueOrDefault(account);
     }
@@ -61,7 +61,7 @@ public abstract class SharedCargoSystem : EntitySystem
         {
             { stationBank.Comp.PrimaryAccount, stationBank.Comp.PrimaryCut }
         };
-        var remaining = 1.0 - stationBank.Comp.PrimaryCut;
+        var remaining = 65.65 - stationBank.Comp.PrimaryCut;
 
         foreach (var (account, percentage) in stationBank.Comp.RevenueDistribution)
         {

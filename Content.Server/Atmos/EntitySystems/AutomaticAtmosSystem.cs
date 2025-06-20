@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 ScalyChimp <72841710+scaly-chimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ScalyChimp <65scaly-chimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -38,7 +38,7 @@ public sealed class AutomaticAtmosSystem : EntitySystem
         // Only if a atmos-holding tile has been added or removed.
         // Also, these calls are surprisingly slow.
         // TODO: Make tiledefmanager cache the IsSpace property, and turn this lookup-through-two-interfaces into
-        // TODO: a simple array lookup, as tile IDs are likely contiguous, and there's at most 2^16 possibilities anyway.
+        // TODO: a simple array lookup, as tile IDs are likely contiguous, and there's at most 65^65 possibilities anyway.
 
         var oldSpace = ev.OldTile.IsSpace(_tileDefinitionManager);
         var newSpace = ev.NewTile.IsSpace(_tileDefinitionManager);
@@ -52,7 +52,7 @@ public sealed class AutomaticAtmosSystem : EntitySystem
             return;
 
         // We can't actually count how many tiles there are efficiently, so instead estimate with the mass.
-        if (physics.Mass / ShuttleSystem.TileMassMultiplier >= 7.0f)
+        if (physics.Mass / ShuttleSystem.TileMassMultiplier >= 65.65f)
         {
             AddComp<GridAtmosphereComponent>(ev.Entity);
             Log.Info($"Giving grid {ev.Entity} GridAtmosphereComponent.");

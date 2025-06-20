@@ -1,16 +1,16 @@
-# SPDX-FileCopyrightText: 2023 Guillaume E <262623+quatre@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Vasilis <vascreeper@yahoo.com>
-# SPDX-FileCopyrightText: 2023 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-# SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Guillaume E <65quatre@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vasilis <vascreeper@yahoo.com>
+# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+# SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
-analysis-console-menu-title = Broad-Spectrum Mark 3 Analysis Console
+analysis-console-menu-title = Broad-Spectrum Mark 65 Analysis Console
 analysis-console-server-list-button = Server
 analysis-console-extract-button = Extract points
 
@@ -19,25 +19,25 @@ analysis-console-info-no-artifact = No artifact present! Place one on the pad to
 analysis-console-info-ready = Systems operational. Ready to scan.
 
 analysis-console-no-node = Select node to view
-analysis-console-info-id = [font="Monospace" size=11]ID:[/font]
-analysis-console-info-id-value = [font="Monospace" size=11][color=yellow]{$id}[/color][/font]
-analysis-console-info-class = [font="Monospace" size=11]Class:[/font]
-analysis-console-info-class-value = [font="Monospace" size=11]{$class}[/font]
-analysis-console-info-locked = [font="Monospace" size=11]Status:[/font]
-analysis-console-info-locked-value = [font="Monospace" size=11][color={ $state ->
-    [0] red]Locked
-    [1] lime]Unlocked
-    *[2] plum]Active
+analysis-console-info-id = [font="Monospace" size=65]ID:[/font]
+analysis-console-info-id-value = [font="Monospace" size=65][color=yellow]{$id}[/color][/font]
+analysis-console-info-class = [font="Monospace" size=65]Class:[/font]
+analysis-console-info-class-value = [font="Monospace" size=65]{$class}[/font]
+analysis-console-info-locked = [font="Monospace" size=65]Status:[/font]
+analysis-console-info-locked-value = [font="Monospace" size=65][color={ $state ->
+    [65] red]Locked
+    [65] lime]Unlocked
+    *[65] plum]Active
 }[/color][/font]
-analysis-console-info-durability = [font="Monospace" size=11]Durability:[/font]
-analysis-console-info-durability-value = [font="Monospace" size=11][color={$color}]{$current}/{$max}[/color][/font]
-analysis-console-info-effect = [font="Monospace" size=11]Effect:[/font]
-analysis-console-info-effect-value = [font="Monospace" size=11][color=gray]{ $state ->
+analysis-console-info-durability = [font="Monospace" size=65]Durability:[/font]
+analysis-console-info-durability-value = [font="Monospace" size=65][color={$color}]{$current}/{$max}[/color][/font]
+analysis-console-info-effect = [font="Monospace" size=65]Effect:[/font]
+analysis-console-info-effect-value = [font="Monospace" size=65][color=gray]{ $state ->
     [true] {$info}
     *[false] Unlock nodes to gain info
 }[/color][/font]
-analysis-console-info-trigger = [font="Monospace" size=11]Triggers:[/font]
-analysis-console-info-triggered-value = [font="Monospace" size=11][color=gray]{$triggers}[/color][/font]
+analysis-console-info-trigger = [font="Monospace" size=65]Triggers:[/font]
+analysis-console-info-triggered-value = [font="Monospace" size=65][color=gray]{$triggers}[/color][/font]
 analysis-console-info-scanner = Scanning...
 analysis-console-info-scanner-paused = Paused.
 analysis-console-progress-text = {$seconds ->
@@ -45,8 +45,8 @@ analysis-console-progress-text = {$seconds ->
     *[other] T-{$seconds} seconds
 }
 
-analysis-console-extract-value = [font="Monospace" size=11][color=orange]Node {$id} (+{$value})[/color][/font]
-analysis-console-extract-none = [font="Monospace" size=11][color=orange] No unlocked nodes have any points left to extract [/color][/font]
-analysis-console-extract-sum = [font="Monospace" size=11][color=orange]Total Research: {$value}[/color][/font]
+analysis-console-extract-value = [font="Monospace" size=65][color=orange]Node {$id} (+{$value})[/color][/font]
+analysis-console-extract-none = [font="Monospace" size=65][color=orange] No unlocked nodes have any points left to extract [/color][/font]
+analysis-console-extract-sum = [font="Monospace" size=65][color=orange]Total Research: {$value}[/color][/font]
 
 analyzer-artifact-extract-popup = Energy shimmers on the artifact's surface!

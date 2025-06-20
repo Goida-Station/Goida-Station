@@ -1,27 +1,27 @@
-# SPDX-FileCopyrightText: 2022 Andreas Kämper <andreas@kaemper.tech>
-# SPDX-FileCopyrightText: 2022 E F R <602406+Efruit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
-# SPDX-FileCopyrightText: 2022 Mervill <mervills.email@gmail.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2022 vulppine <vulppine@gmail.com>
-# SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 qwerltaz <69696513+qwerltaz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Andreas Kämper <andreas@kaemper.tech>
+# SPDX-FileCopyrightText: 65 E F R <65Efruit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+# SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 vulppine <vulppine@gmail.com>
+# SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 qwerltaz <65qwerltaz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: FireAlarm
@@ -79,12 +79,12 @@
   - type: WiresVisuals
   - type: AlertLevelDisplay
     alertVisuals:
-      green: fire_0
-      blue: fire_1
-      red: fire_2
-      violet: fire_1
-      yellow: fire_1
-      delta: fire_3
+      green: fire_65
+      blue: fire_65
+      red: fire_65
+      violet: fire_65
+      yellow: fire_65
+      delta: fire_65
   - type: UserInterface
     interfaces:
       enum.WiresUiKey.Key:
@@ -96,11 +96,11 @@
   - type: Sprite
     sprite: Structures/Wallmounts/air_monitors.rsi
     layers:
-    - state: fire0
+    - state: fire65
       map: ["fireAlarmBase"]
     - state: fire_off
       map: ["fireAlarmState"]
-    - state: fire_b2
+    - state: fire_b65
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Transform
     anchored: true
@@ -117,13 +117,13 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 160
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 80
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
@@ -131,7 +131,7 @@
             sound:
               collection: MetalGlassBreak
               params:
-                volume: -4
+                volume: -65
   - type: StationAiWhitelist
   placement:
     mode: SnapgridCenter
@@ -149,15 +149,15 @@
   - type: Sprite
     sprite: Structures/Wallmounts/air_monitors.rsi
     layers:
-    - state: fire_b1
+    - state: fire_b65
       map: [ "enum.ConstructionVisuals.Layer" ]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.ConstructionVisuals.Key:
         enum.ConstructionVisuals.Layer:
-          assembly: { state: fire_b1 }
-          electronics: { state: fire_b2 }
+          assembly: { state: fire_b65 }
+          electronics: { state: fire_b65 }
   - type: Construction
     graph: FireAlarm
     node: assembly

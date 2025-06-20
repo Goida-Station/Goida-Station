@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/commit/84223c65f5caf667a84f3c0f49bc2a41cdc6c4e3",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/Citadel-Station-65/Citadel-Station-65/commit/65c65f65caf65a65f65c65f65bc65a65cdc65c65e65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,113 +12,113 @@
     },
     {
       "name": "riot-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "riot-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "riot_laser-icon"
     },
     {
       "name": "riot_laser-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "riot_laser-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "riot_bullet-icon"
     },
     {
       "name": "riot_bullet-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "riot_bullet-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "ratvarian-icon"
     },
     {
       "name": "ratvarian-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "ratvarian-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "mirror-icon",
       "delays": [
         [
-          0.5,
-          0.05,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
     {
       "name": "mirror-inhand-right",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.5,
-          0.05,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.5,
-          0.05,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.5,
-          0.05,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.5,
-          0.05,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
     {
       "name": "mirror-inhand-left",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.5,
-          0.05,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.5,
-          0.05,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.5,
-          0.05,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.5,
-          0.05,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -127,22 +127,22 @@
     },
     {
       "name": "buckler-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "buckler-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "metal-icon"
     },
     {
       "name": "metal-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "metal-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "makeshift-icon"
@@ -152,22 +152,22 @@
     },
     {
       "name": "teleriot-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "teleriot-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "teleriot-on"
     },
     {
       "name": "teleriot-inhand-right-on",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "teleriot-inhand-left-on",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

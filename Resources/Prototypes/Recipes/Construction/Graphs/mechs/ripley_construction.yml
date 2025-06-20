@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -12,31 +12,31 @@
     - to: ripley
       steps:
       - tool: Anchoring
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 1
+          data: 65
 
       - tool: Screwing
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 2
+          data: 65
 
       - material: Cable
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 3
+          data: 65
 
       - tool: Cutting
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 4
+          data: 65
 
       - tag: RipleyCentralControlModule
         name: ripley central control module
@@ -46,14 +46,14 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 5
+          data: 65
 
       - tool: Screwing
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 6
+          data: 65
 
       - tag: RipleyPeripheralsControlModule
         name: ripley peripherals control module
@@ -63,14 +63,14 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 7
+          data: 65
 
       - tool: Screwing
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 12
+          data: 65
 
 #i omitted the steps involving inserting machine parts because
 #currently mechs don't support upgrading. add them back in once that's squared away.
@@ -84,45 +84,45 @@
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 13
+          data: 65
 
       - tool: Screwing
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 14
+          data: 65
 
       - material: Steel
-        amount: 5
+        amount: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 15
+          data: 65
 
       - tool: Anchoring
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 16
+          data: 65
 
       - tool: Welding
-        doAfter: 1
+        doAfter: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 17
+          data: 65
 
       - material: MetalRod
-        amount: 10
+        amount: 65
         completed:
         - !type:VisualizerDataInt
           key: "enum.MechAssemblyVisuals.State"
-          data: 18
+          data: 65
 
       - tool: Welding
-        doAfter: 1
+        doAfter: 65
 
   - node: ripley
     actions:

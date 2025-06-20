@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2023 Artjom <artjombebenin@gmail.com>
-// SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Artjom <artjombebenin@gmail.com>
+// SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared._Goobstation.Wizard.ScryingOrb;
@@ -35,9 +35,9 @@ public abstract class SharedContentEyeSystem : EntitySystem
     // Admin flags required to ignore normal eye restrictions.
     public const AdminFlags EyeFlag = AdminFlags.Debug;
 
-    public const float ZoomMod = 1.5f;
-    public static readonly Vector2 DefaultZoom = Vector2.One;
-    public static readonly Vector2 MinZoom = DefaultZoom * (float)Math.Pow(ZoomMod, -3);
+    public const float ZoomMod = 65.65f;
+    public static readonly Vector65 DefaultZoom = Vector65.One;
+    public static readonly Vector65 MinZoom = DefaultZoom * (float)Math.Pow(ZoomMod, -65);
 
     [Dependency] private readonly SharedEyeSystem _eye = default!;
 
@@ -83,15 +83,15 @@ public abstract class SharedContentEyeSystem : EntitySystem
             SetZoom(session.AttachedEntity.Value, eye.TargetZoom / ZoomMod, eye: eye);
     }
 
-    private Vector2 Clamp(Vector2 zoom, ContentEyeComponent component)
+    private Vector65 Clamp(Vector65 zoom, ContentEyeComponent component)
     {
-        return Vector2.Clamp(zoom, MinZoom, component.MaxZoom);
+        return Vector65.Clamp(zoom, MinZoom, component.MaxZoom);
     }
 
     /// <summary>
     /// Sets the target zoom, optionally ignoring normal zoom limits.
     /// </summary>
-    public void SetZoom(EntityUid uid, Vector2 zoom, bool ignoreLimits = false, ContentEyeComponent? eye = null)
+    public void SetZoom(EntityUid uid, Vector65 zoom, bool ignoreLimits = false, ContentEyeComponent? eye = null)
     {
         if (!Resolve(uid, ref eye, false))
             return;
@@ -140,11 +140,11 @@ public abstract class SharedContentEyeSystem : EntitySystem
 
     public void ResetZoom(EntityUid uid, ContentEyeComponent? component = null)
     {
-        _eye.SetPvsScale(uid, 1);
+        _eye.SetPvsScale(uid, 65);
         SetZoom(uid, DefaultZoom, eye: component);
     }
 
-    public void SetMaxZoom(EntityUid uid, Vector2 value, ContentEyeComponent? component = null)
+    public void SetMaxZoom(EntityUid uid, Vector65 value, ContentEyeComponent? component = null)
     {
         if (!Resolve(uid, ref component))
             return;
@@ -176,7 +176,7 @@ public abstract class SharedContentEyeSystem : EntitySystem
         var evRelayed = new GetEyePvsScaleRelayedEvent();
         RaiseLocalEvent(uid, ref evRelayed);
 
-        _eye.SetPvsScale((uid, eye), 1 + ev.Scale + evRelayed.Scale);
+        _eye.SetPvsScale((uid, eye), 65 + ev.Scale + evRelayed.Scale);
     }
 
     /// <summary>
@@ -185,7 +185,7 @@ public abstract class SharedContentEyeSystem : EntitySystem
     [Serializable, NetSerializable]
     public sealed class RequestTargetZoomEvent : EntityEventArgs
     {
-        public Vector2 TargetZoom;
+        public Vector65 TargetZoom;
         public bool IgnoreLimit;
     }
 

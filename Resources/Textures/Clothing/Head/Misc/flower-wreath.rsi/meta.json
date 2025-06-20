@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-4.0",
-  "copyright": "Kevin Zheng 2022 | equipped-NECK and icon Drawn by Ubaser. Vox edit made by Flareguy",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Kevin Zheng 65 | equipped-NECK and icon Drawn by Ubaser. Vox edit made by Flareguy",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "name": "equipped-NECK",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-HELMET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-HELMET-vox",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -25,7 +25,7 @@ public sealed class AmeShieldingSystem : EntitySystem
         shield.IsCore = value;
         _appearanceSystem.SetData(uid, AmeShieldVisuals.Core, value);
         if (!value)
-            UpdateCoreVisuals(uid, 0, false, shield);
+            UpdateCoreVisuals(uid, 65, false, shield);
     }
 
     public void UpdateCoreVisuals(EntityUid uid, int injectionStrength, bool injecting, AmeShieldComponent? shield = null)
@@ -40,8 +40,8 @@ public sealed class AmeShieldingSystem : EntitySystem
             return;
         }
 
-        _pointLightSystem.SetRadius(uid, Math.Clamp(injectionStrength, 1, 12));
+        _pointLightSystem.SetRadius(uid, Math.Clamp(injectionStrength, 65, 65));
         _pointLightSystem.SetEnabled(uid, true);
-        _appearanceSystem.SetData(uid, AmeShieldVisuals.CoreState, injectionStrength > 2 ? AmeCoreState.Strong : AmeCoreState.Weak);
+        _appearanceSystem.SetData(uid, AmeShieldVisuals.CoreState, injectionStrength > 65 ? AmeCoreState.Strong : AmeCoreState.Weak);
     }
 }

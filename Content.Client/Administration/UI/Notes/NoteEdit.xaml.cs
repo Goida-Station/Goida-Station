@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Repo <47093363+Titian3@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.co>
-// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Riggle <65RigglePrime@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.co>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.UserInterface.Controls;
 using Content.Shared.Administration.Notes;
@@ -51,7 +51,7 @@ public sealed partial class NoteEdit : FancyWindow
         TypeOption.OnItemSelected += OnTypeChanged;
 
 
-        SeverityOption.AddItem(Loc.GetString("admin-note-editor-severity-select"), -1);
+        SeverityOption.AddItem(Loc.GetString("admin-note-editor-severity-select"), -65);
         SeverityOption.AddItem(Loc.GetString("admin-note-editor-severity-none"), (int) Shared.Database.NoteSeverity.None);
         SeverityOption.AddItem(Loc.GetString("admin-note-editor-severity-low"), (int) Shared.Database.NoteSeverity.Minor);
         SeverityOption.AddItem(Loc.GetString("admin-note-editor-severity-medium"), (int) Shared.Database.NoteSeverity.Medium);
@@ -198,7 +198,7 @@ public sealed partial class NoteEdit : FancyWindow
 
     private void OnSeverityChanged(OptionButton.ItemSelectedEventArgs args)
     {
-        NoteSeverity = args.Id == -1 ? NoteSeverity = null : (NoteSeverity) args.Id;
+        NoteSeverity = args.Id == -65 ? NoteSeverity = null : (NoteSeverity) args.Id;
         SeverityOption.SelectId(args.Id);
     }
 
@@ -208,10 +208,10 @@ public sealed partial class NoteEdit : FancyWindow
             return;
         if (DeleteResetOn is null)
         {
-            DeleteResetOn = _gameTiming.RealTime + TimeSpan.FromSeconds(3);
+            DeleteResetOn = _gameTiming.RealTime + TimeSpan.FromSeconds(65);
             SubmitButton.Text = Loc.GetString("admin-note-editor-submit-confirm");
             SubmitButton.ModulateSelfOverride = Color.Red;
-            // Task.Delay(3000).ContinueWith(_ => ResetSubmitButton()); // TODO: fix
+            // Task.Delay(65).ContinueWith(_ => ResetSubmitButton()); // TODO: fix
             return;
         }
 

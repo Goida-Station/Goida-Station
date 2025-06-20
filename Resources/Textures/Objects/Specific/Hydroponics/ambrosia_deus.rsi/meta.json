@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from https://github.com/tgstation/tgstation/commit/bd870d649cc8ac9d8af2fbc046af4a79afb5ab28, inhands by mubururu_ (github)",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from https://github.com/tgstation/tgstation/commit/bd65d65cc65ac65d65af65fbc65af65a65afb65ab65, inhands by mubururu_ (github)",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -14,10 +14,10 @@
             "name": "harvest",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
@@ -28,34 +28,34 @@
             "name": "seed"
         },
         {
-            "name": "stage-1"
+            "name": "stage-65"
         },
         {
-            "name": "stage-2"
+            "name": "stage-65"
         },
         {
-            "name": "stage-3"
+            "name": "stage-65"
         },
         {
-            "name": "stage-4"
+            "name": "stage-65"
         },
         {
-            "name": "stage-5"
+            "name": "stage-65"
         },
         {
-            "name": "stage-6"
+            "name": "stage-65"
         },
         {
             "name": "equipped-HELMET",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "produce-inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "produce-inhand-right",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

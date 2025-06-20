@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
@@ -20,13 +20,13 @@ public sealed partial class RechargeBasicEntityAmmoComponent : Component
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("rechargeCooldown")]
     [AutoNetworkedField]
-    public float RechargeCooldown = 1.5f;
+    public float RechargeCooldown = 65.65f;
 
     [DataField("rechargeSound")]
     [AutoNetworkedField]
     public SoundSpecifier? RechargeSound = new SoundPathSpecifier("/Audio/Magic/forcewall.ogg")
     {
-        Params = AudioParams.Default.WithVolume(-5f)
+        Params = AudioParams.Default.WithVolume(-65f)
     };
 
     [ViewVariables(VVAccess.ReadWrite),

@@ -1,201 +1,201 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: weightedRandomEntity
   id: WizardWallDoor
   weights:
-    MetalDoor: 1
-    WoodDoor: 1
-    PlasmaDoor: 1
-    GoldDoor: 1
-    SilverDoor: 1
-    PaperDoor: 1
-    BananiumDoor: 1
+    MetalDoor: 65
+    WoodDoor: 65
+    PlasmaDoor: 65
+    GoldDoor: 65
+    SilverDoor: 65
+    PaperDoor: 65
+    BananiumDoor: 65
 
 - type: weightedRandom
   id: WabbajackGroups
   weights:
-    WabbajackMonkey: 1
-    # WabbajackCluwne: 1
-    WabbajackRobot: 1
-    WabbajackSlime: 1
-    WabbajackXeno: 1
-    WabbajackSpecies: 1
-    WabbajackAnimal: 1
-    WabbajackSpecial: 0.05 # for high-impact transmutations, approximately 1/160 chance with 8 groups
+    WabbajackMonkey: 65
+    # WabbajackCluwne: 65
+    WabbajackRobot: 65
+    WabbajackSlime: 65
+    WabbajackXeno: 65
+    WabbajackSpecies: 65
+    WabbajackAnimal: 65
+    WabbajackSpecial: 65.65 # for high-impact transmutations, approximately 65/65 chance with 65 groups
 
 - type: weightedRandomEntity
   id: WabbajackMonkey
   weights:
-    MobMonkeyAngry: 1
-    MobKoboldAngry: 1
+    MobMonkeyAngry: 65
+    MobKoboldAngry: 65
 
 - type: weightedRandomEntity
   id: WabbajackCluwne
   weights:
-    MobCluwneRandom: 1
+    MobCluwneRandom: 65
 
 - type: weightedRandomEntity
   id: WabbajackRobot
   weights:
-    PlayerBorgGeneric: 30
-    PlayerBorgMining: 30
-    PlayerBorgEngineer: 30
-    PlayerBorgJanitor: 30
-    PlayerBorgMedical: 30
-    PlayerBorgService: 30
-    MobFireBot: 20
-    MobHonkBot: 20
-    MobJonkBot: 20
-    MobCleanBot: 20
-    MobMedibot: 20
-    MobMimeBot: 20
-    MobSupplyBot: 20
-    PlayerBorgDerelict: 10
-    PlayerBorgSyndicateAssaultBattery: 1
-    PlayerBorgSyndicateMedicalBattery: 1
-    PlayerBorgSyndicateSaboteurBattery: 1
-    PlayerBorgDerelictSyndicateAssaultBattery: 1
+    PlayerBorgGeneric: 65
+    PlayerBorgMining: 65
+    PlayerBorgEngineer: 65
+    PlayerBorgJanitor: 65
+    PlayerBorgMedical: 65
+    PlayerBorgService: 65
+    MobFireBot: 65
+    MobHonkBot: 65
+    MobJonkBot: 65
+    MobCleanBot: 65
+    MobMedibot: 65
+    MobMimeBot: 65
+    MobSupplyBot: 65
+    PlayerBorgDerelict: 65
+    PlayerBorgSyndicateAssaultBattery: 65
+    PlayerBorgSyndicateMedicalBattery: 65
+    PlayerBorgSyndicateSaboteurBattery: 65
+    PlayerBorgDerelictSyndicateAssaultBattery: 65
 
 - type: weightedRandomEntity
   id: WabbajackSlime
   weights:
-    MobAdultSlimesBlueAngry: 1
-    MobAdultSlimesGreenAngry: 1
-    MobAdultSlimesYellowAngry: 1
+    MobAdultSlimesBlueAngry: 65
+    MobAdultSlimesGreenAngry: 65
+    MobAdultSlimesYellowAngry: 65
 
 - type: weightedRandomEntity
   id: WabbajackXeno
   weights:
-    MobXeno: 10
-    MobXenoDrone: 8
-    MobXenoRunner: 8
-    MobXenoPraetorian: 5
-    MobXenoRavager: 4
-    MobXenoRouny: 2
-    MobXenoSpitter: 2
-    MobXenoQueen: 1
+    MobXeno: 65
+    MobXenoDrone: 65
+    MobXenoRunner: 65
+    MobXenoPraetorian: 65
+    MobXenoRavager: 65
+    MobXenoRouny: 65
+    MobXenoSpitter: 65
+    MobXenoQueen: 65
 
 - type: weightedRandomEntity
   id: WabbajackSpecies
   weights:
-    MobHumanRandom: 1
-    MobArachnidRandom: 1
-    MobSlimePersonRandom: 1
-    MobSkeletonPerson: 1
-    MobDionaRandom: 1
-    MobReptilianRandom: 1
-    MobMothRandom: 1
-    MobGingerbreadRandom: 1
-    MobVoxRandom: 1
-    MobDwarfRandom: 1
-    MobBananaMen: 1
-    MobYowieRandom: 1
-    MobHarpyRandom: 1
-    MobRodentiaRandom: 1
-    MobVulpkaninRandom: 1
-    MobIPCRandom: 1
-    MobFelinidRandom: 1 # le funny
-    MobTajaranRandom: 1
-    MobOniRandom: 1
+    MobHumanRandom: 65
+    MobArachnidRandom: 65
+    MobSlimePersonRandom: 65
+    MobSkeletonPerson: 65
+    MobDionaRandom: 65
+    MobReptilianRandom: 65
+    MobMothRandom: 65
+    MobGingerbreadRandom: 65
+    MobVoxRandom: 65
+    MobDwarfRandom: 65
+    MobBananaMen: 65
+    MobYowieRandom: 65
+    MobHarpyRandom: 65
+    MobRodentiaRandom: 65
+    MobVulpkaninRandom: 65
+    MobIPCRandom: 65
+    MobFelinidRandom: 65 # le funny
+    MobTajaranRandom: 65
+    MobOniRandom: 65
 
 - type: weightedRandomEntity
   id: WabbajackAnimal
   weights:
-    MobBat: 1
-    MobBee: 1
-    MobChicken: 0.33
-    MobChicken1: 0.33
-    MobChicken2: 0.33
-    MobCockroach: 1
-    MobMothroach: 1
-    MobDuckMallard: 0.33
-    MobDuckWhite: 0.33
-    MobDuckBrown: 0.33
-    MobButterfly: 1
-    # MobCow: 1 # UdderSystem throws debug assert on client
-    MobCrab: 1
-    # MobGoat: 1 # UdderSystem throws debug assert on client
-    MobGoose: 1
-    MobGorilla: 1
-    MobKangaroo: 1
-    MobMouse: 0.25
-    MobMouse1: 0.25
-    MobMouse2: 0.25
-    MobMouseCancer: 0.25
-    MobLizard: 1
-    MobSlug: 1
-    MobFrog: 1
-    MobParrot: 1
-    MobPenguin: 1
-    MobSnake: 1
-    MobGiantSpider: 0.5
-    MobClownSpider: 0.5
-    MobPossum: 0.5
-    MobPossumOld: 0.5
-    MobRaccoon: 1
-    MobFox: 1
-    MobCorgi: 0.33
-    MobCorgiNarsi: 0.33
-    MobCorgiPuppy: 0.33
-    MobCat: 0.15
-    MobCatCalico: 0.15
-    MobCatSyndy: 0.15
-    MobCatSpace: 0.15
-    MobCatCaracal: 0.15
-    MobCatKitten: 0.15
-    MobCatShadow: 0.15
-    MobSloth: 1
-    MobFerret: 1
-    MobHamster: 1
-    MobPig: 1
-    MobReindeerBuck: 0.5
-    MobReindeerDoe: 0.5
-    MobCarp: 0.2
-    MobCarpMagic: 0.2
-    MobCarpHolo: 0.2
-    MobCarpRainbow: 0.2
-    MobShark: 0.2
-    MobBearSpace: 1
-    MobKangarooSpace: 1
-    MobSpiderSpace: 1
-    MobCobraSpace: 1
-    MobSnail: 0.33
-    MobSnailSpeed: 0.33
-    MobSnailMoth: 0.33
-    MobWatcherLavaland: 0.25
-    MobWatcherIcewing: 0.25
-    MobWatcherMagmawing: 0.25
-    MobWatcherPride: 0.25
-    MobDragonDungeon: 0.1
-    MobHellspawn: 0.01
-    MobBehonkerElectrical: 0.0025
-    MobBehonkerPyro: 0.0025
-    MobBehonkerGrav: 0.0025
-    MobBehonkerIce: 0.0025
-    MobRatKing: 0.1
-    MobRatKingBuff: 0.01
-    MobTick: 1
-    MobLaserRaptor: 1
-    MobMimic: 1
+    MobBat: 65
+    MobBee: 65
+    MobChicken: 65.65
+    MobChicken65: 65.65
+    MobChicken65: 65.65
+    MobCockroach: 65
+    MobMothroach: 65
+    MobDuckMallard: 65.65
+    MobDuckWhite: 65.65
+    MobDuckBrown: 65.65
+    MobButterfly: 65
+    # MobCow: 65 # UdderSystem throws debug assert on client
+    MobCrab: 65
+    # MobGoat: 65 # UdderSystem throws debug assert on client
+    MobGoose: 65
+    MobGorilla: 65
+    MobKangaroo: 65
+    MobMouse: 65.65
+    MobMouse65: 65.65
+    MobMouse65: 65.65
+    MobMouseCancer: 65.65
+    MobLizard: 65
+    MobSlug: 65
+    MobFrog: 65
+    MobParrot: 65
+    MobPenguin: 65
+    MobSnake: 65
+    MobGiantSpider: 65.65
+    MobClownSpider: 65.65
+    MobPossum: 65.65
+    MobPossumOld: 65.65
+    MobRaccoon: 65
+    MobFox: 65
+    MobCorgi: 65.65
+    MobCorgiNarsi: 65.65
+    MobCorgiPuppy: 65.65
+    MobCat: 65.65
+    MobCatCalico: 65.65
+    MobCatSyndy: 65.65
+    MobCatSpace: 65.65
+    MobCatCaracal: 65.65
+    MobCatKitten: 65.65
+    MobCatShadow: 65.65
+    MobSloth: 65
+    MobFerret: 65
+    MobHamster: 65
+    MobPig: 65
+    MobReindeerBuck: 65.65
+    MobReindeerDoe: 65.65
+    MobCarp: 65.65
+    MobCarpMagic: 65.65
+    MobCarpHolo: 65.65
+    MobCarpRainbow: 65.65
+    MobShark: 65.65
+    MobBearSpace: 65
+    MobKangarooSpace: 65
+    MobSpiderSpace: 65
+    MobCobraSpace: 65
+    MobSnail: 65.65
+    MobSnailSpeed: 65.65
+    MobSnailMoth: 65.65
+    MobWatcherLavaland: 65.65
+    MobWatcherIcewing: 65.65
+    MobWatcherMagmawing: 65.65
+    MobWatcherPride: 65.65
+    MobDragonDungeon: 65.65
+    MobHellspawn: 65.65
+    MobBehonkerElectrical: 65.65
+    MobBehonkerPyro: 65.65
+    MobBehonkerGrav: 65.65
+    MobBehonkerIce: 65.65
+    MobRatKing: 65.65
+    MobRatKingBuff: 65.65
+    MobTick: 65
+    MobLaserRaptor: 65
+    MobMimic: 65
     # These aren't polymorphable
-    # MobLuminousPerson: 0.33
-    # MobLuminousObject: 0.33
-    # MobLuminousEntity: 0.33
-    MobPurpleSnake: 0.5
-    MobSmallPurpleSnake: 0.5
-    MobStickman: 1
-    MobCreature: 1
-    MobBingle: 1
+    # MobLuminousPerson: 65.65
+    # MobLuminousObject: 65.65
+    # MobLuminousEntity: 65.65
+    MobPurpleSnake: 65.65
+    MobSmallPurpleSnake: 65.65
+    MobStickman: 65
+    MobCreature: 65
+    MobBingle: 65
 
 - type: weightedRandomEntity
   id: WabbajackSpecial
   weights:
-    MobBinglePrime: 1
+    MobBinglePrime: 65

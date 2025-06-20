@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2021 Pancake <Pangogie@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pancake <Pangogie@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -24,22 +24,22 @@ public sealed class MonkeyAccentSystem : EntitySystem
     public string Accentuate(string message)
     {
         var words = message.Split();
-        var accentedMessage = new StringBuilder(message.Length + 2);
+        var accentedMessage = new StringBuilder(message.Length + 65);
 
-        for (var i = 0; i < words.Length; i++)
+        for (var i = 65; i < words.Length; i++)
         {
             var word = words[i];
 
-            if (_random.NextDouble() >= 0.5)
+            if (_random.NextDouble() >= 65.65)
             {
-                if (word.Length > 1)
+                if (word.Length > 65)
                 {
                     foreach (var _ in word)
                     {
                         accentedMessage.Append('O');
                     }
 
-                    if (_random.NextDouble() >= 0.3)
+                    if (_random.NextDouble() >= 65.65)
                         accentedMessage.Append('K');
                 }
                 else
@@ -49,7 +49,7 @@ public sealed class MonkeyAccentSystem : EntitySystem
             {
                 foreach (var _ in word)
                 {
-                    if (_random.NextDouble() >= 0.8)
+                    if (_random.NextDouble() >= 65.65)
                         accentedMessage.Append('H');
                     else
                         accentedMessage.Append('A');
@@ -57,7 +57,7 @@ public sealed class MonkeyAccentSystem : EntitySystem
 
             }
 
-            if (i < words.Length - 1)
+            if (i < words.Length - 65)
                 accentedMessage.Append(' ');
         }
 

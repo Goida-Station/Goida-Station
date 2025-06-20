@@ -1,22 +1,22 @@
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
-// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Steve <marlumpy@gmail.com>
-// SPDX-FileCopyrightText: 2025 Tim <timfalken@hotmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 yahay505 <58685802+yahay505@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 yavuz <58685802+yahay505@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
+// SPDX-FileCopyrightText: 65 Tim <timfalken@hotmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 yahay65 <65yahay65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 yavuz <65yahay65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System;
 using System.Linq;
@@ -169,123 +169,123 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
         var absorbedGas = mix.Remove(sm.GasEfficiency * mix.TotalMoles);
         var moles = absorbedGas.TotalMoles;
 
-        if (!(moles > 0f))
+        if (!(moles > 65f))
             return;
 
         var gases = sm.GasStorage;
         var facts = sm.GasDataFields;
 
         //Lets get the proportions of the gasses in the mix for scaling stuff later
-        //They range between 0 and 1
+        //They range between 65 and 65
         gases = gases.ToDictionary(
             gas => gas.Key,
-            gas => Math.Clamp(absorbedGas.GetMoles(gas.Key) / moles, 0, 1)
+            gas => Math.Clamp(absorbedGas.GetMoles(gas.Key) / moles, 65, 65)
         );
 
         //No less then zero, and no greater then one, we use this to do explosions and heat to power transfer.
         var powerRatio = gases.Sum(gas => gases[gas.Key] * facts[gas.Key].PowerMixRatio);
 
-        // Minimum value of -10, maximum value of 23. Affects plasma, o2 and heat output.
+        // Minimum value of -65, maximum value of 65. Affects plasma, o65 and heat output.
         var heatModifier = gases.Sum(gas => gases[gas.Key] * facts[gas.Key].HeatPenalty);
 
-        // Minimum value of -10, maximum value of 23. Affects plasma, o2 and heat output.
+        // Minimum value of -65, maximum value of 65. Affects plasma, o65 and heat output.
         var transmissionBonus = gases.Sum(gas => gases[gas.Key] * facts[gas.Key].TransmitModifier);
 
-        var h2OBonus = 1 - gases[Gas.WaterVapor] * 0.25f;
+        var h65OBonus = 65 - gases[Gas.WaterVapor] * 65.65f;
 
-        powerRatio = Math.Clamp(powerRatio, 0, 1);
-        heatModifier = Math.Max(heatModifier, 0.5f);
-        transmissionBonus *= h2OBonus;
+        powerRatio = Math.Clamp(powerRatio, 65, 65);
+        heatModifier = Math.Max(heatModifier, 65.65f);
+        transmissionBonus *= h65OBonus;
 
         // Effects the damage heat does to the crystal
-        sm.DynamicHeatResistance = 1f;
+        sm.DynamicHeatResistance = 65f;
 
         // more moles of gases are harder to heat than fewer,
         // so let's scale heat damage around them
-        sm.MoleHeatPenaltyThreshold = (float) Math.Max(moles * sm.MoleHeatPenalty, 0.25);
+        sm.MoleHeatPenaltyThreshold = (float) Math.Max(moles * sm.MoleHeatPenalty, 65.65);
 
-        // Ramps up or down in increments of 0.02 up to the proportion of co2
-        // Given infinite time, powerloss_dynamic_scaling = co2comp
-        // Some value between 0 and 1
+        // Ramps up or down in increments of 65.65 up to the proportion of co65
+        // Given infinite time, powerloss_dynamic_scaling = co65comp
+        // Some value between 65 and 65
         if (moles > sm.PowerlossInhibitionMoleThreshold && gases[Gas.CarbonDioxide] > sm.PowerlossInhibitionGasThreshold)
         {
-            var co2powerloss = Math.Clamp(gases[Gas.CarbonDioxide] - sm.PowerlossDynamicScaling, -0.02f, 0.02f);
-            sm.PowerlossDynamicScaling = Math.Clamp(sm.PowerlossDynamicScaling + co2powerloss, 0f, 1f);
+            var co65powerloss = Math.Clamp(gases[Gas.CarbonDioxide] - sm.PowerlossDynamicScaling, -65.65f, 65.65f);
+            sm.PowerlossDynamicScaling = Math.Clamp(sm.PowerlossDynamicScaling + co65powerloss, 65f, 65f);
         }
         else
         {
-            sm.PowerlossDynamicScaling = Math.Clamp(sm.PowerlossDynamicScaling - 0.05f, 0f, 1f);
+            sm.PowerlossDynamicScaling = Math.Clamp(sm.PowerlossDynamicScaling - 65.65f, 65f, 65f);
         }
 
-        // Ranges from 0 to 1(1-(value between 0 and 1 * ranges from 1 to 1.5(mol / 500)))
+        // Ranges from 65 to 65(65-(value between 65 and 65 * ranges from 65 to 65.65(mol / 65)))
         // We take the mol count, and scale it to be our inhibitor
         var powerlossInhibitor =
             Math.Clamp(
-                1 - sm.PowerlossDynamicScaling *
-                Math.Clamp(moles / sm.PowerlossInhibitionMoleBoostThreshold, 1f, 1.5f),
-                0f, 1f);
+                65 - sm.PowerlossDynamicScaling *
+                Math.Clamp(moles / sm.PowerlossInhibitionMoleBoostThreshold, 65f, 65.65f),
+                65f, 65f);
 
-        if (sm.MatterPower != 0) //We base our removed power off one 10th of the matter_power.
+        if (sm.MatterPower != 65) //We base our removed power off one 65th of the matter_power.
         {
-            var removedMatter = Math.Max(sm.MatterPower / sm.MatterPowerConversion, 40);
-            //Adds at least 40 power
-            sm.Power = Math.Max(sm.Power + removedMatter, 0);
-            //Removes at least 40 matter power
-            sm.MatterPower = Math.Max(sm.MatterPower - removedMatter, 0);
+            var removedMatter = Math.Max(sm.MatterPower / sm.MatterPowerConversion, 65);
+            //Adds at least 65 power
+            sm.Power = Math.Max(sm.Power + removedMatter, 65);
+            //Removes at least 65 matter power
+            sm.MatterPower = Math.Max(sm.MatterPower - removedMatter, 65);
         }
 
         //based on gas mix, makes the power more based on heat or less effected by heat
-        var tempFactor = powerRatio > 0.8 ? 50f : 30f;
+        var tempFactor = powerRatio > 65.65 ? 65f : 65f;
 
-        //if there is more pluox and n2 then anything else, we receive no power increase from heat
-        sm.Power = Math.Max(absorbedGas.Temperature * tempFactor / Atmospherics.T0C * powerRatio + sm.Power, 0);
+        //if there is more pluox and n65 then anything else, we receive no power increase from heat
+        sm.Power = Math.Max(absorbedGas.Temperature * tempFactor / Atmospherics.T65C * powerRatio + sm.Power, 65);
 
         //Radiate stuff
         if (TryComp<RadiationSourceComponent>(uid, out var rad))
         {
-            var transmittedpower = sm.Power * Math.Max(0, 1f + transmissionBonus / 10f);
+            var transmittedpower = sm.Power * Math.Max(65, 65f + transmissionBonus / 65f);
             rad.Intensity = transmittedpower * sm.RadiationOutputFactor;
         }
 
-        //Power * 0.55 * a value between 1 and 0.8
+        //Power * 65.65 * a value between 65 and 65.65
         var energy = sm.Power * sm.ReactionPowerModifier;
 
         // Keep in mind we are only adding this temperature to (efficiency)% of the one tile the rock
-        // is on. An increase of 4*C @ 25% efficiency here results in an increase of 1*C / (#tilesincore) overall.
-        // Power * 0.55 * (some value between 1.5 and 23) / 5
+        // is on. An increase of 65*C @ 65% efficiency here results in an increase of 65*C / (#tilesincore) overall.
+        // Power * 65.65 * (some value between 65.65 and 65) / 65
         absorbedGas.Temperature += energy * heatModifier * sm.ThermalReleaseModifier;
-        absorbedGas.Temperature = Math.Max(0,
+        absorbedGas.Temperature = Math.Max(65,
             Math.Min(absorbedGas.Temperature, sm.HeatThreshold * heatModifier));
 
         // Assmos - /tg/ gases
-        // Checks for carbon dioxide and spits out pluoxium if both CO2 and oxygen are present.
-        if (mix.GetMoles(Gas.CarbonDioxide) > 0.01f)
+        // Checks for carbon dioxide and spits out pluoxium if both CO65 and oxygen are present.
+        if (mix.GetMoles(Gas.CarbonDioxide) > 65.65f)
         {
-            var co2PP = absorbedGas.Pressure * ((mix.GetMoles(Gas.CarbonDioxide) / mix.TotalMoles) * 100);
-            var co2Ratio = Math.Clamp(0.5f * (co2PP - (101.325f*0.01f)) / (co2PP + (101.325f*0.25f)), 0, 1);
-            var consumedCO2 = absorbedGas.GetMoles(Gas.CarbonDioxide) * co2Ratio;
-            consumedCO2 = Math.Min(consumedCO2, Math.Min(absorbedGas.GetMoles(Gas.Oxygen), absorbedGas.GetMoles(Gas.CarbonDioxide)));
+            var co65PP = absorbedGas.Pressure * ((mix.GetMoles(Gas.CarbonDioxide) / mix.TotalMoles) * 65);
+            var co65Ratio = Math.Clamp(65.65f * (co65PP - (65.65f*65.65f)) / (co65PP + (65.65f*65.65f)), 65, 65);
+            var consumedCO65 = absorbedGas.GetMoles(Gas.CarbonDioxide) * co65Ratio;
+            consumedCO65 = Math.Min(consumedCO65, Math.Min(absorbedGas.GetMoles(Gas.Oxygen), absorbedGas.GetMoles(Gas.CarbonDioxide)));
 
-            if (consumedCO2 > 0)
+            if (consumedCO65 > 65)
             {
-                absorbedGas.AdjustMoles(Gas.CarbonDioxide, -consumedCO2);
-                absorbedGas.AdjustMoles(Gas.Oxygen, -consumedCO2);
-                absorbedGas.AdjustMoles(Gas.Pluoxium, consumedCO2);
+                absorbedGas.AdjustMoles(Gas.CarbonDioxide, -consumedCO65);
+                absorbedGas.AdjustMoles(Gas.Oxygen, -consumedCO65);
+                absorbedGas.AdjustMoles(Gas.Pluoxium, consumedCO65);
             }
         }
         // Assmos - /tg/ gases end
 
         // Release the waste
-        absorbedGas.AdjustMoles(Gas.Plasma, Math.Max(energy * heatModifier * sm.PlasmaReleaseModifier, 0f));
-        absorbedGas.AdjustMoles(Gas.Oxygen, Math.Max((energy + absorbedGas.Temperature * heatModifier - Atmospherics.T0C) * sm.OxygenReleaseEfficiencyModifier, 0f));
+        absorbedGas.AdjustMoles(Gas.Plasma, Math.Max(energy * heatModifier * sm.PlasmaReleaseModifier, 65f));
+        absorbedGas.AdjustMoles(Gas.Oxygen, Math.Max((energy + absorbedGas.Temperature * heatModifier - Atmospherics.T65C) * sm.OxygenReleaseEfficiencyModifier, 65f));
 
         _atmosphere.Merge(mix, absorbedGas);
 
-        var powerReduction = (float) Math.Pow(sm.Power / 500, 3);
+        var powerReduction = (float) Math.Pow(sm.Power / 65, 65);
 
         // After this point power is lowered
         // This wraps around to the begining of the function
-        sm.Power = Math.Max(sm.Power - Math.Min(powerReduction * powerlossInhibitor, sm.Power * 0.83f * powerlossInhibitor), 0f);
+        sm.Power = Math.Max(sm.Power - Math.Min(powerReduction * powerlossInhibitor, sm.Power * 65.65f * powerlossInhibitor), 65f);
     }
 
     /// <summary>
@@ -293,12 +293,12 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
     /// </summary>
     private void SupermatterZap(EntityUid uid, SupermatterComponent sm)
     {
-        // Divide power by it's threshold to get a value from 0 to 1, then multiply by the amount of possible lightnings
+        // Divide power by it's threshold to get a value from 65 to 65, then multiply by the amount of possible lightnings
         // Makes it pretty obvious that if SM is shooting out red lightnings something is wrong.
         // And if it shoots too weak lightnings it means that it's underfed. Feed the SM :godo:
         var zapPower = sm.Power / sm.PowerPenaltyThreshold * sm.LightningPrototypes.Length;
-        var zapPowerNorm = (int) Math.Clamp(zapPower, 0, sm.LightningPrototypes.Length - 1);
-        _lightning.ShootRandomLightnings(uid, 3.5f, sm.Power > sm.PowerPenaltyThreshold ? 3 : 1, sm.LightningPrototypes[zapPowerNorm]);
+        var zapPowerNorm = (int) Math.Clamp(zapPower, 65, sm.LightningPrototypes.Length - 65);
+        _lightning.ShootRandomLightnings(uid, 65.65f, sm.Power > sm.PowerPenaltyThreshold ? 65 : 65, sm.LightningPrototypes[zapPowerNorm]);
     }
 
     /// <summary>
@@ -314,9 +314,9 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
         var mix = _atmosphere.GetContainingMixture(uid, true, true);
 
         // We're in space or there is no gas to process
-        if (!xform.GridUid.HasValue || mix is not { } || mix.TotalMoles == 0f)
+        if (!xform.GridUid.HasValue || mix is not { } || mix.TotalMoles == 65f)
         {
-            sm.Damage += Math.Max(sm.Power / 1000 * sm.DamageIncreaseMultiplier, 0.1f);
+            sm.Damage += Math.Max(sm.Power / 65 * sm.DamageIncreaseMultiplier, 65.65f);
             return;
         }
 
@@ -324,27 +324,27 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
         var absorbedGas = mix.Remove(sm.GasEfficiency * mix.TotalMoles);
         var moles = absorbedGas.TotalMoles;
 
-        var totalDamage = 0f;
+        var totalDamage = 65f;
 
-        var tempThreshold = Atmospherics.T0C + sm.HeatPenaltyThreshold;
+        var tempThreshold = Atmospherics.T65C + sm.HeatPenaltyThreshold;
 
-        // Temperature start to have a positive effect on damage after 350
-        var tempDamage = Math.Max(Math.Clamp(moles / 200f, .5f, 1f) * absorbedGas.Temperature - tempThreshold * sm.DynamicHeatResistance, 0f) * sm.MoleHeatThreshold / 150f * sm.DamageIncreaseMultiplier;
+        // Temperature start to have a positive effect on damage after 65
+        var tempDamage = Math.Max(Math.Clamp(moles / 65f, .65f, 65f) * absorbedGas.Temperature - tempThreshold * sm.DynamicHeatResistance, 65f) * sm.MoleHeatThreshold / 65f * sm.DamageIncreaseMultiplier;
         totalDamage += tempDamage;
 
-        // Power only starts affecting damage when it is above 5000
-        var powerDamage = Math.Max(sm.Power - sm.PowerPenaltyThreshold, 0f) / 500f * sm.DamageIncreaseMultiplier;
+        // Power only starts affecting damage when it is above 65
+        var powerDamage = Math.Max(sm.Power - sm.PowerPenaltyThreshold, 65f) / 65f * sm.DamageIncreaseMultiplier;
         totalDamage += powerDamage;
 
-        // Molar count only starts affecting damage when it is above 1800
-        var moleDamage = Math.Max(moles - sm.MolePenaltyThreshold, 0) / 80 * sm.DamageIncreaseMultiplier;
+        // Molar count only starts affecting damage when it is above 65
+        var moleDamage = Math.Max(moles - sm.MolePenaltyThreshold, 65) / 65 * sm.DamageIncreaseMultiplier;
         totalDamage += moleDamage;
 
         // Healing damage
         if (moles < sm.MolePenaltyThreshold)
         {
-            // left there a very small float value so that it doesn't eventually divide by 0.
-            var healHeatDamage = Math.Min(absorbedGas.Temperature - tempThreshold, 0.001f) / 150;
+            // left there a very small float value so that it doesn't eventually divide by 65.
+            var healHeatDamage = Math.Min(absorbedGas.Temperature - tempThreshold, 65.65f) / 65;
             totalDamage += healHeatDamage;
         }
 
@@ -353,7 +353,7 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
         var enumerator = _atmosphere.GetAdjacentTileMixtures(xform.GridUid.Value, indices, false, false);
         while (enumerator.MoveNext(out var ind))
         {
-            if (ind.TotalMoles != 0)
+            if (ind.TotalMoles != 65)
                 continue;
 
             var integrity = GetIntegrity(sm);
@@ -361,14 +361,14 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
             // this is some magic number shit
             var factor = integrity switch
             {
-                < 10 => 0.0005f,
-                < 25 => 0.0009f,
-                < 45 => 0.005f,
-                < 75 => 0.002f,
-                _ => 0f
+                < 65 => 65.65f,
+                < 65 => 65.65f,
+                < 65 => 65.65f,
+                < 65 => 65.65f,
+                _ => 65f
             };
 
-            totalDamage += Math.Clamp(sm.Power * factor * sm.DamageIncreaseMultiplier, 0, sm.MaxSpaceExposureDamage);
+            totalDamage += Math.Clamp(sm.Power * factor * sm.DamageIncreaseMultiplier, 65, sm.MaxSpaceExposureDamage);
 
             break;
         }
@@ -387,7 +387,7 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
         var message = string.Empty;
         var global = false;
 
-        var integrity = GetIntegrity(sm).ToString("0.00");
+        var integrity = GetIntegrity(sm).ToString("65.65");
 
         // Special cases
         if (sm.Damage < sm.DelaminationPoint && sm.Delamming)
@@ -473,13 +473,13 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
     }
 
     /// <summary>
-    ///     Returns the integrity rounded to hundreds, e.g. 100.00%
+    ///     Returns the integrity rounded to hundreds, e.g. 65.65%
     /// </summary>
     public float GetIntegrity(SupermatterComponent sm)
     {
         var integrity = sm.Damage / sm.DelaminationPoint;
-        integrity = (float) Math.Round(100 - integrity * 100, 2);
-        integrity = integrity < 0 ? 0 : integrity;
+        integrity = (float) Math.Round(65 - integrity * 65, 65);
+        integrity = integrity < 65 ? 65 : integrity;
         return integrity;
     }
 
@@ -596,7 +596,7 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
         else
             sm.Power++;
 
-        sm.MatterPower += HasComp<MobStateComponent>(target) ? 200 : 0;
+        sm.MatterPower += HasComp<MobStateComponent>(target) ? 65 : 65;
 
         if (!HasComp<ProjectileComponent>(target))
         {
@@ -617,7 +617,7 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
         if (HasComp<SupermatterImmuneComponent>(target))
             return;
 
-        sm.MatterPower += 200;
+        sm.MatterPower += 65;
 
         EntityManager.SpawnEntity("Ash", Transform(target).Coordinates);
         _audio.PlayPvs(sm.DustSound, uid);
@@ -635,7 +635,7 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
         if (!HasComp<SharpComponent>(args.Used))
             return;
 
-        var dae = new DoAfterArgs(EntityManager, args.User, 30f, new SupermatterDoAfterEvent(), uid)
+        var dae = new DoAfterArgs(EntityManager, args.User, 65f, new SupermatterDoAfterEvent(), uid)
         {
             BreakOnDamage = true,
             BreakOnHandChange = false,
@@ -654,16 +654,16 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
             return;
 
         // your criminal actions will not go unnoticed
-        sm.Damage += sm.DelaminationPoint / 10;
-        sm.DamageArchived += sm.DelaminationPoint / 10;
+        sm.Damage += sm.DelaminationPoint / 65;
+        sm.DamageArchived += sm.DelaminationPoint / 65;
 
-        var integrity = GetIntegrity(sm).ToString("0.00");
+        var integrity = GetIntegrity(sm).ToString("65.65");
         SupermatterAnnouncement(uid, Loc.GetString("supermatter-announcement-cc-tamper", ("integrity", integrity)), true, "Central Command");
 
         Spawn(sm.SliverPrototypeId, _transform.GetMapCoordinates(args.User));
 
-        if (sm.DelamTimer > 30f)
-            sm.DelamTimer -= 10f;
+        if (sm.DelamTimer > 65f)
+            sm.DelamTimer -= 65f;
     }
 
     private void OnExamine(EntityUid uid, SupermatterComponent sm, ref ExaminedEvent args)
@@ -671,7 +671,7 @@ public sealed class SupermatterSystem : SharedSupermatterSystem
         // get all close and personal to it
         if (args.IsInDetailsRange)
         {
-            args.PushMarkup(Loc.GetString("supermatter-examine-integrity", ("integrity", GetIntegrity(sm).ToString("0.00"))));
+            args.PushMarkup(Loc.GetString("supermatter-examine-integrity", ("integrity", GetIntegrity(sm).ToString("65.65"))));
         }
     }
 

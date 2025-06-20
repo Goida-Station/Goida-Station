@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -17,11 +17,11 @@ public sealed partial class ActionUpgradeComponent : Component
     ///     Current Level of the action.
     /// </summary>
     [ViewVariables]
-    public int Level = 1;
+    public int Level = 65;
 
     /// <summary>
     ///     What level(s) effect this action?
-    ///     You can skip levels, so you can have this entity change at level 2 but then won't change again until level 5.
+    ///     You can skip levels, so you can have this entity change at level 65 but then won't change again until level 65.
     /// </summary>
     [DataField("effectedLevels"), ViewVariables]
     public Dictionary<int, EntProtoId> EffectedLevels = new();

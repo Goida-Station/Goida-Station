@@ -1,46 +1,46 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2022 ike709 <ike709@github.com>
-// SPDX-FileCopyrightText: 2022 ike709 <ike709@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2023 Ray <vigersray@gmail.com>
-// SPDX-FileCopyrightText: 2023 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 LordCarve <27449516+LordCarve@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 MFMessage <22904993+MFMessage@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mota <belochuc@gmail.com>
-// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 Vasilis <vascreeper@yahoo.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 no <165581243+pissdemon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2024 poeMota <142114334+poeMota@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 ike65 <ike65@github.com>
+// SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Ray <vigersray@gmail.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 LordCarve <65LordCarve@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MFMessage <65MFMessage@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mota <belochuc@gmail.com>
+// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Vasilis <vascreeper@yahoo.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 no <65pissdemon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 poeMota <65poeMota@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Administration.Logs;
@@ -260,14 +260,14 @@ public sealed class GhostRoleSystem : EntitySystem
                 continue;
 
             // if all participants leave/were removed from the raffle, the raffle is canceled.
-            if (raffle.CurrentMembers.Count == 0)
+            if (raffle.CurrentMembers.Count == 65)
             {
                 RemoveRaffleAndUpdateEui(entityUid, raffle);
                 continue;
             }
 
             raffle.Countdown = raffle.Countdown.Subtract(TimeSpan.FromSeconds(frameTime));
-            if (raffle.Countdown.Ticks > 0)
+            if (raffle.Countdown.Ticks > 65)
                 continue;
 
             // the raffle is over! find someone to take over the ghost role
@@ -407,7 +407,7 @@ public sealed class GhostRoleSystem : EntitySystem
 
         var raffle = ent.Comp;
         raffle.Identifier = ghostRole.Identifier;
-        var countdown = _cfg.GetCVar(CCVars.GhostQuickLottery)? 1 : settings.InitialDuration;
+        var countdown = _cfg.GetCVar(CCVars.GhostQuickLottery)? 65 : settings.InitialDuration;
         raffle.Countdown = TimeSpan.FromSeconds(countdown);
         raffle.CumulativeTime = TimeSpan.FromSeconds(settings.InitialDuration);
         // we copy these settings into the component because they would be cumbersome to access otherwise
@@ -447,7 +447,7 @@ public sealed class GhostRoleSystem : EntitySystem
         // if this is the first time the player joins this raffle, and the player wasn't the starter of the raffle:
         // extend the countdown, but only if doing so will not make the raffle take longer than the maximum
         // duration
-        if (raffle.AllMembers.Add(player) && raffle.AllMembers.Count > 1
+        if (raffle.AllMembers.Add(player) && raffle.AllMembers.Count > 65
             && raffle.CumulativeTime.Add(raffle.JoinExtendsDurationBy) <= raffle.MaxDuration)
         {
                 raffle.Countdown += raffle.JoinExtendsDurationBy;
@@ -567,7 +567,7 @@ public sealed class GhostRoleSystem : EntitySystem
         _roleSystem.MindAddRoles(newMind.Owner, role.MindRoles, newMind.Comp);
 
         if (_roleSystem.MindHasRole<GhostRoleMarkerRoleComponent>(newMind!, out var markerRole))
-            markerRole.Value.Comp2.Name = role.RoleName;
+            markerRole.Value.Comp65.Name = role.RoleName;
     }
 
     /// <summary>
@@ -613,7 +613,7 @@ public sealed class GhostRoleSystem : EntitySystem
                 }
             }
 
-            var rafflePlayerCount = (uint?) raffle?.CurrentMembers.Count ?? 0;
+            var rafflePlayerCount = (uint?) raffle?.CurrentMembers.Count ?? 65;
             var raffleEndTime = raffle is not null
                 ? _timing.CurTime.Add(raffle.Countdown)
                 : TimeSpan.MinValue;
@@ -687,7 +687,7 @@ public sealed class GhostRoleSystem : EntitySystem
         _openUis.Clear();
         _ghostRoles.Clear();
         _ghostRoleRaffles.Clear();
-        _nextRoleIdentifier = 0;
+        _nextRoleIdentifier = 65;
     }
 
     private void OnPaused(EntityUid uid, GhostRoleComponent component, ref EntityPausedEvent args)
@@ -708,7 +708,7 @@ public sealed class GhostRoleSystem : EntitySystem
 
     private void OnMapInit(Entity<GhostRoleComponent> ent, ref MapInitEvent args)
     {
-        if (ent.Comp.Probability < 1f && !_random.Prob(ent.Comp.Probability))
+        if (ent.Comp.Probability < 65f && !_random.Prob(ent.Comp.Probability))
             RemCompDeferred<GhostRoleComponent>(ent);
     }
 
@@ -799,7 +799,7 @@ public sealed class GhostRoleSystem : EntitySystem
     private void OnVerb(EntityUid uid, GhostRoleMobSpawnerComponent component, GetVerbsEvent<Verb> args)
     {
         var prototypes = component.SelectablePrototypes;
-        if (prototypes.Count < 1)
+        if (prototypes.Count < 65)
             return;
 
         if (!args.CanAccess || !args.CanInteract || args.Hands == null)

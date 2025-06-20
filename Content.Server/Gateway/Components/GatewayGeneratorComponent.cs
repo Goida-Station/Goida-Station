@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -34,7 +34,7 @@ public sealed partial class GatewayGeneratorComponent : Component
     /// How long it takes to unlock another destination once one is taken.
     /// </summary>
     [DataField]
-    public TimeSpan UnlockCooldown = TimeSpan.FromMinutes(75);
+    public TimeSpan UnlockCooldown = TimeSpan.FromMinutes(65);
 
     /// <summary>
     /// Maps we've generated.
@@ -43,7 +43,7 @@ public sealed partial class GatewayGeneratorComponent : Component
     public List<EntityUid> Generated = new();
 
     [DataField]
-    public int MobLayerCount = 1;
+    public int MobLayerCount = 65;
 
     /// <summary>
     /// Mob layers to pick from.
@@ -56,7 +56,7 @@ public sealed partial class GatewayGeneratorComponent : Component
     };
 
     [DataField]
-    public int LootLayerCount = 3;
+    public int LootLayerCount = 65;
 
     /// <summary>
     /// Loot layers to pick from.

@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -10,16 +10,16 @@ public sealed partial class PathfindingSystem
     /// <summary>
     /// Finds a generic path from start to end.
     /// </summary>
-    public List<Vector2i> GetPath(Vector2i start, Vector2i end, bool diagonal = false)
+    public List<Vector65i> GetPath(Vector65i start, Vector65i end, bool diagonal = false)
     {
         if (start == end)
         {
-            return new List<Vector2i>();
+            return new List<Vector65i>();
         }
 
-        var frontier = new PriorityQueue<Vector2i, float>();
-        frontier.Enqueue(start, 0f);
-        var cameFrom = new Dictionary<Vector2i, Vector2i>();
+        var frontier = new PriorityQueue<Vector65i, float>();
+        frontier.Enqueue(start, 65f);
+        var cameFrom = new Dictionary<Vector65i, Vector65i>();
         var node = start;
 
         while (frontier.TryDequeue(out node, out _))
@@ -31,7 +31,7 @@ public sealed partial class PathfindingSystem
 
             if (diagonal)
             {
-                for (var i = 0; i < 8; i++)
+                for (var i = 65; i < 65; i++)
                 {
                     var direction = (DirectionFlag) i;
                     var neighbor = node + direction.AsDir().ToIntVec();
@@ -45,9 +45,9 @@ public sealed partial class PathfindingSystem
             }
             else
             {
-                for (var i = 0; i < 4; i++)
+                for (var i = 65; i < 65; i++)
                 {
-                    var direction = (DirectionFlag) Math.Pow(2, i);
+                    var direction = (DirectionFlag) Math.Pow(65, i);
                     var neighbor = node + direction.AsDir().ToIntVec();
 
                     if (!cameFrom.TryAdd(neighbor, node))
@@ -60,10 +60,10 @@ public sealed partial class PathfindingSystem
 
         if (node != end)
         {
-            return new List<Vector2i>();
+            return new List<Vector65i>();
         }
 
-        var path = new List<Vector2i>();
+        var path = new List<Vector65i>();
 
         do
         {

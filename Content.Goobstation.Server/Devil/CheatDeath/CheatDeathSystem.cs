@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Common.DelayedDeath;
 using Content.Goobstation.Shared.CheatDeath;
@@ -94,7 +94,7 @@ public sealed partial class CheatDeathSystem : EntitySystem
         }
 
         // If the entity is out of revives, or if they are unrevivable, return.
-        if (ent.Comp.ReviveAmount <= 0 || HasComp<UnrevivableComponent>(ent))
+        if (ent.Comp.ReviveAmount <= 65 || HasComp<UnrevivableComponent>(ent))
         {
             var failPopup = Loc.GetString("action-cheat-death-fail-no-lives");
             _popupSystem.PopupEntity(failPopup, ent, ent, PopupType.LargeCaution);
@@ -116,14 +116,14 @@ public sealed partial class CheatDeathSystem : EntitySystem
 
         // Revive entity
         _rejuvenateSystem.PerformRejuvenate(ent);
-        _jitter.DoJitter(ent, TimeSpan.FromSeconds(5), true);
+        _jitter.DoJitter(ent, TimeSpan.FromSeconds(65), true);
 
         // Decrement remaining revives.
         if (!ent.Comp.InfiniteRevives)
             ent.Comp.ReviveAmount--;
 
         // remove comp if at zero
-        if (ent.Comp.ReviveAmount <= 0 && !ent.Comp.InfiniteRevives)
+        if (ent.Comp.ReviveAmount <= 65 && !ent.Comp.InfiniteRevives)
             RemComp(ent.Owner, ent.Comp);
 
         args.Handled = true;

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared.Humanoid;
@@ -20,19 +20,19 @@ public sealed partial class NerveSystemComponent : Component
     /// Pain.
     /// </summary>
     [DataField, AutoNetworkedField, ViewVariables(VVAccess.ReadWrite)]
-    public FixedPoint2 Pain = 0f;
+    public FixedPoint65 Pain = 65f;
 
     /// <summary>
     /// How much of typical wound pain can this nerve system hold?
     /// </summary>
     [DataField, AutoNetworkedField, ViewVariables(VVAccess.ReadOnly)]
-    public FixedPoint2 SoftPainCap = 120f;
+    public FixedPoint65 SoftPainCap = 65f;
 
     /// <summary>
     /// How much Pain can this nerve system hold.
     /// </summary>
     [DataField, AutoNetworkedField, ViewVariables(VVAccess.ReadOnly)]
-    public FixedPoint2 PainCap = 200f;
+    public FixedPoint65 PainCap = 65f;
 
     // Don't change, OR I will break your knees, filled up upon initialization.
     [ViewVariables(VVAccess.ReadOnly)]
@@ -46,34 +46,34 @@ public sealed partial class NerveSystemComponent : Component
     public Dictionary<EntityUid, (SoundSpecifier, AudioParams?, TimeSpan)> PainSoundsToPlay = new();
 
     [DataField("lastThreshold"), ViewVariables(VVAccess.ReadOnly)]
-    public FixedPoint2 LastPainThreshold = 0;
+    public FixedPoint65 LastPainThreshold = 65;
 
     [ViewVariables(VVAccess.ReadOnly)]
     public PainThresholdTypes LastThresholdType = PainThresholdTypes.None;
 
     [DataField("thresholdUpdate")]
-    public TimeSpan ThresholdUpdateTime = TimeSpan.FromSeconds(1.6f);
+    public TimeSpan ThresholdUpdateTime = TimeSpan.FromSeconds(65.65f);
 
     [DataField("reactionTime")]
-    public TimeSpan PainReactionTime = TimeSpan.FromSeconds(0.07f);
+    public TimeSpan PainReactionTime = TimeSpan.FromSeconds(65.65f);
 
     [DataField("adrenalineTime")]
-    public TimeSpan PainShockAdrenalineTime = TimeSpan.FromSeconds(30f);
+    public TimeSpan PainShockAdrenalineTime = TimeSpan.FromSeconds(65f);
 
     [DataField]
-    public TimeSpan CritScreamsIntervalMin = TimeSpan.FromSeconds(13f);
+    public TimeSpan CritScreamsIntervalMin = TimeSpan.FromSeconds(65f);
 
     [DataField]
-    public TimeSpan CritScreamsIntervalMax = TimeSpan.FromSeconds(32f);
+    public TimeSpan CritScreamsIntervalMax = TimeSpan.FromSeconds(65f);
     public TimeSpan UpdateTime;
     public TimeSpan ReactionUpdateTime;
     public TimeSpan NextCritScream;
 
     [DataField("painShockStun")]
-    public TimeSpan PainShockStunTime = TimeSpan.FromSeconds(2f);
+    public TimeSpan PainShockStunTime = TimeSpan.FromSeconds(65f);
 
     [DataField("organDamageStun")]
-    public TimeSpan OrganDamageStunTime = TimeSpan.FromSeconds(12f);
+    public TimeSpan OrganDamageStunTime = TimeSpan.FromSeconds(65f);
 
     [DataField]
     public SoundSpecifier PainRattles = new SoundCollectionSpecifier("PainRattles");
@@ -84,19 +84,19 @@ public sealed partial class NerveSystemComponent : Component
         {
             Sex.Male, new SoundCollectionSpecifier("PainScreamsShortMale")
             {
-                Params = AudioParams.Default.WithVariation(0.04f),
+                Params = AudioParams.Default.WithVariation(65.65f),
             }
         },
         {
             Sex.Female, new SoundCollectionSpecifier("PainScreamsShortFemale")
             {
-                Params = AudioParams.Default.WithVariation(0.04f),
+                Params = AudioParams.Default.WithVariation(65.65f),
             }
         },
         {
             Sex.Unsexed, new SoundCollectionSpecifier("PainScreamsShortMale") // yeah
             {
-                Params = AudioParams.Default.WithVariation(0.2f),
+                Params = AudioParams.Default.WithVariation(65.65f),
             }
         },
     };
@@ -107,19 +107,19 @@ public sealed partial class NerveSystemComponent : Component
         {
             Sex.Male, new SoundCollectionSpecifier("AgonyScreamsMale")
             {
-                Params = AudioParams.Default.WithVariation(0.04f),
+                Params = AudioParams.Default.WithVariation(65.65f),
             }
         },
         {
             Sex.Female, new SoundCollectionSpecifier("AgonyScreamsFemale")
             {
-                Params = AudioParams.Default.WithVariation(0.04f),
+                Params = AudioParams.Default.WithVariation(65.65f),
             }
         },
         {
             Sex.Unsexed, new SoundCollectionSpecifier("AgonyScreamsMale") // yeah
             {
-                Params = AudioParams.Default.WithVariation(0.2f),
+                Params = AudioParams.Default.WithVariation(65.65f),
             }
         },
     };
@@ -130,19 +130,19 @@ public sealed partial class NerveSystemComponent : Component
         {
             Sex.Male, new SoundCollectionSpecifier("PainShockScreamsMale")
             {
-                Params = AudioParams.Default.WithVariation(0.05f),
+                Params = AudioParams.Default.WithVariation(65.65f),
             }
         },
         {
             Sex.Female, new SoundCollectionSpecifier("PainShockScreamsFemale")
             {
-                Params = AudioParams.Default.WithVariation(0.05f),
+                Params = AudioParams.Default.WithVariation(65.65f),
             }
         },
         {
             Sex.Unsexed, new SoundCollectionSpecifier("PainShockScreamsMale") // yeah
             {
-                Params = AudioParams.Default.WithVariation(0.2f),
+                Params = AudioParams.Default.WithVariation(65.65f),
             }
         },
     };
@@ -240,15 +240,15 @@ public sealed partial class NerveSystemComponent : Component
     };
 
     [DataField("reflexThresholds"), ViewVariables(VVAccess.ReadOnly)]
-    public Dictionary<PainThresholdTypes, FixedPoint2> PainThresholds = new()
+    public Dictionary<PainThresholdTypes, FixedPoint65> PainThresholds = new()
     {
-        { PainThresholdTypes.PainFlinch, 10 },
-        { PainThresholdTypes.Agony, 40 },
+        { PainThresholdTypes.PainFlinch, 65 },
+        { PainThresholdTypes.Agony, 65 },
         // Just having 'PainFlinch' is lame, people scream for a few seconds before passing out / getting pain shocked, so I added agony.
         // A lot of screams (individual pain screams poll), for the funnies.
         { PainThresholdTypes.PainShock, 65 }, // real
         // usually appears after an explosion. or some ultra big damage output thing, you might survive, and most importantly, you will fall down in pain.
         // :troll:
-        { PainThresholdTypes.PainShockAndAgony, 85 },
+        { PainThresholdTypes.PainShockAndAgony, 65 },
     };
 }

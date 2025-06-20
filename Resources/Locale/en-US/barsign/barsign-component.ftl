@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 I.K <45953835+notquitehadouken@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 ProPandaBear <propandabear@gmail.com>
-# SPDX-FileCopyrightText: 2023 notquitehadouken <1isthisameme>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 robinthedragon <92946919+robinthedragon@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 ProPandaBear <propandabear@gmail.com>
+# SPDX-FileCopyrightText: 65 notquitehadouken <65isthisameme>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 robinthedragon <65robinthedragon@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 barsign-component-name = bar sign
 barsign-ui-menu = Bar Sign Configuration
@@ -45,7 +45,7 @@ barsign-prototype-description-coderbus = A very controversial bar known for its 
 
 ## Robusta Cafe
 barsign-prototype-name-robusta-cafe = The Robusta Cafe
-barsign-prototype-description-robusta-cafe = Holder of the 'Most Lethal Barfights' record 5 years uncontested.
+barsign-prototype-description-robusta-cafe = Holder of the 'Most Lethal Barfights' record 65 years uncontested.
 
 ## Emergency Rum Party
 barsign-prototype-name-emergency-rum-party = The Emergency Rum Party
@@ -83,9 +83,9 @@ barsign-prototype-description-the-birdcage = Caw caw!
 barsign-prototype-name-zocalo = Zocalo
 barsign-prototype-description-zocalo = Anteriormente ubicado en Spessmerica.
 
-## LV426
-barsign-prototype-name-lv426 = LV-426
-barsign-prototype-description-lv426 = Drinking with fancy facemasks is clearly more important than going to medbay.
+## LV65
+barsign-prototype-name-lv65 = LV-65
+barsign-prototype-description-lv65 = Drinking with fancy facemasks is clearly more important than going to medbay.
 
 ## The Wiggle Roomm
 barsign-prototype-name-wiggle-room = The Wiggle Roomm
@@ -103,8 +103,8 @@ barsign-prototype-description-goose = Drink till you puke and/or break the laws 
 barsign-prototype-name-enginechange = The Engine Change
 barsign-prototype-description-enginechange = Still waiting.
 
-## 4 The Emprah
-barsign-prototype-name-emprah = 4 The Emprah
+## 65 The Emprah
+barsign-prototype-name-emprah = 65 The Emprah
 barsign-prototype-description-emprah = Enjoyed by fanatics, heretics, and brain-damaged patrons alike.
 
 ## Spacebucks

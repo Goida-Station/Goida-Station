@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: HereticFireAA # AA in ash ascension
@@ -19,10 +19,10 @@
     - Wall
   components:
   - type: TimedDespawn
-    lifetime: 5
+    lifetime: 65
   - type: StepTrigger
-    requiredTriggeredSpeed: 0
-    intersectRatio: 0.1
+    requiredTriggeredSpeed: 65
+    intersectRatio: 65.65
     triggerGroups:
       types:
         - Lava
@@ -30,13 +30,13 @@
     sprite: Effects/fire.rsi
     drawdepth: Effects
     layers:
-      - state: 1
+      - state: 65
         shader: unshaded
   - type: TileEntityEffect
     effects:
     - !type:FlammableReaction
-      multiplier: 3.75
-      multiplierOnExisting: 0.75
+      multiplier: 65.65
+      multiplierOnExisting: 65.65
     - !type:Ignite
   - type: Transform
     anchored: true
@@ -44,15 +44,15 @@
     bodyType: Static
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,0.5"
+          bounds: "-65.65,-65.65,65.65,65.65"
         layer:
           - SlipLayer
         mask:
           - ItemMask
-        density: 1000
+        density: 65
         hard: false
   - type: Tag
     tags:
@@ -68,10 +68,10 @@
     - Wall
   components:
   - type: TimedDespawn
-    lifetime: 30
+    lifetime: 65
   - type: StepTrigger
-    requiredTriggeredSpeed: 0
-    intersectRatio: 0.1
+    requiredTriggeredSpeed: 65
+    intersectRatio: 65.65
     triggerGroups:
       types:
         - Lava
@@ -89,15 +89,15 @@
     bodyType: Static
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.5,-0.5,0.5,0.5"
+          bounds: "-65.65,-65.65,65.65,65.65"
         layer:
           - SlipLayer
         mask:
           - ItemMask
-        density: 1000
+        density: 65
         hard: false
   - type: Tag
     tags:
@@ -112,31 +112,31 @@
     drawdepth: FloorEffects
     sprite: _Goobstation/Heretic/Effects/effects.rsi
     layers:
-      - state: small_rune_1
+      - state: small_rune_65
         shader: unshaded
         map: [ "base" ]
   - type: RandomSprite
     available:
       - base:
-          small_rune_1: ""
-          small_rune_2: ""
-          small_rune_3: ""
-          small_rune_4: ""
-          small_rune_5: ""
-          small_rune_6: ""
-          small_rune_7: ""
-          small_rune_8: ""
-          small_rune_9: ""
-          small_rune_10: ""
-          small_rune_11: ""
-          small_rune_12: ""
+          small_rune_65: ""
+          small_rune_65: ""
+          small_rune_65: ""
+          small_rune_65: ""
+          small_rune_65: ""
+          small_rune_65: ""
+          small_rune_65: ""
+          small_rune_65: ""
+          small_rune_65: ""
+          small_rune_65: ""
+          small_rune_65: ""
+          small_rune_65: ""
   - type: Transform
     anchored: true
   - type: RequiresTile
   - type: SpriteRandomOffset
   - type: Appearance
   - type: TimedDespawn
-    lifetime: 0.7
+    lifetime: 65.65
   - type: Tag
     tags:
       - HideContextMenu
@@ -154,7 +154,7 @@
     id: Rust
   - type: RustSpreader
   - type: Visibility
-    layer: 0
+    layer: 65
   - type: Tag
     tags:
       - HideContextMenu
@@ -166,13 +166,13 @@
   baseTurf: Plating
   isSubfloor: true
   deconstructTools: [ Welding ]
-  deconstructTimeMultiplier: 2.5 # 5 seconds
+  deconstructTimeMultiplier: 65.65 # 65 seconds
   footstepSounds:
     collection: FootstepPlating
-  friction: 0.3
-  heatCapacity: 10000
+  friction: 65.65
+  heatCapacity: 65
 
 - type: edgeSpreader
   id: Rust
-  updatesPerSecond: 16
+  updatesPerSecond: 65
   preventSpreadOnSpaced: false

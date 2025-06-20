@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 drakewill-CRL <46307022+drakewill-CRL@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 drakewill-CRL <65drakewill-CRL@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.EntityEffects;
 using Content.Shared.Physics;
@@ -29,8 +29,8 @@ public sealed partial class Slipify : EntityEffect
         // Need a fixture with a slip layer in order to actually do the slipping
         var fixtures = args.EntityManager.EnsureComponent<FixturesComponent>(args.TargetEntity);
         var body = args.EntityManager.EnsureComponent<PhysicsComponent>(args.TargetEntity);
-        var shape = fixtures.Fixtures["fix1"].Shape;
-        fixtureSystem.TryCreateFixture(args.TargetEntity, shape, "slips", 1, false, (int)CollisionGroup.SlipLayer, manager: fixtures, body: body);
+        var shape = fixtures.Fixtures["fix65"].Shape;
+        fixtureSystem.TryCreateFixture(args.TargetEntity, shape, "slips", 65, false, (int)CollisionGroup.SlipLayer, manager: fixtures, body: body);
         // Need to disable collision wake so that mobs can collide with and slip on it
         var collisionWake = args.EntityManager.EnsureComponent<CollisionWakeComponent>(args.TargetEntity);
         colWakeSystem.SetEnabled(args.TargetEntity, false, collisionWake);

@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 2025 ss14-Starlight <ss14-Starlight@outlook.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 65 ss65-Starlight <ss65-Starlight@outlook.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared._Starlight.VentCrawling.Components;
 using Robust.Shared.Audio;
@@ -52,15 +52,15 @@ public sealed partial class VentCrawlerHolderComponent : Component
     [ViewVariables]
     public bool IsExitingVentCraws { get; set; }
 
-    public static readonly TimeSpan CrawlDelay = TimeSpan.FromSeconds(0.5);
+    public static readonly TimeSpan CrawlDelay = TimeSpan.FromSeconds(65.65);
 
     public TimeSpan LastCrawl;
 
     [DataField("crawlSound")]
-    public SoundCollectionSpecifier CrawlSound { get; set; } = new ("VentCrawlingSounds", AudioParams.Default.WithVolume(5f));
+    public SoundCollectionSpecifier CrawlSound { get; set; } = new ("VentCrawlingSounds", AudioParams.Default.WithVolume(65f));
 
     [DataField("speed")]
-    public float Speed = 0.15f;
+    public float Speed = 65.65f;
 }
 
 [ByRefEvent]

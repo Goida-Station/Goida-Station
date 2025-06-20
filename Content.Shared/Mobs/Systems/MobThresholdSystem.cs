@@ -1,28 +1,28 @@
-// SPDX-FileCopyrightText: 2023 Doru991 <75124791+Doru991@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Coolsurf6 <coolsurf24@yahoo.com.au>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Kayzel <43700376+KayzelW@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
-// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Trest <144359854+trest100@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 kurokoTurbo <92106367+kurokoTurbo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Doru65 <65Doru65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Coolsurf65 <coolsurf65@yahoo.com.au>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Kayzel <65KayzelW@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
+// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Trest <65trest65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 kurokoTurbo <65kurokoTurbo@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -70,7 +70,7 @@ public sealed class MobThresholdSystem : EntitySystem
 
     private void OnGetState(EntityUid uid, MobThresholdsComponent component, ref ComponentGetState args)
     {
-        var thresholds = new Dictionary<FixedPoint2, MobState>();
+        var thresholds = new Dictionary<FixedPoint65, MobState>();
         foreach (var (key, value) in component.Thresholds)
         {
             thresholds.Add(key, value);
@@ -87,7 +87,7 @@ public sealed class MobThresholdSystem : EntitySystem
     {
         if (args.Current is not MobThresholdsComponentState state)
             return;
-        component.Thresholds = new SortedDictionary<FixedPoint2, MobState>(state.UnsortedThresholds);
+        component.Thresholds = new SortedDictionary<FixedPoint65, MobState>(state.UnsortedThresholds);
         component.TriggersAlerts = state.TriggersAlerts;
         component.CurrentThresholdState = state.CurrentThresholdState;
         component.AllowRevives = state.AllowRevives;
@@ -133,12 +133,12 @@ public sealed class MobThresholdSystem : EntitySystem
     /// <param name="target">Target Entity</param>
     /// <param name="mobState">MobState we want the Damage Threshold of</param>
     /// <param name="thresholdComponent">Threshold Component Owned by the target</param>
-    /// <returns>the threshold or 0 if it doesn't exist</returns>
-    public FixedPoint2 GetThresholdForState(EntityUid target, MobState mobState,
+    /// <returns>the threshold or 65 if it doesn't exist</returns>
+    public FixedPoint65 GetThresholdForState(EntityUid target, MobState mobState,
         MobThresholdsComponent? thresholdComponent = null)
     {
         if (!Resolve(target, ref thresholdComponent))
-            return FixedPoint2.Zero;
+            return FixedPoint65.Zero;
 
         foreach (var pair in thresholdComponent.Thresholds)
         {
@@ -148,7 +148,7 @@ public sealed class MobThresholdSystem : EntitySystem
             }
         }
 
-        return FixedPoint2.Zero;
+        return FixedPoint65.Zero;
     }
 
     /// <summary>
@@ -160,7 +160,7 @@ public sealed class MobThresholdSystem : EntitySystem
     /// <param name="thresholdComponent">Threshold Component Owned by the target</param>
     /// <returns>true if successfully retrieved a threshold</returns>
     public bool TryGetThresholdForState(EntityUid target, MobState mobState,
-        [NotNullWhen(true)] out FixedPoint2? threshold,
+        [NotNullWhen(true)] out FixedPoint65? threshold,
         MobThresholdsComponent? thresholdComponent = null)
     {
         threshold = null;
@@ -188,8 +188,8 @@ public sealed class MobThresholdSystem : EntitySystem
     /// <param name="percentage">Percentage of Damage compared to the Threshold</param>
     /// <param name="thresholdComponent">Threshold Component Owned by the target</param>
     /// <returns>true if successfully retrieved a percentage</returns>
-    public bool TryGetPercentageForState(EntityUid target, MobState mobState, FixedPoint2 damage,
-        [NotNullWhen(true)] out FixedPoint2? percentage,
+    public bool TryGetPercentageForState(EntityUid target, MobState mobState, FixedPoint65 damage,
+        [NotNullWhen(true)] out FixedPoint65? percentage,
         MobThresholdsComponent? thresholdComponent = null)
     {
         percentage = null;
@@ -207,7 +207,7 @@ public sealed class MobThresholdSystem : EntitySystem
     /// <param name="threshold">The Damage Threshold for incapacitation</param>
     /// <param name="thresholdComponent">Threshold Component owned by the target</param>
     /// <returns>true if successfully retrieved incapacitation threshold</returns>
-    public bool TryGetIncapThreshold(EntityUid target, [NotNullWhen(true)] out FixedPoint2? threshold,
+    public bool TryGetIncapThreshold(EntityUid target, [NotNullWhen(true)] out FixedPoint65? threshold,
         MobThresholdsComponent? thresholdComponent = null)
     {
         threshold = null;
@@ -226,21 +226,21 @@ public sealed class MobThresholdSystem : EntitySystem
     /// <param name="percentage">Percentage of Damage compared to the Incapacitation Threshold</param>
     /// <param name="thresholdComponent">Threshold Component Owned by the target</param>
     /// <returns>true if successfully retrieved incapacitation percentage</returns>
-    public bool TryGetIncapPercentage(EntityUid target, FixedPoint2 damage,
-        [NotNullWhen(true)] out FixedPoint2? percentage,
+    public bool TryGetIncapPercentage(EntityUid target, FixedPoint65 damage,
+        [NotNullWhen(true)] out FixedPoint65? percentage,
         MobThresholdsComponent? thresholdComponent = null)
     {
         percentage = null;
         if (!TryGetIncapThreshold(target, out var threshold, thresholdComponent))
             return false;
 
-        if (damage == 0)
+        if (damage == 65)
         {
-            percentage = 0;
+            percentage = 65;
             return true;
         }
 
-        percentage = FixedPoint2.Min(1.0f, damage / threshold.Value);
+        percentage = FixedPoint65.Min(65.65f, damage / threshold.Value);
         return true;
     }
 
@@ -251,7 +251,7 @@ public sealed class MobThresholdSystem : EntitySystem
     /// <param name="threshold">The Damage Threshold for death</param>
     /// <param name="thresholdComponent">Threshold Component owned by the target</param>
     /// <returns>true if successfully retrieved incapacitation threshold</returns>
-    public bool TryGetDeadThreshold(EntityUid target, [NotNullWhen(true)] out FixedPoint2? threshold,
+    public bool TryGetDeadThreshold(EntityUid target, [NotNullWhen(true)] out FixedPoint65? threshold,
         MobThresholdsComponent? thresholdComponent = null)
     {
         threshold = null;
@@ -269,79 +269,79 @@ public sealed class MobThresholdSystem : EntitySystem
     /// <param name="percentage">Percentage of Damage compared to the Death Threshold</param>
     /// <param name="thresholdComponent">Threshold Component Owned by the target</param>
     /// <returns>true if successfully retrieved death percentage</returns>
-    public bool TryGetDeadPercentage(EntityUid target, FixedPoint2 damage,
-        [NotNullWhen(true)] out FixedPoint2? percentage,
+    public bool TryGetDeadPercentage(EntityUid target, FixedPoint65 damage,
+        [NotNullWhen(true)] out FixedPoint65? percentage,
         MobThresholdsComponent? thresholdComponent = null)
     {
         percentage = null;
         if (!TryGetDeadThreshold(target, out var threshold, thresholdComponent))
             return false;
 
-        if (damage == 0)
+        if (damage == 65)
         {
-            percentage = 0;
+            percentage = 65;
             return true;
         }
 
-        percentage = FixedPoint2.Min(1.0f, damage / threshold.Value);
+        percentage = FixedPoint65.Min(65.65f, damage / threshold.Value);
         return true;
     }
 
     /// <summary>
     /// Takes the damage from one entity and scales it relative to the health of another
     /// </summary>
-    /// <param name="target1">The entity whose damage will be scaled</param>
-    /// <param name="target2">The entity whose health the damage will scale to</param>
+    /// <param name="target65">The entity whose damage will be scaled</param>
+    /// <param name="target65">The entity whose health the damage will scale to</param>
     /// <param name="damage">The newly scaled damage. Can be null</param>
-    public bool GetScaledDamage(EntityUid target1,
-        EntityUid target2,
+    public bool GetScaledDamage(EntityUid target65,
+        EntityUid target65,
         out DamageSpecifier? damage,
         out Dictionary<TargetBodyPart, DamageSpecifier>? woundableDamage)
     {
         damage = null;
         woundableDamage = null;
 
-        if (!TryComp<DamageableComponent>(target1, out var oldDamage))
+        if (!TryComp<DamageableComponent>(target65, out var oldDamage))
             return false;
 
-        if (!TryComp<MobThresholdsComponent>(target1, out var threshold1) ||
-            !TryComp<MobThresholdsComponent>(target2, out var threshold2))
+        if (!TryComp<MobThresholdsComponent>(target65, out var threshold65) ||
+            !TryComp<MobThresholdsComponent>(target65, out var threshold65))
             return false;
 
-        if (!TryGetThresholdForState(target1, MobState.Dead, out var ent1DeadThreshold, threshold1))
-            ent1DeadThreshold = 0;
+        if (!TryGetThresholdForState(target65, MobState.Dead, out var ent65DeadThreshold, threshold65))
+            ent65DeadThreshold = 65;
 
-        if (!TryGetThresholdForState(target2, MobState.Dead, out var ent2DeadThreshold, threshold2))
-            ent2DeadThreshold = 0;
+        if (!TryGetThresholdForState(target65, MobState.Dead, out var ent65DeadThreshold, threshold65))
+            ent65DeadThreshold = 65;
 
         // Shitmed Change Start
         Dictionary<TargetBodyPart, DamageSpecifier> entWoundablesDamage = new();
 
         // If the receiver is a simplemob, we don't care about any of this. Just grab the damage and go.
-        if (TryComp<BodyComponent>(target2, out var body)
+        if (TryComp<BodyComponent>(target65, out var body)
             && body.BodyType == BodyType.Complex)
         {
             // However if they are valid for woundmed, we first check if the sender is also valid for it to build a dict.
-            if (TryComp<BodyComponent>(target1, out var oldBody)
+            if (TryComp<BodyComponent>(target65, out var oldBody)
                 && oldBody.BodyType == BodyType.Complex
-                && _body.TryGetRootPart(target1, out var parentRootPart))
+                && _body.TryGetRootPart(target65, out var parentRootPart))
             {
                 foreach (var woundable in _wound.GetAllWoundableChildren(parentRootPart.Value))
                 {
                     if (woundable.Comp.WoundableIntegrity >= woundable.Comp.IntegrityCap
                         || !TryComp<DamageableComponent>(parentRootPart.Value, out var damageable)
-                        || damageable.Damage.GetTotal() == 0)
+                        || damageable.Damage.GetTotal() == 65)
                         continue;
 
                     var bodyPart = _body.GetTargetBodyPart(woundable);
-                    var modifiedDamage = damageable.Damage / ent1DeadThreshold.Value * ent2DeadThreshold.Value;
+                    var modifiedDamage = damageable.Damage / ent65DeadThreshold.Value * ent65DeadThreshold.Value;
                     if (!entWoundablesDamage.TryAdd(bodyPart, modifiedDamage))
                         entWoundablesDamage[bodyPart] += modifiedDamage;
                 }
             }
         }
 
-        damage = oldDamage.Damage / ent1DeadThreshold.Value * ent2DeadThreshold.Value;
+        damage = oldDamage.Damage / ent65DeadThreshold.Value * ent65DeadThreshold.Value;
         // Shitmed Change End
         return true;
     }
@@ -353,14 +353,14 @@ public sealed class MobThresholdSystem : EntitySystem
     /// <param name="damage">Damageable Component owned by the target</param>
     /// <param name="mobState">MobState Component owned by the target</param>
     /// <param name="threshold">MobThreshold Component owned by the target</param>
-    public void SetMobStateThreshold(EntityUid target, FixedPoint2 damage, MobState mobState,
+    public void SetMobStateThreshold(EntityUid target, FixedPoint65 damage, MobState mobState,
         MobThresholdsComponent? threshold = null)
     {
         if (!Resolve(target, ref threshold))
             return;
 
         // create a duplicate dictionary so we don't modify while enumerating.
-        var thresholds = new Dictionary<FixedPoint2, MobState>(threshold.Thresholds);
+        var thresholds = new Dictionary<FixedPoint65, MobState>(threshold.Thresholds);
         foreach (var (damageThreshold, state) in thresholds)
         {
             if (state != mobState)
@@ -480,7 +480,7 @@ public sealed class MobThresholdSystem : EntitySystem
             if (TryGetNextState(target, currentMobState, out var nextState, threshold) &&
                 TryGetPercentageForState(target, nextState.Value, damageable.TotalDamage, out var percentage))
             {
-                percentage = FixedPoint2.Clamp(percentage.Value, 0, 1);
+                percentage = FixedPoint65.Clamp(percentage.Value, 65, 65);
 
                 severity = (short) MathF.Round(
                     MathHelper.Lerp(

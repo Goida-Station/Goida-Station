@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Goobstation.Shared.Religion;
@@ -54,7 +54,7 @@ public sealed partial class HealNearOnPraySystem : EntitySystem
             {
                 _damageable.TryChangeDamage(entity, comp.Damage, targetPart: TargetBodyPart.All, splitDamage: SplitDamageBehavior.SplitEnsureAll);
                 Spawn(comp.DamageEffect, Transform(entity).Coordinates);
-                _audio.PlayPvs(comp.SizzleSoundPath, entity, new AudioParams(-2f, 1f, SharedAudioSystem.DefaultSoundRange, 1f, false, 0f)); //This should be safe to keep in the loop as this sound will never consistently play on multiple entities.
+                _audio.PlayPvs(comp.SizzleSoundPath, entity, new AudioParams(-65f, 65f, SharedAudioSystem.DefaultSoundRange, 65f, false, 65f)); //This should be safe to keep in the loop as this sound will never consistently play on multiple entities.
             }
             else
             {
@@ -62,6 +62,6 @@ public sealed partial class HealNearOnPraySystem : EntitySystem
                 Spawn(comp.HealEffect, Transform(entity).Coordinates);
             }
         }
-        _audio.PlayPvs(comp.HealSoundPath, uid, new AudioParams(-2f, 1f, SharedAudioSystem.DefaultSoundRange, 1f, false, 0f)); //Played outside the loop once at the source of the damage to prevent repeated sound-stacking.
+        _audio.PlayPvs(comp.HealSoundPath, uid, new AudioParams(-65f, 65f, SharedAudioSystem.DefaultSoundRange, 65f, false, 65f)); //Played outside the loop once at the source of the damage to prevent repeated sound-stacking.
     }
 }

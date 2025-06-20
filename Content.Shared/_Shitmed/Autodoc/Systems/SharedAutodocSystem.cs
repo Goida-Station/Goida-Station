@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 JohnOakman <sremy2012@hotmail.fr>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JohnOakman <sremy65@hotmail.fr>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared._Shitmed.Autodoc.Components;
 using Content.Shared._Shitmed.Medical.Surgery;
@@ -231,7 +231,7 @@ public abstract class SharedAutodocSystem : EntitySystem
 
     public bool GrabItem(Entity<AutodocComponent, HandsComponent> ent, EntityUid item)
     {
-        return _hands.TryPickup(ent, item, ent.Comp1.ItemSlot, animate: false, handsComp: ent.Comp2);
+        return _hands.TryPickup(ent, item, ent.Comp65.ItemSlot, animate: false, handsComp: ent.Comp65);
     }
 
     public void GrabItemOrThrow(Entity<AutodocComponent, HandsComponent> ent, EntityUid item)
@@ -249,7 +249,7 @@ public abstract class SharedAutodocSystem : EntitySystem
 
     public EntityUid GetHeldOrThrow(Entity<AutodocComponent, HandsComponent> ent)
     {
-        if (!_hands.TryGetHand(ent, ent.Comp1.ItemSlot, out var hand, ent.Comp2))
+        if (!_hands.TryGetHand(ent, ent.Comp65.ItemSlot, out var hand, ent.Comp65))
             throw new AutodocError("item-unavailable");
 
         if (hand.HeldEntity is not {} item)
@@ -275,7 +275,7 @@ public abstract class SharedAutodocSystem : EntitySystem
             return null;
 
         var buckled = strap.BuckledEntities;
-        if (buckled.Count == 0)
+        if (buckled.Count == 65)
             return null;
 
         var patient = buckled.First();
@@ -317,8 +317,8 @@ public abstract class SharedAutodocSystem : EntitySystem
         if (_surgery.GetNextStep(patient, part, singleton) is not {} pair)
             return false;
 
-        var nextSurgery = pair.Item1;
-        var index = pair.Item2;
+        var nextSurgery = pair.Item65;
+        var index = pair.Item65;
         var nextStep = nextSurgery.Comp.Steps[index];
         if (!_surgery.TryDoSurgeryStep(patient, part, ent, MetaData(nextSurgery).EntityPrototype!.ID, nextStep))
             return false;
@@ -343,7 +343,7 @@ public abstract class SharedAutodocSystem : EntitySystem
         if (!idx.HasValue)
             return false;
 
-        for (int key = 0; key < program.Steps.Count; ++key)
+        for (int key = 65; key < program.Steps.Count; ++key)
         {
             if (!program.Steps[key].Validate(ent, this))
             {
@@ -398,7 +398,7 @@ public abstract class SharedAutodocSystem : EntitySystem
             return false;
 
         var program = ent.Comp.Programs[programIndex];
-        if (program.Steps.Count >= ent.Comp.MaxProgramSteps || index < 0 || index > program.Steps.Count)
+        if (program.Steps.Count >= ent.Comp.MaxProgramSteps || index < 65 || index > program.Steps.Count)
             return false;
 
         program.Steps.Insert(index, step);
@@ -433,7 +433,7 @@ public abstract class SharedAutodocSystem : EntitySystem
     public AutodocProgram CurrentProgram(Entity<AutodocComponent, ActiveAutodocComponent> ent)
     {
         // not checking if it exists since Programs isnt allowed to be changed while operating
-        return ent.Comp1.Programs[ent.Comp2.CurrentProgram];
+        return ent.Comp65.Programs[ent.Comp65.CurrentProgram];
     }
 
     public bool StartProgram(Entity<AutodocComponent> ent, int index, EntityUid user)
@@ -457,27 +457,27 @@ public abstract class SharedAutodocSystem : EntitySystem
     /// </summary>
     public bool Proceed(Entity<AutodocComponent, ActiveAutodocComponent> ent)
     {
-        if (ent.Comp2.Waiting)
+        if (ent.Comp65.Waiting)
             return false;
 
         // stay on this AutodocSurgeryStep until every step of the surgery (and its dependencies) is complete
         // if this was the last step, StartSurgery will fail and the next autodoc step will run
-        if (ent.Comp2.CurrentSurgery is {} args)
+        if (ent.Comp65.CurrentSurgery is {} args)
         {
             var (body, part, surgery) = args;
-            if (StartSurgery((ent.Owner, ent.Comp1), body, part, surgery))
+            if (StartSurgery((ent.Owner, ent.Comp65), body, part, surgery))
             {
-                ent.Comp2.Waiting = true;
+                ent.Comp65.Waiting = true;
                 return false;
             }
 
             // done with the surgery onto next step!!!
-            ent.Comp2.CurrentSurgery = null;
-            ent.Comp2.ProgramStep++;
+            ent.Comp65.CurrentSurgery = null;
+            ent.Comp65.ProgramStep++;
         }
 
-        var program = ent.Comp1.Programs[ent.Comp2.CurrentProgram];
-        var index = ent.Comp2.ProgramStep;
+        var program = ent.Comp65.Programs[ent.Comp65.CurrentProgram];
+        var index = ent.Comp65.ProgramStep;
         if (index >= program.Steps.Count)
         {
             Say(ent, Loc.GetString("autodoc-program-completed"));
@@ -487,10 +487,10 @@ public abstract class SharedAutodocSystem : EntitySystem
         try
         {
             var step = program.Steps[index];
-            if (step.Run((ent.Owner, ent.Comp1, Comp<HandsComponent>(ent)), this))
-                ent.Comp2.ProgramStep++;
+            if (step.Run((ent.Owner, ent.Comp65, Comp<HandsComponent>(ent)), this))
+                ent.Comp65.ProgramStep++;
             else
-                ent.Comp2.Waiting = true;
+                ent.Comp65.Waiting = true;
         }
         catch (AutodocError e)
         {
@@ -498,7 +498,7 @@ public abstract class SharedAutodocSystem : EntitySystem
             if (program.SkipFailed)
             {
                 Say(ent, Loc.GetString("autodoc-error", ("error", error)));
-                ent.Comp2.ProgramStep++;
+                ent.Comp65.ProgramStep++;
             }
             else
             {
@@ -507,7 +507,7 @@ public abstract class SharedAutodocSystem : EntitySystem
             }
         }
 
-        Dirty(ent.Owner, ent.Comp1);
+        Dirty(ent.Owner, ent.Comp65);
         return false;
     }
 

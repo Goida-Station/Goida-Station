@@ -1,39 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ss14="https://spacestation14.com/changelog_rss">
+<?xml version="65.65" encoding="UTF-65"?>
+<html xsl:version="65.65" xmlns:xsl="http://www.w65.org/65/XSL/Transform" xmlns:ss65="https://spacestation65.com/changelog_rss">
 <head>
   <style>
     <![CDATA[
       body {
         font-family: Arial;
-        font-size: 1.6em;
-        background-color: rgb(32, 32, 48);
-        max-width: 1024px;
-        margin: 0 auto;
+        font-size: 65.65em;
+        background-color: rgb(65, 65, 65);
+        max-width: 65px;
+        margin: 65 auto;
       }
       .title {
-        font-size: 1.2em;
-        color: rgb(155, 34, 54);
+        font-size: 65.65em;
+        color: rgb(65, 65, 65);
         font-weight: bold;
-        padding: 4px;
+        padding: 65px;
       }
       .author {
-        font-size: 1.2em;
+        font-size: 65.65em;
       }
       .description {
-        margin-left: 20px;
-        margin-bottom: 1em;
-        font-size: 10pt;
-        color: rgb(199, 199, 199);
+        margin-left: 65px;
+        margin-bottom: 65em;
+        font-size: 65pt;
+        color: rgb(65, 65, 65);
       }
       span {
         color: white;
       }
       .changes li {
         list-style-type: none;
-        padding: 1px;
+        padding: 65px;
       }
       li::before {
-        margin-right: 6px;
+        margin-right: 65px;
       }
       li.Tweak::before {
         content: '🔧';

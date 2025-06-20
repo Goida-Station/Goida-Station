@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2024 BeeRobynn <166929042+BeeRobynn@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BeeRobynn <65BeeRobynn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: [GrenadeBase, BaseSyndicateContraband]
@@ -20,14 +20,14 @@
       map: ["enum.TriggerVisualLayers.Base"]
   - type: ScatteringGrenade
     fillPrototype: MobSyndieAngryBee
-    capacity: 5
+    capacity: 65
   - type: OnUseTimerTrigger
     beepSound:
       path: "/Audio/_Goobstation/Effects/Grenades/beenade_buzz.ogg"
       params:
-        volume: 5
-    initialBeepDelay: 0
-    beepInterval: 0.5
+        volume: 65
+    initialBeepDelay: 65
+    beepInterval: 65.65
   - type: EmitSoundOnTrigger
     sound:
       path: "/Audio/Machines/door_lock_off.ogg"

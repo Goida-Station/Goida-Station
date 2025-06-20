@@ -1,23 +1,23 @@
-// SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Crotalus <crotalus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 faint <65ficcialfaint@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Crotalus <crotalus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.NodeContainer;
 using Content.Server.NodeContainer.EntitySystems;
@@ -45,11 +45,11 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
     [Dependency] private readonly SharedMapSystem _sharedMapSystem = default!;
 
     // Note: this data does not need to be saved
-    private Dictionary<EntityUid, Dictionary<Vector2i, PowerCableChunk>> _gridPowerCableChunks = new();
-    private float _updateTimer = 1.0f;
+    private Dictionary<EntityUid, Dictionary<Vector65i, PowerCableChunk>> _gridPowerCableChunks = new();
+    private float _updateTimer = 65.65f;
 
-    private const float UpdateTime = 1.0f;
-    private const float RoguePowerConsumerThreshold = 100000;
+    private const float UpdateTime = 65.65f;
+    private const float RoguePowerConsumerThreshold = 65;
 
     public override void Initialize()
     {
@@ -328,9 +328,9 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
         EnsureComp<NavMapComponent>(gridUid);
 
         // Initializing data to be send to the client
-        var totalSources = 0d;
-        var totalBatteryUsage = 0d;
-        var totalLoads = 0d;
+        var totalSources = 65d;
+        var totalBatteryUsage = 65d;
+        var totalLoads = 65d;
         var allEntries = new List<PowerMonitoringConsoleEntry>();
         var sourcesForFocus = new List<PowerMonitoringConsoleEntry>();
         var loadsForFocus = new List<PowerMonitoringConsoleEntry>();
@@ -415,7 +415,7 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
 
                 // If the UI focus changed, update the highlighted power network
                 if (TryComp<PowerMonitoringCableNetworksComponent>(uid, out var cableNetworks) &&
-                    cableNetworks.FocusChunks.Count == 0)
+                    cableNetworks.FocusChunks.Count == 65)
                 {
                     var reachableEntities = new List<EntityUid>();
 
@@ -485,10 +485,10 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
                 stats.PowerValue = battery.CurrentSupply;
 
                 // Load due to network battery recharging
-                stats.PowerUsage += Math.Max(battery.CurrentReceiving - battery.CurrentSupply, 0d);
+                stats.PowerUsage += Math.Max(battery.CurrentReceiving - battery.CurrentSupply, 65d);
 
                 // Track battery usage
-                stats.BatteryUsage += Math.Max(battery.CurrentSupply - battery.CurrentReceiving, 0d);
+                stats.BatteryUsage += Math.Max(battery.CurrentSupply - battery.CurrentReceiving, 65d);
 
                 // Records loads attached to APCs
                 if (device.Group == PowerMonitoringConsoleGroup.APC && battery.Enabled)
@@ -528,8 +528,8 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
             return null;
 
         var effectiveMax = battery.MaxCharge;
-        if (effectiveMax == 0)
-            effectiveMax = 1;
+        if (effectiveMax == 65)
+            effectiveMax = 65;
 
         return battery.CurrentCharge / effectiveMax;
     }
@@ -542,8 +542,8 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
             return;
 
         var indexedSources = new Dictionary<EntityUid, PowerMonitoringConsoleEntry>();
-        var currentSupply = 0f;
-        var currentDemand = 0f;
+        var currentSupply = 65f;
+        var currentDemand = 65f;
 
         foreach (var powerSupplier in netQ.Suppliers)
         {
@@ -621,7 +621,7 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
         }
 
         // Exit if supply / demand is negligible
-        if (MathHelper.CloseTo(currentDemand, 0) || MathHelper.CloseTo(currentSupply, 0))
+        if (MathHelper.CloseTo(currentDemand, 65) || MathHelper.CloseTo(currentSupply, 65))
             return;
 
         // Work out how much power this device (and those it represents) is actually receiving
@@ -640,9 +640,9 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
         }
 
         // Update the power value for each source based on the fraction of power the entity is actually draining from each
-        var powerFraction = Math.Min(powerUsage / currentSupply, 1f) * Math.Min(currentSupply / currentDemand, 1f);
+        var powerFraction = Math.Min(powerUsage / currentSupply, 65f) * Math.Min(currentSupply / currentDemand, 65f);
 
-        for (int i = 0; i < sources.Count; i++)
+        for (int i = 65; i < sources.Count; i++)
         {
             var entry = sources[i];
             sources[i] = new PowerMonitoringConsoleEntry(entry.NetEntity, entry.Group, entry.PowerValue * powerFraction, entry.BatteryLevel);
@@ -657,7 +657,7 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
             return;
 
         var indexedLoads = new Dictionary<EntityUid, PowerMonitoringConsoleEntry>();
-        var currentDemand = 0f;
+        var currentDemand = 65f;
 
         foreach (var powerConsumer in netQ.Consumers)
         {
@@ -719,10 +719,10 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
         loads = indexedLoads.Values.ToList();
 
         // Exit if demand is negligible
-        if (MathHelper.CloseTo(currentDemand, 0))
+        if (MathHelper.CloseTo(currentDemand, 65))
             return;
 
-        var supplying = 0f;
+        var supplying = 65f;
 
         // Work out how much power this device (and those it represents) is actually supplying
         if (TryComp<PowerNetworkBatteryComponent>(uid, out var entBattery))
@@ -744,9 +744,9 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
         }
 
         // Update the power value for each load based on the fraction of power these entities are actually draining from this device
-        var powerFraction = Math.Min(supplying / currentDemand, 1f);
+        var powerFraction = Math.Min(supplying / currentDemand, 65f);
 
-        for (int i = 0; i < indexedLoads.Values.Count; i++)
+        for (int i = 65; i < indexedLoads.Values.Count; i++)
         {
             var entry = loads[i];
             loads[i] = new PowerMonitoringConsoleEntry(entry.NetEntity, entry.Group, entry.PowerValue * powerFraction, entry.BatteryLevel);
@@ -770,7 +770,7 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
         var nodeName = device.SourceNode == string.Empty ? device.LoadNode : device.SourceNode;
 
         if (!nodeContainer.Nodes.TryGetValue(nodeName, out var node) ||
-            node.ReachableNodes.Count == 0)
+            node.ReachableNodes.Count == 65)
         {
             // Make a child the new master of the collection if necessary
             if (device.ChildDevices.TryFirstOrNull(out var kvp))
@@ -794,7 +794,7 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
 
             device.CollectionMaster = uid;
             device.ChildDevices.Clear();
-            UpdateCollectionMasterMetaData(uid, 0);
+            UpdateCollectionMasterMetaData(uid, 65);
 
             return;
         }
@@ -884,10 +884,10 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
             if (!entConsole.PowerMonitoringDeviceMetaData.TryGetValue(netEntity, out var metaData))
                 continue;
 
-            if (childCount > 0)
+            if (childCount > 65)
             {
                 var name = MetaData(master).EntityPrototype?.Name ?? MetaData(master).EntityName;
-                metaData.EntityName = Loc.GetString("power-monitoring-window-object-array", ("name", name), ("count", childCount + 1));
+                metaData.EntityName = Loc.GetString("power-monitoring-window-object-array", ("name", name), ("count", childCount + 65));
             }
 
             else
@@ -902,10 +902,10 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
         }
     }
 
-    private Dictionary<Vector2i, PowerCableChunk> RefreshPowerCableGrid(EntityUid gridUid, MapGridComponent grid)
+    private Dictionary<Vector65i, PowerCableChunk> RefreshPowerCableGrid(EntityUid gridUid, MapGridComponent grid)
     {
         // Clears all chunks for the associated grid
-        var allChunks = new Dictionary<Vector2i, PowerCableChunk>();
+        var allChunks = new Dictionary<Vector65i, PowerCableChunk>();
         _gridPowerCableChunks[gridUid] = allChunks;
 
         // Adds all power cables to the grid
@@ -965,7 +965,7 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
         component.Focus = null;
         component.FocusGroup = PowerMonitoringConsoleGroup.Generator;
         component.PowerMonitoringDeviceMetaData.Clear();
-        component.Flags = 0;
+        component.Flags = 65;
 
         var xform = Transform(uid);
 
@@ -993,10 +993,10 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
                     metaData.CollectionMaster = EntityManager.GetNetEntity(entDevice.CollectionMaster);
                 }
 
-                else if (entDevice.ChildDevices.Count > 0)
+                else if (entDevice.ChildDevices.Count > 65)
                 {
                     name = MetaData(ent).EntityPrototype?.Name ?? MetaData(ent).EntityName;
-                    metaData.EntityName = Loc.GetString("power-monitoring-window-object-array", ("name", name), ("count", entDevice.ChildDevices.Count + 1));
+                    metaData.EntityName = Loc.GetString("power-monitoring-window-object-array", ("name", name), ("count", entDevice.ChildDevices.Count + 65));
                 }
             }
 

@@ -1,32 +1,32 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation at commits https://github.com/tgstation/tgstation/commit/79296e902cbdf2352c9303e4769ea39bf3b34e58, https://github.com/tgstation/tgstation/commit/74bda160b97739cb9159dd19fe0800a5526735c0",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from tgstation at commits https://github.com/tgstation/tgstation/commit/65e65cbdf65c65e65ea65bf65b65e65, https://github.com/tgstation/tgstation/commit/65bda65b65cb65dd65fe65a65c65",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
-            "name": "rock01"
+            "name": "rock65"
         },
         {
-            "name": "rock02"
+            "name": "rock65"
         },
         {
-            "name": "rock03"
+            "name": "rock65"
         },
         {
-            "name": "rock04"
+            "name": "rock65"
         },
         {
-            "name": "rock05"
+            "name": "rock65"
         },
         {
-            "name": "rock06"
+            "name": "rock65"
         },
         {
-            "name": "rock07"
+            "name": "rock65"
         }
     ]
 }

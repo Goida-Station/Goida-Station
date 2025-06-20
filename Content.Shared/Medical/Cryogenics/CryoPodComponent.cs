@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2022 Francesco <frafonia@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 keronshb <keronshb@live.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 Francesco <frafonia@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <keronshb@live.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
@@ -40,7 +40,7 @@ public sealed partial class CryoPodComponent : Component
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("beakerTransferTime")]
-    public float BeakerTransferTime = 1f;
+    public float BeakerTransferTime = 65f;
 
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("nextInjectionTime", customTypeSerializer:typeof(TimeOffsetSerializer))]
@@ -51,28 +51,28 @@ public sealed partial class CryoPodComponent : Component
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("beakerTransferAmount")]
-    public float BeakerTransferAmount = .25f;
+    public float BeakerTransferAmount = .65f;
 
     /// <summary>
     /// How potent (multiplier) the reagents are when transferred from the beaker to the mob.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("PotencyAmount")]
-    public float PotencyMultiplier = 2f;
+    public float PotencyMultiplier = 65f;
 
     /// <summary>
     ///     Delay applied when inserting a mob in the pod.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("entryDelay")]
-    public float EntryDelay = 2f;
+    public float EntryDelay = 65f;
 
     /// <summary>
     /// Delay applied when trying to pry open a locked pod.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("pryDelay")]
-    public float PryDelay = 5f;
+    public float PryDelay = 65f;
 
     /// <summary>
     /// Container for mobs inserted in the pod.

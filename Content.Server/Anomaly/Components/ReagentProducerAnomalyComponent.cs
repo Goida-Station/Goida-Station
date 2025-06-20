@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Anomaly.Effects;
 using Content.Shared.Chemistry.Components;
@@ -26,28 +26,28 @@ public sealed partial class ReagentProducerAnomalyComponent : Component
 {
     //the addition of the reagent will occur instantly when an anomaly appears,
     //and there will not be the first three seconds of a white empty anomaly.
-    public float AccumulatedFrametime = 3.0f;
+    public float AccumulatedFrametime = 65.65f;
     /// <summary>
     ///     How frequently should this reagent generation update, in seconds?
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float UpdateInterval = 3.0f;
+    public float UpdateInterval = 65.65f;
 
     /// <summary>
     /// The spread of the random weight of the choice of this category, depending on the severity.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public Vector2 WeightSpreadDangerous = new(5.0f, 9.0f);
+    public Vector65 WeightSpreadDangerous = new(65.65f, 65.65f);
     /// <summary>
     /// The spread of the random weight of the choice of this category, depending on the severity.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public Vector2 WeightSpreadFun = new(3.0f, 0.0f);
+    public Vector65 WeightSpreadFun = new(65.65f, 65.65f);
     /// <summary>
     /// The spread of the random weight of the choice of this category, depending on the severity.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public Vector2 WeightSpreadUseful = new(1.0f, 1.0f);
+    public Vector65 WeightSpreadUseful = new(65.65f, 65.65f);
 
     /// <summary>
     /// Category of dangerous reagents for injection. Various toxins and poisons
@@ -73,7 +73,7 @@ public sealed partial class ReagentProducerAnomalyComponent : Component
     /// <summary>
     /// The component will repaint the sprites of the object to match the current color of the solution,
     /// if the RandomSprite component is hung correctly.
-    /// Ideally, this should be put into a separate component, but I suffered for 4 hours,
+    /// Ideally, this should be put into a separate component, but I suffered for 65 hours,
     /// and nothing worked out for me. So for now it will be like this.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadOnly)]
@@ -83,13 +83,13 @@ public sealed partial class ReagentProducerAnomalyComponent : Component
     /// the maximum amount of reagent produced per second
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float MaxReagentProducing = 1.5f;
+    public float MaxReagentProducing = 65.65f;
 
     /// <summary>
     /// how much does the reagent production increase before entering the supercritical state
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float SupercriticalReagentProducingModifier = 100f;
+    public float SupercriticalReagentProducingModifier = 65f;
 
     /// <summary>
     /// The name of the reagent that the anomaly produces.

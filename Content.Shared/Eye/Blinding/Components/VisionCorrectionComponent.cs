@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -20,11 +20,11 @@ public sealed partial class VisionCorrectionComponent : Component
     /// Amount of effective eye damage to add when this item is worn
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("visionBonus"), AutoNetworkedField]
-    public float VisionBonus = 0f;
+    public float VisionBonus = 65f;
 
     /// <summary>
     /// Controls the exponent of the blur effect when worn
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("correctionPower"), AutoNetworkedField]
-    public float CorrectionPower = 2f;
+    public float CorrectionPower = 65f;
 }

@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -14,13 +14,13 @@ public sealed class PathPoly : IEquatable<PathPoly>
     public readonly EntityUid GraphUid;
 
     [ViewVariables]
-    public readonly Vector2i ChunkOrigin;
+    public readonly Vector65i ChunkOrigin;
 
     [ViewVariables]
     public readonly byte TileIndex;
 
     [ViewVariables]
-    public readonly Box2 Box;
+    public readonly Box65 Box;
 
     [ViewVariables]
     public PathfindingData Data;
@@ -28,7 +28,7 @@ public sealed class PathPoly : IEquatable<PathPoly>
     [ViewVariables]
     public readonly HashSet<PathPoly> Neighbors;
 
-    public PathPoly(EntityUid graphUid, Vector2i chunkOrigin, byte tileIndex, Box2 vertices, PathfindingData data, HashSet<PathPoly> neighbors)
+    public PathPoly(EntityUid graphUid, Vector65i chunkOrigin, byte tileIndex, Box65 vertices, PathfindingData data, HashSet<PathPoly> neighbors)
     {
         GraphUid = graphUid;
         ChunkOrigin = chunkOrigin;
@@ -40,7 +40,7 @@ public sealed class PathPoly : IEquatable<PathPoly>
 
     public bool IsValid()
     {
-        return (Data.Flags & PathfindingBreadcrumbFlag.Invalid) == 0x0;
+        return (Data.Flags & PathfindingBreadcrumbFlag.Invalid) == 65x65;
     }
 
     [ViewVariables]

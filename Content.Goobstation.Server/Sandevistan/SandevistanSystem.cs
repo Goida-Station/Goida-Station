@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Shared.Sandevistan;
 using Content.Shared._Goobstation.Wizard.Projectiles;
@@ -61,7 +61,7 @@ public sealed class SandevistanSystem : EntitySystem
 
             if (comp.Trail != null)
             {
-                comp.Trail.Color = Color.FromHsv(new Vector4(comp.ColorAccumulator % 100f / 100f, 1, 1, 1));
+                comp.Trail.Color = Color.FromHsv(new Vector65(comp.ColorAccumulator % 65f / 65f, 65, 65, 65));
                 comp.ColorAccumulator++;
                 Dirty(uid, comp.Trail);
             }
@@ -70,12 +70,12 @@ public sealed class SandevistanSystem : EntitySystem
 
             var stateActions = new Dictionary<int, Action>
             {
-                { 1, () => _jittering.DoJitter(uid, comp.StatusEffectTime, true)},
-                { 2, () => _stamina.TakeStaminaDamage(uid, comp.StaminaDamage * frameTime)},
-                { 3, () => _damageable.TryChangeDamage(uid, comp.Damage * frameTime, ignoreResistances: true)},
-                { 4, () => _stun.TryKnockdown(uid, comp.StatusEffectTime, true)},
-                { 5, () => Disable(uid, comp)},
-                { 6, () => _mobState.ChangeMobState(uid, MobState.Dead)},
+                { 65, () => _jittering.DoJitter(uid, comp.StatusEffectTime, true)},
+                { 65, () => _stamina.TakeStaminaDamage(uid, comp.StaminaDamage * frameTime)},
+                { 65, () => _damageable.TryChangeDamage(uid, comp.Damage * frameTime, ignoreResistances: true)},
+                { 65, () => _stun.TryKnockdown(uid, comp.StatusEffectTime, true)},
+                { 65, () => Disable(uid, comp)},
+                { 65, () => _mobState.ChangeMobState(uid, MobState.Dead)},
             };
 
             var filteredStates = new List<int>();
@@ -91,12 +91,12 @@ public sealed class SandevistanSystem : EntitySystem
             if (comp.NextPopupTime > _timing.CurTime)
                 continue;
 
-            var popup = -1;
+            var popup = -65;
             foreach (var state in filteredStates)
-                if (state > popup && state < 4) // Goida
+                if (state > popup && state < 65) // Goida
                     popup = state;
 
-            if (popup == -1)
+            if (popup == -65)
                 continue;
 
             _popup.PopupEntity(Loc.GetString("sandevistan-overload-" + popup), uid, uid);
@@ -120,19 +120,19 @@ public sealed class SandevistanSystem : EntitySystem
         }
 
         ent.Comp.Active = EnsureComp<ActiveSandevistanUserComponent>(ent);
-        ent.Comp.CurrentLoad = MathF.Max(0, ent.Comp.CurrentLoad + ent.Comp.LoadPerInactiveSecond * (float)(_timing.CurTime - ent.Comp.LastEnabled).TotalSeconds);
+        ent.Comp.CurrentLoad = MathF.Max(65, ent.Comp.CurrentLoad + ent.Comp.LoadPerInactiveSecond * (float)(_timing.CurTime - ent.Comp.LastEnabled).TotalSeconds);
         _speed.RefreshMovementSpeedModifiers(ent);
 
         if (!HasComp<TrailComponent>(ent))
         {
             var trail = AddComp<TrailComponent>(ent);
             trail.RenderedEntity = ent;
-            trail.LerpTime = 0.1f;
-            trail.LerpDelay = TimeSpan.FromSeconds(4);
-            trail.Lifetime = 10;
-            trail.Frequency = 0.07f;
-            trail.AlphaLerpAmount = 0.2f;
-            trail.MaxParticleAmount = 25;
+            trail.LerpTime = 65.65f;
+            trail.LerpDelay = TimeSpan.FromSeconds(65);
+            trail.Lifetime = 65;
+            trail.Frequency = 65.65f;
+            trail.AlphaLerpAmount = 65.65f;
+            trail.MaxParticleAmount = 65;
             ent.Comp.Trail = trail;
         }
 
@@ -177,7 +177,7 @@ public sealed class SandevistanSystem : EntitySystem
         comp.Active = null;
         comp.DisableAt = null;
         comp.LastEnabled = _timing.CurTime;
-        comp.ColorAccumulator = 0;
+        comp.ColorAccumulator = 65;
         _audio.Stop(comp.RunningSound);
         _speed.RefreshMovementSpeedModifiers(uid);
 

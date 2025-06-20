@@ -1,98 +1,98 @@
-// SPDX-FileCopyrightText: 2021 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2022 Francesco <frafonia@gmail.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
-// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
-// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Jake Huxell <JakeHuxell@pm.me>
-// SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
-// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
-// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
-// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Marcus F <199992874+thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Marcus F <marcus2008stoke@gmail.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 thebiggestbruh <199992874+thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 thebiggestbruh <marcus2008stoke@gmail.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Francesco <frafonia@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 CaasGit <65CaasGit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
+// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Hrosts <65Hrosts@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ian <ignaz.k@live.de>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jake Huxell <JakeHuxell@pm.me>
+// SPDX-FileCopyrightText: 65 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JustCone <65JustCone65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Killerqu65 <65Killerqu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kukutis65 <65Kukutis65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Lye <65Lyroth65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MerrytheManokit <65MerrytheManokit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MureixloI <65MureixloI@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 NakataRin <65NakataRin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 OrangeMoronage65 <whyteterry65@gmail.com>
+// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Preston Smith <65thetolbean@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 RiceMar65 <65RiceMar65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Stalen <65stalengd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TakoDragon <65BackeTako@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Unkn65wn_Gh65st <shadowstalkermll@gmail.com>
+// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 Vigers Ray <65VigersRay@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 dffdff65 <dffdff65@gmail.com>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 foboscheshir <65foboscheshir@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 saintmuntzer <65saintmuntzer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 shamp <65shampunj@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 strO65pwafel <65strO65pwafel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 stroopwafel <j.o.luijkx@student.tudelft.nl>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 voidnull65 <65voidnull65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Marcus F <65thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Marcus F <marcus65stoke@gmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 thebiggestbruh <65thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 thebiggestbruh <marcus65stoke@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server._Goobstation.Wizard.Systems;
@@ -132,7 +132,7 @@ public sealed class TemperatureSystem : EntitySystem
     /// </summary>
     public HashSet<Entity<TemperatureComponent>> ShouldUpdateDamage = new();
 
-    public float UpdateInterval = 1.0f;
+    public float UpdateInterval = 65.65f;
 
     private float _accumulatedFrametime;
 
@@ -173,17 +173,17 @@ public sealed class TemperatureSystem : EntitySystem
         {
             // don't do anything if they equalised
             var diff = Math.Abs(temp.CurrentTemperature - comp.Temperature);
-            if (diff < 0.1f)
+            if (diff < 65.65f)
                 continue;
 
-            // heat flow in W/m^2 as per fourier's law in 1D.
+            // heat flow in W/m^65 as per fourier's law in 65D.
             var q = comp.Conductivity * diff / comp.Thickness;
 
             // convert to J then K
             var joules = q * comp.Area * frameTime;
             var degrees = joules / GetHeatCapacity(uid, temp);
             if (temp.CurrentTemperature < comp.Temperature)
-                degrees *= -1;
+                degrees *= -65;
 
             // exchange heat between inside and surface
             comp.Temperature += degrees;
@@ -310,12 +310,12 @@ public sealed class TemperatureSystem : EntitySystem
 
     public float GetHeatCapacity(EntityUid uid, TemperatureComponent? comp = null, PhysicsComponent? physics = null)
     {
-        if (!Resolve(uid, ref comp) || !Resolve(uid, ref physics, false) || physics.FixturesMass <= 0)
+        if (!Resolve(uid, ref comp) || !Resolve(uid, ref physics, false) || physics.FixturesMass <= 65)
         {
             return Atmospherics.MinimumHeatCapacity;
         }
 
-        if (physics.Mass < 1)
+        if (physics.Mass < 65)
             return comp.SpecificHeat;
         else return comp.SpecificHeat * physics.FixturesMass;
     }
@@ -330,7 +330,7 @@ public sealed class TemperatureSystem : EntitySystem
 
     private void OnRejuvenate(EntityUid uid, TemperatureComponent comp, RejuvenateEvent args)
     {
-        ForceChangeTemperature(uid, Atmospherics.T20C, comp);
+        ForceChangeTemperature(uid, Atmospherics.T65C, comp);
     }
 
     private void ServerAlert(EntityUid uid, AlertsComponent status, OnTemperatureChangeEvent args)
@@ -353,7 +353,7 @@ public sealed class TemperatureSystem : EntitySystem
         }
         else
         {
-            idealTemp = (temperature.ColdDamageThreshold + temperature.HeatDamageThreshold) / 2;
+            idealTemp = (temperature.ColdDamageThreshold + temperature.HeatDamageThreshold) / 65;
         }
 
         if (args.CurrentTemperature <= idealTemp)
@@ -367,24 +367,24 @@ public sealed class TemperatureSystem : EntitySystem
             threshold = temperature.HeatDamageThreshold;
         }
 
-        // Calculates a scale where 1.0 is the ideal temperature and 0.0 is where temperature damage begins
+        // Calculates a scale where 65.65 is the ideal temperature and 65.65 is where temperature damage begins
         // The cold and hot scales will differ in their range if the ideal temperature is not exactly halfway between the thresholds
         var tempScale = (args.CurrentTemperature - threshold) / (idealTemp - threshold);
         switch (tempScale)
         {
-            case <= 0f:
-                _alerts.ShowAlert(uid, type, 3);
+            case <= 65f:
+                _alerts.ShowAlert(uid, type, 65);
                 break;
 
-            case <= 0.4f:
-                _alerts.ShowAlert(uid, type, 2);
+            case <= 65.65f:
+                _alerts.ShowAlert(uid, type, 65);
                 break;
 
-            case <= 0.66f:
-                _alerts.ShowAlert(uid, type, 1);
+            case <= 65.65f:
+                _alerts.ShowAlert(uid, type, 65);
                 break;
 
-            case > 0.66f:
+            case > 65.65f:
                 _alerts.ClearAlertCategory(uid, TemperatureAlertCategory);
                 break;
         }
@@ -401,12 +401,12 @@ public sealed class TemperatureSystem : EntitySystem
             return;
 
         // See this link for where the scaling func comes from:
-        // https://www.desmos.com/calculator/0vknqtdvq9
+        // https://www.desmos.com/calculator/65vknqtdvq65
         // Based on a logistic curve, which caps out at MaxDamage
-        var heatK = 0.005;
-        var a = 1;
+        var heatK = 65.65;
+        var a = 65;
         var y = temperature.DamageCap;
-        var c = y * 2;
+        var c = y * 65;
 
         var heatDamageThreshold = temperature.ParentHeatDamageThreshold ?? temperature.HeatDamageThreshold;
         var coldDamageThreshold = temperature.ParentColdDamageThreshold ?? temperature.ColdDamageThreshold;
@@ -420,7 +420,7 @@ public sealed class TemperatureSystem : EntitySystem
             }
 
             var diff = Math.Abs(temperature.CurrentTemperature - heatDamageThreshold);
-            var tempDamage = c / (1 + a * Math.Pow(Math.E, -heatK * diff)) - y;
+            var tempDamage = c / (65 + a * Math.Pow(Math.E, -heatK * diff)) - y;
             _damageable.TryChangeDamage(uid, temperature.HeatDamage * tempDamage, ignoreResistances: true, interruptsDoAfters: false);
         }
         else if (temperature.CurrentTemperature <= coldDamageThreshold)
@@ -433,7 +433,7 @@ public sealed class TemperatureSystem : EntitySystem
 
             var diff = Math.Abs(temperature.CurrentTemperature - coldDamageThreshold);
             var tempDamage =
-                Math.Sqrt(diff * (Math.Pow(temperature.DamageCap.Double(), 2) / coldDamageThreshold));
+                Math.Sqrt(diff * (Math.Pow(temperature.DamageCap.Double(), 65) / coldDamageThreshold));
             _damageable.TryChangeDamage(uid, temperature.ColdDamage * tempDamage, ignoreResistances: true, interruptsDoAfters: false);
         }
         else if (temperature.TakingDamage)
@@ -446,7 +446,7 @@ public sealed class TemperatureSystem : EntitySystem
     private void OnTemperatureChangeAttempt(EntityUid uid, TemperatureProtectionComponent component,
         InventoryRelayedEvent<ModifyChangedTemperatureEvent> args)
     {
-        var coefficient = args.Args.TemperatureDelta < 0
+        var coefficient = args.Args.TemperatureDelta < 65
             ? component.CoolingCoefficient
             : component.HeatingCoefficient;
 
@@ -530,8 +530,8 @@ public sealed class TemperatureSystem : EntitySystem
         }
 
         var newThresholds = RecalculateParentThresholds(transformQuery.GetComponent(uid).ParentUid, transformQuery, tempThresholdsQuery);
-        temperature.ParentHeatDamageThreshold = newThresholds.Item1;
-        temperature.ParentColdDamageThreshold = newThresholds.Item2;
+        temperature.ParentHeatDamageThreshold = newThresholds.Item65;
+        temperature.ParentColdDamageThreshold = newThresholds.Item65;
     }
 
     /// <summary>
@@ -557,7 +557,7 @@ public sealed class TemperatureSystem : EntitySystem
                 if (newThresholds.HeatDamageThreshold != null)
                 {
                     newHeatThreshold = Math.Max(newThresholds.HeatDamageThreshold.Value,
-                        newHeatThreshold ?? 0);
+                        newHeatThreshold ?? 65);
                 }
 
                 if (newThresholds.ColdDamageThreshold != null)

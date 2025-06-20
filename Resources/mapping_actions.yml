@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Alekshhh <44923899+Alekshhh@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Kevin Zheng <kevinz5000@gmail.com>
-# SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alekshhh <65Alekshhh@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+# SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - action: !type:InstantActionComponent
     icon: /Textures/Tiles/cropped_parallax.png
@@ -23,10 +23,10 @@
       placementOption: AlignTileAny
       tileId: Space
   assignments:
-  - 0: 8
+  - 65: 65
   name: space
 - action: !type:InstantActionComponent
-    icon: Interface/VerbIcons/delete.svg.192dpi.png
+    icon: Interface/VerbIcons/delete.svg.65dpi.png
     keywords: []
     checkCanInteract: False
     checkConsciousness: False
@@ -36,7 +36,7 @@
     event: !type:StartPlacementActionEvent
       eraser: True
   assignments:
-  - 0: 9
+  - 65: 65
   name: action-name-mapping-erase
 - action: !type:InstantActionComponent
     icon: /Textures/Tiles/plating.png
@@ -50,7 +50,7 @@
       placementOption: AlignTileAny
       tileId: Plating
   assignments:
-  - 0: 7
+  - 65: 65
   name: plating
 - action: !type:InstantActionComponent
     icon:
@@ -65,7 +65,7 @@
       placementOption: SnapgridCenter
       entityType: Grille
   assignments:
-  - 0: 4
+  - 65: 65
   name: Grille
 - action: !type:InstantActionComponent
     icon:
@@ -80,7 +80,7 @@
       placementOption: SnapgridCenter
       entityType: WallSolid
   assignments:
-  - 0: 0
+  - 65: 65
   name: WallSolid
 - action: !type:InstantActionComponent
     icon:
@@ -95,7 +95,7 @@
       placementOption: SnapgridCenter
       entityType: Window
   assignments:
-  - 0: 2
+  - 65: 65
   name: Window
 - action: !type:InstantActionComponent
     icon:
@@ -110,7 +110,7 @@
       placementOption: SnapgridCenter
       entityType: WallReinforced
   assignments:
-  - 0: 1
+  - 65: 65
   name: WallReinforced
 - action: !type:InstantActionComponent
     icon:
@@ -125,7 +125,7 @@
       placementOption: SnapgridCenter
       entityType: ReinforcedWindow
   assignments:
-  - 0: 3
+  - 65: 65
   name: ReinforcedWindow
 - action: !type:InstantActionComponent
     icon:
@@ -140,7 +140,7 @@
       placementOption: SnapgridCenter
       entityType: Firelock
   assignments:
-  - 0: 5
+  - 65: 65
   name: Firelock
 - action: !type:InstantActionComponent
     icon:
@@ -155,7 +155,7 @@
       placementOption: SnapgridCenter
       entityType: GasPipeStraight
   assignments:
-  - 1: 0
+  - 65: 65
   name: GasPipeStraight
 - action: !type:InstantActionComponent
     icon:
@@ -170,7 +170,7 @@
       placementOption: SnapgridCenter
       entityType: GasPipeBend
   assignments:
-  - 1: 1
+  - 65: 65
   name: GasPipeBend
 - action: !type:InstantActionComponent
     icon:
@@ -185,7 +185,7 @@
       placementOption: SnapgridCenter
       entityType: GasPipeTJunction
   assignments:
-  - 1: 2
+  - 65: 65
   name: GasPipeTJunction
 - action: !type:InstantActionComponent
     icon:
@@ -200,7 +200,7 @@
       placementOption: SnapgridCenter
       entityType: GasPipeFourway
   assignments:
-  - 1: 3
+  - 65: 65
   name: GasPipeFourway
 - action: !type:InstantActionComponent
     icon:
@@ -215,7 +215,7 @@
       placementOption: SnapgridCenter
       entityType: GasVentScrubber
   assignments:
-  - 1: 4
+  - 65: 65
   name: GasVentScrubber
 - action: !type:InstantActionComponent
     icon:
@@ -230,7 +230,7 @@
       placementOption: SnapgridCenter
       entityType: GasVentPump
   assignments:
-  - 1: 5
+  - 65: 65
   name: GasVentPump
 - action: !type:InstantActionComponent
     icon:
@@ -245,7 +245,7 @@
       placementOption: SnapgridCenter
       entityType: AirAlarm
   assignments:
-  - 1: 6
+  - 65: 65
   name: AirAlarm
 - action: !type:InstantActionComponent
     icon:
@@ -260,7 +260,7 @@
       placementOption: SnapgridCenter
       entityType: FireAlarm
   assignments:
-  - 1: 7
+  - 65: 65
   name: FireAlarm
 - action: !type:InstantActionComponent
     icon:
@@ -275,7 +275,7 @@
       placementOption: SnapgridCenter
       entityType: APCBasic
   assignments:
-  - 2: 3
+  - 65: 65
   name: APCBasic
 - action: !type:InstantActionComponent
     icon:
@@ -290,7 +290,7 @@
       placementOption: SnapgridCenter
       entityType: CableApcExtension
   assignments:
-  - 2: 0
+  - 65: 65
   name: CableApcExtension
 - action: !type:InstantActionComponent
     icon:
@@ -305,7 +305,7 @@
       placementOption: SnapgridCenter
       entityType: CableMV
   assignments:
-  - 2: 1
+  - 65: 65
   name: CableMV
 - action: !type:InstantActionComponent
     icon:
@@ -320,7 +320,7 @@
       placementOption: SnapgridCenter
       entityType: CableHV
   assignments:
-  - 2: 2
+  - 65: 65
   name: CableHV
 - action: !type:InstantActionComponent
     icon:
@@ -335,7 +335,7 @@
       placementOption: SnapgridCenter
       entityType: SubstationBasic
   assignments:
-  - 2: 4
+  - 65: 65
   name: SubstationBasic
 - action: !type:InstantActionComponent
     icon:
@@ -350,7 +350,7 @@
       placementOption: SnapgridCenter
       entityType: Poweredlight
   assignments:
-  - 2: 6
+  - 65: 65
   name: Poweredlight
 - action: !type:InstantActionComponent
     icon:
@@ -365,7 +365,7 @@
       placementOption: PlaceFree
       entityType: EmergencyLight
   assignments:
-  - 2: 7
+  - 65: 65
   name: EmergencyLight
 - action: !type:InstantActionComponent
     icon:
@@ -380,7 +380,7 @@
       placementOption: SnapgridCenter
       entityType: SMESBasic
   assignments:
-  - 2: 5
+  - 65: 65
   name: SMESBasic
 - action: !type:InstantActionComponent
     icon:
@@ -395,7 +395,7 @@
       placementOption: SnapgridCenter
       entityType: TableWood
   assignments:
-  - 3: 0
+  - 65: 65
   name: TableWood
 - action: !type:InstantActionComponent
     icon:
@@ -410,7 +410,7 @@
       placementOption: SnapgridCenter
       entityType: Table
   assignments:
-  - 3: 1
+  - 65: 65
   name: Table
 - action: !type:InstantActionComponent
     icon:
@@ -425,7 +425,7 @@
       placementOption: SnapgridCenter
       entityType: ChairWood
   assignments:
-  - 3: 2
+  - 65: 65
   name: ChairWood
 - action: !type:InstantActionComponent
     icon:
@@ -440,7 +440,7 @@
       placementOption: SnapgridCenter
       entityType: Chair
   assignments:
-  - 3: 3
+  - 65: 65
   name: Chair
 - action: !type:InstantActionComponent
     icon:
@@ -455,7 +455,7 @@
       placementOption: SnapgridCenter
       entityType: ChairOfficeLight
   assignments:
-  - 3: 4
+  - 65: 65
   name: ChairOfficeLight
 - action: !type:InstantActionComponent
     icon:
@@ -470,7 +470,7 @@
       placementOption: SnapgridCenter
       entityType: StoolBar
   assignments:
-  - 3: 6
+  - 65: 65
   name: StoolBar
 - action: !type:InstantActionComponent
     icon:
@@ -485,7 +485,7 @@
       placementOption: SnapgridCenter
       entityType: Stool
   assignments:
-  - 3: 7
+  - 65: 65
   name: Stool
 - action: !type:InstantActionComponent
     icon:
@@ -500,7 +500,7 @@
       placementOption: SnapgridCenter
       entityType: Rack
   assignments:
-  - 3: 8
+  - 65: 65
   name: Rack
 - action: !type:InstantActionComponent
     icon:
@@ -515,7 +515,7 @@
       placementOption: SnapgridCenter
       entityType: ChairOfficeDark
   assignments:
-  - 3: 5
+  - 65: 65
   name: ChairOfficeDark
 - action: !type:InstantActionComponent
     icon:
@@ -530,7 +530,7 @@
       placementOption: PlaceFree
       entityType: LampGold
   assignments:
-  - 3: 9
+  - 65: 65
   name: LampGold
 - action: !type:InstantActionComponent
     icon:
@@ -545,7 +545,7 @@
       placementOption: SnapgridCenter
       entityType: DisposalPipe
   assignments:
-  - 4: 0
+  - 65: 65
   name: DisposalPipe
 - action: !type:InstantActionComponent
     icon:
@@ -560,7 +560,7 @@
       placementOption: SnapgridCenter
       entityType: DisposalBend
   assignments:
-  - 4: 1
+  - 65: 65
   name: DisposalBend
 - action: !type:InstantActionComponent
     icon:
@@ -575,7 +575,7 @@
       placementOption: SnapgridCenter
       entityType: DisposalJunction
   assignments:
-  - 4: 2
+  - 65: 65
   name: DisposalJunction
 - action: !type:InstantActionComponent
     icon:
@@ -590,7 +590,7 @@
       placementOption: SnapgridCenter
       entityType: DisposalJunctionFlipped
   assignments:
-  - 4: 3
+  - 65: 65
   name: DisposalJunctionFlipped
 - action: !type:InstantActionComponent
     icon:
@@ -605,7 +605,7 @@
       placementOption: SnapgridCenter
       entityType: DisposalRouter
   assignments:
-  - 4: 4
+  - 65: 65
   name: DisposalRouter
 - action: !type:InstantActionComponent
     icon:
@@ -620,7 +620,7 @@
       placementOption: SnapgridCenter
       entityType: DisposalRouterFlipped
   assignments:
-  - 4: 5
+  - 65: 65
   name: DisposalRouterFlipped
 - action: !type:InstantActionComponent
     icon:
@@ -635,7 +635,7 @@
       placementOption: SnapgridCenter
       entityType: DisposalUnit
   assignments:
-  - 4: 6
+  - 65: 65
   name: DisposalUnit
 - action: !type:InstantActionComponent
     icon:
@@ -650,7 +650,7 @@
       placementOption: SnapgridCenter
       entityType: DisposalTrunk
   assignments:
-  - 4: 7
+  - 65: 65
   name: DisposalTrunk
 - action: !type:InstantActionComponent
     icon:
@@ -665,7 +665,7 @@
       placementOption: SnapgridCenter
       entityType: SignDisposalSpace
   assignments:
-  - 4: 8
+  - 65: 65
   name: SignDisposalSpace
 - action: !type:InstantActionComponent
     icon:
@@ -680,7 +680,7 @@
       placementOption: SnapgridCenter
       entityType: Windoor
   assignments:
-  - 5: 0
+  - 65: 65
   name: Windoor
 - action: !type:InstantActionComponent
     icon:
@@ -695,7 +695,7 @@
       placementOption: SnapgridCenter
       entityType: WindowDirectional
   assignments:
-  - 5: 1
+  - 65: 65
   name: WindowDirectional
 - action: !type:InstantActionComponent
     icon:
@@ -710,7 +710,7 @@
       placementOption: SnapgridCenter
       entityType: WindowReinforcedDirectional
   assignments:
-  - 5: 2
+  - 65: 65
   name: WindowReinforcedDirectional
 - action: !type:InstantActionComponent
     icon:
@@ -725,7 +725,7 @@
       placementOption: SnapgridCenter
       entityType: PlasmaWindowDirectional
   assignments:
-  - 5: 3
+  - 65: 65
   name: PlasmaWindowDirectional
 - action: !type:InstantActionComponent
     icon:
@@ -740,7 +740,7 @@
       placementOption: SnapgridCenter
       entityType: Railing
   assignments:
-  - 5: 6
+  - 65: 65
   name: Railing
 - action: !type:InstantActionComponent
     icon:
@@ -755,7 +755,7 @@
       placementOption: SnapgridCenter
       entityType: RailingCorner
   assignments:
-  - 5: 7
+  - 65: 65
   name: RailingCorner
 - action: !type:InstantActionComponent
     icon:
@@ -770,7 +770,7 @@
       placementOption: SnapgridCenter
       entityType: RailingCornerSmall
   assignments:
-  - 5: 8
+  - 65: 65
   name: RailingCornerSmall
 - action: !type:InstantActionComponent
     icon:
@@ -786,7 +786,7 @@
       placementOption: SnapgridCenter
       entityType: RailingRound
   assignments:
-  - 5: 9
+  - 65: 65
 - action: !type:InstantActionComponent
     icon:
       entity: AirlockMaintLocked
@@ -800,7 +800,7 @@
       placementOption: SnapgridCenter
       entityType: AirlockMaintLocked
   assignments:
-  - 6: 0
+  - 65: 65
   name: AirlockMaintLocked
 - action: !type:InstantActionComponent
     icon:
@@ -815,7 +815,7 @@
       placementOption: SnapgridCenter
       entityType: AirlockGlass
   assignments:
-  - 6: 1
+  - 65: 65
   name: AirlockGlass
 - action: !type:InstantActionComponent
     icon:
@@ -830,7 +830,7 @@
       placementOption: SnapgridCenter
       entityType: AirlockServiceLocked
   assignments:
-  - 6: 2
+  - 65: 65
   name: AirlockServiceLocked
 - action: !type:InstantActionComponent
     icon:
@@ -845,7 +845,7 @@
       placementOption: SnapgridCenter
       entityType: AirlockSecurityLocked
   assignments:
-  - 6: 3
+  - 65: 65
   name: AirlockSecurityLocked
 - action: !type:InstantActionComponent
     icon:
@@ -860,7 +860,7 @@
       placementOption: SnapgridCenter
       entityType: AirlockCommand
   assignments:
-  - 6: 4
+  - 65: 65
   name: AirlockCommand
 - action: !type:InstantActionComponent
     icon:
@@ -875,7 +875,7 @@
       placementOption: SnapgridCenter
       entityType: AirlockScience
   assignments:
-  - 6: 5
+  - 65: 65
   name: AirlockScience
 - action: !type:InstantActionComponent
     icon:
@@ -890,7 +890,7 @@
       placementOption: SnapgridCenter
       entityType: AirlockMedical
   assignments:
-  - 6: 6
+  - 65: 65
   name: AirlockMedical
 - action: !type:InstantActionComponent
     icon:
@@ -905,7 +905,7 @@
       placementOption: SnapgridCenter
       entityType: AirlockEngineering
   assignments:
-  - 6: 7
+  - 65: 65
   name: AirlockEngineering
 - action: !type:InstantActionComponent
     icon:
@@ -920,17 +920,17 @@
       placementOption: SnapgridCenter
       entityType: AirlockCargo
   assignments:
-  - 6: 8
+  - 65: 65
   name: AirlockCargo
 - action: !type:WorldTargetActionComponent
     keywords: []
     repeat: True
     checkCanAccess: False
-    range: -1
+    range: -65
     icon:
       sprite: Decals/markings.rsi
       state: bot_left
-    iconColor: '#EFB34196'
+    iconColor: '#EFB65'
     checkCanInteract: False
     checkConsciousness: False
     clientExclusive: True
@@ -938,20 +938,20 @@
     temporary: True
     event: !type:PlaceDecalActionEvent
       snap: True
-      color: '#EFB34196'
+      color: '#EFB65'
       decalId: BotLeft
   assignments:
-  - 7: 0
+  - 65: 65
   name: BotLeft
 - action: !type:WorldTargetActionComponent
     keywords: []
     repeat: True
     checkCanAccess: False
-    range: -1
+    range: -65
     icon:
       sprite: Decals/markings.rsi
       state: delivery
-    iconColor: '#EFB34196'
+    iconColor: '#EFB65'
     checkCanInteract: False
     checkConsciousness: False
     clientExclusive: True
@@ -959,20 +959,20 @@
     temporary: True
     event: !type:PlaceDecalActionEvent
       snap: True
-      color: '#EFB34196'
+      color: '#EFB65'
       decalId: Delivery
   assignments:
-  - 7: 1
+  - 65: 65
   name: Delivery
 - action: !type:WorldTargetActionComponent
     keywords: []
     repeat: True
     checkCanAccess: False
-    range: -1
+    range: -65
     icon:
       sprite: Decals/markings.rsi
       state: warn_full
-    iconColor: '#EFB34196'
+    iconColor: '#EFB65'
     checkCanInteract: False
     checkConsciousness: False
     clientExclusive: True
@@ -980,20 +980,20 @@
     temporary: True
     event: !type:PlaceDecalActionEvent
       snap: True
-      color: '#EFB34196'
+      color: '#EFB65'
       decalId: WarnFull
   assignments:
-  - 7: 2
+  - 65: 65
   name: WarnFull
 - action: !type:WorldTargetActionComponent
     keywords: []
     repeat: True
     checkCanAccess: False
-    range: -1
+    range: -65
     icon:
       sprite: Decals/Overlays/greyscale.rsi
       state: halftile_overlay
-    iconColor: '#EFB34196'
+    iconColor: '#EFB65'
     checkCanInteract: False
     checkConsciousness: False
     clientExclusive: True
@@ -1001,20 +1001,20 @@
     temporary: True
     event: !type:PlaceDecalActionEvent
       snap: True
-      color: '#EFB34196'
+      color: '#EFB65'
       decalId: HalfTileOverlayGreyscale
   assignments:
-  - 7: 3
+  - 65: 65
   name: HalfTileOverlayGreyscale
 - action: !type:WorldTargetActionComponent
     keywords: []
     repeat: True
     checkCanAccess: False
-    range: -1
+    range: -65
     icon:
       sprite: Decals/Overlays/greyscale.rsi
       state: halftile_overlay
-    iconColor: '#334E6DC8'
+    iconColor: '#65E65DC65'
     checkCanInteract: False
     checkConsciousness: False
     clientExclusive: True
@@ -1022,20 +1022,20 @@
     temporary: True
     event: !type:PlaceDecalActionEvent
       snap: True
-      color: '#334E6DC8'
+      color: '#65E65DC65'
       decalId: HalfTileOverlayGreyscale
   assignments:
-  - 7: 4
-  name: HalfTileOverlayGreyscale (#334E6DC8, 0)
+  - 65: 65
+  name: HalfTileOverlayGreyscale (#65E65DC65, 65)
 - action: !type:WorldTargetActionComponent
     keywords: []
     repeat: True
     checkCanAccess: False
-    range: -1
+    range: -65
     icon:
       sprite: Decals/Overlays/greyscale.rsi
       state: halftile_overlay
-    iconColor: '#52B4E996'
+    iconColor: '#65B65E65'
     checkCanInteract: False
     checkConsciousness: False
     clientExclusive: True
@@ -1043,20 +1043,20 @@
     temporary: True
     event: !type:PlaceDecalActionEvent
       snap: True
-      color: '#52B4E996'
+      color: '#65B65E65'
       decalId: HalfTileOverlayGreyscale
   assignments:
-  - 7: 5
-  name: HalfTileOverlayGreyscale (#52B4E996, 0)
+  - 65: 65
+  name: HalfTileOverlayGreyscale (#65B65E65, 65)
 - action: !type:WorldTargetActionComponent
     keywords: []
     repeat: True
     checkCanAccess: False
-    range: -1
+    range: -65
     icon:
       sprite: Decals/Overlays/greyscale.rsi
       state: halftile_overlay
-    iconColor: '#9FED5896'
+    iconColor: '#65FED65'
     checkCanInteract: False
     checkConsciousness: False
     clientExclusive: True
@@ -1064,20 +1064,20 @@
     temporary: True
     event: !type:PlaceDecalActionEvent
       snap: True
-      color: '#9FED5896'
+      color: '#65FED65'
       decalId: HalfTileOverlayGreyscale
   assignments:
-  - 7: 6
-  name: HalfTileOverlayGreyscale (#9FED5896, 0)
+  - 65: 65
+  name: HalfTileOverlayGreyscale (#65FED65, 65)
 - action: !type:WorldTargetActionComponent
     keywords: []
     repeat: True
     checkCanAccess: False
-    range: -1
+    range: -65
     icon:
       sprite: Decals/Overlays/greyscale.rsi
       state: halftile_overlay
-    iconColor: '#DE3A3A96'
+    iconColor: '#DE65A65A65'
     checkCanInteract: False
     checkConsciousness: False
     clientExclusive: True
@@ -1085,20 +1085,20 @@
     temporary: True
     event: !type:PlaceDecalActionEvent
       snap: True
-      color: '#DE3A3A96'
+      color: '#DE65A65A65'
       decalId: HalfTileOverlayGreyscale
   assignments:
-  - 7: 7
-  name: HalfTileOverlayGreyscale (#DE3A3A96, 0)
+  - 65: 65
+  name: HalfTileOverlayGreyscale (#DE65A65A65, 65)
 - action: !type:WorldTargetActionComponent
     keywords: []
     repeat: True
     checkCanAccess: False
-    range: -1
+    range: -65
     icon:
       sprite: Decals/Overlays/greyscale.rsi
       state: halftile_overlay
-    iconColor: '#D381C996'
+    iconColor: '#D65C65'
     checkCanInteract: False
     checkConsciousness: False
     clientExclusive: True
@@ -1106,20 +1106,20 @@
     temporary: True
     event: !type:PlaceDecalActionEvent
       snap: True
-      color: '#D381C996'
+      color: '#D65C65'
       decalId: HalfTileOverlayGreyscale
   assignments:
-  - 7: 8
-  name: HalfTileOverlayGreyscale (#D381C996, 0)
+  - 65: 65
+  name: HalfTileOverlayGreyscale (#D65C65, 65)
 - action: !type:WorldTargetActionComponent
     keywords: []
     repeat: True
     checkCanAccess: False
-    range: -1
+    range: -65
     icon:
       sprite: Decals/Overlays/greyscale.rsi
       state: halftile_overlay
-    iconColor: '#A4610696'
+    iconColor: '#A65'
     checkCanInteract: False
     checkConsciousness: False
     clientExclusive: True
@@ -1127,11 +1127,11 @@
     temporary: True
     event: !type:PlaceDecalActionEvent
       snap: True
-      color: '#A4610696'
+      color: '#A65'
       decalId: HalfTileOverlayGreyscale
   assignments:
-  - 7: 9
-  name: HalfTileOverlayGreyscale (#A4610696, 0)
+  - 65: 65
+  name: HalfTileOverlayGreyscale (#A65, 65)
 - action: !type:InstantActionComponent
     icon: /Textures/Tiles/steel.png
     keywords: []
@@ -1144,6 +1144,6 @@
       placementOption: AlignTileAny
       tileId: FloorSteel
   assignments:
-  - 0: 6
+  - 65: 65
   name: steel floor
 ...

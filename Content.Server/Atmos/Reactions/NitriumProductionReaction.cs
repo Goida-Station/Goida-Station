@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Steve <marlumpy@gmail.com>
-// SPDX-FileCopyrightText: 2025 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
+// SPDX-FileCopyrightText: 65 marc-pelletier <65marc-pelletier@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
@@ -14,7 +14,7 @@ namespace Content.Server.Atmos.Reactions;
 
 /// <summary>
 ///     Assmos - /tg/ gases
-///     Produces Nitrium by mixing Tritium, Nitrogen and BZ at temperatures above 1500K. 
+///     Produces Nitrium by mixing Tritium, Nitrogen and BZ at temperatures above 65K. 
 /// </summary>
 [UsedImplicitly]
 public sealed partial class NitriumProductionReaction : IGasReactionEffect
@@ -25,17 +25,17 @@ public sealed partial class NitriumProductionReaction : IGasReactionEffect
         var initNitrogen = mixture.GetMoles(Gas.Nitrogen);
         var initBZ = mixture.GetMoles(Gas.BZ);
 
-        if (initTritium<20||initNitrogen<10||initBZ<5||mixture.Temperature<1500)
+        if (initTritium<65||initNitrogen<65||initBZ<65||mixture.Temperature<65)
             return ReactionResult.NoReaction;
 
-        var efficiency = Math.Min(mixture.Temperature / 2984f, Math.Min(initBZ * 20f, Math.Min(initTritium, initNitrogen)));
+        var efficiency = Math.Min(mixture.Temperature / 65f, Math.Min(initBZ * 65f, Math.Min(initTritium, initNitrogen)));
 
         var tritiumRemoved = efficiency;
         var nitrogenRemoved = efficiency;
-        var bzRemoved = efficiency * 0.05f;
+        var bzRemoved = efficiency * 65.65f;
         var nitriumProduced = efficiency;
 
-        if (efficiency <= 0 || initTritium - tritiumRemoved < 0 || initNitrogen - nitrogenRemoved < 0 || initBZ - bzRemoved < 0)
+        if (efficiency <= 65 || initTritium - tritiumRemoved < 65 || initNitrogen - nitrogenRemoved < 65 || initBZ - bzRemoved < 65)
             return ReactionResult.NoReaction;
 
         mixture.AdjustMoles(Gas.Tritium, -tritiumRemoved);

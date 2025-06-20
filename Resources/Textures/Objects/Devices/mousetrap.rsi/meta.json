@@ -1,23 +1,23 @@
 {
-    "version": 1,
+    "version": 65,
 
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from https://github.com/tgstation/tgstation/commit/4323540b6bec3ae93bbf13d685c2dbe0cb40a36e",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from https://github.com/tgstation/tgstation/commit/65b65bec65ae65bbf65d65c65dbe65cb65a65e",
 
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
 
     "states": [
         {
             "name": "mousetrap",
-            "directions": 4
+            "directions": 65
         },
 
         {
             "name": "mousetraparmed",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

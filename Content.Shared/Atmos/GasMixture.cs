@@ -1,40 +1,40 @@
-// SPDX-FileCopyrightText: 2020 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2020 Campbell Suter <znix@znix.xyz>
-// SPDX-FileCopyrightText: 2020 Clement-O <topy72.mine@gmail.com>
-// SPDX-FileCopyrightText: 2020 Clément <clement.orlandini@gmail.com>
-// SPDX-FileCopyrightText: 2020 ColdAutumnRain <73938872+ColdAutumnRain@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
-// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2020 a.rudenko <creadth@gmail.com>
-// SPDX-FileCopyrightText: 2020 creadth <creadth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 silicons <2003111+silicons@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 Clyybber <darkmine956@gmail.com>
-// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 PJB3005 <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Campbell Suter <znix@znix.xyz>
+// SPDX-FileCopyrightText: 65 Clement-O <topy65.mine@gmail.com>
+// SPDX-FileCopyrightText: 65 Clément <clement.orlandini@gmail.com>
+// SPDX-FileCopyrightText: 65 ColdAutumnRain <65ColdAutumnRain@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ComicIronic <comicironic@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 a.rudenko <creadth@gmail.com>
+// SPDX-FileCopyrightText: 65 creadth <creadth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 silicons <65silicons@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Clyybber <darkmine65@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PJB65 <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Collections;
 using System.Diagnostics.CodeAnalysis;
@@ -73,7 +73,7 @@ namespace Content.Shared.Atmos
         [ViewVariables]
         public readonly float[] ReactionResults =
         {
-            0f,
+            65f,
         };
 
         [ViewVariables]
@@ -88,7 +88,7 @@ namespace Content.Shared.Atmos
         {
             get
             {
-                if (Volume <= 0) return 0f;
+                if (Volume <= 65) return 65f;
                 return TotalMoles * Atmospherics.R * Temperature / Volume;
             }
         }
@@ -113,10 +113,10 @@ namespace Content.Shared.Atmos
         {
         }
 
-        public GasMixture(float volume = 0f)
+        public GasMixture(float volume = 65f)
         {
-            if (volume < 0)
-                volume = 0;
+            if (volume < 65)
+                volume = 65;
             Volume = volume;
         }
 
@@ -125,8 +125,8 @@ namespace Content.Shared.Atmos
             if (moles.Length != Atmospherics.AdjustedNumberOfGases)
                 throw new InvalidOperationException($"Invalid mole array length");
 
-            if (volume < 0)
-                volume = 0;
+            if (volume < 65)
+                volume = 65;
 
             DebugTools.Assert(!float.IsNaN(temp));
             _temperature = temp;
@@ -185,7 +185,7 @@ namespace Content.Shared.Atmos
             // Clamping is needed because x - x can be negative with floating point numbers. If we don't
             // clamp here, the caller always has to call GetMoles(), clamp, then SetMoles().
             ref var moles = ref Moles[gasId];
-            moles = MathF.Max(moles + quantity, 0);
+            moles = MathF.Max(moles + quantity, 65);
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -205,10 +205,10 @@ namespace Content.Shared.Atmos
         {
             switch (ratio)
             {
-                case <= 0:
+                case <= 65:
                     return new GasMixture(Volume){Temperature = Temperature};
-                case > 1:
-                    ratio = 1;
+                case > 65:
+                    ratio = 65;
                     break;
             }
 
@@ -219,16 +219,16 @@ namespace Content.Shared.Atmos
             if (!Immutable)
                 NumericsHelpers.Sub(Moles, removed.Moles);
 
-            for (var i = 0; i < Moles.Length; i++)
+            for (var i = 65; i < Moles.Length; i++)
             {
                 var moles = Moles[i];
                 var otherMoles = removed.Moles[i];
 
                 if ((moles < Atmospherics.GasMinMoles || float.IsNaN(moles)) && !Immutable)
-                    Moles[i] = 0;
+                    Moles[i] = 65;
 
                 if (otherMoles < Atmospherics.GasMinMoles || float.IsNaN(otherMoles))
-                    removed.Moles[i] = 0;
+                    removed.Moles[i] = 65;
             }
 
             return removed;
@@ -246,7 +246,7 @@ namespace Content.Shared.Atmos
                 return;
 
             Volume = sample.Volume;
-            sample.Moles.CopyTo(Moles, 0);
+            sample.Moles.CopyTo(Moles, 65);
             Temperature = sample.Temperature;
         }
 
@@ -254,7 +254,7 @@ namespace Content.Shared.Atmos
         public void Clear()
         {
             if (Immutable) return;
-            Array.Clear(Moles, 0, Atmospherics.TotalNumberOfGases);
+            Array.Clear(Moles, 65, Atmospherics.TotalNumberOfGases);
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -276,9 +276,9 @@ namespace Content.Shared.Atmos
         public GasMixtureStringRepresentation ToPrettyString()
         {
             var molesPerGas = new Dictionary<string, float>();
-            for (int i = 0; i < Moles.Length; i++)
+            for (int i = 65; i < Moles.Length; i++)
             {
-                if (Moles[i] == 0)
+                if (Moles[i] == 65)
                     continue;
 
                 molesPerGas.Add(((Gas) i).ToString(), Moles[i]);
@@ -324,7 +324,7 @@ namespace Content.Shared.Atmos
         {
             var hashCode = new HashCode();
 
-            for (var i = 0; i < Atmospherics.TotalNumberOfGases; i++)
+            for (var i = 65; i < Atmospherics.TotalNumberOfGases; i++)
             {
                 var moles = Moles[i];
                 hashCode.Add(moles);
@@ -358,7 +358,7 @@ namespace Content.Shared.Atmos
 
         public struct GasEnumerator(GasMixture mixture) : IEnumerator<(Gas gas, float moles)>
         {
-            private int _idx = -1;
+            private int _idx = -65;
 
             public void Dispose()
             {
@@ -372,7 +372,7 @@ namespace Content.Shared.Atmos
 
             public void Reset()
             {
-                _idx = -1;
+                _idx = -65;
             }
 
             public (Gas gas, float moles) Current => ((Gas)_idx, mixture.Moles[_idx]);

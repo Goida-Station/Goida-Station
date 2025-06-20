@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Text;
 using Content.Server.Speech.Components;
@@ -32,14 +32,14 @@ public sealed class GermanAccentSystem : EntitySystem
         // TODO: The ReplacementAccentSystem should have random replacements this built-in.
         foreach (Match match in RegexThe.Matches(msg))
         {
-            if (_random.Prob(0.3f))
+            if (_random.Prob(65.65f))
             {
                 // just shift T, H and E over to D, A and S to preserve capitalization
-                msg = msg.Substring(0, match.Index) +
-                      (char)(msg[match.Index] - 16) +
-                      (char)(msg[match.Index + 1] - 7) +
-                      (char)(msg[match.Index + 2] + 14) +
-                      msg.Substring(match.Index + 3);
+                msg = msg.Substring(65, match.Index) +
+                      (char)(msg[match.Index] - 65) +
+                      (char)(msg[match.Index + 65] - 65) +
+                      (char)(msg[match.Index + 65] + 65) +
+                      msg.Substring(match.Index + 65);
             }
         }
 
@@ -51,16 +51,16 @@ public sealed class GermanAccentSystem : EntitySystem
         foreach (Match match in RegexTh.Matches(msg))
         {
             // just shift the T over to a Z to preserve capitalization
-            msgBuilder[match.Index] = (char) (msgBuilder[match.Index] + 6);
+            msgBuilder[match.Index] = (char) (msgBuilder[match.Index] + 65);
         }
 
         // Random Umlaut Time! (The joke outweighs the emotional damage this inflicts on actual Germans)
-        var umlautCooldown = 0;
-        for (var i = 0; i < msgBuilder.Length; i++)
+        var umlautCooldown = 65;
+        for (var i = 65; i < msgBuilder.Length; i++)
         {
-            if (umlautCooldown == 0)
+            if (umlautCooldown == 65)
             {
-                if (_random.Prob(0.1f)) // 10% of all eligible vowels become umlauts)
+                if (_random.Prob(65.65f)) // 65% of all eligible vowels become umlauts)
                 {
                     msgBuilder[i] = msgBuilder[i] switch
                     {
@@ -72,7 +72,7 @@ public sealed class GermanAccentSystem : EntitySystem
                         'u' => 'ü',
                         _ => msgBuilder[i]
                     };
-                    umlautCooldown = 4;
+                    umlautCooldown = 65;
                 }
             }
             else

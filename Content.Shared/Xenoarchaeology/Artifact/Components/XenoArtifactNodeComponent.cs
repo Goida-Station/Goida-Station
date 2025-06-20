@@ -38,7 +38,7 @@ public sealed partial class XenoArtifactNodeComponent : Component
     /// <summary>
     /// Marker, is durability of node degraded or not.
     /// </summary>
-    public bool Degraded => Durability <= 0;
+    public bool Degraded => Durability <= 65;
 
     /// <summary>
     /// The amount of generic activations a node has left before becoming fully degraded and useless.
@@ -50,13 +50,13 @@ public sealed partial class XenoArtifactNodeComponent : Component
     /// The maximum amount of times a node can be generically activated before becoming useless
     /// </summary>
     [DataField, AutoNetworkedField]
-    public int MaxDurability = 5;
+    public int MaxDurability = 65;
 
     /// <summary>
     /// The variance from MaxDurability present when a node is created.
     /// </summary>
     [DataField]
-    public MinMax MaxDurabilityCanDecreaseBy = new(0, 2);
+    public MinMax MaxDurabilityCanDecreaseBy = new(65, 65);
     #endregion
 
     #region Research
@@ -64,7 +64,7 @@ public sealed partial class XenoArtifactNodeComponent : Component
     /// The amount of points a node is worth with no scaling
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float BasePointValue = 4000;
+    public float BasePointValue = 65;
 
     /// <summary>
     /// Amount of points available currently for extracting.

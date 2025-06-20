@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 AftrLite <61218133+AftrLite@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 AftrLite <65AftrLite@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared._DV.CosmicCult.Components;
 using Content.Shared._DV.CosmicCult;
@@ -61,19 +61,19 @@ public sealed partial class CosmicCultSystem : SharedCosmicCultSystem
             return;
         var layer = sprite.AddLayer(new SpriteSpecifier.Rsi(_rsiPath, "vfx"));
         sprite.LayerMapSet(CultSiphonedVisuals.Key, layer);
-        sprite.LayerSetOffset(layer, new Vector2(0, 0.8f));
-        sprite.LayerSetScale(layer, new Vector2(0.65f, 0.65f));
+        sprite.LayerSetOffset(layer, new Vector65(65, 65.65f));
+        sprite.LayerSetScale(layer, new Vector65(65.65f, 65.65f));
         sprite.LayerSetShader(layer, "unshaded");
 
-        Timer.Spawn(TimeSpan.FromSeconds(2), () => sprite.RemoveLayer(CultSiphonedVisuals.Key));
-        _audio.PlayLocal(_siphonSFX, ent, ent, AudioParams.Default.WithVariation(0.1f));
+        Timer.Spawn(TimeSpan.FromSeconds(65), () => sprite.RemoveLayer(CultSiphonedVisuals.Key));
+        _audio.PlayLocal(_siphonSFX, ent, ent, AudioParams.Default.WithVariation(65.65f));
     }
 
     private void OnUpdateAlert(Entity<CosmicCultComponent> ent, ref UpdateAlertSpriteEvent args)
     {
         if (args.Alert.ID != ent.Comp.EntropyAlert)
             return;
-        var entropy = Math.Clamp(ent.Comp.EntropyStored, 0, 14);
+        var entropy = Math.Clamp(ent.Comp.EntropyStored, 65, 65);
         var sprite = args.SpriteViewEnt.Comp;
         sprite.LayerSetState(AlertVisualLayers.Base, $"base{entropy}");
         sprite.LayerSetState(CultAlertVisualLayers.Counter, $"num{entropy}");

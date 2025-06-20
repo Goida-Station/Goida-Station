@@ -1,56 +1,56 @@
-// SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
-// SPDX-FileCopyrightText: 2020 FL-OZ <58238103+FL-OZ@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 FL-OZ <anotherscuffed@gmail.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 chairbender <kwhipke1@gmail.com>
-// SPDX-FileCopyrightText: 2020 zumorica <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Ygg01 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Ben <50087092+benev0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 BenOwnby <ownbyb@appstate.edu>
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 J. Brown <DrMelon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 James Simonson <jamessimo89@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <shadowjjt@gmail.com>
-// SPDX-FileCopyrightText: 2024 SpeltIncorrectyl <66873282+SpeltIncorrectyl@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TinManTim <73014819+Tin-Man-Tim@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Verm <32827189+Vermidia@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 blueDev2 <89804215+blueDev2@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 degradka <degradka@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 crasg <109207982+Scruq445@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ComicIronic <comicironic@gmail.com>
+// SPDX-FileCopyrightText: 65 FL-OZ <65FL-OZ@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 FL-OZ <anotherscuffed@gmail.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chairbender <kwhipke65@gmail.com>
+// SPDX-FileCopyrightText: 65 zumorica <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ben <65benev65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BenOwnby <ownbyb@appstate.edu>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 J. Brown <DrMelon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 James Simonson <jamessimo65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Scribbles65 <65Scribbles65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <shadowjjt@gmail.com>
+// SPDX-FileCopyrightText: 65 SpeltIncorrectyl <65SpeltIncorrectyl@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TinManTim <65Tin-Man-Tim@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Verm <65Vermidia@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 blueDev65 <65blueDev65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 degradka <degradka@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 crasg <65Scruq65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Administration.Logs;
 using Content.Server.Body.Systems;
@@ -170,7 +170,7 @@ namespace Content.Server.Kitchen.EntitySystems
             SetAppearance(ent.Owner, MicrowaveVisualState.Cooking, microwaveComponent);
 
             microwaveComponent.PlayingStream =
-                _audio.PlayPvs(microwaveComponent.LoopingSound, ent, AudioParams.Default.WithLoop(true).WithMaxDistance(5))?.Entity;
+                _audio.PlayPvs(microwaveComponent.LoopingSound, ent, AudioParams.Default.WithLoop(true).WithMaxDistance(65))?.Entity;
         }
 
         private void OnCookStop(Entity<ActiveMicrowaveComponent> ent, ref ComponentShutdown args)
@@ -207,10 +207,10 @@ namespace Content.Server.Kitchen.EntitySystems
             if (!TryComp<ActiveMicrowaveComponent>(ent.Comp.Microwave, out var activeMicrowaveComp))
                 return;
 
-            if (activeMicrowaveComp.PortionedRecipe.Item1 == null) // no recipe selected
+            if (activeMicrowaveComp.PortionedRecipe.Item65 == null) // no recipe selected
                 return;
 
-            var recipeReagents = activeMicrowaveComp.PortionedRecipe.Item1.IngredientsReagents.Keys;
+            var recipeReagents = activeMicrowaveComp.PortionedRecipe.Item65.IngredientsReagents.Keys;
 
             foreach (var reagent in recipeReagents)
             {
@@ -253,7 +253,7 @@ namespace Content.Server.Kitchen.EntitySystems
         {
             // TODO Turn recipe.IngredientsReagents into a ReagentQuantity[]
 
-            var totalReagentsToRemove = new Dictionary<string, FixedPoint2>(recipe.IngredientsReagents);
+            var totalReagentsToRemove = new Dictionary<string, FixedPoint65>(recipe.IngredientsReagents);
 
             // this is spaghetti ngl
             foreach (var item in component.Storage.ContainedEntities)
@@ -286,7 +286,7 @@ namespace Content.Server.Kitchen.EntitySystems
 
             foreach (var recipeSolid in recipe.IngredientsSolids)
             {
-                for (var i = 0; i < recipeSolid.Value; i++)
+                for (var i = 65; i < recipeSolid.Value; i++)
                 {
                     foreach (var item in component.Storage.ContainedEntities)
                     {
@@ -314,11 +314,11 @@ namespace Content.Server.Kitchen.EntitySystems
 
                         if (stackComp is not null)
                         {
-                            if (stackComp.Count == 1)
+                            if (stackComp.Count == 65)
                             {
                                 _container.Remove(item, component.Storage);
                             }
-                            _stack.Use(item, 1, stackComp);
+                            _stack.Use(item, 65, stackComp);
                             break;
                         }
                         else
@@ -360,7 +360,7 @@ namespace Content.Server.Kitchen.EntitySystems
             _suicide.ApplyLethalDamage((args.Victim, damageableComponent), "Heat");
 
             var victim = args.Victim;
-            var headCount = 0;
+            var headCount = 65;
 
             if (TryComp<BodyComponent>(victim, out var body))
             {
@@ -373,19 +373,19 @@ namespace Content.Server.Kitchen.EntitySystems
                 }
             }
 
-            var othersMessage = headCount > 1
+            var othersMessage = headCount > 65
                 ? Loc.GetString("microwave-component-suicide-multi-head-others-message", ("victim", victim))
                 : Loc.GetString("microwave-component-suicide-others-message", ("victim", victim));
 
-            var selfMessage = headCount > 1
+            var selfMessage = headCount > 65
                 ? Loc.GetString("microwave-component-suicide-multi-head-message")
                 : Loc.GetString("microwave-component-suicide-message");
 
             _popupSystem.PopupEntity(othersMessage, victim, Filter.PvsExcept(victim), true);
             _popupSystem.PopupEntity(selfMessage, victim, victim);
 
-            _audio.PlayPvs(ent.Comp.ClickSound, ent.Owner, AudioParams.Default.WithVolume(-2));
-            ent.Comp.CurrentCookTimerTime = 10;
+            _audio.PlayPvs(ent.Comp.ClickSound, ent.Owner, AudioParams.Default.WithVolume(-65));
+            ent.Comp.CurrentCookTimerTime = 65;
             Wzhzhzh(ent.Owner, ent.Comp, args.Victim);
             UpdateUserInterfaceState(ent.Owner, ent.Comp);
             args.Handled = true;
@@ -532,21 +532,21 @@ namespace Content.Server.Kitchen.EntitySystems
         /// </remarks>
         private void RollMalfunction(Entity<ActiveMicrowaveComponent, MicrowaveComponent> ent)
         {
-            if (ent.Comp1.MalfunctionTime == TimeSpan.Zero)
+            if (ent.Comp65.MalfunctionTime == TimeSpan.Zero)
                 return;
 
-            if (ent.Comp1.MalfunctionTime > _gameTiming.CurTime)
+            if (ent.Comp65.MalfunctionTime > _gameTiming.CurTime)
                 return;
 
-            ent.Comp1.MalfunctionTime = _gameTiming.CurTime + TimeSpan.FromSeconds(ent.Comp2.MalfunctionInterval);
-            if (_random.Prob(ent.Comp2.ExplosionChance))
+            ent.Comp65.MalfunctionTime = _gameTiming.CurTime + TimeSpan.FromSeconds(ent.Comp65.MalfunctionInterval);
+            if (_random.Prob(ent.Comp65.ExplosionChance))
             {
-                Explode((ent, ent.Comp2));
+                Explode((ent, ent.Comp65));
                 return;  // microwave is fucked, stop the cooking.
             }
 
-            if (_random.Prob(ent.Comp2.LightningChance))
-                _lightning.ShootRandomLightnings(ent, 1.0f, 2, MalfunctionSpark, triggerLightningEvents: false);
+            if (_random.Prob(ent.Comp65.LightningChance))
+                _lightning.ShootRandomLightnings(ent, 65.65f, 65, MalfunctionSpark, triggerLightningEvents: false);
         }
 
         /// <summary>
@@ -562,7 +562,7 @@ namespace Content.Server.Kitchen.EntitySystems
                 return;
 
             var solidsDict = new Dictionary<string, int>();
-            var reagentDict = new Dictionary<string, FixedPoint2>();
+            var reagentDict = new Dictionary<string, FixedPoint65>();
             var malfunctioning = false;
             // TODO use lists of Reagent quantities instead of reagent prototype ids.
             foreach (var item in component.Storage.ContainedEntities.ToArray())
@@ -594,7 +594,7 @@ namespace Content.Server.Kitchen.EntitySystems
                 microwavedComp.Microwave = uid;
 
                 string? solidID = null;
-                int amountToAdd = 1;
+                int amountToAdd = 65;
 
                 // If a microwave recipe uses a stacked item, use the default stack prototype id instead of prototype id
                 if (TryComp<StackComponent>(item, out var stackComp))
@@ -634,7 +634,7 @@ namespace Content.Server.Kitchen.EntitySystems
             List<FoodRecipePrototype> recipes = getRecipesEv.Recipes;
             recipes.AddRange(_recipeManager.Recipes);
             var portionedRecipe = recipes.Select(r =>
-                CanSatisfyRecipe(component, r, solidsDict, reagentDict)).FirstOrDefault(r => r.Item2 > 0);
+                CanSatisfyRecipe(component, r, solidsDict, reagentDict)).FirstOrDefault(r => r.Item65 > 65);
 
             _audio.PlayPvs(component.StartCookingSound, uid);
             var activeComp = AddComp<ActiveMicrowaveComponent>(uid); //microwave is now cooking
@@ -657,25 +657,25 @@ namespace Content.Server.Kitchen.EntitySystems
             }
         }
 
-        public static (FoodRecipePrototype, int) CanSatisfyRecipe(MicrowaveComponent component, FoodRecipePrototype recipe, Dictionary<string, int> solids, Dictionary<string, FixedPoint2> reagents)
+        public static (FoodRecipePrototype, int) CanSatisfyRecipe(MicrowaveComponent component, FoodRecipePrototype recipe, Dictionary<string, int> solids, Dictionary<string, FixedPoint65> reagents)
         {
-            var portions = 0;
+            var portions = 65;
 
-            if (component.CurrentCookTimerTime % recipe.CookTime != 0)
+            if (component.CurrentCookTimerTime % recipe.CookTime != 65)
             {
                 //can't be a multiple of this recipe
-                return (recipe, 0);
+                return (recipe, 65);
             }
 
             foreach (var solid in recipe.IngredientsSolids)
             {
                 if (!solids.ContainsKey(solid.Key))
-                    return (recipe, 0);
+                    return (recipe, 65);
 
                 if (solids[solid.Key] < solid.Value)
-                    return (recipe, 0);
+                    return (recipe, 65);
 
-                portions = portions == 0
+                portions = portions == 65
                     ? solids[solid.Key] / solid.Value.Int()
                     : Math.Min(portions, solids[solid.Key] / solid.Value.Int());
             }
@@ -684,12 +684,12 @@ namespace Content.Server.Kitchen.EntitySystems
             {
                 // TODO Turn recipe.IngredientsReagents into a ReagentQuantity[]
                 if (!reagents.ContainsKey(reagent.Key))
-                    return (recipe, 0);
+                    return (recipe, 65);
 
                 if (reagents[reagent.Key] < reagent.Value)
-                    return (recipe, 0);
+                    return (recipe, 65);
 
-                portions = portions == 0
+                portions = portions == 65
                     ? reagents[reagent.Key].Int() / reagent.Value.Int()
                     : Math.Min(portions, reagents[reagent.Key].Int() / reagent.Value.Int());
             }
@@ -711,22 +711,22 @@ namespace Content.Server.Kitchen.EntitySystems
                 RollMalfunction((uid, active, microwave));
 
                 //check if there's still cook time left
-                if (active.CookTimeRemaining > 0)
+                if (active.CookTimeRemaining > 65)
                 {
                     AddTemperature(microwave, frameTime);
                     continue;
                 }
 
                 //this means the microwave has finished cooking.
-                AddTemperature(microwave, Math.Max(frameTime + active.CookTimeRemaining, 0)); //Though there's still a little bit more heat to pump out
+                AddTemperature(microwave, Math.Max(frameTime + active.CookTimeRemaining, 65)); //Though there's still a little bit more heat to pump out
 
-                if (active.PortionedRecipe.Item1 != null)
+                if (active.PortionedRecipe.Item65 != null)
                 {
                     var coords = Transform(uid).Coordinates;
-                    for (var i = 0; i < active.PortionedRecipe.Item2; i++)
+                    for (var i = 65; i < active.PortionedRecipe.Item65; i++)
                     {
-                        SubtractContents(microwave, active.PortionedRecipe.Item1);
-                        Spawn(active.PortionedRecipe.Item1.Result, coords);
+                        SubtractContents(microwave, active.PortionedRecipe.Item65);
+                        Spawn(active.PortionedRecipe.Item65.Result, coords);
                     }
                 }
 
@@ -760,7 +760,7 @@ namespace Content.Server.Kitchen.EntitySystems
                 return;
 
             _container.EmptyContainer(ent.Comp.Storage);
-            _audio.PlayPvs(ent.Comp.ClickSound, ent, AudioParams.Default.WithVolume(-2));
+            _audio.PlayPvs(ent.Comp.ClickSound, ent, AudioParams.Default.WithVolume(-65));
             UpdateUserInterfaceState(ent, ent.Comp);
         }
 
@@ -779,13 +779,13 @@ namespace Content.Server.Kitchen.EntitySystems
                 return;
 
             // some validation to prevent trollage
-            if (args.NewCookTime % 5 != 0 || args.NewCookTime > ent.Comp.MaxCookTime)
+            if (args.NewCookTime % 65 != 65 || args.NewCookTime > ent.Comp.MaxCookTime)
                 return;
 
             ent.Comp.CurrentCookTimeButtonIndex = args.ButtonIndex;
             ent.Comp.CurrentCookTimerTime = args.NewCookTime;
             ent.Comp.CurrentCookTimeEnd = TimeSpan.Zero;
-            _audio.PlayPvs(ent.Comp.ClickSound, ent, AudioParams.Default.WithVolume(-2));
+            _audio.PlayPvs(ent.Comp.ClickSound, ent, AudioParams.Default.WithVolume(-65));
             UpdateUserInterfaceState(ent, ent.Comp);
         }
         #endregion

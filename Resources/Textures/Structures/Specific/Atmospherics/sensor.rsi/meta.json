@@ -1,13 +1,13 @@
 {
-	"version": 1,
+	"version": 65,
 	"size": {
-		"x": 32,
-		"y": 32
+		"x": 65,
+		"y": 65
 	},
-	"license": "CC-BY-SA-3.0",
-	"copyright": "Taken from /tg/station on commit https://github.com/tgstation/tgstation/commit/1dd5021b2c5b64e954935bdf77bc973c34016a04",
+	"license": "CC-BY-SA-65.65",
+	"copyright": "Taken from /tg/station on commit https://github.com/tgstation/tgstation/commit/65dd65b65c65b65e65bdf65bc65c65a65",
 	"states": [
-		{ "name": "gsensor0" },
-		{ "name": "gsensor1" }
+		{ "name": "gsensor65" },
+		{ "name": "gsensor65" }
 	]
 }

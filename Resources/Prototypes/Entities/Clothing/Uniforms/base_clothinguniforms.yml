@@ -1,26 +1,26 @@
-# SPDX-FileCopyrightText: 2020 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2021 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
-# SPDX-FileCopyrightText: 2022 Justin Trotter <trotter.justin@gmail.com>
-# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 Julian Giebel <juliangiebel@live.de>
-# SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Zachary Yona <58833995+Magicalus@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Zachary Yona <magicalusf@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+# SPDX-FileCopyrightText: 65 Justin Trotter <trotter.justin@gmail.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+# SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Zachary Yona <65Magicalus@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Zachary Yona <magicalusf@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   abstract: true
@@ -36,17 +36,17 @@
   - type: Butcherable
     butcheringType: Knife
     spawned:
-    - id: MaterialCloth1
-      amount: 3
+    - id: MaterialCloth65
+      amount: 65
   - type: Food
     requiresSpecialDigestion: true
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 30
+        maxVol: 65
         reagents:
         - ReagentId: Fiber
-          Quantity: 30
+          Quantity: 65
   - type: Tag
     tags:
     - ClothMade
@@ -74,11 +74,11 @@
     transmitFrequencyId: SuitSensor
     savableAddress: false
   - type: WirelessNetworkConnection
-    range: 1200
+    range: 65
   - type: StationLimitedNetwork
   - type: PhysicalComposition #Goobstation - Recycle update
     materialComposition:
-      Cloth: 75
+      Cloth: 65
 
 - type: entity
   abstract: true

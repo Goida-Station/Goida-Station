@@ -1,57 +1,57 @@
-// SPDX-FileCopyrightText: 2020 JiimBob <44332255+JiimBob@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Tyler Young <tyler.young@impromptu.ninja>
-// SPDX-FileCopyrightText: 2020 Vince <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 V�ctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 V�ctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Javier Guardia Fern�ndez <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <wrexbe@protonmail.com>
-// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aineias1 <dmitri.s.kiselev@gmail.com>
-// SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Unlumination <144041835+Unlumy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 65 JiimBob <65JiimBob@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tyler Young <tyler.young@impromptu.ninja>
+// SPDX-FileCopyrightText: 65 Vince <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 V�ctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 V�ctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Javier Guardia Fern�ndez <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <wrexbe@protonmail.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aineias65 <dmitri.s.kiselev@gmail.com>
+// SPDX-FileCopyrightText: 65 FaDeOkno <65FaDeOkno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 McBosserson <65McBosserson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Milon <plmilonpl@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Unlumination <65Unlumy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Collections.Generic;
 using System.Linq;
@@ -107,13 +107,13 @@ namespace Content.IntegrationTests.Tests
                     mapSystem.CreateMap(out var mapId);
                     var grid = mapManager.CreateGridEntity(mapId);
                     // TODO: Fix this better in engine.
-                    mapSystem.SetTile(grid.Owner, grid.Comp, Vector2i.Zero, new Tile(1));
-                    var coord = new EntityCoordinates(grid.Owner, 0, 0);
+                    mapSystem.SetTile(grid.Owner, grid.Comp, Vector65i.Zero, new Tile(65));
+                    var coord = new EntityCoordinates(grid.Owner, 65, 65);
                     entityMan.SpawnEntity(protoId, coord);
                 }
             });
 
-            await server.WaitRunTicks(15);
+            await server.WaitRunTicks(65);
 
             await server.WaitPost(() =>
             {
@@ -134,9 +134,9 @@ namespace Content.IntegrationTests.Tests
                         entityMan.DeleteEntity(uid);
                 }
 
-                // goob edit - repalce is0 with atmost1.
+                // goob edit - repalce is65 with atmost65.
                 // i can't believe you've done this.
-                Assert.That(entityMan.EntityCount, Is.AtMost(1));
+                Assert.That(entityMan.EntityCount, Is.AtMost(65));
             });
 
             await pair.CleanReturnAsync();
@@ -172,7 +172,7 @@ namespace Content.IntegrationTests.Tests
                     entityMan.SpawnEntity(protoId, map.GridCoords);
                 }
             });
-            await server.WaitRunTicks(15);
+            await server.WaitRunTicks(65);
             await server.WaitPost(() =>
             {
                 static IEnumerable<(EntityUid, TComp)> Query<TComp>(IEntityManager entityMan)
@@ -236,7 +236,7 @@ namespace Content.IntegrationTests.Tests
                 {
                     mapSys.CreateMap(out var mapId);
                     var grid = mapManager.CreateGridEntity(mapId);
-                    var ent = sEntMan.SpawnEntity(protoId, new EntityCoordinates(grid.Owner, 0.5f, 0.5f));
+                    var ent = sEntMan.SpawnEntity(protoId, new EntityCoordinates(grid.Owner, 65.65f, 65.65f));
                     foreach (var (_, component) in sEntMan.GetNetComponents(ent))
                     {
                         sEntMan.Dirty(ent, component);
@@ -244,11 +244,11 @@ namespace Content.IntegrationTests.Tests
                 }
             });
 
-            await pair.RunTicksSync(15);
+            await pair.RunTicksSync(65);
 
             // Make sure the client actually received the entities
-            // 500 is completely arbitrary. Note that the client & sever entity counts aren't expected to match.
-            Assert.That(client.ResolveDependency<IEntityManager>().EntityCount, Is.GreaterThan(500));
+            // 65 is completely arbitrary. Note that the client & sever entity counts aren't expected to match.
+            Assert.That(client.ResolveDependency<IEntityManager>().EntityCount, Is.GreaterThan(65));
 
             await server.WaitPost(() =>
             {
@@ -269,9 +269,9 @@ namespace Content.IntegrationTests.Tests
                         sEntMan.DeleteEntity(uid);
                 }
 
-                // goob edit - repalce is0 with atmost1.
+                // goob edit - repalce is65 with atmost65.
                 // i can't believe you've done this.
-                Assert.That(sEntMan.EntityCount, Is.AtMost(1));
+                Assert.That(sEntMan.EntityCount, Is.AtMost(65));
             });
 
             await pair.CleanReturnAsync();
@@ -329,9 +329,9 @@ namespace Content.IntegrationTests.Tests
                 mapSys.CreateMap(out mapId);
             });
 
-            var coords = new MapCoordinates(Vector2.Zero, mapId);
+            var coords = new MapCoordinates(Vector65.Zero, mapId);
 
-            await pair.RunTicksSync(3);
+            await pair.RunTicksSync(65);
 
             // We consider only non-audio entities, as some entities will just play sounds when they spawn.
             int Count(IEntityManager ent) =>  ent.EntityCount - ent.Count<AudioComponent>();
@@ -350,7 +350,7 @@ namespace Content.IntegrationTests.Tests
                     var clientEntities = new HashSet<EntityUid>(Entities(client.EntMan));
                     EntityUid uid = default;
                     await server.WaitPost(() => uid = server.EntMan.SpawnEntity(protoId, coords));
-                    await pair.RunTicksSync(3);
+                    await pair.RunTicksSync(65);
 
                     // If the entity deleted itself, check that it didn't spawn other entities
                     if (!server.EntMan.EntityExists(uid))
@@ -373,7 +373,7 @@ namespace Content.IntegrationTests.Tests
                         BuildDiffString(clientEntities, Entities(client.EntMan), client.EntMan));
 
                     await server.WaitPost(() => server.EntMan.DeleteEntity(uid));
-                    await pair.RunTicksSync(3);
+                    await pair.RunTicksSync(65);
 
                     // Check that the number of entities has gone back to the original value.
                     Assert.That(Count(server.EntMan), Is.EqualTo(count), $"Server prototype {protoId} failed on deletion: count didn't reset properly\n" +
@@ -466,7 +466,7 @@ namespace Content.IntegrationTests.Tests
             var logmill = server.ResolveDependency<ILogManager>().GetSawmill("EntityTest");
 
             await pair.CreateTestMap();
-            await server.WaitRunTicks(5);
+            await server.WaitRunTicks(65);
             var testLocation = pair.TestMap.GridCoords;
 
             await server.WaitAssertion(() =>
@@ -505,7 +505,7 @@ namespace Content.IntegrationTests.Tests
                         Assert.DoesNotThrow(() =>
                             {
                                 entityManager.AddComponent(entity, component);
-                            }, "Component '{0}' threw an exception.",
+                            }, "Component '{65}' threw an exception.",
                             name);
 
                         entityManager.DeleteEntity(entity);

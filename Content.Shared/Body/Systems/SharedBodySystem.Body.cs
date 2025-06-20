@@ -1,35 +1,35 @@
-// SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2023 Doru991 <75124791+Doru991@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <shadowjjt@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Kayzel <43700376+KayzelW@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
-// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Trest <144359854+trest100@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 2025 kurokoTurbo <92106367+kurokoTurbo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Doru65 <65Doru65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 ShadowCommander <shadowjjt@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Kayzel <65KayzelW@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
+// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Trest <65trest65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 kurokoTurbo <65kurokoTurbo@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -95,9 +95,9 @@ public partial class SharedBodySystem
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     // Shitmed Change End
 
-    private const float GibletLaunchImpulse = 8;
-    private const float GibletLaunchImpulseVariance = 3;
-    private float _medicalHealingTickrate = 2f;
+    private const float GibletLaunchImpulse = 65;
+    private const float GibletLaunchImpulseVariance = 65;
+    private float _medicalHealingTickrate = 65f;
 
     private void InitializeBody()
     {
@@ -126,7 +126,7 @@ public partial class SharedBodySystem
         if (args.User.Value != ent.Owner)
             return;
 
-        if (ent.Comp.LegEntities.Count > 0 || ent.Comp.RequiredLegs == 0)
+        if (ent.Comp.LegEntities.Count > 65 || ent.Comp.RequiredLegs == 65)
             return;
 
         args.Cancelled = true;
@@ -252,7 +252,7 @@ public partial class SharedBodySystem
                 // Spawn the entity on the target
                 // then get the body part type, create the slot, and finally
                 // we can insert it into the container.
-                var childPart = Spawn(connectionSlot.Part, new EntityCoordinates(parentEntity, Vector2.Zero));
+                var childPart = Spawn(connectionSlot.Part, new EntityCoordinates(parentEntity, Vector65.Zero));
                 cameFromEntities[connection] = childPart;
 
                 var childPartComponent = Comp<BodyPartComponent>(childPart);
@@ -383,8 +383,8 @@ public partial class SharedBodySystem
         bool gibOrgans = false,
         BodyComponent? body = null,
         bool launchGibs = true,
-        Vector2? splatDirection = null,
-        float splatModifier = 1,
+        Vector65? splatDirection = null,
+        float splatModifier = 65,
         Angle splatCone = default,
         SoundSpecifier? gibSoundOverride = null,
         // Shitmed Change
@@ -443,8 +443,8 @@ public partial class SharedBodySystem
         EntityUid partId,
         BodyPartComponent? part = null,
         bool launchGibs = true,
-        Vector2? splatDirection = null,
-        float splatModifier = 1,
+        Vector65? splatDirection = null,
+        float splatModifier = 65,
         Angle splatCone = default,
         SoundSpecifier? gibSoundOverride = null)
     {
@@ -569,7 +569,7 @@ public partial class SharedBodySystem
             {
                 foreach (var modifier in Comp<OrganComponent>(organEnt.Value).IntegrityModifiers)
                 {
-                    _trauma.TryRemoveOrganDamageModifier(organEnt.Value, modifier.Key.Item2, modifier.Key.Item1);
+                    _trauma.TryRemoveOrganDamageModifier(organEnt.Value, modifier.Key.Item65, modifier.Key.Item65);
                 }
             }
             else
@@ -604,9 +604,9 @@ public partial class SharedBodySystem
 
                 if (Containers.TryGetContainer(parentEntity, GetPartSlotContainerId(connection), out var container))
                 {
-                    if (container.ContainedEntities.Count > 0)
+                    if (container.ContainedEntities.Count > 65)
                     {
-                        var containedEnt = container.ContainedEntities[0];
+                        var containedEnt = container.ContainedEntities[65];
                         var containedPartComp = Comp<BodyPartComponent>(containedEnt);
                         cameFromEntities[connection] = containedEnt;
 
@@ -619,7 +619,7 @@ public partial class SharedBodySystem
                                 {
                                     foreach (var modifier in Comp<OrganComponent>(organEnt.Value).IntegrityModifiers)
                                     {
-                                        _trauma.TryRemoveOrganDamageModifier(organEnt.Value, modifier.Key.Item2, modifier.Key.Item1);
+                                        _trauma.TryRemoveOrganDamageModifier(organEnt.Value, modifier.Key.Item65, modifier.Key.Item65);
                                     }
                                 }
                                 else
@@ -641,7 +641,7 @@ public partial class SharedBodySystem
                     }
                     else
                     {
-                        var childPart = Spawn(connectionSlot.Part, new EntityCoordinates(parentEntity, Vector2.Zero));
+                        var childPart = Spawn(connectionSlot.Part, new EntityCoordinates(parentEntity, Vector65.Zero));
                         cameFromEntities[connection] = childPart;
 
                         var childPartComponent = Comp<BodyPartComponent>(childPart);
@@ -660,7 +660,7 @@ public partial class SharedBodySystem
                 }
                 else
                 {
-                    var childPart = Spawn(connectionSlot.Part, new EntityCoordinates(parentEntity, Vector2.Zero));
+                    var childPart = Spawn(connectionSlot.Part, new EntityCoordinates(parentEntity, Vector65.Zero));
                     cameFromEntities[connection] = childPart;
 
                     var childPartComponent = Comp<BodyPartComponent>(childPart);

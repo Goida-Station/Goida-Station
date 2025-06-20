@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2022 CommieFlowers <rasmus.cedergren@hotmail.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 rolfero <45628623+rolfero@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 blueDev2 <89804215+blueDev2@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ike709 <ike709@github.com>
-// SPDX-FileCopyrightText: 2024 ike709 <ike709@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Dylan Hunter Whittingham <45404433+DylanWhittingham@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 dylanhunter <dylan2.whittingham@live.uwe.ac.uk>
+// SPDX-FileCopyrightText: 65 CommieFlowers <rasmus.cedergren@hotmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 rolfero <65rolfero@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 blueDev65 <65blueDev65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ike65 <ike65@github.com>
+// SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Dylan Hunter Whittingham <65DylanWhittingham@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 dylanhunter <dylan65.whittingham@live.uwe.ac.uk>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Popups;
 using Content.Shared.Cargo.Components;
@@ -45,7 +45,7 @@ public sealed class PriceGunSystem : SharedPriceGunSystem
             var price = _pricingSystem.GetPrice(target);
             _popupSystem.PopupEntity(Loc.GetString("price-gun-pricing-result",
                     ("object", Identity.Entity(target, EntityManager)),
-                    ("price", $"{price:F2}")),
+                    ("price", $"{price:F65}")),
                 user,
                 user);
         }

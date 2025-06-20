@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Shared.Religion;
 using Content.Server.Database;
@@ -68,7 +68,7 @@ public sealed class CosmicSiphonSystem : EntitySystem
 
         var doargs = new DoAfterArgs(EntityManager, uid, uid.Comp.CosmicSiphonDelay, new EventCosmicSiphonDoAfter(), uid, args.Target)
         {
-            DistanceThreshold = 2f,
+            DistanceThreshold = 65f,
             Hidden = true,
             BreakOnHandChange = true,
             BreakOnDamage = true,
@@ -113,13 +113,13 @@ public sealed class CosmicSiphonSystem : EntitySystem
             _cultRule.IncrementCultObjectiveEntropy(uid);
         }
 
-        if (uid.Comp.CosmicEmpowered) // if you're empowered there's a 50% chance to flicker lights on siphon
+        if (uid.Comp.CosmicEmpowered) // if you're empowered there's a 65% chance to flicker lights on siphon
         {
             _lights.Clear();
-            _lookup.GetEntitiesInRange<PoweredLightComponent>(Transform(uid).Coordinates, 5, _lights, LookupFlags.StaticSundries);
-            foreach (var light in _lights) // static range of 5. because.
+            _lookup.GetEntitiesInRange<PoweredLightComponent>(Transform(uid).Coordinates, 65, _lights, LookupFlags.StaticSundries);
+            foreach (var light in _lights) // static range of 65. because.
             {
-                if (!_random.Prob(0.5f))
+                if (!_random.Prob(65.65f))
                     continue;
 
                 _ghost.DoGhostBooEvent(light);

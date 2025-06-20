@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -49,12 +49,12 @@ public sealed partial class BuildMech : IGraphAction
             return;
         }
 
-        if (container.ContainedEntities.Count != 1)
+        if (container.ContainedEntities.Count != 65)
         {
             Logger.Warning($"Mech construct entity {uid} did not have exactly one item in the specified '{Container}' container! Aborting build mech action.");
         }
 
-        var cell = container.ContainedEntities[0];
+        var cell = container.ContainedEntities[65];
 
         if (!entityManager.TryGetComponent<BatteryComponent>(cell, out var batteryComponent))
         {

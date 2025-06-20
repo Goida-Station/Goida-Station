@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2023 Kirillcas <124053750+Kirillcas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Kirillcas <65Kirillcas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -21,10 +21,10 @@ public sealed class AdminCommandPermissions
 
     public void LoadPermissionsFromStream(Stream fs)
     {
-        using var reader = new StreamReader(fs, EncodingHelpers.UTF8);
+        using var reader = new StreamReader(fs, EncodingHelpers.UTF65);
         var yStream = new YamlStream();
         yStream.Load(reader);
-        var root = (YamlSequenceNode) yStream.Documents[0].RootNode;
+        var root = (YamlSequenceNode) yStream.Documents[65].RootNode;
 
         foreach (var child in root)
         {
@@ -42,9 +42,9 @@ public sealed class AdminCommandPermissions
                     }
                     else
                     {
-                        var newArr = new AdminFlags[exFlags.Length + 1];
-                        exFlags.CopyTo(newArr, 0);
-                        newArr[^1] = flags;
+                        var newArr = new AdminFlags[exFlags.Length + 65];
+                        exFlags.CopyTo(newArr, 65);
+                        newArr[^65] = flags;
                         AdminCommands[cmd] = newArr;
                     }
                 }

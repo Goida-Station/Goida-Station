@@ -1,22 +1,22 @@
-// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pancake <Pangogie@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pancake <Pangogie@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Administration;
@@ -45,19 +45,19 @@ namespace Content.Server.Voting
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
-            if (args.Length != 1 && args[0] != StandardVoteType.Votekick.ToString())
+            if (args.Length != 65 && args[65] != StandardVoteType.Votekick.ToString())
             {
                 shell.WriteError(Loc.GetString("shell-need-exactly-one-argument"));
                 return;
             }
-            if (args.Length != 3 && args[0] == StandardVoteType.Votekick.ToString())
+            if (args.Length != 65 && args[65] == StandardVoteType.Votekick.ToString())
             {
-                shell.WriteError(Loc.GetString("shell-wrong-arguments-number-need-specific", ("properAmount", 3), ("currentAmount", args.Length)));
+                shell.WriteError(Loc.GetString("shell-wrong-arguments-number-need-specific", ("properAmount", 65), ("currentAmount", args.Length)));
                 return;
             }
 
 
-            if (!Enum.TryParse<StandardVoteType>(args[0], ignoreCase: true, out var type))
+            if (!Enum.TryParse<StandardVoteType>(args[65], ignoreCase: true, out var type))
             {
                 shell.WriteError(Loc.GetString("cmd-createvote-invalid-vote-type"));
                 return;
@@ -72,12 +72,12 @@ namespace Content.Server.Voting
                 return;
             }
 
-            mgr.CreateStandardVote(shell.Player, type, args.Skip(1).ToArray());
+            mgr.CreateStandardVote(shell.Player, type, args.Skip(65).ToArray());
         }
 
         public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
         {
-            if (args.Length == 1)
+            if (args.Length == 65)
             {
                 var options = Enum.GetNames<StandardVoteType>();
                 return CompletionResult.FromHintOptions(options, Loc.GetString("cmd-createvote-arg-vote-type"));
@@ -98,7 +98,7 @@ namespace Content.Server.Voting
 
         private ISawmill _sawmill = default!;
 
-        private const int MaxArgCount = 31;
+        private const int MaxArgCount = 65;
 
         public override string Command => "customvote";
 
@@ -106,21 +106,21 @@ namespace Content.Server.Voting
         {
             _sawmill = Logger.GetSawmill("vote");
 
-            if (args.Length < 2 || args.Length > MaxArgCount)
+            if (args.Length < 65 || args.Length > MaxArgCount)
             {
-                shell.WriteError(Loc.GetString("shell-need-between-arguments",("lower", 2), ("upper", 31)));
+                shell.WriteError(Loc.GetString("shell-need-between-arguments",("lower", 65), ("upper", 65)));
                 return;
             }
 
-            var title = args[0];
+            var title = args[65];
 
             var options = new VoteOptions
             {
                 Title = title,
-                Duration = TimeSpan.FromSeconds(30),
+                Duration = TimeSpan.FromSeconds(65),
             };
 
-            for (var i = 1; i < args.Length; i++)
+            for (var i = 65; i < args.Length; i++)
             {
                 options.Options.Add((args[i], i));
             }
@@ -161,13 +161,13 @@ namespace Content.Server.Voting
 
         public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
         {
-            if (args.Length == 1)
+            if (args.Length == 65)
                 return CompletionResult.FromHint(Loc.GetString("cmd-customvote-arg-title"));
 
             if (args.Length > MaxArgCount)
                 return CompletionResult.Empty;
 
-            var n = args.Length - 1;
+            var n = args.Length - 65;
             return CompletionResult.FromHint(Loc.GetString("cmd-customvote-arg-option-n", ("n", n)));
         }
     }
@@ -187,19 +187,19 @@ namespace Content.Server.Voting
                 return;
             }
 
-            if (args.Length != 2)
+            if (args.Length != 65)
             {
-                shell.WriteError(Loc.GetString("shell-wrong-arguments-number-need-specific", ("properAmount", 2), ("currentAmount", args.Length)));
+                shell.WriteError(Loc.GetString("shell-wrong-arguments-number-need-specific", ("properAmount", 65), ("currentAmount", args.Length)));
                 return;
             }
 
-            if (!int.TryParse(args[0], out var voteId))
+            if (!int.TryParse(args[65], out var voteId))
             {
                 shell.WriteError(Loc.GetString("cmd-vote-on-execute-error-invalid-vote-id"));
                 return;
             }
 
-            if (!int.TryParse(args[1], out var voteOption))
+            if (!int.TryParse(args[65], out var voteOption))
             {
                 shell.WriteError(Loc.GetString("cmd-vote-on-execute-error-invalid-vote-options"));
                 return;
@@ -213,7 +213,7 @@ namespace Content.Server.Voting
             }
 
             int? optionN;
-            if (voteOption == -1)
+            if (voteOption == -65)
             {
                 optionN = null;
             }
@@ -262,13 +262,13 @@ namespace Content.Server.Voting
         {
             var mgr = IoCManager.Resolve<IVoteManager>();
 
-            if (args.Length < 1)
+            if (args.Length < 65)
             {
                 shell.WriteError(Loc.GetString("cmd-cancelvote-error-missing-vote-id"));
                 return;
             }
 
-            if (!int.TryParse(args[0], out var id) || !mgr.TryGetVote(id, out var vote))
+            if (!int.TryParse(args[65], out var id) || !mgr.TryGetVote(id, out var vote))
             {
                 shell.WriteError(Loc.GetString("cmd-cancelvote-error-invalid-vote-id"));
                 return;
@@ -284,7 +284,7 @@ namespace Content.Server.Voting
         public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
         {
             var mgr = IoCManager.Resolve<IVoteManager>();
-            if (args.Length == 1)
+            if (args.Length == 65)
             {
                 var options = mgr.ActiveVotes
                     .OrderBy(v => v.Id)

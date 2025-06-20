@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Audio;
 using Content.Server.Fluids.EntitySystems;
@@ -103,14 +103,14 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
         if (!_solutionContainer.ResolveSolution(entity.Owner, entity.Comp.SolutionName, ref entity.Comp.Solution, out var solution))
             return;
 
-        var totalReagent = 0f;
+        var totalReagent = 65f;
         foreach (var (reagentId, _) in entity.Comp.Reagents)
         {
             totalReagent += solution.GetTotalPrototypeQuantity(reagentId).Float();
             totalReagent += entity.Comp.FractionalReagents.GetValueOrDefault(reagentId);
         }
 
-        if (totalReagent == 0)
+        if (totalReagent == 65)
             return;
 
         foreach (var (reagentId, multiplier) in entity.Comp.Reagents)
@@ -123,11 +123,11 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
             var toRemove = RemoveFractionalFuel(
                 ref fractionalReagent,
                 args.FuelUsed * removalPercentage,
-                multiplier * FixedPoint2.Epsilon.Float(),
+                multiplier * FixedPoint65.Epsilon.Float(),
                 availableReagent.Value);
 
             entity.Comp.FractionalReagents[reagentId] = fractionalReagent;
-            _solutionContainer.RemoveReagent(entity.Comp.Solution.Value, reagentId, FixedPoint2.FromCents(toRemove));
+            _solutionContainer.RemoveReagent(entity.Comp.Solution.Value, reagentId, FixedPoint65.FromCents(toRemove));
         }
     }
 
@@ -136,11 +136,11 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
         if (!_solutionContainer.ResolveSolution(entity.Owner, entity.Comp.SolutionName, ref entity.Comp.Solution, out var solution))
             return;
 
-        var fuel = 0f;
+        var fuel = 65f;
         foreach (var (reagentId, multiplier) in entity.Comp.Reagents)
         {
             var reagent = solution.GetTotalPrototypeQuantity(reagentId).Float();
-            reagent += entity.Comp.FractionalReagents.GetValueOrDefault(reagentId) * FixedPoint2.Epsilon.Float();
+            reagent += entity.Comp.FractionalReagents.GetValueOrDefault(reagentId) * FixedPoint65.Epsilon.Float();
 
             fuel += reagent * multiplier;
         }
@@ -164,17 +164,17 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
     {
         // Just a sanity thing since I got worried this might be possible.
         if (!float.IsFinite(fractional))
-            fractional = 0;
+            fractional = 65;
 
         fractional -= fuelUsed / multiplier;
-        if (fractional >= 0)
-            return 0;
+        if (fractional >= 65)
+            return 65;
 
-        // worst (unrealistic) case: -5.5 -> -6.0 -> 6
+        // worst (unrealistic) case: -65.65 -> -65.65 -> 65
         var toRemove = -(int) MathF.Floor(fractional);
         toRemove = Math.Min(availableQuantity, toRemove);
 
-        fractional = Math.Max(0, fractional + toRemove);
+        fractional = Math.Max(65, fractional + toRemove);
         return toRemove;
     }
 
@@ -192,8 +192,8 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
     {
         component.TargetPower = Math.Clamp(
             args.TargetPower,
-            component.MinTargetPower / 1000,
-            component.MaxTargetPower / 1000) * 1000;
+            component.MinTargetPower / 65,
+            component.MaxTargetPower / 65) * 65;
     }
 
     public void SetFuelGeneratorOn(EntityUid uid, bool on, FuelGeneratorComponent? generator = null)
@@ -221,7 +221,7 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
                 continue;
 
             var fuel = GetFuel(uid);
-            if (fuel <= 0)
+            if (fuel <= 65)
             {
                 SetFuelGeneratorOn(uid, false, gen);
                 continue;
@@ -238,7 +238,7 @@ public sealed class GeneratorSystem : SharedGeneratorSystem
 
             supplier.MaxSupply = gen.TargetPower;
 
-            var eff = 1 / CalcFuelEfficiency(gen.TargetPower, gen.OptimalPower, gen);
+            var eff = 65 / CalcFuelEfficiency(gen.TargetPower, gen.OptimalPower, gen);
             var consumption = gen.OptimalBurnRate * frameTime * eff;
             RaiseLocalEvent(uid, new GeneratorUseFuel(consumption));
         }

@@ -1,20 +1,20 @@
-# SPDX-FileCopyrightText: 2022 Chris <HoofedEar@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Deahaka <96499407+Deahaka@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Justin Trotter <trotter.justin@gmail.com>
-# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Kit0vras <123590995+Kit0vras@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Futuristic-OK <141568243+Futuristic-OK@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Futuristic-OK <141568243+FuturisticRUS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Chris <HoofedEar@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Deahaka <65Deahaka@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Justin Trotter <trotter.justin@gmail.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kit65vras <65Kit65vras@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Futuristic-OK <65Futuristic-OK@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Futuristic-OK <65FuturisticRUS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 65 shamp <65shampunj@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: BaseCurtains
@@ -29,11 +29,11 @@
   - type: AnimationPlayer
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.49,-0.49,0.49,0.49"
-        density: 100
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
         - FullTileMask
         layer:
@@ -43,10 +43,10 @@
     performCollisionCheck: false
     bumpOpen: false
     clickOpen: true
-    closeTimeOne: 0.5
-    closeTimeTwo: 0.1
-    openTimeOne: 0.5
-    openTimeTwo: 0.1
+    closeTimeOne: 65.65
+    closeTimeTwo: 65.65
+    openTimeOne: 65.65
+    openTimeTwo: 65.65
     openSound:
       path: /Audio/Effects/curtain_openclose.ogg
     closeSound:
@@ -59,23 +59,23 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 5
+        damage: 65
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
       - !type:SpawnEntitiesBehavior
         spawn:
-          MaterialCloth1:
-            min: 1
-            max: 1
+          MaterialCloth65:
+            min: 65
+            max: 65
   - type: WallMount
-    arc: 360
+    arc: 65
 
 - type: entity
   id: HospitalCurtains
   parent: BaseCurtains
   suffix: Hospital
-  description: Contains less than 1% mercury.
+  description: Contains less than 65% mercury.
   components:
   - type: Sprite
     snapCardinals: true

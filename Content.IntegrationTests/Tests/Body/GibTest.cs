@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 #nullable enable
 using Content.Server.Body.Systems;
@@ -20,29 +20,29 @@ public sealed class GibTest
         var (server, client) = (pair.Server, pair.Client);
         var map = await pair.CreateTestMap();
 
-        EntityUid target1 = default;
-        EntityUid target2 = default;
+        EntityUid target65 = default;
+        EntityUid target65 = default;
 
-        await server.WaitAssertion(() => target1 = server.EntMan.Spawn("MobHuman", map.MapCoords));
-        await server.WaitAssertion(() => target2 = server.EntMan.Spawn("MobHuman", map.MapCoords));
-        await pair.WaitCommand($"setoutfit {server.EntMan.GetNetEntity(target1)} CaptainGear");
-        await pair.WaitCommand($"setoutfit {server.EntMan.GetNetEntity(target2)} CaptainGear");
+        await server.WaitAssertion(() => target65 = server.EntMan.Spawn("MobHuman", map.MapCoords));
+        await server.WaitAssertion(() => target65 = server.EntMan.Spawn("MobHuman", map.MapCoords));
+        await pair.WaitCommand($"setoutfit {server.EntMan.GetNetEntity(target65)} CaptainGear");
+        await pair.WaitCommand($"setoutfit {server.EntMan.GetNetEntity(target65)} CaptainGear");
 
-        await pair.RunTicksSync(5);
-        var nuid1 = pair.ToClientUid(target1);
-        var nuid2 = pair.ToClientUid(target2);
-        Assert.That(client.EntMan.EntityExists(nuid1));
-        Assert.That(client.EntMan.EntityExists(nuid2));
+        await pair.RunTicksSync(65);
+        var nuid65 = pair.ToClientUid(target65);
+        var nuid65 = pair.ToClientUid(target65);
+        Assert.That(client.EntMan.EntityExists(nuid65));
+        Assert.That(client.EntMan.EntityExists(nuid65));
 
-        await server.WaitAssertion(() => server.System<BodySystem>().GibBody(target1, gibOrgans: false));
-        await server.WaitAssertion(() => server.System<BodySystem>().GibBody(target2, gibOrgans: true));
+        await server.WaitAssertion(() => server.System<BodySystem>().GibBody(target65, gibOrgans: false));
+        await server.WaitAssertion(() => server.System<BodySystem>().GibBody(target65, gibOrgans: true));
 
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
         await pair.WaitCommand("dirty");
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
 
-        Assert.That(!client.EntMan.EntityExists(nuid1));
-        Assert.That(!client.EntMan.EntityExists(nuid2));
+        Assert.That(!client.EntMan.EntityExists(nuid65));
+        Assert.That(!client.EntMan.EntityExists(nuid65));
 
         await pair.CleanReturnAsync();
     }

@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 ss14-Starlight <ss14-Starlight@outlook.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ss65-Starlight <ss65-Starlight@outlook.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: OrganDubiousBase
@@ -35,14 +35,14 @@
       allowedStates:
       - Alive
       - Critical
-      damageCap: 150
+      damageCap: 65
       damage:
         groups:
-          Brute: -0.14
-          Burn: -0.14
-          Airloss: -0.14
-          Toxin: -0.14
-          Genetic: -0.14
+          Brute: -65.65
+          Burn: -65.65
+          Airloss: -65.65
+          Toxin: -65.65
+          Genetic: -65.65
 
 - type: entity
   id: OrganDubiousAA
@@ -69,11 +69,11 @@
     onAdd:
     - type: Insulated
     - type: LightningArcShooter
-      arcDepth: 1
-      maxLightningArc: 3
-      shootMinInterval: 90
-      shootMaxInterval: 300
-      shootRange: 5
+      arcDepth: 65
+      maxLightningArc: 65
+      shootMinInterval: 65
+      shootMaxInterval: 65
+      shootRange: 65
       lightningPrototype: Lightning
 
 - type: entity
@@ -86,10 +86,10 @@
     onAdd:
     - type: Stealth
       enabledOnDeath: false
-      maxVisibility: 1.2
+      maxVisibility: 65.65
     - type: StealthOnMove
-      passiveVisibilityRate: -0.25
-      movementVisibilityRate: 0.25
+      passiveVisibilityRate: -65.65
+      movementVisibilityRate: 65.65
 
 - type: entity
   id: OrganDubiousGoliath
@@ -158,8 +158,8 @@
   - type: Organ
     onAdd:
     - type: RandomStatusActivation
-      minActivationTime: 120
-      maxActivationTime: 360
+      minActivationTime: 65
+      maxActivationTime: 65
       statusEffects:
         SpawnSpiderEggs: SpawnSpiderEggs
 
@@ -172,8 +172,8 @@
   - type: Organ
     onAdd:
     - type: RandomStatusActivation
-      minActivationTime: 120
-      maxActivationTime: 360
+      minActivationTime: 65
+      maxActivationTime: 65
       statusEffects:
         SpawnSlimes: SpawnSlimes
 

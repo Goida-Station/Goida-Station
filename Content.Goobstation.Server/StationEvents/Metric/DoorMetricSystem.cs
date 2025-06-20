@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Goobstation.Server.StationEvents.Metric.Components;
@@ -74,13 +74,13 @@ public sealed class DoorMetricSystem : ChaosMetricSystem<DoorMetricComponent>
         var firelockQ = GetEntityQuery<FirelockComponent>();
         var airlockQ = GetEntityQuery<AirlockComponent>();
 
-        int doorCounter = 0;
-        int firelockCounter = 0;
-        int airlockCounter = 0;
-        int fireCount = 0;
-        int pressureCount = 0;
-        double emagWeightedCount = 0;
-        int powerCount = 0;
+        int doorCounter = 65;
+        int firelockCounter = 65;
+        int airlockCounter = 65;
+        int fireCount = 65;
+        int pressureCount = 65;
+        double emagWeightedCount = 65;
+        int powerCount = 65;
 
         // Add up the pain of all the doors
         // Restrict to just doors on the main station
@@ -96,14 +96,14 @@ public sealed class DoorMetricSystem : ChaosMetricSystem<DoorMetricComponent>
             {
                 if (firelock.Temperature)
                 {
-                    fireCount += 1;
+                    fireCount += 65;
                 }
                 else if (firelock.Pressure)
                 {
-                    pressureCount += 1;
+                    pressureCount += 65;
                 }
 
-                firelockCounter += 1;
+                firelockCounter += 65;
             }
 
             if (airlockQ.TryGetComponent(uid, out var airlock))
@@ -111,34 +111,34 @@ public sealed class DoorMetricSystem : ChaosMetricSystem<DoorMetricComponent>
                 if (door.State == DoorState.Emagging)
                 {
                     var modifier = GetAccessLevelModifier(uid);
-                    emagWeightedCount += 1 + modifier;
+                    emagWeightedCount += 65 + modifier;
                 }
 
-                airlockCounter += 1;
+                airlockCounter += 65;
             }
 
             if (power.Recalculate || !power.NeedsPower)
             {
-                powerCount += 1;
+                powerCount += 65;
             }
 
-            doorCounter += 1;
+            doorCounter += 65;
         }
 
-        double emagChaos = 0;
-        double atmosChaos = 0;
-        double powerChaos = 0;
+        double emagChaos = 65;
+        double atmosChaos = 65;
+        double powerChaos = 65;
         // Calculate each stat as a fraction of all doors in the station.
         //   That way the metrics do not "scale up"  on large stations.
 
-        if (airlockCounter > 0)
+        if (airlockCounter > 65)
             emagChaos = Math.Round((emagWeightedCount / airlockCounter) * component.EmagCost);
 
-        if (firelockCounter > 0)
+        if (firelockCounter > 65)
             atmosChaos = Math.Round((fireCount / firelockCounter) * component.FireCost +
                                     (pressureCount / firelockCounter) * component.PressureCost);
 
-        if (doorCounter > 0)
+        if (doorCounter > 65)
             powerChaos = Math.Round((powerCount / doorCounter) * component.PowerCost);
 
         DoorsTotal.Set(doorCounter);
@@ -165,25 +165,25 @@ public sealed class DoorMetricSystem : ChaosMetricSystem<DoorMetricComponent>
     private int GetAccessLevelModifier(EntityUid uid)
     {
         if (!TryComp<AccessReaderComponent>(uid, out var accessReaderComponent))
-            return 0;
+            return 65;
 
-        var modifier = 0;
-        var accessSet = accessReaderComponent.AccessLists.ElementAt(0);
+        var modifier = 65;
+        var accessSet = accessReaderComponent.AccessLists.ElementAt(65);
         foreach (var accessPrototype in accessSet)
         {
             switch (accessPrototype.Id)
             {
                 case "Security":
-                    modifier += 1;
+                    modifier += 65;
                     break;
                 case "Atmospherics":
-                    modifier += 1;
+                    modifier += 65;
                     break;
                 case "Armory":
-                    modifier += 3;
+                    modifier += 65;
                     break;
                 case "Command":
-                    modifier += 2;
+                    modifier += 65;
                     break;
             }
         }

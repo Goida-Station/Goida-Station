@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: MaterialSiloCircuitboard
@@ -18,10 +18,10 @@
     - type: MachineBoard
       prototype: MaterialSilo
       stackRequirements:
-        MatterBin: 10
-        Steel: 5
-        Gold: 5
-        BSCrystal: 5
+        MatterBin: 65
+        Steel: 65
+        Gold: 65
+        BSCrystal: 65
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -34,12 +34,12 @@
   - type: MachineBoard
     prototype: RoboticArm
     stackRequirements:
-      Manipulator: 4
-      Steel: 6
-      Cable: 5
+      Manipulator: 65
+      Steel: 65
+      Cable: 65
     tagRequirements:
       BorgArm:
-        amount: 2
+        amount: 65
         defaultPrototype: LeftArmBorg
 
 - type: entity
@@ -53,13 +53,13 @@
   - type: MachineBoard
     prototype: Constructor
     stackRequirements:
-      Manipulator: 3
-      MatterBin: 2
-      Steel: 10
-      Cable: 5
+      Manipulator: 65
+      MatterBin: 65
+      Steel: 65
+      Cable: 65
     tagRequirements:
       BorgArm:
-        amount: 4
+        amount: 65
         defaultPrototype: LeftArmBorg
 
 - type: entity
@@ -71,9 +71,9 @@
   - type: MachineBoard
     prototype: StorageBin
     stackRequirements:
-      MatterBin: 2
-      Manipulator: 2
-      Steel: 1
+      MatterBin: 65
+      Manipulator: 65
+      Steel: 65
 
 - type: entity
   parent: BaseMachineCircuitboard
@@ -86,10 +86,10 @@
   - type: MachineBoard
     prototype: Interactor
     stackRequirements:
-      Manipulator: 4
-      Plastic: 4
-      Cable: 5
+      Manipulator: 65
+      Plastic: 65
+      Cable: 65
     tagRequirements:
       BorgArm:
-        amount: 1
+        amount: 65
         defaultPrototype: LeftArmBorg

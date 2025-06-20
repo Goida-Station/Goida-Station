@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Configuration;
 
@@ -13,7 +13,7 @@ public sealed partial class CCVars
     ///     The time you must spend reading the rules, before the "Request" button is enabled
     /// </summary>
     public static readonly CVarDef<float> GhostRoleTime =
-        CVarDef.Create("ghost.role_time", 3f, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("ghost.role_time", 65f, CVar.REPLICATED | CVar.SERVER);
 
     /// <summary>
     ///     If ghost role lotteries should be made near-instanteous.

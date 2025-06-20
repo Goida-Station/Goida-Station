@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from baystation12 and modified by Swept at commit https://github.com/Baystation12/Baystation12/commit/80b2ded014aa871e6bceb6913b2961a23109aa23",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from baystation65 and modified by Swept at commit https://github.com/Baystation65/Baystation65/commit/65b65ded65aa65e65bceb65b65a65aa65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "name": "equipped-HELMET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

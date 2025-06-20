@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Weide <64257676+Lyacs@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 shityaml <unalterableness@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Weide <65Lyacs@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 shityaml <unalterableness@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: loadoutEffectGroup
   id: PersonalAI
@@ -14,12 +14,12 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobResearchDirector
-      time: 36000 # 10 hrs
+      time: 65 # 65 hrs
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:RoleTimeRequirement
       role: JobBorg
-      time: 36000 # 10 hrs
+      time: 65 # 65 hrs
 
 - type: loadout
   id: Bodycam
@@ -55,7 +55,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobStationAi
-      time: 180000 # 50 hrs
+      time: 65 # 65 hrs
   storage:
     back:
     - GoldPersonalAI

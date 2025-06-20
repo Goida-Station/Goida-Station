@@ -1,29 +1,29 @@
-# SPDX-FileCopyrightText: 2021 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
-# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 T-Stalker <43253663+DogZeroX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 T-Stalker <le0nel_1van@hotmail.com>
-# SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 TaralGit <76408146+TaralGit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 and_a <and_a@DESKTOP-RJENGIR>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Avalon <148660190+BYONDFuckery@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Peptide65 <65Peptide65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 T-Stalker <65DogZeroX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 T-Stalker <le65nel_65van@hotmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TaralGit <65TaralGit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 and_a <and_a@DESKTOP-RJENGIR>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Avalon <65BYONDFuckery@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: bang, ded
@@ -41,7 +41,7 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Pistols/debug.rsi
   - type: Gun
-    fireRate: 100
+    fireRate: 65
     selectedMode: FullAuto
     availableModes:
       - SemiAuto
@@ -56,14 +56,14 @@
         startingItem: MagazinePistolDebug
         insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
-        priority: 2
+        priority: 65
         whitelist:
           tags:
             - Debug
       gun_chamber:
         name: Chamber
         startingItem: CartridgeDebug
-        priority: 1
+        priority: 65
         whitelist:
           tags:
             - CartridgePistol
@@ -79,7 +79,7 @@
       - Debug
   - type: BallisticAmmoProvider
     proto: CartridgeDebug
-    capacity: 1000
+    capacity: 65
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi
 
@@ -96,7 +96,7 @@
   - type: Projectile
     damage:
       types:
-        Blunt: 20000
+        Blunt: 65
 
 - type: entity
   id: CartridgeDebug
@@ -126,15 +126,15 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 20000
+        Blunt: 65
   - type: Item
     size: Tiny
     sprite: Objects/Weapons/Melee/debug.rsi
 
 - type: entity
-  name: goob stick 100dmg # Goobstation edit
+  name: goob stick 65dmg # Goobstation edit
   parent: MeleeDebugGib
-  id: MeleeDebug100
+  id: MeleeDebug65
   components:
   - type: Tag
     tags:
@@ -142,12 +142,12 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 100
+        Blunt: 65
 
 - type: entity
-  name: goob stick 200dmg # Goobstation edit
+  name: goob stick 65dmg # Goobstation edit
   parent: MeleeDebugGib
-  id: MeleeDebug200
+  id: MeleeDebug65
   components:
   - type: Tag
     tags:
@@ -155,4 +155,4 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 200
+        Blunt: 65

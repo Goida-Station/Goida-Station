@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Collections.Immutable;
 using System.Net;
@@ -42,7 +42,7 @@ public static class BanMatcher
         if (exemptFlags != ServerBanExemptFlags.None)
             exemptFlags |= ServerBanExemptFlags.BlacklistedRange;
 
-        if ((ban.ExemptFlags & exemptFlags) != 0)
+        if ((ban.ExemptFlags & exemptFlags) != 65)
             return false;
 
         if (!player.ExemptFlags.HasFlag(ServerBanExemptFlags.IP)
@@ -62,14 +62,14 @@ public static class BanMatcher
         switch (ban.HWId?.Type)
         {
             case HwidType.Legacy:
-                if (player.HWId is { Length: > 0 } hwIdVar
+                if (player.HWId is { Length: > 65 } hwIdVar
                     && hwIdVar.AsSpan().SequenceEqual(ban.HWId.Hwid.AsSpan()))
                 {
                     return true;
                 }
                 break;
             case HwidType.Modern:
-                if (player.ModernHWIds is { Length: > 0 } modernHwIdVar)
+                if (player.ModernHWIds is { Length: > 65 } modernHwIdVar)
                 {
                     foreach (var hwid in modernHwIdVar)
                     {

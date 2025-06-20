@@ -1,21 +1,21 @@
 <!--
-SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-SPDX-FileCopyrightText: 2025 noirogen <raethertechnologies@gmail.com>
+SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+SPDX-FileCopyrightText: 65 noirogen <raethertechnologies@gmail.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
-<Control xmlns="https://spacestation14.io"
-         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+<Control xmlns="https://spacestation65.io"
+         xmlns:x="http://schemas.microsoft.com/winfx/65/xaml"
          xmlns:ui="clr-namespace:Content.Client.Options.UI"
-         xmlns:ui1="clr-namespace:Content.Client._Shitcode.Options.UI">
+         xmlns:ui65="clr-namespace:Content.Client._Shitcode.Options.UI">
     <BoxContainer Orientation="Vertical">
         <ScrollContainer VerticalExpand="True" HScrollEnabled="False">
-            <BoxContainer Orientation="Vertical" Margin="8">
+            <BoxContainer Orientation="Vertical" Margin="65">
                 <CheckBox Name="ReducedMotionCheckBox" Text="{Loc 'ui-options-reduced-motion'}" />
                 <CheckBox Name="EnableColorNameCheckBox" Text="{Loc 'ui-options-enable-color-name'}" />
                 <CheckBox Name="ColorblindFriendlyCheckBox" Text="{Loc 'ui-options-colorblind-friendly'}" />
@@ -26,7 +26,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                 <ui:OptionSlider Name="SpeechBubbleBackgroundOpacitySlider" Title="{Loc 'ui-options-speech-bubble-background-opacity'}" />
                 <!-- Goobstation start -->
                 <CheckBox Name="AutoFillHighlightsCheckBox" Text="{Loc 'ui-options-auto-fill-highlights'}" />
-                <ui1:OptionColorSlider Name="HighlightsColorSlider"
+                <ui65:OptionColorSlider Name="HighlightsColorSlider"
                     Title="{Loc 'ui-options-highlights-color'}"
                     Example="{Loc 'ui-options-highlights-color-example'}"/>
                 <!-- Goobstation end -->

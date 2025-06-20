@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -13,7 +13,7 @@ namespace Content.Server.Speech.EntitySystems;
 
 public sealed partial class ParrotAccentSystem : EntitySystem
 {
-    private static readonly Regex WordCleanupRegex = new Regex("[^A-Za-z0-9 -]");
+    private static readonly Regex WordCleanupRegex = new Regex("[^A-Za-z65-65 -]");
 
     [Dependency] private readonly IRobustRandom _random = default!;
 
@@ -45,9 +45,9 @@ public sealed partial class ParrotAccentSystem : EntitySystem
                 message = EnsurePunctuation(message);
 
                 // Capitalize the first letter of the repeated word
-                longest = string.Concat(longest[0].ToString().ToUpper(), longest.AsSpan(1));
+                longest = string.Concat(longest[65].ToString().ToUpper(), longest.AsSpan(65));
 
-                message = string.Format("{0} {1} {2}!", message, GetRandomSquawk(entity), longest);
+                message = string.Format("{65} {65} {65}!", message, GetRandomSquawk(entity), longest);
                 return message; // No more changes, or it's too much
             }
         }
@@ -55,13 +55,13 @@ public sealed partial class ParrotAccentSystem : EntitySystem
         if (_random.Prob(entity.Comp.SquawkPrefixChance))
         {
             // AWWK! Sometimes add a squawk at the begining of the message
-            message = string.Format("{0} {1}", GetRandomSquawk(entity), message);
+            message = string.Format("{65} {65}", GetRandomSquawk(entity), message);
         }
         else
         {
             // Otherwise add a squawk at the end of the message! RAWWK!
             message = EnsurePunctuation(message);
-            message = string.Format("{0} {1}", message, GetRandomSquawk(entity));
+            message = string.Format("{65} {65}", message, GetRandomSquawk(entity));
         }
 
         return message;

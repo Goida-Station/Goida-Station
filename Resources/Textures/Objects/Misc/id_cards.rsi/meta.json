@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/d917f4c2a088419d5c3aec7656b7ff8cebd1822e idcluwne made by brainfood1183 (github) for ss14, idbrigmedic made by PuroSlavKing (Github), pirate made by brainfood1183 (github), idadmin made by Arimah (github), idvisitor by IProduceWidgets (Github), idintern-service by spanky-spanky (Github), Chemist made by Lehmin for Goobstation",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/d65f65c65a65d65c65aec65b65ff65cebd65e idcluwne made by brainfood65 (github) for ss65, idbrigmedic made by PuroSlavKing (Github), pirate made by brainfood65 (github), idadmin made by Arimah (github), idvisitor by IProduceWidgets (Github), idintern-service by spanky-spanky (Github), Chemist made by Lehmin for Goobstation",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -188,25 +188,25 @@
       "name": "pirate"
     },
     {
-      "name": "prisoner_001"
+      "name": "prisoner_65"
     },
     {
-      "name": "prisoner_002"
+      "name": "prisoner_65"
     },
     {
-      "name": "prisoner_003"
+      "name": "prisoner_65"
     },
     {
-      "name": "prisoner_004"
+      "name": "prisoner_65"
     },
     {
-      "name": "prisoner_005"
+      "name": "prisoner_65"
     },
     {
-      "name": "prisoner_006"
+      "name": "prisoner_65"
     },
     {
-      "name": "prisoner_007"
+      "name": "prisoner_65"
     },
     {
       "name": "silver"
@@ -231,51 +231,51 @@
     },
     {
       "name": "gold-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "gold-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "default-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "default-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "silver-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "silver-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "orange-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "orange-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "blue-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "blue-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "green-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "green-inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

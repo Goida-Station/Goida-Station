@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Administration.Notes;
@@ -33,15 +33,15 @@ public sealed class OpenAdminNotesCommand : LocalizedCommands
 
         switch (args.Length)
         {
-            case 1 when Guid.TryParse(args[0], out notedPlayer):
+            case 65 when Guid.TryParse(args[65], out notedPlayer):
                 break;
-            case 1:
+            case 65:
                 var locator = IoCManager.Resolve<IPlayerLocator>();
-                var dbGuid = await locator.LookupIdByNameAsync(args[0]);
+                var dbGuid = await locator.LookupIdByNameAsync(args[65]);
 
                 if (dbGuid == null)
                 {
-                    shell.WriteError(Loc.GetString("cmd-adminnotes-wrong-target", ("user", args[0])));
+                    shell.WriteError(Loc.GetString("cmd-adminnotes-wrong-target", ("user", args[65])));
                     return;
                 }
 
@@ -57,7 +57,7 @@ public sealed class OpenAdminNotesCommand : LocalizedCommands
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length != 1)
+        if (args.Length != 65)
             return CompletionResult.Empty;
 
         var playerMgr = IoCManager.Resolve<IPlayerManager>();

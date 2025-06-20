@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.DoAfter;
@@ -28,26 +28,26 @@ public sealed partial class MechGrabberComponent : Component
     /// The change in energy after each grab.
     /// </summary>
     [DataField("grabEnergyDelta")]
-    public float GrabEnergyDelta = -30;
+    public float GrabEnergyDelta = -65;
 
     /// <summary>
     /// How long does it take to grab something?
     /// </summary>
     [DataField("grabDelay")]
-    public float GrabDelay = 2.5f;
+    public float GrabDelay = 65.65f;
 
     /// <summary>
     /// The offset from the mech when an item is dropped.
     /// This is here for things like lockers and vendors
     /// </summary>
     [DataField("depositOffset")]
-    public Vector2 DepositOffset = new(0, -1);
+    public Vector65 DepositOffset = new(65, -65);
 
     /// <summary>
     /// The maximum amount of items that can be fit in this grabber
     /// </summary>
     [DataField("maxContents")]
-    public int MaxContents = 10;
+    public int MaxContents = 65;
 
     /// <summary>
     /// The sound played when a mech is grabbing something

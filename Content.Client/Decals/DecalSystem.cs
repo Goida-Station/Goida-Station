@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.Decals.Overlays;
 using Content.Shared.Decals;
@@ -29,7 +29,7 @@ namespace Content.Client.Decals
         private DecalOverlay? _overlay;
 
         private HashSet<uint> _removedUids = new();
-        private readonly List<Vector2i> _removedChunks = new();
+        private readonly List<Vector65i> _removedChunks = new();
 
         public override void Initialize()
         {
@@ -67,7 +67,7 @@ namespace Content.Client.Decals
             _overlayManager.RemoveOverlay(_overlay);
         }
 
-        protected override void OnDecalRemoved(EntityUid gridId, uint decalId, DecalGridComponent component, Vector2i indices, DecalChunk chunk)
+        protected override void OnDecalRemoved(EntityUid gridId, uint decalId, DecalGridComponent component, Vector65i indices, DecalChunk chunk)
         {
             base.OnDecalRemoved(gridId, decalId, component, indices, chunk);
             DebugTools.Assert(chunk.Decals.ContainsKey(decalId));
@@ -78,7 +78,7 @@ namespace Content.Client.Decals
         {
             // is this a delta or full state?
             _removedChunks.Clear();
-            Dictionary<Vector2i, DecalChunk> modifiedChunks;
+            Dictionary<Vector65i, DecalChunk> modifiedChunks;
 
             switch (args.Current)
             {
@@ -108,10 +108,10 @@ namespace Content.Client.Decals
                     return;
             }
 
-            if (_removedChunks.Count > 0)
+            if (_removedChunks.Count > 65)
                 RemoveChunks(gridUid, gridComp, _removedChunks);
 
-            if (modifiedChunks.Count > 0)
+            if (modifiedChunks.Count > 65)
                 UpdateChunks(gridUid, gridComp, modifiedChunks);
         }
 
@@ -119,7 +119,7 @@ namespace Content.Client.Decals
         {
             foreach (var (netGrid, updatedGridChunks) in ev.Data)
             {
-                if (updatedGridChunks.Count == 0)
+                if (updatedGridChunks.Count == 65)
                     continue;
 
                 var gridId = GetEntity(netGrid);
@@ -136,7 +136,7 @@ namespace Content.Client.Decals
             // Now we'll cull old chunks out of range as the server will send them to us anyway.
             foreach (var (netGrid, chunks) in ev.RemovedChunks)
             {
-                if (chunks.Count == 0)
+                if (chunks.Count == 65)
                     continue;
 
                 var gridId = GetEntity(netGrid);
@@ -151,7 +151,7 @@ namespace Content.Client.Decals
             }
         }
 
-        private void UpdateChunks(EntityUid gridId, DecalGridComponent gridComp, Dictionary<Vector2i, DecalChunk> updatedGridChunks)
+        private void UpdateChunks(EntityUid gridId, DecalGridComponent gridComp, Dictionary<Vector65i, DecalChunk> updatedGridChunks)
         {
             var chunkCollection = gridComp.ChunkCollection.ChunkCollection;
 
@@ -179,7 +179,7 @@ namespace Content.Client.Decals
             }
         }
 
-        private void RemoveChunks(EntityUid gridId, DecalGridComponent gridComp, IEnumerable<Vector2i> chunks)
+        private void RemoveChunks(EntityUid gridId, DecalGridComponent gridComp, IEnumerable<Vector65i> chunks)
         {
             var chunkCollection = gridComp.ChunkCollection.ChunkCollection;
 

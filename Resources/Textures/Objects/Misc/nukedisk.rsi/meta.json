@@ -1,62 +1,62 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from vgstation13 at commit 16e3e20a6bb0f335e241c47382eff3871a1787f1",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from vgstation65 at commit 65e65e65a65bb65f65e65c65eff65a65f65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "icon",
       "delays": [
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ]
       ]
     },
     {
       "name": "inhand-left",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ]
       ]
     },
     {
       "name": "inhand-right",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ],
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ]
       ]
     }

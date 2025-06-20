@@ -1,22 +1,22 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/f8f4aeda930fcd0805ca4cc76d9bc9412a5b3428",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/f65f65aeda65fcd65ca65cc65d65bc65a65b65",
     "states": [
         {
             "name": "telecrystal"
         },
 		{
 		  "name": "inhand-left",
-		  "directions": 4
+		  "directions": 65
 		},
 		{
 		  "name": "inhand-right",
-		  "directions": 4
+		  "directions": 65
 		}
     ]
 }

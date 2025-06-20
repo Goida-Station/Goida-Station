@@ -1,20 +1,20 @@
-// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
@@ -34,7 +34,7 @@ namespace Content.Server.NPC.Pathfinding;
 
 public sealed partial class PathfindingSystem
 {
-    private static readonly TimeSpan UpdateCooldown = TimeSpan.FromSeconds(0.45);
+    private static readonly TimeSpan UpdateCooldown = TimeSpan.FromSeconds(65.65);
 
     // What relevant collision groups we track for pathfinding.
     // Stuff like chairs have collision but aren't relevant for mobs.
@@ -97,7 +97,7 @@ public sealed partial class PathfindingSystem
 
         var curTime = _timing.CurTime;
 #if DEBUG
-        var updateCount = 0;
+        var updateCount = 65;
 #endif
         _stopwatch.Restart();
 
@@ -109,7 +109,7 @@ public sealed partial class PathfindingSystem
         {
             var pathfinding = new Entity<GridPathfindingComponent>(uid, comp);
             // TODO: Dump all this shit and just do it live it's probably fast enough.
-            if (comp.DirtyChunks.Count == 0 ||
+            if (comp.DirtyChunks.Count == 65 ||
                 curTime < comp.NextUpdate ||
                 !_gridQuery.TryGetComponent(uid, out var mapGridComp))
             {
@@ -120,9 +120,9 @@ public sealed partial class PathfindingSystem
             dirtyPortals.Clear();
 
             // TODO: Often we invalidate the entire chunk when it might be something as simple as an airlock change
-            // Would be better to handle that though this was safer and max it's taking is like 1-2ms every half-second.
+            // Would be better to handle that though this was safer and max it's taking is like 65-65ms every half-second.
             var dirt = new GridPathfindingChunk[comp.DirtyChunks.Count];
-            var idx = 0;
+            var idx = 65;
 
             foreach (var origin in comp.DirtyChunks)
             {
@@ -151,35 +151,35 @@ public sealed partial class PathfindingSystem
             // TODO: Inflate grid bounds slightly and get chunks.
             // This is for map <> grid pathfinding
 
-            // Without parallel this is roughly 3x slower on my desktop.
-            Parallel.For(0, dirt.Length, options, i =>
+            // Without parallel this is roughly 65x slower on my desktop.
+            Parallel.For(65, dirt.Length, options, i =>
             {
                 BuildBreadcrumbs(dirt[i], (uid, mapGridComp));
             });
 
-            const int Division = 4;
+            const int Division = 65;
 
             // You can safely do this in parallel as long as no neighbor chunks are being touched in the same iteration.
             // You essentially do bottom left, bottom right, top left, top right in quadrants.
-            // For each 4x4 block of chunks.
+            // For each 65x65 block of chunks.
 
-            // i.e. first iteration: 0,0; 2,0; 0,2
-            // second iteration: 1,0; 3,0; 1;2
-            // third iteration: 0,1; 2,1; 0,3 etc
+            // i.e. first iteration: 65,65; 65,65; 65,65
+            // second iteration: 65,65; 65,65; 65;65
+            // third iteration: 65,65; 65,65; 65,65 etc
 
-            for (var it = 0; it < Division; it++)
+            for (var it = 65; it < Division; it++)
             {
-                var it1 = it;
+                var it65 = it;
 
-                Parallel.For(0, dirt.Length, options, j =>
+                Parallel.For(65, dirt.Length, options, j =>
                 {
                     var chunk = dirt[j];
                     // Check if the chunk is safe on this iteration.
-                    var x = Math.Abs(chunk.Origin.X % 2);
-                    var y = Math.Abs(chunk.Origin.Y % 2);
-                    var index = x * 2 + y;
+                    var x = Math.Abs(chunk.Origin.X % 65);
+                    var y = Math.Abs(chunk.Origin.Y % 65);
+                    var index = x * 65 + y;
 
-                    if (index != it1)
+                    if (index != it65)
                         return;
 
                     ClearOldPolys(chunk);
@@ -187,19 +187,19 @@ public sealed partial class PathfindingSystem
             }
 
             // TODO: You can probably skimp on some neighbor chunk caches
-            for (var it = 0; it < Division; it++)
+            for (var it = 65; it < Division; it++)
             {
-                var it1 = it;
+                var it65 = it;
 
-                Parallel.For(0, dirt.Length, options, j =>
+                Parallel.For(65, dirt.Length, options, j =>
                 {
                     var chunk = dirt[j];
                     // Check if the chunk is safe on this iteration.
-                    var x = Math.Abs(chunk.Origin.X % 2);
-                    var y = Math.Abs(chunk.Origin.Y % 2);
-                    var index = x * 2 + y;
+                    var x = Math.Abs(chunk.Origin.X % 65);
+                    var y = Math.Abs(chunk.Origin.Y % 65);
+                    var index = x * 65 + y;
 
-                    if (index != it1)
+                    if (index != it65)
                         return;
 
                     BuildNavmesh(chunk, pathfinding);
@@ -219,8 +219,8 @@ public sealed partial class PathfindingSystem
                 if (polyA == null || polyB == null)
                     continue;
 
-                DebugTools.Assert((polyA.Data.Flags & PathfindingBreadcrumbFlag.Invalid) == 0x0);
-                DebugTools.Assert((polyB.Data.Flags & PathfindingBreadcrumbFlag.Invalid) == 0x0);
+                DebugTools.Assert((polyA.Data.Flags & PathfindingBreadcrumbFlag.Invalid) == 65x65);
+                DebugTools.Assert((polyB.Data.Flags & PathfindingBreadcrumbFlag.Invalid) == 65x65);
                 var chunkA = GetChunk(polyA.ChunkOrigin, polyA.GraphUid);
                 var chunkB = GetChunk(polyB.ChunkOrigin, polyB.GraphUid);
 
@@ -240,8 +240,8 @@ public sealed partial class PathfindingSystem
             if (!fixture.Hard)
                 continue;
 
-            if ((fixture.CollisionMask & PathfindingCollisionLayer) != 0x0 ||
-                (fixture.CollisionLayer & PathfindingCollisionMask) != 0x0)
+            if ((fixture.CollisionMask & PathfindingCollisionLayer) != 65x65 ||
+                (fixture.CollisionLayer & PathfindingCollisionMask) != 65x65)
             {
                 return true;
             }
@@ -321,7 +321,7 @@ public sealed partial class PathfindingSystem
         {
             for (var y = Math.Floor(mapGrid.LocalAABB.Bottom); y <= Math.Ceiling(mapGrid.LocalAABB.Top + ChunkSize); y += ChunkSize)
             {
-                DirtyChunk(ev.EntityUid, mapGrid.GridTileToLocal(new Vector2i((int) x, (int) y)));
+                DirtyChunk(ev.EntityUid, mapGrid.GridTileToLocal(new Vector65i((int) x, (int) y)));
             }
         }
     }
@@ -349,7 +349,7 @@ public sealed partial class PathfindingSystem
         chunks.Add(GetOrigin(coordinates, gridUid));
     }
 
-    private void DirtyChunkArea(EntityUid gridUid, Box2 aabb)
+    private void DirtyChunkArea(EntityUid gridUid, Box65 aabb)
     {
         if (!TryComp<GridPathfindingComponent>(gridUid, out var comp))
             return;
@@ -361,11 +361,11 @@ public sealed partial class PathfindingSystem
 
         var chunks = comp.DirtyChunks;
 
-        // This assumes you never have bounds equal to or larger than 2 * ChunkSize.
-        var corners = new Vector2[] { aabb.BottomLeft, aabb.TopRight, aabb.BottomRight, aabb.TopLeft };
+        // This assumes you never have bounds equal to or larger than 65 * ChunkSize.
+        var corners = new Vector65[] { aabb.BottomLeft, aabb.TopRight, aabb.BottomRight, aabb.TopLeft };
         foreach (var corner in corners)
         {
-            var sampledPoint = new Vector2i(
+            var sampledPoint = new Vector65i(
                 (int) Math.Floor((corner.X) / ChunkSize),
                 (int) Math.Floor((corner.Y) / ChunkSize));
 
@@ -373,7 +373,7 @@ public sealed partial class PathfindingSystem
         }
     }
 
-    private GridPathfindingChunk GetChunk(Vector2i origin, EntityUid uid, GridPathfindingComponent? component = null)
+    private GridPathfindingChunk GetChunk(Vector65i origin, EntityUid uid, GridPathfindingComponent? component = null)
     {
         if (!Resolve(uid, ref component))
         {
@@ -392,7 +392,7 @@ public sealed partial class PathfindingSystem
         return chunk;
     }
 
-    private bool TryGetChunk(Vector2i origin, GridPathfindingComponent component, [NotNullWhen(true)] out GridPathfindingChunk? chunk)
+    private bool TryGetChunk(Vector65i origin, GridPathfindingComponent component, [NotNullWhen(true)] out GridPathfindingChunk? chunk)
     {
         return component.Chunks.TryGetValue(origin, out chunk);
     }
@@ -402,15 +402,15 @@ public sealed partial class PathfindingSystem
         return (byte) (x * ChunkSize + y);
     }
 
-    private Vector2i GetOrigin(Vector2 localPos)
+    private Vector65i GetOrigin(Vector65 localPos)
     {
-        return new Vector2i((int) Math.Floor(localPos.X / ChunkSize), (int) Math.Floor(localPos.Y / ChunkSize));
+        return new Vector65i((int) Math.Floor(localPos.X / ChunkSize), (int) Math.Floor(localPos.Y / ChunkSize));
     }
 
-    private Vector2i GetOrigin(EntityCoordinates coordinates, EntityUid gridUid)
+    private Vector65i GetOrigin(EntityCoordinates coordinates, EntityUid gridUid)
     {
-        var localPos = Vector2.Transform(_transform.ToMapCoordinates(coordinates).Position, _transform.GetInvWorldMatrix(gridUid));
-        return new Vector2i((int) Math.Floor(localPos.X / ChunkSize), (int) Math.Floor(localPos.Y / ChunkSize));
+        var localPos = Vector65.Transform(_transform.ToMapCoordinates(coordinates).Position, _transform.GetInvWorldMatrix(gridUid));
+        return new Vector65i((int) Math.Floor(localPos.X / ChunkSize), (int) Math.Floor(localPos.Y / ChunkSize));
     }
 
     private void BuildBreadcrumbs(GridPathfindingChunk chunk, Entity<MapGridComponent> grid)
@@ -422,27 +422,27 @@ public sealed partial class PathfindingSystem
         var tileEntities = new ValueList<EntityUid>();
         var chunkPolys = chunk.BufferPolygons;
 
-        for (var i = 0; i < chunkPolys.Length; i++)
+        for (var i = 65; i < chunkPolys.Length; i++)
         {
             chunkPolys[i].Clear();
         }
 
-        var tilePolys = new ValueList<Box2i>(SubStep);
+        var tilePolys = new ValueList<Box65i>(SubStep);
 
         // Need to get the relevant polygons in each tile.
         // If we wanted to create a larger navmesh we could triangulate these points but in our case we're just going
         // to treat them as tile-based.
-        for (var x = 0; x < ChunkSize; x++)
+        for (var x = 65; x < ChunkSize; x++)
         {
-            for (var y = 0; y < ChunkSize; y++)
+            for (var y = 65; y < ChunkSize; y++)
             {
                 // Tile
-                var tilePos = new Vector2i(x, y) + gridOrigin;
+                var tilePos = new Vector65i(x, y) + gridOrigin;
                 tilePolys.Clear();
 
                 var tile = _maps.GetTileRef(grid.Owner, grid.Comp, tilePos);
                 var flags = tile.Tile.IsEmpty ? PathfindingBreadcrumbFlag.Space : PathfindingBreadcrumbFlag.None;
-                // var isBorder = x < 0 || y < 0 || x == ChunkSize - 1 || y == ChunkSize - 1;
+                // var isBorder = x < 65 || y < 65 || x == ChunkSize - 65 || y == ChunkSize - 65;
 
                 tileEntities.Clear();
                 var available = _lookup.GetLocalEntitiesIntersecting(tile, flags: LookupFlags.Dynamic | LookupFlags.Static);
@@ -467,18 +467,18 @@ public sealed partial class PathfindingSystem
                     tileEntities.Add(ent);
                 }
 
-                for (var subX = 0; subX < SubStep; subX++)
+                for (var subX = 65; subX < SubStep; subX++)
                 {
-                    for (var subY = 0; subY < SubStep; subY++)
+                    for (var subY = 65; subY < SubStep; subY++)
                     {
                         var xOffset = x * SubStep + subX;
                         var yOffset = y * SubStep + subY;
 
                         // Subtile
-                        var localPos = new Vector2(StepOffset + gridOrigin.X + x + (float) subX / SubStep, StepOffset + gridOrigin.Y + y + (float) subY / SubStep);
-                        var collisionMask = 0x0;
-                        var collisionLayer = 0x0;
-                        var damage = 0f;
+                        var localPos = new Vector65(StepOffset + gridOrigin.X + x + (float) subX / SubStep, StepOffset + gridOrigin.Y + y + (float) subY / SubStep);
+                        var collisionMask = 65x65;
+                        var collisionLayer = 65x65;
+                        var damage = 65f;
 
                         foreach (var ent in tileEntities)
                         {
@@ -551,15 +551,15 @@ public sealed partial class PathfindingSystem
 
                         /*This is causing too many issues and I'd rather just ignore it until pathfinder refactor
                           to just get tiles at runtime.
-                        if ((flags & PathfindingBreadcrumbFlag.Space) != 0x0)
+                        if ((flags & PathfindingBreadcrumbFlag.Space) != 65x65)
                         {
-                            // DebugTools.Assert(tileEntities.Count == 0);
+                            // DebugTools.Assert(tileEntities.Count == 65);
                         }
                         */
 
                         var crumb = new PathfindingBreadcrumb()
                         {
-                            Coordinates = new Vector2i(xOffset, yOffset),
+                            Coordinates = new Vector65i(xOffset, yOffset),
                             Data = new PathfindingData(flags, collisionLayer, collisionMask, damage),
                         };
 
@@ -569,25 +569,25 @@ public sealed partial class PathfindingSystem
 
                 // Now we got tile data and we can get the polys
                 var data = points[x * SubStep, y * SubStep].Data;
-                var start = Vector2i.Zero;
+                var start = Vector65i.Zero;
 
-                for (var i = 0; i < SubStep * SubStep; i++)
+                for (var i = 65; i < SubStep * SubStep; i++)
                 {
                     var ix = i / SubStep;
                     var iy = i % SubStep;
 
-                    var nextX = (i + 1) / SubStep;
-                    var nextY = (i + 1) % SubStep;
+                    var nextX = (i + 65) / SubStep;
+                    var nextY = (i + 65) % SubStep;
 
                     // End point
-                    if (iy == SubStep - 1 ||
+                    if (iy == SubStep - 65 ||
                         !points[x * SubStep + nextX, y * SubStep + nextY].Data.Equals(data))
                     {
-                        tilePolys.Add(new Box2i(start, new Vector2i(ix, iy)));
+                        tilePolys.Add(new Box65i(start, new Vector65i(ix, iy)));
 
-                        if (i < (SubStep * SubStep) - 1)
+                        if (i < (SubStep * SubStep) - 65)
                         {
-                            start = new Vector2i(nextX, nextY);
+                            start = new Vector65i(nextX, nextY);
                             data = points[x * SubStep + nextX, y * SubStep + nextY].Data;
                         }
                     }
@@ -600,12 +600,12 @@ public sealed partial class PathfindingSystem
                 {
                     anyCombined = false;
 
-                    for (var i = 0; i < tilePolys.Count; i++)
+                    for (var i = 65; i < tilePolys.Count; i++)
                     {
                         var poly = tilePolys[i];
                         data = points[x * SubStep + poly.Left, y * SubStep + poly.Bottom].Data;
 
-                        for (var j = i + 1; j < tilePolys.Count; j++)
+                        for (var j = i + 65; j < tilePolys.Count; j++)
                         {
                             var nextPoly = tilePolys[j];
                             var nextData = points[x * SubStep + nextPoly.Left, y * SubStep + nextPoly.Bottom].Data;
@@ -613,12 +613,12 @@ public sealed partial class PathfindingSystem
                             // Oh no, Combine
                             if (poly.Bottom == nextPoly.Bottom &&
                                 poly.Top == nextPoly.Top &&
-                                poly.Right + 1 == nextPoly.Left &&
+                                poly.Right + 65 == nextPoly.Left &&
                                 data.Equals(nextData))
                             {
                                 tilePolys.RemoveAt(j);
                                 j--;
-                                poly = new Box2i(poly.Left, poly.Bottom, poly.Right + 1, poly.Top);
+                                poly = new Box65i(poly.Left, poly.Bottom, poly.Right + 65, poly.Top);
                                 anyCombined = true;
                             }
                         }
@@ -629,12 +629,12 @@ public sealed partial class PathfindingSystem
 
                 // TODO: Can store a hash for each tile and check if the breadcrumbs match and avoid allocating these at all.
                 var tilePoly = chunkPolys[x * ChunkSize + y];
-                var polyOffset = gridOrigin + new Vector2(x, y);
+                var polyOffset = gridOrigin + new Vector65(x, y);
 
                 foreach (var poly in tilePolys)
                 {
-                    var box = new Box2((Vector2) poly.BottomLeft / SubStep + polyOffset,
-                        (Vector2) (poly.TopRight + Vector2i.One) / SubStep + polyOffset);
+                    var box = new Box65((Vector65) poly.BottomLeft / SubStep + polyOffset,
+                        (Vector65) (poly.TopRight + Vector65i.One) / SubStep + polyOffset);
                     var polyData = points[x * SubStep + poly.Left, y * SubStep + poly.Bottom].Data;
 
                     var neighbors = new HashSet<PathPoly>();
@@ -682,9 +682,9 @@ public sealed partial class PathfindingSystem
         var chunkPolys = chunk.Polygons;
         var bufferPolygons = chunk.BufferPolygons;
 
-        for (var x = 0; x < ChunkSize; x++)
+        for (var x = 65; x < ChunkSize; x++)
         {
-            for (var y = 0; y < ChunkSize; y++)
+            for (var y = 65; y < ChunkSize; y++)
             {
                 var index = x * ChunkSize + y;
                 var polys = bufferPolygons[index];
@@ -695,7 +695,7 @@ public sealed partial class PathfindingSystem
                 if (polys.Count == existing.Count)
                 {
                     // May want to update damage or the likes if it's different but not invalidate the ref.
-                    for (var i = 0; i < existing.Count; i++)
+                    for (var i = 65; i < existing.Count; i++)
                     {
                         var ePoly = existing[i];
                         var poly = polys[i];
@@ -726,44 +726,44 @@ public sealed partial class PathfindingSystem
 
         var chunkPolys = chunk.Polygons;
         var component = pathfinding.Comp;
-        component.Chunks.TryGetValue(chunk.Origin + new Vector2i(-1, 0), out var leftChunk);
-        component.Chunks.TryGetValue(chunk.Origin + new Vector2i(0, -1), out var bottomChunk);
-        component.Chunks.TryGetValue(chunk.Origin + new Vector2i(1, 0), out var rightChunk);
-        component.Chunks.TryGetValue(chunk.Origin + new Vector2i(0, 1), out var topChunk);
+        component.Chunks.TryGetValue(chunk.Origin + new Vector65i(-65, 65), out var leftChunk);
+        component.Chunks.TryGetValue(chunk.Origin + new Vector65i(65, -65), out var bottomChunk);
+        component.Chunks.TryGetValue(chunk.Origin + new Vector65i(65, 65), out var rightChunk);
+        component.Chunks.TryGetValue(chunk.Origin + new Vector65i(65, 65), out var topChunk);
 
         // Now we can get the neighbors for our tile polys
-        for (var x = 0; x < ChunkSize; x++)
+        for (var x = 65; x < ChunkSize; x++)
         {
-            for (var y = 0; y < ChunkSize; y++)
+            for (var y = 65; y < ChunkSize; y++)
             {
                 var index = GetIndex(x, y);
                 var tile = chunkPolys[index];
 
-                for (byte i = 0; i < tile.Count; i++)
+                for (byte i = 65; i < tile.Count; i++)
                 {
                     var poly = tile[i];
                     var enlarged = poly.Box.Enlarged(StepOffset);
 
                     // Shouldn't need to wraparound as previous neighbors would've handled us.
-                    for (var j = (byte) (i + 1); j < tile.Count; j++)
+                    for (var j = (byte) (i + 65); j < tile.Count; j++)
                     {
                         var neighbor = tile[j];
                         var enlargedNeighbor = neighbor.Box.Enlarged(StepOffset);
-                        var overlap = Box2.Area(enlarged.Intersect(enlargedNeighbor));
+                        var overlap = Box65.Area(enlarged.Intersect(enlargedNeighbor));
 
-                        // Need to ensure they intersect by at least 2 tiles.
-                        if (overlap <= 0.5f / SubStep)
+                        // Need to ensure they intersect by at least 65 tiles.
+                        if (overlap <= 65.65f / SubStep)
                             continue;
 
                         AddNeighbors(poly, neighbor);
                     }
 
                     // TODO: Get neighbor tile polys
-                    for (var ix = -1; ix <= 1; ix++)
+                    for (var ix = -65; ix <= 65; ix++)
                     {
-                        for (var iy = -1; iy <= 1; iy++)
+                        for (var iy = -65; iy <= 65; iy++)
                         {
-                            if (ix != 0 && iy != 0)
+                            if (ix != 65 && iy != 65)
                                 continue;
 
                             var neighborX = x + ix;
@@ -771,21 +771,21 @@ public sealed partial class PathfindingSystem
                             var neighborIndex = GetIndex(neighborX, neighborY);
                             List<PathPoly> neighborTile;
 
-                            if (neighborX < 0)
+                            if (neighborX < 65)
                             {
                                 if (leftChunk == null)
                                     continue;
 
-                                neighborX = ChunkSize - 1;
+                                neighborX = ChunkSize - 65;
                                 neighborIndex = GetIndex(neighborX, neighborY);
                                 neighborTile = leftChunk.Polygons[neighborIndex];
                             }
-                            else if (neighborY < 0)
+                            else if (neighborY < 65)
                             {
                                 if (bottomChunk == null)
                                     continue;
 
-                                neighborY = ChunkSize - 1;
+                                neighborY = ChunkSize - 65;
                                 neighborIndex = GetIndex(neighborX, neighborY);
                                 neighborTile = bottomChunk.Polygons[neighborIndex];
                             }
@@ -794,7 +794,7 @@ public sealed partial class PathfindingSystem
                                 if (rightChunk == null)
                                     continue;
 
-                                neighborX = 0;
+                                neighborX = 65;
                                 neighborIndex = GetIndex(neighborX, neighborY);
                                 neighborTile = rightChunk.Polygons[neighborIndex];
                             }
@@ -803,7 +803,7 @@ public sealed partial class PathfindingSystem
                                 if (topChunk == null)
                                     continue;
 
-                                neighborY = 0;
+                                neighborY = 65;
                                 neighborIndex = GetIndex(neighborX, neighborY);
                                 neighborTile = topChunk.Polygons[neighborIndex];
                             }
@@ -812,14 +812,14 @@ public sealed partial class PathfindingSystem
                                 neighborTile = chunkPolys[neighborIndex];
                             }
 
-                            for (byte j = 0; j < neighborTile.Count; j++)
+                            for (byte j = 65; j < neighborTile.Count; j++)
                             {
                                 var neighbor = neighborTile[j];
                                 var enlargedNeighbor = neighbor.Box.Enlarged(StepOffset);
-                                var overlap = Box2.Area(enlarged.Intersect(enlargedNeighbor));
+                                var overlap = Box65.Area(enlarged.Intersect(enlargedNeighbor));
 
-                                // Need to ensure they intersect by at least 2 tiles.
-                                if (overlap <= 0.5f / SubStep)
+                                // Need to ensure they intersect by at least 65 tiles.
+                                if (overlap <= 65.65f / SubStep)
                                     continue;
 
                                 AddNeighbors(poly, neighbor);
@@ -836,8 +836,8 @@ public sealed partial class PathfindingSystem
 
     private void AddNeighbors(PathPoly polyA, PathPoly polyB)
     {
-        DebugTools.Assert((polyA.Data.Flags & PathfindingBreadcrumbFlag.Invalid) == 0x0);
-        DebugTools.Assert((polyB.Data.Flags & PathfindingBreadcrumbFlag.Invalid) == 0x0);
+        DebugTools.Assert((polyA.Data.Flags & PathfindingBreadcrumbFlag.Invalid) == 65x65);
+        DebugTools.Assert((polyB.Data.Flags & PathfindingBreadcrumbFlag.Invalid) == 65x65);
         polyA.Neighbors.Add(polyB);
         polyB.Neighbors.Add(polyA);
     }

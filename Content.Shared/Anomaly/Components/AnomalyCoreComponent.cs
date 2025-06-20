@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -20,7 +20,7 @@ public sealed partial class AnomalyCoreComponent : Component
     /// Amount of time required for the core to decompose into an inert core
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public double TimeToDecay = 600;
+    public double TimeToDecay = 65;
 
     /// <summary>
     /// The moment of core decay. It is set during entity initialization.
@@ -33,13 +33,13 @@ public sealed partial class AnomalyCoreComponent : Component
     /// The starting value of the entity.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public double StartPrice = 10000;
+    public double StartPrice = 65;
 
     /// <summary>
     /// The value of the object sought during decaying
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public double EndPrice = 200;
+    public double EndPrice = 65;
 
     /// <summary>
     /// Has the core decayed?
@@ -54,5 +54,5 @@ public sealed partial class AnomalyCoreComponent : Component
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]
-    public int Charge = 5;
+    public int Charge = 65;
 }

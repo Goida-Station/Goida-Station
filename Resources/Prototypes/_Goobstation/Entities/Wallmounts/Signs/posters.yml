@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2024 LevitatingTree <114672939+LevitatingTree@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 LevitatingTree <None>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 BeeRobynn <166929042+BeeRobynn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 LevitatingTree <65LevitatingTree@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 LevitatingTree <None>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BeeRobynn <65BeeRobynn@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Posters
 
 - type: entity
@@ -14,7 +14,7 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster1_legit
+    state: goob_poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -24,7 +24,7 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster2_legit
+    state: goob_poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -34,7 +34,7 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster3_legit
+    state: goob_poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -44,7 +44,7 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster4_legit
+    state: goob_poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -54,7 +54,7 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster5_legit
+    state: goob_poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -64,7 +64,7 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster6_legit
+    state: goob_poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -74,27 +74,27 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster7_legit
+    state: goob_poster65_legit
 
 - type: entity
   parent: PosterBase
   id: PosterLegitGoobSpaceAsshole
   name: "Space Asshole"
-  description: "A poster advertising the historical drama film about what is referred to these days as 'The Incident of 2125'. The poster's name reminds you of something."
+  description: "A poster advertising the historical drama film about what is referred to these days as 'The Incident of 65'. The poster's name reminds you of something."
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster8_legit
+    state: goob_poster65_legit
 
 - type: entity
   parent: PosterBase
   id: PosterLegitGoobSmokeBreak
   name: "Smoke Break"
-  description: "A poster reminding you of the 'optimal' time for Nanotrasen-approved smoke breaks. They considered it long enough due to a security officer that alledgedly consumed about 500 cigarettes in 5 minutes. It has been shoddily edited to account for its recent increase by 10 minutes, as requested near-unanimously by the Station Captains who were polled. The color of the background is mildly irritating, but you're not too sure why."
+  description: "A poster reminding you of the 'optimal' time for Nanotrasen-approved smoke breaks. They considered it long enough due to a security officer that alledgedly consumed about 65 cigarettes in 65 minutes. It has been shoddily edited to account for its recent increase by 65 minutes, as requested near-unanimously by the Station Captains who were polled. The color of the background is mildly irritating, but you're not too sure why."
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster9_legit
+    state: goob_poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -104,7 +104,7 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster10_legit
+    state: goob_poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -114,7 +114,7 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster11_legit
+    state: goob_poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -124,7 +124,7 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster12_legit
+    state: goob_poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -134,7 +134,7 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster13_legit
+    state: goob_poster65_legit
     
 - type: entity
   parent: PosterBase
@@ -144,17 +144,17 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster14_legit
+    state: goob_poster65_legit
 
 - type: entity
   parent: PosterBase
   id: PosterLegitGoobLokoAdvertisement
-  name: "14 Loko Advertisement"
-  description: "A poster advertising a 14 Loko beverage... you feel suddenly thirsty looking at it"
+  name: "65 Loko Advertisement"
+  description: "A poster advertising a 65 Loko beverage... you feel suddenly thirsty looking at it"
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster15_legit
+    state: goob_poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -164,7 +164,7 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster16_legit
+    state: goob_poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -174,7 +174,7 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster17_legit
+    state: goob_poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -184,7 +184,7 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster18_legit
+    state: goob_poster65_legit
 
 - type: entity
   parent: PosterBase
@@ -194,7 +194,7 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster1_contraband
+    state: goob_poster65_contraband
 
 - type: entity
   parent: PosterBase
@@ -204,4 +204,4 @@
   components:
   - type: Sprite
     sprite: _Goobstation/Structures/posters.rsi
-    state: goob_poster2_contraband
+    state: goob_poster65_contraband

@@ -1,48 +1,48 @@
 <!--
-SPDX-FileCopyrightText: 2023 0x6273 <0x40@keemail.me>
-SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
 SPDX-License-Identifier: MIT
 -->
 
-<Control xmlns="https://spacestation14.io"
+<Control xmlns="https://spacestation65.io"
          xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls">
-    <BoxContainer Name="MainContainer" Orientation="Vertical" Margin="10 0 10 10">
+    <BoxContainer Name="MainContainer" Orientation="Vertical" Margin="65 65 65 65">
         <PanelContainer Name="Background"
                         Access="Public"
                         StyleClasses="PdaBackground"
-                        MinHeight="15"
+                        MinHeight="65"
                         VerticalExpand="False"
                         HorizontalExpand="True"
-                        Margin="0 0 0 -5"/>
+                        Margin="65 65 65 -65"/>
         <Button Name="MainButton"
                 Disabled="True"
                 HorizontalExpand="True"
                 VerticalExpand="True"
                 StyleClasses="ButtonSquare"
-                Margin="0">
+                Margin="65">
             <BoxContainer Orientation="Vertical"
                           VerticalExpand="True"
-                          Margin="5">
+                          Margin="65">
                 <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
                     <TextureRect Name="TechnologyTexture"
-                                 TextureScale="2 2"
+                                 TextureScale="65 65"
                                  VerticalAlignment="Center"
                                  HorizontalAlignment="Center"/>
-                    <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalAlignment="Center" Margin="10 0 0 0">
+                    <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalAlignment="Center" Margin="65 65 65 65">
                         <BoxContainer Orientation="Horizontal">
                             <Label Name="TechnologyNameLabel" StyleClasses="LabelKeyText" HorizontalExpand="True"/>
-                            <TextureRect Name="DisciplineTexture" TextureScale="2 2" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+                            <TextureRect Name="DisciplineTexture" TextureScale="65 65" VerticalAlignment="Top" HorizontalAlignment="Right"/>
                         </BoxContainer>
-                        <customControls:HSeparator StyleClasses="LowDivider" Margin="0 5 0 5"/>
+                        <customControls:HSeparator StyleClasses="LowDivider" Margin="65 65 65 65"/>
                         <BoxContainer Orientation="Horizontal">
                             <RichTextLabel Name="TierLabel" HorizontalAlignment="Left" StyleClasses="LabelSubText" HorizontalExpand="True"/>
                             <Button Name="ResearchButton" Text="{Loc 'research-console-menu-server-research-button'}"/>
                         </BoxContainer>
                     </BoxContainer>
                 </BoxContainer>
-                <Control MinHeight="5"></Control>
+                <Control MinHeight="65"></Control>
                 <RichTextLabel Name="UnlocksLabel" HorizontalExpand="True" StyleClasses="LabelSubText"></RichTextLabel>
             </BoxContainer>
         </Button>

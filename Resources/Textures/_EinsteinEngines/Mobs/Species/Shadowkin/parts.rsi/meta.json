@@ -1,79 +1,79 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "https://github.com/SPLURT-Station/S.P.L.U.R.T-Station-13/commit/5bc3ea02ce03a551c85017f1ddd411315a19a5ca#diff-519788fa2ca74299d1686a44d3ab2098b49ed5ab65d293ec742bead7d49f0b8d",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "https://github.com/SPLURT-Station/S.P.L.U.R.T-Station-65/commit/65bc65ea65ce65a65c65f65ddd65a65a65ca#diff-65fa65ca65d65a65d65ab65b65ed65ab65d65ec65bead65d65f65b65d",
     "states": [
         {
             "name": "full",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "full-nomarkings",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "head_m",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "head_f",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "chest_m",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "chest_f",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "groin_m",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "groin_f",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "r_arm",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "l_arm",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "r_hand",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "l_hand",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "r_leg",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "r_foot",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "l_leg",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "l_foot",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "eyes",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

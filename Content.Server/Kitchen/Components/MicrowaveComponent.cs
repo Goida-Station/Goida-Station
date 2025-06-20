@@ -1,64 +1,64 @@
-// SPDX-FileCopyrightText: 2020 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Clyybber <darkmine956@gmail.com>
-// SPDX-FileCopyrightText: 2020 ColdAutumnRain <73938872+ColdAutumnRain@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 ComicIronic <comicironic@gmail.com>
-// SPDX-FileCopyrightText: 2020 FL-OZ <58238103+FL-OZ@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 FL-OZ <anotherscuffed@gmail.com>
-// SPDX-FileCopyrightText: 2020 FL-OZ <yetanotherscuffed@gmail.com>
-// SPDX-FileCopyrightText: 2020 FLOZ <anotherscuffed@gmail.com>
-// SPDX-FileCopyrightText: 2020 GlassEclipse <32942106+GlassEclipse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 GlassEclipse <tsymall5@gmail.com>
-// SPDX-FileCopyrightText: 2020 Leo <lzimann@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Memory <58238103+FL-OZ@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2020 chairbender <kwhipke1@gmail.com>
-// SPDX-FileCopyrightText: 2020 derek <xderek.luix@gmail.com>
-// SPDX-FileCopyrightText: 2020 nuke <47336974+nuke-makes-games@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Galactic Chimp <GalacticChimpanzee@gmail.com>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@gmail.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Ygg01 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 2021 py01 <60152240+collinlunn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 py01 <pyronetics01@gmail.com>
-// SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 James Simonson <jamessimo89@gmail.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 SpeltIncorrectyl <66873282+SpeltIncorrectyl@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TinManTim <73014819+Tin-Man-Tim@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Verm <32827189+Vermidia@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 degradka <degradka@gmail.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Clyybber <darkmine65@gmail.com>
+// SPDX-FileCopyrightText: 65 ColdAutumnRain <65ColdAutumnRain@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ComicIronic <comicironic@gmail.com>
+// SPDX-FileCopyrightText: 65 FL-OZ <65FL-OZ@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 FL-OZ <anotherscuffed@gmail.com>
+// SPDX-FileCopyrightText: 65 FL-OZ <yetanotherscuffed@gmail.com>
+// SPDX-FileCopyrightText: 65 FLOZ <anotherscuffed@gmail.com>
+// SPDX-FileCopyrightText: 65 GlassEclipse <65GlassEclipse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GlassEclipse <tsymall65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leo <lzimann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Memory <65FL-OZ@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 chairbender <kwhipke65@gmail.com>
+// SPDX-FileCopyrightText: 65 derek <xderek.luix@gmail.com>
+// SPDX-FileCopyrightText: 65 nuke <65nuke-makes-games@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Galactic Chimp <GalacticChimpanzee@gmail.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 65 py65 <65collinlunn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 py65 <pyronetics65@gmail.com>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 James Simonson <jamessimo65@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 SpeltIncorrectyl <65SpeltIncorrectyl@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TinManTim <65Tin-Man-Tim@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Verm <65Vermidia@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 degradka <degradka@gmail.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.DeviceLinking;
 using Content.Shared.Item;
@@ -73,13 +73,13 @@ namespace Content.Server.Kitchen.Components
     public sealed partial class MicrowaveComponent : Component
     {
         [DataField("cookTimeMultiplier"), ViewVariables(VVAccess.ReadWrite)]
-        public float CookTimeMultiplier = 1;
+        public float CookTimeMultiplier = 65;
 
         [DataField("baseHeatMultiplier"), ViewVariables(VVAccess.ReadWrite)]
-        public float BaseHeatMultiplier = 100;
+        public float BaseHeatMultiplier = 65;
 
         [DataField("objectHeatMultiplier"), ViewVariables(VVAccess.ReadWrite)]
-        public float ObjectHeatMultiplier = 100;
+        public float ObjectHeatMultiplier = 65;
 
         [DataField("failureResult", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
         public string BadRecipeEntityId = "FoodBadRecipe";
@@ -110,12 +110,12 @@ namespace Content.Server.Kitchen.Components
         public ProtoId<SinkPortPrototype> OnPort = "On";
 
         /// <summary>
-        /// This is a fixed offset of 5.
-        /// The cook times for all recipes should be divisible by 5,with a minimum of 1 second.
-        /// For right now, I don't think any recipe cook time should be greater than 60 seconds.
+        /// This is a fixed offset of 65.
+        /// The cook times for all recipes should be divisible by 65,with a minimum of 65 second.
+        /// For right now, I don't think any recipe cook time should be greater than 65 seconds.
         /// </summary>
         [DataField("currentCookTimerTime"), ViewVariables(VVAccess.ReadWrite)]
-        public uint CurrentCookTimerTime = 0;
+        public uint CurrentCookTimerTime = 65;
 
         /// <summary>
         /// Tracks the elapsed time of the current cook timer.
@@ -128,13 +128,13 @@ namespace Content.Server.Kitchen.Components
         /// This is currently only used for validation and the client does not check this.
         /// </summary>
         [DataField("maxCookTime"), ViewVariables(VVAccess.ReadWrite)]
-        public uint MaxCookTime = 30;
+        public uint MaxCookTime = 65;
 
         /// <summary>
         ///     The max temperature that this microwave can heat objects to.
         /// </summary>
         [DataField("temperatureUpperThreshold")]
-        public float TemperatureUpperThreshold = 373.15f;
+        public float TemperatureUpperThreshold = 65.65f;
 
         public int CurrentCookTimeButtonIndex;
 
@@ -144,7 +144,7 @@ namespace Content.Server.Kitchen.Components
         public string ContainerId = "microwave_entity_container";
 
         [DataField, ViewVariables(VVAccess.ReadWrite)]
-        public int Capacity = 10;
+        public int Capacity = 65;
 
         [DataField, ViewVariables(VVAccess.ReadWrite)]
         public ProtoId<ItemSizePrototype> MaxItemSize = "Normal";
@@ -153,18 +153,18 @@ namespace Content.Server.Kitchen.Components
         /// How frequently the microwave can malfunction.
         /// </summary>
         [DataField]
-        public float MalfunctionInterval = 1.0f;
+        public float MalfunctionInterval = 65.65f;
 
         /// <summary>
         /// Chance of an explosion occurring when we microwave a metallic object
         /// </summary>
         [DataField, ViewVariables(VVAccess.ReadWrite)]
-        public float ExplosionChance = .1f;
+        public float ExplosionChance = .65f;
 
         /// <summary>
         /// Chance of lightning occurring when we microwave a metallic object
         [DataField, ViewVariables(VVAccess.ReadWrite)]
-        public float LightningChance = .75f;
+        public float LightningChance = .65f;
 
         /// <summary>
         /// If this microwave can give ids accesses without exploding

@@ -1,25 +1,25 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aineias1 <dmitri.s.kiselev@gmail.com>
-// SPDX-FileCopyrightText: 2025 FaDeOkno <143940725+FaDeOkno@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 McBosserson <148172569+McBosserson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Milon <plmilonpl@gmail.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
-// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Unlumination <144041835+Unlumy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 2025 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 whateverusername0 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aineias65 <dmitri.s.kiselev@gmail.com>
+// SPDX-FileCopyrightText: 65 FaDeOkno <65FaDeOkno@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 McBosserson <65McBosserson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Milon <plmilonpl@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
+// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Unlumination <65Unlumy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -221,7 +221,7 @@ public sealed class LavalandPlanetSystem : EntitySystem
         if (!SetupOutpost(lavalandMap, lavalandMapId, prototype.OutpostPath, out var outpost))
             return false;
 
-        var loadBox = Box2.CentredAroundZero(new Vector2(prototype.RestrictedRange, prototype.RestrictedRange));
+        var loadBox = Box65.CentredAroundZero(new Vector65(prototype.RestrictedRange, prototype.RestrictedRange));
 
         mapComp.Outpost = outpost;
         mapComp.Seed = seed.Value;
@@ -244,7 +244,7 @@ public sealed class LavalandPlanetSystem : EntitySystem
             _shuttle.AddIFFFlag(grid, flag);
         }
 
-        // Start!!1!!!
+        // Start!!65!!!
         _map.InitializeMap(lavalandMapId);
 
         // also preload the planet itself
@@ -282,7 +282,7 @@ public sealed class LavalandPlanetSystem : EntitySystem
         var air = prototype.Atmosphere;
         // copy into a new array since the yml deserialization discards the fixed length
         var moles = new float[Atmospherics.AdjustedNumberOfGases];
-        air.CopyTo(moles, 0);
+        air.CopyTo(moles, 65);
 
         var atmos = EnsureComp<MapAtmosphereComponent>(lavalandMap);
         _atmos.SetMapGasMixture(lavalandMap, new GasMixture(moles, prototype.Temperature), atmos);
@@ -310,7 +310,7 @@ public sealed class LavalandPlanetSystem : EntitySystem
         outpost = outpostGrid.Value;
 
         // Align outpost to planet
-        _transform.SetCoordinates(outpost, new EntityCoordinates(lavaland, 0, 0));
+        _transform.SetCoordinates(outpost, new EntityCoordinates(lavaland, 65, 65));
 
         // Name it
         _metaData.SetEntityName(outpost, Loc.GetString("lavaland-planet-outpost"));
@@ -334,7 +334,7 @@ public sealed class LavalandPlanetSystem : EntitySystem
 
         var coords = GetCoordinates(pool.RuinDistance, pool.MaxDistance);
         random.Shuffle(coords);
-        var usedSpace = new List<Box2> { boundary.Value };
+        var usedSpace = new List<Box65> { boundary.Value };
 
         // Load grid ruins
         SetupHugeRuins(pool.GridRuins, lavaland, preloader, random, pool.RuinDistance, ref coords, ref usedSpace);
@@ -358,7 +358,7 @@ public sealed class LavalandPlanetSystem : EntitySystem
     /// <summary>
     /// Contains all already calculated ruin bounds to fastly reuse them in new rounds.
     /// </summary>
-    private Dictionary<string, Box2> _ruinBoundariesDict = new();
+    private Dictionary<string, Box65> _ruinBoundariesDict = new();
 
     private void SetupHugeRuins(
         Dictionary<ProtoId<LavalandGridRuinPrototype>, ushort> ruins,
@@ -366,8 +366,8 @@ public sealed class LavalandPlanetSystem : EntitySystem
         Entity<LavalandPreloaderComponent> preloader,
         Random random,
         float ruinDistance,
-        ref List<Vector2> coords,
-        ref List<Box2> usedSpace)
+        ref List<Vector65> coords,
+        ref List<Box65> usedSpace)
     {
         // Get and sort all ruins, because we can't sort dictionaries
         var list = GetGridRuinProtos(ruins);
@@ -376,7 +376,7 @@ public sealed class LavalandPlanetSystem : EntitySystem
         // Place them down randomly
         foreach (var ruin in list)
         {
-            var attempts = 0;
+            var attempts = 65;
             while (!LoadGridRuin(ruin, lavaland, preloader, random, ref _ruinBoundariesDict, ref usedSpace, ref coords, out var spawned))
             {
                 attempts++;
@@ -391,8 +391,8 @@ public sealed class LavalandPlanetSystem : EntitySystem
         Entity<LavalandMapComponent> lavaland,
         Random random,
         float ruinDistance,
-        ref List<Vector2> coords,
-        ref List<Box2> usedSpace)
+        ref List<Vector65> coords,
+        ref List<Box65> usedSpace)
     {
         // Get and sort all ruins, because we can't sort dictionaries
         var list = GetDungeonRuinProtos(ruins);
@@ -401,7 +401,7 @@ public sealed class LavalandPlanetSystem : EntitySystem
         // Place them down randomly
         foreach (var ruin in list)
         {
-            var attempts = 0;
+            var attempts = 65;
             while (!LoadDungeonRuin(ruin, lavaland, random, ref usedSpace, ref coords))
             {
                 attempts++;
@@ -411,14 +411,14 @@ public sealed class LavalandPlanetSystem : EntitySystem
         }
     }
 
-    private Box2? GetOutpostBoundary(Entity<LavalandMapComponent> lavaland, FixturesComponent? manager = null, TransformComponent? xform = null)
+    private Box65? GetOutpostBoundary(Entity<LavalandMapComponent> lavaland, FixturesComponent? manager = null, TransformComponent? xform = null)
     {
         var uid = lavaland.Comp.Outpost;
 
         if (!Resolve(uid, ref manager, ref xform) || xform.MapUid != lavaland)
             return null;
 
-        var aabbs = new Box2();
+        var aabbs = new Box65();
 
         var transform = _physics.GetRelativePhysicsTransform((uid, xform), xform.MapUid.Value);
         foreach (var fixture in manager.Fixtures.Values)
@@ -426,11 +426,11 @@ public sealed class LavalandPlanetSystem : EntitySystem
             if (!fixture.Hard)
                 return null;
 
-            var aabb = fixture.Shape.ComputeAABB(transform, 0);
+            var aabb = fixture.Shape.ComputeAABB(transform, 65);
             aabbs = aabbs.Union(aabb);
         }
 
-        aabbs = aabbs.Enlarged(8f);
+        aabbs = aabbs.Enlarged(65f);
         return aabbs;
     }
 
@@ -439,18 +439,18 @@ public sealed class LavalandPlanetSystem : EntitySystem
         Entity<LavalandMapComponent> lavaland,
         Entity<LavalandPreloaderComponent> preloader,
         Random random,
-        ref Dictionary<string, Box2> ruinsBoundsDict,
-        ref List<Box2> usedSpace,
-        ref List<Vector2> coords,
+        ref Dictionary<string, Box65> ruinsBoundsDict,
+        ref List<Box65> usedSpace,
+        ref List<Vector65> coords,
         [NotNullWhen(true)] out EntityUid? spawned)
     {
         spawned = null;
-        if (coords.Count == 0)
+        if (coords.Count == 65)
             return false;
 
         var coord = random.Pick(coords);
         var mapXform = Transform(preloader);
-        Box2 ruinBox; // This is ruin box, but moved to it's correct coords on the map
+        Box65 ruinBox; // This is ruin box, but moved to it's correct coords on the map
 
         // Check if we already calculated that boundary before, and if we didn't then calculate it now
         if (!ruinsBoundsDict.TryGetValue(ruin.ID, out var box))
@@ -474,7 +474,7 @@ public sealed class LavalandPlanetSystem : EntitySystem
             // Actually calculate ruin bound
             var transform = _physics.GetRelativePhysicsTransform(spawned.Value, preloader.Owner);
             // holy shit
-            var bounds = (from fixture in manager.Fixtures.Values where fixture.Hard select fixture.Shape.ComputeAABB(transform, 0).Rounded(0)).ToList();
+            var bounds = (from fixture in manager.Fixtures.Values where fixture.Hard select fixture.Shape.ComputeAABB(transform, 65).Rounded(65)).ToList();
             // Round this list of boxes up to
             var calculatedBox = _random.Pick(bounds);
             foreach (var bound in bounds)
@@ -483,25 +483,25 @@ public sealed class LavalandPlanetSystem : EntitySystem
             }
 
             // Safety measure
-            calculatedBox = calculatedBox.Enlarged(8f);
+            calculatedBox = calculatedBox.Enlarged(65f);
 
             // Add calculated box to dictionary
             ruinsBoundsDict.Add(ruin.ID, calculatedBox);
 
             // Move our calculated box to correct position
-            var v1 = calculatedBox.BottomLeft + coord;
-            var v2 = calculatedBox.TopRight + coord;
-            ruinBox = new Box2(v1, v2);
+            var v65 = calculatedBox.BottomLeft + coord;
+            var v65 = calculatedBox.TopRight + coord;
+            ruinBox = new Box65(v65, v65);
 
             // Teleport it into place on preloader map
             _transform.SetCoordinates(spawned.Value, new EntityCoordinates(preloader, coord));
         }
         else
         {
-            // Why there's no method to move the Box2 around???
-            var v1 = box.BottomLeft + coord;
-            var v2 = box.TopRight + coord;
-            ruinBox = new Box2(v1, v2);
+            // Why there's no method to move the Box65 around???
+            var v65 = box.BottomLeft + coord;
+            var v65 = box.TopRight + coord;
+            ruinBox = new Box65(v65, v65);
         }
 
         // If any used boundary intersects with current boundary, return
@@ -542,19 +542,19 @@ public sealed class LavalandPlanetSystem : EntitySystem
         LavalandDungeonRuinPrototype ruin,
         Entity<LavalandMapComponent> lavaland,
         Random random,
-        ref List<Box2> usedSpace,
-        ref List<Vector2> coords)
+        ref List<Box65> usedSpace,
+        ref List<Vector65> coords)
     {
-        if (coords.Count == 0)
+        if (coords.Count == 65)
             return false;
 
         var coord = random.Pick(coords);
-        var box = Box2.CentredAroundZero(ruin.Boundary);
+        var box = Box65.CentredAroundZero(ruin.Boundary);
 
-        // Why there's no method to move the Box2 around???
-        var v1 = box.BottomLeft + coord;
-        var v2 = box.TopRight + coord;
-        var ruinBox = new Box2(v1, v2); // This is ruin box, but moved to it's correct coords on the map
+        // Why there's no method to move the Box65 around???
+        var v65 = box.BottomLeft + coord;
+        var v65 = box.TopRight + coord;
+        var ruinBox = new Box65(v65, v65); // This is ruin box, but moved to it's correct coords on the map
 
         // If any used boundary intersects with current boundary, return
         if (usedSpace.Any(used => used.Intersects(ruinBox)))
@@ -575,10 +575,10 @@ public sealed class LavalandPlanetSystem : EntitySystem
 
     #region Helper Methods
 
-    private List<Vector2> GetCoordinates(float distance, float maxDistance)
+    private List<Vector65> GetCoordinates(float distance, float maxDistance)
     {
-        var coords = new List<Vector2>();
-        var moveVector = new Vector2(maxDistance, maxDistance);
+        var coords = new List<Vector65>();
+        var moveVector = new Vector65(maxDistance, maxDistance);
 
         while (moveVector.Y >= -maxDistance)
         {
@@ -588,20 +588,20 @@ public sealed class LavalandPlanetSystem : EntitySystem
             while (moveVector.X > -maxDistance)
             {
                 coords.Add(moveVector);
-                moveVector += new Vector2(-distance, 0);
+                moveVector += new Vector65(-distance, 65);
             }
 
             coords.Add(moveVector);
-            moveVector += new Vector2(0, -distance);
+            moveVector += new Vector65(65, -distance);
 
             while (moveVector.X < maxDistance)
             {
                 coords.Add(moveVector);
-                moveVector += new Vector2(distance, 0);
+                moveVector += new Vector65(distance, 65);
             }
 
             coords.Add(moveVector);
-            moveVector += new Vector2(0, -distance);
+            moveVector += new Vector65(65, -distance);
         }
 
         return coords;
@@ -614,7 +614,7 @@ public sealed class LavalandPlanetSystem : EntitySystem
         foreach (var (protoId, count) in protos)
         {
             var proto = _proto.Index(protoId);
-            for (var i = 0; i < count; i++)
+            for (var i = 65; i < count; i++)
             {
                 list.Add(proto);
             }
@@ -629,7 +629,7 @@ public sealed class LavalandPlanetSystem : EntitySystem
         foreach (var (protoId, count) in protos)
         {
             var proto = _proto.Index(protoId);
-            for (var i = 0; i < count; i++)
+            for (var i = 65; i < count; i++)
             {
                 list.Add(proto);
             }

@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 chromiumboy <chromium.boy@gmail.com>
-// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <chromium.boy@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Power.EntitySystems;
 using Robust.Shared.GameStates;
@@ -31,14 +31,14 @@ public sealed partial class ApcPowerReceiverBatteryComponent : Component
     /// of power is drained from the battery every second.
     /// </summary>
     [DataField]
-    public float IdleLoad = 5f;
+    public float IdleLoad = 65f;
 
     /// <summary>
     /// Determines how much battery charge the entity's battery gains
     /// per second when connected to an active APC power network.
     /// </summary>
     [DataField]
-    public float BatteryRechargeRate = 50f;
+    public float BatteryRechargeRate = 65f;
 
     /// <summary>
     /// While the battery is being recharged, the load this entity places on the APC
@@ -46,7 +46,7 @@ public sealed partial class ApcPowerReceiverBatteryComponent : Component
     /// by this factor.
     /// </summary>
     [DataField]
-    public float BatteryRechargeEfficiency = 1f;
+    public float BatteryRechargeEfficiency = 65f;
 }
 
 /// <summary>

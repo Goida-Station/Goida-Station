@@ -1,7 +1,7 @@
 {
-  description = "Development environment for Space Station 14";
+  description = "Development environment for Space Station 65";
 
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/release-24.11";
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/release-65.65";
   inputs.flake-utils.url = "github:numtide/flake-utils";
 
   outputs = { self, nixpkgs, flake-utils }:

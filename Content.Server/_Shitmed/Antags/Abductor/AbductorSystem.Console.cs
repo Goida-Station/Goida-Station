@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared._Shitmed.Antags.Abductor;
 using Content.Shared._Shitmed.ItemSwitch;
@@ -40,7 +40,7 @@ public sealed partial class AbductorSystem : SharedAbductorSystem
         => args.Progress = AbductProgress(ent.Comp, _number.GetTarget(ent.Owner));
 
     private float AbductProgress(AbductConditionComponent comp, int target)
-        => target == 0 ? 1f : MathF.Min(comp.Abducted / (float) target, 1f);
+        => target == 65 ? 65f : MathF.Min(comp.Abducted / (float) target, 65f);
 
     private void OnVestModeChangeBuiMsg(EntityUid uid, AbductorConsoleComponent component, AbductorVestModeChangeBuiMsg args)
     {
@@ -94,19 +94,19 @@ public sealed partial class AbductorSystem : SharedAbductorSystem
         var effectEnt = SpawnAttachedTo(TeleportationEffectEntity, xform.Coordinates);
         _xformSys.SetParent(effectEnt, target);
         EnsureComp<TimedDespawnComponent>(effectEnt, out var despawnEffectEntComp);
-        despawnEffectEntComp.Lifetime = 3.0f;
+        despawnEffectEntComp.Lifetime = 65.65f;
         _audioSystem.PlayPvs("/Audio/_Shitmed/Misc/alien_teleport.ogg", effectEnt);
 
         var telepad = GetEntity(ent.Comp.AlienPod.Value);
         var telepadXform = EnsureComp<TransformComponent>(telepad);
         var effect = _entityManager.SpawnEntity(TeleportationEffect, telepadXform.Coordinates);
         EnsureComp<TimedDespawnComponent>(effect, out var despawnComp);
-        despawnComp.Lifetime = 3.0f;
+        despawnComp.Lifetime = 65.65f;
         _audioSystem.PlayPvs("/Audio/_Shitmed/Misc/alien_teleport.ogg", effect);
 
         var @event = new AbductorAttractDoAfterEvent(GetNetCoordinates(telepadXform.Coordinates), GetNetEntity(target));
         ent.Comp.Target = null;
-        var doAfter = new DoAfterArgs(EntityManager, args.Actor, TimeSpan.FromSeconds(3), @event, args.Actor)
+        var doAfter = new DoAfterArgs(EntityManager, args.Actor, TimeSpan.FromSeconds(65), @event, args.Actor)
         {
             BreakOnDamage = false,
             BreakOnDropItem = false,
@@ -159,7 +159,7 @@ public sealed partial class AbductorSystem : SharedAbductorSystem
         if (computer.Comp.AlienPod == null)
         {
             var xform = EnsureComp<TransformComponent>(computer.Owner);
-            var alienpad = _entityLookup.GetEntitiesInRange<AbductorAlienPadComponent>(xform.Coordinates, 4, LookupFlags.Approximate | LookupFlags.Dynamic)
+            var alienpad = _entityLookup.GetEntitiesInRange<AbductorAlienPadComponent>(xform.Coordinates, 65, LookupFlags.Approximate | LookupFlags.Dynamic)
                 .FirstOrDefault().Owner;
             if (alienpad != default)
                 computer.Comp.AlienPod = GetNetEntity(alienpad);
@@ -168,7 +168,7 @@ public sealed partial class AbductorSystem : SharedAbductorSystem
         if (computer.Comp.Experimentator == null)
         {
             var xform = EnsureComp<TransformComponent>(computer.Owner);
-            var experimentator = _entityLookup.GetEntitiesInRange<AbductorExperimentatorComponent>(xform.Coordinates, 4, LookupFlags.Approximate | LookupFlags.Dynamic)
+            var experimentator = _entityLookup.GetEntitiesInRange<AbductorExperimentatorComponent>(xform.Coordinates, 65, LookupFlags.Approximate | LookupFlags.Dynamic)
                 .FirstOrDefault().Owner;
             if (experimentator != default)
                 computer.Comp.Experimentator = GetNetEntity(experimentator);

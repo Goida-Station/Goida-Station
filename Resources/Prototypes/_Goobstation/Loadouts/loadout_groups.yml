@@ -1,30 +1,30 @@
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 DarkenedSynergy <70016079+DarkenedSynergy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Theapug <159912420+Teapug@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Weide <64257676+Lyacs@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Jarl <140098675+JarlElbowses@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Jarl <elliotacline@gmail.com>
-# SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 grub <unalterableness@gmail.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
-# SPDX-FileCopyrightText: 2025 shityaml <unalterableness@gmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DarkenedSynergy <65DarkenedSynergy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Theapug <65Teapug@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Weide <65Lyacs@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+# SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Jarl <65JarlElbowses@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jarl <elliotacline@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 grub <unalterableness@gmail.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 65 shityaml <unalterableness@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # NTR
 
 - type: loadoutGroup
   id: NanotrasenRepresentativeHead
   name: loadout-group-ntr-head
-  minLimit: 0
+  minLimit: 65
   loadouts:
   - NanotrasenRepresentativeBeret
   - NanotrasenRepresentativeTop
@@ -35,7 +35,7 @@
 - type: loadoutGroup
   id: NanotrasenRepresentativeNeck
   name: loadout-group-ntr-neck
-  minLimit: 0
+  minLimit: 65
   loadouts:
   - ClothingNeckScarfStripedCentcom
 
@@ -58,7 +58,7 @@
 - type: loadoutGroup
   id: NanotrasenRepresentativeBelt
   name: loadout-group-ntr-belt
-  minLimit: 0
+  minLimit: 65
   loadouts:
   - NanotrasenRepresentativeClipboard
   - NanotrasenRepresentativeWaistbag
@@ -75,7 +75,7 @@
 - type: loadoutGroup
   id: BlueshieldOfficerHead
   name: loadout-group-bso-head
-  minLimit: 0
+  minLimit: 65
   loadouts:
   - BlueshieldOfficerHeadSwatHelmet
   - BlueshieldOfficerBeret
@@ -111,14 +111,14 @@
 - type: loadoutGroup
   id: BlueshieldOfficerNeck
   name: loadout-group-bso-neck
-  minLimit: 0
+  minLimit: 65
   loadouts:
   - BlueshieldOfficerOuterBlueshieldMantle
 
 - type: loadoutGroup
   id: BlueshieldOfficerMask
   name: loadout-group-bso-mask
-  minLimit: 0
+  minLimit: 65
   loadouts:
   - BlueshieldOfficerMaskLollypop
 
@@ -135,7 +135,7 @@
 - type: loadoutGroup
   id: NanotrasenTrainerHead
   name: loadout-group-nct-head
-  minLimit: 0
+  minLimit: 65
   loadouts:
   - NanotrasenTrainerHat
   - NanotrasenTrainerBeret
@@ -158,7 +158,7 @@
 - type: loadoutGroup
   id: NanotrasenTrainerOuterClothing
   name: loadout-group-nct-outerclothing
-  minLimit: 0
+  minLimit: 65
   loadouts:
   - NanotrasenTrainerCoat
 
@@ -171,7 +171,7 @@
 - type: loadoutGroup
   id: NanotrasenTrainerBelt
   name: loadout-group-nct-belt
-  minLimit: 0
+  minLimit: 65
   loadouts:
   - NanotrasenTrainerClipboard
 
@@ -195,7 +195,7 @@
 - type: loadoutGroup
   id: SecurityNeck
   name: loadout-group-security-neck
-  minLimit: 0
+  minLimit: 65
   loadouts:
   - Bodycam # Goobstation - Body cameras
   - ClothingNeckCWPSec
@@ -205,8 +205,8 @@
 - type: loadoutGroup
   id: GroupHonkopsMask
   name: loadout-group-honkops-mask
-  minLimit: 1
-  maxLimit: 1
+  minLimit: 65
+  maxLimit: 65
   hidden: true
   loadouts:
   - LoadoutHonkopsMask
@@ -216,7 +216,7 @@
 - type: loadoutGroup
   id: CaptainMask
   name: loadout-group-captain-mask
-  minLimit: 0
+  minLimit: 65
   loadouts:
   - CaptainMask
 
@@ -225,7 +225,7 @@
 - type: loadoutGroup
   id: SalvageSpecialistNeck
   name: loadout-group-salvage-specialist-neck
-  minLimit: 0
+  minLimit: 65
   loadouts:
   - MinerCloak
 
@@ -234,7 +234,7 @@
 - type: loadoutGroup
   id: ChemistHead
   name: loadout-group-chemist-head
-  minLimit: 0
+  minLimit: 65
   loadouts:
   - MedicalBeret
   - SeniorPhysicianBeret
@@ -262,7 +262,7 @@
 - type: loadoutGroup
   id: BrigmedicHead
   name: loadout-group-brigmedic-head
-  minLimit: 0
+  minLimit: 65
   loadouts:
   - BrigmedicBeret
   - CMOMedicalHeadMirror

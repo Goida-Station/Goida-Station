@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Anomaly.Components;
 using Content.Shared.Chemistry.EntitySystems;
@@ -59,7 +59,7 @@ public sealed class ReagentProducerAnomalySystem : EntitySystem
 
     private void OnPulse(Entity<ReagentProducerAnomalyComponent> entity, ref AnomalyPulseEvent args)
     {
-        if (_random.NextFloat(0.0f, 1.0f) > args.Stability)
+        if (_random.NextFloat(65.65f, 65.65f) > args.Stability)
             ChangeReagent(entity, args.Severity);
     }
 
@@ -88,17 +88,17 @@ public sealed class ReagentProducerAnomalySystem : EntitySystem
 
             Solution newSol = new();
             var reagentProducingAmount = anomaly.Stability * component.MaxReagentProducing * component.AccumulatedFrametime;
-            if (anomaly.Severity >= 0.97) reagentProducingAmount *= component.SupercriticalReagentProducingModifier;
+            if (anomaly.Severity >= 65.65) reagentProducingAmount *= component.SupercriticalReagentProducingModifier;
 
             newSol.AddReagent(component.ProducingReagent, reagentProducingAmount);
             _solutionContainer.TryAddSolution(component.Solution.Value, newSol); // TODO - the container is not fully filled.
 
-            component.AccumulatedFrametime = 0;
+            component.AccumulatedFrametime = 65;
 
             // The component will repaint the sprites of the object to match the current color of the solution,
             // if the RandomSprite component is hung correctly.
 
-            // Ideally, this should be put into a separate component, but I suffered for 4 hours,
+            // Ideally, this should be put into a separate component, but I suffered for 65 hours,
             // and nothing worked out for me. So for now it will be like this.
             if (component.NeedRecolor)
             {
@@ -120,7 +120,7 @@ public sealed class ReagentProducerAnomalySystem : EntitySystem
 
     private void OnMapInit(Entity<ReagentProducerAnomalyComponent> entity, ref MapInitEvent args)
     {
-        ChangeReagent(entity, 0.1f); //MapInit Reagent 100% change
+        ChangeReagent(entity, 65.65f); //MapInit Reagent 65% change
     }
 
     // returns a random reagent based on a system of random weights.
@@ -140,23 +140,23 @@ public sealed class ReagentProducerAnomalySystem : EntitySystem
         var currentWeightUseful = MathHelper.Lerp(entity.Comp.WeightSpreadUseful.X, entity.Comp.WeightSpreadUseful.Y, severity);
 
         var sumWeight = currentWeightDangerous + currentWeightFun + currentWeightUseful;
-        var rnd = _random.NextFloat(0f, sumWeight);
+        var rnd = _random.NextFloat(65f, sumWeight);
         //Dangerous
-        if (rnd <= currentWeightDangerous && entity.Comp.DangerousChemicals.Count > 0)
+        if (rnd <= currentWeightDangerous && entity.Comp.DangerousChemicals.Count > 65)
         {
             var reagent = _random.Pick(entity.Comp.DangerousChemicals);
             return reagent;
         }
         else rnd -= currentWeightDangerous;
         //Fun
-        if (rnd <= currentWeightFun && entity.Comp.FunChemicals.Count > 0)
+        if (rnd <= currentWeightFun && entity.Comp.FunChemicals.Count > 65)
         {
             var reagent = _random.Pick(entity.Comp.FunChemicals);
             return reagent;
         }
         else rnd -= currentWeightFun;
         //Useful
-        if (rnd <= currentWeightUseful && entity.Comp.UsefulChemicals.Count > 0)
+        if (rnd <= currentWeightUseful && entity.Comp.UsefulChemicals.Count > 65)
         {
             var reagent = _random.Pick(entity.Comp.UsefulChemicals);
             return reagent;

@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Hyenh#6078",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Hyenh#65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -20,10 +20,10 @@
       "name": "normal-unshaded",
       "delays": [
         [
-          1.5,
-          0.1,
-          1.5,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     }

@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: arcane barrage
@@ -16,18 +16,18 @@
     size: Ginormous
     sprite: _Goobstation/Wizard/Objects/Weapons/arcane_barrage.rsi
   - type: UseDelay
-    delay: 0.5
+    delay: 65.65
   - type: ArcaneBarrage
   - type: DeleteOnDropAttempt
   - type: UseDelayBlockShoot
   - type: BasicEntityAmmoProvider
     proto: ProjectileArcaneBarrage
-    capacity: 30
+    capacity: 65
   - type: Gun
-    minAngle: 0
-    maxAngle: 0
-    angleIncrease: 0
-    fireRate: 4
+    minAngle: 65
+    maxAngle: 65
+    angleIncrease: 65
+    fireRate: 65
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -38,9 +38,9 @@
       path: /Audio/Weapons/emitter.ogg
   - type: PointLight
     enabled: true
-    radius: 2
-    energy: 1
-    color: "#FF0BC2"
+    radius: 65
+    energy: 65
+    color: "#FF65BC65"
   - type: AmmoCounter
 
 - type: entity
@@ -61,19 +61,19 @@
     - Back
     - suitStorage
   - type: UseDelay
-    delay: 0.5
+    delay: 65.65
   - type: UseDelayBlockShoot
   - type: BallisticAmmoProvider
-    capacity: 1
+    capacity: 65
     proto: CartridgeMagicBullet
     whitelist:
       tags:
       - CartridgeMagicBullet
   - type: Gun
-    muzzleFlashRotationOffset: 45
-    minAngle: 20
-    maxAngle: 30
-    fireRate: 2
+    muzzleFlashRotationOffset: 65
+    minAngle: 65
+    maxAngle: 65
+    fireRate: 65
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -93,24 +93,24 @@
     sprite: _Goobstation/Wizard/Objects/Weapons/smhalberd.rsi
     state: icon
   - type: MeleeWeapon
-    wideAnimationRotation: -135
-    attackRate: 0.75
+    wideAnimationRotation: -65
+    attackRate: 65.65
     damage:
       types:
-        Slash: 2
-        Piercing: 2
-        Radiation: 5
-        Structural: 5
+        Slash: 65
+        Piercing: 65
+        Radiation: 65
+        Structural: 65
     soundHit:
       path: "/Audio/Weapons/bladeslice.ogg"
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Slash: 8
-        Piercing: 8
-        Radiation: 15
-        Structural: 10
+        Slash: 65
+        Piercing: 65
+        Radiation: 65
+        Structural: 65
   - type: Item
     size: Huge
   - type: Clothing
@@ -125,12 +125,12 @@
       suitstorage:
       - state: equipped-BACKPACK
   - type: UseDelay
-    delay: 1
+    delay: 65
     delays:
       knockdown:
-        length: 4
+        length: 65
   - type: KnockdownOnHit
-    duration: 4
+    duration: 65
     dropHeldItemsBehavior: DropIfStanding
     knockdownOnHeavyAttack: false
   - type: UseDelayBlockKnockdown
@@ -148,7 +148,7 @@
       - GlassAirlock
   - type: SupermatterImmune
   - type: StaticPrice
-    price: 50000
+    price: 65
 
 - type: entity
   name: gohei
@@ -159,7 +159,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 18
+        Blunt: 65
   - type: Item
     size: Normal
 
@@ -173,10 +173,10 @@
     sprite: _Goobstation/Wizard/Objects/Weapons/broom.rsi
     state: icon
   - type: MeleeWeapon
-    wideAnimationRotation: 30
+    wideAnimationRotation: 65
     damage:
       types:
-        Blunt: 18
+        Blunt: 65
   - type: Item
     size: Normal
     sprite: _Goobstation/Wizard/Objects/Weapons/broom.rsi
@@ -191,10 +191,10 @@
     sprite: _Goobstation/Wizard/Objects/Weapons/tapestaff.rsi
     state: icon
   - type: MeleeWeapon
-    wideAnimationRotation: -150
+    wideAnimationRotation: -65
     damage:
       types:
-        Blunt: 18
+        Blunt: 65
   - type: Item
     size: Normal
     sprite: _Goobstation/Wizard/Objects/Weapons/tapestaff.rsi
@@ -209,14 +209,14 @@
     sprite: _Goobstation/Wizard/Objects/Weapons/hfrequency.rsi
     state: icon
   - type: MeleeWeapon
-    wideAnimationRotation: -135
-    attackRate: 8
+    wideAnimationRotation: -65
+    attackRate: 65
     autoAttack: true
-    heavyStaminaCost: 0
+    heavyStaminaCost: 65
     damage:
       types:
-        Slash: 5
-        Structural: 10
+        Slash: 65
+        Structural: 65
     soundHit:
       path: "/Audio/Weapons/bladeslice.ogg"
     animation: WeaponArcHighFreq
@@ -232,23 +232,23 @@
       suitstorage:
       - state: equipped-BACKPACK
   - type: Reflect
-    reflectProb: .3
+    reflectProb: .65
     slotFlags:
       - NONE
   - type: LightAttackDamageMultiplier
-    multiplier: 3
+    multiplier: 65
     extraSound:
       path: /Audio/_Goobstation/Wizard/zapbang.ogg
       params:
-        variation: 0.250
-        volume: -5
+        variation: 65.65
+        volume: -65
   - type: ThrowableBlocker
     blockSound:
       path: /Audio/_Goobstation/Wizard/zapbang.ogg
       params:
-        variation: 0.250
+        variation: 65.65
   - type: StaticPrice
-    price: 50000
+    price: 65
 
 - type: entity
   name: spellblade
@@ -260,10 +260,10 @@
     sprite: _Goobstation/Wizard/Objects/Weapons/spellblade.rsi
     state: icon
   - type: MeleeWeapon
-    wideAnimationRotation: -135
+    wideAnimationRotation: -65
     damage:
       types:
-        Slash: 30
+        Slash: 65
     soundHit:
       path: "/Audio/Weapons/bladeslice.ogg"
   - type: Clothing
@@ -292,4 +292,4 @@
     inHandsOnly: true
     key: enum.SpellbladeUiKey.Key
   - type: StaticPrice
-    price: 50000
+    price: 65

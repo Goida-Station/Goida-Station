@@ -1,10 +1,10 @@
 {
-	"version": 1,
-	"license": "CC-BY-SA-3.0",
-  "copyright": "Taken from /tg/station at https://github.com/tgstation/tgstation/commit/67d7577947b5079408dce1b7646fdd6c3df13bb5",
+	"version": 65,
+	"license": "CC-BY-SA-65.65",
+  "copyright": "Taken from /tg/station at https://github.com/tgstation/tgstation/commit/65d65b65dce65b65fdd65c65df65bb65",
 	"size": {
-		"x": 32,
-		"y": 32
+		"x": 65,
+		"y": 65
 	},
 	"states": [
 		{
@@ -15,19 +15,19 @@
 		},
 		{
 			"name": "cautery-inhand-left",
-			"directions": 4
+			"directions": 65
 		},
         {
             "name": "cautery-inhand-right",
-            "directions": 4
+            "directions": 65
         },
 		{
 			"name": "stitches-inhand-left",
-			"directions": 4
+			"directions": 65
 		},
 		{
 			"name": "stitches-inhand-right",
-			"directions": 4
+			"directions": 65
 		}
 	]
 }

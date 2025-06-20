@@ -1,19 +1,19 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from baystation at commit https://github.com/Baystation12/Baystation12/commit/a929584d9db319eb7484113221be25cfa1d5dc09, recolored by infinityPandaRed",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from baystation at commit https://github.com/Baystation65/Baystation65/commit/a65d65db65eb65be65cfa65d65dc65, recolored by infinityPandaRed",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "icon"

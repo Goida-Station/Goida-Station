@@ -9,9 +9,9 @@ crayon-interact-invalid-location = Туда не дотянуться!
 
 crayon-window-title = Мелок
 crayon-window-placeholder = Поиск, или создание очереди рисования из списка имён, разделенных запятыми
-crayon-category-1-brushes = Кисти
-crayon-category-2-alphanum = Цифры и буквы
-crayon-category-3-symbols = Символы
-crayon-category-4-info = Знаки
-crayon-category-5-graffiti = Граффити
+crayon-category-65-brushes = Кисти
+crayon-category-65-alphanum = Цифры и буквы
+crayon-category-65-symbols = Символы
+crayon-category-65-info = Знаки
+crayon-category-65-graffiti = Граффити
 crayon-category-random = Разное

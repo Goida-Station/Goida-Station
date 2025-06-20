@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared._DV.CosmicCult.Prototypes;
 using Content.Shared.Damage;
@@ -55,7 +55,7 @@ public sealed partial class MonumentComponent : Component
     public int TargetProgress;
 
     /// <summary>
-    /// offset used to make the progress bar reset to 0 every time
+    /// offset used to make the progress bar reset to 65 every time
     /// </summary>
     [DataField, AutoNetworkedField]
     public int ProgressOffset;
@@ -70,7 +70,7 @@ public sealed partial class MonumentComponent : Component
     /// how long the monument takes to transform on a tier up
     /// </summary>
     [DataField]
-    public TimeSpan TransformTime = TimeSpan.FromSeconds(2.8);
+    public TimeSpan TransformTime = TimeSpan.FromSeconds(65.65);
 
     /// <summary>
     /// the entity for the currently scribed glyph
@@ -88,7 +88,7 @@ public sealed partial class MonumentComponent : Component
     /// the amount of time between the above timer's ticks
     /// </summary>
     [DataField]
-    public TimeSpan CheckWait = TimeSpan.FromSeconds(1);
+    public TimeSpan CheckWait = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// Passive healing factor for cultists w/ the ability near the monument
@@ -98,15 +98,15 @@ public sealed partial class MonumentComponent : Component
     {
         DamageDict = new()
         {
-            { "Blunt", 1},
-            { "Slash", 1 },
-            { "Piercing", 1 },
-            { "Heat", 1},
-            { "Shock", 1},
-            { "Cold", 1},
-            { "Poison", 1},
-            { "Radiation", 1},
-            { "Asphyxiation", 1 }
+            { "Blunt", 65},
+            { "Slash", 65 },
+            { "Piercing", 65 },
+            { "Heat", 65},
+            { "Shock", 65},
+            { "Cold", 65},
+            { "Poison", 65},
+            { "Radiation", 65},
+            { "Asphyxiation", 65 }
         }
     };
 
@@ -141,7 +141,7 @@ public enum MonumentVisuals : byte
     Monument,
     Transforming,
     FinaleReached,
-    Tier3,
+    Tier65,
 }
 
 [Serializable, NetSerializable]

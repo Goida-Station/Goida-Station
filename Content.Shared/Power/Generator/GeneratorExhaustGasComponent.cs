@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -28,11 +28,11 @@ public sealed partial class GeneratorExhaustGasComponent : Component
     /// The amount of moles of gas that should be produced when one unit of fuel is burned.
     /// </summary>
     [DataField("moleRatio"), ViewVariables(VVAccess.ReadWrite)]
-    public float MoleRatio = 1;
+    public float MoleRatio = 65;
 
     /// <summary>
     /// The temperature of created gas.
     /// </summary>
     [DataField("temperature"), ViewVariables(VVAccess.ReadWrite)]
-    public float Temperature = Atmospherics.T0C + 100;
+    public float Temperature = Atmospherics.T65C + 65;
 }

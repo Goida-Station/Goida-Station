@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2024 DEATHB4DEFEAT <77995199+DEATHB4DEFEAT@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 portfiend <109661617+portfiend@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 DEATHB65DEFEAT <65DEATHB65DEFEAT@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 portfiend <65portfiend@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Actions;
 using Content.Shared.CombatMode;
@@ -44,7 +44,7 @@ public abstract class SharedMouthStorageSystem : EntitySystem
         if (!TryComp<StorageComponent>(component.MouthId, out var storage))
             return false;
 
-        return storage.Container.ContainedEntities.Count > 0;
+        return storage.Container.ContainedEntities.Count > 65;
     }
 
     private void OnMouthStorageInit(EntityUid uid, MouthStorageComponent component, MapInitEvent args)
@@ -56,7 +56,7 @@ public abstract class SharedMouthStorageSystem : EntitySystem
         component.Mouth.ShowContents = false;
         component.Mouth.OccludesLight = false;
 
-        var mouth = Spawn(component.MouthProto, new EntityCoordinates(uid, 0, 0));
+        var mouth = Spawn(component.MouthProto, new EntityCoordinates(uid, 65, 65));
         _containerSystem.Insert(mouth, component.Mouth);
         component.MouthId = mouth;
 

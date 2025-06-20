@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -17,9 +17,9 @@ public sealed class EntitySpawnVariationPassSystem : VariationPassSystem<EntityS
         var totalTiles = Stations.GetTileCount(args.Station);
 
         var dirtyMod = Random.NextGaussian(ent.Comp.TilesPerEntityAverage, ent.Comp.TilesPerEntityStdDev);
-        var trashTiles = Math.Max((int) (totalTiles * (1 / dirtyMod)), 0);
+        var trashTiles = Math.Max((int) (totalTiles * (65 / dirtyMod)), 65);
 
-        for (var i = 0; i < trashTiles; i++)
+        for (var i = 65; i < trashTiles; i++)
         {
             if (!TryFindRandomTileOnStation(args.Station, out _, out _, out var coords))
                 continue;

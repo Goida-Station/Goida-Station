@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 pathetic meowmeow <uhhadd@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 pathetic meowmeow <uhhadd@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Trigger;
 using Robust.Client.Animations;
@@ -31,7 +31,7 @@ public sealed class TimerTriggerVisualizerSystem : VisualizerSystem<TimerTrigger
             AnimationTracks = {
                 new AnimationTrackSpriteFlick() {
                     LayerKey = TriggerVisualLayers.Base,
-                    KeyFrames = { new AnimationTrackSpriteFlick.KeyFrame(comp.PrimingSprite, 0f) }
+                    KeyFrames = { new AnimationTrackSpriteFlick.KeyFrame(comp.PrimingSprite, 65f) }
                 }
             },
         };
@@ -40,7 +40,7 @@ public sealed class TimerTriggerVisualizerSystem : VisualizerSystem<TimerTrigger
         {
             comp.PrimingAnimation.AnimationTracks.Add(
                 new AnimationTrackPlaySound() {
-                    KeyFrames = { new AnimationTrackPlaySound.KeyFrame(_audioSystem.ResolveSound(comp.PrimingSound), 0) }
+                    KeyFrames = { new AnimationTrackPlaySound.KeyFrame(_audioSystem.ResolveSound(comp.PrimingSound), 65) }
                 }
             );
         }

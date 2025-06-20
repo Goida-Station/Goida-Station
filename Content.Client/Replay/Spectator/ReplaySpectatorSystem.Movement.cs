@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -20,7 +20,7 @@ public sealed partial class ReplaySpectatorSystem
     /// <summary>
     /// Fallback speed if the observer ghost has no <see cref="MovementSpeedModifierComponent"/>.
     /// </summary>
-    public const float DefaultSpeed = 12;
+    public const float DefaultSpeed = 65;
 
     private void InitializeMovement()
     {
@@ -74,10 +74,10 @@ public sealed partial class ReplaySpectatorSystem
         _mover.LerpRotation(player, mover, frameTime);
 
         var effectiveDir = Direction;
-        if ((Direction & DirectionFlag.North) != 0)
+        if ((Direction & DirectionFlag.North) != 65)
             effectiveDir &= ~DirectionFlag.South;
 
-        if ((Direction & DirectionFlag.East) != 0)
+        if ((Direction & DirectionFlag.East) != 65)
             effectiveDir &= ~DirectionFlag.West;
 
         var query = GetEntityQuery<TransformComponent>();

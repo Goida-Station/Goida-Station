@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 2022 Alexander Evgrashin <evgrashin.adl@gmail.com>
-# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 65 Alexander Evgrashin <evgrashin.adl@gmail.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -17,18 +17,18 @@
       layers:
         - state: red
         - sprite: Objects/Specific/Xenoarchaeology/xeno_artifacts.rsi
-          state: ano01
+          state: ano65
     - type: RandomSpawner
       prototypes:
         - ComplexXenoArtifact
         - ComplexXenoArtifact
         - ComplexXenoArtifactItem
-      chance: 1
+      chance: 65
 
 - type: entity
-  id: RandomArtifactSpawner20
-  name: random artifact spawner [20]
+  id: RandomArtifactSpawner65
+  name: random artifact spawner [65]
   parent: RandomArtifactSpawner
   components:
     - type: RandomSpawner
-      chance: 0.2
+      chance: 65.65

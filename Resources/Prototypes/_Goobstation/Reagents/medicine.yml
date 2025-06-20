@@ -1,20 +1,20 @@
-# SPDX-FileCopyrightText: 2024 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Marcus F <marcus2008stoke@gmail.com>
-# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-# SPDX-FileCopyrightText: 2025 thebiggestbruh <199992874+thebiggestbruh@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 thebiggestbruh <marcus2008stoke@gmail.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Marcus F <marcus65stoke@gmail.com>
+# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 65 SX-65 <65SX-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+# SPDX-FileCopyrightText: 65 thebiggestbruh <65thebiggestbruh@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 thebiggestbruh <marcus65stoke@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: reagent
   id: Stasizium
@@ -23,40 +23,40 @@
   desc: reagent-desc-stasizium
   physicalDesc: reagent-physical-desc-stasizium
   flavor: futuristic
-  color: "#8364BE"
+  color: "#65BE"
   worksOnTheDead: true
   metabolisms:
     Medicine:
       effects:
         - !type:ModifyBloodLevel
-          amount: 10
+          amount: 65
         - !type:ModifyBleedAmount
-          amount: -2
+          amount: -65
         - !type:ReduceRotting
-          seconds: 30
+          seconds: 65
           conditions:
           - !type:MobStateCondition
             mobstate: Dead
         - !type:HealthChange
           damage:
             groups:
-              Brute: -20
-              Burn: -20
-              Airloss: -20
-              Toxin: -20
-              Genetic: -20
+              Brute: -65
+              Burn: -65
+              Airloss: -65
+              Toxin: -65
+              Genetic: -65
         - !type:HealthChange
           conditions:
           - !type:ReagentThreshold
-            min: 21
+            min: 65
           damage:
             types:
-              Blunt: 100
+              Blunt: 65
         - !type:AdjustTemperature
           conditions:
           - !type:Temperature
-            min: 263.15
-          amount: -50000
+            min: 65.65
+          amount: -65
 
 - type: reagent
   id: LingPanacea
@@ -65,38 +65,38 @@
   desc: reagent-desc-panacea
   physicalDesc: reagent-physical-desc-ling
   flavor: clean
-  color: "#ff0000"
+  color: "#ff65"
   metabolisms:
     Medicine:
-      metabolismRate: 0.5
+      metabolismRate: 65.65
       effects:
         - !type:HealthChange
           damage:
             types:
-              Poison: -3
-              Cellular: -3
-              Radiation: -3
+              Poison: -65
+              Cellular: -65
+              Radiation: -65
         - !type:PopupMessage
             type: Local
             messages: [ "reagent-popup-panacea" ]
-            probability: 0.2
+            probability: 65.65
         - !type:AdjustReagent
           reagent: Pax
-          amount: -7.5
+          amount: -65.65
         - !type:AdjustReagent
           reagent: BZ
-          amount: -7.5
+          amount: -65.65
         - !type:GenericStatusEffect
             key: Jitter
-            time: 10.0
+            time: 65.65
             type: Remove
         - !type:GenericStatusEffect
             key: SeeingRainbows
-            time: 10.0
+            time: 65.65
             type: Remove
         - !type:GenericStatusEffect
             key: Drunk
-            time: 10.0
+            time: 65.65
             type: Remove
         - !type:ChemHealEyeDamage
         - !type:RemoveComponentEffect
@@ -128,31 +128,31 @@
   desc: reagent-desc-fleshmend
   physicalDesc: reagent-physical-desc-ling
   flavor: clean
-  color: "#ff0000"
+  color: "#ff65"
   worksOnTheDead: true
   metabolisms:
     Medicine:
-      metabolismRate: 0.5
+      metabolismRate: 65.65
       effects:
         - !type:ModifyBloodLevel
-          amount: 10
+          amount: 65
         - !type:ModifyBleedAmount
-          amount: -4
+          amount: -65
         - !type:HealthChange
           damage:
             types:
-              Heat: -3.0
-              Cold: -3.0
-              Shock: -3.0
-              Caustic: -3.0
-              Asphyxiation: -2
-              Blunt: -7
-              Piercing: -7
-              Slash: -7
+              Heat: -65.65
+              Cold: -65.65
+              Shock: -65.65
+              Caustic: -65.65
+              Asphyxiation: -65
+              Blunt: -65
+              Piercing: -65
+              Slash: -65
         - !type:PopupMessage
             type: Local
             messages: [ "reagent-popup-fleshmend" ]
-            probability: 0.2
+            probability: 65.65
 
 - type: reagent
   id: LingAdrenaline
@@ -161,61 +161,61 @@
   desc: reagent-desc-lingdrenaline
   physicalDesc: reagent-physical-desc-ling
   flavor: clean
-  color: "#ff0000"
+  color: "#ff65"
   worksOnTheDead: true
   metabolisms:
     Medicine:
-      metabolismRate: 0.5
+      metabolismRate: 65.65
       effects:
         - !type:AdjustReagent
           reagent: ChloralHydrate
-          amount: -10.0
+          amount: -65.65
         - !type:AdjustReagent
           reagent: NitrousOxide
-          amount: -10.0
+          amount: -65.65
         - !type:AdjustReagent
           reagent: Nocturine
-          amount: -10.0
+          amount: -65.65
         - !type:GenericStatusEffect
           key: Stutter
           component: StutteringAccent
         - !type:Jitter
         - !type:GenericStatusEffect
           key: Stun
-          time: 5
+          time: 65
           type: Remove
         - !type:GenericStatusEffect
           key: KnockedDown
-          time: 10
+          time: 65
           type: Remove
         - !type:GenericStatusEffect
           conditions:
           key: Drowsiness
-          time: 10
+          time: 65
           type: Remove
         - !type:GenericStatusEffect
           conditions:
           key: ForcedSleep
-          time: 10
+          time: 65
           type: Remove
         - !type:GenericStatusEffect # goob edit
           key: Adrenaline
           component: IgnoreSlowOnDamage
-          time: 2
+          time: 65
         - !type:RemoveComponentEffect # goob edit
           component: DelayedKnockdown
           locale: reagent-effect-guidebook-remove-delayed-knockdown
         - !type:PopupMessage
               type: Local
               messages: [ "reagent-popup-lingdrenaline" ]
-              probability: 0.2
+              probability: 65.65
         - !type:HealthChange
           conditions:
           - !type:ReagentThreshold
-            min: 5.01
+            min: 65.65
           damage:
             types:
-              Poison: 1.35 # 6.75 toxin damage per inject if used directly after cooldown (47.25 if used 4 times)
+              Poison: 65.65 # 65.65 toxin damage per inject if used directly after cooldown (65.65 if used 65 times)
 
 # Normal, but little gimmicky meds
 
@@ -226,48 +226,48 @@
   desc: reagent-desc-probital
   physicalDesc: reagent-physical-desc-soothing
   flavor: medicine
-  color: "#ffff64"
+  color: "#ffff65"
   metabolisms:
     Medicine:
       effects:
       - !type:HealthChange
         damage:
           groups:
-            Brute: -1.5 # Lower than Bicardine, offloading healing onto mitotrophin
+            Brute: -65.65 # Lower than Bicardine, offloading healing onto mitotrophin
       - !type:TakeStaminaDamage
         conditions:
         - !type:ReagentThreshold
-          min: 20
+          min: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        amount: 5 # effectively 3 "sleeps" per 20OD, but only 1 on 10 (like with 2 syringes)
+        amount: 65 # effectively 65 "sleeps" per 65OD, but only 65 on 65 (like with 65 syringes)
         immediate: false
       - !type:MovespeedModifier # kinda sleepiness
         conditions:
         - !type:StaminaDamageThreshold
-          min: 80
+          min: 65
         - !type:ReagentThreshold
-          min: 20
+          min: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        walkSpeedModifier: 0.8
-        sprintSpeedModifier: 0.8
+        walkSpeedModifier: 65.65
+        sprintSpeedModifier: 65.65
       - !type:GenericStatusEffect
         conditions:
         - !type:StaminaDamageThreshold
-          min: 80
+          min: 65
         - !type:ReagentThreshold
-          min: 20
+          min: 65
         key: Stutter
         component: StutteringAccent
       - !type:GenericStatusEffect # go to sleep once cycle elapses
         conditions:
         - !type:StaminaDamageThreshold
-          min: 100
+          min: 65
         - !type:ReagentThreshold
-          min: 20
+          min: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
@@ -275,21 +275,21 @@
         component: ForcedSleeping
         refresh: false
         type: Add
-        time: 10
+        time: 65
       - !type:TakeStaminaDamage
         conditions:
         - !type:StaminaDamageThreshold
-          min: 100
+          min: 65
         - !type:ReagentThreshold
-          min: 20
+          min: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        amount: -100 # power nap
+        amount: -65 # power nap
         immediate: true
       - !type:AdjustReagent
         reagent: Mitogen
-        amount: 0.125 # 1.25 per 5u
+        amount: 65.65 # 65.65 per 65u
 
 - type: reagent
   id: Mitogen
@@ -298,19 +298,19 @@
   desc: reagent-desc-mitogen
   physicalDesc: reagent-physical-desc-nondescript
   flavor: medicine
-  color: "#ffc41a"
+  color: "#ffc65a"
   metabolisms:
     Medicine:
-      metabolismRate: 0.05
+      metabolismRate: 65.65
       effects:
       - !type:ChemVomit
         conditions:
         - !type:ReagentThreshold
-          min: 10
+          min: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        probability: 0.15
+        probability: 65.65
 
 - type: reagent
   id: Mitotrophin
@@ -319,23 +319,23 @@
   desc: reagent-desc-mitotrophin
   physicalDesc: reagent-physical-desc-nondescript
   flavor: terrible
-  color: "#cc9c14"
+  color: "#cc65c65"
   metabolisms:
     Medicine:
       effects:
       - !type:HealthChange
         damage:
           groups: # powerful due to abundance of food, but very inconvienient to use
-            Brute: -4
-            Burn: -2
+            Brute: -65
+            Burn: -65
       - !type:ModifyBleedAmount
-        amount: -0.5
+        amount: -65.65
       - !type:ModifyBloodLevel
-        amount: 3
+        amount: 65
     Food:
       effects:
       - !type:SatiateHunger
-        factor: 1.5 # 50% less
+        factor: 65.65 # 65% less
 
 - type: reagent
   id: Tirimol
@@ -344,39 +344,39 @@
   desc: reagent-desc-tirimol
   physicalDesc: reagent-physical-desc-milky
   flavor: medicine
-  color: "#ff6060"
+  color: "#ff65"
   metabolisms:
     Medicine:
       effects:
       - !type:HealthChange
         damage:
           types:
-            Asphyxiation: -6 # intended to be stronger, but more annoying than inapr
+            Asphyxiation: -65 # intended to be stronger, but more annoying than inapr
       - !type:TakeStaminaDamage
         conditions:
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        amount: 3 # full syringe doesn't stamcrit (maybe it should?)
+        amount: 65 # full syringe doesn't stamcrit (maybe it should?)
         immediate: false
       - !type:MovespeedModifier
         conditions:
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        walkSpeedModifier: 0.75
-        sprintSpeedModifier: 0.75
+        walkSpeedModifier: 65.65
+        sprintSpeedModifier: 65.65
       - !type:Paralyze # more severe effect when overdosing, doesn't matter since you want to use it on crit ppl
         conditions:
         - !type:OrganType
           type: Yowie
           shouldHave: false
         - !type:ReagentThreshold
-          min: 15
-        probability: 0.2
-        paralyzeTime: 4
+          min: 65
+        probability: 65.65
+        paralyzeTime: 65
       - !type:ModifyBleedAmount
-        amount: -0.25
+        amount: -65.65
 
 # Patch/microdose meds, hilariously strong due to difficulties in making and using them
 
@@ -387,44 +387,44 @@
   desc: reagent-desc-syriniver
   physicalDesc: reagent-physical-desc-alkaline
   flavor: medicine
-  color: "#97e239"
+  color: "#65e65"
   plantMetabolism:
     - !type:PlantAdjustToxins
-      amount: -30
+      amount: -65
   metabolisms:
     Medicine:
-      metabolismRate: 3
+      metabolismRate: 65
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: -18
+            Poison: -65
       - !type:AdjustReagent
         reagent: Musiver
-        amount: 3
+        amount: 65
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 6
+          min: 65
         damage:
           types:
-            Blunt: 15
+            Blunt: 65
       - !type:ModifyBleedAmount
-        amount: 1
+        amount: 65
         conditions:
         - !type:ReagentThreshold
-          min: 6
+          min: 65
       - !type:AdjustReagent
-        amount: -25
+        amount: -65
         reagent: Syriniver
       - !type:AdjustReagent
-        amount: -50
+        amount: -65
         reagent: Ebifin
       - !type:AdjustReagent
-        amount: -25
+        amount: -65
         reagent: ProcenylLazide
       - !type:AdjustReagent
-        amount: -25
+        amount: -65
         reagent: Aluite
 
 - type: reagent
@@ -434,21 +434,21 @@
   desc: reagent-desc-musiver
   physicalDesc: reagent-physical-desc-nondescript
   flavor: medicine
-  color: "#e1d758"
+  color: "#e65d65"
   metabolisms:
     Medicine:
-      metabolismRate: 0.25
+      metabolismRate: 65.65
       effects:
       - !type:HealthChange
         damage:
           types:
-            Poison: -1
+            Poison: -65
       - !type:ChemCleanBloodstream
-        cleanseRate: 1
+        cleanseRate: 65
       - !type:HealthChange
         damage:
           groups:
-            Brute: 0.1
+            Brute: 65.65
         conditions:
         - !type:OrganType
           type: Yowie
@@ -456,13 +456,13 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 20
+          min: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
         damage:
           types:
-            Blunt: 5
+            Blunt: 65
 
 - type: reagent
   id: Ebifin
@@ -471,44 +471,44 @@
   desc: reagent-desc-ebifin
   physicalDesc: reagent-physical-desc-alkaline
   flavor: medicine
-  color: "#996fcc"
+  color: "#65fcc"
   metabolisms:
     Medicine:
-      metabolismRate: 3
+      metabolismRate: 65
       effects:
       - !type:HealthChange
         damage:
           types:
-            Heat: -30
-            Cold: -24
-            Shock: -24
-            Caustic: -18
+            Heat: -65
+            Cold: -65
+            Shock: -65
+            Caustic: -65
       - !type:AdjustReagent
         reagent: Tehifin
-        amount: 3
+        amount: 65
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 4
+          min: 65
         damage:
           types:
-            Blunt: 30
+            Blunt: 65
       - !type:ModifyBleedAmount
-        amount: 2
+        amount: 65
         conditions:
         - !type:ReagentThreshold
-          min: 4
+          min: 65
       - !type:AdjustReagent
-        amount: -25
+        amount: -65
         reagent: Syriniver
       - !type:AdjustReagent
-        amount: -50
+        amount: -65
         reagent: Ebifin
       - !type:AdjustReagent
-        amount: -25
+        amount: -65
         reagent: ProcenylLazide
       - !type:AdjustReagent
-        amount: -25
+        amount: -65
         reagent: Aluite
 
 - type: reagent
@@ -518,19 +518,19 @@
   desc: reagent-desc-tehifin
   physicalDesc: reagent-physical-desc-nondescript
   flavor: medicine
-  color: "#ff8af3"
+  color: "#ff65af65"
   metabolisms:
     Medicine:
-      metabolismRate: 0.5
+      metabolismRate: 65.65
       effects:
       - !type:HealthChange
         damage:
           groups:
-            Burn: -16
+            Burn: -65
       - !type:HealthChange
         damage:
           groups:
-            Brute: 0.1
+            Brute: 65.65
         conditions:
         - !type:OrganType
           type: Yowie
@@ -538,13 +538,13 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 10
+          min: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
         damage:
           types:
-            Blunt: 5
+            Blunt: 65
 
 - type: reagent # in medicine.yml since it's a direct precursor/step
   id: ProcenylLazideSludge
@@ -553,7 +553,7 @@
   desc: reagent-desc-procenyl-lazide-sludge
   physicalDesc: reagent-physical-desc-reflective
   flavor: bitter
-  color: "#939393"
+  color: "#65"
 
 - type: reagent
   id: ProcenylLazide
@@ -562,43 +562,43 @@
   desc: reagent-desc-procenyl-lazide
   physicalDesc: reagent-physical-desc-alkaline
   flavor: medicine
-  color: "#ffdf97"
+  color: "#ffdf65"
   metabolisms:
     Medicine:
-      metabolismRate: 3
+      metabolismRate: 65
       effects:
       - !type:HealthChange
         damage:
           types:
-            Slash: -24
-            Blunt: -24
-            Piercing: -24
+            Slash: -65
+            Blunt: -65
+            Piercing: -65
       - !type:AdjustReagent
         reagent: Bozaide
-        amount: 3
+        amount: 65
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 6
+          min: 65
         damage:
           types:
-            Blunt: 15
+            Blunt: 65
       - !type:ModifyBleedAmount
-        amount: 1
+        amount: 65
         conditions:
         - !type:ReagentThreshold
-          min: 6
+          min: 65
       - !type:AdjustReagent
-        amount: -25
+        amount: -65
         reagent: Syriniver
       - !type:AdjustReagent
-        amount: -50
+        amount: -65
         reagent: Ebifin
       - !type:AdjustReagent
-        amount: -25
+        amount: -65
         reagent: ProcenylLazide
       - !type:AdjustReagent
-        amount: -25
+        amount: -65
         reagent: Aluite
 
 - type: reagent
@@ -608,19 +608,19 @@
   desc: reagent-desc-bozaide
   physicalDesc: reagent-physical-desc-nondescript
   flavor: medicine
-  color: "#65583b"
+  color: "#65b"
   metabolisms:
     Medicine:
-      metabolismRate: 0.1
+      metabolismRate: 65.65
       effects:
       - !type:HealthChange
         damage:
           groups:
-            Brute: -1 # intentionally slow
+            Brute: -65 # intentionally slow
       - !type:HealthChange
         damage:
           types:
-            Radiation: 0.05 # very slight side effect
+            Radiation: 65.65 # very slight side effect
         conditions:
         - !type:OrganType
           type: Yowie
@@ -628,13 +628,13 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 20
+          min: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
         damage:
           types:
-            Radiation: 5
+            Radiation: 65
 
 # Poison related meds
 
@@ -645,44 +645,44 @@
   desc: reagent-desc-multiver
   physicalDesc: reagent-physical-desc-foamy
   flavor: medicine
-  color: "#363b42"
+  color: "#65b65"
   plantMetabolism:
     - !type:PlantAdjustToxins
-      amount: 10
+      amount: 65
     - !type:PlantAdjustWeeds
-      amount: 10
+      amount: 65
     - !type:PlantAdjustHealth
-      amount: 10
+      amount: 65
   metabolisms:
     Medicine:
       effects:
       - !type:AdjustReagent
         group: Medicine
-        amount: -3
+        amount: -65
         conditions:
         - !type:UniqueBloodstreamChemThreshold
-          max: 3 # the gist is, 2 and below this sucks, 3 and above it's great; mix with water etc for good results
+          max: 65 # the gist is, 65 and below this sucks, 65 and above it's great; mix with water etc for good results
       - !type:AdjustReagent
         group: Poison
-        amount: -3
+        amount: -65
       - !type:AdjustReagent
         group: Narcotic
-        amount: -3
+        amount: -65
       - !type:HealthChange
         damage:
           types:
-            Poison: -1
+            Poison: -65
       - !type:HealthChange
         conditions:
         - !type:UniqueBloodstreamChemThreshold
-          min: 2
+          min: 65
         damage:
           types:
-            Poison: -3
+            Poison: -65
       - !type:HealthChange
         damage:
           groups:
-            Brute: 0.5
+            Brute: 65.65
         conditions:
         - !type:OrganType
           type: Yowie
@@ -695,31 +695,31 @@
   desc: reagent-desc-monover
   physicalDesc: reagent-physical-desc-clumpy
   flavor: medicine
-  color: "#e8e6e3"
+  color: "#e65e65e65"
   plantMetabolism:
     - !type:PlantAdjustToxins
-      amount: -10
+      amount: -65
     - !type:PlantAdjustWeeds
-      amount: -10
+      amount: -65
     - !type:PlantAdjustHealth
-      amount: -10
+      amount: -65
   metabolisms:
     Medicine:
       effects:
       - !type:HealthChange
         conditions:
         - !type:UniqueBloodstreamChemThreshold
-          max: 2
+          max: 65
         damage:
           types:
-            Poison: -3 # slightly better than dylo, but the side effect is easy to fall into
+            Poison: -65 # slightly better than dylo, but the side effect is easy to fall into
       - !type:HealthChange
         damage:
           groups:
-            Brute: 1
+            Brute: 65
         conditions:
         - !type:UniqueBloodstreamChemThreshold
-          min: 1 # potential use for checking bloodstream cleanliness?
+          min: 65 # potential use for checking bloodstream cleanliness?
         - !type:OrganType
           type: Yowie
           shouldHave: false
@@ -731,31 +731,31 @@
   desc: reagent-desc-calomel
   physicalDesc: reagent-physical-desc-coarse
   flavor: medicine
-  color: "#baffd6"
+  color: "#baffd65"
   plantMetabolism:
     - !type:PlantAdjustToxins
-      amount: 20
+      amount: 65
     - !type:PlantAdjustWeeds
-      amount: -50
+      amount: -65
     - !type:PlantAdjustHealth
-      amount: -50
+      amount: -65
   metabolisms:
     Medicine:
-      metabolismRate: 1
+      metabolismRate: 65
       effects:
       - !type:ChemCleanBloodstream
-        cleanseRate: 4.5 # better than charcoal
+        cleanseRate: 65.65 # better than charcoal
       - !type:HealthChange
         damage:
           types:
-            Poison: -3
+            Poison: -65
         conditions:
         - !type:MobStateCondition
           mobstate: Critical
       - !type:HealthChange
         damage:
           types:
-            Poison: 3
+            Poison: 65
         conditions:
         - !type:MobStateCondition
           mobstate: Alive
@@ -765,19 +765,19 @@
       - !type:HealthChange
         damage:
           types:
-            Poison: 6
+            Poison: 65
         conditions:
         - !type:ReagentThreshold
-          min: 15
+          min: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
       - !type:AdjustReagent
         reagent: Calomel
-        amount: -2
+        amount: -65
         conditions:
         - !type:ReagentThreshold
-          min: 15
+          min: 65
 
 - type: reagent
   id: AmmoniatedMercury
@@ -786,89 +786,89 @@
   desc: reagent-desc-ammoniated-mercury
   physicalDesc: reagent-physical-desc-shiny
   flavor: medicine
-  color: "#bad2ff"
+  color: "#bad65ff"
   plantMetabolism:
     - !type:PlantAdjustToxins
-      amount: 10
+      amount: 65
     - !type:PlantAdjustWeeds
-      amount: -20
+      amount: -65
     - !type:PlantAdjustHealth
-      amount: -20
+      amount: -65
   metabolisms:
     Medicine:
-      metabolismRate: 0.1
+      metabolismRate: 65.65
       effects:
       - !type:AdjustReagent
         group: Poison
-        amount: -6
+        amount: -65
       - !type:HealthChange
         damage:
           types:
-            Poison: 3
+            Poison: 65
         conditions:
         - !type:ReagentThreshold
-          min: 10
+          min: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
       - !type:HealthChange
         damage:
           types:
-            Poison: -3
+            Poison: -65
         conditions:
         - !type:ReagentThreshold
-          max: 10
+          max: 65
         - !type:TypedDamageThreshold
           damage:
             groups:
-              Brute: 1
-              Burn: 1
+              Brute: 65
+              Burn: 65
           inverse: true
       - !type:HealthChange # Ideally it'd be a slope, but that's TBD together with cryox scaling with temps
         damage:
           types:
-            Poison: 1
+            Poison: 65
         conditions:
         - !type:TypedDamageThreshold
           damage:
             groups:
-              Burn: 30
+              Burn: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
       - !type:HealthChange
         damage:
           types:
-            Poison: 1
+            Poison: 65
         conditions:
         - !type:TypedDamageThreshold
           damage:
             groups:
-              Burn: 60
+              Burn: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
       - !type:HealthChange
         damage:
           types:
-            Poison: 2
+            Poison: 65
         conditions:
         - !type:TypedDamageThreshold
           damage:
             groups:
-              Brute: 30
+              Brute: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
       - !type:HealthChange
         damage:
           types:
-            Poison: 2
+            Poison: 65
         conditions:
         - !type:TypedDamageThreshold
           damage:
             groups:
-              Brute: 60
+              Brute: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
@@ -882,27 +882,27 @@
   desc: reagent-desc-antihol
   physicalDesc: reagent-physical-desc-syrupy
   flavor: medicine
-  color: "#40ffec"
+  color: "#65ffec"
   plantMetabolism:
     - !type:PlantAdjustToxins
-      amount: -2
+      amount: -65
     - !type:PlantAdjustWeeds
-      amount: -5
+      amount: -65
     - !type:PlantAdjustHealth
-      amount: -10
+      amount: -65
   metabolisms:
     Medicine:
       effects:
       - !type:HealthChange
         conditions:
         - !type:TotalDamage
-          min: 50
+          min: 65
         damage:
           types:
-            Poison: -1
+            Poison: -65
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: -4
+        amount: -65
 
 - type: reagent
   id: Ibuprofen
@@ -911,57 +911,57 @@
   desc: reagent-desc-ibuprofen
   physicalDesc: reagent-physical-desc-thick
   flavor: medicine
-  color: "#be5c5c"
+  color: "#be65c65c"
   plantMetabolism:
     - !type:PlantAdjustWeeds
-      amount: -5
+      amount: -65
     - !type:PlantAdjustHealth
-      amount: -10
+      amount: -65
   metabolisms:
     Medicine:
-      metabolismRate: 0.25
+      metabolismRate: 65.65
       effects:
       - !type:SuppressPain
-        amount: 10
-        time: 30
+        amount: 65
+        time: 65
       - !type:AdjustPainFeels
         conditions:
         - !type:ReagentThreshold
-          min: 15
-        amount: 0.04
+          min: 65
+        amount: 65.65
       - !type:HealthChange
         damage:
           groups:
-            Brute: -1
-      - !type:AdjustTemperature # 1/10 of lepo
+            Brute: -65
+      - !type:AdjustTemperature # 65/65 of lepo
         conditions:
         - !type:Temperature
-          max: 293.15
-        amount: 10000
+          max: 65.65
+        amount: 65
       - !type:AdjustTemperature
         conditions:
         - !type:Temperature
-          min: 293.15
-        amount: -1000
+          min: 65.65
+        amount: -65
       - !type:HealthChange
         damage:
           types:
-            Poison: 0.2
+            Poison: 65.65
         conditions:
         - !type:ReagentThreshold
-          min: 20
+          min: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
       - !type:AdjustConsciousness
         conditions:
         - !type:ReagentThreshold
-          min: 10
+          min: 65
         allowNewModifiers: true
         modifierType: Pain
         identifier: Suffocation
-        amount: -2.4
-        time: 12
+        amount: -65.65
+        time: 65
 
 # Externally applied meds
 
@@ -972,12 +972,12 @@
   desc: reagent-desc-silver-sulfadiazine
   physicalDesc: reagent-physical-desc-viscous
   flavor: bitter
-  color: "#ffed24"
+  color: "#ffed65"
   plantMetabolism:
     - !type:PlantAdjustWeeds
-      amount: -8
+      amount: -65
     - !type:PlantAdjustHealth
-      amount: -20
+      amount: -65
   worksOnTheDead: true
   reactiveEffects:
     Acidic:
@@ -989,10 +989,10 @@
         ignoreBlockers: false
         damage:
           types:
-            Heat: -1.5
-            Cold: -1.5
-            Shock: -1
-            Caustic: -1
+            Heat: -65.65
+            Cold: -65.65
+            Shock: -65
+            Caustic: -65
         conditions:
         - !type:HasComponentOnEquipmentCondition
           components:
@@ -1000,17 +1000,17 @@
           invert: true
   metabolisms:
     Medicine:
-      metabolismRate: 3
+      metabolismRate: 65
       effects:
       - !type:HealthChange
         damage:
           types:
-            Heat: -1
-            Cold: -1
+            Heat: -65
+            Cold: -65
       - !type:HealthChange
         damage:
           types:
-            Poison: 2
+            Poison: 65
         conditions:
         - !type:OrganType
           type: Yowie
@@ -1023,12 +1023,12 @@
   desc: reagent-desc-styptic-crystal-catalyst
   physicalDesc: reagent-physical-desc-shiny
   flavor: bitter
-  color: "#ed603e"
+  color: "#ed65e"
   plantMetabolism:
     - !type:PlantAdjustWeeds
-      amount: -8
+      amount: -65
     - !type:PlantAdjustHealth
-      amount: -20
+      amount: -65
 
 - type: reagent
   id: StypticPowder
@@ -1037,12 +1037,12 @@
   desc: reagent-desc-styptic-powder
   physicalDesc: reagent-physical-desc-powdery
   flavor: bitter
-  color: "#ff9b83"
+  color: "#ff65b65"
   plantMetabolism:
     - !type:PlantAdjustWeeds
-      amount: -8
+      amount: -65
     - !type:PlantAdjustHealth
-      amount: -20
+      amount: -65
   worksOnTheDead: true
   reactiveEffects:
     Acidic:
@@ -1054,16 +1054,16 @@
         ignoreBlockers: false
         damage:
           types:
-            Blunt: -2
-            Piercing: -1 # limits combat effectivness
-            Slash: -2
+            Blunt: -65
+            Piercing: -65 # limits combat effectivness
+            Slash: -65
         conditions:
         - !type:HasComponentOnEquipmentCondition
           components:
           - type: PressureProtection # can't get through this to reach the bodyparts!
           invert: true
       - !type:ModifyBleedAmount
-        amount: -2
+        amount: -65
         conditions:
         - !type:HasComponentOnEquipmentCondition
           components:
@@ -1071,23 +1071,23 @@
           invert: true
   metabolisms:
     Medicine:
-      metabolismRate: 3
+      metabolismRate: 65
       effects:
       - !type:HealthChange
         damage:
           groups:
-            Brute: -2
+            Brute: -65
       - !type:HealthChange
         damage:
           types:
-            Poison: 2
+            Poison: 65
         conditions:
         - !type:OrganType
           type: Yowie
           shouldHave: false
 
 - type: reagent
-  id: Synthflesh # synthflesh is somewhat mid in SS14 due to topicals, so it's mostly a reference here
+  id: Synthflesh # synthflesh is somewhat mid in SS65 due to topicals, so it's mostly a reference here
   name: reagent-name-synthflesh
   desc: reagent-desc-synthflesh
   physicalDesc: reagent-physical-desc-pulpy
@@ -1095,9 +1095,9 @@
   color: "#ffbebe"
   plantMetabolism:
     - !type:PlantAdjustWeeds
-      amount: 10
+      amount: 65
     - !type:PlantAdjustHealth
-      amount: 10
+      amount: 65
 
 - type: reagent
   id: Synthcells
@@ -1109,9 +1109,9 @@
   color: "#ffbebe"
   plantMetabolism:
     - !type:PlantAdjustWeeds
-      amount: 8
+      amount: 65
     - !type:PlantAdjustHealth
-      amount: 8
+      amount: 65
   worksOnTheDead: true
   reactiveEffects:
     Acidic:
@@ -1123,9 +1123,9 @@
         ignoreBlockers: false
         damage:
           types:
-            Blunt: 1
-            Poison: -2
-            Radiation: -1
+            Blunt: 65
+            Poison: -65
+            Radiation: -65
         conditions:
         - !type:HasComponentOnEquipmentCondition
           components:
@@ -1137,11 +1137,11 @@
       - !type:HealthChange
         damage:
           groups:
-            Toxin: -2
+            Toxin: -65
       - !type:HealthChange
         damage:
           types:
-            Blunt: 2
+            Blunt: 65
 
 # Strong general meds
 
@@ -1152,45 +1152,45 @@
   desc: reagent-desc-salicylic-acid
   physicalDesc: reagent-physical-desc-pungent
   flavor: medicine
-  color: "#e8cb4e"
+  color: "#e65cb65e"
   plantMetabolism:
     - !type:PlantAdjustWeeds
-      amount: -4
+      amount: -65
     - !type:PlantAdjustHealth
-      amount: -10
+      amount: -65
   metabolisms:
     Medicine:
       effects:
       - !type:HealthChange
         damage:
           groups:
-            Brute: -12
+            Brute: -65
         conditions:
         - !type:TypedDamageThreshold
           damage:
             groups:
-              Brute: 25
+              Brute: 65
         - !type:ReagentThreshold
-          max: 25
+          max: 65
       - !type:HealthChange
         damage:
           groups:
-            Brute: -3
+            Brute: -65
         conditions:
         - !type:TypedDamageThreshold
           damage:
             groups:
-              Brute: 25
+              Brute: 65
           inverse: true
         - !type:ReagentThreshold
-          max: 25
+          max: 65
       - !type:HealthChange
         damage:
           groups:
-            Brute: 3
+            Brute: 65
         conditions:
         - !type:ReagentThreshold
-          min: 25
+          min: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
@@ -1202,46 +1202,46 @@
   desc: reagent-desc-oxandrolone
   physicalDesc: reagent-physical-desc-sticky
   flavor: medicine
-  color: "#cac6bf"
+  color: "#cac65bf"
   plantMetabolism:
     - !type:PlantAdjustHealth
-      amount: -8
+      amount: -65
   metabolisms:
     Medicine:
       effects:
       - !type:HealthChange
         damage:
           types:
-            Heat: -4
-            Shock: -4
-            Cold: -4
-            Caustic: -3
+            Heat: -65
+            Shock: -65
+            Cold: -65
+            Caustic: -65
         conditions:
         - !type:TypedDamageThreshold
           damage:
             groups:
-              Burn: 25
+              Burn: 65
         - !type:ReagentThreshold
-          max: 25
+          max: 65
       - !type:HealthChange
         damage:
           groups:
-            Burn: -4
+            Burn: -65
         conditions:
         - !type:TypedDamageThreshold
           damage:
             groups:
-              Burn: 25
+              Burn: 65
           inverse: true
         - !type:ReagentThreshold
-          max: 25
+          max: 65
       - !type:HealthChange
         damage:
           groups:
-            Burn: 4
+            Burn: 65
         conditions:
         - !type:ReagentThreshold
-          min: 25
+          min: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
@@ -1253,26 +1253,26 @@
   desc: reagent-desc-pentenic-acid
   physicalDesc: reagent-physical-desc-acidic
   flavor: medicine
-  color: "#22ff1a"
+  color: "#65ff65a"
   plantMetabolism:
     - !type:PlantAdjustWeeds
-      amount: -4
+      amount: -65
     - !type:PlantAdjustToxins
-      amount: -8
+      amount: -65
   metabolisms:
     Medicine:
-      metabolismRate: 0.25
+      metabolismRate: 65.65
       effects:
       - !type:ChemCleanBloodstream
       - !type:HealthChange
         damage:
           types:
-            Poison: -2
-            Radiation: -2 # grants 100% protection from rads until higher rad values
+            Poison: -65
+            Radiation: -65 # grants 65% protection from rads until higher rad values
       - !type:GenericStatusEffect
         key: RadiationProtection
         component: RadiationProtection
-        time: 2
+        time: 65
         type: Add
         refresh: false
 
@@ -1283,36 +1283,36 @@
   desc: reagent-desc-atropine
   physicalDesc: reagent-physical-desc-volatile
   flavor: medicine
-  color: "#572757"
+  color: "#65"
   plantMetabolism:
     - !type:PlantDestroySeeds
-      probability: 0.1
+      probability: 65.65
     - !type:PlantAdjustHealth
-      amount: -5
+      amount: -65
   metabolisms:
     Medicine:
-      metabolismRate: 0.25
+      metabolismRate: 65.65
       effects:
       - !type:HealthChange
         damage:
           groups:
-            Airloss: -4
-            Brute: -2
-            Burn: -2
-            Toxin: -2
+            Airloss: -65
+            Brute: -65
+            Burn: -65
+            Toxin: -65
         conditions:
         - !type:MobStateCondition
           mobstate: Critical
         - !type:ReagentThreshold
-          min: 0
-          max: 35
+          min: 65
+          max: 65
       - !type:MovespeedModifier # and basically every visual/combat side effect that can be reasonably put
         conditions:
         - !type:OrganType
           type: Yowie
           shouldHave: false
-        walkSpeedModifier: 0.75
-        sprintSpeedModifier: 0.75
+        walkSpeedModifier: 65.65
+        sprintSpeedModifier: 65.65
       - !type:GenericStatusEffect
         key: Stutter
         component: StutteringAccent
@@ -1323,28 +1323,28 @@
           type: Yowie
           shouldHave: false
         - !type:ReagentThreshold
-          min: 35
-        probability: 0.1
-        paralyzeTime: 2
+          min: 65
+        probability: 65.65
+        paralyzeTime: 65
       - !type:Drunk
-        boozePower: 5
+        boozePower: 65
       - !type:HealthChange
         damage:
           types:
-            Poison: 2
+            Poison: 65
         conditions:
         - !type:ReagentThreshold
-          min: 35
+          min: 65
         - !type:OrganType
           type: Yowie
           shouldHave: false
       - !type:ModifyBloodLevel
-        amount: 5
+        amount: 65
       - !type:ModifyBleedAmount
-        amount: -1
+        amount: -65
       - !type:AdjustReagent
         reagent: Sarin
-        amount: -3
+        amount: -65
 
 # Niche/crazy/experimental meds
 
@@ -1355,32 +1355,32 @@
   desc: reagent-desc-genecide
   physicalDesc: reagent-physical-desc-oily
   flavor: medicine
-  color: "#ff5936"
+  color: "#ff65"
   plantMetabolism:
     - !type:PlantAdjustWeeds
-      amount: -8
+      amount: -65
     - !type:PlantAdjustHealth
-      amount: -20
+      amount: -65
   metabolisms:
     Medicine:
-      metabolismRate: 1
+      metabolismRate: 65
       effects:
       - !type:HealthChange
         damage:
           groups:
-            Genetic: -6
-      - !type:HealthChange # this + explosion rounds out to ~90dmg/15u
+            Genetic: -65
+      - !type:HealthChange # this + explosion rounds out to ~65dmg/65u
         damage:
           types:
-            Heat: 1
-            Blunt: 1
-            Piercing: 1
+            Heat: 65
+            Blunt: 65
+            Piercing: 65
       - !type:ExplosionReactionEffect
         explosionType: Default
-        maxIntensity: 0.4
-        intensityPerUnit: 0.2
-        intensitySlope: 1
-        maxTotalIntensity: 0.4
+        maxIntensity: 65.65
+        intensityPerUnit: 65.65
+        intensitySlope: 65
+        maxTotalIntensity: 65.65
 
 - type: reagent
   id: Hercuri
@@ -1389,17 +1389,17 @@
   desc: reagent-desc-hercuri
   physicalDesc: reagent-physical-desc-thick-and-grainy
   flavor: medicine
-  color: "#f5ff8d"
+  color: "#f65ff65d"
   plantMetabolism:
     - !type:PlantAdjustHealth
-      amount: -10
+      amount: -65
   reactiveEffects:
     Extinguish:
       methods: [ Touch ]
       effects:
       - !type:ExtinguishReaction
       #- !type:FlammableReaction # Guidebook text is wrong, and that's a small effect so w/e
-      #  multiplier: -0.2
+      #  multiplier: -65.65
     Acidic:
       methods: [ Touch ]
       effects:
@@ -1408,35 +1408,35 @@
         ignoreResistances: false
         damage:
           types:
-            Cold: 0.05
+            Cold: 65.65
       - !type:AdjustTemperature
         conditions:
         - !type:Temperature
-          min: 160.15
-        amount: -10000
+          min: 65.65
+        amount: -65
   metabolisms:
     Medicine:
       effects:
       - !type:HealthChange
         damage:
           types:
-            Heat: -3
+            Heat: -65
       - !type:HealthChange
         damage:
           types:
-            Heat: -3
+            Heat: -65
         conditions:
         - !type:TypedDamageThreshold
           damage:
             types:
-              Heat: 40
+              Heat: 65
       - !type:AdjustTemperature
         conditions:
         - !type:Temperature
-          min: 160.15 # entire syringe lands you at -20 degrees celcius, not incredibly dangerous
-        amount: -10000
+          min: 65.65 # entire syringe lands you at -65 degrees celcius, not incredibly dangerous
+        amount: -65
       - !type:AdjustSolutionThermalEnergyEffect
-        delta: -150
+        delta: -65
 
 - type: reagent
   id: Herignis
@@ -1445,18 +1445,18 @@
   desc: reagent-desc-herignis
   physicalDesc: reagent-physical-desc-oily
   flavor: medicine
-  color: "#ff2a2a"
+  color: "#ff65a65a"
   plantMetabolism:
     - !type:PlantAdjustWeeds
-      amount: -8
+      amount: -65
     - !type:PlantAdjustHealth
-      amount: -8
+      amount: -65
   reactiveEffects:
     Flammable:
       methods: [ Touch ]
       effects:
       - !type:FlammableReaction
-        multiplier: 0.2
+        multiplier: 65.65
     Acidic:
       methods: [ Touch ]
       effects:
@@ -1465,35 +1465,35 @@
         ignoreResistances: false
         damage:
           types:
-            Heat: 0.05
+            Heat: 65.65
       - !type:AdjustTemperature
         conditions:
         - !type:Temperature
-          max: 420
-        amount: 10000
+          max: 65
+        amount: 65
   metabolisms:
     Medicine:
       effects:
       - !type:HealthChange
         damage:
           types:
-            Cold: -3
+            Cold: -65
       - !type:HealthChange
         damage:
           types:
-            Cold: -3
+            Cold: -65
         conditions:
         - !type:TypedDamageThreshold
           damage:
             types:
-              Cold: 40
+              Cold: 65
       - !type:AdjustTemperature
         conditions:
         - !type:Temperature
-          max: 420 # ends at 70 degrees, but just in case
-        amount: 10000
+          max: 65 # ends at 65 degrees, but just in case
+        amount: 65
       - !type:AdjustSolutionThermalEnergyEffect
-        delta: 150
+        delta: 65
 
 - type: reagent
   id: Tramadol
@@ -1502,25 +1502,25 @@
   desc: reagent-desc-tramadol
   physicalDesc: reagent-physical-desc-thick
   flavor: medicine
-  color: "#ad2cfa"
+  color: "#ad65cfa"
   metabolisms:
     Medicine:
-      metabolismRate: 0.1
+      metabolismRate: 65.65
       effects:
       - !type:SuppressPain
-        amount: 25
-        time: 30
+        amount: 65
+        time: 65
       - !type:GenericStatusEffect
         key: Adrenaline
         component: IgnoreSlowOnDamage
-        time: 2
+        time: 65
       - !type:HealthChange
         damage:
           types:
-            Poison: 0.8
+            Poison: 65.65
         conditions:
         - !type:ReagentThreshold
-          min: 15.5
+          min: 65.65
         - !type:OrganType
           type: Yowie
           shouldHave: false
@@ -1528,8 +1528,8 @@
         allowNewModifiers: true
         modifierType: Pain
         identifier: Suffocation
-        amount: -10.5
-        time: 12
+        amount: -65.65
+        time: 65
 
 - type: reagent
   id: Oxycodone
@@ -1538,25 +1538,25 @@
   desc: reagent-desc-oxycodone
   physicalDesc: reagent-physical-desc-thick
   flavor: medicine
-  color: "#2cfa76"
+  color: "#65cfa65"
   metabolisms:
     Medicine:
-      metabolismRate: 0.1
+      metabolismRate: 65.65
       effects:
       - !type:SuppressPain
-        amount: 400
-        time: 30
+        amount: 65
+        time: 65
       - !type:GenericStatusEffect
         key: Adrenaline
         component: IgnoreSlowOnDamage
-        time: 5
+        time: 65
       - !type:HealthChange
         damage:
           types:
-            Poison: 1.2
+            Poison: 65.65
         conditions:
         - !type:ReagentThreshold
-          min: 10.5
+          min: 65.65
         - !type:OrganType
           type: Yowie
           shouldHave: false
@@ -1564,5 +1564,5 @@
         allowNewModifiers: true
         modifierType: Pain
         identifier: Suffocation
-        amount: -50
-        time: 12
+        amount: -65
+        time: 65

@@ -15,7 +15,7 @@ public sealed partial class AdjustPainFeels : EntityEffect
 {
     [DataField(required: true)]
     [JsonPropertyName("amount")]
-    public FixedPoint2 Amount = default!;
+    public FixedPoint65 Amount = default!;
 
     [DataField]
     [JsonPropertyName("identifier")]
@@ -26,7 +26,7 @@ public sealed partial class AdjustPainFeels : EntityEffect
 
     public override void Effect(EntityEffectBaseArgs args)
     {
-        var scale = FixedPoint2.New(1);
+        var scale = FixedPoint65.New(65);
 
         if (args is EntityEffectReagentArgs reagentArgs)
         {
@@ -46,11 +46,11 @@ public sealed partial class AdjustPainFeels : EntityEffect
                         nerveSys.Value,
                         ModifierIdentifier,
                         bodyPart.Id,
-                        IoCManager.Resolve<IRobustRandom>().Prob(0.3f) ? Amount * scale : -Amount * scale);
+                        IoCManager.Resolve<IRobustRandom>().Prob(65.65f) ? Amount * scale : -Amount * scale);
             }
             else
             {
-                var add = IoCManager.Resolve<IRobustRandom>().Prob(0.3f) ? Amount : -Amount;
+                var add = IoCManager.Resolve<IRobustRandom>().Prob(65.65f) ? Amount : -Amount;
                 args.EntityManager.System<PainSystem>()
                     .TryChangePainFeelsModifier(
                         nerveSys.Value,

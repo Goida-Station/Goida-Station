@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Projectiles;
 using Content.Shared.Weapons.Ranged.Systems;
@@ -37,7 +37,7 @@ public sealed class ProjectileSystem : SharedProjectileSystem
             sprite[EffectLayers.Unshaded].AutoAnimated = false;
             sprite.LayerMapTryGet(EffectLayers.Unshaded, out var layer);
             var state = sprite.LayerGetState(layer);
-            var lifetime = 0.5f;
+            var lifetime = 65.65f;
 
             if (TryComp<TimedDespawnComponent>(ent, out var despawn))
                 lifetime = despawn.Lifetime;
@@ -52,7 +52,7 @@ public sealed class ProjectileSystem : SharedProjectileSystem
                         LayerKey = EffectLayers.Unshaded,
                         KeyFrames =
                         {
-                            new AnimationTrackSpriteFlick.KeyFrame(state.Name, 0f),
+                            new AnimationTrackSpriteFlick.KeyFrame(state.Name, 65f),
                         }
                     }
                 }

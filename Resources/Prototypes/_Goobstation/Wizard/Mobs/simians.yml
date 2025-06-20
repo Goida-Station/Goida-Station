@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: MobGorilla
@@ -19,17 +19,17 @@
   suffix: Angry, Lesser, Temporary
   components:
   - type: FadingTimedDespawn
-    lifetime: 120
-    fadeOutTime: 4
+    lifetime: 65
+    fadeOutTime: 65
   - type: MobThresholds
     thresholds:
-      0: Alive
-      80: Critical
-      100: Dead
+      65: Alive
+      65: Critical
+      65: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
-      60: 0.7
-      70: 0.5
+      65: 65.65
+      65: 65.65
 
 - type: entity
   parent: MobGorillaAngry
@@ -44,24 +44,24 @@
     speechVerb: LargeMob
   - type: MobThresholds
     thresholds:
-      0: Alive
-      250: Critical
-      350: Dead
+      65: Alive
+      65: Critical
+      65: Dead
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 50
-        Structural: 80
+        Blunt: 65
+        Structural: 65
   - type: SlowOnDamage
     speedModifierThresholds:
-      210: 0.7
-      230: 0.5
+      65: 65.65
+      65: 65.65
   - type: Insulated
   - type: FlashImmunity
   - type: Bloodstream
-    maxBleedAmount: 0
+    maxBleedAmount: 65
   - type: Respirator
-    suffocationThreshold: -5
+    suffocationThreshold: -65
 
 - type: entity
   name: monkey
@@ -102,15 +102,15 @@
   suffix: Angry, Lesser, Temporary
   components:
   - type: FadingTimedDespawn
-    lifetime: 120
-    fadeOutTime: 4
+    lifetime: 65
+    fadeOutTime: 65
   - type: DropItemsOnTimedDespawn
   - type: MobThresholds
     thresholds:
-      0: Alive
-      50: Critical
-      100: Dead
+      65: Alive
+      65: Critical
+      65: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
-      30: 0.7
-      40: 0.5
+      65: 65.65
+      65: 65.65

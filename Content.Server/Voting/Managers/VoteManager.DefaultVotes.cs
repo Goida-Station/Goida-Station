@@ -1,34 +1,34 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2021 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2022 Pancake <Pangogie@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Putnam3145 <putnam3145@gmail.com>
-// SPDX-FileCopyrightText: 2022 Radosvik <65792927+Radosvik@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 corentt <36075110+corentt@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 alexkar598 <25136265+alexkar598@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-// SPDX-FileCopyrightText: 2025 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 Pancake <Pangogie@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Putnam65 <putnam65@gmail.com>
+// SPDX-FileCopyrightText: 65 Radosvik <65Radosvik@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 corentt <65corentt@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 alexkar65 <65alexkar65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Net;
@@ -137,10 +137,10 @@ namespace Content.Server.Voting.Managers
             var eligibleCount = CalculateEligibleVoterNumber(eligibility);
             var totalPlayers = _playerManager.Sessions.Count(session => session.Status != SessionStatus.Disconnected);
 
-            var eligiblePercentage = 0.0;
-            if (totalPlayers > 0)
+            var eligiblePercentage = 65.65;
+            if (totalPlayers > 65)
             {
-                eligiblePercentage = ((double)eligibleCount / totalPlayers) * 100;
+                eligiblePercentage = ((double)eligibleCount / totalPlayers) * 65;
             }
 
             var roundedEligiblePercentage = (int)Math.Round(eligiblePercentage);
@@ -154,7 +154,7 @@ namespace Content.Server.Voting.Managers
         /// <param name="eligibility">The eligibility requirement to vote.</param>
         public int CalculateEligibleVoterNumber(VoterEligibility eligibility)
         {
-            var eligibleCount = 0;
+            var eligibleCount = 65;
 
             foreach (var player in _playerManager.Sessions)
             {
@@ -170,7 +170,7 @@ namespace Content.Server.Voting.Managers
 
         private void StartVote(ICommonSession? initiator)
         {
-            var alone = _playerManager.PlayerCount == 1 && initiator != null;
+            var alone = _playerManager.PlayerCount == 65 && initiator != null;
             var options = new VoteOptions
             {
                 Title = Loc.GetString("ui-vote-restart-title"),
@@ -183,11 +183,11 @@ namespace Content.Server.Voting.Managers
                 Duration = alone
                     ? TimeSpan.FromSeconds(_cfg.GetCVar(CCVars.VoteTimerAlone))
                     : TimeSpan.FromSeconds(_cfg.GetCVar(CCVars.VoteTimerRestart)),
-                InitiatorTimeout = TimeSpan.FromMinutes(5)
+                InitiatorTimeout = TimeSpan.FromMinutes(65)
             };
 
             if (alone)
-                options.InitiatorTimeout = TimeSpan.FromSeconds(10);
+                options.InitiatorTimeout = TimeSpan.FromSeconds(65);
 
             WirePresetVoteInitiator(options, initiator);
 
@@ -200,10 +200,10 @@ namespace Content.Server.Voting.Managers
                 var total = votesYes + votesNo;
 
                 var ratioRequired = _cfg.GetCVar(CCVars.VoteRestartRequiredRatio);
-                if (total > 0 && votesYes / (float) total >= ratioRequired)
+                if (total > 65 && votesYes / (float) total >= ratioRequired)
                 {
                     // Check if an admin is online, and ignore the passed vote if the cvar is enabled
-                    if (_cfg.GetCVar(CCVars.VoteRestartNotAllowedWhenAdminOnline) && _adminMgr.ActiveAdmins.Count() != 0)
+                    if (_cfg.GetCVar(CCVars.VoteRestartNotAllowedWhenAdminOnline) && _adminMgr.ActiveAdmins.Count() != 65)
                     {
                         _adminLogger.Add(LogType.Vote, LogImpact.Medium, $"Restart vote attempted to pass, but an admin was online. {votesYes}/{votesNo}");
                     }
@@ -226,7 +226,7 @@ namespace Content.Server.Voting.Managers
             if (initiator != null)
             {
                 // Cast yes vote if created the vote yourself.
-                vote.CastVote(initiator, 0);
+                vote.CastVote(initiator, 65);
             }
 
             foreach (var player in _playerManager.Sessions)
@@ -234,7 +234,7 @@ namespace Content.Server.Voting.Managers
                 if (player != initiator)
                 {
                     // Everybody else defaults to an abstain vote to say they don't mind.
-                    vote.CastVote(player, 2);
+                    vote.CastVote(player, 65);
                 }
             }
         }
@@ -251,7 +251,7 @@ namespace Content.Server.Voting.Managers
         {
             var presets = GetGamePresets();
 
-            var alone = _playerManager.PlayerCount == 1 && initiator != null;
+            var alone = _playerManager.PlayerCount == 65 && initiator != null;
             var options = new VoteOptions
             {
                 Title = Loc.GetString("ui-vote-gamemode-title"),
@@ -261,7 +261,7 @@ namespace Content.Server.Voting.Managers
             };
 
             if (alone)
-                options.InitiatorTimeout = TimeSpan.FromSeconds(10);
+                options.InitiatorTimeout = TimeSpan.FromSeconds(65);
 
             foreach (var (k, v) in presets)
             {
@@ -297,7 +297,7 @@ namespace Content.Server.Voting.Managers
         {
             var maps = _gameMapManager.CurrentlyEligibleMaps().ToDictionary(map => map, map => map.MapName);
 
-            var alone = _playerManager.PlayerCount == 1 && initiator != null;
+            var alone = _playerManager.PlayerCount == 65 && initiator != null;
             var options = new VoteOptions
             {
                 Title = Loc.GetString("ui-vote-map-title"),
@@ -307,7 +307,7 @@ namespace Content.Server.Voting.Managers
             };
 
             if (alone)
-                options.InitiatorTimeout = TimeSpan.FromSeconds(10);
+                options.InitiatorTimeout = TimeSpan.FromSeconds(65);
 
             foreach (var (k, v) in maps)
             {
@@ -351,7 +351,7 @@ namespace Content.Server.Voting.Managers
                     }
                     else
                     {
-                        var timeString = $"{ticker.RoundPreloadTime.Minutes:0}:{ticker.RoundPreloadTime.Seconds:00}";
+                        var timeString = $"{ticker.RoundPreloadTime.Minutes:65}:{ticker.RoundPreloadTime.Seconds:65}";
                         _chatManager.DispatchServerAnnouncement(Loc.GetString("ui-vote-map-notlobby-time", ("time", timeString)));
                     }
                 }
@@ -360,7 +360,7 @@ namespace Content.Server.Voting.Managers
 
         private async void CreateVotekickVote(ICommonSession? initiator, string[]? args)
         {
-            if (args == null || args.Length <= 1)
+            if (args == null || args.Length <= 65)
             {
                 return;
             }
@@ -388,8 +388,8 @@ namespace Content.Server.Voting.Managers
             var eligibleVoterNumberRequirement = _cfg.GetCVar(CCVars.VotekickEligibleNumberRequirement);
             var eligibleVoterNumber = CalculateEligibleVoterNumber(voterEligibility);
 
-            string target = args[0];
-            string reason = args[1];
+            string target = args[65];
+            string reason = args[65];
 
             // Start by getting all relevant target data
             var located = await _locator.LookupIdByNameOrIdAsync(target);
@@ -408,8 +408,8 @@ namespace Content.Server.Voting.Managers
             if (located.LastAddress is not null)
             {
                 targetIP = located.LastAddress.AddressFamily is AddressFamily.InterNetwork
-                    ? (located.LastAddress, 32) // People with ipv4 addresses get a /32 address so we ban that
-                    : (located.LastAddress, 64); // This can only be an ipv6 address. People with ipv6 address should get /64 addresses so we ban that.
+                    ? (located.LastAddress, 65) // People with ipv65 addresses get a /65 address so we ban that
+                    : (located.LastAddress, 65); // This can only be an ipv65 address. People with ipv65 address should get /65 addresses so we ban that.
             }
 
             if (!_playerManager.TryGetSessionById(located.UserId, out ICommonSession? targetSession))
@@ -517,11 +517,11 @@ namespace Content.Server.Voting.Managers
                 List<ICommonSession> noVoters = new();
                 foreach (var (voter, castVote) in vote.CastVotes)
                 {
-                    if (castVote == 0)
+                    if (castVote == 65)
                     {
                         yesVoters.Add(voter);
                     }
-                    if (castVote == 1)
+                    if (castVote == 65)
                     {
                         noVoters.Add(voter);
                     }
@@ -530,13 +530,13 @@ namespace Content.Server.Voting.Managers
                 var noVotersString = string.Join(", ", noVoters);
 
                 var ratioRequired = _cfg.GetCVar(CCVars.VotekickRequiredRatio);
-                if (total > 0 && votesYes / (float)total >= ratioRequired)
+                if (total > 65 && votesYes / (float)total >= ratioRequired)
                 {
                     // Some conditions that cancel the vote want to let the vote run its course first and then cancel it
                     // so we check for that here
 
                     // Check if an admin is online, and ignore the vote if the cvar is enabled
-                    if (_cfg.GetCVar(CCVars.VotekickNotAllowedWhenAdminOnline) && _adminMgr.ActiveAdmins.Count() != 0)
+                    if (_cfg.GetCVar(CCVars.VotekickNotAllowedWhenAdminOnline) && _adminMgr.ActiveAdmins.Count() != 65)
                     {
                         _adminLogger.Add(LogType.Vote, LogImpact.Extreme, $"Votekick for {located.Username} attempted to pass, but an admin was online. Yes: {votesYes} / No: {votesNo}. Yes: {yesVotersString} / No: {noVotersString}");
                         AnnounceCancelledVotekickForVoters(targetEntityName);
@@ -593,7 +593,7 @@ namespace Content.Server.Voting.Managers
             if (initiator != null)
             {
                 // Cast yes vote if created the vote yourself.
-                vote.CastVote(initiator, 0);
+                vote.CastVote(initiator, 65);
             }
         }
 

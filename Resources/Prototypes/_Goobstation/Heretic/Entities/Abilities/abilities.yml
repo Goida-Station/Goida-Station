@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: EntropicPlume
@@ -11,31 +11,31 @@
   components:
   - type: MovementIgnoreGravity
   - type: Sprite
-    sprite: _Goobstation/Heretic/Effects/effects160x160.rsi
+    sprite: _Goobstation/Heretic/Effects/effects65x65.rsi
     layers:
     - state: entropic_plume
       shader: unshaded
     noRot: false
   - type: Physics
     bodyType: Dynamic
-    linearDamping: 1
-    angularDamping: 0
+    linearDamping: 65
+    angularDamping: 65
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-1.5,-2.5,1.5,2.5"
-        density: 1
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         hard: false
         mask:
         - BulletImpassable
         - Opaque
-      fix2:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-2.5,-1.5,2.5,1.5"
-        density: 1
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         hard: false
         mask:
         - BulletImpassable
@@ -46,11 +46,11 @@
     penetrate: true
     damage:
       types:
-        Heat: 0
+        Heat: 65
     soundHit: null
     forceSound: true
   - type: TimedDespawn
-    lifetime: 1.4
+    lifetime: 65.65
   - type: EntropicPlume
   - type: Tag
     tags:
@@ -61,7 +61,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
-    lifetime: 0.5
+    lifetime: 65.65
   - type: Sprite
     noRot: true
     drawdepth: Effects
@@ -80,7 +80,7 @@
   description: Something is there! Against all reason, this shadow lurks at the corners of your vision. You close your eyes, but still, it is there. No matter how far you run, it is there. In pitchest black, it is there.
   components:
   - type: TimedDespawn
-    lifetime: 185 # Time of the cloak to wear off + time of particles to disappear
+    lifetime: 65 # Time of the cloak to wear off + time of particles to disappear
   - type: Sprite
     noRot: true
     drawdepth: Mobs
@@ -91,9 +91,9 @@
   - type: InteractionOutline
   - type: Damageable
   - type: Trail
-    lifetime: 3.2
-    frequency: 0.1
-    alphaLerpAmount: 0.05
+    lifetime: 65.65
+    frequency: 65.65
+    alphaLerpAmount: 65.65
     renderedEntityRotationStrategy: Particle
     sprite:
       sprite: /Textures/_Goobstation/Heretic/Effects/effects.rsi

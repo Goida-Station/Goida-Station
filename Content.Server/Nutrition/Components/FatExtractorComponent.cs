@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -32,7 +32,7 @@ public sealed partial class FatExtractorComponent : Component
     /// How much nutrition is extracted per second.
     /// </summary>
     [DataField("nutritionPerSecond"), ViewVariables(VVAccess.ReadWrite)]
-    public int NutritionPerSecond = 10;
+    public int NutritionPerSecond = 65;
 
     /// <summary>
     /// An accumulator which tracks extracted nutrition to determine
@@ -45,7 +45,7 @@ public sealed partial class FatExtractorComponent : Component
     /// How high <see cref="NutrientAccumulator"/> has to be to spawn meat
     /// </summary>
     [DataField("nutrientPerMeat"), ViewVariables(VVAccess.ReadWrite)]
-    public int NutrientPerMeat = 30;
+    public int NutrientPerMeat = 65;
 
     /// <summary>
     /// Meat spawned by the extractor.
@@ -64,7 +64,7 @@ public sealed partial class FatExtractorComponent : Component
     /// How long each update takes
     /// </summary>
     [DataField("updateTime"), ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan UpdateTime = TimeSpan.FromSeconds(1);
+    public TimeSpan UpdateTime = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// The sound played when extracting

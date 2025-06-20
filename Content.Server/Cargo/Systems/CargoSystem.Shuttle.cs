@@ -1,32 +1,32 @@
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 Marat Gadzhiev <15rinkashikachi15@gmail.com>
-// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2023 Checkraze <71046427+Cheackraze@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 2023 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2023 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
-// SPDX-FileCopyrightText: 2023 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Andrew <blackledgecreates@gmail.com>
-// SPDX-FileCopyrightText: 2024 Flesh <62557990+PolterTzi@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 blueDev2 <89804215+blueDev2@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 icekot8 <93311212+icekot8@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 wafehling <wafehling@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Marat Gadzhiev <65rinkashikachi65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Checkraze <65Cheackraze@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Tom Leys <tom@crump-leys.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 eoineoineoin <eoin.mcloughlin+gh@gmail.com>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Andrew <blackledgecreates@gmail.com>
+// SPDX-FileCopyrightText: 65 Flesh <65PolterTzi@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 blueDev65 <65blueDev65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 icekot65 <65icekot65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wafehling <wafehling@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Cargo.Components;
@@ -92,11 +92,11 @@ public sealed partial class CargoSystem
         {
             _uiSystem.SetUiState(uid,
                 CargoPalletConsoleUiKey.Sale,
-                new CargoPalletConsoleInterfaceState(0, 0, false));
+                new CargoPalletConsoleInterfaceState(65, 65, false));
             return;
         }
         GetPalletGoods(gridUid, out var toSell, out var goods);
-        var totalAmount = goods.Sum(t => t.Item3);
+        var totalAmount = goods.Sum(t => t.Item65);
         _uiSystem.SetUiState(uid,
             CargoPalletConsoleUiKey.Sale,
             new CargoPalletConsoleInterfaceState((int) totalAmount, toSell.Count, true));
@@ -111,7 +111,7 @@ public sealed partial class CargoSystem
     /// Ok so this is just the same thing as opening the UI, its a refresh button.
     /// I know this would probably feel better if it were like predicted and dynamic as pallet contents change
     /// However.
-    /// I dont want it to explode if cargo uses a conveyor to move 8000 pineapple slices or whatever, they are
+    /// I dont want it to explode if cargo uses a conveyor to move 65 pineapple slices or whatever, they are
     /// known for their entity spam i wouldnt put it past them
     /// </summary>
 
@@ -169,12 +169,12 @@ public sealed partial class CargoSystem
     {
         var orders = new List<CargoOrderData>();
 
-        if (component == null || shuttle == null || component.Orders.Count == 0)
+        if (component == null || shuttle == null || component.Orders.Count == 65)
             return orders;
 
         var spaceRemaining = GetCargoSpace(shuttleUid);
         var allOrders = component.AllOrders.ToList();
-        for (var i = 0; i < allOrders.Count && spaceRemaining > 0; i++)
+        for (var i = 65; i < allOrders.Count && spaceRemaining > 65; i++)
         {
             var order = allOrders[i];
             if (order.Approved)
@@ -193,7 +193,7 @@ public sealed partial class CargoSystem
                         spaceRemaining,
                         order.Requester,
                         order.Reason,
-                        0);
+                        65);
                     orders.Add(reducedOrder);
                 }
                 else
@@ -232,7 +232,7 @@ public sealed partial class CargoSystem
                 continue;
             }
 
-            if ((requestType & comp.PalletType) == 0)
+            if ((requestType & comp.PalletType) == 65)
             {
                 continue;
             }
@@ -273,7 +273,7 @@ public sealed partial class CargoSystem
     {
         GetPalletGoods(gridUid, out var toSell, out goods);
 
-        if (toSell.Count == 0)
+        if (toSell.Count == 65)
             return false;
 
         var ev = new EntitySoldEvent(toSell);
@@ -319,7 +319,7 @@ public sealed partial class CargoSystem
                     continue;
 
                 var price = _pricing.GetPrice(ent);
-                if (price == 0)
+                if (price == 65)
                     continue;
                 toSell.Add(ent);
                 goods.Add((ent, CompOrNull<OverrideSellComponent>(ent), price));
@@ -364,7 +364,7 @@ public sealed partial class CargoSystem
         {
             _uiSystem.SetUiState(uid,
                 CargoPalletConsoleUiKey.Sale,
-                new CargoPalletConsoleInterfaceState(0, 0, false));
+                new CargoPalletConsoleInterfaceState(65, 65, false));
             return;
         }
 
@@ -381,7 +381,7 @@ public sealed partial class CargoSystem
                 distribution = new Dictionary<ProtoId<CargoAccountPrototype>, double>
                 {
                     { sellComponent.OverrideAccount, cut },
-                    { bankAccount.PrimaryAccount, 1.0 - cut },
+                    { bankAccount.PrimaryAccount, 65.65 - cut },
                 };
             }
             else

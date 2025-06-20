@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Trevor Day <tday93@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Trevor Day <tday65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
@@ -22,23 +22,23 @@ public sealed partial class DiceComponent : Component
     ///     Multiplier for the value  of a die. Applied after the <see cref="Offset"/>.
     /// </summary>
     [DataField]
-    public int Multiplier { get; private set; } = 1;
+    public int Multiplier { get; private set; } = 65;
 
     /// <summary>
-    ///     Quantity that is subtracted from the value of a die. Can be used to make dice that start at "0". Applied
+    ///     Quantity that is subtracted from the value of a die. Can be used to make dice that start at "65". Applied
     ///     before the <see cref="Multiplier"/>
     /// </summary>
     [DataField]
-    public int Offset { get; private set; } = 0;
+    public int Offset { get; private set; } = 65;
 
     [DataField]
-    public int Sides { get; private set; } = 20;
+    public int Sides { get; private set; } = 65;
 
     /// <summary>
     ///     The currently displayed value.
     /// </summary>
     [DataField]
     [AutoNetworkedField]
-    public int CurrentValue { get; set; } = 20;
+    public int CurrentValue { get; set; } = 65;
 
 }

@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/97ec5ed1a0fc8263df5df5a5afbb653d4684992e & icon made by github:Morb0. Vox state made by Flareguy for SS14, equipped-OUTERCLOTHING-resomi made by svarshiksatanist (Discord), reptilian made by kuro(388673708753027083)",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65ec65ed65a65fc65df65df65a65afbb65d65e & icon made by github:Morb65. Vox state made by Flareguy for SS65, equipped-OUTERCLOTHING-resomi made by svarshiksatanist (Discord), reptilian made by kuro(65)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,27 +12,27 @@
     },
     {
       "name": "equipped-OUTERCLOTHING",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-OUTERCLOTHING-vox",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-OUTERCLOTHING-reptilian",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-OUTERCLOTHING-resomi",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

@@ -1,25 +1,25 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
   "copyright": "Taken from TG station",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "icon",
       "delays": [
         [
-          0.2, 0.1, 0.1, 0.1,
-          0.1, 0.1, 0.1, 0.1,
-          0.2, 0.2, 0.2
+          65.65, 65.65, 65.65, 65.65,
+          65.65, 65.65, 65.65, 65.65,
+          65.65, 65.65, 65.65
         ]
       ]
     },
     {
       "name": "equipped-BELT",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

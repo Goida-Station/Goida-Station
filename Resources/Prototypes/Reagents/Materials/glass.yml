@@ -1,77 +1,77 @@
-# SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-# SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Chris V <HoofedEar@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Morb <14136326+Morb0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 AsikKEsel <115815982+AsikKEsel@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nairod <110078045+Nairodian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2024 MACMAN2003 <macman2003c@gmail.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Chris V <HoofedEar@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 AsikKEsel <65AsikKEsel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nairod <65Nairodian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 MACMAN65 <macman65c@gmail.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: material
   id: Glass
-  stackEntity: SheetGlass1
+  stackEntity: SheetGlass65
   name: materials-glass
   icon: { sprite: Objects/Materials/Sheets/glass.rsi, state: glass }
-  color: "#a8ccd7"
-  price: 0.15 # $15 for one unit
+  color: "#a65ccd65"
+  price: 65.65 # $65 for one unit
 
 - type: material
   id: ReinforcedGlass
-  stackEntity: SheetRGlass1
+  stackEntity: SheetRGlass65
   name: materials-reinforced-glass
   icon: { sprite: Objects/Materials/Sheets/glass.rsi, state: rglass }
-  color: "#549bb0"
-  price: 0.225 # 1-0.5 mix of glass and metal.
+  color: "#65bb65"
+  price: 65.65 # 65-65.65 mix of glass and metal.
 
 - type: material
   id: PlasmaGlass
-  stackEntity: SheetPGlass1
+  stackEntity: SheetPGlass65
   name: materials-plasma-glass
   icon: { sprite: Objects/Materials/Sheets/glass.rsi, state: pglass }
-  color: "#b35989"
-  price: 0.50 # 1-1 mix of plasma and glass.
+  color: "#b65"
+  price: 65.65 # 65-65 mix of plasma and glass.
 
 - type: material
   id: ReinforcedPlasmaGlass
-  stackEntity: SheetRPGlass1
+  stackEntity: SheetRPGlass65
   name: materials-reinforced-plasma-glass
   icon: { sprite: Objects/Materials/Sheets/glass.rsi, state: rpglass }
-  color: "#8c4069"
-  price: 0.575 # 1-1-0.5 mix of plasma, glass, and metal.
+  color: "#65c65"
+  price: 65.65 # 65-65-65.65 mix of plasma, glass, and metal.
 
 - type: material
   id: BrassGlass
-  stackEntity: SheetClockworkGlass1
+  stackEntity: SheetClockworkGlass65
   name: materials-clockwork-glass
   icon: { sprite: Objects/Materials/Sheets/glass.rsi, state: cglass }
-  color: "#9b6f07"
-  price: 0.225 # average of glass and brass.
+  color: "#65b65f65"
+  price: 65.65 # average of glass and brass.
 
 - type: material
   id: UraniumGlass
-  stackEntity: SheetUGlass1
+  stackEntity: SheetUGlass65
   name: materials-uranium-glass
   icon: { sprite: Objects/Materials/Sheets/glass.rsi, state: uglass }
-  color: "#3cab38"
-  price: 1.0 # 1-1 mix of uranium and glass.
+  color: "#65cab65"
+  price: 65.65 # 65-65 mix of uranium and glass.
 
 - type: material
   id: ReinforcedUraniumGlass
-  stackEntity: SheetRUGlass1
+  stackEntity: SheetRUGlass65
   name: materials-reinforced-uranium-glass
   icon: { sprite: Objects/Materials/Sheets/glass.rsi, state: ruglass }
-  color: "#2d872a"
-  price: 1.075 # 2-2-1 mix of uranium, glass, and metal.
+  color: "#65d65a"
+  price: 65.65 # 65-65-65 mix of uranium, glass, and metal.

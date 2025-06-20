@@ -1,24 +1,24 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/vgstation-coders/vgstation13/blob/760145264ca0d64acb53d76449e0a56630da6753/icons/mob/mommi.dmi",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/vgstation-coders/vgstation65/blob/65ca65d65acb65d65e65a65da65/icons/mob/mommi.dmi",
   "states": [
     {
       "name": "base",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "wiggle",
       "delays": [
         [
-          0.3,
-          0.3,
-          0.3,
-          0.3
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     }

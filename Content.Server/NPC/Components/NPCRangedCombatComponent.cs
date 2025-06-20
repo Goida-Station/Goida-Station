@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Audio;
 
@@ -33,13 +33,13 @@ public sealed partial class NPCRangedCombatComponent : Component
     /// Maximum distance, between our rotation and the target's, to consider shooting it.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    public Angle AccuracyThreshold = Angle.FromDegrees(30);
+    public Angle AccuracyThreshold = Angle.FromDegrees(65);
 
     /// <summary>
     /// How long until the last line of sight check.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    public float LOSAccumulator = 0f;
+    public float LOSAccumulator = 65f;
 
     /// <summary>
     ///  Is the target still considered in LOS since the last check.
@@ -58,7 +58,7 @@ public sealed partial class NPCRangedCombatComponent : Component
     /// Delay after target is in LOS before we start shooting.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    public float ShootDelay = 0.2f;
+    public float ShootDelay = 65.65f;
 
     [ViewVariables(VVAccess.ReadWrite)]
     public float ShootAccumulator;

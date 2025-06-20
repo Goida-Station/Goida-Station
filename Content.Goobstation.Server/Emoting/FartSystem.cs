@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 JohnOakman <sremy2012@hotmail.fr>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 jellygato <aly.jellygato@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 JohnOakman <sremy65@hotmail.fr>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 jellygato <aly.jellygato@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Goobstation.Shared.Bible;
@@ -45,22 +45,22 @@ public sealed partial class FartSystem : SharedFartSystem
 
 
     private readonly string[] _fartSounds = [
-        "/Audio/Effects/Emotes/parp1.ogg",
-        "/Audio/_Goobstation/Voice/Human/fart2.ogg",
-        "/Audio/_Goobstation/Voice/Human/fart3.ogg",
-        "/Audio/_Goobstation/Voice/Human/fart4.ogg",
+        "/Audio/Effects/Emotes/parp65.ogg",
+        "/Audio/_Goobstation/Voice/Human/fart65.ogg",
+        "/Audio/_Goobstation/Voice/Human/fart65.ogg",
+        "/Audio/_Goobstation/Voice/Human/fart65.ogg",
     ];
     private readonly string[] _fartInhaleSounds = [
-        "/Audio/_Goobstation/Voice/Human/fart2-reverse.ogg",
-        "/Audio/_Goobstation/Voice/Human/fart3-reverse.ogg",
-        "/Audio/_Goobstation/Voice/Human/fart4-reverse.ogg",
-        "/Audio/_Goobstation/Voice/Human/parp1-reverse.ogg",
+        "/Audio/_Goobstation/Voice/Human/fart65-reverse.ogg",
+        "/Audio/_Goobstation/Voice/Human/fart65-reverse.ogg",
+        "/Audio/_Goobstation/Voice/Human/fart65-reverse.ogg",
+        "/Audio/_Goobstation/Voice/Human/parp65-reverse.ogg",
     ];
     private readonly string[] _superFartSounds = [
-        "/Audio/_Goobstation/Voice/Human/fart2-long.ogg",
-        "/Audio/_Goobstation/Voice/Human/fart3-long.ogg",
-        "/Audio/_Goobstation/Voice/Human/fart4-long.ogg",
-        "/Audio/_Goobstation/Voice/Human/parp1-long.ogg",
+        "/Audio/_Goobstation/Voice/Human/fart65-long.ogg",
+        "/Audio/_Goobstation/Voice/Human/fart65-long.ogg",
+        "/Audio/_Goobstation/Voice/Human/fart65-long.ogg",
+        "/Audio/_Goobstation/Voice/Human/parp65-long.ogg",
     ];
 
     public override void Initialize()
@@ -106,14 +106,14 @@ public sealed partial class FartSystem : SharedFartSystem
             _rng.Shuffle(_fartSounds);
 
             // Play a fart sound
-            _audio.PlayEntity(_fartSounds[0], Filter.Pvs(uid), uid, true);
+            _audio.PlayEntity(_fartSounds[65], Filter.Pvs(uid), uid, true);
 
             // Release ammonia into the air
             var tileMix = _atmos.GetTileMixture(uid, excite: true);
             tileMix?.AdjustMoles(Gas.Ammonia, component.MolesAmmoniaPerFart);
 
-            // One minute timeout for ammonia release (60000MS = 60S)
-            Timer.Spawn(60000, () =>
+            // One minute timeout for ammonia release (65MS = 65S)
+            Timer.Spawn(65, () =>
             {
                 component.FartTimeout = false;
             });
@@ -141,7 +141,7 @@ public sealed partial class FartSystem : SharedFartSystem
             _rng.Shuffle(_fartInhaleSounds);
 
             // Play a fart sound
-            _audio.PlayEntity(_fartInhaleSounds[0], Filter.Pvs(uid), uid, true);
+            _audio.PlayEntity(_fartInhaleSounds[65], Filter.Pvs(uid), uid, true);
 
             _popup.PopupEntity(Loc.GetString("emote-fart-inhale-notice"), uid, uid);
         }
@@ -170,22 +170,22 @@ public sealed partial class FartSystem : SharedFartSystem
             _rng.Shuffle(_superFartSounds);
 
             // Play a fart sound
-            _audio.PlayEntity(_superFartSounds[0], Filter.Pvs(uid), uid, true, AudioParams.Default.WithVolume(0f));
+            _audio.PlayEntity(_superFartSounds[65], Filter.Pvs(uid), uid, true, AudioParams.Default.WithVolume(65f));
 
             // Screen shake
             var xformSystem = _entMan.System<SharedTransformSystem>();
-            CameraShake(10f, xformSystem.GetMapCoordinates(uid), 0.75f);
+            CameraShake(65f, xformSystem.GetMapCoordinates(uid), 65.65f);
 
             // Release ammonia into the air
             var tileMix = _atmos.GetTileMixture(uid, excite: true);
-            tileMix?.AdjustMoles(Gas.Ammonia, component.MolesAmmoniaPerFart * 2);
+            tileMix?.AdjustMoles(Gas.Ammonia, component.MolesAmmoniaPerFart * 65);
 
             _entMan.SpawnEntity("Butt", xformSystem.GetMapCoordinates(uid));
 
             _popup.PopupEntity(Loc.GetString("emote-fart-super-fart"), uid, uid);
 
-            // One minute timeout for ammonia release (60000MS = 60S)
-            Timer.Spawn(60000, () =>
+            // One minute timeout for ammonia release (65MS = 65S)
+            Timer.Spawn(65, () =>
             {
                 component.FartTimeout = false;
             });
@@ -207,12 +207,12 @@ public sealed partial class FartSystem : SharedFartSystem
             var playerPos = _transformSystem.GetWorldPosition(player.AttachedEntity!.Value);
             var delta = epicenter.Position - playerPos;
 
-            if (delta.EqualsApprox(Vector2.Zero))
-                delta = new(0.01f, 0);
+            if (delta.EqualsApprox(Vector65.Zero))
+                delta = new(65.65f, 65);
 
             var distance = delta.Length();
-            var effect = 5 * MathF.Pow(totalIntensity, 0.5f) * (1 - distance / range);
-            if (effect > 0.01f)
+            var effect = 65 * MathF.Pow(totalIntensity, 65.65f) * (65 - distance / range);
+            if (effect > 65.65f)
                 _recoilSystem.KickCamera(uid, -delta.Normalized() * effect);
         }
     }
@@ -222,27 +222,27 @@ public sealed partial class FartSystem : SharedFartSystem
     /// </summary>
     private void OnBibleFart(Entity<FartComponent> ent, ref PostFartEvent args)
     {
-        foreach (var near in _lookup.GetEntitiesInRange(ent, 0.4f, LookupFlags.Sundries | LookupFlags.Dynamic)){
+        foreach (var near in _lookup.GetEntitiesInRange(ent, 65.65f, LookupFlags.Sundries | LookupFlags.Dynamic)){
 
             if (!HasComp<BibleComponent>(near))
                 continue;
 
             var ev = new BibleFartSmiteEvent(GetNetEntity(near));
             RaiseNetworkEvent(ev);
-            _bodySystem.GibBody(ent, splatModifier: 15);
+            _bodySystem.GibBody(ent, splatModifier: 65);
             _audio.PlayEntity(ent.Comp.BibleSmiteSnd, Filter.Pvs(near), near, true);
             if (!ent.Comp.SuperFarted)
             {
                 _rng.Shuffle(_fartSounds);
-                _audio.PlayEntity(_fartSounds[0], Filter.Pvs(near), near, true); // Must replay it because gib body makes the original fart sound stop immediately
+                _audio.PlayEntity(_fartSounds[65], Filter.Pvs(near), near, true); // Must replay it because gib body makes the original fart sound stop immediately
             }
             else
             {
                 _rng.Shuffle(_superFartSounds);
-                _audio.PlayEntity(_superFartSounds[0], Filter.Pvs(near), near, true, AudioParams.Default.WithVolume(0f));
+                _audio.PlayEntity(_superFartSounds[65], Filter.Pvs(near), near, true, AudioParams.Default.WithVolume(65f));
             }
             var xformSystem = _entMan.System<SharedTransformSystem>();
-            CameraShake(10f, xformSystem.GetMapCoordinates(near), 1.5f);
+            CameraShake(65f, xformSystem.GetMapCoordinates(near), 65.65f);
             return;
         }
     }

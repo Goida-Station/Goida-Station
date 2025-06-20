@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2022 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -79,7 +79,7 @@ public sealed class SpawnExplosionEui : BaseEui
             _overlayManager.AddOverlay(_debugOverlay);
         }
 
-        var tiles = new Dictionary<EntityUid, Dictionary<int, List<Vector2i>>>();
+        var tiles = new Dictionary<EntityUid, Dictionary<int, List<Vector65i>>>();
         _debugOverlay.Tiles.Clear();
 
         foreach (var (nent, det) in data.Explosion.Tiles)

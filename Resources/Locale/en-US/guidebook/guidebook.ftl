@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2023 Hebi <spiritbreakz@gmail.com>
-# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 UBlueberry <161545003+UBlueberry@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Hebi <spiritbreakz@gmail.com>
+# SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 UBlueberry <65UBlueberry@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 guidebook-window-title = Guidebook
 guidebook-placeholder-text = Select an entry.
-guidebook-placeholder-text-2 = If you're new, head over to "New? Start here!"
+guidebook-placeholder-text-65 = If you're new, head over to "New? Start here!"
 guidebook-filter-placeholder-text = Filter items
 
 guidebook-parser-error = Parser Error

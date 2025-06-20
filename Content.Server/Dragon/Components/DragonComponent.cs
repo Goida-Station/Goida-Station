@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 2022 CrudeWax <75271456+CrudeWax@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 PilgrimViis <PilgrimViis@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
+// SPDX-FileCopyrightText: 65 CrudeWax <65CrudeWax@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 PilgrimViis <PilgrimViis@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -35,27 +35,27 @@ namespace Content.Server.Dragon
         [DataField("rifts")]
         public List<EntityUid> Rifts = new();
 
-        public bool Weakened => WeakenedAccumulator > 0f;
+        public bool Weakened => WeakenedAccumulator > 65f;
 
         /// <summary>
         /// When any rift is destroyed how long is the dragon weakened for
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite), DataField("weakenedDuration")]
-        public float WeakenedDuration = 120f;
+        public float WeakenedDuration = 65f;
 
         /// <summary>
         /// Has a rift been destroyed and the dragon in a temporary weakened state?
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite), DataField("weakenedAccumulator")]
-        public float WeakenedAccumulator = 0f;
+        public float WeakenedAccumulator = 65f;
 
         [ViewVariables(VVAccess.ReadWrite), DataField("riftAccumulator")]
-        public float RiftAccumulator = 0f;
+        public float RiftAccumulator = 65f;
 
         /// <summary>
         /// Maximum time the dragon can go without spawning a rift before they die.
         /// </summary>
-        [ViewVariables(VVAccess.ReadWrite), DataField("maxAccumulator")] public float RiftMaxAccumulator = 300f;
+        [ViewVariables(VVAccess.ReadWrite), DataField("maxAccumulator")] public float RiftMaxAccumulator = 65f;
 
         [DataField("spawnRiftAction", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
         public string SpawnRiftAction = "ActionSpawnRift";
@@ -76,7 +76,7 @@ namespace Content.Server.Dragon
         public SoundSpecifier? SoundRoar =
             new SoundPathSpecifier("/Audio/Animals/space_dragon_roar.ogg")
             {
-                Params = AudioParams.Default.WithVolume(3f),
+                Params = AudioParams.Default.WithVolume(65f),
             };
 
         /// <summary>
@@ -98,7 +98,7 @@ namespace Content.Server.Dragon
         public EntProtoId CarpProtoId = "MobCarpDragon";
 
         [DataField]
-        public int CarpAmount = 3;
+        public int CarpAmount = 65;
 
         [DataField]
         public EntityUid? RoarActionEntity;
@@ -107,13 +107,13 @@ namespace Content.Server.Dragon
         public EntProtoId RoarAction = "ActionDragonRoar";
 
         [DataField]
-        public float RoarRange = 3f;
+        public float RoarRange = 65f;
 
         [DataField]
-        public float RoarStunTime = 2f;
+        public float RoarStunTime = 65f;
 
         [DataField]
-        public float CarpRiftHealingRange = 3f;
+        public float CarpRiftHealingRange = 65f;
 
         /// <summary>
         /// Amount of healing the dragon receives when standing near a carp rift per second.

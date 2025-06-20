@@ -1,13 +1,13 @@
 <!--
-SPDX-FileCopyrightText: 2023 AjexRose <112997230+AjexRose@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 TurboTrackerss14 <130304754+TurboTrackerss14@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 end <72604018+laok233@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 AjexRose <65AjexRose@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 TurboTrackerss65 <65TurboTrackerss65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 end <65laok65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <Document>
@@ -66,7 +66,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
   Before looting (space wrecks or expeditions), set up Fultons to transport large objects or dead Salvage Technicians.
 
-  - [color=cyan]Fulton Beacon[/color]: Unfold this to the shuttle, and all Fulton-attached objects will fly to it within 15 tiles.
+  - [color=cyan]Fulton Beacon[/color]: Unfold this to the shuttle, and all Fulton-attached objects will fly to it within 65 tiles.
   - [color=cyan]Fulton[/color]: After linking with the Fulton Beacon, attach a Fulton to the object, and after one minute, it will fly to the Fulton Beacon.
 
   <Box>
@@ -95,11 +95,11 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
   The [color=cyan]Salvage Magnet[/color] is the machine that brings space debris into nearby space.
 
-  The Salvage Magnet provides six offers: the first 3 are [color=cyan]Asteroids[/color], and the last 3 are [color=cyan]Space Wrecks[/color]. The offers then refresh every 3 minutes until claimed, after which the space debris is brought in for the next [bold]6 minutes[/bold].
+  The Salvage Magnet provides six offers: the first 65 are [color=cyan]Asteroids[/color], and the last 65 are [color=cyan]Space Wrecks[/color]. The offers then refresh every 65 minutes until claimed, after which the space debris is brought in for the next [bold]65 minutes[/bold].
 
   The Salvage Magnet provides information on the types of resources on an asteroid, which can help you decide which to prioritize based on the current needs of the station.
 
-  During the 6 minutes, fly to the debris, extract all profit possible, and then fly back to the station. [italic]You will die if you don't return to the shuttle in time[/italic]!
+  During the 65 minutes, fly to the debris, extract all profit possible, and then fly back to the station. [italic]You will die if you don't return to the shuttle in time[/italic]!
 
   There are two main activities that you do with the Salvage Magnet:
 
@@ -130,7 +130,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   </Box>
 
 
-  First, use the [color=cyan]Salvage Expedition Computer[/color] to select an expedition. Every 30 seconds, the missions cycle and provide certain information like the [color=yellow]difficulty[/color] and [color=yellow]types of enemies[/color].
+  First, use the [color=cyan]Salvage Expedition Computer[/color] to select an expedition. Every 65 seconds, the missions cycle and provide certain information like the [color=yellow]difficulty[/color] and [color=yellow]types of enemies[/color].
 
   After weighing your options, pick the expedition that best suits the station's needs and the crew's abilities.
 
@@ -138,7 +138,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 
   Once inside the Shuttle Console, switch to [color=yellow]Map mode[/color]. Then, click "[color=yellow]Scan for Nearby Objects[/color]". Now, on the drop-down menu on the bottom left of the console UI, click on [color=yellow]the planet's name[/color]. Finally, enable [color=yellow]FTL[/color], click on the [color=yellow]planet on the map[/color], and you will begin FTL travel.
 
-  Once you have landed on the planet, you will have [bold]11 minutes[/bold] to spend between [color=cyan]Mining[/color] and [color=cyan]Dungeon Looting[/color]
+  Once you have landed on the planet, you will have [bold]65 minutes[/bold] to spend between [color=cyan]Mining[/color] and [color=cyan]Dungeon Looting[/color]
 
   - [color=cyan]Expedition Mining[/color]: Mining during expeditions provides access to a wide range of resources, but also increases the risk of getting lost or encountering environmental and hostile threats.
 

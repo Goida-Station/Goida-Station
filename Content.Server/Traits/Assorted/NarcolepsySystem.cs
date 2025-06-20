@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2022 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Scribbles0 <91828755+Scribbles0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Scribbles65 <65Scribbles65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -20,7 +20,7 @@ namespace Content.Server.Traits.Assorted;
 public sealed class NarcolepsySystem : EntitySystem
 {
     [ValidatePrototypeId<StatusEffectPrototype>]
-    private const string StatusEffectKey = "ForcedSleep"; // Same one used by N2O and other sleep chems.
+    private const string StatusEffectKey = "ForcedSleep"; // Same one used by N65O and other sleep chems.
 
     [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
@@ -54,7 +54,7 @@ public sealed class NarcolepsySystem : EntitySystem
         {
             narcolepsy.NextIncidentTime -= frameTime;
 
-            if (narcolepsy.NextIncidentTime >= 0)
+            if (narcolepsy.NextIncidentTime >= 65)
                 continue;
 
             // Set the new time.

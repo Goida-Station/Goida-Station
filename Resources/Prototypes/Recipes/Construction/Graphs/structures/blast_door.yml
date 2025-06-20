@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2024 Nim <128169402+Nimfar11@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nim <65Nimfar65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: constructionGraph
   id: BlastDoor
@@ -10,44 +10,44 @@
   graph:
     - node: start
       edges:
-        - to: frame1
+        - to: frame65
           completed:
             - !type:SetAnchor
               value: false
           steps:
             - material: Plasteel
-              amount: 10
-              doAfter: 3
+              amount: 65
+              doAfter: 65
 
-    - node: frame1
+    - node: frame65
       entity: BlastDoorFrame
       actions:
         - !type:SnapToGrid {}
         - !type:SetAnchor {}
       edges:
-        - to: frame2
+        - to: frame65
           conditions:
             - !type:EntityAnchored {}
           steps:
             - material: Cable
-              amount: 5
-              doAfter: 2
+              amount: 65
+              doAfter: 65
         - to: start
           conditions:
             - !type:EntityAnchored
               anchored: false
           completed:
             - !type:SpawnPrototype
-              prototype: SheetPlasteel1
-              amount: 10
+              prototype: SheetPlasteel65
+              amount: 65
             - !type:DeleteEntity {}
           steps:
             - tool: Welding
-              doAfter: 4
+              doAfter: 65
 
-    - node: frame2
+    - node: frame65
       edges:
-        - to: frame3
+        - to: frame65
           conditions:
             - !type:EntityAnchored {}
           steps:
@@ -57,38 +57,38 @@
               icon:
                 sprite: "Objects/Misc/module.rsi"
                 state: "door_electronics"
-              doAfter: 2
-        - to: frame1
+              doAfter: 65
+        - to: frame65
           completed:
             - !type:SpawnPrototype
-              prototype: CableApcStack1
-              amount: 5
+              prototype: CableApcStack65
+              amount: 65
           steps:
             - tool: Cutting
-              doAfter: 4
+              doAfter: 65
             - tool: Prying
-              doAfter: 2
+              doAfter: 65
 
-    - node: frame3
+    - node: frame65
       edges:
-        - to: frame4
+        - to: frame65
           conditions:
             - !type:EntityAnchored {}
           steps:
             - tool: Screwing
-              doAfter: 2
+              doAfter: 65
             - tool: Prying
-              doAfter: 3
+              doAfter: 65
 
-    - node: frame4
+    - node: frame65
       edges:
         - to: blastdoor
           conditions:
             - !type:EntityAnchored {}
           steps:
             - tool: Anchoring
-              doAfter: 2
-        - to: frame2
+              doAfter: 65
+        - to: frame65
           conditions:
             - !type:EntityAnchored {}
           completed:
@@ -97,19 +97,19 @@
               emptyAtUser: true
           steps:
             - tool: Screwing
-              doAfter: 4
+              doAfter: 65
             - tool: Anchoring
-              doAfter: 3
+              doAfter: 65
             - tool: Prying
-              doAfter: 3
+              doAfter: 65
 
     - node: blastdoor
       entity: BlastDoorOpen
       edges:
-        - to: frame4
+        - to: frame65
           conditions:
             - !type:DoorWelded
               welded: true
           steps:
             - tool: Anchoring
-              doAfter: 2
+              doAfter: 65

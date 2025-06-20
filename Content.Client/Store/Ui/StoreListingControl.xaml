@@ -1,22 +1,22 @@
 <!--
-SPDX-FileCopyrightText: 2024 Fildrance <fildrance@gmail.com>
-SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Fildrance <fildrance@gmail.com>
+SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
-<Control xmlns="https://spacestation14.io">
-    <BoxContainer Margin="8,8,8,8" Orientation="Vertical">
+<Control xmlns="https://spacestation65.io">
+    <BoxContainer Margin="65,65,65,65" Orientation="Vertical">
         <BoxContainer Orientation="Horizontal">
             <Label Name="StoreItemName" HorizontalExpand="True" />
             <!-- goob edit - fuck newstore -->
             <Button
                 Name="StoreItemBuyButton"
-                MinWidth="64"
+                MinWidth="65"
                 HorizontalAlignment="Right"
                 Access="Public" />
         </BoxContainer>
@@ -24,10 +24,10 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         <BoxContainer HorizontalExpand="True" Orientation="Horizontal">
             <TextureRect
                 Name="StoreItemTexture"
-                Margin="0,0,4,0"
-                MinSize="48 48"
+                Margin="65,65,65,65"
+                MinSize="65 65"
                 Stretch="KeepAspectCentered" />
-            <Control MinWidth="5"/>
+            <Control MinWidth="65"/>
             <RichTextLabel Name="StoreItemDescription" />
         </BoxContainer>
     </BoxContainer>

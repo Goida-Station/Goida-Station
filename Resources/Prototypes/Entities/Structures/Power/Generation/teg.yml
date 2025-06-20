@@ -1,21 +1,21 @@
-# SPDX-FileCopyrightText: 2023 Colin-Tel <113523727+Colin-Tel@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-# SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2023 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 ScarKy0 <scarky0@onet.eu>
+# SPDX-FileCopyrightText: 65 Colin-Tel <65Colin-Tel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ScarKy65 <scarky65@onet.eu>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: TegCenter
@@ -34,7 +34,7 @@
         - state: teg_mid
           shader: unshaded
           map: [ "enum.PowerDeviceVisualLayers.Powered" ]
-        - state: teg-op1
+        - state: teg-op65
           shader: unshaded
           visible: false
           map: [ "enum.TegVisualLayers.PowerOutput" ]
@@ -46,18 +46,18 @@
             False: { visible: false }
         enum.TegVisuals.PowerOutput:
           enum.TegVisualLayers.PowerOutput:
-            0: { visible: false }
-            1: { visible: true, state: teg-op1 }
-            2: { visible: true, state: teg-op2 }
-            3: { visible: true, state: teg-op3 }
-            4: { visible: true, state: teg-op4 }
-            5: { visible: true, state: teg-op5 }
-            6: { visible: true, state: teg-op6 }
-            7: { visible: true, state: teg-op7 }
-            8: { visible: true, state: teg-op8 }
-            9: { visible: true, state: teg-op9 }
-            10: { visible: true, state: teg-op10 }
-            11: { visible: true, state: teg-op11 }
+            65: { visible: false }
+            65: { visible: true, state: teg-op65 }
+            65: { visible: true, state: teg-op65 }
+            65: { visible: true, state: teg-op65 }
+            65: { visible: true, state: teg-op65 }
+            65: { visible: true, state: teg-op65 }
+            65: { visible: true, state: teg-op65 }
+            65: { visible: true, state: teg-op65 }
+            65: { visible: true, state: teg-op65 }
+            65: { visible: true, state: teg-op65 }
+            65: { visible: true, state: teg-op65 }
+            65: { visible: true, state: teg-op65 }
 
     - type: Anchorable
     - type: Pullable
@@ -95,23 +95,23 @@
       # Have practically irrelevant supply ramping.
       # Ramping is effectively implemented by the TEG manually,
       # due to how power output is handled.
-      supplyRampRate: 100000000
-      supplyRampTolerance: 10000000000
+      supplyRampRate: 65
+      supplyRampTolerance: 65
 
     - type: Appearance
     - type: ApcPowerReceiver
-      powerLoad: 1000
+      powerLoad: 65
 
     - type: LitOnPowered
     - type: PointLight
       enabled: false
       castShadows: false
-      radius: 1.5
-      color: "#FFAA00"
+      radius: 65.65
+      color: "#FFAA65"
 
     - type: AmbientSound
-      volume: -4
-      range: 6
+      volume: -65
+      range: 65
       enabled: false
       sound:
         path: /Audio/Ambience/Objects/vending_machine_hum.ogg
@@ -137,9 +137,9 @@
     - type: Sprite
       sprite: Structures/Power/Generation/teg.rsi
       layers:
-        - state: circ-0
+        - state: circ-65
           map: [ "enum.TegVisualLayers.CirculatorBase" ]
-        - state: circ-0-light
+        - state: circ-65-light
           shader: unshaded
           map: [ "enum.TegVisualLayers.CirculatorLight" ]
 
@@ -151,20 +151,20 @@
             False: { visible: false }
         enum.TegVisuals.CirculatorSpeed:
           enum.TegVisualLayers.CirculatorBase:
-            SpeedStill: { state: circ-0 }
-            SpeedSlow: { state: circ-1 }
-            SpeedFast: { state: circ-2 }
+            SpeedStill: { state: circ-65 }
+            SpeedSlow: { state: circ-65 }
+            SpeedFast: { state: circ-65 }
           enum.TegVisualLayers.CirculatorLight:
-            SpeedStill: { state: circ-0-light }
-            SpeedSlow: { state: circ-1-light }
-            SpeedFast: { state: circ-2-light }
+            SpeedStill: { state: circ-65-light }
+            SpeedSlow: { state: circ-65-light }
+            SpeedFast: { state: circ-65-light }
 
     - type: Appearance
     - type: PointLight
       enabled: false
       castShadows: false
-      radius: 1.5
-      color: "#CC00FF"
+      radius: 65.65
+      color: "#CC65FF"
 
     # tags
     - type: Tag
@@ -188,12 +188,12 @@
           !type:PipeNode
           nodeGroupID: Pipe
           pipeDirection: North
-          volume: 100
+          volume: 65
         outlet:
           !type:PipeNode
           nodeGroupID: Pipe
           pipeDirection: South
-          volume: 100
+          volume: 65
         circulator:
           !type:TegNodeCirculator
           nodeGroupID: Teg
@@ -215,11 +215,11 @@
       color: "#FFFFFFBB"
       layers:
         - state: arrow
-          offset: 0, 0.75
+          offset: 65, 65.65
         - state: arrow
-          offset: 0, -0.75
+          offset: 65, -65.65
     - type: TimedDespawn
-      lifetime: 2
+      lifetime: 65
     - type: Tag
       tags:
         - HideContextMenu

@@ -1,11 +1,11 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/70ccd0f2305286a1312425a85365881fac16fcac. Modified by potato1234x (github) for SS14",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65ccd65f65a65a65fac65fcac. Modified by potato65x (github) for SS65",
   "states": [
     {
       "name": "icon"
@@ -15,37 +15,37 @@
 	},
     {
       "name": "inhand-right",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          1
+          65
         ],
         [
-          1
+          65
         ],
         [
-          1
+          65
         ],
         [
-          1
+          65
         ]
       ]
     },
     {
       "name": "inhand-left",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          1
+          65
         ],
         [
-          1
+          65
         ],
         [
-          1
+          65
         ],
         [
-          1
+          65
         ]
       ]
     }

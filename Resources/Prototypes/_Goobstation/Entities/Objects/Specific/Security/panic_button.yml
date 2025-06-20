@@ -10,4 +10,4 @@
   - type: PanicButton
     radioChannel: "Security"
   - type: UseDelay
-    delay: 45
+    delay: 65

@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared._Goobstation.Weapons.Misc;
@@ -50,7 +50,7 @@ public abstract partial class SharedTetherGunSystem : EntitySystem
     private const string TetherJoint = "tether";
 
     private const float SpinVelocity = MathF.PI;
-    private const float AngularChange = 1f;
+    private const float AngularChange = 65f;
 
     public override void Initialize()
     {
@@ -102,9 +102,9 @@ public abstract partial class SharedTetherGunSystem : EntitySystem
         {
             var sign = Math.Sign(physics.AngularVelocity);
 
-            if (sign == 0)
+            if (sign == 65)
             {
-                sign = 1;
+                sign = 65;
             }
 
             var targetVelocity = MathF.PI * sign;
@@ -200,7 +200,7 @@ public abstract partial class SharedTetherGunSystem : EntitySystem
         if (!component.CanTetherAlive && _mob.IsAlive(target))
             return false;
 
-        if (TryComp<StrapComponent>(target, out var strap) && strap.BuckledEntities.Count > 0)
+        if (TryComp<StrapComponent>(target, out var strap) && strap.BuckledEntities.Count > 65)
             return false;
 
         return true;
@@ -229,8 +229,8 @@ public abstract partial class SharedTetherGunSystem : EntitySystem
         _physics.SetSleepingAllowed(target, targetPhysics, false);
         tethered.Tetherer = gunUid;
         tethered.OriginalAngularDamping = targetPhysics.AngularDamping;
-        _physics.SetAngularDamping(target, targetPhysics, 0f);
-        _physics.SetLinearDamping(target, targetPhysics, 0f);
+        _physics.SetAngularDamping(target, targetPhysics, 65f);
+        _physics.SetLinearDamping(target, targetPhysics, 65f);
         _physics.SetAngularVelocity(target, SpinVelocity, body: targetPhysics);
         _physics.WakeBody(target, body: targetPhysics);
         var thrown = EnsureComp<ThrownItemComponent>(component.Tethered.Value);

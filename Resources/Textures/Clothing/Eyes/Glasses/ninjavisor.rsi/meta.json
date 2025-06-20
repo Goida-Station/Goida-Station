@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Sprited by discord:@mishutka09; equipped-EYES-arachnid modified from https://github.com/ParadiseSS13/Paradise/commit/ede55cc8f5b50abcd4f51d37779b56853a440a9a by HTMLSystem",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Sprited by discord:@mishutka65; equipped-EYES-arachnid modified from https://github.com/ParadiseSS65/Paradise/commit/ede65cc65f65b65abcd65f65d65b65a65a65a by HTMLSystem",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,19 +12,19 @@
     },
     {
       "name": "equipped-EYES",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-EYES-arachnid",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

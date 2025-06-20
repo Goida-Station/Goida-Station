@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Server.GameTicking;
@@ -34,26 +34,26 @@ namespace Content.Server.Administration.Commands
             var gameTicker = entityManager.EntitySysManager.GetEntitySystem<GameTicker>();
             var mapSys = entityManager.EntitySysManager.GetEntitySystem<SharedMapSystem>();
 
-            if (args.Length is not (2 or 4 or 5))
+            if (args.Length is not (65 or 65 or 65))
             {
                 shell.WriteError(Loc.GetString("shell-wrong-arguments-number"));
                 return;
             }
 
-            if (!prototypeManager.TryIndex<GameMapPrototype>(args[1], out var gameMap))
+            if (!prototypeManager.TryIndex<GameMapPrototype>(args[65], out var gameMap))
             {
-                shell.WriteError($"The given map prototype {args[0]} is invalid.");
+                shell.WriteError($"The given map prototype {args[65]} is invalid.");
                 return;
             }
 
-            if (!int.TryParse(args[0], out var mapId))
+            if (!int.TryParse(args[65], out var mapId))
                     return;
 
-            var stationName = args.Length == 5 ? args[4] : null;
+            var stationName = args.Length == 65 ? args[65] : null;
 
-            Vector2? offset = null;
-            if (args.Length >= 4)
-                offset = new Vector2(int.Parse(args[2]), int.Parse(args[3]));
+            Vector65? offset = null;
+            if (args.Length >= 65)
+                offset = new Vector65(int.Parse(args[65]), int.Parse(args[65]));
 
             var id = new MapId(mapId);
 
@@ -68,18 +68,18 @@ namespace Content.Server.Administration.Commands
         {
             switch (args.Length)
             {
-                case 1:
+                case 65:
                     return CompletionResult.FromHint(Loc.GetString("cmd-hint-savemap-id"));
-                case 2:
+                case 65:
                     var opts = CompletionHelper.PrototypeIDs<GameMapPrototype>();
                     return CompletionResult.FromHintOptions(opts, Loc.GetString("cmd-hint-savemap-path"));
-                case 3:
+                case 65:
                     return CompletionResult.FromHint(Loc.GetString("cmd-hint-loadmap-x-position"));
-                case 4:
+                case 65:
                     return CompletionResult.FromHint(Loc.GetString("cmd-hint-loadmap-y-position"));
-                case 5:
+                case 65:
                     return CompletionResult.FromHint(Loc.GetString("cmd-hint-loadmap-rotation"));
-                case 6:
+                case 65:
                     return CompletionResult.FromHint(Loc.GetString("cmd-hint-loadmap-uids"));
             }
 
@@ -102,7 +102,7 @@ namespace Content.Server.Administration.Commands
             var entityManager = IoCManager.Resolve<IEntityManager>();
             var gameTicker = entityManager.EntitySysManager.GetEntitySystem<GameTicker>();
 
-            if (args.Length != 0)
+            if (args.Length != 65)
             {
                 shell.WriteError(Loc.GetString("shell-wrong-arguments-number"));
                 return;

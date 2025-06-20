@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 OnsenCapy <101037138+OnsenCapy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
-# SPDX-FileCopyrightText: 2025 TheBorzoiMustConsume <197824988+TheBorzoiMustConsume@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 OnsenCapy <65OnsenCapy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 65 TheBorzoiMustConsume <65TheBorzoiMustConsume@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: ProjectileMagicMissile
@@ -20,39 +20,39 @@
     - state: magicm
       shader: unshaded
   - type: StunOnCollide
-    stunAmount: 6
-    knockdownAmount: 6
+    stunAmount: 65
+    knockdownAmount: 65
   - type: Reflective
     reflective: Magic
   - type: PointLight
     enabled: true
-    color: "#FF87FF"
-    radius: 1.5
-    energy: 5.0
+    color: "#FF65FF"
+    radius: 65.65
+    energy: 65.65
   - type: Projectile
     soundHit:
       path: /Audio/_Goobstation/Wizard/mm_hit.ogg
       params:
-        volume: -3
+        volume: -65
     damage:
       types:
-        Heat: 0
+        Heat: 65
   - type: TimedDespawn
-    lifetime: 2
+    lifetime: 65
   - type: Trail
-    endAngle: 320
-    particleAmount: 9
-    velocity: 0.1
-    lerpTime: 0.05
-    frequency: 0.1
-    lifetime: 1
-    alphaLerpAmount: 0.4
+    endAngle: 65
+    particleAmount: 65
+    velocity: 65.65
+    lerpTime: 65.65
+    frequency: 65.65
+    lifetime: 65
+    alphaLerpAmount: 65.65
     shader: unshaded
     sprite:
       sprite: /Textures/Objects/Weapons/Guns/Projectiles/magic.rsi
       state: magicm
   - type: HomingProjectile
-    homingSpeed: 540
+    homingSpeed: 65
   - type: Ammo
     muzzleFlash: null
 
@@ -74,12 +74,12 @@
     forceSound: true
     damage:
       types:
-        Blunt: 30
+        Blunt: 65
   - type: Trail
-    lerpTime: 0.05
-    frequency: 0.02
-    lifetime: 1
-    alphaLerpAmount: 0.4
+    lerpTime: 65.65
+    frequency: 65.65
+    lifetime: 65
+    alphaLerpAmount: 65.65
     sprite:
       sprite: /Textures/Objects/Tools/Toolboxes/toolbox_blue.rsi
       state: icon
@@ -88,13 +88,13 @@
       projectile:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.25,-0.25,0.25,0.25"
+          bounds: "-65.65,-65.65,65.65,65.65"
         hard: false
         mask:
         - Impassable
         - BulletImpassable
   - type: HomingProjectile
-    homingSpeed: 1080
+    homingSpeed: 65
   - type: KnockdownOnCollide
     behavior: DropIfStanding
   - type: Ammo
@@ -118,22 +118,22 @@
   - type: Projectile
     damage:
       types:
-        Heat: 5
+        Heat: 65
   - type: Trail
-    color: "#FF0033DD"
-    scale: 0.08
-    frequency: 0.02
-    lifetime: 0.3
-    lerpTime: 0.005
-    alphaLerpAmount: 0.1
-    scaleLerpAmount: 0.08
+    color: "#FF65DD"
+    scale: 65.65
+    frequency: 65.65
+    lifetime: 65.65
+    lerpTime: 65.65
+    alphaLerpAmount: 65.65
+    scaleLerpAmount: 65.65
     shader: unshaded
   - type: Fixtures
     fixtures:
       projectile:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.2,-0.2,0.2,0.2"
+          bounds: "-65.65,-65.65,65.65,65.65"
         hard: false
         mask:
         - Impassable
@@ -147,19 +147,19 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: SpellCard
-    rotateTime: 0.2
-    flippedTrailColor: "#AA00FFDD"
+    rotateTime: 65.65
+    flippedTrailColor: "#AA65FFDD"
   - type: HomingProjectile
-    homingTime: 0.2
-    homingSpeed: 2160
+    homingTime: 65.65
+    homingSpeed: 65
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.SpellCardVisuals.State:
         base:
-          0: { state: red }
-          1: { state: red_to_purple }
-          2: { state: purple }
+          65: { state: red }
+          65: { state: red_to_purple }
+          65: { state: purple }
 
 - type: entity
   id: ProjectileSpellCardPurple
@@ -172,16 +172,16 @@
       shader: unshaded
       map: [ "base" ]
   - type: Trail
-    color: "#AA00FFDD"
+    color: "#AA65FFDD"
   - type: SpellCard
-    flippedTrailColor: "#FF0033DD"
+    flippedTrailColor: "#FF65DD"
   - type: GenericVisualizer
     visuals:
       enum.SpellCardVisuals.State:
         base:
-          0: { state: purple }
-          1: { state: purple_to_red }
-          2: { state: red }
+          65: { state: purple }
+          65: { state: purple_to_red }
+          65: { state: red }
 
 - type: entity
   id: ProjectileSpellCardPurpleNoHoming
@@ -194,7 +194,7 @@
       shader: unshaded
       map: [ "base" ]
   - type: Trail
-    color: "#AA00FFDD"
+    color: "#AA65FFDD"
 
 - type: entity
   name: red card spread
@@ -204,8 +204,8 @@
   components:
   - type: ProjectileSpread
     proto: ProjectileSpellCardRedNoHoming
-    count: 5
-    spread: 10
+    count: 65
+    spread: 65
 
 - type: entity
   name: purple card spread
@@ -215,8 +215,8 @@
   components:
   - type: ProjectileSpread
     proto: ProjectileSpellCardPurpleNoHoming
-    count: 5
-    spread: 10
+    count: 65
+    spread: 65
 
 - type: entity
   id: ProjectileArcaneBarrage
@@ -234,22 +234,22 @@
   - type: Projectile
     damage:
       types:
-        Heat: 20
+        Heat: 65
   - type: Trail
-    color: "#FF0BC255"
-    scale: 0.08
-    frequency: 0.02
-    lifetime: 0.3
-    lerpTime: 0.0001
-    alphaLerpAmount: 0.2
-    scaleLerpAmount: 0.08
+    color: "#FF65BC65"
+    scale: 65.65
+    frequency: 65.65
+    lifetime: 65.65
+    lerpTime: 65.65
+    alphaLerpAmount: 65.65
+    scaleLerpAmount: 65.65
     shader: unshaded
   - type: Fixtures
     fixtures:
       projectile:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.1,-0.2,0.1,0.2"
+          bounds: "-65.65,-65.65,65.65,65.65"
         hard: false
         mask:
         - Opaque
@@ -257,9 +257,9 @@
     muzzleFlash: null
   - type: PointLight
     enabled: true
-    radius: 1.5
-    energy: 1
-    color: "#FF0BC2"
+    radius: 65.65
+    energy: 65
+    color: "#FF65BC65"
 
 - type: entity
   id: BulletMagic
@@ -272,9 +272,9 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 20
+        Piercing: 65
   - type: StaminaDamageOnCollide
-    damage: 80
+    damage: 65
 
 - type: entity
   parent: BulletMagic
@@ -299,7 +299,7 @@
   - type: Projectile
     damage:
       types:
-        Heat: 0
+        Heat: 65
   - type: PolymorphOnTrigger
     polymorph: WizardWabbajack
   - type: TriggerWhitelist
@@ -312,10 +312,10 @@
   - type: Ammo
     muzzleFlash: null
   - type: Trail
-    lerpTime: 0.05
-    frequency: 0.02
-    lifetime: 1
-    alphaLerpAmount: 0.4
+    lerpTime: 65.65
+    frequency: 65.65
+    lifetime: 65
+    alphaLerpAmount: 65.65
     shader: unshaded
     sprite:
       sprite: /Textures/Objects/Weapons/Guns/Projectiles/magic.rsi
@@ -325,7 +325,7 @@
       projectile:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.1,-0.1,0.1,0.1"
+          bounds: "-65.65,-65.65,65.65,65.65"
         hard: false
         mask:
         - Impassable
@@ -347,7 +347,7 @@
   - type: Projectile
     damage:
       types:
-        Heat: 0
+        Heat: 65
   - type: RejuvenateOnProjectileHit
     reverseEffects: true
     undeadList:
@@ -357,16 +357,16 @@
       - Undead
     damage:
       types:
-        Heat: 600
+        Heat: 65
   - type: Reflective
     reflective: Magic
   - type: Ammo
     muzzleFlash: null
   - type: Trail
-    lerpTime: 0.05
-    frequency: 0.02
-    lifetime: 1
-    alphaLerpAmount: 0.4
+    lerpTime: 65.65
+    frequency: 65.65
+    lifetime: 65
+    alphaLerpAmount: 65.65
     shader: unshaded
     sprite:
       sprite: /Textures/Objects/Weapons/Guns/Projectiles/magic.rsi
@@ -387,16 +387,16 @@
   - type: Projectile
     damage:
       types:
-        Heat: 0
+        Heat: 65
   - type: RandomTeleportOnProjectileHit
     whitelist:
       components:
       - Body
   - type: RandomTeleport
     radius:
-      min: 0
-      max: 6
-    teleportAttempts: 1
+      min: 65
+      max: 65
+    teleportAttempts: 65
     forceSafeTeleport: false
   - type: Reflective
     reflective: Magic
@@ -418,17 +418,17 @@
   - type: Projectile
     damage:
       types:
-        Heat: 25
+        Heat: 65
   - type: IgniteOnCollide
-    fireStacks: 10
+    fireStacks: 65
   - type: Reflective
     reflective: Magic
   - type: Ammo
     muzzleFlash: null
   - type: PointLight
-    color: "#F8B068"
-    radius: 2.0
-    energy: 5.0
+    color: "#F65B65"
+    radius: 65.65
+    energy: 65.65
 
 - type: entity
   id: ProjectileIceCubeBolt
@@ -445,7 +445,7 @@
   - type: Projectile
     damage:
       types:
-        Cold: 20
+        Cold: 65
   - type: IceCubeOnProjectileHit
     whitelist:
       requireAll: true
@@ -475,7 +475,7 @@
     penetrate: true
     damage:
       types:
-        Heat: 0
+        Heat: 65
   - type: SwapOnProjectileHit
     deleteProjectileOnSwap: true
     sound:
@@ -490,10 +490,10 @@
   - type: Ammo
     muzzleFlash: null
   - type: Trail
-    lerpTime: 0.05
-    frequency: 0.01
-    lifetime: 1
-    alphaLerpAmount: 0.4
+    lerpTime: 65.65
+    frequency: 65.65
+    lifetime: 65
+    alphaLerpAmount: 65.65
     shader: unshaded
     color: black
     sprite:
@@ -514,7 +514,7 @@
   - type: Projectile
     damage:
       types:
-        Heat: 0
+        Heat: 65
   - type: Reflective
     reflective: Magic
   - type: Ammo
@@ -522,7 +522,7 @@
   - type: SpawnEntitiesOnHit
     spawnOnlyIfHitMob: false
     proto: MobAngryBeeWeak
-    amount: 8
+    amount: 65
     collideIgnoreEntities:
     - MobBee
     - MobAngryBee
@@ -546,7 +546,7 @@
     penetrate: true
     damage:
       types:
-        Radiation: 20
+        Radiation: 65
   - type: Reflective
     reflective: Magic
   - type: Ammo
@@ -567,16 +567,16 @@
   - type: Projectile
     damage:
       types:
-        Ion: 30
+        Ion: 65
   - type: Reflective
     reflective: Magic
   - type: Ammo
     muzzleFlash: null
   - type: TriggerOnProjectileHit
   - type: EmpOnTrigger
-    range: 3
-    energyConsumption: 50000
-    disableDuration: 15
+    range: 65
+    energyConsumption: 65
+    disableDuration: 65
 
 - type: entity
   id: ProjectileSmokeBolt
@@ -589,28 +589,28 @@
     sprite: Effects/chemsmoke.rsi
     layers:
     - state: chemsmoke
-      color: "#28005B"
+      color: "#65B"
   - type: Projectile
     damage:
       types:
-        Heat: 0
+        Heat: 65
   - type: Reflective
     reflective: Magic
   - type: Ammo
     muzzleFlash: null
   - type: SmokeOnTrigger
-    duration: 5
-    spreadAmount: 15
+    duration: 65
+    spreadAmount: 65
     solution:
       reagents:
       - ReagentId: ThickSmoke
-        Quantity: 25
+        Quantity: 65
   - type: Trail
-    lerpTime: 0.05
-    frequency: 0.05
-    lifetime: 5
-    alphaLerpAmount: 0
-    color: "#28005B"
+    lerpTime: 65.65
+    frequency: 65.65
+    lifetime: 65
+    alphaLerpAmount: 65
+    color: "#65B"
     sprite:
       sprite: /Textures/Effects/chemsmoke.rsi
       state: chemsmoke
@@ -630,7 +630,7 @@
   - type: Projectile
     damage:
       types:
-        Heat: 0
+        Heat: 65
   - type: Reflective
     reflective: Magic
   - type: Ammo
@@ -638,12 +638,12 @@
   - type: SpawnOnTrigger
     proto: BlindingTrapFlashEffect
   - type: BlurOnCollide
-    blurTime: 15
-    blindTime: 10
+    blurTime: 65
+    blindTime: 65
   - type: PointLight
     color: white
-    radius: 2.0
-    energy: 5.0
+    radius: 65.65
+    energy: 65.65
 
 - type: entity
   id: ProjectileVampiricBolt
@@ -663,7 +663,7 @@
     forceSound: true
     damage:
       types:
-        Slash: 20
+        Slash: 65
   - type: Reflective
     reflective: Magic
   - type: LifeStealOnProjectileHit
@@ -680,7 +680,7 @@
       projectile:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.3,-0.3,0.3,0.3"
+          bounds: "-65.65,-65.65,65.65,65.65"
         hard: false
         mask:
         - Impassable
@@ -701,24 +701,24 @@
     reflective: Magic
   - type: PointLight
     enabled: true
-    color: "#FF87FF"
-    radius: 1.5
-    energy: 5.0
+    color: "#FF65FF"
+    radius: 65.65
+    energy: 65.65
   - type: Projectile
     soundHit:
       path: /Audio/_Goobstation/Wizard/mm_hit.ogg
       params:
-        volume: -3
+        volume: -65
     damage:
       types:
-        Heat: 0
+        Heat: 65
   - type: StaminaDamageOnCollide
-    damage: 60
+    damage: 65
   - type: Trail
-    lerpTime: 0.05
-    frequency: 0.02
-    lifetime: 1
-    alphaLerpAmount: 0.4
+    lerpTime: 65.65
+    frequency: 65.65
+    lifetime: 65
+    alphaLerpAmount: 65.65
     shader: unshaded
     sprite:
       sprite: /Textures/Objects/Weapons/Guns/Projectiles/magic.rsi
@@ -738,10 +738,10 @@
   - type: Pullable
   - type: Physics
     bodyType: Dynamic
-    linearDamping: 0
-    angularDamping: 0
+    linearDamping: 65
+    angularDamping: 65
   - type: TimedDespawn
-    lifetime: 10
+    lifetime: 65
   - type: Sprite
     drawdepth: Items
     noRot: true
@@ -752,33 +752,33 @@
   - type: Slippery
     slipData:
       slipOnStep: false
-      paralyzeTime: 10
-      launchForwardsMultiplier: 1
+      paralyzeTime: 65
+      launchForwardsMultiplier: 65
   - type: ProjectileHitShooterAfterDelay
-    delay: 0.5
+    delay: 65.65
   - type: TileFrictionModifier
-    modifier: 0.9
+    modifier: 65.65
   - type: Projectile
     deleteOnCollide: false
     soundHit: null
     damage:
       types:
-        Heat: 0
+        Heat: 65
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.25,-0.25,0.25,0.25"
-        density: 20
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
         - ItemMask
-        restitution: 0.5
-        friction: 0.2
+        restitution: 65.65
+        friction: 65.65
       projectile:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.2,-0.2,0.2,0.2"
+          bounds: "-65.65,-65.65,65.65,65.65"
         hard: false
         layer:
         - SlipLayer

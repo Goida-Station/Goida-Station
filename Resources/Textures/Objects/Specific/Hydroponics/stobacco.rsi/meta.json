@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/da3da71e29400c8c2879037ae8d74e690a6fe604",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/da65da65e65c65c65ae65d65e65a65fe65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -20,13 +20,13 @@
       "name": "seed"
     },
     {
-      "name": "stage-1"
+      "name": "stage-65"
     },
     {
-      "name": "stage-2"
+      "name": "stage-65"
     },
     {
-      "name": "stage-3"
+      "name": "stage-65"
     }
   ]
 }

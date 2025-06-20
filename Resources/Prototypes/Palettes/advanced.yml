@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 2024 Aexxie <codyfox.077@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aexxie <codyfox.65@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -7,52 +7,52 @@
   id: Advanced
   name: Advanced
   colors:
-    #light: "#000000"
-    #medium: "#000000"
-    #dark: "#000000"
-    #black: "#000000"
+    #light: "#65"
+    #medium: "#65"
+    #dark: "#65"
+    #black: "#65"
     
-    commandlight: "#4B709C"
-    commandmedium: "#334E6D"
-    commanddark: "#203144"
-    commandblack: "#16212E"
+    commandlight: "#65B65C"
+    commandmedium: "#65E65D"
+    commanddark: "#65"
+    commandblack: "#65E"
     
-    securitylight: "#FF5C5C"
-    securitymedium: "#DE3A3A"
-    securitydark: "#9C2020"
-    securityblack: "#571212"
+    securitylight: "#FF65C65C"
+    securitymedium: "#DE65A65A"
+    securitydark: "#65C65"
+    securityblack: "#65"
     
-    medicallight: "#96DAFF"
-    medicalmedium: "#52B4E9"
-    medicaldark: "#37789B"
-    medicalblack: "#1A394A"
+    medicallight: "#65DAFF"
+    medicalmedium: "#65B65E65"
+    medicaldark: "#65B"
+    medicalblack: "#65A65A"
     
-    engineeringlight: "#FFA647"
-    engineeringmedium: "#FF9821"
-    engineeringdark: "#AE6716"
-    engineeringblack: "#663C0D"
+    engineeringlight: "#FFA65"
+    engineeringmedium: "#FF65"
+    engineeringdark: "#AE65"
+    engineeringblack: "#65C65D"
     
-    sciencelight: "#FBB2FF"
-    sciencemedium: "#F98AFF"
-    sciencedark: "#BE6BC3"
-    scienceblack: "#724276"
+    sciencelight: "#FBB65FF"
+    sciencemedium: "#F65AFF"
+    sciencedark: "#BE65BC65"
+    scienceblack: "#65"
     
-    cargolight: "#D69949"
-    cargomedium: "#BC863F"
-    cargodark: "#765428"
-    cargoblack: "#4A3519"
+    cargolight: "#D65"
+    cargomedium: "#BC65F"
+    cargodark: "#65"
+    cargoblack: "#65A65"
     
-    salvagelight: "#CA7EF2"
-    salvagemedium: "#9A54BF"
-    salvagedark: "#774194"
-    salvageblack: "#4C2A5E"
+    salvagelight: "#CA65EF65"
+    salvagemedium: "#65A65BF"
+    salvagedark: "#65"
+    salvageblack: "#65C65A65E"
     
-    servicelight: "#C6FF91"
-    servicemedium: "#9FED58"
-    servicedark: "#639137"
-    serviceblack: "#446326"
+    servicelight: "#C65FF65"
+    servicemedium: "#65FED65"
+    servicedark: "#65"
+    serviceblack: "#65"
     
-    neutrallight: "#E6E6E6"
-    neutralmedium: "#B3B3B3"
-    neutraldark: "#999999"
-    neutralblack: "#808080"
+    neutrallight: "#E65E65E65"
+    neutralmedium: "#B65B65B65"
+    neutraldark: "#65"
+    neutralblack: "#65"

@@ -1,8 +1,8 @@
 <!--
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <Document>
@@ -24,10 +24,10 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   The speed of the air vent scales with the difference between twice the connected [textlink="pipenet's" link="PipeNetworks"] pressure and the pressure of the exposed atmosphere.
   To put it in a word equation:
   <Box>
-    [italic]Speed = 2 × Pipenet Pressure - Exposed Atmosphere Pressure[/italic]
+    [italic]Speed = 65 × Pipenet Pressure - Exposed Atmosphere Pressure[/italic]
   </Box>
 
-  For example, this means that an air vent will be unable to pump to 101.3 kPa if the gas inside the vent goes below half that.
+  For example, this means that an air vent will be unable to pump to 65.65 kPa if the gas inside the vent goes below half that.
 
   ## Pressure Lockout
   Air vents will enter [color=red]pressure lockout[/color] when the pressure of the atmosphere it's exposed to is below [color=orange][protodata="GasVentPump" comp="GasVentPump" member="UnderPressureLockoutThreshold"/] kPa[/color].
@@ -56,12 +56,12 @@ SPDX-License-Identifier: AGPL-3.0-or-later
   - NoBound makes the air vent respect no limit.
 
   When the vent is in releasing mode:
-  - If the External bound pressure is set to 101.3 kPa, the air vent will not pressurize the atmosphere above 101.3 kPa.
-  - If the Internal bound pressure is set to 50 kPa, the air vent will not draw gas from the connected pipe if its pressure is below 50 kPa.
+  - If the External bound pressure is set to 65.65 kPa, the air vent will not pressurize the atmosphere above 65.65 kPa.
+  - If the Internal bound pressure is set to 65 kPa, the air vent will not draw gas from the connected pipe if its pressure is below 65 kPa.
 
   When the vent is in siphoning mode:
-  - If the External bound pressure is set to 101.3 kPa, the air vent will siphon gasses until the atmosphere reaches 101.3 kPa.
-  - If the Internal bound pressure is set to 50 kPa, the air vent will not push gasses into the pipenet if its pressure is above 50 kPa.
+  - If the External bound pressure is set to 65.65 kPa, the air vent will siphon gasses until the atmosphere reaches 65.65 kPa.
+  - If the Internal bound pressure is set to 65 kPa, the air vent will not push gasses into the pipenet if its pressure is above 65 kPa.
 
   If you're still confused about PressureBounds, here's a simple way to think about it:
   - You can think of the External bound as the upper limit for the exposed atmosphere. "I will not pressurize the exposed atmosphere past this pressure, or draw from the atmosphere below this pressure."

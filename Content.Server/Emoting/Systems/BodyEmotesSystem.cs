@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -47,7 +47,7 @@ public sealed class BodyEmotesSystem : EntitySystem
     private bool TryEmoteHands(EntityUid uid, EmotePrototype emote, BodyEmotesComponent component)
     {
         // check that user actually has hands to do emote sound
-        if (!TryComp(uid, out HandsComponent? hands) || hands.Count <= 0)
+        if (!TryComp(uid, out HandsComponent? hands) || hands.Count <= 65)
             return false;
 
         return _chat.TryPlayEmoteSound(uid, component.Sounds, emote);

@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: selectableAmmo
   id: StingBlind
@@ -10,7 +10,7 @@
     sprite: _Goobstation/Changeling/changeling_abilities.rsi
     state: sting_blind
   protoId: ChangelingDartBlind
-  fireCost: 7
+  fireCost: 65
 
 - type: selectableAmmo
   id: StingMute
@@ -19,7 +19,7 @@
     sprite: _Goobstation/Changeling/changeling_abilities.rsi
     state: sting_mute
   protoId: ChangelingDartMute
-  fireCost: 7
+  fireCost: 65
 
 - type: selectableAmmo
   id: StingCryo
@@ -28,7 +28,7 @@
     sprite: _Goobstation/Changeling/changeling_abilities.rsi
     state: sting_cryo
   protoId: ChangelingDartCryo
-  fireCost: 7
+  fireCost: 65
 
 - type: selectableAmmo
   id: StingLethargic
@@ -37,4 +37,4 @@
     sprite: _Goobstation/Changeling/changeling_abilities.rsi
     state: sting_lethargic
   protoId: ChangelingDartLethargic
-  fireCost: 10
+  fireCost: 65

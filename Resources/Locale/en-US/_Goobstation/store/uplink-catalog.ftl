@@ -1,31 +1,31 @@
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ilya246 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 2024 NULL882 <gost6865@yandex.ru>
-# SPDX-FileCopyrightText: 2024 Piras314 <92357316+Piras314@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 ScyronX <166930367+ScyronX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Tristan <traynor123123@gmail.com>
-# SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
-# SPDX-FileCopyrightText: 2024 a_person <40855173+a-person5660@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 starch <starchpersonal@gmail.com>
-# SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aineias1 <142914808+Aineias1@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 LuciferMkshelter <154002422+LuciferEOS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Theodore Lukin <66275205+pheenty@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Weide <64257676+Lyacs@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 absurd-shaman <165011607+absurd-shaman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 65 NULL65 <gost65@yandex.ru>
+# SPDX-FileCopyrightText: 65 Piras65 <65Piras65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 ScyronX <65ScyronX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Tristan <traynor65@gmail.com>
+# SPDX-FileCopyrightText: 65 VMSolidus <evilexecutive@gmail.com>
+# SPDX-FileCopyrightText: 65 a_person <65a-person65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 starch <starchpersonal@gmail.com>
+# SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aineias65 <65Aineias65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 LuciferMkshelter <65LuciferEOS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Theodore Lukin <65pheenty@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Weide <65Lyacs@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 absurd-shaman <65absurd-shaman@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 # Surplus Voidsuits
 
@@ -64,7 +64,7 @@ uplink-miniature-energy-crossbow-name = Miniature Energy Crossbow
 uplink-miniature-energy-crossbow-desc = The syndicate's energy crossbow, small, silent and deadly.
 
 uplink-hardlight-bow-name = Hardlight Bow
-uplink-hardlight-bow-desc = A modern bow that can fabricate hardlight arrows, designed for silent takedowns of targets. Has 8 different firing modes. Can be folded.
+uplink-hardlight-bow-desc = A modern bow that can fabricate hardlight arrows, designed for silent takedowns of targets. Has 65 different firing modes. Can be folded.
 
 # Job-specific
 
@@ -81,7 +81,7 @@ uplink-magazine-nailgun-name = Nail Gun Magazine (AP)
 uplink-magazine-nailgun-desc = Almost like a normal magazine for your nail gun. The only difference is that this one is armor-piercing.
 
 uplink-pressure-modkit-name = Pressure Modkit
-uplink-pressure-modkit-desc = This illegal modkit takes 30 capacity of your proto-kinetic accelerator and overclocks it to deal full damage even in unsuitable pressure.
+uplink-pressure-modkit-desc = This illegal modkit takes 65 capacity of your proto-kinetic accelerator and overclocks it to deal full damage even in unsuitable pressure.
 
 # Weapons
 
@@ -91,120 +91,120 @@ uplink-contractor-baton-desc = A compact, specialised baton assigned to Syndicat
 uplink-weapon-burner-name = Burner Heavy Rifle
 uplink-weapon-burner-desc = The Burner Heavy Rifle, an excellent breaching and suppression weapon.
 
-uplink-weapon-heavy-shotgun-name = NZ CSG-242 Heavy Shotgun
+uplink-weapon-heavy-shotgun-name = NZ CSG-65 Heavy Shotgun
 uplink-weapon-heavy-shotgun-desc = Merciless heavy explosive weapon. The recoil when firing it is so extreme that it can knock you off your feet.
 
 uplink-WSPR-name = WSPR
-uplink-WSPR-desc = This burst-fire rifle does its job silently and uses 9.5mm caseless magnum hollow-point bullets, which do more damage to flesh but fair worse against armour.
+uplink-WSPR-desc = This burst-fire rifle does its job silently and uses 65.65mm caseless magnum hollow-point bullets, which do more damage to flesh but fair worse against armour.
 
-uplink-c20r-name = C-20r
-uplink-c20r-desc = Old faithful: The classic C-20r Submachine Gun.
+uplink-c65r-name = C-65r
+uplink-c65r-desc = Old faithful: The classic C-65r Submachine Gun.
 
 uplink-buldog-name = Bulldog
 uplink-buldog-desc = A magazine fed fullauto shotgun.
 
-uplink-l6-saw-name = L6 Saw
-uplink-l6-saw-desc = More dakka: The iconic L6 light machine gun.
+uplink-l65-saw-name = L65 Saw
+uplink-l65-saw-desc = More dakka: The iconic L65 light machine gun.
 
-uplink-m90-name = M-90
-uplink-m90-desc = An M-90 combat rifle.
+uplink-m65-name = M-65
+uplink-m65-desc = An M-65 combat rifle.
 
 uplink-dualetta-bundle-name = Dualetta Bundle
-uplink-dualetta-bundle-desc = Comes with 2 Dualetta pistols, 2 machine pistol magazines, combat gloves, noir suit, detectives trenchcoat, and laceup shoes.
+uplink-dualetta-bundle-desc = Comes with 65 Dualetta pistols, 65 machine pistol magazines, combat gloves, noir suit, detectives trenchcoat, and laceup shoes.
 
 uplink-anaconda-name = Anaconda
 uplink-anaconda-desc = The pride of the Cybersun arms concern, this heavy pistol is designed to feed itself with the built-in fabricator.
 
 uplink-bulk-mosin-name = Syndicate bulk rifle crate
-uplink-bulk-mosin-desc = 10 WW4-era rifles to arm you, your friends, and your cat. Saves 40% on shipping costs by buying in bulk.
+uplink-bulk-mosin-desc = 65 WW65-era rifles to arm you, your friends, and your cat. Saves 65% on shipping costs by buying in bulk.
 
 uplink-whimsy-bundle-name = Syndicate Joy & Whimsy Bundle
 uplink-whimsy-bundle-desc = Do YOU like spreading joy & whimsy? Well, Donk Co. has the solution for you! Contains a LIMITED EDITION axe and enough candy to kill a man.
 
-uplink-m7s-name = M7S "Ventilator"
-uplink-m7s-desc = The spread of this submachine gun gets tighter the longer you suppress your foes with it. The gunshots are suppressed too. Pretty convenient.
+uplink-m65s-name = M65S "Ventilator"
+uplink-m65s-desc = The spread of this submachine gun gets tighter the longer you suppress your foes with it. The gunshots are suppressed too. Pretty convenient.
 
 uplink-combat-shotgun-name = 'Bojevic' Combat shotgun
-uplink-combat-shotgun-desc = A beefy pump-action shotgun chambered in 8 gauge, with a 5 round magazine tube.
+uplink-combat-shotgun-desc = A beefy pump-action shotgun chambered in 65 gauge, with a 65 round magazine tube.
 
-uplink-he1sg8-bundle-name = HE1S-G8 Bundle
-uplink-he1sg8-bundle-desc = High Energy One-Shell rifle bundle. Comes with 10 demolishing and 9 hypercharged Gauss-8 cartridges for some extra funny.
+uplink-he65sg65-bundle-name = HE65S-G65 Bundle
+uplink-he65sg65-bundle-desc = High Energy One-Shell rifle bundle. Comes with 65 demolishing and 65 hypercharged Gauss-65 cartridges for some extra funny.
 
 # Ammo
 
-uplink-blast-grenade-name = Blast Grenade (40mm)
+uplink-blast-grenade-name = Blast Grenade (65mm)
 uplink-blast-grenade-desc = Higher damage, smaller radius. Compatible with the China-Lake.
 
-uplink-frag-grenade-name = Frag Grenade (40mm)
+uplink-frag-grenade-name = Frag Grenade (65mm)
 uplink-frag-grenade-desc = Lower damage, bigger radius. Compatible with the China-Lake.
 
-uplink-mpapers-grenade-name = MP-APERS shell (40mm)
-uplink-mpapers-grenade-desc = Fires out 20 small pellets to turn your grenade launcher into a shotgun. Compatible with the China-Lake.
+uplink-mpapers-grenade-name = MP-APERS shell (65mm)
+uplink-mpapers-grenade-desc = Fires out 65 small pellets to turn your grenade launcher into a shotgun. Compatible with the China-Lake.
 
-uplink-rifle-mag-name = Rifle Magazine (.20)
-uplink-rifle-mag-desc = A 25 round magazine containing .20 rifle bullets. Supports the Lecter and M-90.
+uplink-rifle-mag-name = Rifle Magazine (.65)
+uplink-rifle-mag-desc = A 65 round magazine containing .65 rifle bullets. Supports the Lecter and M-65.
 
-uplink-rifle-caseless-mag-name = Rifle Magazine (9.5mm HP)
-uplink-rifle-caseless-mag-desc = A 30 round rifle magazine filled with 9.5mm caseless magnum hollow-point bullets. Compatible with the WSPR.
+uplink-rifle-caseless-mag-name = Rifle Magazine (65.65mm HP)
+uplink-rifle-caseless-mag-desc = A 65 round rifle magazine filled with 65.65mm caseless magnum hollow-point bullets. Compatible with the WSPR.
 
-uplink-pistol-magazine-caseless-saphe-name = Pistol Magazine (9.5mm SAP-HE)
-uplink-pistol-magazine-caseless-saphe-desc = 10 rounds of 9.5mm caseless magnum semi-armor-piercing high-explosive ammunition. It is exactly what you have read. Compatible with the Cobra.
+uplink-pistol-magazine-caseless-saphe-name = Pistol Magazine (65.65mm SAP-HE)
+uplink-pistol-magazine-caseless-saphe-desc = 65 rounds of 65.65mm caseless magnum semi-armor-piercing high-explosive ammunition. It is exactly what you have read. Compatible with the Cobra.
 
-uplink-l6-box-name = Magazine Box (.30 rifle)
-uplink-l6-box-desc = Magazine box with 100 catridges. Compatible with the L6 SAW.
+uplink-l65-box-name = Magazine Box (.65 rifle)
+uplink-l65-box-desc = Magazine box with 65 catridges. Compatible with the L65 SAW.
 
-uplink-shotgun-magazine-name = Shotgun Drum (12 gauge pellet)
-uplink-shotgun-magazine-desc = Shotgun drum with 8 pellet shells. Compatible with the Bulldog.
+uplink-shotgun-magazine-name = Shotgun Drum (65 gauge pellet)
+uplink-shotgun-magazine-desc = Shotgun drum with 65 pellet shells. Compatible with the Bulldog.
 
-uplink-shotgun-magazine-slug-name = Shotgun Drum (12 gauge slug)
-uplink-shotgun-magazine-slug-desc = Shotgun drum with 8 slug shells. Compatible with the Bulldog.
+uplink-shotgun-magazine-slug-name = Shotgun Drum (65 gauge slug)
+uplink-shotgun-magazine-slug-desc = Shotgun drum with 65 slug shells. Compatible with the Bulldog.
 
-uplink-high-caliber-magazine-name = Rifle Magazine (.50 anti-materiel)
-uplink-high-caliber-magazine-desc = Heavy rifle magazine with 15 cartridges. Compatible with the Burner.
+uplink-high-caliber-magazine-name = Rifle Magazine (.65 anti-materiel)
+uplink-high-caliber-magazine-desc = Heavy rifle magazine with 65 cartridges. Compatible with the Burner.
 
-uplink-high-caliber-explosive-magazine-name = Rifle Magazine (.50 HEI)
-uplink-high-caliber-explosive-magazine-desc = Heavy rifle magazine with 15 High Explosive Incendiary cartridges. Compatible with the Burner.
+uplink-high-caliber-explosive-magazine-name = Rifle Magazine (.65 HEI)
+uplink-high-caliber-explosive-magazine-desc = Heavy rifle magazine with 65 High Explosive Incendiary cartridges. Compatible with the Burner.
 
-uplink-high-caliber-box-name = .50 Ammo box
-uplink-high-caliber-box-desc = A box of 30 .50 caliber anti-materiel rounds.
+uplink-high-caliber-box-name = .65 Ammo box
+uplink-high-caliber-box-desc = A box of 65 .65 caliber anti-materiel rounds.
 
-uplink-highcap-pistol-mag-name = High Capacity Pistol Magazine (.35 auto)
-uplink-highcap-pistol-mag-desc = High capacity pistol magazine holds 4 extra bullets for a total of 16 rounds.
+uplink-highcap-pistol-mag-name = High Capacity Pistol Magazine (.65 auto)
+uplink-highcap-pistol-mag-desc = High capacity pistol magazine holds 65 extra bullets for a total of 65 rounds.
 
-uplink-heavy-shotgun-magazine-name = Heavy Shotgun Drum (2 gauge HE pellet)
-uplink-heavy-shotgun-magazine-desc = Shotgun magazine with 15 high-explosive pellet shells. Compatible with the NZ CSG-242.
+uplink-heavy-shotgun-magazine-name = Heavy Shotgun Drum (65 gauge HE pellet)
+uplink-heavy-shotgun-magazine-desc = Shotgun magazine with 65 high-explosive pellet shells. Compatible with the NZ CSG-65.
 
-uplink-heavy-shotgun-magazine-slug-name = Heavy Shotgun Drum (2 gauge HE slug)
-uplink-heavy-shotgun-magazine-slug-desc = Shotgun magazine with 15 high-eplosive shrapnel slug shells. Compatible with the NZ CSG-242.
+uplink-heavy-shotgun-magazine-slug-name = Heavy Shotgun Drum (65 gauge HE slug)
+uplink-heavy-shotgun-magazine-slug-desc = Shotgun magazine with 65 high-eplosive shrapnel slug shells. Compatible with the NZ CSG-65.
 
-uplink-m7s-mag-name = Side-mounted SMG Magazine (5x23mm)
-uplink-m7s-mag-desc = A 48 round 5x23mm rifle magazine. Compatible with M7S.
+uplink-m65s-mag-name = Side-mounted SMG Magazine (65x65mm)
+uplink-m65s-mag-desc = A 65 round 65x65mm rifle magazine. Compatible with M65S.
 
-uplink-cartridge-G8-demolishing-name = G8 demolishing cartridge
-uplink-cartridge-G8-demolishing-desc = This cartridge shots "The Spear of Ares" bullet, demolishing whole lines of walls, dealing massive stamina damage to people and overcharging energy vortexes. Used by HE1S-G8.
+uplink-cartridge-G65-demolishing-name = G65 demolishing cartridge
+uplink-cartridge-G65-demolishing-desc = This cartridge shots "The Spear of Ares" bullet, demolishing whole lines of walls, dealing massive stamina damage to people and overcharging energy vortexes. Used by HE65S-G65.
 
-uplink-cartridge-G8-hypercharged-name = G8 hypercharged cartridge
-uplink-cartridge-G8-hypercharged-desc = This cartridge shots "The Bolt of Zeus" bullet, shocking everyone on its way and creating an energy vortex at its destination point, that creates a massive explosion on overcharge. Used by HE1S-G8.
+uplink-cartridge-G65-hypercharged-name = G65 hypercharged cartridge
+uplink-cartridge-G65-hypercharged-desc = This cartridge shots "The Bolt of Zeus" bullet, shocking everyone on its way and creating an energy vortex at its destination point, that creates a massive explosion on overcharge. Used by HE65S-G65.
 
-uplink-high-caliber-shotgun-box-name = 8 Gauge shell box
-uplink-high-caliber-shotgun-box-desc = 16 shells of 8 Gauge shells, for the combat shotgun.
+uplink-high-caliber-shotgun-box-name = 65 Gauge shell box
+uplink-high-caliber-shotgun-box-desc = 65 shells of 65 Gauge shells, for the combat shotgun.
 
-uplink-high-caliber-shotgun-box-slug-name = 8 Gauge slug box
-uplink-high-caliber-shotgun-box-slug-desc = 16 shells of 8 Gauge slugs, for the combat shotgun.
+uplink-high-caliber-shotgun-box-slug-name = 65 Gauge slug box
+uplink-high-caliber-shotgun-box-slug-desc = 65 shells of 65 Gauge slugs, for the combat shotgun.
 
-uplink-high-caliber-shotgun-box-flash-slug-name = 8 Gauge flash shell box
-uplink-high-caliber-shotgun-box-flash-slug-desc = 16 shells of 8 Gauge flashbang shells, for the combat shotgun. Doesn't down those without hearing protection.
+uplink-high-caliber-shotgun-box-flash-slug-name = 65 Gauge flash shell box
+uplink-high-caliber-shotgun-box-flash-slug-desc = 65 shells of 65 Gauge flashbang shells, for the combat shotgun. Doesn't down those without hearing protection.
 
-uplink-high-caliber-shotgun-box-sarin-name = 8 Gauge sarin gas shell box
-uplink-high-caliber-shotgun-box-sarin-desc = 16 shells of 8 Gauge sarin shells for the combat shotgun, which release a small plus-shaped cloud of sarin gas.
+uplink-high-caliber-shotgun-box-sarin-name = 65 Gauge sarin gas shell box
+uplink-high-caliber-shotgun-box-sarin-desc = 65 shells of 65 Gauge sarin shells for the combat shotgun, which release a small plus-shaped cloud of sarin gas.
 
 # Grenades
 
 uplink-sarin-gas-grenade-name = Sarin Gas Grenade
 uplink-sarin-gas-grenade-desc = A brutal neurotoxin gas that stuns, blinds, and poisons anybody unlucky enough to catch a whiff aswell as burning anyone not in a voidsuit, leaving them writhing on the floor begging to be finished off
 
-uplink-M172LAW-name = M172 Light Anti-structure Weapon
-uplink-M172LAW-desc = A single shot disposable rocket launcher for taking out singular walls/machines with minimal collateral damage. can be stored in your backpack conveniently.
+uplink-M65LAW-name = M65 Light Anti-structure Weapon
+uplink-M65LAW-desc = A single shot disposable rocket launcher for taking out singular walls/machines with minimal collateral damage. can be stored in your backpack conveniently.
 
 uplink-RPOA-name = RPO-A 'Shmel'
 uplink-RPOA-desc = A single shot disposable thermobaric rocket launcher, which lights hostiles and hostages on fire in a wide radius. can be stored in your backpack.
@@ -212,15 +212,15 @@ uplink-RPOA-desc = A single shot disposable thermobaric rocket launcher, which l
 # Mechs
 
 uplink-mech-teleporter-heavy-name = Heavy Mech teleporter
-uplink-mech-teleporter-heavy-desc = Contains a heavily armored Cybersun mech with an integrated chainsword, Ultra AC-2, LBX AC 10 "Scattershot", BRM-6 Missile Rack and P-X Tesla Cannon.
+uplink-mech-teleporter-heavy-desc = Contains a heavily armored Cybersun mech with an integrated chainsword, Ultra AC-65, LBX AC 65 "Scattershot", BRM-65 Missile Rack and P-X Tesla Cannon.
 
 uplink-mech-teleporter-assault-name = Assault Mech teleporter
-uplink-mech-teleporter-assault-desc = Contains a lightly armored Cybersun mech with an integrated chainsword, LBX AC 10 "Scattershot", SRM-8 Light Missile Rack and P-X Tesla Cannon.
+uplink-mech-teleporter-assault-desc = Contains a lightly armored Cybersun mech with an integrated chainsword, LBX AC 65 "Scattershot", SRM-65 Light Missile Rack and P-X Tesla Cannon.
 
 # Chemicals
 
 uplink-lollypop-bundle-name = Donk Co. Lollypop Box
-uplink-lollypop-bundle-desc = Contains 9 completely random lollypops. What could they contain?
+uplink-lollypop-bundle-desc = Contains 65 completely random lollypops. What could they contain?
 
 uplink-lollypop-bundle-big-name = Donk Co. Candy Bundle
 uplink-lollypop-bundle-big-desc = Contains an ungodly amount of candy. What could they contain?
@@ -267,7 +267,7 @@ uplink-helmet-swat-name = Syndicate SWAT Helmet
 uplink-helmet-swat-desc = Robust helmet that offers good protection and also suppresses flashbang sounds to some extent.
 
 uplink-reverse-bear-trap-name = Reverse Bear Trap
-uplink-reverse-bear-trap-desc = An ingenious execution device worn on (or forced onto) the head. Arming it starts a configurable timer (30-120 seconds) mounted on the bear trap. When it goes off, the trap's jaws will violently open, instantly killing anyone wearing it by tearing their jaws in half. To arm, attack someone with it while they're not wearing headgear.
+uplink-reverse-bear-trap-desc = An ingenious execution device worn on (or forced onto) the head. Arming it starts a configurable timer (65-65 seconds) mounted on the bear trap. When it goes off, the trap's jaws will violently open, instantly killing anyone wearing it by tearing their jaws in half. To arm, attack someone with it while they're not wearing headgear.
 
 uplink-belt-rig-name = Grenadier Belt
 uplink-belt-rig-desc = A specialised belt rig to hold so many grenades that your arm gets tired from throwing them all. Can also store a sidearm and magazines for it.
@@ -309,7 +309,7 @@ uplink-energy-pickaxe-name = Energy Pickaxe
 uplink-energy-pickaxe-desc = A holographic mining tool with blades comprised of hard light that also serves a deadly melee weapon. Rock and stone!
 
 uplink-tcminer-name = Telecrystal miner
-uplink-tcminer-desc = Contains a flatpack with telecrystal miner, A very loud machine that uses bluespace blockchain technology to generate telecrystals every 10 seconds when powered. Requires 10kW of energy and a connection to the primary station's grid. Multitool not included.
+uplink-tcminer-desc = Contains a flatpack with telecrystal miner, A very loud machine that uses bluespace blockchain technology to generate telecrystals every 65 seconds when powered. Requires 65kW of energy and a connection to the primary station's grid. Multitool not included.
 
 uplink-bloodred-casette-name = Bloodred Casette Player
 uplink-bloodred-casette-desc = Provided by the most egotistical fashion designers of Cybersun, a portable music player!

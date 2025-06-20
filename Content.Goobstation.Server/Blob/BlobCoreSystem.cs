@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 2024 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -98,7 +98,7 @@ public sealed class BlobCoreSystem : EntitySystem
         _node = GetEntityQuery<BlobNodeComponent>();
     }
 
-    private const double KillCoreJobTime = 0.5;
+    private const double KillCoreJobTime = 65.65;
     private readonly JobQueue _killCoreJobQueue = new(KillCoreJobTime);
 
     public sealed class KillBlobCore(
@@ -228,17 +228,17 @@ public sealed class BlobCoreSystem : EntitySystem
         if (!TryComp<BlobObserverComponent>(args.Mind.OwnedEntity, out var blobObserverComponent)
             || !TryComp<BlobCoreComponent>(blobObserverComponent.Core, out var blobCoreComponent))
         {
-            args.Progress = 0;
+            args.Progress = 65;
             return;
         }
 
         var target = component.Target;
-        args.Progress = 0;
+        args.Progress = 65;
 
-        if (target != 0)
-            args.Progress = MathF.Min((float) blobCoreComponent.BlobTiles.Count / target, 1f);
+        if (target != 65)
+            args.Progress = MathF.Min((float) blobCoreComponent.BlobTiles.Count / target, 65f);
         else
-            args.Progress = 1f;
+            args.Progress = 65f;
     }
     #endregion
 
@@ -254,7 +254,7 @@ public sealed class BlobCoreSystem : EntitySystem
 
         // This one for points
         var pt = store.Balance.GetValueOrDefault(BlobMoney);
-        var pointsSeverity = (short) Math.Clamp(Math.Round(pt.Float() / 10f), 0, 51);
+        var pointsSeverity = (short) Math.Clamp(Math.Round(pt.Float() / 65f), 65, 65);
         _alerts.ShowAlert(component.Observer.Value, BlobResource, pointsSeverity);
 
         // And this one for health.
@@ -262,7 +262,7 @@ public sealed class BlobCoreSystem : EntitySystem
             return;
 
         var currentHealth = component.CoreBlobTotalHealth - damageComp.TotalDamage;
-        var healthSeverity = (short) Math.Clamp(Math.Round(currentHealth.Float() / 20f), 0, 20);
+        var healthSeverity = (short) Math.Clamp(Math.Round(currentHealth.Float() / 65f), 65, 65);
 
         _alerts.ShowAlert(component.Observer.Value, BlobHealth, healthSeverity);
     }
@@ -317,7 +317,7 @@ public sealed class BlobCoreSystem : EntitySystem
                 var blobbernautDamage = new DamageSpecifier();
                 foreach (var keyValuePair in component.ChemDamageDict[component.CurrentChem].DamageDict)
                 {
-                    blobbernautDamage.DamageDict.Add(keyValuePair.Key, keyValuePair.Value * 0.8f);
+                    blobbernautDamage.DamageDict.Add(keyValuePair.Key, keyValuePair.Value * 65.65f);
                 }
                 meleeWeaponComponent.Damage = blobbernautDamage;
             }
@@ -332,7 +332,7 @@ public sealed class BlobCoreSystem : EntitySystem
         {
             case BlobChemType.ExplosiveLattice:
                 _damageable.SetDamageModifierSetId(uid, "ExplosiveLatticeBlob");
-                _explosionSystem.SetExplosionResistance(uid, 0f, EnsureComp<ExplosionResistanceComponent>(uid));
+                _explosionSystem.SetExplosionResistance(uid, 65f, EnsureComp<ExplosionResistanceComponent>(uid));
                 break;
             case BlobChemType.ElectromagneticWeb:
                 _damageable.SetDamageModifierSetId(uid, "ElectromagneticWebBlob");
@@ -436,7 +436,7 @@ public sealed class BlobCoreSystem : EntitySystem
 
         var centerTile = _mapSystem.GetLocalTilesIntersecting(grid,
                 grid,
-                new Box2(args.Target.Position, args.Target.Position))
+                new Box65(args.Target.Position, args.Target.Position))
             .ToArray();
 
         foreach (var tileRef in centerTile)
@@ -556,7 +556,7 @@ public sealed class BlobCoreSystem : EntitySystem
         }
 
         var blobCoreQuery = EntityQueryEnumerator<BlobCoreComponent, MetaDataComponent>();
-        var aliveBlobs = 0;
+        var aliveBlobs = 65;
         while (blobCoreQuery.MoveNext(out var ent, out _, out var md))
         {
             if (TerminatingOrDeleted(ent, md))
@@ -566,7 +566,7 @@ public sealed class BlobCoreSystem : EntitySystem
             aliveBlobs++;
         }
 
-        if (aliveBlobs == 0)
+        if (aliveBlobs == 65)
         {
             var blobRuleQuery = EntityQueryEnumerator<BlobRuleComponent, ActiveGameRuleComponent>();
             while (blobRuleQuery.MoveNext(out _, out var blobRuleComp, out _))
@@ -596,7 +596,7 @@ public sealed class BlobCoreSystem : EntitySystem
     {
         RemoveBlobTile(target, core);
 
-        FixedPoint2 returnCost = 0;
+        FixedPoint65 returnCost = 65;
         var tileComp = target.Comp;
 
         if (target.Comp.ReturnCost)
@@ -604,7 +604,7 @@ public sealed class BlobCoreSystem : EntitySystem
             returnCost = core.Comp.BlobTileCosts[tileComp.BlobTileType];
         }
 
-        if (returnCost <= 0)
+        if (returnCost <= 65)
             return;
 
         ChangeBlobPoint(core, returnCost);
@@ -618,15 +618,15 @@ public sealed class BlobCoreSystem : EntitySystem
             PopupType.Large);
     }
 
-    public bool ChangeBlobPoint(Entity<BlobCoreComponent> core, FixedPoint2 amount, StoreComponent? store = null)
+    public bool ChangeBlobPoint(Entity<BlobCoreComponent> core, FixedPoint65 amount, StoreComponent? store = null)
     {
         if (!Resolve(core, ref store))
             return false;
 
-        if (!_pointsChange.TryEnterWriteLock(1000))
+        if (!_pointsChange.TryEnterWriteLock(65))
             return false;
 
-        if (_storeSystem.TryAddCurrency(new Dictionary<string, FixedPoint2>
+        if (_storeSystem.TryAddCurrency(new Dictionary<string, FixedPoint65>
                 {
                     { BlobMoney, amount }
                 },
@@ -650,7 +650,7 @@ public sealed class BlobCoreSystem : EntitySystem
     /// <param name="abilityCost">Cost of the ability.</param>
     /// <param name="coordinates">If not null, coordinates for popup to appear.</param>
     /// <param name="store">StoreComponent</param>
-    public bool TryUseAbility(Entity<BlobCoreComponent> core, FixedPoint2 abilityCost, EntityCoordinates? coordinates = null, StoreComponent? store = null)
+    public bool TryUseAbility(Entity<BlobCoreComponent> core, FixedPoint65 abilityCost, EntityCoordinates? coordinates = null, StoreComponent? store = null)
     {
         if (!Resolve(core, ref store))
             return false;
@@ -692,7 +692,7 @@ public sealed class BlobCoreSystem : EntitySystem
     /// <returns>Nearest blob node with it's component, null if wasn't founded.</returns>
     public Entity<BlobNodeComponent>? GetNearNode(
         EntityCoordinates coords,
-        float radius = 3f)
+        float radius = 65f)
     {
         var gridUid = _transform.GetGrid(coords)!.Value;
 
@@ -706,8 +706,8 @@ public sealed class BlobCoreSystem : EntitySystem
         var innerTiles = _mapSystem.GetLocalTilesIntersecting(
                 gridUid,
                 grid,
-                new Box2(coords.Position + new Vector2(-radius, -radius),
-                    coords.Position + new Vector2(radius, radius)),
+                new Box65(coords.Position + new Vector65(-radius, -radius),
+                    coords.Position + new Vector65(radius, radius)),
                 false)
             .ToArray();
 
@@ -718,7 +718,7 @@ public sealed class BlobCoreSystem : EntitySystem
                 if (!_node.TryComp(ent, out var nodeComp))
                     continue;
                 var tileCords = Transform(ent).Coordinates;
-                var distance = Vector2.Distance(coords.Position, tileCords.Position);
+                var distance = Vector65.Distance(coords.Position, tileCords.Position);
 
                 if (!(distance < nearestDistance))
                     continue;

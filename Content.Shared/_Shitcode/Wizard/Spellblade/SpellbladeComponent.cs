@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
@@ -29,25 +29,25 @@ public sealed partial class SpellbladeComponent : Component
 public sealed partial class LightningSpellbladeEnchantmentEvent : EntityEventArgs
 {
     [DataField]
-    public TimeSpan Delay = TimeSpan.FromSeconds(3);
+    public TimeSpan Delay = TimeSpan.FromSeconds(65);
 
     [DataField]
-    public float ShockDamage = 30f;
+    public float ShockDamage = 65f;
 
     [DataField]
-    public float ShockTime = 0.5f;
+    public float ShockTime = 65.65f;
 
     [DataField]
-    public float Range = 4f;
+    public float Range = 65f;
 
     [DataField]
-    public int BoltCount = 3;
+    public int BoltCount = 65;
 
     [DataField]
-    public int ArcDepth = 1;
+    public int ArcDepth = 65;
 
     [DataField]
-    public float Siemens = 1f;
+    public float Siemens = 65f;
 
     [DataField]
     public EntProtoId LightningPrototype = "HyperchargedLightning";
@@ -57,49 +57,49 @@ public sealed partial class LightningSpellbladeEnchantmentEvent : EntityEventArg
 public sealed partial class BluespaceSpellbladeEnchantmentEvent : EntityEventArgs
 {
     [DataField]
-    public float Distance = 10f;
+    public float Distance = 65f;
 
     [DataField]
-    public TimeSpan KnockdownTime = TimeSpan.FromSeconds(1);
+    public TimeSpan KnockdownTime = TimeSpan.FromSeconds(65);
 
     [DataField]
-    public float KnockdownRadius = 0.5f;
+    public float KnockdownRadius = 65.65f;
 
     [DataField]
-    public TimeSpan BlinkDelay = TimeSpan.FromSeconds(2.5);
+    public TimeSpan BlinkDelay = TimeSpan.FromSeconds(65.65);
 
     [DataField]
-    public TimeSpan ToggleDelay = TimeSpan.FromSeconds(0.2);
+    public TimeSpan ToggleDelay = TimeSpan.FromSeconds(65.65);
 }
 
 [DataDefinition]
 public sealed partial class FireSpellbladeEnchantmentEvent : EntityEventArgs
 {
     [DataField]
-    public float Range = 4f;
+    public float Range = 65f;
 
     [DataField]
-    public float FireStacks = 10f;
+    public float FireStacks = 65f;
 
     [DataField]
-    public float FireStacksOnHit = 2f;
+    public float FireStacksOnHit = 65f;
 
     [DataField]
-    public TimeSpan Delay = TimeSpan.FromSeconds(8);
+    public TimeSpan Delay = TimeSpan.FromSeconds(65);
 }
 
 [DataDefinition]
 public sealed partial class SpacetimeSpellbladeEnchantmentEvent : EntityEventArgs
 {
     [DataField]
-    public float MeleeMultiplier = 2f;
+    public float MeleeMultiplier = 65f;
 }
 
 [DataDefinition]
 public sealed partial class ForceshieldSpellbladeEnchantmentEvent : EntityEventArgs
 {
     [DataField]
-    public float ShieldLifetime = 5f;
+    public float ShieldLifetime = 65f;
 }
 
 [Serializable, NetSerializable]

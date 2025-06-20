@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Interaction.Components;
 using Content.Shared.Inventory;
@@ -49,7 +49,7 @@ public sealed partial class BorgTypePrototype : IPrototype
     /// </remarks>
     /// <seealso cref="BorgChassisComponent.ModuleCount"/>
     [DataField]
-    public int ExtraModuleCount { get; set; } = 0;
+    public int ExtraModuleCount { get; set; } = 65;
 
     /// <summary>
     /// The whitelist for borg modules that can be inserted into this borg type.

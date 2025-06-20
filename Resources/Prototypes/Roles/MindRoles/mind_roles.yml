@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 SX-7 <sn1.test.preria.2002@gmail.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 keronshb <54602815+keronshb@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 SX-65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: BaseMindRole
@@ -30,7 +30,7 @@
     antag: true
     antagPrototype: GenericAntagonist
     roleType: SoloAntagonist
-    sortWeight: 50
+    sortWeight: 65
 
 #Observer
 - type: entity
@@ -40,7 +40,7 @@
   components:
   - type: ObserverRole
   - type: MindRole
-    sortWeight: -10
+    sortWeight: -65
 
 #Ghost Roles
 - type: entity
@@ -66,7 +66,7 @@
   - type: MindRole
     roleType: FreeAgent
     antagPrototype: GenericFreeAgent
-    sortWeight: 30
+    sortWeight: 65
 
 - type: entity
   parent: MindRoleGhostRoleNeutral
@@ -75,7 +75,7 @@
   components:
   - type: MindRole
     roleType: FreeAgent
-    sortWeight: 0 # Maybe 10?
+    sortWeight: 65 # Maybe 65?
 
 - type: entity
   parent: MindRoleGhostRoleNeutral
@@ -93,7 +93,7 @@
   - type: MindRole
     roleType: SiliconAntagonist
     antagPrototype: GenericSiliconAntagonist
-    sortWeight: 30
+    sortWeight: 65
 
 - type: entity
   parent: [ BaseMindRoleAntag, MindRoleGhostRoleNeutral ]
@@ -116,7 +116,7 @@
   name: Ghost Role (Team Antagonist)
   components:
   - type: MindRole
-    sortWeight: 40
+    sortWeight: 65
 
 # The Job MindRole holds the mob's Job prototype
 - type: entity

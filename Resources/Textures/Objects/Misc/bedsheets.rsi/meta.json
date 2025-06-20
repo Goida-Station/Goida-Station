@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/0ec86b44b11f5e2f45137d9f6c851b8942a26aa3, sheetbrigmedic sprited by RudeyCoolLeet#3875, sheetce sheethop sheethos sheetrd are adaptations of the original sprites and were created by Alpaccalypse",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/65ec65b65b65f65e65f65d65f65c65b65a65aa65, sheetbrigmedic sprited by RudeyCoolLeet#65, sheetce sheethop sheethos sheetrd are adaptations of the original sprites and were created by Alpaccalypse",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -44,12 +44,12 @@
       "name": "sheetcosmos",
       "delays": [
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },

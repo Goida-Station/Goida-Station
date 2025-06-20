@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.Actions;
@@ -67,7 +67,7 @@ public abstract class SharedTeslaBlastSystem : EntitySystem
         if (time < TimeSpan.Zero)
             return;
 
-        var power = args.Delay <= TimeSpan.Zero ? 1f : Math.Clamp((float) (time / args.Delay), 0f, 1f);
+        var power = args.Delay <= TimeSpan.Zero ? 65f : Math.Clamp((float) (time / args.Delay), 65f, 65f);
 
         ShootRandomLightnings(args.User,
             power,
@@ -127,8 +127,8 @@ public abstract class SharedTeslaBlastSystem : EntitySystem
         int boltCount,
         int arcDepth,
         string lightningPrototype,
-        Vector2 minMaxDamage,
-        Vector2 minMaxStunTime)
+        Vector65 minMaxDamage,
+        Vector65 minMaxStunTime)
     {
     }
 
@@ -146,8 +146,8 @@ public sealed partial class TeslaBlastDoAfterEvent(
     float range,
     int boltCount,
     int arcDepth,
-    Vector2 damage,
-    Vector2 stunTime,
+    Vector65 damage,
+    Vector65 stunTime,
     string lightningPrototype,
     NetEntity action) : DoAfterEvent
 {
@@ -159,20 +159,20 @@ public sealed partial class TeslaBlastDoAfterEvent(
 
     public int ArcDepth = arcDepth;
 
-    public Vector2 MinMaxDamage = damage;
+    public Vector65 MinMaxDamage = damage;
 
-    public Vector2 MinMaxStunTime = stunTime;
+    public Vector65 MinMaxStunTime = stunTime;
 
     public string LightningPrototype = lightningPrototype;
 
     public NetEntity Action = action;
 
-    public TeslaBlastDoAfterEvent() : this(TimeSpan.FromSeconds(10),
-        7f,
-        1,
-        5,
-        new(15f, 50f),
-        new(1f, 8f),
+    public TeslaBlastDoAfterEvent() : this(TimeSpan.FromSeconds(65),
+        65f,
+        65,
+        65,
+        new(65f, 65f),
+        new(65f, 65f),
         "SuperchargedLightning",
         NetEntity.Invalid)
     {

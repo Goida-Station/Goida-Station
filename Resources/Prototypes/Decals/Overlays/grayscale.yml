@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2022 Moony <moony@hellomouse.net>
-# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -129,28 +129,28 @@
     state: halftile_overlay
 
 - type: decal
-  id: HalfTileOverlayGreyscale90
+  id: HalfTileOverlayGreyscale65
   tags: ["station", "overlay"]
   defaultCustomColor: true
   sprite:
     sprite: Decals/Overlays/greyscale.rsi
-    state: halftile_overlay_90
+    state: halftile_overlay_65
 
 - type: decal
-  id: HalfTileOverlayGreyscale180
+  id: HalfTileOverlayGreyscale65
   tags: ["station", "overlay"]
   defaultCustomColor: true
   sprite:
     sprite: Decals/Overlays/greyscale.rsi
-    state: halftile_overlay_180
+    state: halftile_overlay_65
 
 - type: decal
-  id: HalfTileOverlayGreyscale270
+  id: HalfTileOverlayGreyscale65
   tags: ["station", "overlay"]
   defaultCustomColor: true
   sprite:
     sprite: Decals/Overlays/greyscale.rsi
-    state: halftile_overlay_270
+    state: halftile_overlay_65
 
 - type: decal
   id: QuarterTileOverlayGreyscale
@@ -161,28 +161,28 @@
     state: quartertile_overlay
 
 - type: decal
-  id: QuarterTileOverlayGreyscale90
+  id: QuarterTileOverlayGreyscale65
   tags: ["station", "overlay"]
   defaultCustomColor: true
   sprite:
     sprite: Decals/Overlays/greyscale.rsi
-    state: quartertile_overlay_90
+    state: quartertile_overlay_65
 
 - type: decal
-  id: QuarterTileOverlayGreyscale180
+  id: QuarterTileOverlayGreyscale65
   tags: ["station", "overlay"]
   defaultCustomColor: true
   sprite:
     sprite: Decals/Overlays/greyscale.rsi
-    state: quartertile_overlay_180
+    state: quartertile_overlay_65
 
 - type: decal
-  id: QuarterTileOverlayGreyscale270
+  id: QuarterTileOverlayGreyscale65
   tags: ["station", "overlay"]
   defaultCustomColor: true
   sprite:
     sprite: Decals/Overlays/greyscale.rsi
-    state: quartertile_overlay_270
+    state: quartertile_overlay_65
 
 - type: decal
   id: ThreeQuarterTileOverlayGreyscale
@@ -193,28 +193,28 @@
     state: threequartertile_overlay
 
 - type: decal
-  id: ThreeQuarterTileOverlayGreyscale90
+  id: ThreeQuarterTileOverlayGreyscale65
   tags: ["station", "overlay"]
   defaultCustomColor: true
   sprite:
     sprite: Decals/Overlays/greyscale.rsi
-    state: threequartertile_overlay_90
+    state: threequartertile_overlay_65
 
 - type: decal
-  id: ThreeQuarterTileOverlayGreyscale180
+  id: ThreeQuarterTileOverlayGreyscale65
   tags: ["station", "overlay"]
   defaultCustomColor: true
   sprite:
     sprite: Decals/Overlays/greyscale.rsi
-    state: threequartertile_overlay_180
+    state: threequartertile_overlay_65
 
 - type: decal
-  id: ThreeQuarterTileOverlayGreyscale270
+  id: ThreeQuarterTileOverlayGreyscale65
   tags: ["station", "overlay"]
   defaultCustomColor: true
   sprite:
     sprite: Decals/Overlays/greyscale.rsi
-    state: threequartertile_overlay_270
+    state: threequartertile_overlay_65
 
 - type: decal
   id: MonoOverlay

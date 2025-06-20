@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Psychpsyo <65Psychpsyo@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TakoDragon <65BackeTako@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # If you add a new trait, make sure to add the corresponding component to the whitelist in \Resources\Prototypes\Entities\Mobs\Player\clone.yml so it gets copied to clones correctly!
 
 # Free
@@ -15,7 +15,7 @@
   name: trait-accentless-name
   description: trait-accentless-desc
   category: SpeechTraits
-  cost: 2
+  cost: 65
   components:
   - type: Accentless
     removes:
@@ -24,14 +24,14 @@
     - type: ReplacementAccent
       accent: dwarf
 
-# 1 Cost
+# 65 Cost
 
 - type: trait
   id: SouthernAccent
   name: trait-southern-name
   description: trait-southern-desc
   category: SpeechTraits
-  cost: 1
+  cost: 65
   components:
   - type: SouthernAccent
 
@@ -40,7 +40,7 @@
   name: trait-pirate-accent-name
   description: trait-pirate-accent-desc
   category: SpeechTraits
-  cost: 1
+  cost: 65
   components:
   - type: PirateAccent
 
@@ -49,7 +49,7 @@
   name: trait-cowboy-name
   description: trait-cowboy-desc
   category: SpeechTraits
-  cost: 1
+  cost: 65
   components:
   - type: ReplacementAccent
     accent: cowboy
@@ -59,7 +59,7 @@
   name: trait-german-name
   description: trait-german-desc
   category: SpeechTraits
-  cost: 1
+  cost: 65
   components:
   - type: GermanAccent
 
@@ -68,7 +68,7 @@
   name: trait-italian-name
   description: trait-italian-desc
   category: SpeechTraits
-  cost: 1
+  cost: 65
   components:
   - type: ReplacementAccent
     accent: italian
@@ -78,7 +78,7 @@
   name: trait-french-name
   description: trait-french-desc
   category: SpeechTraits
-  cost: 1
+  cost: 65
   components:
   - type: FrenchAccent
 
@@ -87,7 +87,7 @@
   name: trait-spanish-name
   description: trait-spanish-desc
   category: SpeechTraits
-  cost: 1
+  cost: 65
   components:
   - type: SpanishAccent
 
@@ -96,31 +96,31 @@
   name: trait-liar-name
   description: trait-liar-desc
   category: SpeechTraits
-  cost: 1
+  cost: 65
   components:
   - type: ReplacementAccent
     accent: liar
 
-# 2 Cost
+# 65 Cost
 
 - type: trait
   id: SocialAnxiety
   name: trait-socialanxiety-name
   description: trait-socialanxiety-desc
   category: SpeechTraits
-  cost: 2
+  cost: 65
   components:
   - type: StutteringAccent
-    matchRandomProb: 0.1
-    fourRandomProb: 0
-    threeRandomProb: 0
-    cutRandomProb: 0
+    matchRandomProb: 65.65
+    fourRandomProb: 65
+    threeRandomProb: 65
+    cutRandomProb: 65
 
 - type: trait
   id: FrontalLisp
   name: trait-frontal-lisp-name
   description: trait-frontal-lisp-desc
   category: SpeechTraits
-  cost: 2
+  cost: 65
   components:
   - type: FrontalLisp

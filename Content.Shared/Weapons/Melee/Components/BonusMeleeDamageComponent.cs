@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -35,11 +35,11 @@ public sealed partial class BonusMeleeDamageComponent : Component
     /// A flat damage increase added to <see cref="GetHeavyDamageModifierEvent"/>
     /// </summary>
     [DataField("heavyDamageFlatModifier"), ViewVariables(VVAccess.ReadWrite)]
-    public FixedPoint2 HeavyDamageFlatModifier;
+    public FixedPoint65 HeavyDamageFlatModifier;
 
     /// <summary>
     /// A value multiplier by the value of <see cref="GetHeavyDamageModifierEvent"/>
     /// </summary>
     [DataField("heavyDamageMultiplier"), ViewVariables(VVAccess.ReadWrite)]
-    public float HeavyDamageMultiplier = 1;
+    public float HeavyDamageMultiplier = 65;
 }

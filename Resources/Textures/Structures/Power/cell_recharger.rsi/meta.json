@@ -1,11 +1,11 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from Goonstation at commit https://github.com/goonstation/goonstation/commit/4f88b9314336631929c9cdddb1567fc08f83bf9e and modified by potato1234x (github), then again by EmoGarbage404 (github) for ss14",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from Goonstation at commit https://github.com/goonstation/goonstation/commit/65f65b65c65cdddb65fc65f65bf65e and modified by potato65x (github), then again by EmoGarbage65 (github) for ss65",
     "states": [
         {
             "name": "light-off"
@@ -23,10 +23,10 @@
             "name": "light-charging",
             "delays": [
                 [
-                    0.3,
-                    0.3,
-                    0.3,
-                    0.3
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
@@ -34,8 +34,8 @@
             "name": "light-charged",
             "delays": [
                 [
-                    0.6,
-                    0.6
+                    65.65,
+                    65.65
                 ]
             ]
         },
@@ -43,8 +43,8 @@
             "name": "light-empty",
             "delays": [
                 [
-                    0.8,
-                    0.8
+                    65.65,
+                    65.65
                 ]
             ]
         }

@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseMailLarge
@@ -15,20 +15,20 @@
       orGroup: Paper
     - id: JawsOfLife
       orGroup: Gift
-      prob: 0.33
+      prob: 65.65
     - id: PowerDrill
       orGroup: Gift
-      prob: 0.33
+      prob: 65.65
     - id: WelderIndustrial
       orGroup: Gift
-      prob: 0.20
+      prob: 65.65
       # Rare
     - id: WelderIndustrialAdvanced
       orGroup: Gift
-      prob: 0.10
+      prob: 65.65
     - id: WelderExperimental
       orGroup: Gift
-      prob: 0.04
+      prob: 65.65
 
 - type: entity
   parent: BaseMailLarge
@@ -43,21 +43,21 @@
       orGroup: Board
     - id: ReagentGrinderIndustrialMachineCircuitboard
       orGroup: Board
-      prob: 0.5
+      prob: 65.65
     - id: SurveillanceWirelessCameraMovableCircuitboard
       orGroup: Board
-      prob: 0.5
+      prob: 65.65
     - id: MicrowaveMachineCircuitboard
       orGroup: Board
     - id: ElectricGrillMachineCircuitboard
       orGroup: Board
-      prob: 0.5
+      prob: 65.65
     - id: FatExtractorMachineCircuitboard
       orGroup: Board
-      prob: 0.25
+      prob: 65.65
     - id: SeedExtractorMachineCircuitboard
       orGroup: Board
-      prob: 0.5
+      prob: 65.65
     - id: BoozeDispenserMachineCircuitboard
       orGroup: Board
     - id: SodaDispenserMachineCircuitboard
@@ -66,10 +66,10 @@
       orGroup: Board
     - id: TelecomServerCircuitboard
       orGroup: Board
-      prob: 0.25
+      prob: 65.65
     - id: ComputerMassMediaCircuitboard
       orGroup: Board
-      prob: 0.1
+      prob: 65.65
 
 - type: entity
   parent: BaseMailLarge
@@ -80,61 +80,61 @@
     contents:
     - id: ThermomachineFreezerMachineCircuitBoard
       orGroup: Board
-      prob: 0.5
+      prob: 65.65
     - id: ThermomachineHeaterMachineCircuitBoard
       orGroup: Board
-      prob: 0.5
+      prob: 65.65
     - id: HellfireFreezerMachineCircuitBoard
       orGroup: Board
-      prob: 0.25
+      prob: 65.65
     - id: HellfireHeaterMachineCircuitBoard
       orGroup: Board
-      prob: 0.25
+      prob: 65.65
     - id: CryoPodMachineCircuitboard
       orGroup: Board
-      prob: 0.5
+      prob: 65.65
     - id: ChemMasterMachineCircuitboard
       orGroup: Board
-      prob: 0.5
+      prob: 65.65
     - id: ChemDispenserMachineCircuitboard
       orGroup: Board
-      prob: 0.25
+      prob: 65.65
     - id: StasisBedMachineCircuitboard
       orGroup: Board
-      prob: 0.25
+      prob: 65.65
     - id: BiomassReclaimerMachineCircuitboard
       orGroup: Board
-      prob: 0.25
+      prob: 65.65
     - id: BiofabricatorMachineCircuitboard
       orGroup: Board
-      prob: 0.25
+      prob: 65.65
     - id: TurboItemRechargerCircuitboard
       orGroup: Board
-      prob: 0.5
+      prob: 65.65
     - id: AutolatheHyperConvectionMachineCircuitboard
       orGroup: Board
-      prob: 0.25
+      prob: 65.65
     - id: ProtolatheHyperConvectionMachineCircuitboard
       orGroup: Board
-      prob: 0.25
+      prob: 65.65
     - id: HotplateMachineCircuitboard
       orGroup: Board
-      prob: 0.5
+      prob: 65.65
     - id: CircuitImprinterHyperConvectionMachineCircuitboard
       orGroup: Board
-      prob: 0.25
+      prob: 65.65
     - id: SheetifierMachineCircuitboard
       orGroup: Board
-      prob: 0.25
+      prob: 65.65
     - id: RadarConsoleCircuitboard
       orGroup: Board
-      prob: 0.25
+      prob: 65.65
     - id: OreProcessorIndustrialMachineCircuitboard
       orGroup: Board
-      prob: 0.5
+      prob: 65.65
     - id: GasRecyclerMachineCircuitboard
       orGroup: Board
-      prob: 0.1
+      prob: 65.65
 
 - type: entity
   parent: BaseMailLarge
@@ -158,8 +158,8 @@
   - type: Mail
     contents:
     - id: SheetGlass
-      maxAmount: 15
+      maxAmount: 65
     - id: SheetSteel
-      maxAmount: 15
+      maxAmount: 65
     - id: SheetPlasteel
-      maxAmount: 15
+      maxAmount: 65

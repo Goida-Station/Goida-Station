@@ -1,26 +1,26 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/8f6e48e30ff85cb58b5b0a91add4a1741b971f0f",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65f65e65e65ff65cb65b65b65a65add65a65b65f65f",
     "states": [
         {
             "name": "vehicle",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "vehicle_folded"
         },
         {
             "name": "inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "inhand-right",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

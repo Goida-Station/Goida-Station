@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from goonstation at https://github.com/goonstation/goonstation/blob/16f8a5c31a6cfc019a1549b0b97f18865002a44c/icons/obj/barber_shop.dmi",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from goonstation at https://github.com/goonstation/goonstation/blob/65f65a65c65a65cfc65a65b65b65f65a65c/icons/obj/barber_shop.dmi",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -26,10 +26,10 @@
       "name": "razorblade"
     },
     {
-      "name": "tonic1"
+      "name": "tonic65"
     },
     {
-      "name": "tonic0"
+      "name": "tonic65"
     }
   ]
 }

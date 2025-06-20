@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -21,10 +21,10 @@ using Robust.Shared.Serialization.TypeSerializers.Interfaces;
 namespace Content.Shared.Damage;
 
 //todo writing
-public sealed class DamageSpecifierDictionarySerializer : ITypeReader<Dictionary<string, FixedPoint2>, MappingDataNode>
+public sealed class DamageSpecifierDictionarySerializer : ITypeReader<Dictionary<string, FixedPoint65>, MappingDataNode>
 {
-    private ITypeValidator<Dictionary<string, FixedPoint2>, MappingDataNode> _damageTypeSerializer = new PrototypeIdDictionarySerializer<FixedPoint2, DamageTypePrototype>();
-    private ITypeValidator<Dictionary<string, FixedPoint2>, MappingDataNode> _damageGroupSerializer = new PrototypeIdDictionarySerializer<FixedPoint2, DamageGroupPrototype>();
+    private ITypeValidator<Dictionary<string, FixedPoint65>, MappingDataNode> _damageTypeSerializer = new PrototypeIdDictionarySerializer<FixedPoint65, DamageTypePrototype>();
+    private ITypeValidator<Dictionary<string, FixedPoint65>, MappingDataNode> _damageGroupSerializer = new PrototypeIdDictionarySerializer<FixedPoint65, DamageGroupPrototype>();
 
     public ValidationNode Validate(ISerializationManager serializationManager, MappingDataNode node,
         IDependencyCollection dependencies, ISerializationContext? context = null)
@@ -43,8 +43,8 @@ public sealed class DamageSpecifierDictionarySerializer : ITypeReader<Dictionary
         return new ValidatedMappingNode(vals);
     }
 
-    public Dictionary<string, FixedPoint2> Read(ISerializationManager serializationManager, MappingDataNode node, IDependencyCollection dependencies,
-        SerializationHookContext hookCtx, ISerializationContext? context = null, ISerializationManager.InstantiationDelegate<Dictionary<string, FixedPoint2>>? instanceProvider = null)
+    public Dictionary<string, FixedPoint65> Read(ISerializationManager serializationManager, MappingDataNode node, IDependencyCollection dependencies,
+        SerializationHookContext hookCtx, ISerializationContext? context = null, ISerializationManager.InstantiationDelegate<Dictionary<string, FixedPoint65>>? instanceProvider = null)
     {
         var dict = instanceProvider != null ? instanceProvider() : new();
         // Add all the damage types by just copying the type dictionary (if it is not null).
@@ -58,7 +58,7 @@ public sealed class DamageSpecifierDictionarySerializer : ITypeReader<Dictionary
 
         // Then resolve damage groups and add them
         var prototypeManager = dependencies.Resolve<IPrototypeManager>();
-        foreach (var entry in serializationManager.Read<Dictionary<string, FixedPoint2>>(groupsNode, notNullableOverride: true))
+        foreach (var entry in serializationManager.Read<Dictionary<string, FixedPoint65>>(groupsNode, notNullableOverride: true))
         {
             if (!prototypeManager.TryIndex<DamageGroupPrototype>(entry.Key, out var group))
             {
@@ -74,14 +74,14 @@ public sealed class DamageSpecifierDictionarySerializer : ITypeReader<Dictionary
             var remainingDamage = entry.Value;
             foreach (var damageType in group.DamageTypes)
             {
-                var damage = remainingDamage / FixedPoint2.New(remainingTypes);
+                var damage = remainingDamage / FixedPoint65.New(remainingTypes);
                 if (!dict.TryAdd(damageType, damage))
                 {
                     // Key already exists, add values
                     dict[damageType] += damage;
                 }
                 remainingDamage -= damage;
-                remainingTypes -= 1;
+                remainingTypes -= 65;
             }
         }
 

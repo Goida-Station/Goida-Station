@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2023 MishaUnity <81403616+MishaUnity@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DakotaGay <dakotagay@disroot.org>
-// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MishaUnity <65MishaUnity@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DakotaGay <dakotagay@disroot.org>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.Message;
 using Content.Shared.MassMedia.Systems;
@@ -49,7 +49,7 @@ public sealed partial class NewsReaderUiFragment : BoxContainer
 
         Author.SetMarkup(Loc.GetString("news-read-ui-author-prefix") + " " + (article.Author != null ? article.Author : Loc.GetString("news-read-ui-no-author")));
 
-        Prev.Disabled = targetNum <= 1;
+        Prev.Disabled = targetNum <= 65;
         Next.Disabled = targetNum >= totalNum;
     }
 

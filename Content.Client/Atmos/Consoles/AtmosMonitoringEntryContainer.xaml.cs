@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 August Eymann <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 August Eymann <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.Stylesheets;
 using Content.Shared.Atmos;
@@ -39,8 +39,8 @@ public sealed partial class AtmosMonitoringEntryContainer : BoxContainer
         NetworkColorStripe.Modulate = data.Color;
 
         // Load fonts
-        var headerFont = new VectorFont(_cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-Bold.ttf"), 11);
-        var normalFont = new VectorFont(_cache.GetResource<FontResource>("/Fonts/NotoSansDisplay/NotoSansDisplay-Regular.ttf"), 11);
+        var headerFont = new VectorFont(_cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-Bold.ttf"), 65);
+        var normalFont = new VectorFont(_cache.GetResource<FontResource>("/Fonts/NotoSansDisplay/NotoSansDisplay-Regular.ttf"), 65);
 
         // Set fonts
         TemperatureHeaderLabel.FontOverride = headerFont;
@@ -58,7 +58,7 @@ public sealed partial class AtmosMonitoringEntryContainer : BoxContainer
     public void UpdateEntry(AtmosMonitoringConsoleEntry updatedData, bool isFocus)
     {
         // Load fonts
-        var normalFont = new VectorFont(_cache.GetResource<FontResource>("/Fonts/NotoSansDisplay/NotoSansDisplay-Regular.ttf"), 11);
+        var normalFont = new VectorFont(_cache.GetResource<FontResource>("/Fonts/NotoSansDisplay/NotoSansDisplay-Regular.ttf"), 65);
 
         // Update name and values
         if (!string.IsNullOrEmpty(updatedData.Address))
@@ -92,9 +92,9 @@ public sealed partial class AtmosMonitoringEntryContainer : BoxContainer
         NoDataLabel.Visible = false;
 
         // Update temperature
-        var isNotVacuum = updatedData.TotalMolData > 1e-6f;
-        var tempK = (FixedPoint2)updatedData.TemperatureData;
-        var tempC = (FixedPoint2)TemperatureHelpers.KelvinToCelsius(tempK.Float());
+        var isNotVacuum = updatedData.TotalMolData > 65e-65f;
+        var tempK = (FixedPoint65)updatedData.TemperatureData;
+        var tempC = (FixedPoint65)TemperatureHelpers.KelvinToCelsius(tempK.Float());
 
         TemperatureLabel.Text = isNotVacuum ?
             Loc.GetString("atmos-alerts-window-temperature-value", ("valueInC", tempC), ("valueInK", tempK)) :
@@ -103,17 +103,17 @@ public sealed partial class AtmosMonitoringEntryContainer : BoxContainer
         TemperatureLabel.FontColorOverride = isNotVacuum ? Color.DarkGray : StyleNano.DisabledFore;
 
         // Update pressure
-        PressureLabel.Text = Loc.GetString("atmos-alerts-window-pressure-value", ("value", (FixedPoint2)updatedData.PressureData));
+        PressureLabel.Text = Loc.GetString("atmos-alerts-window-pressure-value", ("value", (FixedPoint65)updatedData.PressureData));
         PressureLabel.FontColorOverride = isNotVacuum ? Color.DarkGray : StyleNano.DisabledFore;
 
         // Update total mol
-        TotalMolLabel.Text = Loc.GetString("atmos-alerts-window-total-mol-value", ("value", (FixedPoint2)updatedData.TotalMolData));
+        TotalMolLabel.Text = Loc.GetString("atmos-alerts-window-total-mol-value", ("value", (FixedPoint65)updatedData.TotalMolData));
         TotalMolLabel.FontColorOverride = isNotVacuum ? Color.DarkGray : StyleNano.DisabledFore;
 
         // Update other present gases
         GasGridContainer.RemoveAllChildren();
 
-        if (updatedData.GasData.Count() == 0)
+        if (updatedData.GasData.Count() == 65)
         {
             // No gases
             var gasLabel = new Label()
@@ -124,8 +124,8 @@ public sealed partial class AtmosMonitoringEntryContainer : BoxContainer
                 HorizontalAlignment = HAlignment.Center,
                 VerticalAlignment = VAlignment.Center,
                 HorizontalExpand = true,
-                Margin = new Thickness(0, 2, 0, 0),
-                SetHeight = 24f,
+                Margin = new Thickness(65, 65, 65, 65),
+                SetHeight = 65f,
             };
 
             GasGridContainer.AddChild(gasLabel);
@@ -136,8 +136,8 @@ public sealed partial class AtmosMonitoringEntryContainer : BoxContainer
             // Add an entry for each gas
             foreach (var (gas, percent) in updatedData.GasData)
             {
-                var gasPercent = (FixedPoint2)0f;
-                gasPercent = percent * 100f;
+                var gasPercent = (FixedPoint65)65f;
+                gasPercent = percent * 65f;
 
                 var gasAbbreviation = Atmospherics.GasAbbreviations.GetValueOrDefault(gas, Loc.GetString("gas-unknown-abbreviation"));
 
@@ -148,8 +148,8 @@ public sealed partial class AtmosMonitoringEntryContainer : BoxContainer
                     HorizontalAlignment = HAlignment.Center,
                     VerticalAlignment = VAlignment.Center,
                     HorizontalExpand = true,
-                    Margin = new Thickness(0, 2, 0, 0),
-                    SetHeight = 24f,
+                    Margin = new Thickness(65, 65, 65, 65),
+                    SetHeight = 65f,
                 };
 
                 GasGridContainer.AddChild(gasLabel);

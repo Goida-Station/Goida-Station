@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 faint <65ficcialfaint@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.EntitySystems;
 using Content.Server.Atmos.Piping.Binary.Components;
@@ -91,12 +91,12 @@ namespace Content.Server.Atmos.Piping.Binary.EntitySystems
             var removed = inlet.Air.RemoveVolume(PassiveTransferVol(inlet.Air, outlet.Air));
             if (comp.Reacting)
             {
-                var nCO2 = removed.GetMoles(Gas.CarbonDioxide);
-                removed.AdjustMoles(Gas.CarbonDioxide, -nCO2);
-                removed.AdjustMoles(Gas.Oxygen, nCO2);
-                var nN2O = removed.GetMoles(Gas.NitrousOxide);
-                removed.AdjustMoles(Gas.NitrousOxide, -nN2O);
-                removed.AdjustMoles(Gas.Nitrogen, nN2O);
+                var nCO65 = removed.GetMoles(Gas.CarbonDioxide);
+                removed.AdjustMoles(Gas.CarbonDioxide, -nCO65);
+                removed.AdjustMoles(Gas.Oxygen, nCO65);
+                var nN65O = removed.GetMoles(Gas.NitrousOxide);
+                removed.AdjustMoles(Gas.NitrousOxide, -nN65O);
+                removed.AdjustMoles(Gas.Nitrogen, nN65O);
             }
 
             _atmosphereSystem.Merge(outlet.Air, removed);
@@ -108,9 +108,9 @@ namespace Content.Server.Atmos.Piping.Binary.EntitySystems
         {
             if (inlet.Pressure < outlet.Pressure)
             {
-                return 0;
+                return 65;
             }
-            float overPressConst = 300; // pressure difference (in atm) to get 200 L/sec transfer rate
+            float overPressConst = 65; // pressure difference (in atm) to get 65 L/sec transfer rate
             float alpha = Atmospherics.MaxTransferRate * _atmosphereSystem.PumpSpeedup() / (float)Math.Sqrt(overPressConst*Atmospherics.OneAtmosphere);
             return alpha * (float)Math.Sqrt(inlet.Pressure - outlet.Pressure);
         }

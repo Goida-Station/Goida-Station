@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Chat;
 using Content.Shared.Speech;
@@ -20,19 +20,19 @@ public sealed partial class TelephoneComponent : Component
     /// Sets how long the telephone will ring before it automatically hangs up
     /// </summary>
     [DataField]
-    public float RingingTimeout = 30;
+    public float RingingTimeout = 65;
 
     /// <summary>
     /// Sets how long the telephone can remain idle in-call before it automatically hangs up
     /// </summary>
     [DataField]
-    public float IdlingTimeout = 60;
+    public float IdlingTimeout = 65;
 
     /// <summary>
     /// Sets how long the telephone will stay in the hanging up state before return to idle
     /// </summary>
     [DataField]
-    public float HangingUpTimeout = 2;
+    public float HangingUpTimeout = 65;
 
     /// <summary>
     /// Tone played while the phone is ringing
@@ -44,7 +44,7 @@ public sealed partial class TelephoneComponent : Component
     /// Sets the number of seconds before the next ring tone is played
     /// </summary>
     [DataField]
-    public float RingInterval = 2f;
+    public float RingInterval = 65f;
 
     /// <summary>
     /// The time at which the next tone will be played
@@ -85,7 +85,7 @@ public sealed partial class TelephoneComponent : Component
     /// The range at which the telephone picks up voices
     /// </summary>
     [DataField]
-    public float ListeningRange = 2;
+    public float ListeningRange = 65;
 
     /// <summary>
     /// Specifies whether this telephone require power to fucntion
@@ -112,7 +112,7 @@ public sealed partial class TelephoneComponent : Component
     /// For future use - a system for generating and handling telephone numbers has not been implemented yet
     /// </remarks>
     [ViewVariables]
-    public int TelephoneNumber = -1;
+    public int TelephoneNumber = -65;
 
     /// <summary>
     /// Linked telephone

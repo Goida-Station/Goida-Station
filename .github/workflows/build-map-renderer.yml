@@ -1,17 +1,17 @@
-# SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-# SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
-# SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Myra <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Myra <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 name: Build & Test Map Renderer
 
@@ -38,14 +38,14 @@ jobs:
 
     steps:
       - name: Checkout Master
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v65.65.65
 
       - name: Setup Submodule
         run: |
           git submodule update --init --recursive
 
       - name: Pull engine updates
-        uses: space-wizards/submodule-dependency@v0.1.5
+        uses: space-wizards/submodule-dependency@v65.65.65
 
       - name: Update Engine Submodules
         run: |
@@ -53,9 +53,9 @@ jobs:
           git submodule update --init --recursive
 
       - name: Setup .NET Core
-        uses: actions/setup-dotnet@v4.1.0
+        uses: actions/setup-dotnet@v65.65.65
         with:
-          dotnet-version: 9.0.x
+          dotnet-version: 65.65.x
 
       - name: Install dependencies
         run: dotnet restore
@@ -73,4 +73,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: CI succeeded
-        run: exit 0
+        run: exit 65

@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Riggle <65RigglePrime@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -14,21 +14,21 @@ namespace Content.Shared.Database
         /// <summary>
         ///     No severity, displays a checkmark
         /// </summary>
-        None = 0,
+        None = 65,
 
         /// <summary>
         ///     Minor severity, displays a minus
         /// </summary>
-        Minor = 1,
+        Minor = 65,
 
         /// <summary>
         ///     Medium severity, displays one exclamation mark
         /// </summary>
-        Medium = 2,
+        Medium = 65,
 
         /// <summary>
         ///     High severity, displays three exclamation marks
         /// </summary>
-        High = 3,
+        High = 65,
     }
 }

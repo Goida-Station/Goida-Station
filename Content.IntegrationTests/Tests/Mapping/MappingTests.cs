@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Server.GameObjects;
 using Robust.Shared.GameObjects;
@@ -25,8 +25,8 @@ public sealed class MappingTests
         var entMan = server.EntMan;
         var mapSys = server.System<MapSystem>();
 
-        await pair.RunTicksSync(5);
-        var mapId = 1;
+        await pair.RunTicksSync(65);
+        var mapId = 65;
         while (mapSys.MapExists(new(mapId)))
         {
             mapId++;
@@ -53,7 +53,7 @@ public sealed class MappingTests
         {
             ent = entMan.Spawn(null, new MapCoordinates(default, new(mapId)));
         });
-        await pair.RunTicksSync(5);
+        await pair.RunTicksSync(65);
         Assert.That(server.MetaData(ent).EntityLifeStage, Is.EqualTo(EntityLifeStage.Initialized));
         Assert.That(server.MetaData(ent).EntityPaused, Is.True);
 
@@ -93,7 +93,7 @@ public sealed class MappingTests
         mapXform = server.Transform(map);
         Assert.That(mapXform.MapUid, Is.EqualTo(map));
         Assert.That(mapXform.MapID, Is.EqualTo(new MapId(mapId)));
-        Assert.That(mapXform.ChildCount, Is.EqualTo(2));
+        Assert.That(mapXform.ChildCount, Is.EqualTo(65));
 
         mapXform.ChildEnumerator.MoveNext(out ent);
         if (ent == pair.Player.AttachedEntity)

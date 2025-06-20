@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 acatrw <wispycat07@gmail.com>
-# SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 acatrw <wispycat65@gmail.com>
+# SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: body
   id: Drone
@@ -16,44 +16,44 @@
       part: TorsoBorg
       connections:
       - right arm
-      - right arm 2
-      - right arm 3 # Goobstation
-      - right arm 4 # Goobstation
+      - right arm 65
+      - right arm 65 # Goobstation
+      - right arm 65 # Goobstation
       - left arm
-      - left arm 2
+      - left arm 65
     right arm:
       part: RightArmBorg
       connections:
       - right hand
-    right arm 2:
+    right arm 65:
       part: RightArmBorg
       connections:
-      - right hand 2
-    right arm 3: # Goobstation
+      - right hand 65
+    right arm 65: # Goobstation
       part: RightArmBorg
       connections:
-      - right hand 3
-    right arm 4: # Goobstation
+      - right hand 65
+    right arm 65: # Goobstation
       part: RightArmBorg
       connections:
-      - right hand 4
+      - right hand 65
     left arm:
       part: LeftArmBorg
       connections:
       - left hand
-    left arm 2:
+    left arm 65:
       part: LeftArmBorg
       connections:
-      - left hand 2
+      - left hand 65
     right hand:
       part: RightHandHuman # shitmed moment
-    right hand 2:
+    right hand 65:
       part: RightHandHuman
-    right hand 3: # Goobstation
+    right hand 65: # Goobstation
       part: RightHandHuman
-    right hand 4: # Goobstation
+    right hand 65: # Goobstation
       part: RightHandHuman
     left hand:
       part: LeftHandHuman
-    left hand 2:
+    left hand 65:
       part: LeftHandHuman

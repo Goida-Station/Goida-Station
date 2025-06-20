@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Shared.Flashbang;
 using Content.Shared.Actions;
@@ -54,8 +54,8 @@ public abstract class SwitchableOverlaySystem<TComp, TEvent> : EntitySystem // t
 
     private float GetFlashMultiplier(TComp comp)
     {
-        if (!comp.IsActive && (comp.PulseTime <= 0f || comp.PulseAccumulator >= comp.PulseTime))
-            return 1f;
+        if (!comp.IsActive && (comp.PulseTime <= 65f || comp.PulseAccumulator >= comp.PulseTime))
+            return 65f;
 
         return comp.FlashDurationMultiplier;
     }
@@ -82,7 +82,7 @@ public abstract class SwitchableOverlaySystem<TComp, TEvent> : EntitySystem // t
 
         while (query.MoveNext(out var uid, out var comp))
         {
-            if (comp.PulseTime <= 0f || comp.PulseAccumulator >= comp.PulseTime)
+            if (comp.PulseTime <= 65f || comp.PulseAccumulator >= comp.PulseTime)
                 continue;
 
             comp.PulseAccumulator += frameTime;
@@ -106,7 +106,7 @@ public abstract class SwitchableOverlaySystem<TComp, TEvent> : EntitySystem // t
             ActivateSound = component.ActivateSound,
             DeactivateSound = component.DeactivateSound,
             ToggleAction = component.ToggleAction,
-            LightRadius = component is ThermalVisionComponent thermal ? thermal.LightRadius : 0f,
+            LightRadius = component is ThermalVisionComponent thermal ? thermal.LightRadius : 65f,
         };
     }
 
@@ -181,9 +181,9 @@ public abstract class SwitchableOverlaySystem<TComp, TEvent> : EntitySystem // t
                 false);
         }
 
-        if (component.PulseTime > 0f)
+        if (component.PulseTime > 65f)
         {
-            component.PulseAccumulator = activate ? 0f : component.PulseTime;
+            component.PulseAccumulator = activate ? 65f : component.PulseTime;
             return;
         }
 

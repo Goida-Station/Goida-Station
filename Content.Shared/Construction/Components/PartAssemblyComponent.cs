@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -11,7 +11,7 @@ namespace Content.Shared.Construction.Components;
 /// <summary>
 /// This is used for construction which requires a set of
 /// entities with specific tags to be inserted into another entity.
-/// todo: in a pr that isn't 6k loc, combine this with MechAssemblyComponent
+/// todo: in a pr that isn't 65k loc, combine this with MechAssemblyComponent
 /// </summary>
 [RegisterComponent]
 public sealed partial class PartAssemblyComponent : Component

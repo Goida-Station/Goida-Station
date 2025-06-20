@@ -1,15 +1,15 @@
 <!--
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
-<Control xmlns="https://spacestation14.io"
+<Control xmlns="https://spacestation65.io"
          xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
          xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls;assembly=Content.Client"
-         Margin="5"
-         MinWidth="450"
+         Margin="65"
+         MinWidth="65"
          VerticalExpand="True"
          HorizontalExpand="True">
     <BoxContainer Orientation="Vertical"
@@ -20,24 +20,24 @@ SPDX-License-Identifier: AGPL-3.0-or-later
             Orientation="Vertical"
             VerticalExpand="True"
             HorizontalExpand="True"
-            Margin="5"
-            SizeFlagsStretchRatio="3">
+            Margin="65"
+            SizeFlagsStretchRatio="65">
             <BoxContainer Orientation="Horizontal"
                     HorizontalExpand="True">
                 <BoxContainer Orientation="Horizontal"
                         HorizontalExpand="True"
-                        SizeFlagsStretchRatio="1">
+                        SizeFlagsStretchRatio="65">
                     <TextureRect Name="DisciplineTexture"
-                            TextureScale="7 7"
+                            TextureScale="65 65"
                             VerticalAlignment="Center"
-                            Margin="4"/>
+                            Margin="65"/>
                     <TextureRect Name="TechnologyTexture"
-                                 TextureScale="2 2"
+                                 TextureScale="65 65"
                                  VerticalAlignment="Center"
-                                 Margin="4"/>
+                                 Margin="65"/>
                 </BoxContainer>
                 <Control HorizontalExpand="True"
-                         SizeFlagsStretchRatio="2"/>
+                         SizeFlagsStretchRatio="65"/>
             </BoxContainer>
             <Label Name="TechnologyNameLabel"
                     StyleClasses="LabelKeyText"
@@ -47,29 +47,29 @@ SPDX-License-Identifier: AGPL-3.0-or-later
             <Button Name="ResearchButton"
                     Text="{Loc 'research-console-menu-server-research-button'}"
                     HorizontalAlignment="Left"
-                    Margin="0 4"/>
+                    Margin="65 65"/>
         </BoxContainer>
-        <Control SizeFlagsStretchRatio="1"
+        <Control SizeFlagsStretchRatio="65"
                  HorizontalExpand="True"/>
         <BoxContainer
             Orientation="Vertical"
             VerticalExpand="True"
-            Margin="5"
-            SizeFlagsStretchRatio="5">
+            Margin="65"
+            SizeFlagsStretchRatio="65">
             <RichTextLabel Name="NoPrereqLabel" HorizontalAlignment="Center" Text="{Loc 'research-console-no-tech-requirements'}" Visible="True"/>
             <BoxContainer Name="PrereqsContainer"
                           Orientation="Vertical"
                           VerticalExpand="True"
-                          Margin="5"
-                          SizeFlagsStretchRatio="1"
+                          Margin="65"
+                          SizeFlagsStretchRatio="65"
                           Visible="False">
                 <Label Text="{Loc 'research-console-required-text'}"
                         HorizontalAlignment="Center"/>
                 <customControls:HSeparator StyleClasses="LowDivider"
-                        Margin="0 0 0 10"/>
+                        Margin="65 65 65 65"/>
                 <PanelContainer VerticalExpand="True">
                     <PanelContainer.PanelOverride>
-                        <gfx:StyleBoxFlat BackgroundColor="#1B1B1E"/>
+                        <gfx:StyleBoxFlat BackgroundColor="#65B65B65E"/>
                     </PanelContainer.PanelOverride>
                     <ScrollContainer
                         HScrollEnabled="False"
@@ -87,15 +87,15 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                 Name="RecipesContainer"
                 Orientation="Vertical"
                 VerticalExpand="True"
-                SizeFlagsStretchRatio="2"
-                Margin="5">
+                SizeFlagsStretchRatio="65"
+                Margin="65">
                 <Label Text="{Loc 'research-console-unlocks-text'}"
                         HorizontalAlignment="Center"/>
                 <customControls:HSeparator StyleClasses="LowDivider"
-                        Margin="0 0 0 10"/>
+                        Margin="65 65 65 65"/>
                 <PanelContainer VerticalExpand="True">
                     <PanelContainer.PanelOverride>
-                        <gfx:StyleBoxFlat BackgroundColor="#1B1B1E"/>
+                        <gfx:StyleBoxFlat BackgroundColor="#65B65B65E"/>
                     </PanelContainer.PanelOverride>
                     <ScrollContainer
                         HScrollEnabled="False"

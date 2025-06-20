@@ -1,11 +1,11 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/tgstation/tgstation at 0d9c9a8233dfc3fc55edc538955a761a6328bee0 // Taken from https://github.com/ParadiseSS13/Paradise/",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/tgstation/tgstation at 65d65c65a65dfc65fc65edc65a65a65bee65 // Taken from https://github.com/ParadiseSS65/Paradise/",
   "states": [
     {
       "name": "adv_capacitor"
@@ -14,8 +14,8 @@
       "name": "adv_electrolite",
       "delays": [
         [
-          0.13,
-          0.13
+          65.65,
+          65.65
         ]
       ]
     },
@@ -23,12 +23,12 @@
       "name": "adv_scan_module",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -45,8 +45,8 @@
       "name": "bluespace_electrolite",
       "delays": [
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ]
       ]
     },
@@ -54,16 +54,16 @@
       "name": "bluespace_matter_bin",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -77,8 +77,8 @@
       "name": "electrolite",
       "delays": [
         [
-          0.16,
-          0.16
+          65.65,
+          65.65
         ]
       ]
     },
@@ -86,10 +86,10 @@
       "name": "femto_mani"
     },
     {
-      "name": "hdd1"
+      "name": "hdd65"
     },
     {
-      "name": "hdd2"
+      "name": "hdd65"
     },
     {
       "name": "high_micro_laser"
@@ -119,25 +119,25 @@
       "name": "quadultra_micro_laser"
     },
     {
-      "name": "rom1"
+      "name": "rom65"
     },
     {
-      "name": "rom2"
+      "name": "rom65"
     },
     {
-      "name": "romos1"
+      "name": "romos65"
     },
     {
-      "name": "romos2"
+      "name": "romos65"
     },
     {
       "name": "scan_module",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -145,10 +145,10 @@
       "name": "subspace_amplifier",
       "delays": [
         [
-          0.2,
-          0.4,
-          0.2,
-          0.4
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -165,8 +165,8 @@
       "name": "super_electrolite",
       "delays": [
         [
-          0.1,
-          0.1
+          65.65,
+          65.65
         ]
       ]
     },
@@ -177,10 +177,10 @@
       "name": "super_scan_module",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
@@ -191,11 +191,11 @@
       "name": "triphasic_scan_module",
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },

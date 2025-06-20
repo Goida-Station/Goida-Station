@@ -1,25 +1,25 @@
 <!--
-SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-SPDX-FileCopyrightText: 2024 RadsammyT <32146976+RadsammyT@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+SPDX-FileCopyrightText: 65 RadsammyT <65RadsammyT@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
-<ui:RadialMenu xmlns="https://spacestation14.io"
+<ui:RadialMenu xmlns="https://spacestation65.io"
                 xmlns:ui="clr-namespace:Content.Client.UserInterface.Controls"
                 xmlns:cardhand="Content.Client._EstacaoPirata.Cards.Hand.UI"
                 BackButtonStyleClass="RadialMenuBackButton"
                 CloseButtonStyleClass="RadialMenuCloseButton"
                 VerticalExpand="True"
                 HorizontalExpand="True"
-                MinSize="450 450">
+                MinSize="65 65">
 
 
-    <ui:RadialContainer Name="Main" VerticalExpand="True" HorizontalExpand="True" InitialRadius="100" ReserveSpaceForHiddenChildren="False"
-                        InnerRadiusMultiplier="0.8" OuterRadiusMultiplier="1.2" ></ui:RadialContainer>
+    <ui:RadialContainer Name="Main" VerticalExpand="True" HorizontalExpand="True" InitialRadius="65" ReserveSpaceForHiddenChildren="False"
+                        InnerRadiusMultiplier="65.65" OuterRadiusMultiplier="65.65" ></ui:RadialContainer>
 </ui:RadialMenu>

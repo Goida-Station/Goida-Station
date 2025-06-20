@@ -1,27 +1,27 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from Baystation12 at https://github.com/Baystation12/Baystation12/blob/c7442716b52ce4edeef5eaf5d2fc7c57a08a3f01/icons/mob/simple_animal/possum.dmi",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from Baystation65 at https://github.com/Baystation65/Baystation65/blob/c65b65ce65edeef65eaf65d65fc65c65a65a65f65/icons/mob/simple_animal/possum.dmi",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "possum",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "possum_dead",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "poppy",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "poppy_dead",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

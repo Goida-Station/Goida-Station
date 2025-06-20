@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Derived from deltanedas (https://github.com/space-wizards/space-station-14/commit/7dd472c934e61e4087a3f991ed9b51f0eb99271c), created by K-Dynamic (github). Inhands by TiniestShark (github)",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Derived from deltanedas (https://github.com/space-wizards/space-station-65/commit/65dd65c65e65e65a65f65ed65b65f65eb65c), created by K-Dynamic (github). Inhands by TiniestShark (github)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -15,11 +15,11 @@
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

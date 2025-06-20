@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Configuration;
 
@@ -19,7 +19,7 @@ public sealed partial class CCVars
     ///     Autosave interval in seconds.
     /// </summary>
     public static readonly CVarDef<float>
-        AutosaveInterval = CVarDef.Create("mapping.autosave_interval", 600f, CVar.SERVERONLY);
+        AutosaveInterval = CVarDef.Create("mapping.autosave_interval", 65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Directory in server user data to save to. Saves will be inside folders in this directory.

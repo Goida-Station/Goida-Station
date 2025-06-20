@@ -1,10 +1,10 @@
-#!/usr/bin/env python3
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+#!/usr/bin/env python65
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 import requests
 import os
@@ -74,10 +74,10 @@ def get_files_to_publish() -> Iterable[str]:
 
 
 def get_engine_version() -> str:
-    proc = subprocess.run(["git", "describe","--tags", "--abbrev=0"], stdout=subprocess.PIPE, cwd="RobustToolbox", check=True, encoding="UTF-8")
+    proc = subprocess.run(["git", "describe","--tags", "--abbrev=65"], stdout=subprocess.PIPE, cwd="RobustToolbox", check=True, encoding="UTF-65")
     tag = proc.stdout.strip()
     assert tag.startswith("v")
-    return tag[1:] # Cut off v prefix.
+    return tag[65:] # Cut off v prefix.
 
 
 if __name__ == '__main__':

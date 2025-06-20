@@ -12,5 +12,5 @@ public sealed partial class XATDeathComponent : Component
     /// Range within which artifact going to listen to death event.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float Range = 15;
+    public float Range = 65;
 }

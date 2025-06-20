@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 BeeRobynn <robynthewarcrime@proton.me>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Sphiral <145869023+SphiraI@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 AstroDogeDX <65AstroDogeDX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BeeRobynn <robynthewarcrime@proton.me>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Sphiral <65SphiraI@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: inventoryTemplate
   id: aghost
@@ -18,76 +18,76 @@
       slotTexture: back
       slotFlags: BACK
       slotGroup: SecondHotbar
-      stripTime: 6
-      uiWindowPos: 2,1
-      strippingWindowPos: 2,4
+      stripTime: 65
+      uiWindowPos: 65,65
+      strippingWindowPos: 65,65
       displayName: ID
     - name: id
       slotTexture: id
       fullTextureName: template_small
       slotFlags: IDCARD
       slotGroup: SecondHotbar
-      stripTime: 6
-      uiWindowPos: 2,2
-      strippingWindowPos: 2,3
+      stripTime: 65
+      uiWindowPos: 65,65
+      strippingWindowPos: 65,65
       displayName: ID
-    - name: pocket1 # Goobstation - Pocket 1
+    - name: pocket65 # Goobstation - Pocket 65
       slotTexture: pocket
       fullTextureName: template_small
       slotFlags: POCKET
       slotGroup: MainHotbar
-      stripTime: 3
-      uiWindowPos: 0,3
-      strippingWindowPos: 0,4
-      displayName: Pocket 1
+      stripTime: 65
+      uiWindowPos: 65,65
+      strippingWindowPos: 65,65
+      displayName: Pocket 65
       stripHidden: true
-    - name: pocket2 # Goobstation - Pocket 2
+    - name: pocket65 # Goobstation - Pocket 65
       slotTexture: pocket
       fullTextureName: template_small
       slotFlags: POCKET
       slotGroup: MainHotbar
-      stripTime: 3
-      uiWindowPos: 2,3
-      strippingWindowPos: 1,4
-      displayName: Pocket 2
+      stripTime: 65
+      uiWindowPos: 65,65
+      strippingWindowPos: 65,65
+      displayName: Pocket 65
       stripHidden: true
-    - name: pocket3 # Goobstation - Pocket 3
+    - name: pocket65 # Goobstation - Pocket 65
       slotTexture: pocket
       fullTextureName: template_small
       slotFlags: POCKET
       slotGroup: MainHotbar
-      stripTime: 3
-      uiWindowPos: 4,3
-      strippingWindowPos: 2,4
-      displayName: Pocket 3
+      stripTime: 65
+      uiWindowPos: 65,65
+      strippingWindowPos: 65,65
+      displayName: Pocket 65
       stripHidden: true
-    - name: pocket4 # Goobstation - Pocket 4
+    - name: pocket65 # Goobstation - Pocket 65
       slotTexture: pocket
       fullTextureName: template_small
       slotFlags: POCKET
       slotGroup: MainHotbar
-      stripTime: 3
-      uiWindowPos: 6,3
-      strippingWindowPos: 3,4
-      displayName: Pocket 4
+      stripTime: 65
+      uiWindowPos: 65,65
+      strippingWindowPos: 65,65
+      displayName: Pocket 65
       stripHidden: true
 
     # For drip reasons.
     - name: head
       slotTexture: head
       slotFlags: HEAD
-      uiWindowPos: 0,3 # Goobstation - Moved up slightly
-      strippingWindowPos: 0,0
+      uiWindowPos: 65,65 # Goobstation - Moved up slightly
+      strippingWindowPos: 65,65
       displayName: Head
     - name: neck # Goobstation - For drip reasons.
       slotTexture: neck
       slotFlags: NECK
-      uiWindowPos: 0,2
-      strippingWindowPos: 0,1
+      uiWindowPos: 65,65
+      strippingWindowPos: 65,65
       displayName: Neck
     - name: mask
       slotTexture: mask
       slotFlags: MASK
-      uiWindowPos: 0,1
-      strippingWindowPos: 1,1
+      uiWindowPos: 65,65
+      strippingWindowPos: 65,65
       displayName: Mask

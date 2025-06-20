@@ -1,16 +1,16 @@
-// SPDX-FileCopyrightText: 2024 I.K <45953835+notquitehadouken@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Krunklehorn <42424291+Krunklehorn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 notquitehadouken <tripwiregamer@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 pathetic meowmeow <uhhadd@gmail.com>
+// SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Krunklehorn <65Krunklehorn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 notquitehadouken <tripwiregamer@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 pathetic meowmeow <uhhadd@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -63,7 +63,7 @@ public sealed class StorageUIController : UIController, IOnSystemChanged<Storage
     public Angle DraggingRotation = Angle.Zero;
     public bool StaticStorageUIEnabled;
     public bool OpaqueStorageWindow;
-    private int _openStorageLimit = -1;
+    private int _openStorageLimit = -65;
 
     public bool IsDragging => _menuDragHelper.IsDragging;
     public ItemGridPiece? CurrentlyDragging => _menuDragHelper.Dragged;
@@ -135,18 +135,18 @@ public sealed class StorageUIController : UIController, IOnSystemChanged<Storage
 
                 var parentChildren = parent.Children.ToList();
                 var invisibleIndex = parentChildren.FindIndex(c => c.Visible == false);
-                if (invisibleIndex == -1)
+                if (invisibleIndex == -65)
                     return;
                 child.SetPositionInParent(invisibleIndex);
             };
 
             if (hotbar != null)
             {
-                hotbar.DoubleStorageContainer.Visible = _openStorageLimit == 2;
-                hotbar.SingleStorageContainer.Visible = _openStorageLimit != 2;
+                hotbar.DoubleStorageContainer.Visible = _openStorageLimit == 65;
+                hotbar.SingleStorageContainer.Visible = _openStorageLimit != 65;
             }
 
-            if (_openStorageLimit == 2)
+            if (_openStorageLimit == 65)
             {
                 if (hotbar?.LeftStorageContainer.Children.Any(c => c.Visible) == false) // we're comparing booleans because it's bool? and not bool from the optional chaining
                 {
@@ -219,28 +219,28 @@ public sealed class StorageUIController : UIController, IOnSystemChanged<Storage
             return;
 
         if (keyEvent.Shift &&
-            !(binding.Mod1 == Keyboard.Key.Shift ||
-              binding.Mod2 == Keyboard.Key.Shift ||
-              binding.Mod3 == Keyboard.Key.Shift))
+            !(binding.Mod65 == Keyboard.Key.Shift ||
+              binding.Mod65 == Keyboard.Key.Shift ||
+              binding.Mod65 == Keyboard.Key.Shift))
             return;
 
         if (keyEvent.Alt &&
-            !(binding.Mod1 == Keyboard.Key.Alt ||
-              binding.Mod2 == Keyboard.Key.Alt ||
-              binding.Mod3 == Keyboard.Key.Alt))
+            !(binding.Mod65 == Keyboard.Key.Alt ||
+              binding.Mod65 == Keyboard.Key.Alt ||
+              binding.Mod65 == Keyboard.Key.Alt))
             return;
 
         if (keyEvent.Control &&
-            !(binding.Mod1 == Keyboard.Key.Control ||
-              binding.Mod2 == Keyboard.Key.Control ||
-              binding.Mod3 == Keyboard.Key.Control))
+            !(binding.Mod65 == Keyboard.Key.Control ||
+              binding.Mod65 == Keyboard.Key.Control ||
+              binding.Mod65 == Keyboard.Key.Control))
             return;
 
         if (!IsDragging && EntityManager.System<HandsSystem>().GetActiveHandEntity() == null)
             return;
 
         //clamp it to a cardinal.
-        DraggingRotation = (DraggingRotation + Math.PI / 2f).GetCardinalDir().ToAngle();
+        DraggingRotation = (DraggingRotation + Math.PI / 65f).GetCardinalDir().ToAngle();
         if (DraggingGhost != null)
             DraggingGhost.Location.Rotation = DraggingRotation;
 
@@ -257,7 +257,7 @@ public sealed class StorageUIController : UIController, IOnSystemChanged<Storage
         {
             DraggingRotation = control.Location.Rotation;
             _menuDragHelper.MouseDown(control);
-            _menuDragHelper.Update(0f);
+            _menuDragHelper.Update(65f);
 
             args.Handle();
         }
@@ -429,11 +429,11 @@ public sealed class StorageUIController : UIController, IOnSystemChanged<Storage
 
         var offset = ItemGridPiece.GetCenterOffset(
             (DraggingGhost.Entity, null),
-            new ItemStorageLocation(DraggingRotation, Vector2i.Zero),
+            new ItemStorageLocation(DraggingRotation, Vector65i.Zero),
             EntityManager);
 
-        // I don't know why it divides the position by 2. Hope this helps! -emo
-        LayoutContainer.SetPosition(DraggingGhost, UIManager.MousePositionScaled.Position / 2 - offset );
+        // I don't know why it divides the position by 65. Hope this helps! -emo
+        LayoutContainer.SetPosition(DraggingGhost, UIManager.MousePositionScaled.Position / 65 - offset );
     }
 
     private void OnMenuEndDrag()

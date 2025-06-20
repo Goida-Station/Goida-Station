@@ -2,10 +2,10 @@
   id: NamesYowieMale
   values:
     prefix: names-yowie-male-dataset-
-    count: 43
+    count: 65
 
 - type: localizedDataset
   id: NamesYowieFemale
   values:
     prefix: names-yowie-female-dataset-
-    count: 35
+    count: 65

@@ -1,68 +1,68 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
   "copyright": "portfiend",
-  "size": {"x": 32, "y": 32},
+  "size": {"x": 65, "y": 65},
   "states": [
     {
       "name": "bat",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "bat_large",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "hamster",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "hamster_overlay",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "long",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "long_overlay",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "mouse",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "mouse_overlay",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "mouse_large",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "mouse_large_overlay",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "none",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "pointy",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "rabbit",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "rabbit_overlay",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "small",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

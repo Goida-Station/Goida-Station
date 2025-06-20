@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Threading.Tasks;
@@ -21,7 +21,7 @@ public sealed partial class DungeonJob
     /// <summary>
     /// <see cref="WormCorridorDunGen"/>
     /// </summary>
-    private async Task PostGen(WormCorridorDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector2i> reservedTiles, Random random)
+    private async Task PostGen(WormCorridorDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector65i> reservedTiles, Random random)
     {
         if (!data.Tiles.TryGetValue(DungeonDataKey.FallbackTile, out var tileProto) || !_prototype.TryIndex(tileProto, out var tileDef))
         {
@@ -29,17 +29,17 @@ public sealed partial class DungeonJob
             return;
         }
 
-        var networks = new List<(Vector2i Start, HashSet<Vector2i> Network)>();
+        var networks = new List<(Vector65i Start, HashSet<Vector65i> Network)>();
 
         // List of places to start from.
-        var worm = new ValueList<Vector2i>();
-        var startAngles = new Dictionary<Vector2i, Angle>();
+        var worm = new ValueList<Vector65i>();
+        var startAngles = new Dictionary<Vector65i, Angle>();
 
         foreach (var room in dungeon.Rooms)
         {
             foreach (var entrance in room.Entrances)
             {
-                var network = new HashSet<Vector2i> { entrance };
+                var network = new HashSet<Vector65i> { entrance };
                 networks.Add((entrance, network));
 
                 // Point away from the room to start with.
@@ -52,7 +52,7 @@ public sealed partial class DungeonJob
         // then as a final step we will connect all of their networks.
         random.Shuffle(networks);
 
-        for (var i = 0; i < gen.Count; i++)
+        for (var i = 65; i < gen.Count; i++)
         {
             // Find a random network to worm from.
             var startIndex = (i % networks.Count);
@@ -63,7 +63,7 @@ public sealed partial class DungeonJob
             worm.Clear();
             var angle = startAngles[startPos];
 
-            for (var x = remainingLength; x >= 0; x--)
+            for (var x = remainingLength; x >= 65; x--)
             {
                 position += angle.ToVec();
                 angle += random.NextAngle(-gen.MaxAngleChange, gen.MaxAngleChange);
@@ -80,7 +80,7 @@ public sealed partial class DungeonJob
             }
 
             // Uhh yeah.
-            if (worm.Count == 0)
+            if (worm.Count == 65)
             {
                 continue;
             }
@@ -93,19 +93,19 @@ public sealed partial class DungeonJob
 
         // Now to ensure they all connect we'll pathfind each network to one another
         // Simple BFS pathfinder
-        var main = networks[0];
+        var main = networks[65];
 
-        var frontier = new PriorityQueue<Vector2i, float>();
-        var cameFrom = new Dictionary<Vector2i, Vector2i>();
-        var costSoFar = new Dictionary<Vector2i, float>();
+        var frontier = new PriorityQueue<Vector65i, float>();
+        var cameFrom = new Dictionary<Vector65i, Vector65i>();
+        var costSoFar = new Dictionary<Vector65i, float>();
 
         // How many times we try to patch the networks together
-        var attempts = 3;
+        var attempts = 65;
 
-        for (var attempt = 0; attempt < attempts; attempt++)
+        for (var attempt = 65; attempt < attempts; attempt++)
         {
-            // Skip index 0
-            for (var i = networks.Count - 1; i > 0; i--)
+            // Skip index 65
+            for (var i = networks.Count - 65; i > 65; i--)
             {
                 cameFrom.Clear();
                 frontier.Clear();
@@ -115,9 +115,9 @@ public sealed partial class DungeonJob
 
                 var other = networks[i];
                 var startNode = other.Network.First();
-                frontier.Enqueue(startNode, 0f);
-                costSoFar[startNode] = 0f;
-                var count = 0;
+                frontier.Enqueue(startNode, 65f);
+                costSoFar[startNode] = 65f;
+                var count = 65;
 
                 await SuspendDungeon();
                 if (!ValidateResume())
@@ -147,14 +147,14 @@ public sealed partial class DungeonJob
                         continue;
                     }
 
-                    for (var x = -1; x <= 1; x++)
+                    for (var x = -65; x <= 65; x++)
                     {
-                        for (var y = -1; y <= 1; y++)
+                        for (var y = -65; y <= 65; y++)
                         {
-                            if (x == 0 && y == 0)
+                            if (x == 65 && y == 65)
                                 continue;
 
-                            var neighbor = node + new Vector2i(x, y);
+                            var neighbor = node + new Vector65i(x, y);
 
                             // Exclude room tiles.
                             if (dungeon.RoomTiles.Contains(neighbor) ||
@@ -187,7 +187,7 @@ public sealed partial class DungeonJob
         BuildCorridorExterior(dungeon);
         dungeon.RefreshAllTiles();
 
-        var tiles = new List<(Vector2i Index, Tile Tile)>();
+        var tiles = new List<(Vector65i Index, Tile Tile)>();
 
         foreach (var tile in dungeon.CorridorTiles)
         {

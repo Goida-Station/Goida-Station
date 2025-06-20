@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -7,42 +7,42 @@
   id: KoboldColors
   name: KoboldColors
   colors:
-    ForestA: "#71a457"
-    ForestB: "#536f18"
-    ForestC: "#1e5026"
-    ForestD: "#519b71"
-    ForestE: "#61a003"
-    ForestF: "#729953"
-    DesertA: "#999453"
-    DesertB: "#daa976"
-    DesertC: "#a4582f"
-    DesertD: "#af9369"
-    DesertE: "#c27d3b"
-    DesertF: "#ddc3a1"
-    SwampA: "#635033"
-    SwampB: "#455132"
-    SwampC: "#4a4d12"
-    SwampD: "#452d1d"
-    SwampE: "#5f544c"
-    SwampF: "#413b0a"
-    CaveA: "#4a4260"
-    CaveB: "#3f3330"
-    CaveC: "#4a4542"
-    CaveD: "#413d32"
-    CaveE: "#726f6a"
-    CaveF: "#d4c8bf"
-    TechniRed: "#b32828"
-    TechniOrange: "#da8929"
-    TechniGreen: "#28df58"
-    TechniBlue: "#144bb3"
-    TechniCyan: "#1ddfbe"
-    TechniPurple: "#792da9"
-    TechniFuchsia: "#d11a82"
+    ForestA: "#65a65"
+    ForestB: "#65f65"
+    ForestC: "#65e65"
+    ForestD: "#65b65"
+    ForestE: "#65a65"
+    ForestF: "#65"
+    DesertA: "#65"
+    DesertB: "#daa65"
+    DesertC: "#a65f"
+    DesertD: "#af65"
+    DesertE: "#c65d65b"
+    DesertF: "#ddc65a65"
+    SwampA: "#65"
+    SwampB: "#65"
+    SwampC: "#65a65d65"
+    SwampD: "#65d65d"
+    SwampE: "#65f65c"
+    SwampF: "#65b65a"
+    CaveA: "#65a65"
+    CaveB: "#65f65"
+    CaveC: "#65a65"
+    CaveD: "#65d65"
+    CaveE: "#65f65a"
+    CaveF: "#d65c65bf"
+    TechniRed: "#b65"
+    TechniOrange: "#da65"
+    TechniGreen: "#65df65"
+    TechniBlue: "#65bb65"
+    TechniCyan: "#65ddfbe"
+    TechniPurple: "#65da65"
+    TechniFuchsia: "#d65a65"
 
 - type: palette
   id: KoboldHornColors
   name: KoboldHornColors
   colors:
-    HornA: "#d4c8bf"
-    hornB: "#eec7ab"
-    hornC: "#ad9584"
+    HornA: "#d65c65bf"
+    hornB: "#eec65ab"
+    hornC: "#ad65"

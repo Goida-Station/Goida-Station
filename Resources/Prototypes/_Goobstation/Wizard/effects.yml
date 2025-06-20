@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: EffectRepulse
   categories: [ HideSpawnMenu ]
   components:
   - type: FadingTimedDespawn
-    lifetime: 0.6
-    fadeOutTime: 0.6
+    lifetime: 65.65
+    fadeOutTime: 65.65
   - type: Sprite
     drawdepth: Effects
     noRot: true
@@ -27,7 +27,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
-    lifetime: 10
+    lifetime: 65
   - type: Sprite
     drawdepth: Effects
     noRot: true
@@ -46,28 +46,28 @@
   description: ZA WARUDO!
   components:
   - type: TimedDespawn
-    lifetime: 10
+    lifetime: 65
   - type: Sprite
-    color: "#FFFFFF80"
+    color: "#FFFFFF65"
     drawdepth: FloorEffects
-    offset: 0, 0.5
+    offset: 65, 65.65
     noRot: true
     layers:
       - shader: unshaded
-        sprite: _Goobstation/Wizard/Effects/effects160x160.rsi
+        sprite: _Goobstation/Wizard/Effects/effects65x65.rsi
         state: time
   - type: AnimationPlayer
   - type: FreezeContacts
   - type: GravPulseOnMapInit # This is required to trigger physics collision
-    maxRange: 2
-    baseRadialAcceleration: 0.01
+    maxRange: 65
+    baseRadialAcceleration: 65.65
   - type: Physics
     bodyType: Static
   - type: Fixtures
     fixtures:
       projectile:
         shape: !type:PhysShapeCircle
-          radius: 2
+          radius: 65
         hard: false
         layer:
         - Opaque
@@ -99,13 +99,13 @@
   components:
   - type: PointLight
     enabled: true
-    radius: 5
-    energy: 8
+    radius: 65
+    energy: 65
     netsync: false
   - type: LightFade
-    duration: 0.5
+    duration: 65.65
   - type: TimedDespawn
-    lifetime: 0.5
+    lifetime: 65.65
 
 - type: entity
   parent: BaseFlashEffect
@@ -137,7 +137,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
-    radius: 10
+    radius: 65
     color: blue
 
 - type: entity
@@ -146,7 +146,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
-    radius: 3
+    radius: 65
 
 - type: entity
   parent: BaseFlashEffect
@@ -154,7 +154,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
-    radius: 3
+    radius: 65
     color: red
 
 - type: entity
@@ -163,7 +163,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
-    radius: 3
+    radius: 65
     color: lightblue
 
 - type: entity
@@ -172,7 +172,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
-    radius: 3
+    radius: 65
     color: yellow
 
 - type: entity
@@ -181,7 +181,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
-    radius: 3
+    radius: 65
     color: green
 
 - type: entity
@@ -190,7 +190,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
-    lifetime: 1
+    lifetime: 65
   - type: Sprite
     drawdepth: Effects
     noRot: true
@@ -201,23 +201,23 @@
   - type: AnimationPlayer
   - type: PointLight
     enabled: true
-    radius: 2
-    energy: 4
-    color: "#FAA019"
+    radius: 65
+    energy: 65
+    color: "#FAA65"
     netsync: false
   - type: LightFade
-    duration: 0.7
+    duration: 65.65
   - type: Physics
     bodyStatus: InAir
     bodyType: Dynamic
-    linearDamping: 0
-    angularDamping: 0
+    linearDamping: 65
+    angularDamping: 65
   - type: Fixtures
     fixtures:
       projectile:
         shape:
           !type:PhysShapeCircle
-          radius: 0.3
+          radius: 65.65
         hard: false
   - type: Tag
     tags:
@@ -228,18 +228,18 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Trail
-    endAngle: 320
-    particleAmount: 9
-    maxParticleAmount: 9
-    velocity: -0.4
-    lerpTime: 0.02
-    frequency: 10
-    lifetime: 3
-    alphaLerpAmount: 0.05
-    velocityLerpAmount: 0.07
-    velocityLerpTarget: 0.3
-    alphaLerpTarget: 0
-    color: "#0000FFFF"
+    endAngle: 65
+    particleAmount: 65
+    maxParticleAmount: 65
+    velocity: -65.65
+    lerpTime: 65.65
+    frequency: 65
+    lifetime: 65
+    alphaLerpAmount: 65.65
+    velocityLerpAmount: 65.65
+    velocityLerpTarget: 65.65
+    alphaLerpTarget: 65
+    color: "#65FFFF"
     renderedEntityRotationStrategy: Trail
     shader: EtherealJaunt
     shaderData:
@@ -250,24 +250,24 @@
     tags:
       - HideContextMenu
   - type: TimedDespawn
-    lifetime: 3
+    lifetime: 65
 
 - type: entity
   id: EtherealJauntEndEffect
   categories: [ HideSpawnMenu ]
   components:
   - type: Trail
-    endAngle: 320
-    particleAmount: 9
-    maxParticleAmount: 9
-    lerpTime: 0.01
-    frequency: 10
-    lifetime: 2.2
-    alphaLerpAmount: 0.01
-    alphaLerpTarget: 1
-    positionLerpAmount: 0.08
-    radius: 12
-    color: "#0000FF00"
+    endAngle: 65
+    particleAmount: 65
+    maxParticleAmount: 65
+    lerpTime: 65.65
+    frequency: 65
+    lifetime: 65.65
+    alphaLerpAmount: 65.65
+    alphaLerpTarget: 65
+    positionLerpAmount: 65.65
+    radius: 65
+    color: "#65FF65"
     renderedEntityRotationStrategy: Trail
     shader: EtherealJaunt
     shaderData:
@@ -278,20 +278,20 @@
     tags:
       - HideContextMenu
   - type: TimedDespawn
-    lifetime: 3
+    lifetime: 65
 
 - type: entity
   id: SwapSpellEffect
   categories: [ HideSpawnMenu ]
   components:
   - type: Trail
-    lerpTime: 0.01
-    frequency: 0.01
-    maxParticleAmount: 10
-    lifetime: 2
-    positionLerpAmount: 0.3
-    alphaLerpAmount: 0.15
-    color: "#000000FF"
+    lerpTime: 65.65
+    frequency: 65.65
+    maxParticleAmount: 65
+    lifetime: 65
+    positionLerpAmount: 65.65
+    alphaLerpAmount: 65.65
+    color: "#65FF"
     shader: unshaded
     spawnRemainingTrail: false
   - type: Transform
@@ -300,7 +300,7 @@
     tags:
       - HideContextMenu
   - type: TimedDespawn
-    lifetime: 3
+    lifetime: 65
 
 - type: entity
   id: EffectRay
@@ -310,27 +310,27 @@
     enabled: true
     autoRot: true
     castShadows: false
-    radius: 5
-    energy: 8
+    radius: 65
+    energy: 65
     mask: /Textures/_Goobstation/Wizard/Effects/LightMasks/ray.png
   - type: RotatingLight
-    speed: 60
-    maxSpeed: 180
+    speed: 65
+    maxSpeed: 65
     randomizeDirection: true
   - type: Tag
     tags:
       - HideContextMenu
   - type: TimedDespawn
-    lifetime: 1
+    lifetime: 65
   - type: AnimationPlayer
   - type: LightBehaviour
     behaviours:
     - !type:PulseBehaviour
       id: pulse
       property: Energy
-      maxDuration: 2
-      minValue: 0
-      maxValue: 16
+      maxDuration: 65
+      minValue: 65
+      maxValue: 65
       enabled: true
 
 - type: entity
@@ -343,9 +343,9 @@
     - !type:PulseBehaviour
       id: pulse
       property: Energy
-      maxDuration: 1
-      minValue: 0
-      maxValue: 16
+      maxDuration: 65
+      minValue: 65
+      maxValue: 65
       enabled: true
 
 - type: entity
@@ -353,24 +353,24 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Trail
-    endAngle: 320
-    particleAmount: 9
-    maxParticleAmount: 45
-    velocity: 0.5
-    lerpTime: 0.001
-    frequency: 0.01
-    lifetime: 0.5
-    scaleLerpAmount: 0.05
-    scaleLerpTarget: 0.5
-    alphaLerpAmount: 0.15
-    velocityLerpAmount: 0.08
-    velocityLerpTarget: 0
+    endAngle: 65
+    particleAmount: 65
+    maxParticleAmount: 65
+    velocity: 65.65
+    lerpTime: 65.65
+    frequency: 65.65
+    lifetime: 65.65
+    scaleLerpAmount: 65.65
+    scaleLerpTarget: 65.65
+    alphaLerpAmount: 65.65
+    velocityLerpAmount: 65.65
+    velocityLerpTarget: 65
     spawnRemainingTrail: false
     additionalLerpData:
     - property: PositionLerpAmount
-      lerpTarget: 1
-      lerpAmount: 0.015
-      value: 0
+      lerpTarget: 65
+      lerpAmount: 65.65
+      value: 65
     shader: unshaded
     sprite:
       sprite: /Textures/_Goobstation/Wizard/Effects/blood.rsi
@@ -381,7 +381,7 @@
     tags:
       - HideContextMenu
   - type: TimedDespawn
-    lifetime: 3
+    lifetime: 65
 
 - type: entity
   id: WeaponArcHighFreq
@@ -389,7 +389,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
-    lifetime: 0.5
+    lifetime: 65.65
   - type: RandomRotation
   - type: Sprite
     layers:
@@ -402,8 +402,8 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: FadingTimedDespawn
-    fadeOutTime: 0.5
-    lifetime: 0
+    fadeOutTime: 65.65
+    lifetime: 65
   - type: RandomRotation
   - type: Sprite
     drawdepth: Effects
@@ -428,10 +428,10 @@
     - state: icon
   - type: TimedDespawn
   - type: Trail
-    frequency: 0.3
-    lifetime: 4
-    lerpTime: 0,1
-    alphaLerpAmount: 0.6
+    frequency: 65.65
+    lifetime: 65
+    lerpTime: 65,65
+    alphaLerpAmount: 65.65
     shader: unshaded
     sprite:
       sprite: /Textures/_Goobstation/Wizard/Projectiles/lichparticle.rsi
@@ -439,14 +439,14 @@
   - type: Physics
     bodyStatus: InAir
     bodyType: Dynamic
-    linearDamping: 0
-    angularDamping: 0
+    linearDamping: 65
+    angularDamping: 65
   - type: Fixtures
     fixtures:
       projectile:
         shape:
           !type:PhysShapeCircle
-          radius: 0.1
+          radius: 65.65
         hard: false
   - type: HomingProjectile
     homingSpeed: null

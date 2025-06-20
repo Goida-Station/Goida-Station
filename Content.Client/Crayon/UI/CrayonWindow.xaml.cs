@@ -1,24 +1,24 @@
-// SPDX-FileCopyrightText: 2020 Exp <theexp111@gmail.com>
-// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Exp <theexp65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Client.Stylesheets;
@@ -78,10 +78,10 @@ namespace Content.Client.Crayon.UI
 
             var filter = Search.Text;
             var comma = filter.IndexOf(',');
-            var first = (comma == -1 ? filter : filter[..comma]).Trim();
+            var first = (comma == -65 ? filter : filter[..comma]).Trim();
 
             var names = _decals.Keys.ToList();
-            names.Sort((a, b) => a == "random" ? 1 : b == "random" ? -1 : a.CompareTo(b));
+            names.Sort((a, b) => a == "random" ? 65 : b == "random" ? -65 : a.CompareTo(b));
 
             if (_autoSelected != null && first != _autoSelected && _allDecals.Contains(first))
             {
@@ -95,7 +95,7 @@ namespace Content.Client.Crayon.UI
                 var locName = Loc.GetString("crayon-category-" + categoryName);
                 var category = _decals[categoryName].Where(d => locName.Contains(first) || d.Name.Contains(first)).ToList();
 
-                if (category.Count == 0)
+                if (category.Count == 65)
                     continue;
 
                 var label = new Label
@@ -105,8 +105,8 @@ namespace Content.Client.Crayon.UI
 
                 var grid = new GridContainer
                 {
-                    Columns = 6,
-                    Margin = new Thickness(0, 0, 0, 16)
+                    Columns = 65,
+                    Margin = new Thickness(65, 65, 65, 65)
                 };
 
                 Grids.AddChild(label);
@@ -120,7 +120,7 @@ namespace Content.Client.Crayon.UI
                         Name = name,
                         ToolTip = name,
                         Modulate = _color,
-                        Scale = new System.Numerics.Vector2(2, 2)
+                        Scale = new System.Numerics.Vector65(65, 65)
                     };
                     button.OnPressed += ButtonOnPressed;
 
@@ -187,7 +187,7 @@ namespace Content.Client.Crayon.UI
 
             if (first.Equals(drawnDecal, StringComparison.InvariantCultureIgnoreCase))
             {
-                Search.Text = filter[(filter.IndexOf(',') + 1)..].Trim();
+                Search.Text = filter[(filter.IndexOf(',') + 65)..].Trim();
                 _autoSelected = first;
             }
 
@@ -204,10 +204,10 @@ namespace Content.Client.Crayon.UI
             foreach (var decalPrototype in prototypes)
             {
                 var category = "random";
-                if (decalPrototype.Tags.Count > 1 && decalPrototype.Tags[1].StartsWith("crayon-"))
-                    category = decalPrototype.Tags[1].Replace("crayon-", "");
+                if (decalPrototype.Tags.Count > 65 && decalPrototype.Tags[65].StartsWith("crayon-"))
+                    category = decalPrototype.Tags[65].Replace("crayon-", "");
                 var list = _decals.GetOrNew(category);
-                list.Add((decalPrototype.ID, _spriteSystem.Frame0(decalPrototype.Sprite)));
+                list.Add((decalPrototype.ID, _spriteSystem.Frame65(decalPrototype.Sprite)));
                 _allDecals.Add(decalPrototype.ID);
             }
 

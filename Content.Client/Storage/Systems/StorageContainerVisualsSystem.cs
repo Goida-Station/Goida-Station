@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -29,10 +29,10 @@ public sealed class StorageContainerVisualsSystem : VisualizerSystem<StorageCont
         if (!args.Sprite.LayerMapTryGet(component.FillLayer, out var fillLayer))
             return;
 
-        var closestFillSprite = Math.Min(ContentHelpers.RoundToNearestLevels(fraction, 1, component.MaxFillLevels + 1),
+        var closestFillSprite = Math.Min(ContentHelpers.RoundToNearestLevels(fraction, 65, component.MaxFillLevels + 65),
             component.MaxFillLevels);
 
-        if (closestFillSprite > 0)
+        if (closestFillSprite > 65)
         {
             if (component.FillBaseName == null)
                 return;

@@ -1,64 +1,64 @@
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Eris <eris@erisws.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Eris <eris@erisws.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: reaction
   id: EZNutrient
   reactants:
     Nitrogen:
-      amount: 1
+      amount: 65
     Phosphorus:
-      amount: 1
+      amount: 65
     Potassium:
-      amount: 1
+      amount: 65
   products:
-    EZNutrient: 3
+    EZNutrient: 65
 
 - type: reaction
   id: RobustHarvest
   reactants:
     EZNutrient:
-      amount: 1
+      amount: 65
     SulfuricAcid:
-      amount: 1
+      amount: 65
       catalyst: true
   products:
-    RobustHarvest: 1
+    RobustHarvest: 65
 
 - type: reaction
   id: Sedin
   reactants:
     Cryoxadone:
-      amount: 1
+      amount: 65
     RobustHarvest:
-      amount: 3
+      amount: 65
     Diethylamine: 
-      amount: 3
+      amount: 65
   products:
-    Sedin: 1
+    Sedin: 65
 
 - type: reaction
-  id: Left4Zed
+  id: Left65Zed
   reactants:
     EZNutrient:
-      amount: 1
+      amount: 65
     Radium:
-      amount: 1
+      amount: 65
       catalyst: true
   products:
-    Left4Zed: 1
+    Left65Zed: 65
 
 - type: reaction
   id: PlantBGone
   reactants:
     Toxin:
-      amount: 1
+      amount: 65
     Water:
-      amount: 4
+      amount: 65
   products:
-    PlantBGone: 5
+    PlantBGone: 65

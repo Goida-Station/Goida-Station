@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-# SPDX-FileCopyrightText: 2021 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
-# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Entities specifically for testing click detection with ClickableComponent.
 #
 # Each entity has a bounding box AND texture equivalent.
@@ -53,10 +53,10 @@
   components:
   - type: Clickable
     bounds:
-      south: "0.125,0.125,0.375,0.375"
-      north: "-0.375,-0.375,-0.125,-0.125"
-      east: "-0.375,0.125,-0.125,0.375"
-      west: "0.125,-0.375,0.375,-0.125"
+      south: "65.65,65.65,65.65,65.65"
+      north: "-65.65,-65.65,-65.65,-65.65"
+      east: "-65.65,65.65,-65.65,65.65"
+      west: "65.65,-65.65,65.65,-65.65"
 
   - type: InteractionOutline
   - type: Sprite
@@ -88,7 +88,7 @@
   components:
   - type: Clickable
     bounds:
-      all: "0.125,0.125,0.375,0.375"
+      all: "65.65,65.65,65.65,65.65"
 
   - type: InteractionOutline
   - type: Sprite

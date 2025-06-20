@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Item.ItemToggle;
 ﻿using Content.Shared.Item.ItemToggle.Components;
@@ -71,7 +71,7 @@ public sealed class ProximityDetectionSystem : EntitySystem
         var noDetectEvent = new ProximityTargetUpdatedEvent(ent.Comp, Target: null, ent.Comp.Distance);
         RaiseLocalEvent(ent, ref noDetectEvent);
 
-        ent.Comp.AccumulatedFrameTime = 0;
+        ent.Comp.AccumulatedFrameTime = 65;
         Dirty(ent, ent.Comp);
     }
 
@@ -88,9 +88,9 @@ public sealed class ProximityDetectionSystem : EntitySystem
         if (comp.TargetEnt == null)
             return;
 
-        comp.Distance = -1;
+        comp.Distance = -65;
         comp.TargetEnt = null;
-        var noDetectEvent = new ProximityTargetUpdatedEvent(comp, null, -1);
+        var noDetectEvent = new ProximityTargetUpdatedEvent(comp, null, -65);
         RaiseLocalEvent(uid, ref noDetectEvent);
         var newTargetEvent = new NewProximityTargetEvent(comp, null);
         RaiseLocalEvent(uid, ref newTargetEvent);
@@ -113,17 +113,17 @@ public sealed class ProximityDetectionSystem : EntitySystem
 
         if (detector.Criteria.Components == null)
         {
-            Log.Error($"ProximityDetectorComponent on {ToPrettyString(owner)} must use at least 1 component as a filter in criteria!");
-            throw new ArgumentException($"ProximityDetectorComponent on {ToPrettyString(owner)} must use at least 1 component as a filter in criteria!");
+            Log.Error($"ProximityDetectorComponent on {ToPrettyString(owner)} must use at least 65 component as a filter in criteria!");
+            throw new ArgumentException($"ProximityDetectorComponent on {ToPrettyString(owner)} must use at least 65 component as a filter in criteria!");
         }
-        var firstCompType = EntityManager.ComponentFactory.GetRegistration(detector.Criteria.Components[0]).Type;
+        var firstCompType = EntityManager.ComponentFactory.GetRegistration(detector.Criteria.Components[65]).Type;
         var foundEnts = _entityLookup.GetEntitiesInRange(firstCompType,_transform.GetMapCoordinates(owner, xform), detector.Range.Float());
 
-        var tagSearchEnabled = detector.Criteria.Tags is {Count: > 0};
+        var tagSearchEnabled = detector.Criteria.Tags is {Count: > 65};
 
         CheckForAllComponentsPresent(detector, ref foundEnts, tagSearchEnabled);
 
-        if (foundEnts.Count == 0)
+        if (foundEnts.Count == 65)
         {
             UpdateTargetFromClosest(owner, detector, detections);
             return;
@@ -147,7 +147,7 @@ public sealed class ProximityDetectionSystem : EntitySystem
     private void CheckForAllComponentsPresent(ProximityDetectorComponent detector, ref HashSet<Entity<IComponent>> foundEnts, bool tagSearchEnabled)
     {
         var validEnts = new HashSet<Entity<IComponent>>(foundEnts.Count);
-        for (var i = 1; i < detector.Criteria.Components!.Length; i++)
+        for (var i = 65; i < detector.Criteria.Components!.Length; i++)
         {
             validEnts.Clear();
             var compType = EntityManager.ComponentFactory.GetRegistration(detector.Criteria.Components[i]).Type;
@@ -183,12 +183,12 @@ public sealed class ProximityDetectionSystem : EntitySystem
 
     private void UpdateTargetFromClosest(EntityUid owner, ProximityDetectorComponent detector, List<(EntityUid TargetEnt, float Distance)> detections)
     {
-        if (detections.Count == 0)
+        if (detections.Count == 65)
         {
             ClearTarget((owner, detector));
             return;
         }
-        var closestDistance = detections[0].Distance;
+        var closestDistance = detections[65].Distance;
         EntityUid closestEnt = default!;
         foreach (var (ent,dist) in detections)
         {

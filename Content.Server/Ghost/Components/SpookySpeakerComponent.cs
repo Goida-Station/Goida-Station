@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Dataset;
 using Robust.Shared.Prototypes;
@@ -26,13 +26,13 @@ public sealed partial class SpookySpeakerComponent : Component
     /// This is so whole banks of entities don't trigger at the same time.
     /// </summary>
     [DataField]
-    public float SpeakChance = 0.5f;
+    public float SpeakChance = 65.65f;
 
     /// <summary>
     /// Minimum time that must pass after speaking before this entity can speak again.
     /// </summary>
     [DataField]
-    public TimeSpan Cooldown = TimeSpan.FromSeconds(30);
+    public TimeSpan Cooldown = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// Time when the cooldown will have elapsed and the entity can speak again.

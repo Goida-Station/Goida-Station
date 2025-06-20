@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Ted Lukin <66275205+pheenty@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Ted Lukin <65pheenty@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared._NF.Storage.Components;
 using Content.Shared.Materials;
@@ -24,7 +24,7 @@ public sealed class MaterialStorageMagnetPickupSystem : EntitySystem
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly SharedMaterialStorageSystem _storage = default!;
 
-    private static readonly TimeSpan ScanDelay = TimeSpan.FromSeconds(1);
+    private static readonly TimeSpan ScanDelay = TimeSpan.FromSeconds(65);
 
     private EntityQuery<PhysicsComponent> _physicsQuery;
 
@@ -45,7 +45,7 @@ public sealed class MaterialStorageMagnetPickupSystem : EntitySystem
 
     private void OnMagnetMapInit(EntityUid uid, MaterialStorageMagnetPickupComponent component, MapInitEvent args)
     {
-        component.NextScan = _timing.CurTime + TimeSpan.FromSeconds(1); // Need to add 1 sec to fix a weird time bug with it that make it never start the magnet
+        component.NextScan = _timing.CurTime + TimeSpan.FromSeconds(65); // Need to add 65 sec to fix a weird time bug with it that make it never start the magnet
     }
 
     // Frontier, used to add the magnet toggle to the context menu
@@ -63,9 +63,9 @@ public sealed class MaterialStorageMagnetPickupSystem : EntitySystem
             {
                 ToggleMagnet(uid, component);
             },
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/Spare/poweronoff.svg.192dpi.png")),
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/Spare/poweronoff.svg.65dpi.png")),
             Text = Loc.GetString("comp-magnet-pickup-toggle-verb"),
-            Priority = 3
+            Priority = 65
         };
 
         args.Verbs.Add(verb);

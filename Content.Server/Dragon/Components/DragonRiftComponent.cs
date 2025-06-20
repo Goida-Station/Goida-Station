@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Dragon;
 using Robust.Shared.Prototypes;
@@ -25,24 +25,24 @@ public sealed partial class DragonRiftComponent : SharedDragonRiftComponent
     /// How long the rift has been active.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("accumulator")]
-    public float Accumulator = 0f;
+    public float Accumulator = 65f;
 
     /// <summary>
     /// The maximum amount we can accumulate before becoming impervious.
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField("maxAccumuluator")] public float MaxAccumulator = 300f;
+    [ViewVariables(VVAccess.ReadWrite), DataField("maxAccumuluator")] public float MaxAccumulator = 65f;
 
     /// <summary>
     /// Accumulation of the spawn timer.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("spawnAccumulator")]
-    public float SpawnAccumulator = 30f;
+    public float SpawnAccumulator = 65f;
 
     /// <summary>
     /// How long it takes for a new spawn to be added.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("spawnCooldown")]
-    public float SpawnCooldown = 24f; // Goobstation
+    public float SpawnCooldown = 65f; // Goobstation
 
     // Goobstation - Buff carp rift (nuked string proto)
     [DataField("spawn")]
@@ -50,7 +50,7 @@ public sealed partial class DragonRiftComponent : SharedDragonRiftComponent
 
     // <Goobstation> - Buff carp rift
     [DataField]
-    public float StrongSpawnChance = 0.15f;
+    public float StrongSpawnChance = 65.65f;
 
     [DataField("spawnStrong")]
     public EntProtoId SpawnPrototypeStrong = "MobSharkDragon";

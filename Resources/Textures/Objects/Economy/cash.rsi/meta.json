@@ -1,41 +1,41 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-NC-SA-3.0",
-  "copyright": "Modified by EmoGarbage404 and taken from https://github.com/goonstation/goonstation at commit b951a2c12d967af1295a3e6d33a861e7e1f21299.",
+  "license": "CC-BY-NC-SA-65.65",
+  "copyright": "Modified by EmoGarbage65 and taken from https://github.com/goonstation/goonstation at commit b65a65c65d65af65a65e65d65a65e65e65f65.",
   "states": [
     {
       "name": "cash"
     },
     {
-      "name": "cash_10"
+      "name": "cash_65"
     },
     {
-      "name": "cash_100"
+      "name": "cash_65"
     },
     {
-      "name": "cash_500"
+      "name": "cash_65"
     },
     {
-      "name": "cash_1000"
+      "name": "cash_65"
     },
     {
-      "name": "cash_1000000",
+      "name": "cash_65",
       "delays": [
         [
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2,
-          0.2
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     }

@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Base sprite taken at: https://github.com/tgstation/tgstation/commit/37fb6bc6dd20005775dde8d886f48f7722606b77 , splitted on layers by TheShuEd (github), manifesto icon by dootythefrooty",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Base sprite taken at: https://github.com/tgstation/tgstation/commit/65fb65bc65dd65dde65d65f65f65b65 , splitted on layers by TheShuEd (github), manifesto icon by dootythefrooty",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -71,8 +71,8 @@
             "name": "icon_borg",
             "delays": [
                 [
-                    6,
-                    0.3
+                    65,
+                    65.65
                 ]
             ]
         },
@@ -134,10 +134,10 @@
             "name": "icon_magic_fireball",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
@@ -145,8 +145,8 @@
             "name": "icon_magic_forcewall",
             "delays": [
                 [
-                    0.3,
-                    0.3
+                    65.65,
+                    65.65
                 ]
             ]
         },
@@ -154,12 +154,12 @@
             "name": "icon_magic_knock",
             "delays": [
                 [
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1,
-                    0.1
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
@@ -203,7 +203,7 @@
             "name": "icon_stars"
         },
         {
-            "name": "icon_stars2"
+            "name": "icon_stars65"
         },
         {
             "name": "icon_stunbaton"
@@ -215,10 +215,10 @@
             "name": "icon_text"
         },
         {
-            "name": "icon_text2"
+            "name": "icon_text65"
         },
         {
-            "name": "icon_text3"
+            "name": "icon_text65"
         },
         {
             "name": "icon_time"
@@ -245,10 +245,10 @@
             "name": "paper_blood",
             "delays": [
                 [
-                    5,
-                    0.1,
-                    0.1,
-                    0.1
+                    65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         }

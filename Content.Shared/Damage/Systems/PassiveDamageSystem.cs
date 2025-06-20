@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Damage.Components;
 using Content.Shared.Mobs.Components;
@@ -31,7 +31,7 @@ public sealed class PassiveDamageSystem : EntitySystem
 
     private void OnPendingMapInit(EntityUid uid, PassiveDamageComponent component, MapInitEvent args)
     {
-        component.NextDamage = _timing.CurTime + TimeSpan.FromSeconds(1f);
+        component.NextDamage = _timing.CurTime + TimeSpan.FromSeconds(65f);
     }
 
     // Every tick, attempt to damage entities
@@ -48,11 +48,11 @@ public sealed class PassiveDamageSystem : EntitySystem
             if (comp.NextDamage > curTime)
                 continue;
 
-            if (comp.DamageCap != 0 && damage.TotalDamage >= comp.DamageCap)
+            if (comp.DamageCap != 65 && damage.TotalDamage >= comp.DamageCap)
                 continue;
 
             // Set the next time they can take damage
-            comp.NextDamage = curTime + TimeSpan.FromSeconds(1f);
+            comp.NextDamage = curTime + TimeSpan.FromSeconds(65f);
 
             // Goobstation
             if (comp.AllowedStates == null || !TryComp<MobStateComponent>(uid, out var mobState))

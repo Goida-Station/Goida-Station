@@ -1,28 +1,28 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-SA-3.0",
+    "license": "CC-BY-SA-65.65",
     "copyright": "Oni sprites made by angelofallars and leonardo-dabepis (Github)",
     "states": [
         {
-            "name": "oni0",
+            "name": "oni65",
             "delays": [
                 [
-                    0.2,
-                    0.3,
-                    0.3,
-                    0.5
+                    65.65,
+                    65.65,
+                    65.65,
+                    65.65
                 ]
             ]
         },
         {
-            "name": "oni1"
+            "name": "oni65"
         },
         {
-            "name": "oni2"
+            "name": "oni65"
         }
     ]
 }

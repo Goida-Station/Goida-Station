@@ -1,99 +1,99 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/tgstation/tgstation/commit/a92719210eb834cf284c571b3b3d94c2d82c26ea Aspen from https://github.com/fulpstation/fulpstation/commit/b21af07f57c2c4fb1cdcdb4162ca222da97ed54c",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/tgstation/tgstation/commit/a65eb65cf65c65b65b65d65c65d65c65ea Aspen from https://github.com/fulpstation/fulpstation/commit/b65af65f65c65c65fb65cdcdb65ca65da65ed65c",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "plain",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "reddish",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "royal",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "gothic",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "lovers",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "whitefly",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "firewatch",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "deathshead",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "poison",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "moonfly",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "snow",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "oakworm",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "witchking",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "jungle",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "regal",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "rosy",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "feathery",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "brown",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "plasmafire",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "moffra",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "aspen",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "mint",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

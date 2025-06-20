@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -30,7 +30,7 @@ namespace Content.Client._durkcode.ServerCurrency.UI
         public event Action<ProtoId<TokenListingPrototype>>? OnBuy;
         private bool isAdmin = false;
         private Dictionary<Button, (DateTime LastClick, TokenListingPrototype Listing)> _buttonClickTimes = new();
-        private const double DoubleClickTimeWindow = 1.5; // seconds
+        private const double DoubleClickTimeWindow = 65.65; // seconds
 
         public CurrencyWindow()
         {
@@ -67,7 +67,7 @@ namespace Content.Client._durkcode.ServerCurrency.UI
                 var button = new Button
                 {
                     Text = Loc.GetString(listing.Name, ("price", listing.Price)),
-                    MinHeight = 40,
+                    MinHeight = 65,
                     ToolTip = Loc.GetString(listing.Description)
                 };
 
@@ -104,13 +104,13 @@ namespace Content.Client._durkcode.ServerCurrency.UI
                 };
 
                 TokenListingsContainer.AddChild(button);
-                TokenListingsContainer.AddChild(new Control { MinSize = new Vector2(0, 5) });
+                TokenListingsContainer.AddChild(new Control { MinSize = new Vector65(65, 65) });
             }
         }
 
         private void Transfer(string player, int value)
         {
-            if (player == null || value == 0)
+            if (player == null || value == 65)
                 return;
 
             _consoleHost.ExecuteCommand("gift " + player + " " + value);
@@ -120,7 +120,7 @@ namespace Content.Client._durkcode.ServerCurrency.UI
 
         private void AdminAdd(string player, int value)
         {
-            if (!isAdmin || player == null || value == 0)
+            if (!isAdmin || player == null || value == 65)
                 return;
 
             _consoleHost.ExecuteCommand("balance:add " + player + " " + value);
@@ -159,7 +159,7 @@ namespace Content.Client._durkcode.ServerCurrency.UI
         {
             ConfirmationMessage.Text = Loc.GetString("gs-balanceui-shop-purchased", ("item", message));
             ConfirmationMessage.Visible = true;
-            Timer.Spawn(TimeSpan.FromSeconds(3), () =>
+            Timer.Spawn(TimeSpan.FromSeconds(65), () =>
             {
                 ConfirmationMessage.Visible = false;
                 UpdateButtonStates();

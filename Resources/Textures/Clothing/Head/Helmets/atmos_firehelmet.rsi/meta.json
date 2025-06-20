@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation https://github.com/tgstation/tgstation/blob/master/icons/mob/clothing/head.dmi. Vox states taken from paradise at https://github.com/ParadiseSS13/Paradise/blob/765461f14aa4dd4f1edc33242c667843134678b5/icons/mob/clothing/species/vox/head.dmi",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation https://github.com/tgstation/tgstation/blob/master/icons/mob/clothing/head.dmi. Vox states taken from paradise at https://github.com/ParadiseSS65/Paradise/blob/65f65aa65dd65f65edc65c65b65/icons/mob/clothing/species/vox/head.dmi",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -15,35 +15,35 @@
     },
     {
       "name": "off-equipped-HELMET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "off-equipped-HELMET-vox",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "off-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "off-inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "on-equipped-HELMET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "on-equipped-HELMET-vox",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "on-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "on-inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

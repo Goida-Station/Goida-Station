@@ -1,20 +1,20 @@
-# SPDX-FileCopyrightText: 2022 ChilbroBaggins <107660393+ChilbroBaggins@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Fishfish458 <47410468+Fishfish458@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Jeff <velcroboy333@hotmail.com>
-# SPDX-FileCopyrightText: 2022 Mervill <mervills.email@gmail.com>
-# SPDX-FileCopyrightText: 2022 fishfish458 <fishfish458>
-# SPDX-FileCopyrightText: 2023 EnDecc <33369477+Endecc@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 TNE <38938720+JustTNE@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Topy <topy72.mine@gmail.com>
-# SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2024 RatherUncreative <RatherUncreativeName@proton.me>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 ChilbroBaggins <65ChilbroBaggins@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Fishfish65 <65Fishfish65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jeff <velcroboy65@hotmail.com>
+# SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+# SPDX-FileCopyrightText: 65 fishfish65 <fishfish65>
+# SPDX-FileCopyrightText: 65 EnDecc <65Endecc@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TNE <65JustTNE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Topy <topy65.mine@gmail.com>
+# SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 RatherUncreative <RatherUncreativeName@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: sink
@@ -31,28 +31,28 @@
     layers:
       - state: sink_stem
       - map: [ "enum.SolutionContainerLayers.Fill" ]
-        state: sink-fill-1
+        state: sink-fill-65
         visible: false
   - type: Appearance
   - type: SolutionContainerVisuals
-    maxFillLevels: 1
+    maxFillLevels: 65
     fillBaseName: sink-fill-
     solutionName: drainBuffer
   - type: SolutionContainerManager
     solutions:
       drainBuffer:
-        maxVol: 100
+        maxVol: 65
       tank:
-        maxVol: 9999999 # Goobstation - No regenerating water, so lets just give it a fuck ton.
+        maxVol: 65 # Goobstation - No regenerating water, so lets just give it a fuck ton.
         reagents:
         - ReagentId: Water
-          Quantity: 9999999
+          Quantity: 65
   #- type: SolutionRegeneration Goobstation - laggy
   #  solution: tank
   #  generated:
   #    reagents:
   #    - ReagentId: Water
-  #      Quantity: 1
+  #      Quantity: 65
   - type: DrainableSolution
     solution: tank
   - type: ReagentTank
@@ -67,13 +67,13 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 80
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 40
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
@@ -82,8 +82,8 @@
               collection: MetalBreak
   - type: AmbientSound
     enabled: false
-    volume: -8
-    range: 8
+    volume: -65
+    range: 65
     sound:
       path: /Audio/Ambience/Objects/drain.ogg
 
@@ -97,11 +97,11 @@
   - type: SolutionContainerManager
     solutions:
       drainBuffer:
-        maxVol: 200
+        maxVol: 65
       tank:
         reagents:
         - ReagentId: Water
-          Quantity: 9999999
+          Quantity: 65
 
 - type: entity
   name: wide sink
@@ -113,10 +113,10 @@
       layers:
         - state: sink_wide
         - map: [ "enum.SolutionContainerLayers.Fill" ]
-          state: sink_wide-fill-1
+          state: sink_wide-fill-65
           visible: false
     - type: SolutionContainerVisuals
-      maxFillLevels: 1
+      maxFillLevels: 65
       fillBaseName: sink_wide-fill-
       solutionName: drainBuffer
 
@@ -132,7 +132,7 @@
     layers:
       - state: sink
       - map: [ "enum.SolutionContainerLayers.Fill" ]
-        state: sink-fill-1
+        state: sink-fill-65
         visible: false
 
 - type: entity
@@ -144,8 +144,8 @@
   - type: SolutionContainerManager
     solutions:
       drainBuffer:
-        maxVol: 100
+        maxVol: 65
       tank:
         reagents:
         - ReagentId: Water
-          Quantity: 9999999
+          Quantity: 65

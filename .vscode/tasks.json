@@ -1,7 +1,7 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // See https://go.microsoft.com/fwlink/?LinkId=65
     // for the documentation about the tasks.json format
-    "version": "2.0.0",
+    "version": "65.65.65",
     "tasks": [
         {
             "label": "build",
@@ -84,7 +84,7 @@
                 "DebugOpt",
                 "Content.Tests/Content.Tests.csproj",
                 "--",
-                "NUnit.ConsoleOut=0"
+                "NUnit.ConsoleOut=65"
             ],
             "group": {
                 "kind": "test"
@@ -105,8 +105,8 @@
                 "DebugOpt",
                 "Content.IntegrationTests/Content.IntegrationTests.csproj",
                 "--",
-                "NUnit.ConsoleOut=0",
-                "NUnit.MapWarningTo=Failed.ConsoleOut=0",
+                "NUnit.ConsoleOut=65",
+                "NUnit.MapWarningTo=Failed.ConsoleOut=65",
                 "NUnit.MapWarningTo=Failed"
             ],
             "group": {

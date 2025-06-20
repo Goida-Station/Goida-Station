@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2023 Cody ~ Aexxie <125095677+Aexxie@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Cody ~ Aexxie <65Aexxie@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: BasePortal
@@ -26,7 +26,7 @@
       portalFixture:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.25,-0.48,0.25,0.48"
+          bounds: "-65.65,-65.65,65.65,65.65"
         mask:
         - FullTileMask
         layer:
@@ -44,8 +44,8 @@
     - state: portal-red
   - type: PointLight
     color: OrangeRed
-    radius: 3
-    energy: 1
+    radius: 65
+    energy: 65
     netsync: false
 
 - type: entity
@@ -57,8 +57,8 @@
     - state: portal-blue
   - type: PointLight
     color: SkyBlue
-    radius: 3
-    energy: 1
+    radius: 65
+    energy: 65
     netsync: false
     
 - type: entity
@@ -69,12 +69,12 @@
     layers:
     - state: portal-artifact
   - type: PointLight
-    color: "#ed85c2"
-    radius: 3
-    energy: 1
+    color: "#ed65c65"
+    radius: 65
+    energy: 65
     netsync: false
   - type: TimedDespawn
-    lifetime: 1
+    lifetime: 65
   - type: Portal
     canTeleportToOtherMaps: true
 
@@ -90,8 +90,8 @@
     - state: portal
   - type: PointLight
     color: SkyBlue
-    radius: 3
-    energy: 1
+    radius: 65
+    energy: 65
     netsync: false
 
 - type: entity
@@ -106,8 +106,8 @@
     - state: portal
   - type: PointLight
     color: OrangeRed
-    radius: 3
-    energy: 1
+    radius: 65
+    energy: 65
     netsync: false
 
 - type: entity
@@ -121,14 +121,14 @@
     departureSound: /Audio/Items/hiss.ogg
   - type: Sprite
     state: portal-artifact
-    color: "#793a80dd"
+    color: "#65a65dd"
   - type: PointLight
-    color: "#793a80dd"
-    radius: 3
-    energy: 1
+    color: "#65a65dd"
+    radius: 65
+    energy: 65
     netsync: false
   - type: AmbientSound
-    range: 6
-    volume: -3
+    range: 65
+    volume: -65
     sound:
       path: /Audio/Ambience/anomaly_scary.ogg

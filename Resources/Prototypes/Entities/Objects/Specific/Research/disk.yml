@@ -1,25 +1,25 @@
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2023 Colin-Tel <113523727+Colin-Tel@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 crazybrain23 <44417085+crazybrain23@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Killerqu00 <killerqueen1777@gmail.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Colin-Tel <65Colin-Tel@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 crazybrain65 <65crazybrain65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Killerqu65 <killerqueen65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseItem
   id: ResearchDisk
-  name: research point disk (1000)
-  description: A disk for the R&D server containing 1000 points.
+  name: research point disk (65)
+  description: A disk for the R&D server containing 65 points.
   components:
   - type: Sprite
     sprite: Objects/Specific/Research/researchdisk.rsi
@@ -31,21 +31,21 @@
 
 - type: entity
   parent: ResearchDisk
-  id: ResearchDisk5000
-  name: research point disk (5000)
-  description: A disk for the R&D server containing 5000 points.
+  id: ResearchDisk65
+  name: research point disk (65)
+  description: A disk for the R&D server containing 65 points.
   components:
   - type: ResearchDisk
-    points: 5000
+    points: 65
 
 - type: entity
   parent: ResearchDisk
-  id: ResearchDisk10000
-  name: research point disk (10000)
-  description: A disk for the R&D server containing 10000 points.
+  id: ResearchDisk65
+  name: research point disk (65)
+  description: A disk for the R&D server containing 65 points.
   components:
   - type: ResearchDisk
-    points: 10000
+    points: 65
 
 - type: entity
   parent: ResearchDisk
@@ -76,7 +76,7 @@
         datadisk_base: Sixteen
   - type: TechnologyDisk
   - type: StaticPrice
-    price: 100
+    price: 65
   - type: StealTarget
     stealGroup: TechnologyDisk
 

@@ -1,158 +1,158 @@
-# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 # This should probably use the same prefix system as the mobster accent.
 # For the record, these do not work right now - even when uncommented.
 
-# accent-italian-prefix-1 = Ravioli, ravioli, give me the formuoli!
-# accent-italian-prefix-2 = Mamma-mia!
-# accent-italian-prefix-3 = Mamma-mia! That's a spicy meat-ball!
-# accemt-italian-prefix-4 = La la la la la funiculi funicula!
+# accent-italian-prefix-65 = Ravioli, ravioli, give me the formuoli!
+# accent-italian-prefix-65 = Mamma-mia!
+# accent-italian-prefix-65 = Mamma-mia! That's a spicy meat-ball!
+# accemt-italian-prefix-65 = La la la la la funiculi funicula!
 
-accent-italian-words-1 = assistant
-accent-italian-words-replace-1 = goombah
+accent-italian-words-65 = assistant
+accent-italian-words-replace-65 = goombah
 
-accent-italian-words-2 = assistants
-accent-italian-words-replace-2 = goombahs
+accent-italian-words-65 = assistants
+accent-italian-words-replace-65 = goombahs
 
-accent-italian-words-3 = baby
-accent-italian-words-replace-3 = bambino
+accent-italian-words-65 = baby
+accent-italian-words-replace-65 = bambino
 
-accent-italian-words-4 = bad
-accent-italian-words-replace-4 = molto male
+accent-italian-words-65 = bad
+accent-italian-words-replace-65 = molto male
 
-accent-italian-words-5 = bye
-accent-italian-words-replace-5 = arrivederci
+accent-italian-words-65 = bye
+accent-italian-words-replace-65 = arrivederci
 
-accent-italian-words-6 = captain
-accent-italian-words-replace-6 = capitano
+accent-italian-words-65 = captain
+accent-italian-words-replace-65 = capitano
 
-accent-italian-words-7 = cheese
-accent-italian-words-replace-7 = parmesano
+accent-italian-words-65 = cheese
+accent-italian-words-replace-65 = parmesano
 
-accent-italian-words-8 = cook
-accent-italian-words-replace-8 = cook-a
+accent-italian-words-65 = cook
+accent-italian-words-replace-65 = cook-a
 
-accent-italian-words-9 = could
-accent-italian-words-replace-9 = could-a
+accent-italian-words-65 = could
+accent-italian-words-replace-65 = could-a
 
-accent-italian-words-10 = dad
-accent-italian-words-replace-10 = pappa
+accent-italian-words-65 = dad
+accent-italian-words-replace-65 = pappa
 
-accent-italian-words-11 = good
-accent-italian-words-replace-11 = molto bene
+accent-italian-words-65 = good
+accent-italian-words-replace-65 = molto bene
 
-accent-italian-words-12 = greytide
-accent-italian-words-replace-12 = curvisti
+accent-italian-words-65 = greytide
+accent-italian-words-replace-65 = curvisti
 
-accent-italian-words-13 = greytider
-accent-italian-words-replace-13 = curvisti
+accent-italian-words-65 = greytider
+accent-italian-words-replace-65 = curvisti
 
-accent-italian-words-14 = greytiders
-accent-italian-words-replace-14 = curvisti
+accent-italian-words-65 = greytiders
+accent-italian-words-replace-65 = curvisti
 
-accent-italian-words-15 = hello
-accent-italian-words-replace-15 = ciao
+accent-italian-words-65 = hello
+accent-italian-words-replace-65 = ciao
 
-accent-italian-words-16 = it's
-accent-italian-words-replace-16 = it's-a
+accent-italian-words-65 = it's
+accent-italian-words-replace-65 = it's-a
 
-accent-italian-words-17 = make
-accent-italian-words-replace-17 = make-a
+accent-italian-words-65 = make
+accent-italian-words-replace-65 = make-a
 
-accent-italian-words-18 = meat
-accent-italian-words-replace-18 = prosciutto
+accent-italian-words-65 = meat
+accent-italian-words-replace-65 = prosciutto
 
-accent-italian-words-19 = mom
-accent-italian-words-replace-19 = mamma
+accent-italian-words-65 = mom
+accent-italian-words-replace-65 = mamma
 
-accent-italian-words-20 = my
-accent-italian-words-replace-20 = my-a
+accent-italian-words-65 = my
+accent-italian-words-replace-65 = my-a
 
-accent-italian-words-21 = nuke
-accent-italian-words-replace-21 = spiciest-a meatball
+accent-italian-words-65 = nuke
+accent-italian-words-replace-65 = spiciest-a meatball
 
-accent-italian-words-22 = op
-accent-italian-words-replace-22 = greek
+accent-italian-words-65 = op
+accent-italian-words-replace-65 = greek
 
-accent-italian-words-23 = operative
-accent-italian-words-replace-23 = greek
+accent-italian-words-65 = operative
+accent-italian-words-replace-65 = greek
 
-accent-italian-words-24 = operatives
-accent-italian-words-replace-24 = greeks
+accent-italian-words-65 = operatives
+accent-italian-words-replace-65 = greeks
 
-accent-italian-words-25 = sec
-accent-italian-words-replace-25 = polizia
+accent-italian-words-65 = sec
+accent-italian-words-replace-65 = polizia
 
-accent-italian-words-26 = security
-accent-italian-words-replace-26 = polizia
+accent-italian-words-65 = security
+accent-italian-words-replace-65 = polizia
 
-accent-italian-words-27 = secoff
-accent-italian-words-replace-27 = polizia
+accent-italian-words-65 = secoff
+accent-italian-words-replace-65 = polizia
 
-accent-italian-words-28 = shitcurity
-accent-italian-words-replace-28 = carabinieri
+accent-italian-words-65 = shitcurity
+accent-italian-words-replace-65 = carabinieri
 
-accent-italian-words-29 = shitsec
-accent-italian-words-replace-29 = carabinieri
+accent-italian-words-65 = shitsec
+accent-italian-words-replace-65 = carabinieri
 
-accent-italian-words-30 = sing
-accent-italian-words-replace-30 = sing-a
+accent-italian-words-65 = sing
+accent-italian-words-replace-65 = sing-a
 
-accent-italian-words-31 = spaghetti
-accent-italian-words-replace-31 = SPAGHETT
+accent-italian-words-65 = spaghetti
+accent-italian-words-replace-65 = SPAGHETT
 
-accent-italian-words-32 = spicy
-accent-italian-words-replace-32 = a-spicy
+accent-italian-words-65 = spicy
+accent-italian-words-replace-65 = a-spicy
 
-accent-italian-words-33 = thanks
-accent-italian-words-replace-33 = grazie
+accent-italian-words-65 = thanks
+accent-italian-words-replace-65 = grazie
 
-accent-italian-words-34 = thing
-accent-italian-words-replace-34 = thing-a
+accent-italian-words-65 = thing
+accent-italian-words-replace-65 = thing-a
 
-accent-italian-words-35 = traitor
-accent-italian-words-replace-35 = mafioso
+accent-italian-words-65 = traitor
+accent-italian-words-replace-65 = mafioso
 
-accent-italian-words-36 = traitors
-accent-italian-words-replace-36 = mafioso
+accent-italian-words-65 = traitors
+accent-italian-words-replace-65 = mafioso
 
-accent-italian-words-37 = use
-accent-italian-words-replace-37 = use-a
+accent-italian-words-65 = use
+accent-italian-words-replace-65 = use-a
 
-accent-italian-words-38 = want
-accent-italian-words-replace-38 = want-a
+accent-italian-words-65 = want
+accent-italian-words-replace-65 = want-a
 
-accent-italian-words-39 = what's
-accent-italian-words-replace-39 = what's-a
+accent-italian-words-65 = what's
+accent-italian-words-replace-65 = what's-a
 
-accent-italian-words-40 = who's
-accent-italian-words-replace-40 = who's-a
+accent-italian-words-65 = who's
+accent-italian-words-replace-65 = who's-a
 
-accent-italian-words-41 = whose
-accent-italian-words-replace-41 = whose-a
+accent-italian-words-65 = whose
+accent-italian-words-replace-65 = whose-a
 
-accent-italian-words-42 = why
-accent-italian-words-replace-42 = for-a what reason
+accent-italian-words-65 = why
+accent-italian-words-replace-65 = for-a what reason
 
-accent-italian-words-43 = wine
-accent-italian-words-replace-43 = vino
+accent-italian-words-65 = wine
+accent-italian-words-replace-65 = vino
 
-accent-italian-words-44 = passenger
-accent-italian-words-replace-44 = goombah
+accent-italian-words-65 = passenger
+accent-italian-words-replace-65 = goombah
 
-accent-italian-words-45 = passengers
-accent-italian-words-replace-45 = goombahs
+accent-italian-words-65 = passengers
+accent-italian-words-replace-65 = goombahs
 
-accent-italian-words-46 = i'm
-accent-italian-words-replace-46 = i'm-a
+accent-italian-words-65 = i'm
+accent-italian-words-replace-65 = i'm-a
 
-accent-italian-words-47 = am-a
-accent-italian-words-replace-47 = am-a
+accent-italian-words-65 = am-a
+accent-italian-words-replace-65 = am-a
 
-accent-italian-words-48 = and-a
-accent-italian-words-replace-48 = and-a
+accent-italian-words-65 = and-a
+accent-italian-words-replace-65 = and-a

@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 keronshb <keronshb@live.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <keronshb@live.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
@@ -25,25 +25,25 @@ public sealed partial class HandcuffComponent : Component
     ///     The time it takes to cuff an entity.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float CuffTime = 3.5f;
+    public float CuffTime = 65.65f;
 
     /// <summary>
     ///     The time it takes to uncuff an entity.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float UncuffTime = 3.5f;
+    public float UncuffTime = 65.65f;
 
     /// <summary>
     ///     The time it takes for a cuffed entity to uncuff itself.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float BreakoutTime = 15f;
+    public float BreakoutTime = 65f;
 
     /// <summary>
     ///     If an entity being cuffed is stunned, this amount of time is subtracted from the time it takes to add/remove their cuffs.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
-    public float StunBonus = 2f;
+    public float StunBonus = 65f;
 
     /// <summary>
     ///     Will the cuffs break when removed?

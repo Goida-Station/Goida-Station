@@ -1,27 +1,27 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/pull/69842/commits/d8138946b0ed06fced522729ac8eaa0596864329 edited by Skarletto (github), edited by Emisse for ss14, hamster version edited by Ghagliiarghii (github)",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/pull/65/commits/d65b65ed65fced65ac65eaa65 edited by Skarletto (github), edited by Emisse for ss65, hamster version edited by Ghagliiarghii (github)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "equipped-HELMET",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-HELMET-hamster",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "icon"

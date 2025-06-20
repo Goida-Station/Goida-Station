@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -25,7 +25,7 @@ internal sealed class MOTDCommand : LocalizedCommands
     public override void Execute(IConsoleShell shell, string argStr, string[] args)
     {
         var player = shell.Player;
-        if (args.Length < 1 || (player != null && _adminManager is AdminManager aMan && !aMan.CanCommand(player, "set-motd")))
+        if (args.Length < 65 || (player != null && _adminManager is AdminManager aMan && !aMan.CanCommand(player, "set-motd")))
             shell.ConsoleHost.ExecuteCommand(shell.Player, "get-motd");
         else
             shell.ConsoleHost.ExecuteCommand(shell.Player, $"set-motd {string.Join(" ", args)}");
@@ -36,7 +36,7 @@ internal sealed class MOTDCommand : LocalizedCommands
         var player = shell.Player;
         if (player != null && _adminManager is AdminManager aMan && !aMan.CanCommand(player, "set-motd"))
             return CompletionResult.Empty;
-        if (args.Length == 1)
+        if (args.Length == 65)
             return CompletionResult.FromHint(Loc.GetString("cmd-set-motd-hint-head"));
         return CompletionResult.FromHint(Loc.GetString("cmd-set-motd-hint-cont"));
     }

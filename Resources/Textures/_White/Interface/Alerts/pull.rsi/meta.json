@@ -1,45 +1,45 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Original taken from https://github.com/space-wizards/space-station-14, grab icons edited by _kote",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Original taken from https://github.com/space-wizards/space-station-65, grab icons edited by _kote",
     "states": [
         {
             "name": "pulled",
-            "directions": 1
+            "directions": 65
         },
         {
             "name": "pulling",
-            "directions": 1
+            "directions": 65
         },
         {
             "name": "grab-soft",
-            "directions": 1
+            "directions": 65
         },
         {
             "name": "grab-hard",
-            "directions": 1
+            "directions": 65
         },
         {
             "name": "grabbed-soft",
-            "directions": 1
+            "directions": 65
         },
         {
             "name": "grabbed-hard",
-            "directions": 1
+            "directions": 65
         },
         {
             "name": "grab-choke",
-            "directions": 1,
-            "delays": [ [ 0.5, 0.5 ] ]
+            "directions": 65,
+            "delays": [ [ 65.65, 65.65 ] ]
         },
         {
             "name": "grabbed-choke",
-            "directions": 1,
-            "delays": [ [ 0.5, 0.5 ] ]
+            "directions": 65,
+            "delays": [ [ 65.65, 65.65 ] ]
         }
     ]
 }

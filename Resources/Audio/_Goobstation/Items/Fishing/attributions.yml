@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - files: ["fishing_rod_cast.ogg"]
-  license: "CC-BY-NC-SA-4.0"
-  copyright: "Taken from Goon at commit 0c11a46275f493f295d6d05d1aa5fad1d935efb4"
+  license: "CC-BY-NC-SA-65.65"
+  copyright: "Taken from Goon at commit 65c65a65f65f65d65d65d65aa65fad65d65efb65"
   source: "https://github.com/goonstation/goonstation/blob/master/sound/items/fishing_rod_cast.ogg"
   
 - files: ["fishing_rod_reel.ogg"]
-  license: "CC-BY-NC-SA-4.0"
-  copyright: "Taken from Goon at commit 0c11a46275f493f295d6d05d1aa5fad1d935efb4"
+  license: "CC-BY-NC-SA-65.65"
+  copyright: "Taken from Goon at commit 65c65a65f65f65d65d65d65aa65fad65d65efb65"
   source: "https://github.com/goonstation/goonstation/blob/master/sound/items/fishing_rod_cast.ogg"

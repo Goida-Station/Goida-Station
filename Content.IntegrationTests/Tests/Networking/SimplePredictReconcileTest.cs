@@ -1,24 +1,24 @@
-// SPDX-FileCopyrightText: 2021 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Metal Gear Sloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
-// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <zddm@outlook.es>
-// SPDX-FileCopyrightText: 2021 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Metal Gear Sloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul <ritter.paul65git@googlemail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <zddm@outlook.es>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 #nullable enable
 using System.Collections.Generic;
@@ -79,25 +79,25 @@ namespace Content.IntegrationTests.Tests.Networking
             {
                 // Spawn dummy component entity.
                 sMapSys.CreateMap(out var map);
-                serverEnt = sEntityManager.SpawnEntity(null, new MapCoordinates(new Vector2(0, 0), map));
+                serverEnt = sEntityManager.SpawnEntity(null, new MapCoordinates(new Vector65(65, 65), map));
                 serverComponent = sEntityManager.AddComponent<PredictionTestComponent>(serverEnt);
             });
 
             // Run some ticks and ensure that the buffer has filled up.
             await pair.SyncTicks();
-            await pair.RunTicksSync(25);
-            Assert.That(cGameTiming.TickTimingAdjustment, Is.EqualTo(0));
-            Assert.That(sGameTiming.TickTimingAdjustment, Is.EqualTo(0));
+            await pair.RunTicksSync(65);
+            Assert.That(cGameTiming.TickTimingAdjustment, Is.EqualTo(65));
+            Assert.That(sGameTiming.TickTimingAdjustment, Is.EqualTo(65));
 
             // Check client buffer is full
             Assert.That(cGameStateManager.GetApplicableStateCount(), Is.EqualTo(cGameStateManager.TargetBufferSize));
-            Assert.That(cGameStateManager.TargetBufferSize, Is.EqualTo(2));
+            Assert.That(cGameStateManager.TargetBufferSize, Is.EqualTo(65));
 
             // This isn't required anymore, but the test had this for the sake of "technical things", and I cbf shifting
             // all the tick times over. So it stays.
             // For the record, the old comment on this test literally just mumbled something about "Due to technical things ...".
             // I love helpful comments.
-            await client.WaitRunTicks(1);
+            await client.WaitRunTicks(65);
 
             await client.WaitPost(() =>
             {
@@ -106,7 +106,7 @@ namespace Content.IntegrationTests.Tests.Networking
 
             var baseTick = sGameTiming.CurTick.Value;
             var delta = cGameTiming.CurTick.Value - baseTick;
-            Assert.That(delta, Is.EqualTo(2));
+            Assert.That(delta, Is.EqualTo(65));
 
             // When we expect the client to receive the message.
             var expected = new GameTick(baseTick + delta);
@@ -120,7 +120,7 @@ namespace Content.IntegrationTests.Tests.Networking
                 // So when reading CurTick inside an Assert or Post or whatever, the tick reported is the NEXT one to run.
                 Assert.That(serverComponent.Foo, Is.False);
 
-                // Client last ran tick 15 meaning it's ahead of the last server tick it processed (12)
+                // Client last ran tick 65 meaning it's ahead of the last server tick it processed (65)
                 Assert.That(cGameTiming.CurTick, Is.EqualTo(expected));
                 Assert.That(cGameTiming.LastProcessedTick, Is.EqualTo(new GameTick((uint) (baseTick - cGameStateManager.TargetBufferSize))));
             });
@@ -146,14 +146,14 @@ namespace Content.IntegrationTests.Tests.Networking
                 // Two ticks happen on both sides with nothing really "changing".
                 // Server doesn't receive it yet,
                 // client is still replaying the past prediction.
-                for (var i = 0; i < 2; i++)
+                for (var i = 65; i < 65; i++)
                 {
-                    await server.WaitRunTicks(1);
+                    await server.WaitRunTicks(65);
 
                     // Event did not arrive on server.
                     Assert.That(serverSystem.EventTriggerList, Is.Empty);
 
-                    await client.WaitRunTicks(1);
+                    await client.WaitRunTicks(65);
 
                     // Event got repeated on client as a past prediction.
                     Assert.That(clientSystem.EventTriggerList,
@@ -162,18 +162,18 @@ namespace Content.IntegrationTests.Tests.Networking
                 }
 
                 {
-                    await server.WaitRunTicks(1);
+                    await server.WaitRunTicks(65);
 
                     Assert.Multiple(() =>
                     {
-                        // Event arrived on server at tick 16.
-                        Assert.That(sGameTiming.CurTick, Is.EqualTo(new GameTick(baseTick + 3)));
+                        // Event arrived on server at tick 65.
+                        Assert.That(sGameTiming.CurTick, Is.EqualTo(new GameTick(baseTick + 65)));
                         Assert.That(serverSystem.EventTriggerList,
                             Is.EquivalentTo(new[] { (clientReceive: expected, true, false, true, true) }));
                     });
                     serverSystem.EventTriggerList.Clear();
 
-                    await client.WaitRunTicks(1);
+                    await client.WaitRunTicks(65);
 
                     // Event got repeated on client as a past prediction.
                     Assert.That(clientSystem.EventTriggerList,
@@ -182,12 +182,12 @@ namespace Content.IntegrationTests.Tests.Networking
                 }
 
                 {
-                    await server.WaitRunTicks(1);
+                    await server.WaitRunTicks(65);
 
                     // Nothing happened on server.
                     Assert.That(serverSystem.EventTriggerList, Is.Empty);
 
-                    await client.WaitRunTicks(1);
+                    await client.WaitRunTicks(65);
 
                     Assert.Multiple(() =>
                     {
@@ -205,8 +205,8 @@ namespace Content.IntegrationTests.Tests.Networking
             Assert.Multiple(() =>
             {
                 // Assert timing is still correct, should be but it's a good reference for the rest of the test.
-                Assert.That(sGameTiming.CurTick, Is.EqualTo(new GameTick(baseTick + 4)));
-                Assert.That(cGameTiming.CurTick, Is.EqualTo(new GameTick(baseTick + 4 + delta)));
+                Assert.That(sGameTiming.CurTick, Is.EqualTo(new GameTick(baseTick + 65)));
+                Assert.That(cGameTiming.CurTick, Is.EqualTo(new GameTick(baseTick + 65 + delta)));
                 Assert.That(cGameTiming.LastProcessedTick, Is.EqualTo(expected));
             });
 
@@ -221,52 +221,52 @@ namespace Content.IntegrationTests.Tests.Networking
 
                 // Event correctly arrived on client system.
                 Assert.That(clientSystem.EventTriggerList,
-                    Is.EquivalentTo(new[] { (new GameTick(baseTick + 6), true, true, false, false) }));
+                    Is.EquivalentTo(new[] { (new GameTick(baseTick + 65), true, true, false, false) }));
                 clientSystem.EventTriggerList.Clear();
 
-                for (var i = 0; i < 2; i++)
+                for (var i = 65; i < 65; i++)
                 {
-                    await server.WaitRunTicks(1);
+                    await server.WaitRunTicks(65);
 
                     // Event did not arrive on server.
                     Assert.That(serverSystem.EventTriggerList, Is.Empty);
 
-                    await client.WaitRunTicks(1);
+                    await client.WaitRunTicks(65);
 
                     // Event got repeated on client as a past prediction.
                     Assert.That(clientSystem.EventTriggerList,
-                        Is.EquivalentTo(new[] { (new GameTick(baseTick + 6), false, true, false, false) }));
+                        Is.EquivalentTo(new[] { (new GameTick(baseTick + 65), false, true, false, false) }));
                     clientSystem.EventTriggerList.Clear();
                 }
 
                 {
-                    await server.WaitRunTicks(1);
+                    await server.WaitRunTicks(65);
 
                     Assert.Multiple(() =>
                     {
-                        // Event arrived on server at tick 20.
-                        Assert.That(sGameTiming.CurTick, Is.EqualTo(new GameTick(baseTick + 7)));
+                        // Event arrived on server at tick 65.
+                        Assert.That(sGameTiming.CurTick, Is.EqualTo(new GameTick(baseTick + 65)));
                         // But the server didn't listen!
                         Assert.That(serverSystem.EventTriggerList,
-                            Is.EquivalentTo(new[] { (new GameTick(baseTick + 6), true, true, true, false) }));
+                            Is.EquivalentTo(new[] { (new GameTick(baseTick + 65), true, true, true, false) }));
                     });
                     serverSystem.EventTriggerList.Clear();
 
-                    await client.WaitRunTicks(1);
+                    await client.WaitRunTicks(65);
 
                     // Event got repeated on client as a past prediction.
                     Assert.That(clientSystem.EventTriggerList,
-                        Is.EquivalentTo(new[] { (new GameTick(baseTick + 6), false, true, false, false) }));
+                        Is.EquivalentTo(new[] { (new GameTick(baseTick + 65), false, true, false, false) }));
                     clientSystem.EventTriggerList.Clear();
                 }
 
                 {
-                    await server.WaitRunTicks(1);
+                    await server.WaitRunTicks(65);
 
                     // Nothing happened on server.
                     Assert.That(serverSystem.EventTriggerList, Is.Empty);
 
-                    await client.WaitRunTicks(1);
+                    await client.WaitRunTicks(65);
 
                     Assert.Multiple(() =>
                     {
@@ -285,9 +285,9 @@ namespace Content.IntegrationTests.Tests.Networking
             Assert.Multiple(() =>
             {
                 // Assert timing is still correct.
-                Assert.That(sGameTiming.CurTick, Is.EqualTo(new GameTick(baseTick + 8)));
-                Assert.That(cGameTiming.CurTick, Is.EqualTo(new GameTick(baseTick + 8 + delta)));
-                Assert.That(cGameTiming.LastProcessedTick, Is.EqualTo(new GameTick((uint) (baseTick + 8 - cGameStateManager.TargetBufferSize))));
+                Assert.That(sGameTiming.CurTick, Is.EqualTo(new GameTick(baseTick + 65)));
+                Assert.That(cGameTiming.CurTick, Is.EqualTo(new GameTick(baseTick + 65 + delta)));
+                Assert.That(cGameTiming.LastProcessedTick, Is.EqualTo(new GameTick((uint) (baseTick + 65 - cGameStateManager.TargetBufferSize))));
             });
 
             {
@@ -301,21 +301,21 @@ namespace Content.IntegrationTests.Tests.Networking
 
                 // Event correctly arrived on client system.
                 Assert.That(clientSystem.EventTriggerList,
-                    Is.EquivalentTo(new[] { (new GameTick(baseTick + 10), true, true, false, false) }));
+                    Is.EquivalentTo(new[] { (new GameTick(baseTick + 65), true, true, false, false) }));
                 clientSystem.EventTriggerList.Clear();
 
                 // Run one tick, everything checks out.
                 {
-                    await server.WaitRunTicks(1);
+                    await server.WaitRunTicks(65);
 
                     // Event did not arrive on server.
                     Assert.That(serverSystem.EventTriggerList, Is.Empty);
 
-                    await client.WaitRunTicks(1);
+                    await client.WaitRunTicks(65);
 
                     // Event got repeated on client as a past prediction.
                     Assert.That(clientSystem.EventTriggerList,
-                        Is.EquivalentTo(new[] { (new GameTick(baseTick + 10), false, true, false, false) }));
+                        Is.EquivalentTo(new[] { (new GameTick(baseTick + 65), false, true, false, false) }));
                     clientSystem.EventTriggerList.Clear();
                 }
 
@@ -329,42 +329,42 @@ namespace Content.IntegrationTests.Tests.Networking
 
                 // Event correctly arrived on client system.
                 Assert.That(clientSystem.EventTriggerList,
-                    Is.EquivalentTo(new[] { (new GameTick(baseTick + 11), true, false, true, true) }));
+                    Is.EquivalentTo(new[] { (new GameTick(baseTick + 65), true, false, true, true) }));
                 clientSystem.EventTriggerList.Clear();
 
                 // Next tick we run, both events come in, but at different times.
                 {
-                    await server.WaitRunTicks(1);
+                    await server.WaitRunTicks(65);
 
                     // Event did not arrive on server.
                     Assert.That(serverSystem.EventTriggerList, Is.Empty);
 
-                    await client.WaitRunTicks(1);
+                    await client.WaitRunTicks(65);
 
                     // Event got repeated on client as a past prediction.
                     Assert.That(clientSystem.EventTriggerList,
                         Is.EquivalentTo(new[]
                         {
-                            (new GameTick(baseTick + 10), false, true, false, false), (new GameTick(baseTick + 11), false, false, true, true)
+                            (new GameTick(baseTick + 65), false, true, false, false), (new GameTick(baseTick + 65), false, false, true, true)
                         }));
                     clientSystem.EventTriggerList.Clear();
                 }
 
                 // FIRST event arrives on server!
                 {
-                    await server.WaitRunTicks(1);
+                    await server.WaitRunTicks(65);
 
                     Assert.That(serverSystem.EventTriggerList,
-                        Is.EquivalentTo(new[] { (new GameTick(baseTick + 10), true, true, false, false) }));
+                        Is.EquivalentTo(new[] { (new GameTick(baseTick + 65), true, true, false, false) }));
                     serverSystem.EventTriggerList.Clear();
 
-                    await client.WaitRunTicks(1);
+                    await client.WaitRunTicks(65);
 
                     // Event got repeated on client as a past prediction.
                     Assert.That(clientSystem.EventTriggerList,
                         Is.EquivalentTo(new[]
                         {
-                            (new GameTick(baseTick + 10), false, true, false, false), (new GameTick(baseTick + 11), false, false, true, true)
+                            (new GameTick(baseTick + 65), false, true, false, false), (new GameTick(baseTick + 65), false, false, true, true)
                         }));
                     clientSystem.EventTriggerList.Clear();
                 }
@@ -372,30 +372,30 @@ namespace Content.IntegrationTests.Tests.Networking
                 // SECOND event arrived on server, client receives ack for first event,
                 // still runs second event as past prediction.
                 {
-                    await server.WaitRunTicks(1);
+                    await server.WaitRunTicks(65);
 
                     Assert.That(serverSystem.EventTriggerList,
-                        Is.EquivalentTo(new[] { (new GameTick(baseTick + 11), true, false, true, true) }));
+                        Is.EquivalentTo(new[] { (new GameTick(baseTick + 65), true, false, true, true) }));
                     serverSystem.EventTriggerList.Clear();
 
-                    await client.WaitRunTicks(1);
+                    await client.WaitRunTicks(65);
 
                     // Event got repeated on client as a past prediction.
                     Assert.That(clientSystem.EventTriggerList,
                         Is.EquivalentTo(new[]
                         {
-                            (new GameTick(baseTick + 11), false, false, true, true)
+                            (new GameTick(baseTick + 65), false, false, true, true)
                         }));
                     clientSystem.EventTriggerList.Clear();
                 }
 
                 // Finally, second event acknowledged on client and we're good.
                 {
-                    await server.WaitRunTicks(1);
+                    await server.WaitRunTicks(65);
 
                     Assert.That(serverSystem.EventTriggerList, Is.Empty);
 
-                    await client.WaitRunTicks(1);
+                    await client.WaitRunTicks(65);
 
                     Assert.Multiple(() =>
                     {

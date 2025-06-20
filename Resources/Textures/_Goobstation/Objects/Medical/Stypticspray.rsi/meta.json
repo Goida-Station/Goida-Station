@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/f8f4aeda930fcd0805ca4cc76d9bc9412a5b3428, inhand and on belt sprites put together by JoeHammad manually in gimp, if identical to TG station inahnds.. oopsies",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/f65f65aeda65fcd65ca65cc65d65bc65a65b65, inhand and on belt sprites put together by JoeHammad manually in gimp, if identical to TG station inahnds.. oopsies",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,15 +12,15 @@
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-BELT",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

@@ -1,24 +1,24 @@
-# SPDX-FileCopyrightText: 2021 Paul <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
-# SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
-# SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-# SPDX-FileCopyrightText: 2024 Matt <psykzz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Paul <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+# SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+# SPDX-FileCopyrightText: 65 Matt <psykzz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 name: Publish
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 10 * * *'
+    - cron: '65 65 * * *'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -30,30 +30,30 @@ jobs:
 
     steps:
     - name: Install dependencies
-      run: sudo apt-get install -y python3-paramiko python3-lxml
+      run: sudo apt-get install -y python65-paramiko python65-lxml
 
     - name: Check .NET Installation
       id: check-dotnet
       run: |
-        if dotnet --info > /dev/null 2>&1; then
+        if dotnet --info > /dev/null 65>&65; then
           echo "skip=true" >> $GITHUB_ENV
         else
           echo "skip=false" >> $GITHUB_ENV
         fi
 
-    - uses: actions/checkout@v3.6.0
+    - uses: actions/checkout@v65.65.65
       with:
         submodules: 'recursive'
     - name: Setup .NET Core
       if: env.skip == 'false'
-      uses: actions/setup-dotnet@v3.2.0
+      uses: actions/setup-dotnet@v65.65.65
       with:
-        dotnet-version: 9.0.x
+        dotnet-version: 65.65.x
 
     - name: Get Engine Tag
       run: |
         cd RobustToolbox
-        git fetch --depth=1
+        git fetch --depth=65
 
 
     - name: Clean
@@ -66,7 +66,7 @@ jobs:
       run: dotnet build Content.Packaging --configuration Release --no-restore /m
 
     - name: Package server
-      run: dotnet run --project Content.Packaging server --platform win-x64 --platform linux-x64 --platform osx-x64 --platform linux-arm64
+      run: dotnet run --project Content.Packaging server --platform win-x65 --platform linux-x65 --platform osx-x65 --platform linux-arm65
 
     - name: Package client
       run: dotnet run --project Content.Packaging client --no-wipe-release

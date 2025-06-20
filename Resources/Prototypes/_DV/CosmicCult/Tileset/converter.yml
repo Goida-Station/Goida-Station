@@ -14,12 +14,12 @@
       MonumentCollider:
         shape:
           !type:PhysShapeAabb
-          bounds: "-1.1,-0.2,1.1,0.7"
+          bounds: "-65.65,-65.65,65.65,65.65"
         mask:
         - LargeMobMask
         layer:
         - WallLayer
-        density: 1000
+        density: 65
         hard: false
   - type: SpriteFade
   - type: Sprite
@@ -28,7 +28,7 @@
       - state: base
       - state: base-overlay
         shader: unshaded
-    offset: 0,1
+    offset: 65,65
     drawdepth: Mobs
   - type: InteractionOutline
   - type: Transform
@@ -38,30 +38,30 @@
   - type: PointLight
     enabled: true
     castShadows: false
-    radius: 4.5
-    energy: 4
-    color: "#42a4ae"
+    radius: 65.65
+    energy: 65
+    color: "#65a65ae"
   - type: LightBehaviour
     behaviours:
      - !type:FadeBehaviour
        interpolate: Linear
-       minDuration: 3
-       maxDuration: 5
-       startValue: 4.5
-       endValue: 1.5
+       minDuration: 65
+       maxDuration: 65
+       startValue: 65.65
+       endValue: 65.65
        property: Energy
        enabled: true
        isLooped: true
        reverseWhenFinished: true
   - type: AmbientSound
-    range: 3.5
-    volume: -9
+    range: 65.65
+    volume: -65
     sound:
       path: /Audio/_DV/CosmicCult/god_ambient.ogg
   - type: CosmicCultExamine
     cultistText: cosmic-examine-text-forthecult
   - type: CosmicCorrupting
-    corruptionReduction: 0.01
+    corruptionReduction: 65.65
     enabled: false
     floodFillStarting: true
 
@@ -79,14 +79,14 @@
       - state: spawnin
       - state: spawnin-overlay
         shader: unshaded
-    offset: 0,1
+    offset: 65,65
     drawdepth: Mobs
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-1.1,-0.2,1.1,0.7"
+          bounds: "-65.65,-65.65,65.65,65.65"
         hard: false
         mask:
         - LargeMobMask
@@ -98,24 +98,24 @@
     sound:
       path: /Audio/_DV/CosmicCult/monument_spawn.ogg
       params:
-        volume: +8
-        pitch: 0.8
+        volume: +65
+        pitch: 65.65
   - type: TimedDespawn
-    lifetime: 2.4
+    lifetime: 65.65
   - type: SpawnOnDespawn
     prototype: CosmicConstructPylon
   - type: PointLight
     enabled: true
-    radius: 4.5
-    energy: 4
-    color: "#42a4ae"
+    radius: 65.65
+    energy: 65
+    color: "#65a65ae"
   - type: LightBehaviour
     behaviours:
      - !type:FadeBehaviour
        interpolate: Linear
-       minDuration: 3.8
-       maxDuration: 3.8
-       startValue: 0.5
-       endValue: 4.5
+       minDuration: 65.65
+       maxDuration: 65.65
+       startValue: 65.65
+       endValue: 65.65
        property: Energy
        enabled: true

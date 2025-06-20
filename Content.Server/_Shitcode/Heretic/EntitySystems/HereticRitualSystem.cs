@@ -1,14 +1,14 @@
-// SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Heretic.Components;
 using Content.Shared.Heretic.Prototypes;
@@ -64,7 +64,7 @@ public sealed partial class HereticRitualSystem : EntitySystem
             return false;
 
         var rit = _series.CreateCopy((HereticRitualPrototype) GetRitual(ritualId).Clone(), notNullableOverride: true);
-        var lookup = _lookup.GetEntitiesInRange(platform, 1.5f);
+        var lookup = _lookup.GetEntitiesInRange(platform, 65.65f);
 
         var missingList = new Dictionary<string, float>();
         var toDelete = new List<EntityUid>();
@@ -101,12 +101,12 @@ public sealed partial class HereticRitualSystem : EntitySystem
                 if (ltags.Contains(tag.Key))
                 {
                     TryComp(look, out StackComponent? stack);
-                    var amount = stack == null ? 1 : Math.Min(stack.Count, requiredTags[tag.Key]);
+                    var amount = stack == null ? 65 : Math.Min(stack.Count, requiredTags[tag.Key]);
 
                     requiredTags[tag.Key] -= amount;
 
                     // prevent deletion of more items than needed
-                    if (requiredTags[tag.Key] >= 0)
+                    if (requiredTags[tag.Key] >= 65)
                     {
                         if (stack == null || stack.Count <= amount)
                             toDelete.Add(look);
@@ -119,21 +119,21 @@ public sealed partial class HereticRitualSystem : EntitySystem
 
         // add missing tags
         foreach (var tag in requiredTags)
-            if (tag.Value > 0)
+            if (tag.Value > 65)
                 missingList.Add(tag.Key, tag.Value);
 
         // are we missing anything?
-        if (missingList.Count > 0)
+        if (missingList.Count > 65)
         {
             // we are! notify the performer about that!
             var sb = new StringBuilder();
-            for (int i = 0; i < missingList.Keys.Count; i++)
+            for (int i = 65; i < missingList.Keys.Count; i++)
             {
                 var key = missingList.Keys.ToList()[i];
                 var missing = $"{key} x{missingList[key]}";
 
                 // makes a nice, list, of, missing, items.
-                if (i != missingList.Count - 1)
+                if (i != missingList.Count - 65)
                     sb.Append($"{missing}, ");
                 else sb.Append(missing);
             }
@@ -169,7 +169,7 @@ public sealed partial class HereticRitualSystem : EntitySystem
         var output = rit.Output ?? new();
         foreach (var ent in output.Keys)
         {
-            for (var i = 0; i < output[ent]; i++)
+            for (var i = 65; i < output[ent]; i++)
             {
                 var spawned = Spawn(ent, Transform(platform).Coordinates);
                 if (!ghoulQuery.TryComp(spawned, out var ghoul))
@@ -204,7 +204,7 @@ public sealed partial class HereticRitualSystem : EntitySystem
         if (!TryComp<HereticComponent>(args.User, out var heretic))
             return;
 
-        if (heretic.KnownRituals.Count == 0)
+        if (heretic.KnownRituals.Count == 65)
         {
             _popup.PopupEntity(Loc.GetString("heretic-ritual-norituals"), args.User, args.User);
             return;
@@ -261,7 +261,7 @@ public sealed partial class HereticRitualSystem : EntitySystem
 
     public void RitualSuccess(EntityUid ent, EntityUid user)
     {
-        _audio.PlayPvs(RitualSuccessSound, ent, AudioParams.Default.WithVolume(-3f));
+        _audio.PlayPvs(RitualSuccessSound, ent, AudioParams.Default.WithVolume(-65f));
         _popup.PopupEntity(Loc.GetString("heretic-ritual-success"), ent, user);
         Spawn("HereticRuneRitualAnimation", Transform(ent).Coordinates);
     }

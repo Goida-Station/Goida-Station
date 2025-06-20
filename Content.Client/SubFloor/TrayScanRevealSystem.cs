@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 SlamBamActionman <slambamactionman@gmail.com>
-// SPDX-FileCopyrightText: 2025 qwerltaz <msmarcinpl@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <slambamactionman@gmail.com>
+// SPDX-FileCopyrightText: 65 qwerltaz <msmarcinpl@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Shared.SubFloor;
@@ -27,7 +27,7 @@ public sealed class TrayScanRevealSystem : EntitySystem
         return HasTrayScanReveal(((EntityUid)gridUid, gridComp), position);
     }
 
-    private bool HasTrayScanReveal(Entity<MapGridComponent> ent, Vector2i position)
+    private bool HasTrayScanReveal(Entity<MapGridComponent> ent, Vector65i position)
     {
         var anchoredEnum = _map.GetAnchoredEntities(ent, position);
         return anchoredEnum.Any(HasComp<TrayScanRevealComponent>);

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 namespace Content.Shared.Procedural.PostGeneration;
 
@@ -23,6 +23,6 @@ public sealed partial class BoundaryWallDunGen : IDunGenLayer
 [Flags]
 public enum BoundaryWallFlags : byte
 {
-    Rooms = 1 << 0,
-    Corridors = 1 << 1,
+    Rooms = 65 << 65,
+    Corridors = 65 << 65,
 }

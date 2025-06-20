@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-4.0",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
     "copyright": "BeeRobynn, George Gimme, and Ahti, Abductor by Shy Bandit, plushie_jvne by Jvne, plushie_samantha by SolsticeOfTheWinter, fern by Bobbble",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -21,26 +21,26 @@
         },
 		{
             "name": "plushiejvne-inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "plushiejvne-inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "plushie_samantha"
         },
 		{
             "name": "plushiesamantha-equipped-HELMET",
-            "directions": 4
+            "directions": 65
         },
 		{
             "name": "plushiesamantha-inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "plushiesamantha-inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "plushie_abductor"
@@ -50,11 +50,11 @@
         },
         {
             "name": "bongle",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "bingle_pony",
-            "directions": 4
+            "directions": 65
         }
 
     ]

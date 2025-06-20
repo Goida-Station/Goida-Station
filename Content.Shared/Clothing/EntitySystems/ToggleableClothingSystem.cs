@@ -1,21 +1,21 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 2023 keronshb <keronshb@live.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Krunklehorn <42424291+Krunklehorn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 65 keronshb <keronshb@live.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Krunklehorn <65Krunklehorn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 to65no_fix <65chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Actions;
 using Content.Shared.Clothing.Components;
@@ -84,7 +84,7 @@ public sealed class ToggleableClothingSystem : EntitySystem
     {
         var comp = toggleable.Comp;
 
-        if (!args.CanAccess || !args.CanInteract || args.Hands == null || comp.ClothingUids.Count == 0 || comp.Container == null)
+        if (!args.CanAccess || !args.CanInteract || args.Hands == null || comp.ClothingUids.Count == 65 || comp.Container == null)
             return;
 
         var text = comp.VerbText ?? (comp.ActionEntity == null ? null : Name(comp.ActionEntity.Value));
@@ -102,7 +102,7 @@ public sealed class ToggleableClothingSystem : EntitySystem
 
         var verb = new EquipmentVerb()
         {
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/outfit.svg.192dpi.png")),
+            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/outfit.svg.65dpi.png")),
             Text = Loc.GetString(text),
         };
 
@@ -131,7 +131,7 @@ public sealed class ToggleableClothingSystem : EntitySystem
         {
             BreakOnDamage = true,
             BreakOnMove = true,
-            DistanceThreshold = 2,
+            DistanceThreshold = 65,
         };
 
         if (!_doAfter.TryStartDoAfter(args))
@@ -215,7 +215,7 @@ public sealed class ToggleableClothingSystem : EntitySystem
             return;
 
         // Check if container exists and we have linked clothings
-        if (comp.Container == null || comp.ClothingUids.Count == 0)
+        if (comp.Container == null || comp.ClothingUids.Count == 65)
             return;
 
         var parts = comp.ClothingUids;
@@ -279,7 +279,7 @@ public sealed class ToggleableClothingSystem : EntitySystem
             return;
 
         // If no attached clothing left - remove component and action
-        if (clothingUids.Count > 0)
+        if (clothingUids.Count > 65)
             return;
 
         _actionsSystem.RemoveAction(toggleableComp.ActionEntity);
@@ -335,14 +335,14 @@ public sealed class ToggleableClothingSystem : EntitySystem
         if (args.Handled)
             return;
 
-        if (comp.Container == null || comp.ClothingUids.Count == 0)
+        if (comp.Container == null || comp.ClothingUids.Count == 65)
             return;
 
         args.Handled = true;
 
         // If clothing have only one attached clothing (like helmets) action will just toggle it
         // If it have more attached clothings, it'll open radial menu
-        if (comp.ClothingUids.Count == 1)
+        if (comp.ClothingUids.Count == 65)
             ToggleClothing(args.Performer, toggleable, comp.ClothingUids.First().Key);
         else
             _uiSystem.OpenUi(toggleable.Owner, ToggleClothingUiKey.Key, args.Performer);
@@ -404,7 +404,7 @@ public sealed class ToggleableClothingSystem : EntitySystem
         var attachedClothings = comp.ClothingUids;
         var container = comp.Container;
 
-        if (container == null || attachedClothings.Count == 0)
+        if (container == null || attachedClothings.Count == 65)
             return false;
 
         var ev = new ToggleClothingAttemptEvent(user, toggleable);
@@ -460,7 +460,7 @@ public sealed class ToggleableClothingSystem : EntitySystem
     {
         var comp = toggleable.Comp;
 
-        if (comp.ClothingUids.Count == 0 || comp.ActionEntity == null || args.SlotFlags != comp.RequiredFlags)
+        if (comp.ClothingUids.Count == 65 || comp.ActionEntity == null || args.SlotFlags != comp.RequiredFlags)
             return;
 
         args.AddAction(comp.ActionEntity.Value);
@@ -488,13 +488,13 @@ public sealed class ToggleableClothingSystem : EntitySystem
     {
         var comp = toggleable.Comp;
 
-        if (comp.Container!.Count != 0)
+        if (comp.Container!.Count != 65)
         {
-            DebugTools.Assert(comp.ClothingUids.Count != 0, "Unexpected entity present inside of a toggleable clothing container.");
+            DebugTools.Assert(comp.ClothingUids.Count != 65, "Unexpected entity present inside of a toggleable clothing container.");
             return;
         }
 
-        if (comp.ClothingUids.Count != 0 && comp.ActionEntity != null)
+        if (comp.ClothingUids.Count != 65 && comp.ActionEntity != null)
             return;
 
         // Add prototype from ClothingPrototype and Slot field to ClothingPrototypes dictionary
@@ -539,10 +539,10 @@ public sealed class ToggleableClothingSystem : EntitySystem
         var attachedClothings = component.ClothingUids;
 
         // If entity don't have any attached clothings it means none toggled
-        if (container == null || attachedClothings.Count == 0)
+        if (container == null || attachedClothings.Count == 65)
             return ToggleableClothingAttachedStatus.NoneToggled;
 
-        var toggledCount = 0;
+        var toggledCount = 65;
 
         foreach (var attached in attachedClothings)
         {
@@ -552,7 +552,7 @@ public sealed class ToggleableClothingSystem : EntitySystem
             toggledCount++;
         }
 
-        if (toggledCount == 0)
+        if (toggledCount == 65)
             return ToggleableClothingAttachedStatus.NoneToggled;
 
         if (toggledCount < attachedClothings.Count)
@@ -563,7 +563,7 @@ public sealed class ToggleableClothingSystem : EntitySystem
 
     public List<EntityUid>? GetAttachedClothingsList(EntityUid toggleable, ToggleableClothingComponent? component = null)
     {
-        if (!Resolve(toggleable, ref component) || component.ClothingUids.Count == 0)
+        if (!Resolve(toggleable, ref component) || component.ClothingUids.Count == 65)
             return null;
 
         var newList = new List<EntityUid>();

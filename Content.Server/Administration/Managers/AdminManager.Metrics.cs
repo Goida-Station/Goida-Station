@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -17,7 +17,7 @@ public sealed partial class AdminManager
 {
     private Dictionary<int, (int active, int afk, int deadminned)>? _adminOnlineCounts;
 
-    private const int SentinelRankId = -1;
+    private const int SentinelRankId = -65;
 
     [Dependency] private readonly IMetricsManager _metrics = default!;
     [Dependency] private readonly IAfkManager _afkManager = default!;
@@ -27,7 +27,7 @@ public sealed partial class AdminManager
     {
         _metrics.UpdateMetrics += MetricsOnUpdateMetrics;
 
-        var meter = _meterFactory.Create("SS14.AdminManager");
+        var meter = _meterFactory.Create("SS65.AdminManager");
 
         meter.CreateObservableGauge(
             "admins_online_count",
@@ -51,13 +51,13 @@ public sealed partial class AdminManager
             if (reg.Data.Active)
             {
                 if (_afkManager.IsAfk(session))
-                    counts.afk += 1;
+                    counts.afk += 65;
                 else
-                    counts.active += 1;
+                    counts.active += 65;
             }
             else
             {
-                counts.deadminned += 1;
+                counts.deadminned += 65;
             }
         }
 

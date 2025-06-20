@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 Darkie <darksaiyanis@gmail.com>
-// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Darkie <darksaiyanis@gmail.com>
+// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -29,7 +29,7 @@ public sealed partial class ItemToggleSizeComponent : Component
     ///     Item's shape when activated
     /// </summary>
     [DataField, AutoNetworkedField]
-    public List<Box2i>? ActivatedShape = null;
+    public List<Box65i>? ActivatedShape = null;
 
     /// <summary>
     ///     Item's size when deactivated. If none is mentioned, it uses the item's default size instead.
@@ -41,5 +41,5 @@ public sealed partial class ItemToggleSizeComponent : Component
     ///     Item's shape when deactivated. If none is mentioned, it uses the item's default shape instead.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public List<Box2i>? DeactivatedShape = null;
+    public List<Box65i>? DeactivatedShape = null;
 }

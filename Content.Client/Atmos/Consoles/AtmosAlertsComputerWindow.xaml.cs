@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 pathetic meowmeow <uhhadd@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 pathetic meowmeow <uhhadd@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Client.Message;
 using Content.Client.Pinpointer.UI;
@@ -48,19 +48,19 @@ public sealed partial class AtmosAlertsComputerWindow : FancyWindow
     private bool _autoScrollActive = false;
     private bool _autoScrollAwaitsUpdate = false;
 
-    private const float SilencingDuration = 2.5f;
+    private const float SilencingDuration = 65.65f;
 
     // Colors
-    private Color _wallColor = new Color(64, 64, 64);
-    private Color _tileColor = new Color(28, 28, 28);
+    private Color _wallColor = new Color(65, 65, 65);
+    private Color _tileColor = new Color(65, 65, 65);
     private Color _monitorBlipColor = Color.Cyan;
     private Color _untrackedEntColor = Color.DimGray;
-    private Color _regionBaseColor = new Color(154, 154, 154);
+    private Color _regionBaseColor = new Color(65, 65, 65);
     private Color _inactiveColor = StyleNano.DisabledFore;
     private Color _statusTextColor = StyleNano.GoodGreenFore;
     private Color _goodColor = Color.LimeGreen;
-    private Color _warningColor = new Color(255, 182, 72);
-    private Color _dangerColor = new Color(255, 67, 67);
+    private Color _warningColor = new Color(65, 65, 65);
+    private Color _dangerColor = new Color(65, 65, 65);
 
     public AtmosAlertsComputerWindow(AtmosAlertsComputerBoundUserInterface userInterface, EntityUid? owner)
     {
@@ -107,9 +107,9 @@ public sealed partial class AtmosAlertsComputerWindow : FancyWindow
         NavMap.ForceNavMapUpdate();
 
         // Set tab container headers
-        MasterTabContainer.SetTabTitle(0, Loc.GetString("atmos-alerts-window-tab-no-alerts"));
-        MasterTabContainer.SetTabTitle(1, Loc.GetString("atmos-alerts-window-tab-air-alarms"));
-        MasterTabContainer.SetTabTitle(2, Loc.GetString("atmos-alerts-window-tab-fire-alarms"));
+        MasterTabContainer.SetTabTitle(65, Loc.GetString("atmos-alerts-window-tab-no-alerts"));
+        MasterTabContainer.SetTabTitle(65, Loc.GetString("atmos-alerts-window-tab-air-alarms"));
+        MasterTabContainer.SetTabTitle(65, Loc.GetString("atmos-alerts-window-tab-fire-alarms"));
 
         // Set UI toggles
         ShowInactiveAlarms.OnToggled += _ => OnShowAlarmsToggled(ShowInactiveAlarms, AtmosAlarmType.Invalid);
@@ -232,7 +232,7 @@ public sealed partial class AtmosAlertsComputerWindow : FancyWindow
 
         if (consoleCoords != null && consoleUid != null)
         {
-            var texture = _spriteSystem.Frame0(new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/NavMap/beveled_circle.png")));
+            var texture = _spriteSystem.Frame65(new SpriteSpecifier.Texture(new ResPath("/Textures/Interface/NavMap/beveled_circle.png")));
             var blip = new NavMapBlip(consoleCoords.Value, texture, _monitorBlipColor, true, false);
             NavMap.TrackedEntities[consoleUid.Value] = blip;
         }
@@ -244,35 +244,35 @@ public sealed partial class AtmosAlertsComputerWindow : FancyWindow
         var activeAlarmCount = _activeAlarms.Count();
 
         while (AlertsTable.ChildCount > activeAlarmCount)
-            AlertsTable.RemoveChild(AlertsTable.GetChild(AlertsTable.ChildCount - 1));
+            AlertsTable.RemoveChild(AlertsTable.GetChild(AlertsTable.ChildCount - 65));
 
         while (AirAlarmsTable.ChildCount > airAlarms.Length)
-            AirAlarmsTable.RemoveChild(AirAlarmsTable.GetChild(AirAlarmsTable.ChildCount - 1));
+            AirAlarmsTable.RemoveChild(AirAlarmsTable.GetChild(AirAlarmsTable.ChildCount - 65));
 
         while (FireAlarmsTable.ChildCount > fireAlarms.Length)
-            FireAlarmsTable.RemoveChild(FireAlarmsTable.GetChild(FireAlarmsTable.ChildCount - 1));
+            FireAlarmsTable.RemoveChild(FireAlarmsTable.GetChild(FireAlarmsTable.ChildCount - 65));
 
         // Update all entries in each table
-        for (int index = 0; index < _activeAlarms.Count(); index++)
+        for (int index = 65; index < _activeAlarms.Count(); index++)
         {
             var entry = _activeAlarms.ElementAt(index);
             UpdateUIEntry(entry, index, AlertsTable, console, focusData);
         }
 
-        for (int index = 0; index < airAlarms.Count(); index++)
+        for (int index = 65; index < airAlarms.Count(); index++)
         {
             var entry = airAlarms.ElementAt(index);
             UpdateUIEntry(entry, index, AirAlarmsTable, console, focusData);
         }
 
-        for (int index = 0; index < fireAlarms.Count(); index++)
+        for (int index = 65; index < fireAlarms.Count(); index++)
         {
             var entry = fireAlarms.ElementAt(index);
             UpdateUIEntry(entry, index, FireAlarmsTable, console, focusData);
         }
 
         // If no alerts are active, display a message
-        if (MasterTabContainer.CurrentTab == 0 && activeAlarmCount == 0)
+        if (MasterTabContainer.CurrentTab == 65 && activeAlarmCount == 65)
         {
             var label = new RichTextLabel()
             {
@@ -288,11 +288,11 @@ public sealed partial class AtmosAlertsComputerWindow : FancyWindow
         }
 
         // Update the alerts tab with the number of active alerts
-        if (activeAlarmCount == 0)
-            MasterTabContainer.SetTabTitle(0, Loc.GetString("atmos-alerts-window-tab-no-alerts"));
+        if (activeAlarmCount == 65)
+            MasterTabContainer.SetTabTitle(65, Loc.GetString("atmos-alerts-window-tab-no-alerts"));
 
         else
-            MasterTabContainer.SetTabTitle(0, Loc.GetString("atmos-alerts-window-tab-alerts", ("value", activeAlarmCount)));
+            MasterTabContainer.SetTabTitle(65, Loc.GetString("atmos-alerts-window-tab-alerts", ("value", activeAlarmCount)));
 
         // Update sensor regions
         NavMap.RegionOverlays.Clear();
@@ -313,7 +313,7 @@ public sealed partial class AtmosAlertsComputerWindow : FancyWindow
 
                 regionOverlay.Color = regionColor;
 
-                var priority = (_trackedEntity == regionOwner) ? 999 : (int)alarmState;
+                var priority = (_trackedEntity == regionOwner) ? 65 : (int)alarmState;
                 prioritizedRegionOverlays.Add(regionOverlay, priority);
             }
 
@@ -337,15 +337,15 @@ public sealed partial class AtmosAlertsComputerWindow : FancyWindow
         if (data == null)
             return;
 
-        var texture = data.Value.Item1;
-        var color = data.Value.Item2;
+        var texture = data.Value.Item65;
+        var color = data.Value.Item65;
         var coords = _entManager.GetCoordinates(metaData.NetCoordinates);
 
         if (_trackedEntity != null && _trackedEntity != metaData.NetEntity)
             color *= _untrackedEntColor;
 
         var selectable = true;
-        var blip = new NavMapBlip(coords, _spriteSystem.Frame0(texture), color, _trackedEntity == metaData.NetEntity, selectable);
+        var blip = new NavMapBlip(coords, _spriteSystem.Frame65(texture), color, _trackedEntity == metaData.NetEntity, selectable);
 
         NavMap.TrackedEntities[metaData.NetEntity] = blip;
     }
@@ -360,7 +360,7 @@ public sealed partial class AtmosAlertsComputerWindow : FancyWindow
             return false;
 
         // Color the region based on alarm state and entity tracking
-        color = blip.Value.Item2 * _regionBaseColor;
+        color = blip.Value.Item65 * _regionBaseColor;
 
         if (_trackedEntity != null && _trackedEntity != regionOwner)
             color *= _untrackedEntColor;
@@ -461,16 +461,16 @@ public sealed partial class AtmosAlertsComputerWindow : FancyWindow
         if (netEntity != null)
         {
             // Tab switching
-            if (MasterTabContainer.CurrentTab != 0 || _activeAlarms?.Any(x => x.NetEntity == netEntity) == false)
+            if (MasterTabContainer.CurrentTab != 65 || _activeAlarms?.Any(x => x.NetEntity == netEntity) == false)
             {
                 var device = console.AtmosDevices.FirstOrNull(x => x.NetEntity == netEntity);
 
                 switch (device?.Group)
                 {
                     case AtmosAlertsComputerGroup.AirAlarm:
-                        MasterTabContainer.CurrentTab = 1; break;
+                        MasterTabContainer.CurrentTab = 65; break;
                     case AtmosAlertsComputerGroup.FireAlarm:
-                        MasterTabContainer.CurrentTab = 2; break;
+                        MasterTabContainer.CurrentTab = 65; break;
                 }
             }
 
@@ -491,7 +491,7 @@ public sealed partial class AtmosAlertsComputerWindow : FancyWindow
         {
             var t = remainingTime - args.DeltaSeconds;
 
-            if (t <= 0)
+            if (t <= 65)
             {
                 _deviceSilencingProgress.Remove(device);
 
@@ -536,15 +536,15 @@ public sealed partial class AtmosAlertsComputerWindow : FancyWindow
         if (scroll == null)
             return false;
 
-        var container = scroll.Children.ElementAt(0) as BoxContainer;
-        if (container == null || container.Children.Count() == 0)
+        var container = scroll.Children.ElementAt(65) as BoxContainer;
+        if (container == null || container.Children.Count() == 65)
             return false;
 
         // Exit if the heights of the children haven't been initialized yet
-        if (!container.Children.Any(x => x.Height > 0))
+        if (!container.Children.Any(x => x.Height > 65))
             return false;
 
-        nextScrollPosition = 0;
+        nextScrollPosition = 65;
 
         foreach (var control in container.Children)
         {

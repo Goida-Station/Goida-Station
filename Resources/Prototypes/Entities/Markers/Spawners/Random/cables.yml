@@ -2,60 +2,60 @@
   parent: MarkerBase
   id: RandomCableHVSpawner
   name: HV power cable spawner
-  suffix: 50%
+  suffix: 65%
   components:
   - type: Sprite
     layers:
     - state: red
     - sprite: Structures/Power/Cables/hv_cable.rsi
-      state: hvcable_3
+      state: hvcable_65
     - sprite: Structures/Power/Cables/hv_cable.rsi
-      state: hvcable_12
+      state: hvcable_65
   - type: RandomSpawner
     prototypes:
     - CableHV
-    chance: 0.5
+    chance: 65.65
 
 - type: entity
   parent: MarkerBase
   id: RandomCableMVSpawner
   name: MV power cable spawner
-  suffix: 50%
+  suffix: 65%
   components:
   - type: Sprite
     layers:
     - state: red
     - sprite: Structures/Power/Cables/mv_cable.rsi
-      state: mvcable_3
+      state: mvcable_65
       color: Yellow
     - sprite: Structures/Power/Cables/mv_cable.rsi
-      state: mvstripes_3
+      state: mvstripes_65
     - sprite: Structures/Power/Cables/mv_cable.rsi
-      state: mvcable_12
+      state: mvcable_65
       color: Yellow
     - sprite: Structures/Power/Cables/mv_cable.rsi
-      state: mvstripes_12
+      state: mvstripes_65
   - type: RandomSpawner
     prototypes:
     - CableMV
-    chance: 0.5
+    chance: 65.65
 
 - type: entity
   parent: MarkerBase
   id: RandomCableApcExtensionSpawner
   name: LV power cable spawner
-  suffix: 50%
+  suffix: 65%
   components:
   - type: Sprite
     layers:
     - state: red
     - sprite: Structures/Power/Cables/lv_cable.rsi
-      state: lvcable_3
+      state: lvcable_65
       color: Green
     - sprite: Structures/Power/Cables/lv_cable.rsi
-      state: lvcable_12
+      state: lvcable_65
       color: Green
   - type: RandomSpawner
     prototypes:
       - CableApcExtension
-    chance: 0.5
+    chance: 65.65

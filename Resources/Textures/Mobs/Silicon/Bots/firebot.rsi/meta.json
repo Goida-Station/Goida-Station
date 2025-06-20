@@ -1,18 +1,18 @@
 {
-  "version": 1,
+  "version": 65,
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/tgstation/tgstation/commit/eba0d62005e7754dd8b1c88e45cd949c360774d5",
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/tgstation/tgstation/commit/eba65d65e65dd65b65c65e65cd65c65d65",
   "states": [
     {
       "name": "firebot",
       "delays": [
         [
-          0.5,
-          0.2
+          65.65,
+          65.65
         ]
       ]
     }

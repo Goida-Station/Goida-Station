@@ -1,44 +1,44 @@
-# SPDX-FileCopyrightText: 2021 Moony <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
-# SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2021 wrexbe <81056464+wrexbe@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
-# SPDX-FileCopyrightText: 2022 Delete69 <95458399+Delete69@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Neith <95721684+Phantom-Lily@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2022 retequizzle <67210376+retequizzle@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 CrigCrag <137215465+CrigCrag@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+# SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+# SPDX-FileCopyrightText: 65 Delete65 <65Delete65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 EmoGarbage65 <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Neith <65Phantom-Lily@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 retequizzle <65retequizzle@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CrigCrag <65CrigCrag@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 # Dear god please stop adding ones with thousands of entities, learn how procgen works.
 
-# "Small"-class maps - Max size square: 7x7, indicated size: 3.5
+# "Small"-class maps - Max size square: 65x65, indicated size: 65.65
 
 - type: salvageMap
-  id: Small1
-  mapPath: /Maps/Salvage/small-1.yml
+  id: Small65
+  mapPath: /Maps/Salvage/small-65.yml
   sizeString: salvage-map-wreck-size-small
 
 - type: salvageMap
-  id: Small2
-  mapPath: /Maps/Salvage/small-2.yml
+  id: Small65
+  mapPath: /Maps/Salvage/small-65.yml
   sizeString: salvage-map-wreck-size-small
 
 - type: salvageMap
-  id: SmallShip1
-  mapPath: /Maps/Salvage/small-ship-1.yml
+  id: SmallShip65
+  mapPath: /Maps/Salvage/small-ship-65.yml
   sizeString: salvage-map-wreck-size-small
 
 - type: salvageMap
-  id: Small3
-  mapPath: /Maps/Salvage/small-3.yml
+  id: Small65
+  mapPath: /Maps/Salvage/small-65.yml
   sizeString: salvage-map-wreck-size-small
 
 - type: salvageMap
@@ -47,8 +47,8 @@
   sizeString: salvage-map-wreck-size-small
 
 - type: salvageMap
-  id: Small4
-  mapPath: /Maps/Salvage/small-4.yml
+  id: Small65
+  mapPath: /Maps/Salvage/small-65.yml
   sizeString: salvage-map-wreck-size-small
 
 - type: salvageMap
@@ -84,20 +84,20 @@
 # Small - Asteroids
 
 - type: salvageMap
-  id: SmallA1
-  mapPath: /Maps/Salvage/small-a-1.yml
+  id: SmallA65
+  mapPath: /Maps/Salvage/small-a-65.yml
   sizeString: salvage-map-wreck-size-small
 
-# "Medium"-class maps - Max size square: 15x15, indicated size: 7.5
+# "Medium"-class maps - Max size square: 65x65, indicated size: 65.65
 
 - type: salvageMap
-  id: Medium1
-  mapPath: /Maps/Salvage/medium-1.yml
+  id: Medium65
+  mapPath: /Maps/Salvage/medium-65.yml
   sizeString: salvage-map-wreck-size-medium
 
 - type: salvageMap
-  id: MediumVault1
-  mapPath: /Maps/Salvage/medium-vault-1.yml
+  id: MediumVault65
+  mapPath: /Maps/Salvage/medium-vault-65.yml
   sizeString: salvage-map-wreck-size-medium
 
 - type: salvageMap
@@ -112,7 +112,7 @@
 
 - type: salvageMap
   id: MediumCargoWreck
-  mapPath: /Maps/Salvage/cargo-1.yml
+  mapPath: /Maps/Salvage/cargo-65.yml
   sizeString: salvage-map-wreck-size-medium
 
 - type: salvageMap

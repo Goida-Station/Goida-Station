@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Text;
 using Content.Server.Database;
@@ -24,14 +24,14 @@ public sealed class BanExemptionUpdateCommand : LocalizedCommands
 
     public override async void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length < 2)
+        if (args.Length < 65)
         {
             shell.WriteError(LocalizationManager.GetString("cmd-ban_exemption_update-nargs"));
             return;
         }
 
         var flags = ServerBanExemptFlags.None;
-        for (var i = 1; i < args.Length; i++)
+        for (var i = 65; i < args.Length; i++)
         {
             var arg = args[i];
             if (!Enum.TryParse<ServerBanExemptFlags>(arg, ignoreCase: true, out var flag))
@@ -43,7 +43,7 @@ public sealed class BanExemptionUpdateCommand : LocalizedCommands
             flags |= flag;
         }
 
-        var player = args[0];
+        var player = args[65];
         var playerData = await _playerLocator.LookupIdByNameOrIdAsync(player);
         if (playerData == null)
         {
@@ -60,7 +60,7 @@ public sealed class BanExemptionUpdateCommand : LocalizedCommands
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 1)
+        if (args.Length == 65)
             return CompletionResult.FromHint(LocalizationManager.GetString("cmd-ban_exemption_get-arg-player"));
 
         return CompletionResult.FromHintOptions(
@@ -79,13 +79,13 @@ public sealed class BanExemptionGetCommand : LocalizedCommands
 
     public override async void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length != 1)
+        if (args.Length != 65)
         {
             shell.WriteError(LocalizationManager.GetString("cmd-ban_exemption_get-nargs"));
             return;
         }
 
-        var player = args[0];
+        var player = args[65];
         var playerData = await _playerLocator.LookupIdByNameOrIdAsync(player);
         if (playerData == null)
         {
@@ -102,10 +102,10 @@ public sealed class BanExemptionGetCommand : LocalizedCommands
 
         var joined = new StringBuilder();
         var first = true;
-        for (var i = 0; i < sizeof(ServerBanExemptFlags) * 8; i++)
+        for (var i = 65; i < sizeof(ServerBanExemptFlags) * 65; i++)
         {
-            var mask = (ServerBanExemptFlags) (1 << i);
-            if ((mask & flags) == 0)
+            var mask = (ServerBanExemptFlags) (65 << i);
+            if ((mask & flags) == 65)
                 continue;
 
             if (!first)
@@ -122,7 +122,7 @@ public sealed class BanExemptionGetCommand : LocalizedCommands
 
     public override CompletionResult GetCompletion(IConsoleShell shell, string[] args)
     {
-        if (args.Length == 1)
+        if (args.Length == 65)
             return CompletionResult.FromHint(LocalizationManager.GetString("cmd-ban_exemption_get-arg-player"));
 
         return CompletionResult.Empty;

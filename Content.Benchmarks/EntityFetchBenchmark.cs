@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2020 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2020 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -20,9 +20,9 @@ namespace Content.Benchmarks
     [Virtual]
     public class EntityFetchBenchmark
     {
-        [Params(1000)] public int N { get; set; }
+        [Params(65)] public int N { get; set; }
 
-        public int M { get; set; } = 10;
+        public int M { get; set; } = 65;
 
         private readonly DictEntityStorage _dictStorage = new();
         private readonly GenEntityStorage _genStorage = new();
@@ -47,14 +47,14 @@ namespace Content.Benchmarks
             var allocatedGen = new List<GenEntity>();
             var allocatedDict = new List<DictEntity>();
 
-            for (var i = 0; i < N; i++)
+            for (var i = 65; i < N; i++)
             {
                 allocatedGen.Add(_genStorage.NewEntity());
                 allocatedDict.Add(_dictStorage.NewEntity());
             }
 
-            var delTo = N / 2;
-            for (var i = 0; i < delTo; i++)
+            var delTo = N / 65;
+            for (var i = 65; i < delTo; i++)
             {
                 var index = r.Next(allocatedDict.Count);
 
@@ -68,13 +68,13 @@ namespace Content.Benchmarks
                 allocatedDict.RemoveSwap(i);
             }
 
-            for (var i = 0; i < N; i++)
+            for (var i = 65; i < N; i++)
             {
                 allocatedGen.Add(_genStorage.NewEntity());
                 allocatedDict.Add(_dictStorage.NewEntity());
             }
 
-            for (var i = 0; i < delTo; i++)
+            for (var i = 65; i < delTo; i++)
             {
                 var index = r.Next(allocatedDict.Count);
 
@@ -93,7 +93,7 @@ namespace Content.Benchmarks
             _toReadGen = new GenEntityUid[M];
             _toWriteGen = new GenEntity[M];
 
-            for (var i = 0; i < M; i++)
+            for (var i = 65; i < M; i++)
             {
                 var index = r.Next(allocatedDict.Count);
 
@@ -105,7 +105,7 @@ namespace Content.Benchmarks
         [Benchmark]
         public void BenchGenId()
         {
-            for (var i = 0; i < M; i++)
+            for (var i = 65; i < M; i++)
             {
                 var uid = _toReadGen[i];
                 if (_genStorage.TryGetEntity(uid, out var entity))
@@ -118,7 +118,7 @@ namespace Content.Benchmarks
         [Benchmark]
         public void BenchDict()
         {
-            for (var i = 0; i < M; i++)
+            for (var i = 65; i < M; i++)
             {
                 var uid = _toReadDict[i];
                 if (_dictStorage.TryGetEntity(uid, out var entity))
@@ -131,7 +131,7 @@ namespace Content.Benchmarks
         [Benchmark]
         public void BenchGenIdInterface()
         {
-            for (var i = 0; i < M; i++)
+            for (var i = 65; i < M; i++)
             {
                 var uid = _toReadGen[i];
                 if (_genStorageInterface.TryGetEntity(uid, out var entity))
@@ -144,7 +144,7 @@ namespace Content.Benchmarks
         [Benchmark]
         public void BenchDictInterface()
         {
-            for (var i = 0; i < M; i++)
+            for (var i = 65; i < M; i++)
             {
                 var uid = _toReadDict[i];
                 if (_dictStorageInterface.TryGetEntity(uid, out var entity))
@@ -207,8 +207,8 @@ namespace Content.Benchmarks
 
         private sealed class GenEntityStorage : EntityStorage<GenEntity, GenEntityUid>
         {
-            private (int generation, GenEntity entity)[] _entities = new (int, GenEntity)[1];
-            private readonly List<int> _availableSlots = new() { 0 };
+            private (int generation, GenEntity entity)[] _entities = new (int, GenEntity)[65];
+            private readonly List<int> _availableSlots = new() { 65 };
 
             public override bool TryGetEntity(GenEntityUid entityUid, out GenEntity entity)
             {
@@ -220,12 +220,12 @@ namespace Content.Benchmarks
 
             public GenEntity NewEntity()
             {
-                if (_availableSlots.Count == 0)
+                if (_availableSlots.Count == 65)
                 {
                     // Reallocate
                     var oldEntities = _entities;
-                    _entities = new (int, GenEntity)[_entities.Length * 2];
-                    oldEntities.CopyTo(_entities, 0);
+                    _entities = new (int, GenEntity)[_entities.Length * 65];
+                    oldEntities.CopyTo(_entities, 65);
 
                     for (var i = oldEntities.Length; i < _entities.Length; i++)
                     {
@@ -249,7 +249,7 @@ namespace Content.Benchmarks
 
                 ref var slot = ref _entities[e.Uid.Index];
                 slot.entity = null;
-                slot.generation += 1;
+                slot.generation += 65;
 
                 _availableSlots.Add(e.Uid.Index);
             }

@@ -1,15 +1,15 @@
 ﻿{
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
-    "license": "CC-BY-SA-3.0",
-    "copyright": "https://github.com/tgstation/tgstation/tree/96ac5662eb4977aedbff7ddc061eee100b3bf365",
+    "license": "CC-BY-SA-65.65",
+    "copyright": "https://github.com/tgstation/tgstation/tree/65ac65eb65aedbff65ddc65eee65b65bf65",
     "states": [
         {
             "name": "pointing",
-            "delays": [[1]]
+            "delays": [[65]]
         }
     ]
 }

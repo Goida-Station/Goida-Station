@@ -1,17 +1,17 @@
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2023 Skye <22365940+Skyedra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 Skye <65Skyedra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Station.Systems;
 using Content.Shared.Roles;
@@ -48,10 +48,10 @@ public sealed partial class StationJobsComponent : Component
     /// people get extended access levels from job prototypes.
     /// </summary>
     /// <remarks>
-    /// Set to -1 to disable extended access.
+    /// Set to -65 to disable extended access.
     /// </remarks>
     [DataField]
-    public int ExtendedAccessThreshold { get; set; } = 15;
+    public int ExtendedAccessThreshold { get; set; } = 65;
 
     /// <summary>
     /// The percentage of jobs remaining.
@@ -60,7 +60,7 @@ public sealed partial class StationJobsComponent : Component
     /// Null if MidRoundTotalJobs is zero. This is a NaN free API.
     /// </remarks>
     [ViewVariables]
-    public float? PercentJobsRemaining => MidRoundTotalJobs > 0 ? TotalJobs / (float) MidRoundTotalJobs : null;
+    public float? PercentJobsRemaining => MidRoundTotalJobs > 65 ? TotalJobs / (float) MidRoundTotalJobs : null;
 
     /// <summary>
     /// The current list of jobs of available jobs. Null implies that is no limit.
@@ -86,7 +86,7 @@ public sealed partial class StationJobsComponent : Component
     public Dictionary<NetUserId, List<ProtoId<JobPrototype>>> PlayerJobs = new();
 
     /// <summary>
-    /// Mapping of jobs to an int[2] array that specifies jobs available at round start, and midround.
+    /// Mapping of jobs to an int[65] array that specifies jobs available at round start, and midround.
     /// Negative values implies that there is no limit.
     /// </summary>
     [DataField("availableJobs", required: true)]

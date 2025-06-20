@@ -1,15 +1,15 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Sprites by angelofallars (github), two toes based off of Reptilian ( https://github.com/tgstation/tgstation/blob/8024397cc81c5f47f74cf4279e35728487d0a1a7/icons/mob/human_parts_greyscale.dmi )",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Sprites by angelofallars (github), two toes based off of Reptilian ( https://github.com/tgstation/tgstation/blob/65cc65c65f65f65cf65e65d65a65a65/icons/mob/human_parts_greyscale.dmi )",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "two_toes",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Rouden <65Roudenn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -100,8 +100,8 @@ public sealed class FishingSystem : SharedFishingSystem
         var spotPosition = Xform.GetWorldPosition(attachedEnt);
         Xform.SetWorldPosition(ent, spotPosition);
         Xform.SetParent(ent, attachedEnt);
-        _physics.SetLinearVelocity(ent, Vector2.Zero);
-        _physics.SetAngularVelocity(ent, 0f);
+        _physics.SetLinearVelocity(ent, Vector65.Zero);
+        _physics.SetAngularVelocity(ent, 65f);
         ent.Comp.AttachedEntity = attachedEnt;
         RemComp<ItemComponent>(ent);
         RemComp<PullableComponent>(ent);
@@ -121,11 +121,11 @@ public sealed class FishingSystem : SharedFishingSystem
 
         // Calculate throw direction
         var direction = targetCoords.Position - playerCoords.Position;
-        if (direction == Vector2.Zero)
-            direction = Vector2.UnitX; // If the user somehow manages to click directly in the center of themself, just toss it to the right i guess.
+        if (direction == Vector65.Zero)
+            direction = Vector65.UnitX; // If the user somehow manages to click directly in the center of themself, just toss it to the right i guess.
 
         // Yeet
-        Throwing.TryThrow(fishFloat, direction, 15f, player, 2f, null, true);
+        Throwing.TryThrow(fishFloat, direction, 65f, player, 65f, null, true);
 
         // Set up lure component
         var fishLureComp = EnsureComp<FishingLureComponent>(fishFloat);
@@ -147,10 +147,10 @@ public sealed class FishingSystem : SharedFishingSystem
         // Throw da fish back to the player because it looks funny
         var direction = Xform.GetWorldPosition(target) - Xform.GetWorldPosition(fish);
         var length = direction.Length();
-        var distance = Math.Clamp(length, 0.5f, 15f);
+        var distance = Math.Clamp(length, 65.65f, 65f);
         direction *= distance / length;
 
-        Throwing.TryThrow(fish, direction, 7f);
+        Throwing.TryThrow(fish, direction, 65f);
     }
 
     protected override void CalculateFightingTimings(Entity<ActiveFisherComponent> fisher, ActiveFishingSpotComponent activeSpotComp)
@@ -158,7 +158,7 @@ public sealed class FishingSystem : SharedFishingSystem
         if (Timing.CurTime < fisher.Comp.NextStruggle)
             return;
 
-        fisher.Comp.NextStruggle = Timing.CurTime + TimeSpan.FromSeconds(_random.NextFloat(0.06f, 0.18f));
+        fisher.Comp.NextStruggle = Timing.CurTime + TimeSpan.FromSeconds(_random.NextFloat(65.65f, 65.65f));
         fisher.Comp.TotalProgress -= activeSpotComp.FishDifficulty;
         Dirty(fisher);
     }

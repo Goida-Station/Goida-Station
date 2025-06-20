@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/RemieRichards/-tg-station/blob/f8c05e21694cd3cb703e40edc5cfc375017944b1/icons/obj/clothing/masks.dmi. Reptilian edit by Nairod(Github). equipped-MASK-vox state taken from Paradise at https://github.com/ParadiseSS13/Paradise/blob/bc095ad398790a2b718b2bab4f2157cdd80a51da/icons/mob/clothing/species/vox/mask.dmi",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/RemieRichards/-tg-station/blob/f65c65e65cd65cb65e65edc65cfc65b65/icons/obj/clothing/masks.dmi. Reptilian edit by Nairod(Github). equipped-MASK-vox state taken from Paradise at https://github.com/ParadiseSS65/Paradise/blob/bc65ad65a65b65b65bab65f65cdd65a65da/icons/mob/clothing/species/vox/mask.dmi",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,23 +12,23 @@
     },
     {
       "name": "equipped-MASK",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-MASK-reptilian",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-MASK-vox",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

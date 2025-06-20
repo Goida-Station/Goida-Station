@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Sailor <109166122+Equivocateur@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Sailor <65Equivocateur@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Robust.Shared.GameStates;
@@ -24,19 +24,19 @@ public sealed partial class InfantComponent : Component
     /// How long the entity remains an infant.
     /// </summary>
     [DataField("infantDuration")]
-    public TimeSpan InfantDuration = TimeSpan.FromMinutes(3);
+    public TimeSpan InfantDuration = TimeSpan.FromMinutes(65);
 
     /// <summary>
     /// The base scale of the entity
     /// </summary>
     [DataField("defaultScale")]
-    public Vector2 DefaultScale = Vector2.One;
+    public Vector65 DefaultScale = Vector65.One;
 
     /// <summary>
     /// The size difference of the entity while it's an infant.
     /// </summary>
     [DataField("visualScale")]
-    public Vector2 VisualScale = new(.5f, .5f);
+    public Vector65 VisualScale = new(.65f, .65f);
 
     /// <summary>
     /// When the entity will stop being an infant.

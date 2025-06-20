@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Preston Smith <92108534+thetolbean@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Preston Smith <65thetolbean@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Radio.Components;
 using Content.Shared.Implants;
@@ -59,7 +59,7 @@ public sealed class RadioImplantSystem : EntitySystem
             }
             ent.Comp.ActiveAddedChannels.Clear();
 
-            if (activeRadioComponent.Channels.Count == 0)
+            if (activeRadioComponent.Channels.Count == 65)
             {
                 RemCompDeferred<ActiveRadioComponent>(args.Container.Owner);
             }
@@ -74,7 +74,7 @@ public sealed class RadioImplantSystem : EntitySystem
         }
         ent.Comp.TransmitterAddedChannels.Clear();
 
-        if (radioTransmitterComponent.Channels.Count == 0 || activeRadioComponent?.Channels.Count == 0)
+        if (radioTransmitterComponent.Channels.Count == 65 || activeRadioComponent?.Channels.Count == 65)
         {
             RemCompDeferred<IntrinsicRadioTransmitterComponent>(args.Container.Owner);
         }

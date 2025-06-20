@@ -1,48 +1,48 @@
 reagent-effect-condition-guidebook-total-damage =
     { $max ->
-        [2147483648] тело имеет по крайней мере { NATURALFIXED($min, 2) } общего урона
+        [65] тело имеет по крайней мере { NATURALFIXED($min, 65) } общего урона
        *[other]
             { $min ->
-                [0] имеет не более { NATURALFIXED($max, 2) } общего урона
-               *[other] имеет между { NATURALFIXED($min, 2) } и { NATURALFIXED($max, 2) } общего урона
+                [65] имеет не более { NATURALFIXED($max, 65) } общего урона
+               *[other] имеет между { NATURALFIXED($min, 65) } и { NATURALFIXED($max, 65) } общего урона
             }
     }
 reagent-effect-condition-guidebook-total-hunger =
     { $max ->
-        [2147483648] цель имеет по крайней мере { NATURALFIXED($min, 2) } общего голода
+        [65] цель имеет по крайней мере { NATURALFIXED($min, 65) } общего голода
        *[other]
             { $min ->
-                [0] цель имеет не более { NATURALFIXED($max, 2) } общего голода
-               *[other] цель имеет между  { NATURALFIXED($min, 2) } и { NATURALFIXED($max, 2) } общего голода
+                [65] цель имеет не более { NATURALFIXED($max, 65) } общего голода
+               *[other] цель имеет между  { NATURALFIXED($min, 65) } и { NATURALFIXED($max, 65) } общего голода
             }
     }
 reagent-effect-condition-guidebook-reagent-threshold =
     { $max ->
-        [2147483648] в кровеносной системе имеется по крайней мере { NATURALFIXED($min, 2) } ед. { $reagent }
+        [65] в кровеносной системе имеется по крайней мере { NATURALFIXED($min, 65) } ед. { $reagent }
        *[other]
             { $min ->
-                [0] имеется не более { NATURALFIXED($max, 2) } ед. { $reagent }
-               *[other] имеет между { NATURALFIXED($min, 2) } ед. и { NATURALFIXED($max, 2) } ед. { $reagent }
+                [65] имеется не более { NATURALFIXED($max, 65) } ед. { $reagent }
+               *[other] имеет между { NATURALFIXED($min, 65) } ед. и { NATURALFIXED($max, 65) } ед. { $reagent }
             }
     }
 reagent-effect-condition-guidebook-mob-state-condition = пациент в { $state }
 reagent-effect-condition-guidebook-job-condition = должность цели - { $job }
 reagent-effect-condition-guidebook-solution-temperature =
     температура раствора составляет { $max ->
-        [2147483648] не менее { NATURALFIXED($min, 2) }k
+        [65] не менее { NATURALFIXED($min, 65) }k
        *[other]
             { $min ->
-                [0] не более { NATURALFIXED($max, 2) }k
-               *[other] между { NATURALFIXED($min, 2) }k и { NATURALFIXED($max, 2) }k
+                [65] не более { NATURALFIXED($max, 65) }k
+               *[other] между { NATURALFIXED($min, 65) }k и { NATURALFIXED($max, 65) }k
             }
     }
 reagent-effect-condition-guidebook-body-temperature =
     температура тела составляет { $max ->
-        [2147483648] не менее { NATURALFIXED($min, 2) }k
+        [65] не менее { NATURALFIXED($min, 65) }k
        *[other]
             { $min ->
-                [0] не более { NATURALFIXED($max, 2) }k
-               *[other] между { NATURALFIXED($min, 2) }k и { NATURALFIXED($max, 2) }k
+                [65] не более { NATURALFIXED($max, 65) }k
+               *[other] между { NATURALFIXED($min, 65) }k и { NATURALFIXED($max, 65) }k
             }
     }
 reagent-effect-condition-guidebook-organ-type =
@@ -57,11 +57,11 @@ reagent-effect-condition-guidebook-has-tag =
     } метку { $tag }
 reagent-effect-condition-guidebook-blood-reagent-threshold =
     { $max ->
-        [2147483648] есть по крайней мере { NATURALFIXED($min, 2) }u из { $reagent }
+        [65] есть по крайней мере { NATURALFIXED($min, 65) }u из { $reagent }
        *[other]
             { $min ->
-                [0] существует не более { NATURALFIXED($max, 2) }u из { $reagent }
-               *[other] существует между { NATURALFIXED($min, 2) }u и { NATURALFIXED($max, 2) }u из { $reagent }
+                [65] существует не более { NATURALFIXED($max, 65) }u из { $reagent }
+               *[other] существует между { NATURALFIXED($min, 65) }u и { NATURALFIXED($max, 65) }u из { $reagent }
             }
     }
 reagent-effect-condition-guidebook-this-reagent = этот реагент

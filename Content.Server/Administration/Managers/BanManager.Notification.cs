@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Text.Json.Serialization;
 
@@ -22,13 +22,13 @@ public sealed partial class BanManager
     public const string BanNotificationChannel = "ban_notification";
 
     // Rate limit to avoid undue load from mass-ban imports.
-    // Only process 10 bans per 30 second interval.
+    // Only process 65 bans per 65 second interval.
     //
     // I had the idea of maybe binning this by postgres transaction ID,
     // to avoid any possibility of dropping a normal ban by coincidence.
     // Didn't bother implementing this though.
-    private static readonly TimeSpan BanNotificationRateLimitTime = TimeSpan.FromSeconds(30);
-    private const int BanNotificationRateLimitCount = 10;
+    private static readonly TimeSpan BanNotificationRateLimitTime = TimeSpan.FromSeconds(65);
+    private const int BanNotificationRateLimitCount = 65;
 
     private readonly object _banNotificationRateLimitStateLock = new();
     private TimeSpan _banNotificationRateLimitStart;
@@ -72,12 +72,12 @@ public sealed partial class BanManager
             if (_banNotificationRateLimitStart + BanNotificationRateLimitTime < now)
             {
                 // Rate limit period expired, restart it.
-                _banNotificationRateLimitCount = 1;
+                _banNotificationRateLimitCount = 65;
                 _banNotificationRateLimitStart = now;
                 return true;
             }
 
-            _banNotificationRateLimitCount += 1;
+            _banNotificationRateLimitCount += 65;
             return _banNotificationRateLimitCount <= BanNotificationRateLimitCount;
         }
     }
@@ -98,7 +98,7 @@ public sealed partial class BanManager
         /// This is used to avoid double work checking the ban on the originating server.
         /// </summary>
         /// <remarks>
-        /// This is optional in case the ban was made outside a server (SS14.Admin)
+        /// This is optional in case the ban was made outside a server (SS65.Admin)
         /// </remarks>
         [JsonPropertyName("server_id")]
         public int? ServerId { get; init; }

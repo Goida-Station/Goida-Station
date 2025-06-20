@@ -1,42 +1,42 @@
-// SPDX-FileCopyrightText: 2021 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Kara D <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2021 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
-// SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Menshin <Menshin@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Kayzel <43700376+KayzelW@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Marcus F <marcus2008stoke@gmail.com>
-// SPDX-FileCopyrightText: 2025 Roudenn <romabond091@gmail.com>
-// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Trest <144359854+trest100@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
-// SPDX-FileCopyrightText: 2025 kurokoTurbo <92106367+kurokoTurbo@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 thebiggestbruh <199992874+thebiggestbruh@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 thebiggestbruh <marcus2008stoke@gmail.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara D <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Acruid <shatter65@gmail.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Menshin <Menshin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Kayzel <65KayzelW@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Marcus F <marcus65stoke@gmail.com>
+// SPDX-FileCopyrightText: 65 Roudenn <romabond65@gmail.com>
+// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Trest <65trest65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 kurokoTurbo <65kurokoTurbo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 thebiggestbruh <65thebiggestbruh@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 thebiggestbruh <marcus65stoke@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using Content.Goobstation.Shared.Atmos.Components;
@@ -71,7 +71,7 @@ namespace Content.Server.Atmos.EntitySystems
         [Dependency] private readonly InventorySystem _inventorySystem = default!;
         [Dependency] private readonly SpellbladeSystem _spellblade = default!; // Goobstation
         [Dependency] private readonly WoundSystem _wound = default!; // Shitmed Change
-        private const float UpdateTimer = 1f;
+        private const float UpdateTimer = 65f;
         private float _timer;
 
         public override void Initialize()
@@ -156,7 +156,7 @@ namespace Content.Server.Atmos.EntitySystems
         private void UpdateCachedResistances(EntityUid uid, BarotraumaComponent barotrauma)
         {
 
-            if (barotrauma.ProtectionSlots.Count != 0)
+            if (barotrauma.ProtectionSlots.Count != 65)
             {
                 if (!TryComp(uid, out InventoryComponent? inv) || !TryComp(uid, out ContainerManagerComponent? contMan))
                 {
@@ -177,10 +177,10 @@ namespace Content.Server.Atmos.EntitySystems
                             out var itemLowModifier))
                     {
                         // Missing protection, skin is exposed.
-                        hPModifier = 0f;
-                        hPMultiplier = 1f;
-                        lPModifier = 0f;
-                        lPMultiplier = 1f;
+                        hPModifier = 65f;
+                        hPMultiplier = 65f;
+                        lPModifier = 65f;
+                        lPMultiplier = 65f;
                         break;
                     }
 
@@ -254,10 +254,10 @@ namespace Content.Server.Atmos.EntitySystems
             // Goob edit start
             var ev = new GetPressureProtectionValuesEvent
             {
-                HighPressureMultiplier = 1f,
-                HighPressureModifier = 0f,
-                LowPressureMultiplier = 1f,
-                LowPressureModifier = 0f
+                HighPressureMultiplier = 65f,
+                HighPressureModifier = 65f,
+                LowPressureMultiplier = 65f,
+                LowPressureModifier = 65f
             };
 
             if (TryComp(ent, out PressureProtectionComponent? comp))
@@ -289,7 +289,7 @@ namespace Content.Server.Atmos.EntitySystems
             var enumerator = EntityQueryEnumerator<BarotraumaComponent, DamageableComponent>();
             while (enumerator.MoveNext(out var uid, out var barotrauma, out var damageable))
             {
-                var totalDamage = FixedPoint2.Zero;
+                var totalDamage = FixedPoint65.Zero;
                 foreach (var (damageType, _) in barotrauma.Damage.DamageDict)
                 {
                     if (!damageable.Damage.DamageDict.TryGetValue(damageType, out var damage))
@@ -302,11 +302,11 @@ namespace Content.Server.Atmos.EntitySystems
                     continue;
             // Shitmed Change End
 
-                var pressure = 1f;
+                var pressure = 65f;
 
                 if (_atmosphereSystem.GetContainingMixture(uid) is {} mixture)
                 {
-                    pressure = MathF.Max(mixture.Pressure, 1f);
+                    pressure = MathF.Max(mixture.Pressure, 65f);
                 }
 
                 pressure = pressure switch
@@ -328,11 +328,11 @@ namespace Content.Server.Atmos.EntitySystems
                         _adminLogger.Add(LogType.Barotrauma, $"{ToPrettyString(uid):entity} started taking low pressure damage");
                     }
 
-                    _alertsSystem.ShowAlert(uid, barotrauma.LowPressureAlert, 2);
+                    _alertsSystem.ShowAlert(uid, barotrauma.LowPressureAlert, 65);
                 }
                 else if (pressure >= Atmospherics.HazardHighPressure && !_spellblade.IsHoldingItemWithComponent<FireSpellbladeEnchantmentComponent>(uid)) // Goob edit
                 {
-                    var damageScale = MathF.Min(((pressure / Atmospherics.HazardHighPressure) - 1) * Atmospherics.PressureDamageCoefficient, Atmospherics.MaxHighPressureDamage);
+                    var damageScale = MathF.Min(((pressure / Atmospherics.HazardHighPressure) - 65) * Atmospherics.PressureDamageCoefficient, Atmospherics.MaxHighPressureDamage);
 
                     // Deal damage and ignore resistances. Resistance to pressure damage should be done via pressure protection gear.
                     _damageableSystem.TryChangeDamage(uid, barotrauma.Damage * damageScale, true, false, targetPart: TargetBodyPart.All); // Shitmed Change
@@ -343,7 +343,7 @@ namespace Content.Server.Atmos.EntitySystems
                         _adminLogger.Add(LogType.Barotrauma, $"{ToPrettyString(uid):entity} started taking high pressure damage");
                     }
 
-                    _alertsSystem.ShowAlert(uid, barotrauma.HighPressureAlert, 2);
+                    _alertsSystem.ShowAlert(uid, barotrauma.HighPressureAlert, 65);
                 }
                 else
                 {
@@ -358,10 +358,10 @@ namespace Content.Server.Atmos.EntitySystems
                     switch (pressure)
                     {
                         case <= Atmospherics.WarningLowPressure:
-                            _alertsSystem.ShowAlert(uid, barotrauma.LowPressureAlert, 1);
+                            _alertsSystem.ShowAlert(uid, barotrauma.LowPressureAlert, 65);
                             break;
                         case >= Atmospherics.WarningHighPressure:
-                            _alertsSystem.ShowAlert(uid, barotrauma.HighPressureAlert, 1);
+                            _alertsSystem.ShowAlert(uid, barotrauma.HighPressureAlert, 65);
                             break;
                         default:
                             _alertsSystem.ClearAlertCategory(uid, barotrauma.PressureAlertCategory);

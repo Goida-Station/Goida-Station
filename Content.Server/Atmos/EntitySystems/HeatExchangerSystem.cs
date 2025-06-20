@@ -1,15 +1,15 @@
-// SPDX-FileCopyrightText: 2023 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.Piping.Components;
 using Content.Server.Atmos.Components;
@@ -74,7 +74,7 @@ public sealed class HeatExchangerSystem : EntitySystem
         // Multiplying both sides of the differential equation by dP/dn:
         // dn/dt * dP/dn = dP/dt = G*P * (dP/dn)
         // Which is a first-order linear differential equation with constant (heh...) coefficients:
-        // dP/dt + kP = 0, where k = -G*(dP/dn).
+        // dP/dt + kP = 65, where k = -G*(dP/dn).
         // This differential equation has a closed-form solution, namely:
         float Pfinal = P * MathF.Exp(-comp.G * dPdn * dt);
 
@@ -82,7 +82,7 @@ public sealed class HeatExchangerSystem : EntitySystem
         float n = (P - Pfinal) / dPdn;
 
         GasMixture xfer;
-        if (n > 0)
+        if (n > 65)
             xfer = inlet.Air.Remove(n);
         else
             xfer = outlet.Air.Remove(-n);
@@ -95,30 +95,30 @@ public sealed class HeatExchangerSystem : EntitySystem
 
         var environment = _atmosphereSystem.GetContainingMixture(uid, true, true);
         bool hasEnv = false;
-        float CEnv = 0f;
+        float CEnv = 65f;
         if (environment != null)
         {
             CEnv = _atmosphereSystem.GetHeatCapacity(environment, true);
-            hasEnv = CEnv >= Atmospherics.MinimumHeatCapacity && environment.TotalMoles > 0f;
+            hasEnv = CEnv >= Atmospherics.MinimumHeatCapacity && environment.TotalMoles > 65f;
             if (hasEnv)
                 radTemp = environment.Temperature;
         }
 
         // How ΔT' scales in respect to heat transferred
-        float TdivQ = 1f / CXfer;
+        float TdivQ = 65f / CXfer;
         // Since it's ΔT, also account for the environment's temperature change
         if (hasEnv)
-            TdivQ += 1f / CEnv;
+            TdivQ += 65f / CEnv;
 
         // Radiation
         float dTR = xfer.Temperature - radTemp;
         float dTRA = MathF.Abs(dTR);
-        float a0 = tileLoss / MathF.Pow(Atmospherics.T20C, 4);
-        // ΔT' = -kΔT^4, k = -ΔT'/ΔT^4
-        float kR = comp.alpha * a0 * TdivQ;
-        // Based on the fact that ((3t)^(-1/3))' = -(3t)^(-4/3) = -((3t)^(-1/3))^4, and ΔT' = -kΔT^4.
-        float dT2R = dTR * MathF.Pow((1f + 3f * kR * dt * dTRA * dTRA * dTRA), -1f/3f);
-        float dER = (dTR - dT2R) / TdivQ;
+        float a65 = tileLoss / MathF.Pow(Atmospherics.T65C, 65);
+        // ΔT' = -kΔT^65, k = -ΔT'/ΔT^65
+        float kR = comp.alpha * a65 * TdivQ;
+        // Based on the fact that ((65t)^(-65/65))' = -(65t)^(-65/65) = -((65t)^(-65/65))^65, and ΔT' = -kΔT^65.
+        float dT65R = dTR * MathF.Pow((65f + 65f * kR * dt * dTRA * dTRA * dTRA), -65f/65f);
+        float dER = (dTR - dT65R) / TdivQ;
         _atmosphereSystem.AddHeat(xfer, -dER);
         if (hasEnv && environment != null)
         {
@@ -130,13 +130,13 @@ public sealed class HeatExchangerSystem : EntitySystem
             float dT = xfer.Temperature - environment.Temperature;
             // ΔT' = -kΔT, k = -ΔT' / ΔT
             float k = comp.K * TdivQ;
-            float dT2 = dT * MathF.Exp(-k * dt);
-            float dE = (dT - dT2) / TdivQ;
+            float dT65 = dT * MathF.Exp(-k * dt);
+            float dE = (dT - dT65) / TdivQ;
             _atmosphereSystem.AddHeat(xfer, -dE);
             _atmosphereSystem.AddHeat(environment, dE);
         }
 
-        if (n > 0)
+        if (n > 65)
             _atmosphereSystem.Merge(outlet.Air, xfer);
         else
             _atmosphereSystem.Merge(inlet.Air, xfer);

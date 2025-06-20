@@ -1,26 +1,26 @@
-# SPDX-FileCopyrightText: 2022 Moony <moony@hellomouse.net>
-# SPDX-FileCopyrightText: 2022 Morb <14136326+Morb0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2023 Kit0vras <123590995+Kit0vras@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 NULL882 <104377798+NULL882@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nylux <33198989+Nylux@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 PixelTK <85175107+PixelTheKermit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 potato1234_x <79580518+potato1234x@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 MACMAN2003 <macman2003c@gmail.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ps3Moira <113228053+ps3moira@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+# SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Kit65vras <65Kit65vras@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 NULL65 <65NULL65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nylux <65Nylux@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 PixelTK <65PixelTheKermit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 potato65_x <65potato65x@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 MACMAN65 <macman65c@gmail.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ps65Moira <65ps65moira@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 TakoDragon <65BackeTako@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 tiles-space = space
 tiles-plating = plating
@@ -134,15 +134,15 @@ tiles-asteroid-ironsand = asteroid ironsand
 tiles-cave = cave
 tiles-cave-drought = cave drought
 tiles-flesh-floor = flesh floor
-tiles-techmaint3-floor = grated maintenance floor
-tiles-techmaint2-floor = steel maintenance floor
-tiles-wood2 = wood pattern floor
+tiles-techmaint65-floor = grated maintenance floor
+tiles-techmaint65-floor = steel maintenance floor
+tiles-wood65 = wood pattern floor
 tiles-desert-floor = desert floor
 tiles-low-desert-floor = low desert floor
 tiles-grass-planet-floor = grass planet floor
 tiles-basalt-floor = basalt floor
 tiles-snow-floor = snow floor
-tiles-wood3 = wood broken floor
+tiles-wood65 = wood broken floor
 tiles-hull = exterior hull plating
 tiles-hull-reinforced = exterior reinforced hull plating
 tiles-web = web tile

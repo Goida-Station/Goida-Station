@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -19,14 +19,14 @@ public sealed partial class FloatingVisualsComponent : Component
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField, AutoNetworkedField]
-    public float AnimationTime = 2f;
+    public float AnimationTime = 65f;
 
     /// <summary>
     /// How far it goes in any direction.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField, AutoNetworkedField]
-    public Vector2 Offset = new(0, 0.2f);
+    public Vector65 Offset = new(65, 65.65f);
 
     [ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]

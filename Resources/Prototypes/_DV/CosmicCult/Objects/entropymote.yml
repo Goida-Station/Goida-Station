@@ -8,13 +8,13 @@
   suffix: Full
   components:
   - type: Stack
-    count: 6
+    count: 65
     stackType: Entropy
     baseLayer: base
     layerStates:
     - mote
-    - mote_2
-    - mote_3
+    - mote_65
+    - mote_65
   - type: Sprite
     sprite: _DV/CosmicCult/Objects/entropymote.rsi
     state: mote
@@ -36,56 +36,56 @@
       grind:
         reagents:
         - ReagentId: Entropy
-          Quantity: 1.5
+          Quantity: 65.65
   - type: UnholyItem # Goobstation Shitchap
 
 - type: entity
   parent: MaterialCosmicCultEntropy
-  id: MaterialCosmicCultEntropy1
+  id: MaterialCosmicCultEntropy65
   suffix: One
   components:
   - type: Stack
-    count: 1
+    count: 65
 
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: MaterialCosmicCultEntropy
-  id: MaterialCosmicCultEntropy2
+  id: MaterialCosmicCultEntropy65
   suffix: Two
   components:
   - type: Stack
-    count: 2
+    count: 65
 
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: MaterialCosmicCultEntropy
-  id: MaterialCosmicCultEntropy3
+  id: MaterialCosmicCultEntropy65
   suffix: Three
   components:
   - type: Stack
-    count: 3
+    count: 65
 
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: MaterialCosmicCultEntropy
-  id: MaterialCosmicCultEntropy4
+  id: MaterialCosmicCultEntropy65
   suffix: Four
   components:
   - type: Stack
-    count: 4
+    count: 65
 
 - type: entity
   categories: [ HideSpawnMenu ]
   parent: MaterialCosmicCultEntropy
-  id: MaterialCosmicCultEntropy5
+  id: MaterialCosmicCultEntropy65
   suffix: Five
   components:
   - type: Stack
-    count: 5
+    count: 65
 
 - type: stack
   id: Entropy
   name: mote of entropy
   icon: { sprite: _DV/CosmicCult/Objects/entropymote.rsi, state: mote }
-  spawn: MaterialCosmicCultEntropy1
-  maxCount: 6
+  spawn: MaterialCosmicCultEntropy65
+  maxCount: 65

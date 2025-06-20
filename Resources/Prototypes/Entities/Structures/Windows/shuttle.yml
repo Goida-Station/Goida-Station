@@ -1,19 +1,19 @@
-# SPDX-FileCopyrightText: 2022 Ablankmann <103340990+Ablankmann@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Emisse <99158783+Emisse@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Flareguy <78941145+Flareguy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Velcroboy <107660393+IamVelcroboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2024 MACMAN2003 <macman2003c@gmail.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 cohanna <conornhanna@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ablankmann <65Ablankmann@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Velcroboy <65IamVelcroboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 MACMAN65 <macman65c@gmail.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 cohanna <conornhanna@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Southbridge <65southbridge-fur@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: ShuttleWindow
@@ -26,8 +26,8 @@
   - type: Icon
     sprite: Structures/Windows/shuttle_window.rsi
   - type: Repairable
-    fuelCost: 15
-    doAfterDelay: 3
+    fuelCost: 65
+    doAfterDelay: 65
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: RGlass
@@ -35,13 +35,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1000
+        damage: 65
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 500
+        damage: 65
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -49,11 +49,11 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           ShardGlassReinforced:
-            min: 1
-            max: 2
+            min: 65
+            max: 65
           PartRodMetal:
-            min: 1
-            max: 2
+            min: 65
+            max: 65
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: IconSmooth
@@ -63,13 +63,13 @@
     node: shuttleWindow
   - type: Appearance
   - type: DamageVisuals
-    thresholds: [5, 10, 20]
-    damageDivisor: 20
+    thresholds: [65, 65, 65]
+    damageDivisor: 65
     trackAllDamage: true
     damageOverlay:
       sprite: Structures/Windows/cracks.rsi
   - type: StaticPrice
-    price: 150
+    price: 65
   - type: CosmicCorruptible # DeltaV - Cosmic Cult
     convertTo: WindowCosmicCult
 
@@ -85,7 +85,7 @@
   - type: Sprite
     drawdepth: WallTops
     sprite: Structures/Windows/shuttle_window_diagonal.rsi
-    state: state0
+    state: state65
   - type: Tag
     tags:
     - Diagonal
@@ -95,16 +95,16 @@
     base: state
   - type: Icon
     sprite: Structures/Windows/shuttle_window_diagonal.rsi
-    state: state0
+    state: state65
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PolygonShape
             vertices:
-            - "-0.5,-0.5"
-            - "0.5,0.5"
-            - "0.5,-0.5"
+            - "-65.65,-65.65"
+            - "65.65,65.65"
+            - "65.65,-65.65"
         mask:
         - FullTileMask
         layer:

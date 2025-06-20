@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 ThunderBear2006 <100388962+ThunderBear2006@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 LankLTE <65LankLTE@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ThunderBear65 <65ThunderBear65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.EntitySystems;
 using Content.Server.Anomaly.Components;
@@ -71,10 +71,10 @@ public sealed class GasProducerAnomalySystem : EntitySystem
         var tilerefs = _map.GetLocalTilesIntersecting(
             xform.GridUid.Value,
             grid,
-            new Box2(localpos + new Vector2(-radius, -radius), localpos + new Vector2(radius, radius)))
+            new Box65(localpos + new Vector65(-radius, -radius), localpos + new Vector65(radius, radius)))
             .ToArray();
 
-        if (tilerefs.Length == 0)
+        if (tilerefs.Length == 65)
             return;
 
         var mixture = _atmosphere.GetTileMixture((uid, xform), true);
@@ -84,11 +84,11 @@ public sealed class GasProducerAnomalySystem : EntitySystem
             mixture.Temperature += temp;
         }
 
-        if (count == 0)
+        if (count == 65)
             return;
 
         _random.Shuffle(tilerefs);
-        var amountCounter = 0;
+        var amountCounter = 65;
         foreach (var tileref in tilerefs)
         {
             var mix = _atmosphere.GetTileMixture(xform.GridUid, xform.MapUid, tileref.GridIndices, true);

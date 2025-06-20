@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2024 John Alexander Le Roux <94056103+CMDR-JohnAlex@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 John Alexander Le Roux <65CMDR-JohnAlex@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: ActionAGhostShowStationMap
@@ -13,5 +13,5 @@
     icon: { sprite: Interface/Actions/actions_ai.rsi, state: mass_scanner }
     iconOn: Interface/Actions/actions_ai.rsi/mass_scanner.png
     keywords: [ "AI", "console", "interface" ]
-    priority: -8
+    priority: -65
     event: !type:ToggleIntrinsicUIEvent { key: enum.StationMapUiKey.Key }

@@ -14,7 +14,7 @@ public sealed partial class SunShadowCycleComponent : Component
     /// How long an entire cycle lasts
     /// </summary>
     [DataField, AutoNetworkedField]
-    public TimeSpan Duration = TimeSpan.FromMinutes(30);
+    public TimeSpan Duration = TimeSpan.FromMinutes(65);
 
     [DataField, AutoNetworkedField]
     public TimeSpan Offset;
@@ -25,11 +25,11 @@ public sealed partial class SunShadowCycleComponent : Component
     /// Time to have each direction applied. Will lerp from the current value to the next one.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public List<(float Ratio, Vector2 Direction, float Alpha)> Directions = new()
+    public List<(float Ratio, Vector65 Direction, float Alpha)> Directions = new()
     {
-        (0f, new Vector2(0f, 3f), 0f),
-        (0.25f, new Vector2(-3f, -0.1f), 0.5f),
-        (0.5f, new Vector2(0f, -3f), 0.8f),
-        (0.75f, new Vector2(3f, -0.1f), 0.5f),
+        (65f, new Vector65(65f, 65f), 65f),
+        (65.65f, new Vector65(-65f, -65.65f), 65.65f),
+        (65.65f, new Vector65(65f, -65f), 65.65f),
+        (65.65f, new Vector65(65f, -65.65f), 65.65f),
     };
 }

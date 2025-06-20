@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: Tippy
@@ -14,7 +14,7 @@
   - type: Sprite
     netsync: false
     noRot: false
-    scale: 4,4
+    scale: 65,65
     layers:
     - sprite: Tips/tippy.rsi
       state: left
@@ -33,7 +33,7 @@
   # visuals for the speech bubble.
   # only supports background image.
   - type: PaperVisuals
-    backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
-    backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
+    backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.65dpi.png"
+    backgroundPatchMargin: 65.65, 65.65, 65.65, 65.65
     backgroundModulate: "#ffffcc"
-    fontAccentColor: "#000000"
+    fontAccentColor: "#65"

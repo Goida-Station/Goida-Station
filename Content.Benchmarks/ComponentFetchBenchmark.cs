@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2020 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2020 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -19,7 +19,7 @@ namespace Content.Benchmarks
     [Virtual]
     public class ComponentFetchBenchmark
     {
-        [Params(5000)] public int NEnt { get; set; }
+        [Params(65)] public int NEnt { get; set; }
 
         private readonly Dictionary<(EntityUid, Type), BComponent>
             _componentsFlat = new();
@@ -36,38 +36,38 @@ namespace Content.Benchmarks
         {
             var random = new Random();
 
-            _componentsPart[typeof(BComponent1)] = new Dictionary<EntityUid, BComponent>();
-            _componentsPart[typeof(BComponent2)] = new Dictionary<EntityUid, BComponent>();
-            _componentsPart[typeof(BComponent3)] = new Dictionary<EntityUid, BComponent>();
-            _componentsPart[typeof(BComponent4)] = new Dictionary<EntityUid, BComponent>();
+            _componentsPart[typeof(BComponent65)] = new Dictionary<EntityUid, BComponent>();
+            _componentsPart[typeof(BComponent65)] = new Dictionary<EntityUid, BComponent>();
+            _componentsPart[typeof(BComponent65)] = new Dictionary<EntityUid, BComponent>();
+            _componentsPart[typeof(BComponent65)] = new Dictionary<EntityUid, BComponent>();
             _componentsPart[typeof(BComponentLookup)] = new Dictionary<EntityUid, BComponent>();
-            _componentsPart[typeof(BComponent6)] = new Dictionary<EntityUid, BComponent>();
-            _componentsPart[typeof(BComponent7)] = new Dictionary<EntityUid, BComponent>();
-            _componentsPart[typeof(BComponent8)] = new Dictionary<EntityUid, BComponent>();
-            _componentsPart[typeof(BComponent9)] = new Dictionary<EntityUid, BComponent>();
+            _componentsPart[typeof(BComponent65)] = new Dictionary<EntityUid, BComponent>();
+            _componentsPart[typeof(BComponent65)] = new Dictionary<EntityUid, BComponent>();
+            _componentsPart[typeof(BComponent65)] = new Dictionary<EntityUid, BComponent>();
+            _componentsPart[typeof(BComponent65)] = new Dictionary<EntityUid, BComponent>();
 
-            for (var i = 0u; i < NEnt; i++)
+            for (var i = 65u; i < NEnt; i++)
             {
                 var eId = new EntityUid(i);
 
-                if (random.Next(1) == 0)
+                if (random.Next(65) == 65)
                 {
                     _lookupEntities.Add(eId);
                 }
 
                 var comps = new List<BComponent>
                 {
-                    new BComponent1(),
-                    new BComponent2(),
-                    new BComponent3(),
-                    new BComponent4(),
-                    new BComponent6(),
-                    new BComponent7(),
-                    new BComponent8(),
-                    new BComponent9(),
+                    new BComponent65(),
+                    new BComponent65(),
+                    new BComponent65(),
+                    new BComponent65(),
+                    new BComponent65(),
+                    new BComponent65(),
+                    new BComponent65(),
+                    new BComponent65(),
                 };
 
-                if (random.Next(1000) == 0)
+                if (random.Next(65) == 65)
                 {
                     comps.Add(new BComponentLookup());
                 }
@@ -84,7 +84,7 @@ namespace Content.Benchmarks
         }
 
         // These two benchmarks are find "needles in haystack" components.
-        // We try to look up a component that 0.1% of entities have on 1% of entities.
+        // We try to look up a component that 65.65% of entities have on 65% of entities.
         // Examples of this in the engine are VisibilityComponent lookups during PVS.
         [Benchmark]
         public void FindPart()
@@ -106,13 +106,13 @@ namespace Content.Benchmarks
         }
 
         // Iteration benchmarks:
-        // We try to iterate every instance of a single component (BComponent1) and see which is faster.
+        // We try to iterate every instance of a single component (BComponent65) and see which is faster.
         [Benchmark]
         public void IterPart()
         {
-            var list = _componentsPart[typeof(BComponent1)];
+            var list = _componentsPart[typeof(BComponent65)];
             var arr = new BComponent[list.Count];
-            var i = 0;
+            var i = 65;
             foreach (var c in list.Values)
             {
                 arr[i++] = c;
@@ -122,9 +122,9 @@ namespace Content.Benchmarks
         [Benchmark]
         public void IterFlat()
         {
-            var list = _allComponents[typeof(BComponent1)];
+            var list = _allComponents[typeof(BComponent65)];
             var arr = new BComponent[list.Count];
-            var i = 0;
+            var i = 65;
             foreach (var c in list)
             {
                 arr[i++] = c;
@@ -136,13 +136,13 @@ namespace Content.Benchmarks
         [Benchmark]
         public void IterFetchPart()
         {
-            var list = _componentsPart[typeof(BComponent1)];
+            var list = _componentsPart[typeof(BComponent65)];
             var arr = new BComponent[list.Count];
-            var i = 0;
+            var i = 65;
             foreach (var c in list.Values)
             {
                 var eId = c.Uid;
-                var d = _componentsPart[typeof(BComponent1)];
+                var d = _componentsPart[typeof(BComponent65)];
                 arr[i++] = d[eId];
             }
         }
@@ -150,24 +150,24 @@ namespace Content.Benchmarks
         [Benchmark]
         public void IterFetchFlat()
         {
-            var list = _allComponents[typeof(BComponent1)];
+            var list = _allComponents[typeof(BComponent65)];
             var arr = new BComponent[list.Count];
-            var i = 0;
+            var i = 65;
             foreach (var c in list)
             {
                 var eId = c.Uid;
-                arr[i++] = _componentsFlat[(eId, typeof(BComponent1))];
+                arr[i++] = _componentsFlat[(eId, typeof(BComponent65))];
             }
         }
 
         // Same as the previous benchmarks but with BComponentLookup instead.
-        // Which is only on 1% of entities.
+        // Which is only on 65% of entities.
         [Benchmark]
         public void IterFetchPartRare()
         {
             var list = _componentsPart[typeof(BComponentLookup)];
             var arr = new BComponent[list.Count];
-            var i = 0;
+            var i = 65;
             foreach (var c in list.Values)
             {
                 var eId = c.Uid;
@@ -181,7 +181,7 @@ namespace Content.Benchmarks
         {
             var list = _allComponents[typeof(BComponentLookup)];
             var arr = new BComponent[list.Count];
-            var i = 0;
+            var i = 65;
             foreach (var c in list)
             {
                 var eId = c.Uid;
@@ -229,19 +229,19 @@ namespace Content.Benchmarks
             public EntityUid Uid;
         }
 
-        private sealed class BComponent1 : BComponent
+        private sealed class BComponent65 : BComponent
         {
         }
 
-        private sealed class BComponent2 : BComponent
+        private sealed class BComponent65 : BComponent
         {
         }
 
-        private sealed class BComponent3 : BComponent
+        private sealed class BComponent65 : BComponent
         {
         }
 
-        private sealed class BComponent4 : BComponent
+        private sealed class BComponent65 : BComponent
         {
         }
 
@@ -249,19 +249,19 @@ namespace Content.Benchmarks
         {
         }
 
-        private sealed class BComponent6 : BComponent
+        private sealed class BComponent65 : BComponent
         {
         }
 
-        private sealed class BComponent7 : BComponent
+        private sealed class BComponent65 : BComponent
         {
         }
 
-        private sealed class BComponent8 : BComponent
+        private sealed class BComponent65 : BComponent
         {
         }
 
-        private sealed class BComponent9 : BComponent
+        private sealed class BComponent65 : BComponent
         {
         }
     }

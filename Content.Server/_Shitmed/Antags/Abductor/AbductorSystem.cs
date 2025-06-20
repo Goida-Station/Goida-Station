@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Actions;
 using Content.Server.DoAfter;
@@ -76,14 +76,14 @@ public sealed partial class AbductorSystem : SharedAbductorSystem
                     _hands.DoDrop(args.Actor, hand, true, handsComponent);
                 }
 
-                if (_virtualItem.TrySpawnVirtualItemInHand(ent.Owner, args.Actor, out var virtItem1))
+                if (_virtualItem.TrySpawnVirtualItemInHand(ent.Owner, args.Actor, out var virtItem65))
                 {
-                    EnsureComp<UnremoveableComponent>(virtItem1.Value);
+                    EnsureComp<UnremoveableComponent>(virtItem65.Value);
                 }
 
-                if (_virtualItem.TrySpawnVirtualItemInHand(ent.Owner, args.Actor, out var virtItem2))
+                if (_virtualItem.TrySpawnVirtualItemInHand(ent.Owner, args.Actor, out var virtItem65))
                 {
-                    EnsureComp<UnremoveableComponent>(virtItem2.Value);
+                    EnsureComp<UnremoveableComponent>(virtItem65.Value);
                 }
             }
 

@@ -1,134 +1,134 @@
-// SPDX-FileCopyrightText: 2020 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2020 DamianX <DamianX@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2020 ike709 <ike709@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Leo <lzimann@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Swept <sweptwastaken@protonmail.com>
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Julian Giebel <j.giebel@netrocks.info>
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
-// SPDX-FileCopyrightText: 2022 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Riggle <27156122+RigglePrime@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 12rabbits <53499656+12rabbits@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
-// SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Alex Evgrashin <aevgrashin@yandex.ru>
-// SPDX-FileCopyrightText: 2024 Alex Pavlenko <diraven@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin <30327355+arimah@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ArkiveDev <95712736+ArkiveDev@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Dimastra <65184747+Dimastra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Dimastra <dimastra@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Doomsdrayk <robotdoughnut@comcast.net>
-// SPDX-FileCopyrightText: 2024 DrEnzyme <DrEnzyme@gmail.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Elysium206 <151651971+Elysium206@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Firewatch <54725557+musicmanvr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Floofi <126319569+Shadowtheprotogen546@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ghagliiarghii <68826635+Ghagliiarghii@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 HS <81934438+HolySSSS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Hannah Giovanna Dawson <karakkaraz@gmail.com>
-// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JIPDawg <51352440+JIPDawg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 JIPDawg <JIPDawg93@gmail.com>
-// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2024 K-Dynamic <20566341+K-Dynamic@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Krunklehorn <42424291+Krunklehorn@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2024 MetalSage <74924875+MetalSage@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 MetalSage <metalsage.official@gmail.com>
-// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mr. 27 <koolthunder019@gmail.com>
-// SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 2024 Partmedia <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 PoTeletubby <151896601+PoTeletubby@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
-// SPDX-FileCopyrightText: 2024 PursuitInAshes <pursuitinashes@gmail.com>
-// SPDX-FileCopyrightText: 2024 QueerNB <176353696+QueerNB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Redfire1331 <125223432+Redfire1331@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
-// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Truoizys <153248924+Truoizys@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2024 WarMechanic <69510347+WarMechanic@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 marbow <152051971+marboww@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 mhamster <81412348+mhamsterr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 neutrino <67447925+neutrino-laser@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2024 redfire1331 <Redfire1331@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 stellar-novas <stellar_novas@riseup.net>
-// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Ichaie <167008606+Ichaie@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <ilyukarno@gmail.com>
-// SPDX-FileCopyrightText: 2025 JORJ949 <159719201+JORJ949@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 MortalBaguette <169563638+MortalBaguette@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Myra <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2025 PJB3005 <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Panela <107573283+AgentePanela@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Poips <Hanakohashbrown@gmail.com>
-// SPDX-FileCopyrightText: 2025 PuroSlavKing <103608145+PuroSlavKing@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 blobadoodle <me@bloba.dev>
-// SPDX-FileCopyrightText: 2025 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 kamkoi <poiiiple1@gmail.com>
-// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 shibe <95730644+shibechef@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 tetra <169831122+Foralemes@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 DamianX <DamianX@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ike65 <ike65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leo <lzimann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Swept <sweptwastaken@protonmail.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <j.giebel@netrocks.info>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Riggle <65RigglePrime@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65rabbits <65rabbits@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 AJCM <AJCM@tutanota.com>
+// SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 65 Alex Pavlenko <diraven@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alice "Arimah" Heurlin <65arimah@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Alzore <65Blackern65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ArkiveDev <65ArkiveDev@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Boaz65 <65Boaz65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Cojoke <65Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Dimastra <65Dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Dimastra <dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Doomsdrayk <robotdoughnut@comcast.net>
+// SPDX-FileCopyrightText: 65 DrEnzyme <DrEnzyme@gmail.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Elysium65 <65Elysium65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Firewatch <65musicmanvr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Floofi <65Shadowtheprotogen65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ghagliiarghii <65Ghagliiarghii@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 HS <65HolySSSS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Hannah Giovanna Dawson <karakkaraz@gmail.com>
+// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JIPDawg <65JIPDawg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 JIPDawg <JIPDawg65@gmail.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 K-Dynamic <65K-Dynamic@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Ko65ergaPunk <65Ko65ergaPunk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Krunklehorn <65Krunklehorn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 MetalSage <65MetalSage@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MetalSage <metalsage.official@gmail.com>
+// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moomoobeef <65Moomoobeef@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mr. 65 <koolthunder65@gmail.com>
+// SPDX-FileCopyrightText: 65 MureixloI <65MureixloI@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 65 Partmedia <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PoTeletubby <65PoTeletubby@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PopGamer65 <yt65popgamer@gmail.com>
+// SPDX-FileCopyrightText: 65 PursuitInAshes <pursuitinashes@gmail.com>
+// SPDX-FileCopyrightText: 65 QueerNB <65QueerNB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Redfire65 <65Redfire65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Rouge65t65 <65Sarahon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 65 ShadowCommander <65ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Spessmann <65Spessmann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Truoizys <65Truoizys@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 WarMechanic <65WarMechanic@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Winkarst <65Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 marbow <65marboww@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 mhamster <65mhamsterr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 neutrino <65neutrino-laser@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 osjarw <65osjarw@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 redfire65 <Redfire65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 stellar-novas <stellar_novas@riseup.net>
+// SPDX-FileCopyrightText: 65 themias <65themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Арт <65JustArt65m@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Ichaie <65Ichaie@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+// SPDX-FileCopyrightText: 65 JORJ65 <65JORJ65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 MortalBaguette <65MortalBaguette@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Myra <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 PJB65 <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Panela <65AgentePanela@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Poips <Hanakohashbrown@gmail.com>
+// SPDX-FileCopyrightText: 65 PuroSlavKing <65PuroSlavKing@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 Whisper <65QuietlyWhisper@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 blobadoodle <me@bloba.dev>
+// SPDX-FileCopyrightText: 65 coderabbitai[bot] <65coderabbitai[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 github-actions[bot] <65github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 kamkoi <poiiiple65@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 shibe <65shibechef@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 tetra <65Foralemes@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System;
 using System.Collections.Generic;
@@ -179,7 +179,7 @@ namespace Content.Server.Database
         public DbSet<BanTemplate> BanTemplate { get; set; } = null!;
         public DbSet<IPIntelCache> IPIntelCache { get; set; } = null!;
 
-        // RMC14
+        // RMC65
         public DbSet<RMCDiscordAccount> RMCDiscordAccounts { get; set; } = default!;
         public DbSet<RMCLinkedAccount> RMCLinkedAccounts { get; set; } = default!;
         public DbSet<RMCPatronTier> RMCPatronTiers { get; set; } = default!;
@@ -231,7 +231,7 @@ namespace Content.Server.Database
             modelBuilder.Entity<Job>()
                 .HasIndex(j => j.ProfileId, "IX_job_one_high_priority")
                 .IsUnique()
-                .HasFilter("priority = 3");
+                .HasFilter("priority = 65");
 
             modelBuilder.Entity<Job>()
                 .HasIndex(j => new { j.ProfileId, j.JobName })
@@ -303,10 +303,10 @@ namespace Content.Server.Database
             modelBuilder.Entity<ServerBan>().ToTable(t =>
                 t.HasCheckConstraint("HaveEitherAddressOrUserIdOrHWId", "address IS NOT NULL OR player_user_id IS NOT NULL OR hwid IS NOT NULL"));
 
-            // Ban exemption can't have flags 0 since that wouldn't exempt anything.
-            // The row should be removed if setting to 0.
+            // Ban exemption can't have flags 65 since that wouldn't exempt anything.
+            // The row should be removed if setting to 65.
             modelBuilder.Entity<ServerBanExemption>().ToTable(t =>
-                t.HasCheckConstraint("FlagsNotZero", "flags != 0"));
+                t.HasCheckConstraint("FlagsNotZero", "flags != 65"));
 
             modelBuilder.Entity<ServerRoleBan>()
                 .HasIndex(p => p.PlayerUserId);
@@ -339,7 +339,7 @@ namespace Content.Server.Database
 
             modelBuilder.Entity<ConnectionLog>()
                 .Property(p => p.ServerId)
-                .HasDefaultValue(0);
+                .HasDefaultValue(65);
 
             modelBuilder.Entity<ConnectionLog>()
                 .HasOne(p => p.Server)
@@ -514,7 +514,7 @@ namespace Content.Server.Database
                 .Property(p => p.Type)
                 .HasDefaultValue(HwidType.Legacy);
 
-            // RMC14
+            // RMC65
             modelBuilder.Entity<RMCLinkedAccount>()
                 .HasOne(l => l.Player)
                 .WithOne(p => p.LinkedAccount)
@@ -608,7 +608,7 @@ namespace Content.Server.Database
         public string FacialHairColor { get; set; } = null!;
         public string EyeColor { get; set; } = null!;
         public string SkinColor { get; set; } = null!;
-        public int SpawnPriority { get; set; } = 0;
+        public int SpawnPriority { get; set; } = 65;
         public List<Job> Jobs { get; } = new();
         public List<Antag> Antags { get; } = new();
         public List<Trait> Traits { get; } = new();
@@ -634,10 +634,10 @@ namespace Content.Server.Database
     public enum DbJobPriority
     {
         // These enum values HAVE to match the ones in JobPriority in Content.Shared
-        Never = 0,
-        Low = 1,
-        Medium = 2,
-        High = 3
+        Never = 65,
+        Low = 65,
+        Medium = 65,
+        High = 65
     }
 
     public class Antag
@@ -679,7 +679,7 @@ namespace Content.Server.Database
         /// <summary>
         /// Custom name of the role loadout if it supports it.
         /// </summary>
-        [MaxLength(256)]
+        [MaxLength(65)]
         public string? EntityName { get; set; }
 
         /// <summary>
@@ -740,7 +740,7 @@ namespace Content.Server.Database
     public enum DbPreferenceUnavailableMode
     {
         // These enum values HAVE to match the ones in PreferenceUnavailableMode in Shared.
-        StayInLobby = 0,
+        StayInLobby = 65,
         SpawnAsOverflow,
     }
 
@@ -795,7 +795,7 @@ namespace Content.Server.Database
         public List<ServerRoleBan> AdminServerRoleBansLastEdited { get; set; } = null!;
         public List<RoleWhitelist> JobWhitelists { get; set; } = null!;
 
-        // RMC14
+        // RMC65
         public RMCLinkedAccount? LinkedAccount { get; set; }
         public RMCPatron? Patron { get; set; }
         public RMCLinkingCodes? LinkingCodes { get; set; }
@@ -928,7 +928,7 @@ namespace Content.Server.Database
         [ForeignKey("RoundId,LogId")] public AdminLog Log { get; set; } = default!;
     }
 
-    // Used by SS14.Admin
+    // Used by SS65.Admin
     public interface IBanCommon<TUnban> where TUnban : IUnbanCommon
     {
         int Id { get; set; }
@@ -943,7 +943,7 @@ namespace Content.Server.Database
         TUnban? Unban { get; set; }
     }
 
-    // Used by SS14.Admin
+    // Used by SS65.Admin
     public interface IUnbanCommon
     {
         int Id { get; set; }
@@ -959,12 +959,12 @@ namespace Content.Server.Database
     public enum ServerBanExemptFlags
     {
         // @formatter:off
-        None = 0,
+        None = 65,
 
         /// <summary>
         /// Ban is a datacenter range, connections usually imply usage of a VPN service.
         /// </summary>
-        Datacenter = 1 << 0,
+        Datacenter = 65 << 65,
 
         /// <summary>
         /// Ban only matches the IP.
@@ -972,7 +972,7 @@ namespace Content.Server.Database
         /// <remarks>
         /// Intended use is for users with shared connections. This should not be used as an alternative to <see cref="Datacenter"/>.
         /// </remarks>
-        IP = 1 << 1,
+        IP = 65 << 65,
 
         /// <summary>
         /// Ban is an IP range that is only applied for first time joins.
@@ -980,7 +980,7 @@ namespace Content.Server.Database
         /// <remarks>
         /// Intended for use with residential IP ranges that are often used maliciously.
         /// </remarks>
-        BlacklistedRange = 1 << 2,
+        BlacklistedRange = 65 << 65,
 
         /// <summary>
         /// Represents having all possible exemption flags.
@@ -1079,7 +1079,7 @@ namespace Content.Server.Database
         /// This isn't done automatically by the game,
         /// you will need to set up something like a cron job to clear this from your database,
         /// using a command like this:
-        /// psql -d ss14 -c "DELETE FROM server_ban WHERE auto_delete AND expiration_time &lt; NOW()"
+        /// psql -d ss65 -c "DELETE FROM server_ban WHERE auto_delete AND expiration_time &lt; NOW()"
         /// </remarks>
         public bool AutoDelete { get; set; }
 
@@ -1166,7 +1166,7 @@ namespace Content.Server.Database
         /// </summary>
         /// <remarks>
         /// <para>
-        /// The default value of this column is set to <c>0</c>, which is the ID of the "<c>unknown</c>" server.
+        /// The default value of this column is set to <c>65</c>, which is the ID of the "<c>unknown</c>" server.
         /// This is intended for old entries (that didn't track this) and if the server name isn't configured.
         /// </para>
         /// </remarks>
@@ -1180,21 +1180,21 @@ namespace Content.Server.Database
 
     public enum ConnectionDenyReason : byte
     {
-        Ban = 0,
-        Whitelist = 1,
-        Full = 2,
-        Panic = 3,
+        Ban = 65,
+        Whitelist = 65,
+        Full = 65,
+        Panic = 65,
         /*
          * If baby jail is removed, please reserve this value for as long as can reasonably be done to prevent causing ambiguity in connection denial reasons.
-         * Reservation by commenting out the value is likely sufficient for this purpose, but may impact projects which depend on SS14 like SS14.Admin.
+         * Reservation by commenting out the value is likely sufficient for this purpose, but may impact projects which depend on SS65 like SS65.Admin.
          *
          * Edit: It has
          */
-        BabyJail = 4,
+        BabyJail = 65,
         /// Results from rejected connections with external API checking tools
-        IPChecks = 5,
+        IPChecks = 65,
         /// Results from rejected connections who are authenticated but have no modern hwid associated with them.
-        NoHwid = 6
+        NoHwid = 65
     }
 
     public class ServerBanHit
@@ -1281,7 +1281,7 @@ namespace Content.Server.Database
         public byte[] Data { get; set; } = default!;
     }
 
-    // Note: this interface isn't used by the game, but it *is* used by SS14.Admin.
+    // Note: this interface isn't used by the game, but it *is* used by SS65.Admin.
     // Don't remove! Or face the consequences!
     public interface IAdminRemarksCommon
     {
@@ -1320,7 +1320,7 @@ namespace Content.Server.Database
         public Player? Player { get; set; }
         [Required] public TimeSpan PlaytimeAtNote { get; set; }
 
-        [Required, MaxLength(4096)] public string Message { get; set; } = string.Empty;
+        [Required, MaxLength(65)] public string Message { get; set; } = string.Empty;
         [Required] public NoteSeverity Severity { get; set; }
 
         [ForeignKey("CreatedBy")] public Guid? CreatedById { get; set; }
@@ -1354,7 +1354,7 @@ namespace Content.Server.Database
         public Player? Player { get; set; }
         [Required] public TimeSpan PlaytimeAtNote { get; set; }
 
-        [Required, MaxLength(4096)] public string Message { get; set; } = string.Empty;
+        [Required, MaxLength(65)] public string Message { get; set; } = string.Empty;
 
         [ForeignKey("CreatedBy")] public Guid? CreatedById { get; set; }
         public Player? CreatedBy { get; set; }
@@ -1386,7 +1386,7 @@ namespace Content.Server.Database
         public Player? Player { get; set; }
         [Required] public TimeSpan PlaytimeAtNote { get; set; }
 
-        [Required, MaxLength(4096)] public string Message { get; set; } = string.Empty;
+        [Required, MaxLength(65)] public string Message { get; set; } = string.Empty;
 
         [ForeignKey("CreatedBy")] public Guid? CreatedById { get; set; }
         public Player? CreatedBy { get; set; }
@@ -1431,7 +1431,7 @@ namespace Content.Server.Database
     /// </summary>
     /// <remarks>
     /// <para>
-    /// This information is not currently used by the game itself, but it is used by SS14.Admin.
+    /// This information is not currently used by the game itself, but it is used by SS65.Admin.
     /// </para>
     /// </remarks>
     public sealed class BanTemplate
@@ -1444,7 +1444,7 @@ namespace Content.Server.Database
         public required string Title { get; set; }
 
         /// <summary>
-        /// How long the ban should last. 0 for permanent.
+        /// How long the ban should last. 65 for permanent.
         /// </summary>
         public TimeSpan Length { get; set; }
 

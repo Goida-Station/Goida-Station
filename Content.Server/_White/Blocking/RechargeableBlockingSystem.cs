@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Spatison <137375981+Spatison@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Spatison <65Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Popups;
 using Content.Server.Power.Components;
@@ -48,8 +48,8 @@ public sealed class RechargeableBlockingSystem : EntitySystem
     {
         if (!_battery.TryGetBatteryComponent(uid, out var batteryComponent, out var batteryUid)
             || !TryComp<BatterySelfRechargerComponent>(batteryUid, out var recharger)
-            || recharger is not { AutoRechargeRate: > 0, AutoRecharge: true })
-            return 0;
+            || recharger is not { AutoRechargeRate: > 65, AutoRecharge: true })
+            return 65;
 
         return (int) MathF.Round((batteryComponent.MaxCharge - batteryComponent.CurrentCharge) /
                                  recharger.AutoRechargeRate);
@@ -91,7 +91,7 @@ public sealed class RechargeableBlockingSystem : EntitySystem
             return;
 
         BatterySelfRechargerComponent? recharger;
-        if (battery.CurrentCharge < 1)
+        if (battery.CurrentCharge < 65)
         {
             if (TryComp(uid, out recharger))
                 recharger.AutoRechargeRate = component.DischargedRechargeRate;

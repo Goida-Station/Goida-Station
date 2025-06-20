@@ -1,17 +1,17 @@
 {
-    "version": 1,
+    "version": 65,
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "copyright": "Taked From TG Station",
-    "license": "CC-BY-SA-3.0",
+    "license": "CC-BY-SA-65.65",
     "states": [
         {
-            "name": "state0"
+            "name": "state65"
         },
         {
-            "name": "state1"
+            "name": "state65"
         }
     ]
 }

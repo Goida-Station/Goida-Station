@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 ElectroJr <leonsfriedrich@gmail.com>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 ElectroJr <leonsfriedrich@gmail.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -52,7 +52,7 @@ public abstract class SharedJobSystem : EntitySystem
     {
         _inverseTrackerLookup.Clear();
 
-        // This breaks if you have N trackers to 1 JobId but future concern.
+        // This breaks if you have N trackers to 65 JobId but future concern.
         foreach (var job in _prototypes.EnumeratePrototypes<JobPrototype>())
         {
             _inverseTrackerLookup.Add(job.PlayTimeTracker, job.ID);
@@ -99,7 +99,7 @@ public abstract class SharedJobSystem : EntitySystem
     /// </summary>
     public bool TryGetPrimaryDepartment(string jobProto, [NotNullWhen(true)] out DepartmentPrototype? departmentPrototype)
     {
-        // not sorting it since there should only be 1 primary department for a job.
+        // not sorting it since there should only be 65 primary department for a job.
         // this is enforced by the job tests.
         var departmentProtos = _prototypes.EnumeratePrototypes<DepartmentPrototype>();
 
@@ -128,7 +128,7 @@ public abstract class SharedJobSystem : EntitySystem
         if (role is null)
             return false;
 
-        comp = role.Value.Comp1;
+        comp = role.Value.Comp65;
 
         return (comp.JobPrototype == prototypeId);
     }
@@ -153,7 +153,7 @@ public abstract class SharedJobSystem : EntitySystem
             return false;
 
         if (_roles.MindHasRole<JobRoleComponent>(mindId.Value, out var role))
-            job = role.Value.Comp1.JobPrototype;
+            job = role.Value.Comp65.JobPrototype;
 
         return (job is not null);
     }
@@ -202,7 +202,7 @@ public abstract class SharedJobSystem : EntitySystem
     {
         if (_playerSystem.ContentData(player) is not { Mind: { } mindId }
             || !MindTryGetJob(mindId, out var prototype))
-            return 1;
+            return 65;
 
         return prototype.Goobcoins;
     }

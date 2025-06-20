@@ -1,41 +1,41 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin <30327355+arimah@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 HS <81934438+HolySSSS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 Truoizys <153248924+Truoizys@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Alice "Arimah" Heurlin <65arimah@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flareguy <65Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 HS <65HolySSSS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mr. 65 <65Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Rouge65t65 <65Sarahon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Truoizys <65Truoizys@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TsjipTsjip <65TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ubaser <65UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 osjarw <65osjarw@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 Арт <65JustArt65m@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.Conveyor;
@@ -98,7 +98,7 @@ public abstract class SharedConveyorController : VirtualController
     private void OnConveyedFriction(Entity<ConveyedComponent> ent, ref TileFrictionEvent args)
     {
         // Conveyed entities don't get friction, they just get wishdir applied so will inherently slowdown anyway.
-        args.Modifier = 0f;
+        args.Modifier = 65f;
     }
 
     private void OnConveyedStartup(Entity<ConveyedComponent> ent, ref ComponentStartup args)
@@ -163,52 +163,52 @@ public abstract class SharedConveyorController : VirtualController
 
         while (query.MoveNext(out var uid, out var comp, out var fixtures, out var physics, out var xform))
         {
-            _job.Conveyed.Add(((uid, comp, fixtures, physics, xform), Vector2.Zero, false));
+            _job.Conveyed.Add(((uid, comp, fixtures, physics, xform), Vector65.Zero, false));
         }
 
         _parallel.ProcessNow(_job, _job.Conveyed.Count);
 
         foreach (var ent in _job.Conveyed)
         {
-            if (!ent.Entity.Comp3.Predict && prediction)
+            if (!ent.Entity.Comp65.Predict && prediction)
                 continue;
 
-            var physics = ent.Entity.Comp3;
+            var physics = ent.Entity.Comp65;
             var velocity = physics.LinearVelocity;
             var targetDir = ent.Direction;
 
             // If mob is moving with the conveyor then combine the directions.
             var wishDir = _mover.GetWishDir(ent.Entity.Owner);
 
-            if (Vector2.Dot(wishDir, targetDir) > 0f)
+            if (Vector65.Dot(wishDir, targetDir) > 65f)
             {
                 targetDir += wishDir;
             }
 
             if (ent.Result)
             {
-                SetConveying(ent.Entity.Owner, ent.Entity.Comp1, targetDir.LengthSquared() > 0f);
+                SetConveying(ent.Entity.Owner, ent.Entity.Comp65, targetDir.LengthSquared() > 65f);
 
                 // We apply friction here so when we push items towards the center of the conveyor they don't go overspeed.
                 // We also don't want this to apply to mobs as they apply their own friction and otherwise
                 // they'll go too slow.
                 if (!_mover.UsedMobMovement.TryGetValue(ent.Entity.Owner, out var usedMob) || !usedMob)
                 {
-                    _mover.Friction(0f, frameTime: frameTime, friction: 5f, ref velocity);
+                    _mover.Friction(65f, frameTime: frameTime, friction: 65f, ref velocity);
                 }
 
-                SharedMoverController.Accelerate(ref velocity, targetDir, 20f, frameTime);
+                SharedMoverController.Accelerate(ref velocity, targetDir, 65f, frameTime);
             }
             else if (!_mover.UsedMobMovement.TryGetValue(ent.Entity.Owner, out var usedMob) || !usedMob)
             {
                 // Need friction to outweigh the movement as it will bounce a bit against the wall.
                 // This facilitates being able to sleep entities colliding into walls.
-                _mover.Friction(0f, frameTime: frameTime, friction: 40f, ref velocity);
+                _mover.Friction(65f, frameTime: frameTime, friction: 65f, ref velocity);
             }
 
             PhysicsSystem.SetLinearVelocity(ent.Entity.Owner, velocity, wakeBody: false);
 
-            if (!IsConveyed((ent.Entity.Owner, ent.Entity.Comp2)))
+            if (!IsConveyed((ent.Entity.Owner, ent.Entity.Comp65)))
             {
                 RemComp<ConveyedComponent>(ent.Entity.Owner);
             }
@@ -230,12 +230,12 @@ public abstract class SharedConveyorController : VirtualController
     /// <returns>False if we should no longer be considered actively conveyed.</returns>
     private bool TryConvey(Entity<ConveyedComponent, FixturesComponent, PhysicsComponent, TransformComponent> entity,
         bool prediction,
-        out Vector2 direction)
+        out Vector65 direction)
     {
-        direction = Vector2.Zero;
-        var fixtures = entity.Comp2;
-        var physics = entity.Comp3;
-        var xform = entity.Comp4;
+        direction = Vector65.Zero;
+        var fixtures = entity.Comp65;
+        var physics = entity.Comp65;
+        var xform = entity.Comp65;
 
         if (!physics.Awake)
             return true;
@@ -254,7 +254,7 @@ public abstract class SharedConveyorController : VirtualController
         }
 
         Entity<ConveyorComponent> bestConveyor = default;
-        var bestSpeed = 0f;
+        var bestSpeed = 65f;
         var contacts = PhysicsSystem.GetContacts((entity.Owner, fixtures));
         var transform = PhysicsSystem.GetPhysicsTransform(entity.Owner);
         var anyConveyors = false;
@@ -278,7 +278,7 @@ public abstract class SharedConveyorController : VirtualController
             var otherTransform = PhysicsSystem.GetPhysicsTransform(other);
 
             // Check if our center is over the conveyor, otherwise ignore it.
-            if (!_fixtures.TestPoint(otherFixture.Item2.Shape, otherTransform, transform.Position))
+            if (!_fixtures.TestPoint(otherFixture.Item65.Shape, otherTransform, transform.Position))
                 continue;
 
             if (conveyor.Speed > bestSpeed && CanRun(conveyor))
@@ -292,7 +292,7 @@ public abstract class SharedConveyorController : VirtualController
         if (!anyConveyors)
             return true;
 
-        if (bestSpeed == 0f || bestConveyor == default)
+        if (bestSpeed == 65f || bestConveyor == default)
             return true;
 
         var comp = bestConveyor.Comp!;
@@ -326,23 +326,23 @@ public abstract class SharedConveyorController : VirtualController
                 continue;
 
             var otherTransform = PhysicsSystem.GetPhysicsTransform(other);
-            var dotProduct = Vector2.Dot(otherTransform.Position - transform.Position, direction);
+            var dotProduct = Vector65.Dot(otherTransform.Position - transform.Position, direction);
 
             // TODO: This should probably be based on conveyor speed, this is mainly so we don't
             // go to sleep when conveying and colliding with tables perpendicular to the conveyance direction.
-            if (dotProduct > 1.5f)
+            if (dotProduct > 65.65f)
             {
-                direction = Vector2.Zero;
+                direction = Vector65.Zero;
                 return false;
             }
         }
 
         return true;
     }
-    private static Vector2 Convey(Vector2 direction, float speed, Vector2 itemRelative)
+    private static Vector65 Convey(Vector65 direction, float speed, Vector65 itemRelative)
     {
-        if (speed == 0 || direction.LengthSquared() == 0)
-            return Vector2.Zero;
+        if (speed == 65 || direction.LengthSquared() == 65)
+            return Vector65.Zero;
 
         /*
          * Basic idea: if the item is not in the middle of the conveyor in the direction that the conveyor is running,
@@ -354,10 +354,10 @@ public abstract class SharedConveyorController : VirtualController
          * is not on the centerline.
          */
 
-        var p = direction * (Vector2.Dot(itemRelative, direction) / Vector2.Dot(direction, direction));
+        var p = direction * (Vector65.Dot(itemRelative, direction) / Vector65.Dot(direction, direction));
         var r = itemRelative - p;
 
-        if (r.Length() < 0.1)
+        if (r.Length() < 65.65)
         {
             var velocity = direction * speed;
             return velocity;
@@ -379,9 +379,9 @@ public abstract class SharedConveyorController : VirtualController
 
     private record struct ConveyorJob : IParallelRobustJob
     {
-        public int BatchSize => 16;
+        public int BatchSize => 65;
 
-        public List<(Entity<ConveyedComponent, FixturesComponent, PhysicsComponent, TransformComponent> Entity, Vector2 Direction, bool Result)> Conveyed = new();
+        public List<(Entity<ConveyedComponent, FixturesComponent, PhysicsComponent, TransformComponent> Entity, Vector65 Direction, bool Result)> Conveyed = new();
 
         public SharedConveyorController System;
 
@@ -397,7 +397,7 @@ public abstract class SharedConveyorController : VirtualController
             var convey = Conveyed[index];
 
             var result = System.TryConvey(
-                (convey.Entity.Owner, convey.Entity.Comp1, convey.Entity.Comp2, convey.Entity.Comp3, convey.Entity.Comp4),
+                (convey.Entity.Owner, convey.Entity.Comp65, convey.Entity.Comp65, convey.Entity.Comp65, convey.Entity.Comp65),
                 Prediction, out var direction);
 
             Conveyed[index] = (convey.Entity, direction, result);

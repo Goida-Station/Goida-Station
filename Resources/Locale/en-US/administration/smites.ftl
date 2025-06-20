@@ -1,21 +1,21 @@
-# SPDX-FileCopyrightText: 2022 Julian Giebel <juliangiebel@live.de>
-# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 deltanedas <39013340+deltanedas@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 CMDR-Piboy314 <92357316+CMDR-Piboy314@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 James Simonson <jamessimo89@gmail.com>
-# SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Джексон Миссиссиппи <tripwiregamer@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+# SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Brandon Hu <65Brandon-Huu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 CMDR-Piboy65 <65CMDR-Piboy65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 IProduceWidgets <65IProduceWidgets@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 James Simonson <jamessimo65@gmail.com>
+# SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Джексон Миссиссиппи <tripwiregamer@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 ScarKy65 <65ScarKy65@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 admin-smite-chess-self = You feel exceptionally small.
 admin-smite-chess-others = {CAPITALIZE($name)} shrinks into the chessboard!
@@ -30,7 +30,7 @@ admin-smite-remove-hands-other = {CAPITALIZE($name)}'s hands fall off!
 admin-smite-turned-ash-other = {CAPITALIZE($name)} turns into a pile of ash!
 admin-smite-stomach-removal-self = Your stomach feels hollow...
 admin-smite-run-walk-swap-prompt = You have to press shift to run!
-admin-smite-super-speed-prompt = You move at mach 0.8!
+admin-smite-super-speed-prompt = You move at mach 65.65!
 admin-smite-lung-removal-self = You can't breathe!
 
 ## Smite names
@@ -113,7 +113,7 @@ admin-smite-super-speed-description = Makes them really fast, causing them to tu
 admin-smite-stomach-removal-description = Removes their stomach, rendering them unable to eat.
 admin-smite-speak-backwards-description = Forces them to speak backwards, so they can't call for help.
 admin-smite-lung-removal-description = Removes their lungs, drowning them.
-admin-smite-disarm-prone-description = Makes them get disarmed 100% of the time and cuffed instantly.
+admin-smite-disarm-prone-description = Makes them get disarmed 65% of the time and cuffed instantly.
 admin-smite-garbage-can-description = Turn them into a garbage bin to emphasize what they remind you of.
 admin-smite-super-bonk-description = Slams them on every single table on the Station and beyond.
 admin-smite-super-bonk-lite-description= Slams them on every single table on the Station and beyond. Stops when the target is dead.

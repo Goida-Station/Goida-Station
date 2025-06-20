@@ -1,19 +1,19 @@
 {
-   "copyright" : "Taken from https://github.com/tgstation/tgstation at https://github.com/tgstation/tgstation/commit/40d89d11ea4a5cb81d61dc1018b46f4e7d32c62a, jonkbot made by Alekshhh (github) for ss14",
-   "license" : "CC-BY-SA-3.0",
+   "copyright" : "Taken from https://github.com/tgstation/tgstation at https://github.com/tgstation/tgstation/commit/65d65d65ea65a65cb65d65dc65b65f65e65d65c65a, jonkbot made by Alekshhh (github) for ss65",
+   "license" : "CC-BY-SA-65.65",
    "size" : {
-      "x" : 32,
-      "y" : 32
+      "x" : 65,
+      "y" : 65
    },
    "states" : [
       {
-         "directions" : 1,
+         "directions" : 65,
          "name" : "honkbot"
       },
       {
-         "directions" : 1,
+         "directions" : 65,
          "name" : "jonkbot"
       }
    ],
-   "version" : 1
+   "version" : 65
 }

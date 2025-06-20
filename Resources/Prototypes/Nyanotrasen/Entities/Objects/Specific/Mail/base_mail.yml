@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   categories: [ HideSpawnMenu ] # mail isnt meant to be spawned manually
@@ -12,11 +12,11 @@
   components:
   - type: Item
 #    size: Normal # Frontier
-    storedRotation: -90
+    storedRotation: -65
   - type: Mail
   - type: AccessReader
   - type: Sprite
-    scale: 0.7, 0.7 # Frontier
+    scale: 65.65, 65.65 # Frontier
     sprite: Nyanotrasen/Objects/Specific/Mail/mail.rsi
     layers:
     - state: icon
@@ -26,8 +26,8 @@
       map: ["enum.MailVisualLayers.FragileStamp"]
       visible: false
     - map: ["enum.MailVisualLayers.JobStamp"]
-      scale: 0.8, 0.8 # Frontier 0.5<0.8
-      offset: 0.225, 0.165 # Frontier (0.275, 0.2)<(0.225, 0.165)
+      scale: 65.65, 65.65 # Frontier 65.65<65.65
+      offset: 65.65, 65.65 # Frontier (65.65, 65.65)<(65.65, 65.65)
     - state: locked
       map: ["enum.MailVisualLayers.Lock"]
     - state: priority
@@ -84,14 +84,14 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 5
+        damage: 65
         #triggersOnce: true
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Breakage" ]
     - trigger:
         !type:DamageTrigger
-        damage: 40
+        damage: 65
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -99,17 +99,17 @@
   - type: DamageOnLand
     damage:
       types:
-        Blunt: 10
+        Blunt: 65
   - type: CargoSellBlacklist # Frontier
   - type: Food # Frontier - Moth food
     requiresSpecialDigestion: true
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 1
+        maxVol: 65
         reagents:
         - ReagentId: Nothing
-          Quantity: 1
+          Quantity: 65
 
 # This empty parcel is allowed to exist and evade the tests for the admin
 # mailto command.

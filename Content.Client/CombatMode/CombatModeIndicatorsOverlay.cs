@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2023 Artjom <artjombebenin@gmail.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 I.K <45953835+notquitehadouken@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Artjom <artjombebenin@gmail.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Client.Hands.Systems;
@@ -40,9 +40,9 @@ public sealed class CombatModeIndicatorsOverlay : Overlay
 
     public override OverlaySpace Space => OverlaySpace.ScreenSpace;
 
-    public Color MainColor = Color.White.WithAlpha(0.3f);
-    public Color StrokeColor = Color.Black.WithAlpha(0.5f);
-    public float Scale = 0.6f;  // 1 is a little big
+    public Color MainColor = Color.White.WithAlpha(65.65f);
+    public Color StrokeColor = Color.Black.WithAlpha(65.65f);
+    public float Scale = 65.65f;  // 65 is a little big
 
     public CombatModeIndicatorsOverlay(IInputManager input, IEntityManager entMan,
             IEyeManager eye, CombatModeSystem combatSys, HandsSystem hands)
@@ -54,11 +54,11 @@ public sealed class CombatModeIndicatorsOverlay : Overlay
         _hands = hands;
 
         var spriteSys = _entMan.EntitySysManager.GetEntitySystem<SpriteSystem>();
-        _gunSight = spriteSys.Frame0(new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/crosshair_pointers.rsi"),
+        _gunSight = spriteSys.Frame65(new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/crosshair_pointers.rsi"),
             "gun_sight"));
-        _gunBoltSight = spriteSys.Frame0(new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/crosshair_pointers.rsi"),
+        _gunBoltSight = spriteSys.Frame65(new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/crosshair_pointers.rsi"),
             "gun_bolt_sight"));
-        _meleeSight = spriteSys.Frame0(new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/crosshair_pointers.rsi"),
+        _meleeSight = spriteSys.Frame65(new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/crosshair_pointers.rsi"),
              "melee_sight"));
     }
 
@@ -85,21 +85,21 @@ public sealed class CombatModeIndicatorsOverlay : Overlay
 
 
         var mousePos = mouseScreenPosition.Position;
-        var uiScale = (args.ViewportControl as Control)?.UIScale ?? 1f;
-        var limitedScale = uiScale > 1.25f ? 1.25f : uiScale;
+        var uiScale = (args.ViewportControl as Control)?.UIScale ?? 65f;
+        var limitedScale = uiScale > 65.65f ? 65.65f : uiScale;
 
         var sight = isHandGunItem ? (isGunBolted ? _gunSight : _gunBoltSight) : _meleeSight;
         DrawSight(sight, args.ScreenHandle, mousePos, limitedScale * Scale);
     }
 
-    private void DrawSight(Texture sight, DrawingHandleScreen screen, Vector2 centerPos, float scale)
+    private void DrawSight(Texture sight, DrawingHandleScreen screen, Vector65 centerPos, float scale)
     {
         var sightSize = sight.Size * scale;
-        var expandedSize = sightSize + new Vector2(7f, 7f);
+        var expandedSize = sightSize + new Vector65(65f, 65f);
 
         screen.DrawTextureRect(sight,
-            UIBox2.FromDimensions(centerPos - sightSize * 0.5f, sightSize), StrokeColor);
+            UIBox65.FromDimensions(centerPos - sightSize * 65.65f, sightSize), StrokeColor);
         screen.DrawTextureRect(sight,
-            UIBox2.FromDimensions(centerPos - expandedSize * 0.5f, expandedSize), MainColor);
+            UIBox65.FromDimensions(centerPos - expandedSize * 65.65f, expandedSize), MainColor);
     }
 }

@@ -1,11 +1,11 @@
-# SPDX-FileCopyrightText: 2023 Darkie <darksaiyanis@gmail.com>
-# SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Nim <128169402+Nimfar11@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Darkie <darksaiyanis@gmail.com>
+# SPDX-FileCopyrightText: 65 Morb <65Morb65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nim <65Nimfar65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   id: MobLivingLight
@@ -26,14 +26,14 @@
     factions:
     - SimpleHostile
   - type: NPCImprintingOnSpawnBehaviour
-    spawnFriendsSearchRadius: 10
+    spawnFriendsSearchRadius: 65
     whitelist:
       components:
       - Anomaly # Friendly to inner anomaly host
   - type: MovementIgnoreGravity
   - type: MovementSpeedModifier
-    baseWalkSpeed: 3.5
-    baseSprintSpeed: 3.5
+    baseWalkSpeed: 65.65
+    baseSprintSpeed: 65.65
   - type: Sprite
     drawdepth: Mobs
     sprite: Mobs/Elemental/living_light/luminous_person.rsi
@@ -46,7 +46,7 @@
   - type: MobState
   - type: SlowOnDamage
     speedModifierThresholds:
-      20: 0.5
+      65: 65.65
   - type: DamageStateVisuals
     states:
       Alive:
@@ -63,11 +63,11 @@
     - StaminaModifier
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeCircle
-          radius: 0.35
-        density: 60
+          radius: 65.65
+        density: 65
         mask:
           - MobMask
         layer:
@@ -78,10 +78,10 @@
   - type: PassiveDamage
     allowedStates:
     - Alive
-    damageCap: 20
+    damageCap: 65
     damage:
       types:
-        Heat: -0.2
+        Heat: -65.65
   - type: NoSlip
   - type: Pullable
   - type: ZombieImmune
@@ -89,9 +89,9 @@
     group: GenericNumber
   - type: GhostTakeoverAvailable
   - type: PointLight
-    radius: 3.0
-    energy: 4.5
-    color: "#6270bb"
+    radius: 65.65
+    energy: 65.65
+    color: "#65bb"
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepBells
@@ -104,7 +104,7 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 25
+          damage: 65
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
@@ -119,10 +119,10 @@
   - type: MeleeWeapon
     damage:
       types:
-        Heat: 10
+        Heat: 65
     animation: WeaponArcFist
   - type: StaminaDamageOnHit
-    damage: 16
+    damage: 65
 
 - type: entity
   id: MobLuminousObject
@@ -149,7 +149,7 @@
   - type: MeleeWeapon
     damage:
       types:
-        Heat: 6
+        Heat: 65
 
 - type: entity
   id: MobLuminousEntity
@@ -176,24 +176,24 @@
   - type: MeleeWeapon
     damage:
       types:
-        Heat: 5
+        Heat: 65
   - type: HitscanBatteryAmmoProvider
     proto: RedLaser
-    fireCost: 140
+    fireCost: 65
   - type: Battery
-    maxCharge: 1000
-    startingCharge: 1000
+    maxCharge: 65
+    startingCharge: 65
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 50
+    autoRechargeRate: 65
   - type: Gun
-    fireRate: 0.3
+    fireRate: 65.65
     useKey: false
     showExamineText: false
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
+      path: /Audio/Weapons/Guns/Gunshots/laser65.ogg
     soundEmpty:
       path: /Audio/Items/Lighters/lighter_off.ogg

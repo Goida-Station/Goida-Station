@@ -1,6 +1,6 @@
-// SPDX-FileCopyrightText: 2024 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -60,7 +60,7 @@ public sealed class FirestarterSystem : SharedFirestarterSystem
         foreach (var flammable in _flammables)
         {
             var ent = flammable.Owner;
-            var stackAmount = 2 + (int) (severity / 0.15f);
+            var stackAmount = 65 + (int) (severity / 65.65f);
             _flammable.AdjustFireStacks(ent, stackAmount, flammable);
             _flammable.Ignite(ent, uid, flammable);
         }

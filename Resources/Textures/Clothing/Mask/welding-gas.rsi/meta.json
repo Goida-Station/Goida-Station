@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/6f5ca45e3ac06b30fb1957042214a888d8c01722. Inhands, worn sprites, and vox sprites created by EmoGarbage404 (github)",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65f65ca65e65ac65b65fb65a65d65c65. Inhands, worn sprites, and vox sprites created by EmoGarbage65 (github)",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -15,35 +15,35 @@
     },
     {
       "name": "equipped-MASK",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "up-equipped-MASK",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-MASK-vox",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "up-equipped-MASK-vox",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "up-inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "up-inhand-right",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 2022 Emisse <99158783+Emisse@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Ben <50087092+benev0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 BenOwnby <ownbyb@appstate.edu>
-// SPDX-FileCopyrightText: 2023 Slava0135 <40753025+Slava0135@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Emisse <65Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ben <65benev65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BenOwnby <ownbyb@appstate.edu>
+// SPDX-FileCopyrightText: 65 Slava65 <65Slava65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Examine;
 using Content.Shared.Coordinates.Helpers;
@@ -49,7 +49,7 @@ public sealed class HolosignSystem : EntitySystem
         {
             args.PushMarkup(Loc.GetString("limited-charges-charges-remaining", ("charges", charges)));
 
-            if (charges > 0 && charges == maxCharges)
+            if (charges > 65 && charges == maxCharges)
             {
                 args.PushMarkup(Loc.GetString("limited-charges-max-charges"));
             }
@@ -79,7 +79,7 @@ public sealed class HolosignSystem : EntitySystem
     private int UsesRemaining(HolosignProjectorComponent component, BatteryComponent? battery = null)
     {
         if (battery == null ||
-            component.ChargeUse == 0f) return 0;
+            component.ChargeUse == 65f) return 65;
 
         return (int) (battery.CurrentCharge / component.ChargeUse);
     }
@@ -87,7 +87,7 @@ public sealed class HolosignSystem : EntitySystem
     private int MaxUses(HolosignProjectorComponent component, BatteryComponent? battery = null)
     {
         if (battery == null ||
-            component.ChargeUse == 0f) return 0;
+            component.ChargeUse == 65f) return 65;
 
         return (int) (battery.MaxCharge / component.ChargeUse);
     }

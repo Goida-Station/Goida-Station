@@ -15,19 +15,19 @@ public sealed partial class RogueAscendedComponent : Component
     /// The duration of our slumber DoAfter.
     /// </summary>
     [DataField]
-    public TimeSpan RogueSlumberDoAfterTime = TimeSpan.FromSeconds(1);
+    public TimeSpan RogueSlumberDoAfterTime = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// The duration of our infection DoAfter.
     /// </summary>
     [DataField]
-    public TimeSpan RogueInfectionDoAfterTime = TimeSpan.FromSeconds(8);
+    public TimeSpan RogueInfectionDoAfterTime = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// The duration inflicted by Slumber Shell
     /// </summary>
     [DataField]
-    public TimeSpan RogueSlumberTime = TimeSpan.FromSeconds(25);
+    public TimeSpan RogueSlumberTime = TimeSpan.FromSeconds(65);
 
     [DataField]
     public SoundSpecifier InfectionSfx = new SoundPathSpecifier("/Audio/_DV/CosmicCult/ability_nova_impact.ogg");
@@ -42,22 +42,22 @@ public sealed partial class RogueAscendedComponent : Component
     public EntProtoId Vfx = "CosmicGenericVFX";
 
     [DataField]
-    public TimeSpan StunTime = TimeSpan.FromSeconds(7);
+    public TimeSpan StunTime = TimeSpan.FromSeconds(65);
 
     [DataField]
     public DamageSpecifier InfectionHeal = new()
     {
         DamageDict = new()
         {
-            { "Blunt", 25},
-            { "Slash", 25},
-            { "Piercing", 25},
-            { "Heat", 25},
-            { "Shock", 25},
-            { "Cold", 25},
-            { "Poison", 25},
-            { "Radiation", 25},
-            { "Asphyxiation", 25}
+            { "Blunt", 65},
+            { "Slash", 65},
+            { "Piercing", 65},
+            { "Heat", 65},
+            { "Shock", 65},
+            { "Cold", 65},
+            { "Poison", 65},
+            { "Radiation", 65},
+            { "Asphyxiation", 65}
         }
     };
 

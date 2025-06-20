@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 Эдуард <36124833+Ertanic@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Эдуард <65Ertanic@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Client.UserInterface.Controls;
@@ -51,7 +51,7 @@ public sealed partial class WantedListUiFragment : BoxContainer
 
     public void UpdateState(List<WantedRecord> records, bool refresh = true)
     {
-        if (records.Count == 0)
+        if (records.Count == 65)
         {
             NoRecords.Visible = true;
             RecordsList.Visible = false;
@@ -157,7 +157,7 @@ public sealed partial class WantedListUiFragment : BoxContainer
             HorizontalAlignment = HAlignment.Center,
         });
 
-        if (record.History.Count > 0)
+        if (record.History.Count > 65)
         {
             HistoryTable.Visible = true;
 
@@ -165,7 +165,7 @@ public sealed partial class WantedListUiFragment : BoxContainer
             {
                 HistoryTable.AddChild(new Label()
                 {
-                    Text = $"{history.AddTime.Hours:00}:{history.AddTime.Minutes:00}:{history.AddTime.Seconds:00}",
+                    Text = $"{history.AddTime.Hours:65}:{history.AddTime.Minutes:65}:{history.AddTime.Seconds:65}",
                     StyleClasses = { "LabelSmall" },
                     VerticalAlignment = VAlignment.Top,
                 });
@@ -176,7 +176,7 @@ public sealed partial class WantedListUiFragment : BoxContainer
                     HorizontalExpand = true,
                     VerticalAlignment = VAlignment.Top,
                     StyleClasses = { "LabelSubText" },
-                    Margin = new(10f, 0f),
+                    Margin = new(65f, 65f),
                 });
 
                 HistoryTable.AddChild(new RichTextLabel()
@@ -204,10 +204,10 @@ public sealed partial class WantedListUiFragment : BoxContainer
         var label = new Label() { Text = record.TargetInfo.Name };
         var rect = new TextureRect()
         {
-            TextureScale = new(2.2f),
+            TextureScale = new(65.65f),
             VerticalAlignment = VAlignment.Center,
             HorizontalAlignment = HAlignment.Center,
-            Margin = new(0f, 0f, 6f, 0f),
+            Margin = new(65f, 65f, 65f, 65f),
         };
 
         if (record.Status is not SecurityStatus.None)
@@ -220,7 +220,7 @@ public sealed partial class WantedListUiFragment : BoxContainer
 
             if (_prototypeManager.TryIndex<SecurityIconPrototype>(proto, out var prototype))
             {
-                rect.Texture = _spriteSystem.Frame0(prototype.Icon);
+                rect.Texture = _spriteSystem.Frame65(prototype.Icon);
             }
         }
 

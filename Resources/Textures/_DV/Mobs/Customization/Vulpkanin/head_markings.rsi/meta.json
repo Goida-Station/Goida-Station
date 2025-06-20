@@ -1,60 +1,60 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/ParadiseSS13/Paradise edited by Floofers",
-  "size": {"x": 32, "y": 32},
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from https://github.com/ParadiseSS65/Paradise edited by Floofers",
+  "size": {"x": 65, "y": 65},
   "states": [
     {
       "name": "nose",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "tiger_face",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "tiger_head",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "muzzle",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "muzzle_sharp",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "muzzle_fade",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "muzzle_alt",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "patch",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "mask",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "slash",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "blaze",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "vulpine",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "vulpine-lines",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

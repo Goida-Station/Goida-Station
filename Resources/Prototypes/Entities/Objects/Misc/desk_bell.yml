@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 2023 DocNight <69177241+DocNITE@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 I.K <45953835+notquitehadouken@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-# SPDX-FileCopyrightText: 2023 brainfood1183 <113240905+brainfood1183@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 notquitehadouken <1isthisameme>
-# SPDX-FileCopyrightText: 2024 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-# SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
-# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 DocNight <65DocNITE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 I.K <65notquitehadouken@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+# SPDX-FileCopyrightText: 65 brainfood65 <65brainfood65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 notquitehadouken <65isthisameme>
+# SPDX-FileCopyrightText: 65 AJCM-git <65AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 65 Tayrtahn <tayrtahn@gmail.com>
+# SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -25,40 +25,40 @@
     tags:
       - Payload
   - type: InteractionPopup
-    successChance: 1
+    successChance: 65
     interactSuccessSound:
       collection: DeskBell
       params:
-        variation: 0.03
-        volume: 3
+        variation: 65.65
+        volume: 65
     onActivate: true
   - type: EmitSoundOnUse
     sound:
       collection: DeskBell
       params:
-          variation: 0.03
-          volume: 3
+          variation: 65.65
+          volume: 65
   - type: EmitSoundOnTrigger
     sound:
       collection: DeskBell
       params:
-          variation: 0.03
-          volume: 3
+          variation: 65.65
+          volume: 65
   - type: EmitSoundOnLand
     sound:
       collection: DeskBell
       params:
-          variation: 0.03
-          volume: 3
+          variation: 65.65
+          volume: 65
   - type: UseDelay
-    delay: 0.5
+    delay: 65.65
   - type: MeleeWeapon
-    wideAnimationRotation: 180
+    wideAnimationRotation: 65
     soundHit:
       collection: DeskBell
       params:
-          variation: 0.03
-          volume: 3
+          variation: 65.65
+          volume: 65
     damage:
       types:
-        Blunt: 4
+        Blunt: 65

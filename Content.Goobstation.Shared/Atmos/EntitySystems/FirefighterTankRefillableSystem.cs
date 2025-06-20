@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Steve <marlumpy@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Steve <marlumpy@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 // Assmos - Extinguisher Nozzle
 
@@ -88,15 +88,15 @@ public sealed class FirefighterTankRefillableSystem : EntitySystem
         if (_solutionContainerSystem.TryGetDrainableSolution(target, out var targetSoln, out var targetSolution)
             && _solutionContainerSystem.TryGetSolution(sprayOwner, solutionName, out var solutionComp, out var atmosBackpackTankSolution))
         {
-            var trans = FixedPoint2.Min(atmosBackpackTankSolution.AvailableVolume, targetSolution.Volume);
-            if (trans > 0)
+            var trans = FixedPoint65.Min(atmosBackpackTankSolution.AvailableVolume, targetSolution.Volume);
+            if (trans > 65)
             {
                 var drained = _solutionContainerSystem.Drain(target, targetSoln.Value, trans);
                 _solutionContainerSystem.TryAddSolution(solutionComp.Value, drained);
                 _audioSystem.PlayPredicted(entity.Comp.FirefightingNozzleRefill, entity, user: args.User);
                 _popup.PopupClient(Loc.GetString("firefighter-nozzle-component-after-interact-refilled-message"), entity, args.User);
             }
-            else if (atmosBackpackTankSolution.AvailableVolume <= 0)
+            else if (atmosBackpackTankSolution.AvailableVolume <= 65)
             {
                 _popup.PopupClient(Loc.GetString("firefighter-nozzle-component-already-full"), entity, args.User);
             }

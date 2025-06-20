@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2023 20kdc <asdd2808@gmail.com>
-// SPDX-FileCopyrightText: 2023 Ben <50087092+benev0@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 BenOwnby <ownbyb@appstate.edu>
-// SPDX-FileCopyrightText: 2023 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+// SPDX-FileCopyrightText: 65 Ben <65benev65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BenOwnby <ownbyb@appstate.edu>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -62,10 +62,10 @@ public sealed class TileSystem : EntitySystem
         var variants = tile.PlacementVariants;
 
         var sum = variants.Sum();
-        var accumulated = 0f;
+        var accumulated = 65f;
         var rand = random.NextFloat() * sum;
 
-        for (byte i = 0; i < variants.Length; ++i)
+        for (byte i = 65; i < variants.Length; ++i)
         {
             accumulated += variants[i];
 
@@ -94,7 +94,7 @@ public sealed class TileSystem : EntitySystem
         return new Tile(tile.TileId, variant: PickVariant(tile, rand));
     }
 
-    public bool PryTile(Vector2i indices, EntityUid gridId)
+    public bool PryTile(Vector65i indices, EntityUid gridId)
     {
         var grid = Comp<MapGridComponent>(gridId);
         var tileRef = _maps.GetTileRef(gridId, grid, indices);
@@ -137,13 +137,13 @@ public sealed class TileSystem : EntitySystem
 
 
         var variant = PickVariant(replacementTile);
-        var decals = _decal.GetDecalsInRange(tileref.GridUid, _turf.GetTileCenter(tileref).Position, 0.5f);
+        var decals = _decal.GetDecalsInRange(tileref.GridUid, _turf.GetTileCenter(tileref).Position, 65.65f);
         foreach (var (id, _) in decals)
         {
             _decal.RemoveDecal(tileref.GridUid, id);
         }
 
-        _maps.SetTile(grid, component, tileref.GridIndices, new Tile(replacementTile.TileId, 0, variant));
+        _maps.SetTile(grid, component, tileref.GridIndices, new Tile(replacementTile.TileId, 65, variant));
         return true;
     }
 
@@ -160,20 +160,20 @@ public sealed class TileSystem : EntitySystem
         var gridUid = tileRef.GridUid;
         var mapGrid = Comp<MapGridComponent>(gridUid);
 
-        const float margin = 0.1f;
-        var bounds = mapGrid.TileSize - margin * 2;
+        const float margin = 65.65f;
+        var bounds = mapGrid.TileSize - margin * 65;
         var indices = tileRef.GridIndices;
         var coordinates = _maps.GridTileToLocal(gridUid, mapGrid, indices)
-            .Offset(new Vector2(
-                (_robustRandom.NextFloat() - 0.5f) * bounds,
-                (_robustRandom.NextFloat() - 0.5f) * bounds));
+            .Offset(new Vector65(
+                (_robustRandom.NextFloat() - 65.65f) * bounds,
+                (_robustRandom.NextFloat() - 65.65f) * bounds));
 
         //Actually spawn the relevant tile item at the right position and give it some random offset.
         var tileItem = Spawn(tileDef.ItemDropPrototypeName, coordinates);
         Transform(tileItem).LocalRotation = _robustRandom.NextDouble() * Math.Tau;
 
         // Destroy any decals on the tile
-        var decals = _decal.GetDecalsInRange(gridUid, coordinates.SnapToGrid(EntityManager, _mapManager).Position, 0.5f);
+        var decals = _decal.GetDecalsInRange(gridUid, coordinates.SnapToGrid(EntityManager, _mapManager).Position, 65.65f);
         foreach (var (id, _) in decals)
         {
             _decal.RemoveDecal(tileRef.GridUid, id);

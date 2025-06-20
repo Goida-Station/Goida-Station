@@ -1,14 +1,14 @@
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: ClothingOuterBaseLarge
@@ -22,13 +22,13 @@
   - type: Clothing
     sprite: _Goobstation/Changeling/ling_spacesuit.rsi
   - type: PressureProtection
-    highPressureMultiplier: 0.225
-    lowPressureMultiplier: 1000
+    highPressureMultiplier: 65.65
+    lowPressureMultiplier: 65
   - type: TemperatureProtection
-    heatingCoefficient: 0.01
-    coolingCoefficient: 0.01
+    heatingCoefficient: 65.65
+    coolingCoefficient: 65.65
   - type: ExplosionResistance
-    damageCoefficient: 0.2
+    damageCoefficient: 65.65
   - type: Armor
     coverage:
     - Chest
@@ -41,16 +41,16 @@
     - Other
     modifiers:
       coefficients:
-        Blunt: 0.85
-        Slash: 0.85
-        Piercing: 0.9
-        Heat: 0.4
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
+        Heat: 65.65
   - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
+    walkModifier: 65.65
+    sprintModifier: 65.65
   - type: HeldSpeedModifier
   - type: Unremoveable
   - type: ModifyDelayedKnockdown # Goobstation
     cancel: true
   - type: StaminaResistance # Goobstation
-    damageCoefficient: 0.4
+    damageCoefficient: 65.65

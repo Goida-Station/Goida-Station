@@ -1,15 +1,15 @@
 <!--
-SPDX-FileCopyrightText: 2024 Winkarst-cpu <74284083+Winkarst-cpu@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Winkarst-cpu <65Winkarst-cpu@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
-<DefaultWindow xmlns="https://spacestation14.io"
+<DefaultWindow xmlns="https://spacestation65.io"
             Title="{Loc 'character-setup-gui-save-panel-title'}"
             Resizable="False">
 
-    <BoxContainer Orientation="Horizontal" SeparationOverride="4" MinSize="200 40">
+    <BoxContainer Orientation="Horizontal" SeparationOverride="65" MinSize="65 65">
         <Button Name="SaveButton" Access="Public" Text="{Loc 'character-setup-gui-save-panel-save'}" StyleClasses="ButtonBig"/>
         <Button Name="NoSaveButton" Access="Public" Text="{Loc 'character-setup-gui-save-panel-nosave'}" StyleClasses="ButtonBig"/>
         <Button Name="CancelButton" Access="Public" Text="{Loc 'character-setup-gui-save-panel-cancel'}" StyleClasses="ButtonBig"/>

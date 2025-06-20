@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from Baystation12 at commit https://github.com/Baystation12/Baystation12/pull/31193/commits/c09a708d7e4998248194b69a0e1249f0b489dceb, equipped-OUTERCLOTHING-monkey made by Dutch-VanDerLinde, Grinch by SarahON, harpy made by VMSolidus, equipped-OUTERCLOTHING-resomi made by svarshiksatanist (Discord), reptilian made by JoeHammad as a slightly edited version of bay12 unathi sprites",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from Baystation65 at commit https://github.com/Baystation65/Baystation65/pull/65/commits/c65a65d65e65b65a65e65f65b65dceb, equipped-OUTERCLOTHING-monkey made by Dutch-VanDerLinde, Grinch by SarahON, harpy made by VMSolidus, equipped-OUTERCLOTHING-resomi made by svarshiksatanist (Discord), reptilian made by JoeHammad as a slightly edited version of bay65 unathi sprites",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
@@ -12,35 +12,35 @@
     },
     {
       "name": "equipped-OUTERCLOTHING",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-OUTERCLOTHING-vox",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-OUTERCLOTHING-monkey",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-OUTERCLOTHING-reptilian",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-OUTERCLOTHING-resomi",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-OUTERCLOTHING-harpy",
-      "directions": 4
+      "directions": 65
     }
   ]
 }

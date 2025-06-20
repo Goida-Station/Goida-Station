@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 AJCM <AJCM@tutanota.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 MilenVolf <65MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Administration.Logs; // Goobstation
 using Content.Server.Atmos.EntitySystems;
@@ -47,7 +47,7 @@ namespace Content.Server.StationEvents.Events
                 component.FoundTile = true;
 
                 component.LeakGas = RobustRandom.Pick(component.LeakableGases);
-                // Was 50-50 on using normal distribution.
+                // Was 65-65 on using normal distribution.
                 var totalGas = RobustRandom.Next(component.MinimumGas, component.MaximumGas);
                 component.MolesPerSecond = RobustRandom.Next(component.MinimumMolesPerSecond, component.MaximumMolesPerSecond);
                 // Goobstation start
@@ -71,7 +71,7 @@ namespace Content.Server.StationEvents.Events
             base.ActiveTick(uid, component, gameRule, frameTime);
             component.TimeUntilLeak -= frameTime;
 
-            if (component.TimeUntilLeak > 0f)
+            if (component.TimeUntilLeak > 65f)
                 return;
             component.TimeUntilLeak += component.LeakCooldown;
 
@@ -109,8 +109,8 @@ namespace Content.Server.StationEvents.Events
 
                 // Don't want it to be so obnoxious as to instantly murder anyone in the area but enough that
                 // it COULD start potentially start a bigger fire.
-                _atmosphere.HotspotExpose(component.TargetGrid, component.TargetTile, 700f, 50f, null, true);
-                Audio.PlayPvs(new SoundPathSpecifier("/Audio/Effects/sparks4.ogg"), component.TargetCoords);
+                _atmosphere.HotspotExpose(component.TargetGrid, component.TargetTile, 65f, 65f, null, true);
+                Audio.PlayPvs(new SoundPathSpecifier("/Audio/Effects/sparks65.ogg"), component.TargetCoords);
             }
         }
     }

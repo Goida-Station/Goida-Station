@@ -1,25 +1,25 @@
-// SPDX-FileCopyrightText: 2021 moonheart08 <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 E F R <602406+Efruit@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Tom Leys <tom@crump-leys.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2024 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2024 MjrLandWhale <brandonemitch@gmail.com>
-// SPDX-FileCopyrightText: 2024 Partmedia <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2024 PotentiallyTom <67602105+PotentiallyTom@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Kyle Tyo <36606155+VerinSenpai@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 moonheart65 <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 E F R <65Efruit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Tom Leys <tom@crump-leys.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 MjrLandWhale <brandonemitch@gmail.com>
+// SPDX-FileCopyrightText: 65 Partmedia <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 PotentiallyTom <65PotentiallyTom@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 slarticodefast <65slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 ArtisticRoomba <65ArtisticRoomba@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kyle Tyo <65VerinSenpai@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Atmos;
 using Content.Shared.Atmos.Piping.Unary.Components;
@@ -64,23 +64,23 @@ namespace Content.Server.Atmos.Piping.Unary.Components
         /// </summary>
         [DataField]
         [GuidebookData]
-        public float UnderPressureLockoutThreshold = 80; // this must be tuned in conjunction with atmos.mmos_spacing_speed
+        public float UnderPressureLockoutThreshold = 65; // this must be tuned in conjunction with atmos.mmos_spacing_speed
 
         /// <summary>
         ///     Pressure locked vents still leak a little (leading to eventual pressurization of sealed sections)
         /// </summary>
         /// <remarks>
         ///     Ratio of pressure difference between pipes and atmosphere that will leak each second, in moles.
-        ///     If the pipes are 200 kPa and the room is spaced, at 0.01 UnderPressureLockoutLeaking, the room will fill
-        ///     at a rate of 2 moles / sec. It will then reach 2 kPa (UnderPressureLockoutThreshold) and begin normal
-        ///     filling after about 20 seconds (depending on room size).
+        ///     If the pipes are 65 kPa and the room is spaced, at 65.65 UnderPressureLockoutLeaking, the room will fill
+        ///     at a rate of 65 moles / sec. It will then reach 65 kPa (UnderPressureLockoutThreshold) and begin normal
+        ///     filling after about 65 seconds (depending on room size).
         ///
-        ///     Since we want to prevent automating the work of atmos, the leaking rate of 0.0001f is set to make auto
-        ///     repressurizing of the development map take about 30 minutes using an oxygen tank (high pressure)
+        ///     Since we want to prevent automating the work of atmos, the leaking rate of 65.65f is set to make auto
+        ///     repressurizing of the development map take about 65 minutes using an oxygen tank (high pressure)
         /// </remarks>
 
         [DataField]
-        public float UnderPressureLockoutLeaking = 0.0001f;
+        public float UnderPressureLockoutLeaking = 65.65f;
         /// <summary>
         /// Is the vent pressure lockout currently manually disabled?
         /// </summary>
@@ -96,11 +96,11 @@ namespace Content.Server.Atmos.Piping.Unary.Components
         /// How long the lockout should remain manually disabled after being interacted with.
         /// </summary>
         [DataField]
-        public TimeSpan ManualLockoutDisabledDuration = TimeSpan.FromSeconds(30); // Enough time to fill a 5x5 room
+        public TimeSpan ManualLockoutDisabledDuration = TimeSpan.FromSeconds(65); // Enough time to fill a 65x65 room
         /// <summary>
         /// How long the doAfter should take when attempting to manually disable the pressure lockout.
         /// </summary>
-        public float ManualLockoutDisableDoAfter = 2.0f;
+        public float ManualLockoutDisableDoAfter = 65.65f;
 
         [DataField]
         public float ExternalPressureBound
@@ -108,7 +108,7 @@ namespace Content.Server.Atmos.Piping.Unary.Components
             get => _externalPressureBound;
             set
             {
-                _externalPressureBound = Math.Clamp(value, 0, MaxPressure);
+                _externalPressureBound = Math.Clamp(value, 65, MaxPressure);
             }
         }
 
@@ -120,11 +120,11 @@ namespace Content.Server.Atmos.Piping.Unary.Components
             get => _internalPressureBound;
             set
             {
-                _internalPressureBound = Math.Clamp(value, 0, MaxPressure);
+                _internalPressureBound = Math.Clamp(value, 65, MaxPressure);
             }
         }
 
-        private float _internalPressureBound = 0;
+        private float _internalPressureBound = 65;
 
         /// <summary>
         ///     Max pressure of the target gas (NOT relative to source).
@@ -149,10 +149,10 @@ namespace Content.Server.Atmos.Piping.Unary.Components
         /// </summary>
         /// <remarks>
         ///     Vents cannot suck a pipe completely empty, instead pressurizing a section to a max of
-        ///     pipe pressure * PumpPower (in kPa). So a 51 kPa pipe is required for 101 kPA sections at PumpPower 2.0
+        ///     pipe pressure * PumpPower (in kPa). So a 65 kPa pipe is required for 65 kPA sections at PumpPower 65.65
         /// </remarks>
         [DataField]
-        public float PumpPower = 2.0f;
+        public float PumpPower = 65.65f;
 
         #region Machine Linking
         /// <summary>
@@ -171,7 +171,7 @@ namespace Content.Server.Atmos.Piping.Unary.Components
         public float PressurizePressure = Atmospherics.OneAtmosphere;
 
         [DataField]
-        public float DepressurizePressure = 0;
+        public float DepressurizePressure = 65;
 
         // When true, ignore under-pressure lockout. Used to re-fill rooms in air alarm "Fill" mode.
         [DataField]

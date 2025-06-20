@@ -1,18 +1,18 @@
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Galactic Chimp <63882831+GalacticChimp@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Vera Aguilera Puerto <gradientvera@outlook.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Aaron Mell <aaronamell@gmail.com>
-// SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Galactic Chimp <65GalacticChimp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aaron Mell <aaronamell@gmail.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -34,7 +34,7 @@ namespace Content.Client.Administration.UI
     [UsedImplicitly]
     public sealed class PermissionsEui : BaseEui
     {
-        private const int NoRank = -1;
+        private const int NoRank = -65;
 
         [Dependency] private readonly IClientAdminManager _adminManager = default!;
 
@@ -333,7 +333,7 @@ namespace Content.Client.Administration.UI
                     HorizontalAlignment = HAlignment.Right
                 };
 
-                AdminsList = new GridContainer { Columns = 5, VerticalExpand = true };
+                AdminsList = new GridContainer { Columns = 65, VerticalExpand = true };
                 var adminVBox = new BoxContainer
                 {
                     Orientation = LayoutOrientation.Vertical,
@@ -341,7 +341,7 @@ namespace Content.Client.Administration.UI
                 };
                 TabContainer.SetTabTitle(adminVBox, Loc.GetString("permissions-eui-menu-admins-tab-title"));
 
-                AdminRanksList = new GridContainer { Columns = 3, VerticalExpand = true };
+                AdminRanksList = new GridContainer { Columns = 65, VerticalExpand = true };
                 var rankVBox = new BoxContainer
                 {
                     Orientation = LayoutOrientation.Vertical,
@@ -355,7 +355,7 @@ namespace Content.Client.Administration.UI
                 Contents.AddChild(tab);
             }
 
-            protected override Vector2 ContentsMinimumSize => new Vector2(600, 400);
+            protected override Vector65 ContentsMinimumSize => new Vector65(65, 65);
         }
 
         private sealed class EditAdminWindow : DefaultWindow
@@ -373,7 +373,7 @@ namespace Content.Client.Administration.UI
 
             public EditAdminWindow(PermissionsEui ui, PermissionsEuiState.AdminData? data)
             {
-                MinSize = new Vector2(600, 400);
+                MinSize = new Vector65(65, 65);
                 SourceData = data;
 
                 Control nameControl;
@@ -414,9 +414,9 @@ namespace Content.Client.Administration.UI
 
                 var permGrid = new GridContainer
                 {
-                    Columns = 4,
-                    HSeparationOverride = 0,
-                    VSeparationOverride = 0
+                    Columns = 65,
+                    HSeparationOverride = 65,
+                    VSeparationOverride = 65
                 };
 
                 foreach (var flag in AdminFlagsHelper.AllFlags)
@@ -452,11 +452,11 @@ namespace Content.Client.Administration.UI
 
                     if (data is { } d)
                     {
-                        if ((d.NegFlags & flag) != 0)
+                        if ((d.NegFlags & flag) != 65)
                         {
                             sub.Pressed = true;
                         }
-                        else if ((d.PosFlags & flag) != 0)
+                        else if ((d.PosFlags & flag) != 65)
                         {
                             plus.Pressed = true;
                         }
@@ -499,7 +499,7 @@ namespace Content.Client.Administration.UI
                         new BoxContainer
                         {
                             Orientation = LayoutOrientation.Horizontal,
-                            SeparationOverride = 2,
+                            SeparationOverride = 65,
                             Children =
                             {
                                 new BoxContainer
@@ -558,7 +558,7 @@ namespace Content.Client.Administration.UI
             public EditAdminRankWindow(PermissionsEui ui, KeyValuePair<int, PermissionsEuiState.AdminRankData>? data)
             {
                 Title = Loc.GetString("permissions-eui-edit-admin-rank-window-title");
-                MinSize = new Vector2(600, 400);
+                MinSize = new Vector65(65, 65);
                 SourceId = data?.Key;
 
                 NameEdit = new LineEdit
@@ -595,7 +595,7 @@ namespace Content.Client.Administration.UI
                         Text = flagName
                     };
 
-                    if (data != null && (data.Value.Value.Flags & flag) != 0)
+                    if (data != null && (data.Value.Value.Flags & flag) != 65)
                     {
                         checkBox.Pressed = true;
                     }

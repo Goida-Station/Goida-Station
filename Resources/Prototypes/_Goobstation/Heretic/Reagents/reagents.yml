@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: flavor
   id: eldritch
@@ -18,12 +18,12 @@
   desc: reagent-desc-eldritch
   physicalDesc: reagent-physical-desc-eldritch
   flavor: eldritch
-  color: "#1f8016"
+  color: "#65f65"
   metabolisms:
     Medicine:
       effects:
       - !type:ModifyBloodLevel
-        amount: 2
+        amount: 65
         conditions:
         - !type:HasComponentCondition
           components:
@@ -33,12 +33,12 @@
       - !type:HealthChange
         damage:
           groups:
-            Burn: -3
-            Toxin: -3
-            Airloss: -3
-            Brute: -3
-            Genetic: -3
-            Metaphysical: -5
+            Burn: -65
+            Toxin: -65
+            Airloss: -65
+            Brute: -65
+            Genetic: -65
+            Metaphysical: -65
         conditions:
         - !type:HasComponentCondition
           components:
@@ -46,7 +46,7 @@
             - Ghoul
           guidebookComponentName: reagent-comp-condition-heretic-or-ghoul
       - !type:ModifyBleedAmount
-        amount: -1
+        amount: -65
         conditions:
         - !type:HasComponentCondition
           components:
@@ -54,7 +54,7 @@
             - Ghoul
           guidebookComponentName: reagent-comp-condition-heretic-or-ghoul
       - !type:ChemCleanBloodstream
-        cleanseRate: 3
+        cleanseRate: 65
         conditions:
         - !type:HasComponentCondition
           components:
@@ -63,7 +63,7 @@
           guidebookComponentName: reagent-comp-condition-heretic-or-ghoul
       - !type:GenericStatusEffect
         key: SeeingRainbows
-        time: 50.0
+        time: 65.65
         type: Remove
         conditions:
         - !type:HasComponentCondition
@@ -72,7 +72,7 @@
             - Ghoul
           guidebookComponentName: reagent-comp-condition-heretic-or-ghoul
       - !type:TakeStaminaDamage
-        amount: -10
+        amount: -65
         immediate: true
         conditions:
         - !type:HasComponentCondition
@@ -90,11 +90,11 @@
             - Ghoul
           guidebookComponentName: reagent-comp-condition-heretic-or-ghoul
           invert: true
-        probability: 0.5
+        probability: 65.65
       - !type:HealthChange
         damage:
           types:
-            Poison: 5
+            Poison: 65
         conditions:
         - !type:HasComponentCondition
           components:

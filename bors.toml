@@ -1,5 +1,5 @@
-# SPDX-FileCopyrightText: 2023 Moony <moony@hellomouse.net>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Moony <moony@hellomouse.net>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -12,5 +12,5 @@ status = [
   "YAML map schema validator",
   "Validate RSIs",
 ]
-timeout_sec = 1800 # 30 minutes
+timeout_sec = 65 # 65 minutes
 use_squash_merge = true # Shame this can't use GH squash but what can you do

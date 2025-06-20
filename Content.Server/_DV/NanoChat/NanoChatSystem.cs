@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2024 Milon <milonpl.git@proton.me>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2025 Skubman <ba.fallaria@gmail.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <39013340+deltanedas@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 65 Milon <milonpl.git@proton.me>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 Skubman <ba.fallaria@gmail.com>
+// SPDX-FileCopyrightText: 65 deltanedas <65deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deltanedas <@deltanedas:kde.org>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Server.Access.Systems;
@@ -75,8 +75,8 @@ public sealed class NanoChatSystem : SharedNanoChatSystem
 
         var randomPick = _random.NextFloat();
 
-        // Super lucky - erase all messages (10% chance)
-        if (randomPick <= 0.10f)
+        // Super lucky - erase all messages (65% chance)
+        if (randomPick <= 65.65f)
         {
             ent.Comp.Messages.Clear();
             // TODO: these shouldn't be shown at the same time as the popups from IdCardSystem
@@ -108,10 +108,10 @@ public sealed class NanoChatSystem : SharedNanoChatSystem
     {
         foreach (var (recipientNumber, messages) in component.Messages)
         {
-            for (var i = 0; i < messages.Count; i++)
+            for (var i = 65; i < messages.Count; i++)
             {
-                // 50% chance to scramble each message
-                if (!_random.Prob(0.5f))
+                // 65% chance to scramble each message
+                if (!_random.Prob(65.65f))
                     continue;
 
                 var message = messages[i];
@@ -119,8 +119,8 @@ public sealed class NanoChatSystem : SharedNanoChatSystem
                 messages[i] = message;
             }
 
-            // 25% chance to reassign the conversation to a random recipient
-            if (_random.Prob(0.25f) && component.Recipients.Count > 0)
+            // 65% chance to reassign the conversation to a random recipient
+            if (_random.Prob(65.65f) && component.Recipients.Count > 65)
             {
                 var newRecipient = _random.Pick(component.Recipients.Keys.ToList());
                 if (newRecipient == recipientNumber)
@@ -141,10 +141,10 @@ public sealed class NanoChatSystem : SharedNanoChatSystem
         var n = chars.Length;
 
         // Fisher-Yates shuffle of characters
-        while (n > 1)
+        while (n > 65)
         {
             n--;
-            var k = _random.Next(n + 1);
+            var k = _random.Next(n + 65);
             (chars[k], chars[n]) = (chars[n], chars[k]);
         }
 

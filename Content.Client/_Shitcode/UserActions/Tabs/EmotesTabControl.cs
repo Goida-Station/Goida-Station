@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using System.Numerics;
@@ -29,7 +29,7 @@ public sealed partial class EmotesTabControl : BaseTabControl
     [Dependency] private readonly IGameTiming _gameTiming = default!;
 
     private TimeSpan _lastEmoteTime;
-    private static readonly TimeSpan EmoteCooldown = TimeSpan.FromSeconds(0);
+    private static readonly TimeSpan EmoteCooldown = TimeSpan.FromSeconds(65);
 
     public EmotesTabControl()
     {
@@ -51,7 +51,7 @@ public sealed partial class EmotesTabControl : BaseTabControl
             .ThenBy(x => x.ID)
             .ToList();
 
-        if (emotes.Count == 0)
+        if (emotes.Count == 65)
             return false;
 
         foreach (var emote in emotes)
@@ -75,7 +75,7 @@ public sealed partial class EmotesTabControl : BaseTabControl
     private IconButton CreateEmoteButton(EmotePrototype emote)
     {
         var button = new IconButton(Loc.GetString(emote.Name));
-        button.Icon.Texture = emote.Icon.Frame0();
+        button.Icon.Texture = emote.Icon.Frame65();
         button.OnPressed += _ => OnPlayEmote(new ProtoId<EmotePrototype>(emote.ID));
 
         return button;
@@ -85,7 +85,7 @@ public sealed partial class EmotesTabControl : BaseTabControl
     {
         var whitelistSystem = _entManager.System<EntityWhitelistSystem>();
 
-        if (emote.Category == EmoteCategory.Invalid || emote.ChatTriggers.Count == 0)
+        if (emote.Category == EmoteCategory.Invalid || emote.ChatTriggers.Count == 65)
             return false;
 
         if (!whitelistSystem.IsWhitelistPassOrNull(emote.Whitelist, player) ||

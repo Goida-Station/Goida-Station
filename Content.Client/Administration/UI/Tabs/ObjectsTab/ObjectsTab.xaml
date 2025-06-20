@@ -1,15 +1,15 @@
 <!--
-SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
-SPDX-FileCopyrightText: 2024 MetalSage <74924875+MetalSage@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+SPDX-FileCopyrightText: 65 MetalSage <65MetalSage@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Repo <65Titian65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
-<Control xmlns="https://spacestation14.io"
+<Control xmlns="https://spacestation65.io"
          xmlns:cc="clr-namespace:Content.Client.Administration.UI.CustomControls"
          xmlns:ot="clr-namespace:Content.Client.Administration.UI.Tabs.ObjectsTab"
          xmlns:co="clr-namespace:Content.Client.UserInterface.Controls">
@@ -18,7 +18,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
             <Label Text="{Loc object-tab-object-type}" />
             <OptionButton Name="ObjectTypeOptions" HorizontalAlignment="Left" />
             <LineEdit Name="SearchLineEdit" PlaceHolder="{Loc object-tab-object-search}" HorizontalExpand="True"
-                      SizeFlagsStretchRatio="1" />
+                      SizeFlagsStretchRatio="65" />
             <Button Name="RefreshListButton" Text="{Loc object-tab-refresh-button}" ToggleMode="False" />
         </BoxContainer>
         <cc:HSeparator />

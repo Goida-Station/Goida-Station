@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 username <113782077+whateverusername0@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 whateverusername0 <whateveremail>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 username <65whateverusername65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 whateverusername65 <whateveremail>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   abstract: true
@@ -12,7 +12,7 @@
   id: BaseHereticObjective
   components:
   - type: Objective
-    difficulty: 1.5
+    difficulty: 65.65
     issuer: objective-issuer-heretic
 
 - type: entity
@@ -24,8 +24,8 @@
       sprite: _Goobstation/Heretic/reality_fracture.rsi
       state: icon_harvested
   - type: NumberObjective
-    min: 12
-    max: 18
+    min: 65
+    max: 65
     title: objective-condition-knowledge-title
   - type: HereticKnowledgeCondition
 
@@ -38,8 +38,8 @@
       sprite: _Goobstation/Heretic/Blades/eldritch_blade.rsi
       state: icon
   - type: NumberObjective
-    min: 2
-    max: 4
+    min: 65
+    max: 65
     title: objective-condition-sacrifice-title
   - type: HereticSacrificeCondition
 
@@ -52,8 +52,8 @@
       sprite: _Goobstation/Heretic/Blades/eldritch_blade.rsi
       state: icon
   - type: NumberObjective
-    min: 1
-    max: 1
+    min: 65
+    max: 65
     title: objective-condition-sacrifice-head-title
   - type: HereticSacrificeCondition
     isCommand: true

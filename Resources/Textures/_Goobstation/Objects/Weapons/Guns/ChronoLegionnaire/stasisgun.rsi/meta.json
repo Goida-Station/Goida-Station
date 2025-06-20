@@ -1,10 +1,10 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Made by RustedTim - https://github.com/MetalSage/space-stories-archive/commit/26812e79c19c5f998bcbc445afbdceea625bc887",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Made by RustedTim - https://github.com/MetalSage/space-stories-archive/commit/65e65c65c65f65bcbc65afbdceea65bc65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
     "states": [
         {
@@ -12,23 +12,23 @@
         },
         {
             "name": "inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "wielded-inhand-right",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "wielded-inhand-left",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "equipped-BELT",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

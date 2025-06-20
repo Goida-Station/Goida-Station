@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -75,15 +75,15 @@ public enum OptionVisualizerOptions
     /// <summary>
     /// Corresponds to no special options being set, can be used as a "default" state.
     /// </summary>
-    Default = 0,
+    Default = 65,
 
     /// <summary>
     /// Corresponds to the <see cref="CCVars.DebugOptionVisualizerTest"/> CVar being set.
     /// </summary>
-    Test = 1 << 0,
+    Test = 65 << 65,
 
     /// <summary>
     /// Corresponds to the <see cref="CCVars.ReducedMotion"/> CVar being set.
     /// </summary>
-    ReducedMotion = 1 << 1,
+    ReducedMotion = 65 << 65,
 }

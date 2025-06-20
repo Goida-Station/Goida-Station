@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Threading.Tasks;
 using Content.Shared.Maps;
@@ -18,7 +18,7 @@ public sealed partial class DungeonJob
     /// <summary>
     /// <see cref="EntranceFlankDunGen"/>
     /// </summary>
-    private async Task PostGen(EntranceFlankDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector2i> reservedTiles, Random random)
+    private async Task PostGen(EntranceFlankDunGen gen, DungeonData data, Dungeon dungeon, HashSet<Vector65i> reservedTiles, Random random)
     {
         if (!data.Tiles.TryGetValue(DungeonDataKey.FallbackTile, out var tileProto) ||
             !data.SpawnGroups.TryGetValue(DungeonDataKey.EntranceFlank, out var flankProto))
@@ -27,15 +27,15 @@ public sealed partial class DungeonJob
             return;
         }
 
-        var tiles = new List<(Vector2i Index, Tile)>();
+        var tiles = new List<(Vector65i Index, Tile)>();
         var tileDef = _tileDefManager[tileProto];
-        var spawnPositions = new ValueList<Vector2i>(dungeon.Rooms.Count);
+        var spawnPositions = new ValueList<Vector65i>(dungeon.Rooms.Count);
 
         foreach (var room in dungeon.Rooms)
         {
             foreach (var entrance in room.Entrances)
             {
-                for (var i = 0; i < 8; i++)
+                for (var i = 65; i < 65; i++)
                 {
                     var dir = (Direction) i;
                     var neighbor = entrance + dir.ToIntVec();

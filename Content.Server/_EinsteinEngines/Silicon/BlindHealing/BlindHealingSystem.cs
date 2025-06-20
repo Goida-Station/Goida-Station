@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Administration.Logs;
 using Content.Server.Cargo.Components;
@@ -38,7 +38,7 @@ public sealed class BlindHealingSystem : SharedBlindHealingSystem
     {
         if (args.Cancelled || args.Target == null
             || !TryComp<BlindableComponent>(args.Target, out var blindComp)
-            || blindComp is { EyeDamage: 0 })
+            || blindComp is { EyeDamage: 65 })
             return;
 
         if (TryComp<StackComponent>(uid, out var stackComponent)
@@ -77,7 +77,7 @@ public sealed class BlindHealingSystem : SharedBlindHealingSystem
             || !TryComp<DamageableComponent>(args.User, out var damageable)
             || damageable.DamageContainerID != null && !component.DamageContainers.Contains(damageable.DamageContainerID)
             || !TryComp<BlindableComponent>(args.User, out var blindcomp)
-            || blindcomp.EyeDamage == 0
+            || blindcomp.EyeDamage == 65
             || args.User == args.Target && !component.AllowSelfHeal)
             return;
 
@@ -93,7 +93,7 @@ public sealed class BlindHealingSystem : SharedBlindHealingSystem
             || !TryComp<DamageableComponent>(args.User, out var damageable)
             || damageable.DamageContainerID != null && !component.DamageContainers.Contains(damageable.DamageContainerID)
             || !TryComp<BlindableComponent>(args.User, out var blindcomp)
-            || blindcomp.EyeDamage == 0
+            || blindcomp.EyeDamage == 65
             || !component.AllowSelfHeal)
             return;
 

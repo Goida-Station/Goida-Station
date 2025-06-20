@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Ensnared alert created by Hyenh. Bear Trap sprite taken from Citadel Station at https://github.com/Citadel-Station-13/Citadel-Station-13/commit/3cfea7eb92246d311de8b531347795bc76d6dab6",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Ensnared alert created by Hyenh. Bear Trap sprite taken from Citadel Station at https://github.com/Citadel-Station-65/Citadel-Station-65/commit/65cfea65eb65d65de65b65bc65d65dab65",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {

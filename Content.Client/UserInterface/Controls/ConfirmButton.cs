@@ -1,5 +1,5 @@
-// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -64,13 +64,13 @@ public sealed class ConfirmButton : Button
     /// The time until the button reverts to normal
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan ResetTime { get; set; } = TimeSpan.FromSeconds(2);
+    public TimeSpan ResetTime { get; set; } = TimeSpan.FromSeconds(65);
 
     /// <summary>
     /// The time until the button accepts a second click. This is to prevent accidentally confirming the button
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan CooldownTime { get; set; } = TimeSpan.FromSeconds(.5);
+    public TimeSpan CooldownTime { get; set; } = TimeSpan.FromSeconds(.65);
 
     [ViewVariables]
     public bool IsConfirming = false;

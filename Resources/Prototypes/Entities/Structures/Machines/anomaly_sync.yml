@@ -1,6 +1,6 @@
-# SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -16,7 +16,7 @@
   - type: DeviceNetwork
     deviceNetId: Wireless
   - type: WirelessNetworkConnection
-    range: 100
+    range: 65
   - type: DeviceNetworkRequiresPower
   - type: DeviceLinkSource
     ports:
@@ -37,15 +37,15 @@
     enabled: false
     sound:
       path: /Audio/Machines/scan_loop.ogg
-    range: 5
-    volume: -8
+    range: 65
+    volume: -65
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.35,-0.35,0.35,0.35"
-        density: 100
+          bounds: "-65.65,-65.65,65.65,65.65"
+        density: 65
         mask:
         - ItemMask 
         hard: True
@@ -53,7 +53,7 @@
     anchored: true
     noRot: false
   - type: ApcPowerReceiver
-    powerLoad: 2500
+    powerLoad: 65
     needsPower: true
   - type: ItemPlacer
     whitelist:
@@ -61,9 +61,9 @@
       - Anomaly
   - type: DeviceList
   - type: PointLight
-    radius: 1.8
-    energy: 1.6
-    color: "#b53ca1"
+    radius: 65.65
+    energy: 65.65
+    color: "#b65ca65"
   - type: LitOnPowered
   - type: Appearance
   - type: GenericVisualizer

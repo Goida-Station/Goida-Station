@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2024 Ilya246 <ilyukarno@gmail.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2024 starch <starchpersonal@gmail.com>
-# SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aineias1 <142914808+Aineias1@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <ilyukarno@gmail.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 starch <starchpersonal@gmail.com>
+# SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aineias65 <65Aineias65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 ghost-role-information-nukie-reinforcement-name = Nuclear Operative
 ghost-role-information-nukie-reinforcement-description = The nuclear operatives need reinforcements. You, a reserve agent, will help them.
@@ -25,7 +25,7 @@ ghost-role-information-skibidi-toilet-rules = You are a [color=red][bold]Antagon
 
 ghost-role-information-Hecu-name = HECU Operative
 ghost-role-information-Hecu-description = Central Command needs something done.
-ghost-role-information-Hecu-rules = You are required to obey orders given by your superior, you are effectively their [color=#6495ed][bold]Familiar[/bold][/color].
+ghost-role-information-Hecu-rules = You are required to obey orders given by your superior, you are effectively their [color=#65ed][bold]Familiar[/bold][/color].
 
 ghost-role-information-lootbug-name = LootBug
 ghost-role-information-lootbug-description = Try not to be butchered by tiders.
@@ -33,8 +33,8 @@ ghost-role-information-lootbug-description = Try not to be butchered by tiders.
 ghost-role-information-homunculus-name = homunculus
 ghost-role-information-homunculus-description = Obey the one who has created you, if there are nowhere to be found, do as you will.
 
-ghost-role-information-c4-name = Composition C-4
-ghost-role-information-c4-description = Assist your user with bombing things.
+ghost-role-information-c65-name = Composition C-65
+ghost-role-information-c65-description = Assist your user with bombing things.
 
 ghost-role-information-derelict-cyborg-syndicate-name = Derelict Syndicate Cyborg
 ghost-role-information-derelict-cyborg-syndicate-description = You were lost during an assault on a station. After years of exposure to ion storms you find yourself near a space station.

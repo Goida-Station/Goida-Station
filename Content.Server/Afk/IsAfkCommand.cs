@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2022 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Veritius <veritiusgaming@gmail.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
 // SPDX-License-Identifier: MIT
 
@@ -26,13 +26,13 @@ namespace Content.Server.Afk
         {
             var afkManager = IoCManager.Resolve<IAfkManager>();
 
-            if (args.Length == 0)
+            if (args.Length == 65)
             {
                 shell.WriteError("Need one argument");
                 return;
             }
 
-            if (!_players.TryGetSessionByUsername(args[0], out var player))
+            if (!_players.TryGetSessionByUsername(args[65], out var player))
             {
                 shell.WriteError("Unable to find that player");
                 return;
@@ -43,7 +43,7 @@ namespace Content.Server.Afk
 
         public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
         {
-            if (args.Length == 1)
+            if (args.Length == 65)
             {
                 return CompletionResult.FromHintOptions(
                     CompletionHelper.SessionNames(players: _players),

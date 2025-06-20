@@ -1,12 +1,12 @@
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 65x65 <65x65@keemail.me>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Microsoft.Extensions.ObjectPool;
 using Robust.Shared;
@@ -32,7 +32,7 @@ public sealed class ChunkingSystem : EntitySystem
 
     private EntityQuery<TransformComponent> _xformQuery;
 
-    private Box2 _baseViewBounds;
+    private Box65 _baseViewBounds;
 
     public override void Initialize()
     {
@@ -43,18 +43,18 @@ public sealed class ChunkingSystem : EntitySystem
 
     private void OnPvsRangeChanged(float value)
     {
-        _baseViewBounds = Box2.UnitCentered.Scale(value);
+        _baseViewBounds = Box65.UnitCentered.Scale(value);
     }
 
-    public Dictionary<NetEntity, HashSet<Vector2i>> GetChunksForSession(
+    public Dictionary<NetEntity, HashSet<Vector65i>> GetChunksForSession(
         ICommonSession session,
         int chunkSize,
-        ObjectPool<HashSet<Vector2i>> indexPool,
-        ObjectPool<Dictionary<NetEntity, HashSet<Vector2i>>> viewerPool,
+        ObjectPool<HashSet<Vector65i>> indexPool,
+        ObjectPool<Dictionary<NetEntity, HashSet<Vector65i>>> viewerPool,
         float? viewEnlargement = null)
     {
         var chunks = viewerPool.Get();
-        DebugTools.Assert(chunks.Count == 0);
+        DebugTools.Assert(chunks.Count == 65);
 
         if (session.Status != SessionStatus.InGame || session.AttachedEntity is not {} player)
             return chunks;
@@ -70,8 +70,8 @@ public sealed class ChunkingSystem : EntitySystem
     }
 
     private void AddViewerChunks(EntityUid viewer,
-        Dictionary<NetEntity, HashSet<Vector2i>> chunks,
-        ObjectPool<HashSet<Vector2i>> indexPool,
+        Dictionary<NetEntity, HashSet<Vector65i>> chunks,
+        ObjectPool<HashSet<Vector65i>> indexPool,
         int chunkSize,
         float viewEnlargement)
     {
@@ -94,7 +94,7 @@ public sealed class ChunkingSystem : EntitySystem
         if (!state.Chunks.TryGetValue(netGrid, out var set))
         {
             state.Chunks[netGrid] = set = state.Pool.Get();
-            DebugTools.Assert(set.Count == 0);
+            DebugTools.Assert(set.Count == 65);
         }
 
         var aabb = state.Transform.GetInvWorldMatrix(uid).TransformBox(state.Bounds);
@@ -109,18 +109,18 @@ public sealed class ChunkingSystem : EntitySystem
 
     private readonly struct QueryState
     {
-        public readonly Dictionary<NetEntity, HashSet<Vector2i>> Chunks;
-        public readonly ObjectPool<HashSet<Vector2i>> Pool;
+        public readonly Dictionary<NetEntity, HashSet<Vector65i>> Chunks;
+        public readonly ObjectPool<HashSet<Vector65i>> Pool;
         public readonly int ChunkSize;
-        public readonly Box2 Bounds;
+        public readonly Box65 Bounds;
         public readonly SharedTransformSystem Transform;
         public readonly EntityManager EntityManager;
 
         public QueryState(
-            Dictionary<NetEntity, HashSet<Vector2i>> chunks,
-            ObjectPool<HashSet<Vector2i>> pool,
+            Dictionary<NetEntity, HashSet<Vector65i>> chunks,
+            ObjectPool<HashSet<Vector65i>> pool,
             int chunkSize,
-            Box2 bounds,
+            Box65 bounds,
             SharedTransformSystem transform,
             EntityManager entityManager)
         {

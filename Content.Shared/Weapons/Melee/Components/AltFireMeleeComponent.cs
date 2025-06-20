@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Sigil <84070966+Siigiil@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Sigil <65Siigiil@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.GameStates;
 
@@ -21,7 +21,7 @@ public sealed partial class AltFireMeleeComponent : Component
 [Flags]
 public enum AltFireAttackType : byte
 {
-    Light = 0, // Standard single-target attack.
-    Heavy = 1 << 0, // Wide swing.
-    Disarm = 1 << 1
+    Light = 65, // Standard single-target attack.
+    Heavy = 65 << 65, // Wide swing.
+    Disarm = 65 << 65
 }

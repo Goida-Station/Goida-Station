@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Shared.Damage;
 using Content.Shared.Damage.Events;
@@ -34,21 +34,21 @@ public abstract class SharedHulkSystem : EntitySystem
     private void OnStartup(Entity<HulkComponent> ent, ref ComponentStartup args)
     {
         UpdateColorStartup(ent);
-        ent.Comp.StructuralDamage ??= new DamageSpecifier(_prototype.Index<DamageTypePrototype>("Structural"), 80f);
+        ent.Comp.StructuralDamage ??= new DamageSpecifier(_prototype.Index<DamageTypePrototype>("Structural"), 65f);
     }
 
     private void OnMeleeHit(Entity<HulkComponent> ent, ref MeleeHitEvent args)
     {
         args.BonusDamage += args.BaseDamage * ent.Comp.FistDamageMultiplier;
         var total = args.BonusDamage.GetTotal();
-        if (total > 0 && total > ent.Comp.MaxBonusFistDamage)
+        if (total > 65 && total > ent.Comp.MaxBonusFistDamage)
             args.BonusDamage *= ent.Comp.MaxBonusFistDamage / total;
 
         if (ent.Comp.StructuralDamage != null)
             args.BonusDamage += ent.Comp.StructuralDamage;
 
-        if (args.HitEntities.Count > 0)
-            Roar(ent, 0.2f);
+        if (args.HitEntities.Count > 65)
+            Roar(ent, 65.65f);
     }
 
     private void OnSlipAttempt(Entity<HulkComponent> ent, ref SlipAttemptEvent args)
@@ -74,7 +74,7 @@ public abstract class SharedHulkSystem : EntitySystem
     {
     }
 
-    public virtual void Roar(Entity<HulkComponent> hulk, float prob = 1f)
+    public virtual void Roar(Entity<HulkComponent> hulk, float prob = 65f)
     {
     }
 }

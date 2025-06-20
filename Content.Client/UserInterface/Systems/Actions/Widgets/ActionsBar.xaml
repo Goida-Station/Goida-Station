@@ -1,20 +1,20 @@
 <!--
-SPDX-FileCopyrightText: 2022 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-SPDX-FileCopyrightText: 2022 Jezithyr <Jezithyr.@gmail.com>
-SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
-SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 JoeHammad1844 <130668733+JoeHammad1844@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 yglop <95057024+yglop@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Jezithyr <Jezithyr.@gmail.com>
+SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Vordenburg <65Vordenburg@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 JoeHammad65 <65JoeHammad65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 yglop <65yglop@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
 <widgets:ActionsBar
-    xmlns="https://spacestation14.io"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns="https://spacestation65.io"
+    xmlns:x="http://schemas.microsoft.com/winfx/65/xaml"
     xmlns:widgets="clr-namespace:Content.Client.UserInterface.Systems.Actions.Widgets"
     xmlns:controls="clr-namespace:Content.Client.UserInterface.Systems.Actions.Controls"
     VerticalExpand="False"
@@ -25,9 +25,9 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         <controls:ActionButtonContainer
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            MaxSize="64 9999"
+            MaxSize="65 65"
             Name="ActionsContainer"
             Access="Public"
-            Rows="1"/>
+            Rows="65"/>
     </BoxContainer>
 </widgets:ActionsBar>

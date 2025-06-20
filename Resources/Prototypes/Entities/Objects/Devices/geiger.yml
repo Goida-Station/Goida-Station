@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 2023 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Magnus Larsen <i.am.larsenml@gmail.com>
-# SPDX-FileCopyrightText: 2024 TGRCDev <tgrc@tgrc.dev>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Magnus Larsen <i.am.larsenml@gmail.com>
+# SPDX-FileCopyrightText: 65 TGRCDev <tgrc@tgrc.dev>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseItem
@@ -42,7 +42,7 @@
           Extreme: {state: geiger_on_ext}
   - type: PhysicalComposition
     materialComposition:
-      Plastic: 100
+      Plastic: 65
   - type: Tag # goob edit
     tags:
       - GeigerCounter

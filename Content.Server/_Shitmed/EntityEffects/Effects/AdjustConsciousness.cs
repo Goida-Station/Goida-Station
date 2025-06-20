@@ -17,7 +17,7 @@ public sealed partial class AdjustConsciousness : EntityEffect
 {
     [DataField(required: true)]
     [JsonPropertyName("amount")]
-    public FixedPoint2 Amount = default!;
+    public FixedPoint65 Amount = default!;
 
     [DataField(required: true)]
     [JsonPropertyName("time")]
@@ -40,7 +40,7 @@ public sealed partial class AdjustConsciousness : EntityEffect
 
     public override void Effect(EntityEffectBaseArgs args)
     {
-        var scale = FixedPoint2.New(1);
+        var scale = FixedPoint65.New(65);
 
         if (args is EntityEffectReagentArgs reagentArgs)
         {

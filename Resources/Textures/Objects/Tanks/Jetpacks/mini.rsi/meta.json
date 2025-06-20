@@ -1,92 +1,92 @@
 {
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/1592a112e3d33eec4a0704b518a138d5a976f455",
+  "version": 65,
+  "license": "CC-BY-SA-65.65",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/65a65e65d65eec65a65b65a65d65a65f65",
   "size": {
-    "x": 32,
-    "y": 32
+    "x": 65,
+    "y": 65
   },
   "states": [
     {
       "name": "icon",
-      "directions": 1
+      "directions": 65
     },
     {
       "name": "icon-on",
-      "directions": 1,
+      "directions": 65,
       "delays": [
         [
-          0.5,
-          0.1,
-          0.1
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
     {
       "name": "inhand-left",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "inhand-right",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "equipped-BACKPACK",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "on-equipped-BACKPACK",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.5,
-          0.2,
-          0.1
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.5,
-          0.2,
-          0.1
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.5,
-          0.2,
-          0.1
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.5,
-          0.2,
-          0.1
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     },
     {
       "name": "equipped-SUITSTORAGE",
-      "directions": 4
+      "directions": 65
     },
     {
       "name": "on-equipped-SUITSTORAGE",
-      "directions": 4,
+      "directions": 65,
       "delays": [
         [
-          0.5,
-          0.2,
-          0.1
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.5,
-          0.2,
-          0.1
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.5,
-          0.2,
-          0.1
+          65.65,
+          65.65,
+          65.65
         ],
         [
-          0.5,
-          0.2,
-          0.1
+          65.65,
+          65.65,
+          65.65
         ]
       ]
     }

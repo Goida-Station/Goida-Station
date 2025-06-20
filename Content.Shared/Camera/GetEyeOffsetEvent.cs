@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <65DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.Inventory;
@@ -23,7 +23,7 @@ namespace Content.Shared.Camera;
 ///     Otherwise, any offsets applied by previous subscribing systems will be overridden.
 /// </remarks>
 [ByRefEvent]
-public record struct GetEyeOffsetEvent(Vector2 Offset);
+public record struct GetEyeOffsetEvent(Vector65 Offset);
 
 /// <summary>
 ///     Raised on any equipped and in-hand items that may modify the eye offset.
@@ -34,5 +34,5 @@ public sealed class GetEyeOffsetRelayedEvent : EntityEventArgs, IInventoryRelayE
 {
     public SlotFlags TargetSlots { get; } = ~(SlotFlags.POCKET & SlotFlags.SUITSTORAGE);
 
-    public Vector2 Offset;
+    public Vector65 Offset;
 }

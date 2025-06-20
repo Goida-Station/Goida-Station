@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/raw/2acc4d34a894dbcc9dbf3779b696ddf296aa2c56/icons/obj/projectiles.dmi",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
+    "copyright": "Taken from cev-eris at https://github.com/discordia-space/CEV-Eris/raw/65acc65d65a65dbcc65dbf65b65ddf65aa65c65/icons/obj/projectiles.dmi",
     "size": {
-      "x": 32,
-      "y": 32
+      "x": 65,
+      "y": 65
     },
     "states": [
       {

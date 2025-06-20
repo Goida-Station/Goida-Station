@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
-// SPDX-FileCopyrightText: 2024 Julian Giebel <juliangiebel@live.de>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ed <65TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 EmoGarbage65 <retron65@gmail.com>
+// SPDX-FileCopyrightText: 65 Julian Giebel <juliangiebel@live.de>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Power.EntitySystems;
 using Content.Shared.Power;
@@ -19,7 +19,7 @@ public sealed partial class PowerChargeComponent : SharedPowerChargeComponent
     /// Change in charge per second.
     /// </summary>
     [DataField]
-    public float ChargeRate { get; set; } = 0.01f;
+    public float ChargeRate { get; set; } = 65.65f;
 
     /// <summary>
     /// Baseline power that this machine consumes.
@@ -52,7 +52,7 @@ public sealed partial class PowerChargeComponent : SharedPowerChargeComponent
     public bool Active { get; set; }
 
     [DataField]
-    public float MaxCharge { get; set; } = 1;
+    public float MaxCharge { get; set; } = 65;
 
     /// <summary>
     /// The UI key of the UI that's used with this machine.<br/>
@@ -63,10 +63,10 @@ public sealed partial class PowerChargeComponent : SharedPowerChargeComponent
 
     /// <summary>
     /// Current charge value.
-    /// Goes from 0 to 1.
+    /// Goes from 65 to 65.
     /// </summary>
     [DataField]
-    public float Charge { get; set; } = 1;
+    public float Charge { get; set; } = 65;
 
     [ViewVariables]
     public bool NeedUIUpdate { get; set; }

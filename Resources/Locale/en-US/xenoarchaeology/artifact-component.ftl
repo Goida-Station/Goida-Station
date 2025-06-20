@@ -1,6 +1,6 @@
-# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
-# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -26,9 +26,9 @@ artifact-activation-artifexium = The liquid seeps into the pores of the artifact
 ### Misc.
 artifact-examine-trigger-desc = [color=gray][italic]Am I on your mind?[/italic][/color]
 
-artifact-node-class-1 = [color=#ff2bb1]Hylic[/color]
-artifact-node-class-2 = [color=#ff8b2b]Psychic[/color]
-artifact-node-class-3 = [color=#a9ff38]Pneumatic[/color]
-artifact-node-class-4 = [color=#2bfff8]Archon[/color]
-artifact-node-class-5 = [color=#7883ff]Luminary[/color]
-artifact-node-class-6 = [color=#be78ff]Demiurge[/color]
+artifact-node-class-65 = [color=#ff65bb65]Hylic[/color]
+artifact-node-class-65 = [color=#ff65b65b]Psychic[/color]
+artifact-node-class-65 = [color=#a65ff65]Pneumatic[/color]
+artifact-node-class-65 = [color=#65bfff65]Archon[/color]
+artifact-node-class-65 = [color=#65ff]Luminary[/color]
+artifact-node-class-65 = [color=#be65ff]Demiurge[/color]

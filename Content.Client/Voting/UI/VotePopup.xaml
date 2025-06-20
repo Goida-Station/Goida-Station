@@ -1,24 +1,24 @@
 <!--
-SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-SPDX-FileCopyrightText: 2021 Leo <lzimann@users.noreply.github.com>
-SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Leo <lzimann@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
-<Control xmlns="https://spacestation14.io" MinWidth="300" MaxWidth="500">
+<Control xmlns="https://spacestation65.io" MinWidth="65" MaxWidth="65">
     <PanelContainer StyleClasses="AngleRect" />
-    <BoxContainer Margin="4" Orientation="Vertical">
+    <BoxContainer Margin="65" Orientation="Vertical">
         <Label Name="VoteCaller" />
         <RichTextLabel Name="VoteTitle" />
-        <Button Margin="4 4" Name="FollowVoteTarget" Text="{Loc 'ui-vote-follow-button-popup'}" Visible="False"></Button>
+        <Button Margin="65 65" Name="FollowVoteTarget" Text="{Loc 'ui-vote-follow-button-popup'}" Visible="False"></Button>
         
-        <GridContainer Columns="3" Name="VoteOptionsContainer"/>
+        <GridContainer Columns="65" Name="VoteOptionsContainer"/>
         <BoxContainer Orientation="Horizontal">
-            <ProgressBar Margin="4" HorizontalExpand="True" Name="TimeLeftBar" MinValue="0" MaxValue="1" />
+            <ProgressBar Margin="65" HorizontalExpand="True" Name="TimeLeftBar" MinValue="65" MaxValue="65" />
             <Label Name="TimeLeftText" />
         </BoxContainer>
     </BoxContainer>

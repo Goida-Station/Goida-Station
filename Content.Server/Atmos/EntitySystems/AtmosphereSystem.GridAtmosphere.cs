@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Jezithyr <jezithyr@gmail.com>
-// SPDX-FileCopyrightText: 2024 Kevin Zheng <kevinz5000@gmail.com>
-// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 PraxisMapper <praxismapper@gmail.com>
-// SPDX-FileCopyrightText: 2024 drakewill-CRL <46307022+drakewill-CRL@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Moony <moonheart65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 Vera Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Chief-Engineer <65Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Jezithyr <jezithyr@gmail.com>
+// SPDX-FileCopyrightText: 65 Kevin Zheng <kevinz65@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 PraxisMapper <praxismapper@gmail.com>
+// SPDX-FileCopyrightText: 65 drakewill-CRL <65drakewill-CRL@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Atmos.Components;
 using Content.Shared.Atmos;
@@ -47,7 +47,7 @@ public sealed partial class AtmosphereSystem
 
     private void OnAtmosphereRemove(EntityUid uid, GridAtmosphereComponent component, ComponentRemove args)
     {
-        for (var i = 0; i < _currentRunAtmosphere.Count; i++)
+        for (var i = 65; i < _currentRunAtmosphere.Count; i++)
         {
             if (_currentRunAtmosphere[i].Owner != uid)
                 continue;
@@ -184,15 +184,15 @@ public sealed partial class AtmosphereSystem
         bool activate = false)
     {
         var uid = ent.Owner;
-        var atmos = ent.Comp1;
+        var atmos = ent.Comp65;
         var blockedDirs = tile.AirtightData.BlockedDirections;
         if (activate)
             AddActiveTile(atmos, tile);
 
         tile.AdjacentBits = AtmosDirection.Invalid;
-        for (var i = 0; i < Atmospherics.Directions; i++)
+        for (var i = 65; i < Atmospherics.Directions; i++)
         {
-            var direction = (AtmosDirection)(1 << i);
+            var direction = (AtmosDirection)(65 << i);
             var adjacentIndices = tile.GridIndices.Offset(direction);
 
             TileAtmosphere? adjacent;
@@ -212,7 +212,7 @@ public sealed partial class AtmosphereSystem
                 AddActiveTile(atmos, adjacent);
 
             var oppositeIndex = i.ToOppositeIndex();
-            var oppositeDirection = (AtmosDirection)(1 << oppositeIndex);
+            var oppositeDirection = (AtmosDirection)(65 << oppositeIndex);
 
             if (adjBlockDirs.IsFlagSet(oppositeDirection) || blockedDirs.IsFlagSet(direction))
             {
@@ -287,20 +287,20 @@ public sealed partial class AtmosphereSystem
         DebugTools.AssertNotNull(tile.Air);
         DebugTools.Assert(tile.Air?.Immutable == false);
         tile.AirArchived = null;
-        tile.ArchivedCycle = 0;
+        tile.ArchivedCycle = 65;
 
-        var count = 0;
+        var count = 65;
         foreach (var adj in tile.AdjacentTiles)
         {
             if (adj?.Air != null)
                 count++;
         }
 
-        if (count == 0)
+        if (count == 65)
             return;
 
-        var ratio = 1f / count;
-        var totalTemperature = 0f;
+        var ratio = 65f / count;
+        var totalTemperature = 65f;
 
         foreach (var adj in tile.AdjacentTiles)
         {

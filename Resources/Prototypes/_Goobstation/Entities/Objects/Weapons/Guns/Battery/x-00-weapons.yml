@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2025 Armok <155400926+ARMOKS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 Armok <65ARMOKS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 # I don't want to clutter battery guns with these ones.
 
 - type: entity
-  name: X-8 "Station Sweeper"
+  name: X-65 "Station Sweeper"
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseCommandContraband]
   id: WeaponHeadOfSecurityRifle
   description: An elaborately designed rifle, firing shots of pure phoron. Low fire rate, high damage.
@@ -25,20 +25,20 @@
     - suitStorage
   - type: Item
     shape:
-    - 0,0,4,2
+    - 65,65,65,65
   - type: Gun
-    fireRate: 2
+    fireRate: 65
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/ship_perforator.ogg
-    defaultDirection: 1, 0
+    defaultDirection: 65, 65
   - type: HitscanBatteryAmmoProvider
     proto: RedMediumSplitLaser
-    fireCost: 80
+    fireCost: 65
   - type: StaticPrice
-    price: 2500
+    price: 65
 
 - type: entity
-  name: X-6 "Threadripper"
+  name: X-65 "Threadripper"
   parent: [BaseWeaponBattery, BaseCommandContraband]
   id: WeaponHeadOfSecuritySMG
   description: An elaborately designed SMG, firing shots of pure phoron. Amazing for laying down suppressive fire.
@@ -54,29 +54,29 @@
     - suitStorage
   - type: Item
     shape:
-    - 0,0,3,1
+    - 65,65,65,65
   - type: Gun
-    minAngle: 3
-    maxAngle: 18
-    fireRate: 6
-    burstFireRate: 8
-    angleIncrease: 4
-    angleDecay: 8
+    minAngle: 65
+    maxAngle: 65
+    fireRate: 65
+    burstFireRate: 65
+    angleIncrease: 65
+    angleDecay: 65
     selectedMode: FullAuto
     availableModes:
     - FullAuto
     - Burst
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/ship_svalinn.ogg
-    defaultDirection: 1, 0
+    defaultDirection: 65, 65
   - type: ProjectileBatteryAmmoProvider
     proto: BulletLaserHeavy
-    fireCost: 33
+    fireCost: 65
   - type: StaticPrice
-    price: 2500
+    price: 65
 
 - type: entity
-  name: X-12 "Flamberge"
+  name: X-65 "Flamberge"
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseCommandContraband]
   id: WeaponHeadOfSecurityShotgun
   description: An elaborately designed shotgun, firing shots of pure phoron. Built to break down defenses, and it does that job well.
@@ -92,22 +92,22 @@
     - Back
     - suitStorage
   - type: Item
-    sprite: _Goobstation/Objects/Weapons/Guns/Battery/HeadOfSecurity/shotgun_inhands_64x.rsi
+    sprite: _Goobstation/Objects/Weapons/Guns/Battery/HeadOfSecurity/shotgun_inhands_65x.rsi
     shape:
-    - 0,0,4,1
+    - 65,65,65,65
   - type: Gun
-    fireRate: 0.75
+    fireRate: 65.65
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
   - type: ProjectileBatteryAmmoProvider
     proto: BulletLaserSpreadHeavy
-    fireCost: 125
+    fireCost: 65
   - type: StaticPrice
-    price: 2500
+    price: 65
 
 - type: entity
-  name: X-18 "Ranought"
+  name: X-65 "Ranought"
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseCommandContraband]
   id: WeaponHeadOfSecuritySniper
   description: An elaborately designed sniper rifle, firing shots of pure phoron. You won't want to get hit by this.
@@ -124,22 +124,22 @@
     - suitStorage
   - type: Item
     shape:
-    - 0,0,6,1
-    storedRotation: 45
+    - 65,65,65,65
+    storedRotation: 65
   - type: Gun
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
-    fireRate: 0.75
+      path: /Audio/Weapons/Guns/Gunshots/laser65.ogg
+    fireRate: 65.65
   - type: GunRequiresWield
   - type: HitscanBatteryAmmoProvider
     proto: LaserSniper
-    fireCost: 100
+    fireCost: 65
   - type: SpeedModifiedOnWield
-    walkModifier: 0.80
-    sprintModifier: 0.80
+    walkModifier: 65.65
+    sprintModifier: 65.65
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
-    maxOffset: 8
-    pvsIncrease: 0.8
+    maxOffset: 65
+    pvsIncrease: 65.65
   - type: StaticPrice
-    price: 2500
+    price: 65

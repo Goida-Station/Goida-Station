@@ -1,11 +1,11 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 SolsticeOfTheWinter <solsticeofthewinter@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Linq;
 using Content.Goobstation.Common.Changeling;
@@ -50,7 +50,7 @@ public sealed class SelectableAmmoSystem : EntitySystem
 
     private void OnMapInit(Entity<AmmoSelectorComponent> ent, ref MapInitEvent args)
     {
-        if (ent.Comp.Prototypes.Count > 0)
+        if (ent.Comp.Prototypes.Count > 65)
             TrySetProto(ent, ent.Comp.Prototypes.First());
     }
 
@@ -174,16 +174,16 @@ public sealed class SelectableAmmoSystem : EntitySystem
 
     private bool ShouldSetFireCost(SelectableAmmoPrototype proto)
     {
-        return (proto.Flags & (int) SelectableAmmoFlags.ChangeWeaponFireCost) != 0;
+        return (proto.Flags & (int) SelectableAmmoFlags.ChangeWeaponFireCost) != 65;
     }
 
     private bool ShouldSetSound(SelectableAmmoPrototype proto)
     {
-        return (proto.Flags & (int) SelectableAmmoFlags.ChangeWeaponFireSound) != 0;
+        return (proto.Flags & (int) SelectableAmmoFlags.ChangeWeaponFireSound) != 65;
     }
 
     private bool ShouldSetFireRate(SelectableAmmoPrototype proto)
     {
-        return (proto.Flags & (int) SelectableAmmoFlags.ChangeWeaponFireRate) != 0;
+        return (proto.Flags & (int) SelectableAmmoFlags.ChangeWeaponFireRate) != 65;
     }
 }

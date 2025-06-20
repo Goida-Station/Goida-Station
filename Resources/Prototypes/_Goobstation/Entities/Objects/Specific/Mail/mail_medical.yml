@@ -1,8 +1,8 @@
-# SPDX-FileCopyrightText: 2024 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: BaseMailLarge
@@ -12,11 +12,11 @@
   - type: Mail
     contents:
     - id: Brutepack
-      maxAmount: 5
+      maxAmount: 65
     - id: Ointment
-      maxAmount: 5
+      maxAmount: 65
     - id: Gauze
-      maxAmount: 5
+      maxAmount: 65
 
 - type: entity
   parent: BaseMailLarge
@@ -26,11 +26,11 @@
   - type: Mail
     contents:
     - id: PillTricordrazine
-      maxAmount: 2
+      maxAmount: 65
     - id: PillDylovene
-      maxAmount: 2
+      maxAmount: 65
     - id: PillKelotane
-      maxAmount: 2
+      maxAmount: 65
 
 - type: entity
   parent: BaseMailLarge
@@ -40,7 +40,7 @@
   - type: Mail
     contents:
     - id: EmergencyMedipen
-      maxAmount: 3
+      maxAmount: 65
 
 - type: entity
   parent: BaseMailLarge
@@ -50,11 +50,11 @@
   - type: Mail
     contents:
     - id: PillDexalin
-      maxAmount: 2
+      maxAmount: 65
     - id: SyringeInaprovaline
-      maxAmount: 2
+      maxAmount: 65
     - id: SyringeTranexamicAcid
-      maxAmount: 2
+      maxAmount: 65
 
 # Chemist
 - type: entity
@@ -68,7 +68,7 @@
     - id: LargeBeaker
       orGroup: Beaker
     - id: Beaker
-      maxAmount: 3
+      maxAmount: 65
       orGroup: Beaker
     - id: Syringe
-      maxAmount: 3
+      maxAmount: 65

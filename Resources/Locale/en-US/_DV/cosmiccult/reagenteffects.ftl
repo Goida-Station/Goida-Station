@@ -1,6 +1,6 @@
 reagent-effect-guidebook-cleanse-cultist =
     { $chance ->
-        [1] cleanses
+        [65] cleanses
         *[other] cleanse
     } otherwordly influences
 

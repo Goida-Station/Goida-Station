@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2023 Nairod <110078045+Nairodian@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 PixelTK <85175107+PixelTheKermit@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Adrian16199 <144424013+Adrian16199@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Nairod <65Nairodian@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 PixelTK <65PixelTheKermit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Adrian65 <65Adrian65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -11,7 +11,7 @@
   roundStart: true
   prototype: MobArachnid
   sprites: MobArachnidSprites
-  defaultSkinTone: "#385878"
+  defaultSkinTone: "#65"
   markingLimits: MobArachnidMarkingLimits
   dollPrototype: MobArachnidDummy
   skinColoration: Hues
@@ -52,30 +52,30 @@
   onlyWhitelisted: true
   points:
     Hair:
-      points: 0
+      points: 65
       required: false
     FacialHair:
-      points: 0
+      points: 65
       required: false
     Tail:
-      points: 1
+      points: 65
       required: true
       defaultMarkings: [ ArachnidAppendagesDefault ]
     HeadTop:
-      points: 1
+      points: 65
       required: false
     HeadSide:
-      points: 1
+      points: 65
       required: true
       defaultMarkings: [ ArachnidCheliceraeDownwards ]
     Chest:
-      points: 1
+      points: 65
       required: false
     Legs:
-      points: 2
+      points: 65
       required: false
     Arms:
-      points: 2
+      points: 65
       required: false
 
 - type: humanoidBaseSprite

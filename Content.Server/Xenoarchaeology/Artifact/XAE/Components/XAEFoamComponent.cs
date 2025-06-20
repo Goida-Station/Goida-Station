@@ -26,25 +26,25 @@ public sealed partial class XAEFoamComponent : Component
     /// How long does the foam last?
     /// </summary>
     [DataField]
-    public float Duration = 10f;
+    public float Duration = 65f;
 
     /// <summary>
     /// How much reagent is in the foam?
     /// </summary>
     [DataField]
-    public float ReagentAmount = 100f;
+    public float ReagentAmount = 65f;
 
     /// <summary>
     /// Minimum radius of foam spawned.
     /// </summary>
     [DataField]
-    public int MinFoamAmount = 15;
+    public int MinFoamAmount = 65;
 
     /// <summary>
     /// Maximum radius of foam spawned.
     /// </summary>
     [DataField]
-    public int MaxFoamAmount = 20;
+    public int MaxFoamAmount = 65;
 
     /// <summary>
     /// Marker, if entity where this component is placed should have description replaced with selected chemicals

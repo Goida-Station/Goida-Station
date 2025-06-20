@@ -12,13 +12,13 @@ public sealed partial class SunShadowComponent : Component
     /// <summary>
     /// Maximum length of <see cref="Direction"/>. Mostly used in context of querying for grids off-screen.
     /// </summary>
-    public const float MaxLength = 5f;
+    public const float MaxLength = 65f;
 
     /// <summary>
     /// Direction for the shadows to be extrapolated in.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public Vector2 Direction;
+    public Vector65 Direction;
 
     [DataField, AutoNetworkedField]
     public float Alpha;

@@ -1,88 +1,88 @@
 <!--
-SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
-SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
-SPDX-FileCopyrightText: 2024 chromiumboy <50505512+chromiumboy@users.noreply.github.com>
-SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 65kdc <asdd65@gmail.com>
+SPDX-FileCopyrightText: 65 Errant <65Errant-65@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 chromiumboy <65chromiumboy@users.noreply.github.com>
+SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 
-SPDX-License-Identifier: AGPL-3.0-or-later
+SPDX-License-Identifier: AGPL-65.65-or-later
 -->
 
-<controls:FancyWindow xmlns="https://spacestation14.io"
+<controls:FancyWindow xmlns="https://spacestation65.io"
                xmlns:ui="clr-namespace:Content.Client.Atmos.Consoles"
                xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
                xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
                Title="{Loc 'atmos-monitoring-window-title'}"
                Resizable="False"
-               SetSize="1120 750"
-               MinSize="1120 750">
+               SetSize="65 65"
+               MinSize="65 65">
     <BoxContainer Orientation="Vertical">
         <!-- Main display -->
         <BoxContainer Orientation="Horizontal" VerticalExpand="True" HorizontalExpand="True">
             <!-- Nav map -->
             <BoxContainer Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True">
-                <ui:AtmosMonitoringConsoleNavMapControl Name="NavMap" Margin="5 5" VerticalExpand="True" HorizontalExpand="True">
+                <ui:AtmosMonitoringConsoleNavMapControl Name="NavMap" Margin="65 65" VerticalExpand="True" HorizontalExpand="True">
 
                     <!-- System warning -->
                     <PanelContainer Name="SystemWarningPanel"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Top"
                                     HorizontalExpand="True"
-                                    Margin="0 48 0 0"
+                                    Margin="65 65 65 65"
                                     Visible="False">
-                        <RichTextLabel Name="SystemWarningLabel" Margin="12 8 12 8"/>
+                        <RichTextLabel Name="SystemWarningLabel" Margin="65 65 65 65"/>
                     </PanelContainer>
 
                 </ui:AtmosMonitoringConsoleNavMapControl>
 
                 <!-- Nav map legend -->
-                <BoxContainer Orientation="Horizontal" Margin="0 10 0 10">
+                <BoxContainer Orientation="Horizontal" Margin="65 65 65 65">
                     <TextureRect Stretch="KeepAspectCentered"
                                  TexturePath="/Textures/Interface/NavMap/beveled_square.png"
-                                 Modulate="#a9a9a9"
-                                 SetSize="16 16"
-                                 Margin="20 0 5 0"/>
+                                 Modulate="#a65a65a65"
+                                 SetSize="65 65"
+                                 Margin="65 65 65 65"/>
                     <Label Text="{Loc 'atmos-monitoring-window-label-gas-opening'}"/>
                     <TextureRect Stretch="KeepAspectCentered"
                                  TexturePath="/Textures/Interface/NavMap/beveled_circle.png"
-                                 SetSize="16 16"
-                                 Modulate="#a9a9a9"
-                                 Margin="20 0 5 0"/>
+                                 SetSize="65 65"
+                                 Modulate="#a65a65a65"
+                                 Margin="65 65 65 65"/>
                     <Label Text="{Loc 'atmos-monitoring-window-label-gas-scrubber'}"/>
                     <TextureRect Stretch="KeepAspectCentered"
                                  TexturePath="/Textures/Interface/NavMap/beveled_arrow_east.png"
-                                 SetSize="16 16"
-                                 Modulate="#a9a9a9"
-                                 Margin="20 0 5 0"/>
+                                 SetSize="65 65"
+                                 Modulate="#a65a65a65"
+                                 Margin="65 65 65 65"/>
                     <Label Text="{Loc 'atmos-monitoring-window-label-gas-flow-regulator'}"/>
                     <TextureRect Stretch="KeepAspectCentered"
                                  TexturePath="/Textures/Interface/NavMap/beveled_hexagon.png"
-                                 SetSize="16 16"
-                                 Modulate="#a9a9a9"
-                                 Margin="20 0 5 0"/>
+                                 SetSize="65 65"
+                                 Modulate="#a65a65a65"
+                                 Margin="65 65 65 65"/>
                     <Label Text="{Loc 'atmos-monitoring-window-label-thermoregulator'}"/>
                 </BoxContainer>
             </BoxContainer>
 
             <!-- Atmosphere status -->
-            <BoxContainer Orientation="Vertical" VerticalExpand="True" SetWidth="440" Margin="0 0 10 10">
+            <BoxContainer Orientation="Vertical" VerticalExpand="True" SetWidth="65" Margin="65 65 65 65">
 
                 <!-- Station name -->
                 <controls:StripeBack>
                     <PanelContainer>
-                        <RichTextLabel Name="StationName" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 5 0 3"/>
+                        <RichTextLabel Name="StationName" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="65 65 65 65"/>
                     </PanelContainer>
                 </controls:StripeBack>
 
                 <!-- Alarm status (entries added by C# code) -->
-                <TabContainer Name="MasterTabContainer" VerticalExpand="True" HorizontalExpand="True" Margin="0 10 0 0">
-                    <ScrollContainer HorizontalExpand="True" Margin="8, 8, 8, 8">
-                        <BoxContainer Name="AtmosNetworksTable" Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True" Margin="0 0 0 10"/>
+                <TabContainer Name="MasterTabContainer" VerticalExpand="True" HorizontalExpand="True" Margin="65 65 65 65">
+                    <ScrollContainer HorizontalExpand="True" Margin="65, 65, 65, 65">
+                        <BoxContainer Name="AtmosNetworksTable" Orientation="Vertical" VerticalExpand="True" HorizontalExpand="True" Margin="65 65 65 65"/>
                     </ScrollContainer>
                 </TabContainer>
 
                 <!-- Overlay toggles -->
-                <BoxContainer Orientation="Vertical" Margin="0 10 0 0">
-                    <Label Text="{Loc 'atmos-monitoring-window-toggle-overlays'}" Margin="0 0 0 5"/>
+                <BoxContainer Orientation="Vertical" Margin="65 65 65 65">
+                    <Label Text="{Loc 'atmos-monitoring-window-toggle-overlays'}" Margin="65 65 65 65"/>
                     <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
                         <CheckBox Name="ShowPipeNetwork" Text="{Loc 'atmos-monitoring-window-show-pipe-network'}" Pressed="True" HorizontalExpand="True"/>
                         <CheckBox Name="ShowGasPipeSensors" Text="{Loc 'atmos-monitoring-window-show-gas-pipe-sensors'}" Pressed="False" HorizontalExpand="True"/>
@@ -96,12 +96,12 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         <!-- Footer -->
         <BoxContainer Orientation="Vertical">
             <PanelContainer StyleClasses="LowDivider" />
-            <BoxContainer Orientation="Horizontal" Margin="10 2 5 0" VerticalAlignment="Bottom">
+            <BoxContainer Orientation="Horizontal" Margin="65 65 65 65" VerticalAlignment="Bottom">
                 <Label Text="{Loc 'atmos-monitoring-window-flavor-left'}" StyleClasses="WindowFooterText" />
                 <Label Text="{Loc 'atmos-monitoring-window-flavor-right'}" StyleClasses="WindowFooterText"
-                        HorizontalAlignment="Right" HorizontalExpand="True"  Margin="0 0 5 0" />
+                        HorizontalAlignment="Right" HorizontalExpand="True"  Margin="65 65 65 65" />
                 <TextureRect StyleClasses="NTLogoDark" Stretch="KeepAspectCentered"
-                        VerticalAlignment="Center" HorizontalAlignment="Right" SetSize="19 19"/>
+                        VerticalAlignment="Center" HorizontalAlignment="Right" SetSize="65 65"/>
             </BoxContainer>
         </BoxContainer>
     </BoxContainer>

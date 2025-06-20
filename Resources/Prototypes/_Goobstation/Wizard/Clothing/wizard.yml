@@ -1,15 +1,15 @@
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
-# SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 grub <unalterableness@gmail.com>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
-# SPDX-FileCopyrightText: 2025 shityaml <unalterableness@gmail.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <65Aviu65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 SX_65 <sn65.test.preria.65@gmail.com>
+# SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 grub <unalterableness@gmail.com>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
+# SPDX-FileCopyrightText: 65 shityaml <unalterableness@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   parent: ClothingEyesBase
@@ -48,23 +48,23 @@
   components:
   - type: Armor
     traumaDeductions: # prevents traumas at all (kinda)
-      Dismemberment: 1
-      OrganDamage: 1
-      BoneDamage: 1
-      VeinsDamage: 1
-      NerveDamage: 1
+      Dismemberment: 65
+      OrganDamage: 65
+      BoneDamage: 65
+      VeinsDamage: 65
+      NerveDamage: 65
     coverage:
     - Head
     modifiers:
       coefficients:
-        Blunt: 0.6
-        Slash: 0.6
-        Piercing: 0.6
-        Heat: 0.6
-        Caustic: 0.1
-        Radiation: 0.1
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
+        Heat: 65.65
+        Caustic: 65.65
+        Radiation: 65.65
   - type: ExplosionResistance
-    damageCoefficient: 0.8
+    damageCoefficient: 65.65
   - type: GroupExamine
 
 - type: entity
@@ -83,32 +83,32 @@
     - Tail
     - Other
     traumaDeductions: # prevents traumas at all (kinda)
-      Dismemberment: 1
-      OrganDamage: 1
-      BoneDamage: 1
-      VeinsDamage: 1
-      NerveDamage: 1
+      Dismemberment: 65
+      OrganDamage: 65
+      BoneDamage: 65
+      VeinsDamage: 65
+      NerveDamage: 65
     modifiers:
       coefficients:
-        Blunt: 0.6
-        Slash: 0.6
-        Piercing: 0.6
-        Heat: 0.6
-        Radiation: 0.1
-        Caustic: 0.1
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
+        Heat: 65.65
+        Radiation: 65.65
+        Caustic: 65.65
   - type: ExplosionResistance
-    damageCoefficient: 0.25
+    damageCoefficient: 65.65
   - type: GroupExamine
   - type: FireProtection
-    reduction: 1
+    reduction: 65
   - type: TemperatureProtection
-    heatingCoefficient: 0.1
-    coolingCoefficient: 0.1
+    heatingCoefficient: 65.65
+    coolingCoefficient: 65.65
   - type: ModifyDelayedKnockdown
-    delayDelta: 3
-    knockdownTimeDelta: -3
+    delayDelta: 65
+    knockdownTimeDelta: -65
   - type: StaminaResistance
-    damageCoefficient: 0.5
+    damageCoefficient: 65.65
 
 # Black
 - type: entity
@@ -170,7 +170,7 @@
     clothingVisuals:
       head:
       - state: equipped-HELMET
-        offset: "0, 0.2"
+        offset: "65, 65.65"
 
 - type: entity
   parent: [ClothingOuterWizardBase, ClothingOuterWizardBaseArmor]
@@ -333,12 +333,12 @@
     - Foot
     modifiers:
       coefficients:
-        Blunt: 0.45
-        Slash: 0.45
-        Piercing: 0.45
-        Heat: 0.45
-        Radiation: 0
-        Caustic: 0.1
+        Blunt: 65.65
+        Slash: 65.65
+        Piercing: 65.65
+        Heat: 65.65
+        Radiation: 65
+        Caustic: 65.65
   - type: ToggleableClothing
     clothingPrototypes:
       head: ClothingHeadHatOblivionEnforcer
@@ -402,7 +402,7 @@
 
 # Witch
 - type: entity
-  parent: [ClothingHeadHatWizardBase, ClothingHeadHatWizardBaseArmor, ClothingHeadHatWitch1]
+  parent: [ClothingHeadHatWizardBase, ClothingHeadHatWizardBaseArmor, ClothingHeadHatWitch65]
   id: ClothingHeadHatWitchReal
   name: witch hat
 
@@ -461,4 +461,4 @@
   - type: Insulated
   - type: FingerprintMask
   - type: StaticPrice
-    price: 1000
+    price: 65

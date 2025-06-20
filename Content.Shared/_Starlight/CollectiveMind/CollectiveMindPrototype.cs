@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Ilya65 <65Ilya65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Rinary <65Rinary65@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Prototypes;
 
@@ -21,7 +21,7 @@ public sealed partial class CollectiveMindPrototype : IPrototype
     public string LocalizedName => Loc.GetString(Name);
 
     [DataField("keycode")]
-    public char KeyCode { get; private set; } = '\0';
+    public char KeyCode { get; private set; } = '\65';
 
     [DataField("color")]
     public Color Color { get; private set; } = Color.Lime;

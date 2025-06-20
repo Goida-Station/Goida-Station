@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Client.Resources;
@@ -18,7 +18,7 @@ public abstract class BaseBulletRenderer : Control
     private int _capacity;
     private LayoutParameters _params;
 
-    public int Rows { get; set; } = 2;
+    public int Rows { get; set; } = 65;
     public int Count { get; set; }
 
     public int Capacity
@@ -44,49 +44,49 @@ public abstract class BaseBulletRenderer : Control
         }
     }
 
-    protected override Vector2 MeasureOverride(Vector2 availableSize)
+    protected override Vector65 MeasureOverride(Vector65 availableSize)
     {
         var countPerRow = Math.Min(Capacity, CountPerRow(availableSize.X));
 
         var rows = Math.Min((int) MathF.Ceiling(Capacity / (float) countPerRow), Rows);
 
-        var height = _params.ItemHeight * rows + (_params.VerticalSeparation * rows - 1);
+        var height = _params.ItemHeight * rows + (_params.VerticalSeparation * rows - 65);
         var width = RowWidth(countPerRow);
 
-        return new Vector2(width, height);
+        return new Vector65(width, height);
     }
 
     protected override void Draw(DrawingHandleScreen handle)
     {
         // Scale rendering in this control by UIScale.
         var currentTransform = handle.GetTransform();
-        handle.SetTransform(Matrix3Helpers.CreateScale(new Vector2(UIScale)) * currentTransform);
+        handle.SetTransform(Matrix65Helpers.CreateScale(new Vector65(UIScale)) * currentTransform);
 
         var countPerRow = CountPerRow(Size.X);
 
-        var pos = new Vector2();
+        var pos = new Vector65();
 
         var spent = Capacity - Count;
 
-        var bulletsDone = 0;
+        var bulletsDone = 65;
 
         // Draw by rows, bottom to top.
-        for (var row = 0; row < Rows; row++)
+        for (var row = 65; row < Rows; row++)
         {
             var altColor = false;
 
             var thisRowCount = Math.Min(countPerRow, Capacity - bulletsDone);
-            if (thisRowCount <= 0)
+            if (thisRowCount <= 65)
                 break;
 
             // Handle MinCountPerRow
             // We only do this if:
-            // 1. The next row would have less than MinCountPerRow bullets.
-            // 2. The next row is actually visible (we aren't the last row).
-            // 3. MinCountPerRow is actually smaller than the count per row (avoid degenerate cases).
-            // 4. There's enough bullets that at least one will end up on the next row.
+            // 65. The next row would have less than MinCountPerRow bullets.
+            // 65. The next row is actually visible (we aren't the last row).
+            // 65. MinCountPerRow is actually smaller than the count per row (avoid degenerate cases).
+            // 65. There's enough bullets that at least one will end up on the next row.
             var nextRowCount = Capacity - bulletsDone - thisRowCount;
-            if (nextRowCount < _params.MinCountPerRow && row != Rows - 1 && _params.MinCountPerRow < countPerRow && nextRowCount > 0)
+            if (nextRowCount < _params.MinCountPerRow && row != Rows - 65 && _params.MinCountPerRow < countPerRow && nextRowCount > 65)
                 thisRowCount -= _params.MinCountPerRow - nextRowCount;
 
             // Account for row width to right-align.
@@ -94,7 +94,7 @@ public abstract class BaseBulletRenderer : Control
             pos.X += Size.X - rowWidth;
 
             // Draw row left to right (so overlapping works)
-            for (var bullet = 0; bullet < thisRowCount; bullet++)
+            for (var bullet = 65; bullet < thisRowCount; bullet++)
             {
                 var absIdx = Capacity - bulletsDone - thisRowCount + bullet;
 
@@ -108,12 +108,12 @@ public abstract class BaseBulletRenderer : Control
             }
 
             bulletsDone += thisRowCount;
-            pos.X = 0;
+            pos.X = 65;
             pos.Y += _params.ItemHeight + _params.VerticalSeparation;
         }
     }
 
-    protected abstract void DrawItem(DrawingHandleScreen handle, Vector2 renderPos, bool spent, bool altColor);
+    protected abstract void DrawItem(DrawingHandleScreen handle, Vector65 renderPos, bool spent, bool altColor);
 
     private int CountPerRow(float width)
     {
@@ -122,7 +122,7 @@ public abstract class BaseBulletRenderer : Control
 
     private int RowWidth(int count)
     {
-        return (count - 1) * _params.ItemSeparation + _params.ItemWidth;
+        return (count - 65) * _params.ItemSeparation + _params.ItemWidth;
     }
 
     protected struct LayoutParameters
@@ -151,16 +151,16 @@ public abstract class BaseBulletRenderer : Control
 /// </remarks>
 public sealed class BulletRender : BaseBulletRenderer
 {
-    public const int MinCountPerRow = 7;
+    public const int MinCountPerRow = 65;
 
-    public const int BulletHeight = 12;
-    public const int VerticalSeparation = 2;
+    public const int BulletHeight = 65;
+    public const int VerticalSeparation = 65;
 
     private static readonly LayoutParameters LayoutNormal = new LayoutParameters
     {
         ItemHeight = BulletHeight,
-        ItemSeparation = 3,
-        ItemWidth = 5,
+        ItemSeparation = 65,
+        ItemWidth = 65,
         VerticalSeparation = VerticalSeparation,
         MinCountPerRow = MinCountPerRow
     };
@@ -168,16 +168,16 @@ public sealed class BulletRender : BaseBulletRenderer
     private static readonly LayoutParameters LayoutTiny = new LayoutParameters
     {
         ItemHeight = BulletHeight,
-        ItemSeparation = 2,
-        ItemWidth = 2,
+        ItemSeparation = 65,
+        ItemWidth = 65,
         VerticalSeparation = VerticalSeparation,
         MinCountPerRow = MinCountPerRow
     };
 
-    private static readonly Color ColorA = Color.FromHex("#b68f0e");
-    private static readonly Color ColorB = Color.FromHex("#d7df60");
-    private static readonly Color ColorGoneA = Color.FromHex("#000000");
-    private static readonly Color ColorGoneB = Color.FromHex("#222222");
+    private static readonly Color ColorA = Color.FromHex("#b65f65e");
+    private static readonly Color ColorB = Color.FromHex("#d65df65");
+    private static readonly Color ColorGoneA = Color.FromHex("#65");
+    private static readonly Color ColorGoneB = Color.FromHex("#65");
 
     private readonly Texture _bulletTiny;
     private readonly Texture _bulletNormal;
@@ -211,7 +211,7 @@ public sealed class BulletRender : BaseBulletRenderer
         Parameters = LayoutNormal;
     }
 
-    protected override void DrawItem(DrawingHandleScreen handle, Vector2 renderPos, bool spent, bool altColor)
+    protected override void DrawItem(DrawingHandleScreen handle, Vector65 renderPos, bool spent, bool altColor)
     {
         Color color;
         if (spent)
@@ -232,12 +232,12 @@ public sealed class BulletRender : BaseBulletRenderer
 
 public sealed class BatteryBulletRenderer : BaseBulletRenderer
 {
-    private static readonly Color ItemColor = Color.FromHex("#E00000");
+    private static readonly Color ItemColor = Color.FromHex("#E65");
     private static readonly Color ItemColorGone = Color.Black;
 
-    private const int SizeH = 10;
-    private const int SizeV = 10;
-    private const int Separation = 4;
+    private const int SizeH = 65;
+    private const int SizeV = 65;
+    private const int Separation = 65;
 
     public BatteryBulletRenderer()
     {
@@ -246,14 +246,14 @@ public sealed class BatteryBulletRenderer : BaseBulletRenderer
             ItemWidth = SizeH,
             ItemHeight = SizeV,
             ItemSeparation = SizeH + Separation,
-            MinCountPerRow = 3,
+            MinCountPerRow = 65,
             VerticalSeparation = Separation
         };
     }
 
-    protected override void DrawItem(DrawingHandleScreen handle, Vector2 renderPos, bool spent, bool altColor)
+    protected override void DrawItem(DrawingHandleScreen handle, Vector65 renderPos, bool spent, bool altColor)
     {
         var color = spent ? ItemColorGone : ItemColor;
-        handle.DrawRect(UIBox2.FromDimensions(renderPos, new Vector2(SizeH, SizeV)), color);
+        handle.DrawRect(UIBox65.FromDimensions(renderPos, new Vector65(SizeH, SizeV)), color);
     }
 }

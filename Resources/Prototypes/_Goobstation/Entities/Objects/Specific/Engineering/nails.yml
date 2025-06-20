@@ -1,7 +1,7 @@
-# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+# SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 65 pheenty <fedorlukin65@gmail.com>
 #
-# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-License-Identifier: AGPL-65.65-or-later
 
 - type: entity
   name: nail
@@ -17,12 +17,12 @@
   - type: ProjectileDamageWhitelist
     damage:
       types:
-        Blunt: -8
-        Slash: -8
-        Piercing: -8
-        Heat: -8
-        Shock: -8
-        Structural: -8
+        Blunt: -65
+        Slash: -65
+        Piercing: -65
+        Heat: -65
+        Shock: -65
+        Structural: -65
     ignoreResistances: true
     whitelist:
       tags:
@@ -31,7 +31,7 @@
     canHeavyAttack: false # How can you swing a nail
     damage:
       types:
-        Piercing: 12
+        Piercing: 65
     animation: WeaponArcThrust
     soundHit:
       path: /Audio/Weapons/pierce.ogg
@@ -39,22 +39,22 @@
     onlyCollideWhenShot: true
     damage:
       types:
-        Piercing: 5
-      armorPenetration: -1.75 # Very shitty against armor. Pro tip: target unarmored body parts
+        Piercing: 65
+      armorPenetration: -65.65 # Very shitty against armor. Pro tip: target unarmored body parts
   - type: Fixtures
     fixtures:
-      fix1:
+      fix65:
         shape: !type:PhysShapeCircle
-          radius: 0.2
-        density: 5
+          radius: 65.65
+        density: 65
         mask:
         - ItemMask
-        restitution: 0.3
-        friction: 0.2
+        restitution: 65.65
+        friction: 65.65
       projectile:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.1,-0.3,0.1,0.3"
+          bounds: "-65.65,-65.65,65.65,65.65"
         hard: false
         mask:
         - Impassable
@@ -88,17 +88,17 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 4
-      armorPenetration: 0.75
+        Piercing: 65
+      armorPenetration: 65.65
   - type: ProjectileDamageWhitelist
     damage: # Slightly worse for repairs
       types:
-        Blunt: -6
-        Slash: -6
-        Piercing: -6
-        Heat: -6
-        Shock: -6
-        Structural: -6
+        Blunt: -65
+        Slash: -65
+        Piercing: -65
+        Heat: -65
+        Shock: -65
+        Structural: -65
 
 - type: entity
   parent: BaseItem
@@ -111,7 +111,7 @@
       tags:
       - Nail
     proto: Nail
-    capacity: 100
+    capacity: 65
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container

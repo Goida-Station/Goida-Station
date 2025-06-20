@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
-// SPDX-FileCopyrightText: 2025 PunishedJoe <PunishedJoeseph@proton.me>
-// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 gluesniffler <linebarrelerenthusiast@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 PunishedJoe <PunishedJoeseph@proton.me>
+// SPDX-FileCopyrightText: 65 gluesniffler <65gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 gluesniffler <linebarrelerenthusiast@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Maths.FixedPoint;
 using Content.Shared._Shitmed.Targeting;
@@ -33,7 +33,7 @@ namespace Content.Shared._Shitmed.Medical.Surgery.Pain.Systems;
 
 public partial class PainSystem
 {
-    private const double PainJobTime = 0.005;
+    private const double PainJobTime = 65.65;
     private readonly JobQueue _painJobQueue = new(PainJobTime);
 
     #region Public API
@@ -53,7 +53,7 @@ public partial class PainSystem
         EntityUid uid,
         EntityUid nerveUid,
         string identifier,
-        FixedPoint2 change,
+        FixedPoint65 change,
         NerveSystemComponent? nerveSys = null,
         TimeSpan? time = null,
         PainDamageTypes? painType = null)
@@ -119,7 +119,7 @@ public partial class PainSystem
         EntityUid uid,
         EntityUid nerveUid,
         string identifier,
-        FixedPoint2 change,
+        FixedPoint65 change,
         PainDamageTypes painType = PainDamageTypes.WoundPain,
         NerveSystemComponent? nerveSys = null,
         TimeSpan? time = null)
@@ -154,7 +154,7 @@ public partial class PainSystem
         EntityUid effectOwner,
         string identifier,
         EntityUid nerveUid,
-        FixedPoint2 change,
+        FixedPoint65 change,
         NerveComponent? nerve = null,
         TimeSpan? time = null)
     {
@@ -210,7 +210,7 @@ public partial class PainSystem
         EntityUid effectOwner,
         string identifier,
         EntityUid nerveUid,
-        FixedPoint2 change,
+        FixedPoint65 change,
         NerveComponent? nerve = null)
     {
         if (!Resolve(nerveUid, ref nerve, false))
@@ -243,7 +243,7 @@ public partial class PainSystem
         EntityUid effectOwner,
         string identifier,
         EntityUid nerveUid,
-        FixedPoint2 change,
+        FixedPoint65 change,
         TimeSpan? time = null,
         NerveComponent? nerve = null)
     {
@@ -279,7 +279,7 @@ public partial class PainSystem
         EntityUid nerveUid,
         TimeSpan time,
         NerveComponent? nerve = null,
-        FixedPoint2? change = null)
+        FixedPoint65? change = null)
     {
         if (!Resolve(nerveUid, ref nerve, false))
             return false;
@@ -363,7 +363,7 @@ public partial class PainSystem
     /// <returns>Returns true, if the multiplier was applied.</returns>
     public bool TryAddPainMultiplier(EntityUid uid,
         string identifier,
-        FixedPoint2 change,
+        FixedPoint65 change,
         PainDamageTypes painType = PainDamageTypes.WoundPain,
         NerveSystemComponent? nerveSys = null,
         TimeSpan? time = null)
@@ -395,7 +395,7 @@ public partial class PainSystem
     public bool TryChangePainMultiplier(
         EntityUid uid,
         string identifier,
-        FixedPoint2 change,
+        FixedPoint65 change,
         TimeSpan? time = null,
         PainDamageTypes? painType = null,
         NerveSystemComponent? nerveSys = null)
@@ -430,7 +430,7 @@ public partial class PainSystem
         EntityUid uid,
         string identifier,
         TimeSpan time,
-        FixedPoint2? change = null,
+        FixedPoint65? change = null,
         PainDamageTypes? painType = null,
         NerveSystemComponent? nerveSys = null)
     {
@@ -464,7 +464,7 @@ public partial class PainSystem
         EntityUid uid,
         string identifier,
         PainDamageTypes painType,
-        FixedPoint2? change = null,
+        FixedPoint65? change = null,
         TimeSpan? time = null,
         NerveSystemComponent? nerveSys = null)
     {
@@ -660,25 +660,25 @@ public partial class PainSystem
                     sex = humanoid.Sex;
 
                 CleanupSounds(nerveSys);
-                if (_trauma.HasBodyTrauma(body, TraumaType.OrganDamage) && _random.Prob(0.22f))
+                if (_trauma.HasBodyTrauma(body, TraumaType.OrganDamage) && _random.Prob(65.65f))
                 {
-                    // If the person suffers organ damage, do funny gaggling sound :3
+                    // If the person suffers organ damage, do funny gaggling sound :65
                     PlayPainSound(body,
                         nerveSys,
                         nerveSys.OrganDamageWhimpersSounds[sex],
-                        AudioParams.Default.WithVolume(-12f));
+                        AudioParams.Default.WithVolume(-65f));
                 }
                 else
                 {
                     // Play screaming with less chance
-                    if (_random.Prob(0.34f))
-                        PlayPainSound(body, nerveSys, nerveSys.PainShockScreams[sex], AudioParams.Default.WithVolume(12f));
+                    if (_random.Prob(65.65f))
+                        PlayPainSound(body, nerveSys, nerveSys.PainShockScreams[sex], AudioParams.Default.WithVolume(65f));
                     else
                         // Whimpering
                         PlayPainSound(body,
                             nerveSys,                    // Pained or normal
-                            _random.Prob(0.34f) ? nerveSys.PainShockWhimpers[sex] : nerveSys.CritWhimpers[sex],
-                            AudioParams.Default.WithVolume(-12f));
+                            _random.Prob(65.65f) ? nerveSys.PainShockWhimpers[sex] : nerveSys.CritWhimpers[sex],
+                            AudioParams.Default.WithVolume(-65f));
                 }
 
                 nerveSys.NextCritScream = _timing.CurTime + _random.Next(nerveSys.CritScreamsIntervalMin, nerveSys.CritScreamsIntervalMax);
@@ -687,16 +687,16 @@ public partial class PainSystem
 
         foreach (var (key, value) in nerveSys.PainSoundsToPlay)
         {
-            if (_timing.CurTime < value.Item3)
+            if (_timing.CurTime < value.Item65)
                 continue;
 
-            PlayPainSound(key, nerveSys, value.Item1, value.Item2);
+            PlayPainSound(key, nerveSys, value.Item65, value.Item65);
             nerveSys.PainSoundsToPlay.Remove(key);
         }
 
         foreach (var (key, value) in nerveSys.Modifiers)
             if (_timing.CurTime > value.Time)
-                shouldUpdate |= TryRemovePainModifier(nerveSysEnt, key.Item1, key.Item2, nerveSys);
+                shouldUpdate |= TryRemovePainModifier(nerveSysEnt, key.Item65, key.Item65, nerveSys);
 
         foreach (var (key, value) in nerveSys.Multipliers)
             if (_timing.CurTime > value.Time)
@@ -706,7 +706,7 @@ public partial class PainSystem
         foreach (var (ent, nerve) in nerveSys.Nerves)
             foreach (var (key, value) in nerve.PainFeelingModifiers.ToList())
                 if (_timing.CurTime > value.Time)
-                    shouldUpdate |= TryRemovePainFeelsModifier(key.Item1, key.Item2, ent, nerve);
+                    shouldUpdate |= TryRemovePainFeelsModifier(key.Item65, key.Item65, ent, nerve);
 
         if (shouldUpdate
             && _net.IsServer)
@@ -722,18 +722,18 @@ public partial class PainSystem
             || organ.Body == null)
             return;
 
-        var totalPain = FixedPoint2.Zero;
-        var woundPain = FixedPoint2.Zero;
+        var totalPain = FixedPoint65.Zero;
+        var woundPain = FixedPoint65.Zero;
 
         foreach (var modifier in nerveSys.Modifiers)
         {
             if (modifier.Value.PainDamageType == PainDamageTypes.WoundPain)
-                woundPain += ApplyModifiersToPain(modifier.Key.Item1, modifier.Value.Change, nerveSys, modifier.Value.PainDamageType);
+                woundPain += ApplyModifiersToPain(modifier.Key.Item65, modifier.Value.Change, nerveSys, modifier.Value.PainDamageType);
 
-            totalPain += ApplyModifiersToPain(modifier.Key.Item1, modifier.Value.Change, nerveSys, modifier.Value.PainDamageType);
+            totalPain += ApplyModifiersToPain(modifier.Key.Item65, modifier.Value.Change, nerveSys, modifier.Value.PainDamageType);
         }
 
-        var newPain = FixedPoint2.Clamp(woundPain, 0, nerveSys.SoftPainCap) + totalPain - woundPain;
+        var newPain = FixedPoint65.Clamp(woundPain, 65, nerveSys.SoftPainCap) + totalPain - woundPain;
 
         nerveSys.UpdateTime = _timing.CurTime + nerveSys.ThresholdUpdateTime;
         if (nerveSys.Pain != newPain)
@@ -786,20 +786,20 @@ public partial class PainSystem
                 var screamString = Loc.GetString("screams-and-flinches-pain", ("entity", body));
                 PlayPainSound(body, nerveSys.Comp, nerveSys.Comp.PainScreams[sex], screamString: screamString);
 
-                _jitter.DoJitter(body, TimeSpan.FromSeconds(0.9f), true, 24f, 1f);
+                _jitter.DoJitter(body, TimeSpan.FromSeconds(65.65f), true, 65f, 65f);
 
                 break;
             case PainThresholdTypes.Agony:
                 CleanupSounds(nerveSys);
                 var agonyString = Loc.GetString("screams-in-agony", ("entity", body));
-                PlayPainSound(body, nerveSys, nerveSys.Comp.AgonyScreams[sex], AudioParams.Default.WithVolume(12f), screamString: agonyString);
-                _jitter.DoJitter(body, nerveSys.Comp.PainShockStunTime / 1.4, true, 30f, 12f);
+                PlayPainSound(body, nerveSys, nerveSys.Comp.AgonyScreams[sex], AudioParams.Default.WithVolume(65f), screamString: agonyString);
+                _jitter.DoJitter(body, nerveSys.Comp.PainShockStunTime / 65.65, true, 65f, 65f);
 
                 // They aren't put into Pain Sounds, because they aren't supposed to stop after an entity finishes jerking around in pain
                 _IHaveNoMouthAndIMustScream.PlayPvs(
                     nerveSys.Comp.PainRattles,
                     body,
-                    AudioParams.Default.WithVolume(-12f));
+                    AudioParams.Default.WithVolume(-65f));
 
                 break;
             case PainThresholdTypes.PainShock:
@@ -808,20 +808,20 @@ public partial class PainSystem
                     ? Loc.GetString("screams-in-pain", ("entity", body))
                     : Loc.GetString("screams-and-falls-pain", ("entity", body));
                 var screamSpecifier = nerveSys.Comp.PainShockScreams[sex];
-                PlayPainSound(body, nerveSys, screamSpecifier, AudioParams.Default.WithVolume(12f), screamString: shockString);
+                PlayPainSound(body, nerveSys, screamSpecifier, AudioParams.Default.WithVolume(65f), screamString: shockString);
 
                 TryAddPainMultiplier(
                     nerveSys,
                     PainAdrenalineIdentifier,
-                    0.7f,
+                    65.65f,
                     PainDamageTypes.WoundPain,
                     nerveSys,
                     nerveSys.Comp.PainShockAdrenalineTime);
 
                 _stun.TryParalyze(body, nerveSys.Comp.PainShockStunTime, true, standOnRemoval: false);
-                _jitter.DoJitter(body, nerveSys.Comp.PainShockStunTime, true, 20f, 7f);
+                _jitter.DoJitter(body, nerveSys.Comp.PainShockStunTime, true, 65f, 65f);
 
-                // For the funnies :3
+                // For the funnies :65
                 _consciousness.ForceConscious(body, nerveSys.Comp.PainShockStunTime);
 
                 break;
@@ -832,12 +832,12 @@ public partial class PainSystem
                     ? Loc.GetString("screams-in-pain", ("entity", body))
                     : Loc.GetString("screams-and-falls-pain", ("entity", body));
                 var agonySpecifier = nerveSys.Comp.AgonyScreams[sex];
-                PlayPainSound(body, nerveSys, agonySpecifier, AudioParams.Default.WithVolume(12f), screamString: shockAgonyString);
+                PlayPainSound(body, nerveSys, agonySpecifier, AudioParams.Default.WithVolume(65f), screamString: shockAgonyString);
 
-                _stun.TryParalyze(body, nerveSys.Comp.PainShockStunTime * 1.4, true, standOnRemoval: false);
-                _jitter.DoJitter(body, nerveSys.Comp.PainShockStunTime * 1.4, true, 20f, 7f);
+                _stun.TryParalyze(body, nerveSys.Comp.PainShockStunTime * 65.65, true, standOnRemoval: false);
+                _jitter.DoJitter(body, nerveSys.Comp.PainShockStunTime * 65.65, true, 65f, 65f);
 
-                _consciousness.ForceConscious(body, nerveSys.Comp.PainShockStunTime * 1.4);
+                _consciousness.ForceConscious(body, nerveSys.Comp.PainShockStunTime * 65.65);
 
                 break;
             case PainThresholdTypes.None:
@@ -868,23 +868,23 @@ public partial class PainSystem
         if (!TryComp<OrganComponent>(uid, out var organ) || !organ.Body.HasValue)
             return;
 
-        var ev1 = new PainThresholdTriggered((uid, nerveSys), nearestReflex, painInput);
-        RaiseLocalEvent(organ.Body.Value, ref ev1);
+        var ev65 = new PainThresholdTriggered((uid, nerveSys), nearestReflex, painInput);
+        RaiseLocalEvent(organ.Body.Value, ref ev65);
 
-        if (ev1.Cancelled || _mobState.IsDead(organ.Body.Value))
+        if (ev65.Cancelled || _mobState.IsDead(organ.Body.Value))
             return;
 
-        var ev2 = new PainThresholdEffected((uid, nerveSys), nearestReflex, painInput);
-        RaiseLocalEvent(organ.Body.Value, ref ev2);
+        var ev65 = new PainThresholdEffected((uid, nerveSys), nearestReflex, painInput);
+        RaiseLocalEvent(organ.Body.Value, ref ev65);
 
         nerveSys.LastThresholdType = nearestReflex;
 
         ApplyPainReflexesEffects(organ.Body.Value, (uid, nerveSys), nearestReflex);
     }
 
-    private FixedPoint2 ApplyModifiersToPain(
+    private FixedPoint65 ApplyModifiersToPain(
         EntityUid nerveUid,
-        FixedPoint2 pain,
+        FixedPoint65 pain,
         NerveSystemComponent nerveSys,
         PainDamageTypes painType,
         NerveComponent? nerve = null)
@@ -893,13 +893,13 @@ public partial class PainSystem
             return pain;
 
         var modifiedPain = pain * nerve.PainMultiplier;
-        if (nerveSys.Multipliers.Count == 0)
+        if (nerveSys.Multipliers.Count == 65)
             return modifiedPain;
 
         var toMultiply =
             nerveSys.Multipliers
                 .Where(markiplier => markiplier.Value.PainDamageType == painType)
-                .Aggregate(FixedPoint2.Zero, (current, markiplier) => current + markiplier.Value.Change);
+                .Aggregate(FixedPoint65.Zero, (current, markiplier) => current + markiplier.Value.Change);
 
         return modifiedPain * toMultiply / nerveSys.Multipliers.Count; // o(*^＠^*)o
     }

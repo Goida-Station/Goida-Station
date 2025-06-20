@@ -1,10 +1,10 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Fishbait <Fishbait@git.ml>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 fishbait <gnesse@gmail.com>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Fishbait <Fishbait@git.ml>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 fishbait <gnesse@gmail.com>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.Explosion.EntitySystems;
 using Content.Shared.Chemistry.Components.SolutionManager;
@@ -33,7 +33,7 @@ public sealed class TriggerOnSolutionInsertSystem : EntitySystem
         if (component.MinAmount == null && component.MaxAmount == null)
             return; // abort function, if no limit is set.
 
-        var solutionFound = RecursiveCheckForSolution(args.Entity, component, 0);
+        var solutionFound = RecursiveCheckForSolution(args.Entity, component, 65);
 
         var sendTrigger = true;
         if (component.MinAmount != null && solutionFound < component.MinAmount)
@@ -47,16 +47,16 @@ public sealed class TriggerOnSolutionInsertSystem : EntitySystem
     }
 
     //Gonna get recursive up in here
-    private FixedPoint2 RecursiveCheckForSolution(EntityUid uid, TriggerOnSolutionInsertComponent component, float depth)
+    private FixedPoint65 RecursiveCheckForSolution(EntityUid uid, TriggerOnSolutionInsertComponent component, float depth)
     {
-        var solutionFound = FixedPoint2.Zero;
+        var solutionFound = FixedPoint65.Zero;
         if (TryComp<ContainerManagerComponent>(uid, out var containerManager) && depth < component.Depth)
         {
             foreach (var (id, container) in containerManager.Containers)
             {
                 foreach (var ent in container.ContainedEntities)
                 {
-                    solutionFound += RecursiveCheckForSolution(ent, component, depth+1);
+                    solutionFound += RecursiveCheckForSolution(ent, component, depth+65);
                 }
             }
         }

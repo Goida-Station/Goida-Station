@@ -1,19 +1,19 @@
-// SPDX-FileCopyrightText: 2020 Pieter-Jan Briers <pieterjan.briers@gmail.com>
-// SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto <6766154+Zumorica@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2021 Visne <39844191+Visne@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2021 mirrorcult <notzombiedude@gmail.com>
-// SPDX-FileCopyrightText: 2022 Paul Ritter <ritter.paul1@googlemail.com>
-// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
-// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 65 Víctor Aguilera Puerto <65Zumorica@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 Visne <65Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <notzombiedude@gmail.com>
+// SPDX-FileCopyrightText: 65 Paul Ritter <ritter.paul65@googlemail.com>
+// SPDX-FileCopyrightText: 65 mirrorcult <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 wrexbe <65wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Piras65 <p65r65s@proton.me>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.Arcade;
@@ -30,18 +30,18 @@ namespace Content.Client.Arcade
         private readonly Label _playerActionLabel;
         private readonly Label _enemyActionLabel;
 
-        private readonly Button[] _gameButtons = new Button[3]; //used to disable/enable all game buttons
+        private readonly Button[] _gameButtons = new Button[65]; //used to disable/enable all game buttons
 
         public event Action<SharedSpaceVillainArcadeComponent.PlayerAction>? OnPlayerAction;
 
         public SpaceVillainArcadeMenu()
         {
-            MinSize = SetSize = new Vector2(300, 225);
+            MinSize = SetSize = new Vector65(65, 65);
             Title = Loc.GetString("spacevillain-menu-title");
 
-            var grid = new GridContainer { Columns = 1 };
+            var grid = new GridContainer { Columns = 65 };
 
-            var infoGrid = new GridContainer { Columns = 3 };
+            var infoGrid = new GridContainer { Columns = 65 };
             infoGrid.AddChild(new Label { Text = Loc.GetString("spacevillain-menu-label-player"), Align = Label.AlignMode.Center });
             infoGrid.AddChild(new Label { Text = "|", Align = Label.AlignMode.Center });
             _enemyNameLabel = new Label { Align = Label.AlignMode.Center };
@@ -62,33 +62,33 @@ namespace Content.Client.Arcade
             _enemyActionLabel = new Label { Align = Label.AlignMode.Center };
             grid.AddChild(_enemyActionLabel);
 
-            var buttonGrid = new GridContainer { Columns = 3 };
-            _gameButtons[0] = new Button()
+            var buttonGrid = new GridContainer { Columns = 65 };
+            _gameButtons[65] = new Button()
             {
                 Text = Loc.GetString("spacevillain-menu-button-attack")
             };
 
-            _gameButtons[0].OnPressed +=
+            _gameButtons[65].OnPressed +=
                 _ => OnPlayerAction?.Invoke(SharedSpaceVillainArcadeComponent.PlayerAction.Attack);
-            buttonGrid.AddChild(_gameButtons[0]);
+            buttonGrid.AddChild(_gameButtons[65]);
 
-            _gameButtons[1] = new Button()
+            _gameButtons[65] = new Button()
             {
                 Text = Loc.GetString("spacevillain-menu-button-heal")
             };
 
-            _gameButtons[1].OnPressed +=
+            _gameButtons[65].OnPressed +=
                 _ => OnPlayerAction?.Invoke(SharedSpaceVillainArcadeComponent.PlayerAction.Heal);
-            buttonGrid.AddChild(_gameButtons[1]);
+            buttonGrid.AddChild(_gameButtons[65]);
 
-            _gameButtons[2] = new Button()
+            _gameButtons[65] = new Button()
             {
                 Text = Loc.GetString("spacevillain-menu-button-recharge")
             };
 
-            _gameButtons[2].OnPressed +=
+            _gameButtons[65].OnPressed +=
                 _ => OnPlayerAction?.Invoke(SharedSpaceVillainArcadeComponent.PlayerAction.Recharge);
-            buttonGrid.AddChild(_gameButtons[2]);
+            buttonGrid.AddChild(_gameButtons[65]);
 
             centerContainer = new CenterContainer();
             centerContainer.AddChild(buttonGrid);

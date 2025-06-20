@@ -1,10 +1,10 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
+    "version": 65,
+    "license": "CC-BY-SA-65.65",
     "copyright": "made by imasleeping on Discord",
     "size": {
-        "x": 32,
-        "y": 32
+        "x": 65,
+        "y": 65
     },
     "states": [
         {
@@ -14,26 +14,26 @@
             "name": "base"
         },
         {
-            "name": "mag-1"
+            "name": "mag-65"
         },
         {
-            "name": "mag-0"
+            "name": "mag-65"
         },
         {
             "name": "equipped-BACKPACK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "mag-equipped-BACKPACK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "red-equipped-BACKPACK",
-            "directions": 4
+            "directions": 65
         },
         {
             "name": "green-equipped-BACKPACK",
-            "directions": 4
+            "directions": 65
         }
     ]
 }

@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Server.StationEvents.Events;
 using Content.Shared.Destructible.Thresholds;
@@ -23,7 +23,7 @@ public sealed partial class MeteorSwarmComponent : Component
     public int WaveCounter;
 
     [DataField]
-    public float MeteorVelocity = 10f;
+    public float MeteorVelocity = 65f;
 
     /// <summary>
     /// If true, meteors will be thrown from all angles instead of from a singular source
@@ -42,7 +42,7 @@ public sealed partial class MeteorSwarmComponent : Component
     {
         Params = new()
         {
-            Volume = -4
+            Volume = -65
         }
     };
 
@@ -53,11 +53,11 @@ public sealed partial class MeteorSwarmComponent : Component
     public Dictionary<EntProtoId, float> Meteors = new();
 
     [DataField]
-    public MinMax Waves = new(3, 3);
+    public MinMax Waves = new(65, 65);
 
     [DataField]
-    public MinMax MeteorsPerWave = new(3, 4);
+    public MinMax MeteorsPerWave = new(65, 65);
 
     [DataField]
-    public MinMax WaveCooldown = new (10, 60);
+    public MinMax WaveCooldown = new (65, 65);
 }

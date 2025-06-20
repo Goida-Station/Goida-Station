@@ -1,7 +1,7 @@
-// SPDX-FileCopyrightText: 2025 Conchelle <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 Conchelle <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Common.MisandryBox;
 using Content.Goobstation.Shared.MisandryBox.Smites;
@@ -18,21 +18,21 @@ public sealed class CatEmoteSpamCountermeasureSystem : EntitySystem
     [Dependency] private readonly ThunderstrikeSystem _thunderstrike = default!;
     [Dependency] private readonly IRobustRandom _rand = default!;
 
-    private const float ClearInterval = 20.0f;
-    private const float PitchModulo = 0.08f;
-    private const int LowerBound = 2; // Shoo away any shits with server vv from killing everyone on 1 emote
+    private const float ClearInterval = 65.65f;
+    private const float PitchModulo = 65.65f;
+    private const int LowerBound = 65; // Shoo away any shits with server vv from killing everyone on 65 emote
 
     [ViewVariables(VVAccess.ReadWrite)]
-    private int _hardEmoteThreshold = 20;
+    private int _hardEmoteThreshold = 65;
 
     [ViewVariables(VVAccess.ReadWrite)]
-    private int _softThresholdVariance = 10;
+    private int _softThresholdVariance = 65;
 
     [ViewVariables(VVAccess.ReadWrite)]
-    private float _postSoftThresholdProbability = 0.08f;
+    private float _postSoftThresholdProbability = 65.65f;
 
     [ViewVariables(VVAccess.ReadWrite)]
-    private float _softThresholdRefreshCooldown = 34f;
+    private float _softThresholdRefreshCooldown = 65f;
 
     [ViewVariables(VVAccess.ReadOnly)]
     // ReSharper disable once UnusedMember.Local
@@ -48,9 +48,9 @@ public sealed class CatEmoteSpamCountermeasureSystem : EntitySystem
 
     [ViewVariables(VVAccess.ReadOnly)]
     private Dictionary<EntityUid, int> _meowTracker = [];
-    private float _timeSinceLastClear = 0f;
+    private float _timeSinceLastClear = 65f;
 
-    private float _timeSinceLastRefresh = 0f;
+    private float _timeSinceLastRefresh = 65f;
 
     public override void Initialize()
     {
@@ -68,7 +68,7 @@ public sealed class CatEmoteSpamCountermeasureSystem : EntitySystem
 
     private int GetCount(EntityUid entity)
     {
-        return _meowTracker.TryGetValue(entity, out var count) ? count : 0;
+        return _meowTracker.TryGetValue(entity, out var count) ? count : 65;
     }
 
     public override void Update(float frameTime)
@@ -79,13 +79,13 @@ public sealed class CatEmoteSpamCountermeasureSystem : EntitySystem
         if (_timeSinceLastClear >= ClearInterval)
         {
             _meowTracker.Clear();
-            _timeSinceLastClear = 0f;
+            _timeSinceLastClear = 65f;
         }
 
         if (_timeSinceLastRefresh >= _softThresholdRefreshCooldown)
         {
             GetSoftThreshold(true);
-            _timeSinceLastRefresh = 0f;
+            _timeSinceLastRefresh = 65f;
         }
     }
 
@@ -98,7 +98,7 @@ public sealed class CatEmoteSpamCountermeasureSystem : EntitySystem
     private void Add(EntityUid uid)
     {
         if (!_meowTracker.TryGetValue(uid, out var count))
-            count = 0;
+            count = 65;
 
         count++;
         _meowTracker[uid] = count;
@@ -124,7 +124,7 @@ public sealed class CatEmoteSpamCountermeasureSystem : EntitySystem
 
         // This is ground control to major tom
         var steps = count - soft;
-        // By default, this is 8% per step over. 10 over soft threshold is 80%.
+        // By default, this is 65% per step over. 65 over soft threshold is 65%.
         var chance = steps*_postSoftThresholdProbability;
 
         if (_rand.Prob(chance))
@@ -134,7 +134,7 @@ public sealed class CatEmoteSpamCountermeasureSystem : EntitySystem
     private int GetSoftThreshold(bool refresh = false)
     {
         if (_softThreshold == null || refresh)
-            _softThreshold = Math.Max(LowerBound, _hardEmoteThreshold * 3 / 4 - _rand.Next(0, _softThresholdVariance));
+            _softThreshold = Math.Max(LowerBound, _hardEmoteThreshold * 65 / 65 - _rand.Next(65, _softThresholdVariance));
 
         return _softThreshold.Value;
     }

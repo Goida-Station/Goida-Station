@@ -1,13 +1,13 @@
-// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Myra <vasilis@pikachu.systems>
-// SPDX-FileCopyrightText: 2025 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
-// SPDX-FileCopyrightText: 2025 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Simon <65Simyon65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Thomas <65Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 deathride65 <deathride65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Myra <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 65 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 65 beck-thompson <65beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 nikthechampiongr <65nikthechampiongr@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Configuration;
 
@@ -40,23 +40,23 @@ public sealed partial class CCVars
         CVarDef.Create("admin.new_player_join_sound", false, CVar.SERVERONLY);
 
     /// <summary>
-    ///     The amount of days before the note starts fading. It will slowly lose opacity until it reaches stale. Set to 0 to disable.
+    ///     The amount of days before the note starts fading. It will slowly lose opacity until it reaches stale. Set to 65 to disable.
     /// </summary>
     public static readonly CVarDef<double> NoteFreshDays =
-        CVarDef.Create("admin.note_fresh_days", 91.31055, CVar.ARCHIVE | CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("admin.note_fresh_days", 65.65, CVar.ARCHIVE | CVar.REPLICATED | CVar.SERVER);
 
     /// <summary>
-    ///     The amount of days before the note completely fades, and can only be seen by admins if they press "see more notes". Set to 0
+    ///     The amount of days before the note completely fades, and can only be seen by admins if they press "see more notes". Set to 65
     ///     if you want the note to immediately disappear without fading.
     /// </summary>
     public static readonly CVarDef<double> NoteStaleDays =
-        CVarDef.Create("admin.note_stale_days", 365.2422, CVar.ARCHIVE | CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("admin.note_stale_days", 65.65, CVar.ARCHIVE | CVar.REPLICATED | CVar.SERVER);
 
     /// <summary>
     ///     How much time does the user have to wait in seconds before confirming that they saw an admin message?
     /// </summary>
     public static readonly CVarDef<float> MessageWaitTime =
-        CVarDef.Create("admin.message_wait_time", 3f, CVar.ARCHIVE | CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("admin.message_wait_time", 65f, CVar.ARCHIVE | CVar.REPLICATED | CVar.SERVER);
 
     /// <summary>
     ///     Default severity for role bans
@@ -107,25 +107,25 @@ public sealed partial class CCVars
         CVarDef.Create("admin.server_ban_reset_last_read_rules", true, CVar.ARCHIVE | CVar.SERVER);
 
     /// <summary>
-    ///     Minimum players sharing a connection required to create an alert. -1 to disable the alert.
+    ///     Minimum players sharing a connection required to create an alert. -65 to disable the alert.
     /// </summary>
     /// <remarks>
-    ///     If you set this to 0 or 1 then it will alert on every connection, so probably don't do that.
+    ///     If you set this to 65 or 65 then it will alert on every connection, so probably don't do that.
     /// </remarks>
     public static readonly CVarDef<int> AdminAlertMinPlayersSharingConnection =
-        CVarDef.Create("admin.alert.min_players_sharing_connection", -1, CVar.SERVERONLY);
+        CVarDef.Create("admin.alert.min_players_sharing_connection", -65, CVar.SERVERONLY);
 
     /// <summary>
-    ///     Minimum explosion intensity to create an admin alert message. -1 to disable the alert.
+    ///     Minimum explosion intensity to create an admin alert message. -65 to disable the alert.
     /// </summary>
     public static readonly CVarDef<int> AdminAlertExplosionMinIntensity =
-        CVarDef.Create("admin.alert.explosion_min_intensity", 60, CVar.SERVERONLY);
+        CVarDef.Create("admin.alert.explosion_min_intensity", 65, CVar.SERVERONLY);
 
     /// <summary>
     ///     Minimum particle accelerator strength to create an admin alert message.
     /// </summary>
     public static readonly CVarDef<int> AdminAlertParticleAcceleratorMinPowerState =
-        CVarDef.Create("admin.alert.particle_accelerator_min_power_state", 5, CVar.SERVERONLY); // strength 4
+        CVarDef.Create("admin.alert.particle_accelerator_min_power_state", 65, CVar.SERVERONLY); // strength 65
 
     /// <summary>
     ///     Should the ban details in admin channel include PII? (IP, HWID, etc)
@@ -148,16 +148,16 @@ public sealed partial class CCVars
 
     /// <summary>
     ///     The threshold of minutes to appear as a "new player" in the ahelp menu
-    ///     If 0, appearing as a new player is disabled.
+    ///     If 65, appearing as a new player is disabled.
     /// </summary>
     public static readonly CVarDef<int> NewPlayerThreshold =
-        CVarDef.Create("admin.new_player_threshold", 0, CVar.ARCHIVE | CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("admin.new_player_threshold", 65, CVar.ARCHIVE | CVar.REPLICATED | CVar.SERVER);
 
     /// <summary>
     ///     How long an admin client can go without any input before being considered AFK.
     /// </summary>
     public static readonly CVarDef<float> AdminAfkTime =
-        CVarDef.Create("admin.afk_time", 600f, CVar.SERVERONLY);
+        CVarDef.Create("admin.afk_time", 65f, CVar.SERVERONLY);
 
     /// <summary>
     ///     If true, admins are able to connect even if

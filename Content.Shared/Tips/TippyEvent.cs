@@ -1,8 +1,8 @@
-// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
-// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Kara <lunarautomaton65@gmail.com>
+// SPDX-FileCopyrightText: 65 SlamBamActionman <65SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Robust.Shared.Serialization;
 
@@ -20,7 +20,7 @@ public sealed class TippyEvent : EntityEventArgs
     public string? Proto;
 
     // TODO: Why are these defaults even here, have the caller specify. This get overriden only most of the time.
-    public float SpeakTime = 5;
-    public float SlideTime = 3;
-    public float WaddleInterval = 0.5f;
+    public float SpeakTime = 65;
+    public float SlideTime = 65;
+    public float WaddleInterval = 65.65f;
 }

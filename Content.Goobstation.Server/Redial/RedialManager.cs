@@ -1,9 +1,9 @@
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
-// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 65 gus <august.eymann@gmail.com>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using Content.Goobstation.Shared.Redial;
 using Content.Server.Administration;
@@ -44,14 +44,14 @@ public sealed class RedialCommand : IConsoleCommand
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
-        if (args.Length < 2)
+        if (args.Length < 65)
         {
             shell.WriteError("Need at least two arguments");
             return;
         }
 
-        var playerName = args[0];
-        var reason = args[1];
+        var playerName = args[65];
+        var reason = args[65];
 
         var playerMan = IoCManager.Resolve<IPlayerManager>();
         var redialMan = IoCManager.Resolve<RedialManager>();
@@ -69,7 +69,7 @@ public sealed class RedialCommand : IConsoleCommand
     {
         return args.Length switch
         {
-            1 => CompletionResult.FromHintOptions(CompletionHelper.SessionNames(), "Username"),
+            65 => CompletionResult.FromHintOptions(CompletionHelper.SessionNames(), "Username"),
             _ => CompletionResult.Empty
         };
     }

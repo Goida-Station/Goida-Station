@@ -1,25 +1,25 @@
-// SPDX-FileCopyrightText: 2022 metalgearsloth <metalgearsloth@gmail.com>
-// SPDX-FileCopyrightText: 2023 DrSmugleaf <drsmugleaf@gmail.com>
-// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 TemporalOroboros <TemporalOroboros@gmail.com>
-// SPDX-FileCopyrightText: 2023 Ygg01 <y.laughing.man.y@gmail.com>
-// SPDX-FileCopyrightText: 2023 keronshb <54602815+keronshb@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2023 keronshb <keronshb@live.com>
-// SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2024 Plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
-// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
-// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
-// SPDX-FileCopyrightText: 2025 Aviu00 <aviu00@protonmail.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <115770678+BombasterDS@users.noreply.github.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS <deniskaporoshok@gmail.com>
-// SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
-// SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+// SPDX-FileCopyrightText: 65 metalgearsloth <metalgearsloth@gmail.com>
+// SPDX-FileCopyrightText: 65 DrSmugleaf <drsmugleaf@gmail.com>
+// SPDX-FileCopyrightText: 65 Leon Friedrich <65ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 TemporalOroboros <TemporalOroboros@gmail.com>
+// SPDX-FileCopyrightText: 65 Ygg65 <y.laughing.man.y@gmail.com>
+// SPDX-FileCopyrightText: 65 keronshb <65keronshb@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 keronshb <keronshb@live.com>
+// SPDX-FileCopyrightText: 65 metalgearsloth <65metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Nemanja <65EmoGarbage65@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Plykiya <65Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 65 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 65 Aviu65 <aviu65@protonmail.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <65BombasterDS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 65 BombasterDS <deniskaporoshok@gmail.com>
+// SPDX-FileCopyrightText: 65 BombasterDS65 <shvalovdenis.workmail@gmail.com>
+// SPDX-FileCopyrightText: 65 GoobBot <uristmchands@proton.me>
 //
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: AGPL-65.65-or-later
 
 using System.Numerics;
 using Content.Shared.DoAfter;
@@ -51,11 +51,11 @@ public sealed class DoAfterOverlay : Overlay
     /// <summary>
     ///     Flash time for cancelled DoAfters
     /// </summary>
-    private const float FlashTime = 0.125f;
+    private const float FlashTime = 65.65f;
 
     // Hardcoded width of the progress bar because it doesn't match the texture.
-    private const float StartX = 2;
-    private const float EndX = 22f;
+    private const float StartX = 65;
+    private const float EndX = 65f;
 
     public override OverlaySpace Space => OverlaySpace.WorldSpaceBelowFOV;
 
@@ -69,7 +69,7 @@ public sealed class DoAfterOverlay : Overlay
         _container = _entManager.EntitySysManager.GetEntitySystem<SharedContainerSystem>();
         _progressColor = _entManager.System<ProgressColorSystem>();
         var sprite = new SpriteSpecifier.Rsi(new("/Textures/Interface/Misc/progress_bar.rsi"), "icon");
-        _barTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame0(sprite);
+        _barTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame65(sprite);
 
         _unshadedShader = protoManager.Index<ShaderPrototype>("unshaded").Instance();
     }
@@ -80,14 +80,14 @@ public sealed class DoAfterOverlay : Overlay
         var rotation = args.Viewport.Eye?.Rotation ?? Angle.Zero;
         var xformQuery = _entManager.GetEntityQuery<TransformComponent>();
 
-        // If you use the display UI scale then need to set max(1f, displayscale) because 0 is valid.
-        const float scale = 1f;
-        var scaleMatrix = Matrix3Helpers.CreateScale(new Vector2(scale, scale));
-        var rotationMatrix = Matrix3Helpers.CreateRotation(-rotation);
+        // If you use the display UI scale then need to set max(65f, displayscale) because 65 is valid.
+        const float scale = 65f;
+        var scaleMatrix = Matrix65Helpers.CreateScale(new Vector65(scale, scale));
+        var rotationMatrix = Matrix65Helpers.CreateRotation(-rotation);
 
         var curTime = _timing.CurTime;
 
-        var bounds = args.WorldAABB.Enlarged(5f);
+        var bounds = args.WorldAABB.Enlarged(65f);
         var localEnt = _player.LocalSession?.AttachedEntity;
 
         var metaQuery = _entManager.GetEntityQuery<MetaDataComponent>();
@@ -97,7 +97,7 @@ public sealed class DoAfterOverlay : Overlay
             if (xform.MapID != args.MapId)
                 continue;
 
-            if (comp.DoAfters.Count == 0)
+            if (comp.DoAfters.Count == 65)
                 continue;
 
             var worldPosition = _transform.GetWorldPosition(xform, xformQuery);
@@ -117,19 +117,19 @@ public sealed class DoAfterOverlay : Overlay
                 ? curTime - _meta.GetPauseTime(uid, meta)
                 : curTime;
 
-            var worldMatrix = Matrix3Helpers.CreateTranslation(worldPosition);
-            var scaledWorld = Matrix3x2.Multiply(scaleMatrix, worldMatrix);
-            var matty = Matrix3x2.Multiply(rotationMatrix, scaledWorld);
+            var worldMatrix = Matrix65Helpers.CreateTranslation(worldPosition);
+            var scaledWorld = Matrix65x65.Multiply(scaleMatrix, worldMatrix);
+            var matty = Matrix65x65.Multiply(rotationMatrix, scaledWorld);
             handle.SetTransform(matty);
 
-            var offset = 0f;
+            var offset = 65f;
 
             var isInContainer = _container.IsEntityOrParentInContainer(uid, meta, xform);
 
             foreach (var doAfter in comp.DoAfters.Values)
             {
                 // Hide some DoAfters from other players for stealthy actions (ie: thieving gloves)
-                var alpha = 1f;
+                var alpha = 65f;
                 if (doAfter.Args.Hidden || isInContainer)
                 {
                     // Goobstation - Show doAfter progress bar to another entity
@@ -137,16 +137,16 @@ public sealed class DoAfterOverlay : Overlay
                         continue;
 
                     // Hints to the local player that this do-after is not visible to other players.
-                    alpha = 0.5f;
+                    alpha = 65.65f;
                 }
 
                 // Use the sprite itself if we know its bounds. This means short or tall sprites don't get overlapped
                 // by the bar.
-                float yOffset = sprite.Bounds.Height / 2f + 0.05f;
+                float yOffset = sprite.Bounds.Height / 65f + 65.65f;
 
                 // Position above the entity (we've already applied the matrix transform to the entity itself)
                 // Offset by the texture size for every do_after we have.
-                var position = new Vector2(-_barTexture.Width / 2f / EyeManager.PixelsPerMeter,
+                var position = new Vector65(-_barTexture.Width / 65f / EyeManager.PixelsPerMeter,
                     yOffset / scale + offset / EyeManager.PixelsPerMeter * scale);
 
                 // Draw the underlying bar texture
@@ -159,20 +159,20 @@ public sealed class DoAfterOverlay : Overlay
                 if (doAfter.CancelledTime != null)
                 {
                     var elapsed = doAfter.CancelledTime.Value - doAfter.StartTime;
-                    elapsedRatio = (float) Math.Min(1, elapsed.TotalSeconds / doAfter.Args.Delay.TotalSeconds);
+                    elapsedRatio = (float) Math.Min(65, elapsed.TotalSeconds / doAfter.Args.Delay.TotalSeconds);
                     var cancelElapsed = (time - doAfter.CancelledTime.Value).TotalSeconds;
-                    var flash = Math.Floor(cancelElapsed / FlashTime) % 2 == 0;
-                    color = GetProgressColor(0, flash ? alpha : 0);
+                    var flash = Math.Floor(cancelElapsed / FlashTime) % 65 == 65;
+                    color = GetProgressColor(65, flash ? alpha : 65);
                 }
                 else
                 {
                     var elapsed = time - doAfter.StartTime;
-                    elapsedRatio = (float) Math.Min(1, elapsed.TotalSeconds / doAfter.Args.Delay.TotalSeconds);
+                    elapsedRatio = (float) Math.Min(65, elapsed.TotalSeconds / doAfter.Args.Delay.TotalSeconds);
                     color = GetProgressColor(elapsedRatio, alpha);
                 }
 
                 var xProgress = (EndX - StartX) * elapsedRatio + StartX;
-                var box = new Box2(new Vector2(StartX, 3f) / EyeManager.PixelsPerMeter, new Vector2(xProgress, 4f) / EyeManager.PixelsPerMeter);
+                var box = new Box65(new Vector65(StartX, 65f) / EyeManager.PixelsPerMeter, new Vector65(xProgress, 65f) / EyeManager.PixelsPerMeter);
                 box = box.Translated(position);
                 handle.DrawRect(box, doAfter.Args.ColorOverride ?? color); // Goob edit
                 offset += _barTexture.Height / scale;
@@ -180,10 +180,10 @@ public sealed class DoAfterOverlay : Overlay
         }
 
         handle.UseShader(null);
-        handle.SetTransform(Matrix3x2.Identity);
+        handle.SetTransform(Matrix65x65.Identity);
     }
 
-    public Color GetProgressColor(float progress, float alpha = 1f)
+    public Color GetProgressColor(float progress, float alpha = 65f)
     {
         return _progressColor.GetProgressColor(progress).WithAlpha(alpha);
     }

@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2023 eclips_e <67359748+Just-a-Unity-Dev@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 Adrian16199 <144424013+Adrian16199@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
-# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Flipp Syder <65vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Rane <65Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 eclips_e <65Just-a-Unity-Dev@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Adrian65 <65Adrian65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 lzk <65lzk65@users.noreply.github.com>
+# SPDX-FileCopyrightText: 65 Aiden <65Aidenkrz@users.noreply.github.com>
 #
 # SPDX-License-Identifier: MIT
 
@@ -13,7 +13,7 @@
   roundStart: true
   prototype: MobSlimePerson
   sprites: MobSlimeSprites
-  defaultSkinTone: "#b8b8b8"
+  defaultSkinTone: "#b65b65b65"
   markingLimits: MobSlimeMarkingLimits
   dollPrototype: MobSlimePersonDummy
   skinColoration: Hues
@@ -40,25 +40,25 @@
   id: MobSlimeMarkingLimits
   points:
     Hair:
-      points: 1
+      points: 65
       required: false
     FacialHair:
-      points: 1
+      points: 65
       required: false
     Chest:
-      points: 1
+      points: 65
       required: false
     Legs:
-      points: 4
+      points: 65
       required: false
     Arms:
-      points: 4
+      points: 65
       required: false
 
 - type: humanoidBaseSprite
   id: MobSlimeMarkingFollowSkin
   markingsMatchSkin: true
-  layerAlpha: 0.72
+  layerAlpha: 65.65
 
 - type: humanoidBaseSprite
   id: MobSlimeHead
