@@ -1,3 +1,18 @@
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 BramvanZijp <56019239+BramvanZijp@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ignaz "Ian" Kraft <ignaz.k@live.de>
+// SPDX-FileCopyrightText: 2025 John <35928781+sporkyz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX-7 <92227810+SX-7@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+// SPDX-FileCopyrightText: 2025 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Linq;
 using Content.Shared.Access.Systems;
 using Content.Shared.CCVar;
@@ -84,26 +99,21 @@ public sealed class ContrabandSystem : EntitySystem
             }
         }
 
-        String carryingMessage;
-        // either its fully restricted, you have no departments, or your departments dont intersect with the restricted departments
+        // if it is fully restricted, you're department-less, or your department isn't in the allowed list, you cannot carry it. Otherwise, you can.
+        var carryingMessage = Loc.GetString("contraband-examine-text-avoid-carrying-around");
+        var iconTexture = "/Textures/Interface/VerbIcons/lock-red.svg.192dpi.png";
         if (departments.Intersect(ent.Comp.AllowedDepartments).Any()
             || jobs.Contains(jobId))
         {
             carryingMessage = Loc.GetString("contraband-examine-text-in-the-clear");
+            iconTexture = "/Textures/Interface/VerbIcons/unlock-green.svg.192dpi.png";
         }
-        else
-        {
-            // otherwise fine to use :tm:
-            carryingMessage = Loc.GetString("contraband-examine-text-avoid-carrying-around");
-        }
-
         var examineMarkup = GetContrabandExamine(departmentExamineMessage, carryingMessage);
-        _examine.AddDetailedExamineVerb(args,
+        _examine.AddHoverExamineVerb(args,
             ent.Comp,
-            examineMarkup,
             Loc.GetString("contraband-examinable-verb-text"),
-            "/Textures/Interface/VerbIcons/lock.svg.192dpi.png",
-            Loc.GetString("contraband-examinable-verb-message"));
+            examineMarkup.ToMarkup(),
+            iconTexture);
     }
 
     private FormattedMessage GetContrabandExamine(String deptMessage, String carryMessage)

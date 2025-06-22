@@ -1,0 +1,41 @@
+[game]
+hostname = "[RU NRP] ГОЙДА СТЕЙШЕН"
+desc = "Рофлосервер, который существует, чтобы да."
+lobbyenabled     = true
+soft_max_players = 20
+
+[infolinks]
+github = "https://github.com/Goida-Station/Goida-Station"
+
+[server]
+rules_file = "StandardRuleset"
+
+[shuttle]
+emergency_early_launch_allowed = true
+
+[movement]
+mob_pushing = false
+
+[biomass]
+easy_mode = false
+
+[vote]
+restart_required_ratio = 0.5
+
+[netres]
+limit = 10.0
+
+[ooc]
+enable_during_round = true
+
+[ic]
+flavor_text = false
+
+[hub]
+advertise = true
+tags = "lang:ru,region:moon,rp:none"
+
+[net]
+tickrate = 30
+upnp = true
+max_connections = 32

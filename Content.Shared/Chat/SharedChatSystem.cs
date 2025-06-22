@@ -1,9 +1,35 @@
+// SPDX-FileCopyrightText: 2022 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Alex Evgrashin <aevgrashin@yandex.ru>
+// SPDX-FileCopyrightText: 2023 HerCoyote23 <131214189+HerCoyote23@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Interrobang01 <113810873+Interrobang01@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Vordenburg <114301317+Vordenburg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 gus <august.eymann@gmail.ccom>
+// SPDX-FileCopyrightText: 2023 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2023 router <messagebus@vk.com>
+// SPDX-FileCopyrightText: 2024 Kot <1192090+koteq@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Rinary <72972221+Rinary1@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Collections.Frozen;
 using Content.Shared._Starlight.CollectiveMind; // Goobstation - Starlight collective mind port
 using System.Text.RegularExpressions;
 using Content.Shared.Popups;
 using Content.Shared.Radio;
 using Content.Shared.Speech;
+using Robust.Shared.Console;
+using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
@@ -249,6 +275,18 @@ public abstract class SharedChatSystem : EntitySystem
         return false;
     }
 
+    public virtual void TrySendInGameICMessage(
+        EntityUid source,
+        string message,
+        InGameICChatType desiredType,
+        bool hideChat, bool hideLog = false,
+        IConsoleShell? shell = null,
+        ICommonSession? player = null, string? nameOverride = null,
+        bool checkRadioPrefix = true,
+        bool ignoreActionBlocker = false,
+        string wrappedMessagePostfix = "" // Goobstation
+    ) { }
+
     public string SanitizeMessageCapital(string message)
     {
         if (string.IsNullOrEmpty(message))
@@ -361,4 +399,17 @@ public abstract class SharedChatSystem : EntitySystem
         tagStart += tag.Length + 2;
         return rawmsg.Substring(tagStart, tagEnd - tagStart);
     }
+}
+
+/// <summary>
+///     InGame IC chat is for chat that is specifically ingame (not lobby) but is also in character, i.e. speaking.
+/// </summary>
+// ReSharper disable once InconsistentNaming
+public enum InGameICChatType : byte // Einstein Engines - Make InGameIIChatType available in Shared
+{
+    Speak,
+    Emote,
+    Whisper,
+    Telepathic, // Goobstation Change
+    CollectiveMind // Goobstation - Starlight collective mind port
 }

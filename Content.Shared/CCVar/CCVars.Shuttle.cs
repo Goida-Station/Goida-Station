@@ -1,6 +1,15 @@
-﻿using Content.Shared.Administration;
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Misandry <mary@thughunt.ing>
+// SPDX-FileCopyrightText: 2025 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
+using Content.Shared.Administration;
 using Content.Shared.CCVar.CVarAccess;
 using Robust.Shared.Configuration;
+using Robust.Shared.Physics.Components;
 
 namespace Content.Shared.CCVar;
 
@@ -182,4 +191,16 @@ public sealed partial class CCVars
     /// </summary>
     public static readonly CVarDef<int> EmergencyShuttleAutoCallExtensionTime =
         CVarDef.Create("shuttle.auto_call_extension_time", 45, CVar.SERVERONLY);
+
+    /// <summary>
+    ///     Impulse multiplier for player interactions that move grids (other than shuttle thrusters, gyroscopes and grid collisons).
+    ///     At the moment this only affects the pushback in SpraySystem.
+    ///     A higher value means grids have a lower effective mass and therefore will get pushed stronger.
+    ///     A value of 0 will disable pushback.
+    ///     The default has been chosen such that a one tile grid roughly equals 2/3 Urist masses.
+    ///     TODO: Make grid mass a sane number so we can get rid of this.
+    ///         At the moment they have a very low mass of roughly 0.48 kg per tile independent of any walls or anchored objects on them.
+    /// </summary>
+    public static readonly CVarDef<float> GridImpulseMultiplier =
+        CVarDef.Create("shuttle.grid_impulse_multiplier", 0.01f, CVar.SERVERONLY);
 }

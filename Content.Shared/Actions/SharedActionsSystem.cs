@@ -1,3 +1,114 @@
+// SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 ForestNoises <33579038+ForestNoises@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2023 Menshin <Menshin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 faint <46868845+ficcialfaint@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 12rabbits <53499656+12rabbits@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 AJCM <AJCM@tutanota.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Dimastra <65184747+Dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Dimastra <dimastra@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
+// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JIPDawg <51352440+JIPDawg@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JIPDawg <JIPDawg93@gmail.com>
+// SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kira Bridgeton <161087999+Verbalase@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 Moomoobeef <62638182+Moomoobeef@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Morb <14136326+Morb0@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
+// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 PopGamer46 <yt1popgamer@gmail.com>
+// SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 PursuitInAshes <pursuitinashes@gmail.com>
+// SPDX-FileCopyrightText: 2024 QueerNB <176353696+QueerNB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Saphire Lattice <lattice@saphi.re>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Spessmann <156740760+Spessmann@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 stellar-novas <stellar_novas@riseup.net>
+// SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ActiveMammmoth <140334666+ActiveMammmoth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 ActiveMammmoth <kmcsmooth@gmail.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2025 Spatison <137375981+Spatison@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 gus <august.eymann@gmail.com>
+// SPDX-FileCopyrightText: 2025 keronshb <54602815+keronshb@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Shared._Goobstation.Wizard;
@@ -28,16 +139,16 @@ using Content.Shared.Popups;
 public abstract class SharedActionsSystem : EntitySystem
 {
     [Dependency] protected readonly IGameTiming GameTiming = default!;
-    [Dependency] private readonly INetManager _net = default!; // Goobstation
-    [Dependency] private readonly ISharedAdminLogManager _adminLogger = default!;
-    [Dependency] private readonly SharedInteractionSystem _interactionSystem = default!;
-    [Dependency] private readonly ActionBlockerSystem _actionBlockerSystem = default!;
-    [Dependency] private readonly RotateToFaceSystem _rotateToFaceSystem = default!;
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
-    [Dependency] private readonly ActionContainerSystem _actionContainer = default!;
-    [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!; // Shitmed Change
+    [Dependency] private   readonly ISharedAdminLogManager _adminLogger = default!;
+    [Dependency] private   readonly ActionBlockerSystem _actionBlockerSystem = default!;
+    [Dependency] private   readonly ActionContainerSystem _actionContainer = default!;
+    [Dependency] private   readonly EntityWhitelistSystem _whitelistSystem = default!;
+    [Dependency] private   readonly RotateToFaceSystem _rotateToFaceSystem = default!;
+    [Dependency] private   readonly SharedAudioSystem _audio = default!;
+    [Dependency] private   readonly SharedInteractionSystem _interactionSystem = default!;
+    [Dependency] private   readonly SharedTransformSystem _transformSystem = default!;
+    [Dependency] private   readonly INetManager _net = default!; // Goobstation
+    [Dependency] private   readonly SharedPopupSystem _popup = default!; // Shitmed Change
 
     public override void Initialize()
     {
@@ -78,47 +189,9 @@ public abstract class SharedActionsSystem : EntitySystem
         SubscribeAllEvent<RequestPerformActionEvent>(OnActionRequest);
     }
 
-    public override void Update(float frameTime)
-    {
-        base.Update(frameTime);
-
-        var worldActionQuery = EntityQueryEnumerator<WorldTargetActionComponent>();
-        while (worldActionQuery.MoveNext(out var uid, out var action))
-        {
-            if (IsCooldownActive(action) || !ShouldResetCharges(action))
-                continue;
-
-            ResetCharges(uid, dirty: true);
-        }
-
-        var instantActionQuery = EntityQueryEnumerator<InstantActionComponent>();
-        while (instantActionQuery.MoveNext(out var uid, out var action))
-        {
-            if (IsCooldownActive(action) || !ShouldResetCharges(action))
-                continue;
-
-            ResetCharges(uid, dirty: true);
-        }
-
-        var entityActionQuery = EntityQueryEnumerator<EntityTargetActionComponent>();
-        while (entityActionQuery.MoveNext(out var uid, out var action))
-        {
-            if (IsCooldownActive(action) || !ShouldResetCharges(action))
-                continue;
-
-            ResetCharges(uid, dirty: true);
-        }
-    }
-
     private void OnActionMapInit(EntityUid uid, BaseActionComponent component, MapInitEvent args)
     {
         component.OriginalIconColor = component.IconColor;
-
-        if (component.Charges == null)
-            return;
-
-        component.MaxCharges ??= component.Charges.Value;
-        Dirty(uid, component);
     }
 
     private void OnActionShutdown(EntityUid uid, BaseActionComponent component, ComponentShutdown args)
@@ -329,68 +402,6 @@ public abstract class SharedActionsSystem : EntitySystem
         Dirty(actionId.Value, action);
     }
 
-    public void SetCharges(EntityUid? actionId, int? charges)
-    {
-        if (!TryGetActionData(actionId, out var action) ||
-            action.Charges == charges)
-        {
-            return;
-        }
-
-        action.Charges = charges;
-        UpdateAction(actionId, action);
-        Dirty(actionId.Value, action);
-    }
-
-    public int? GetCharges(EntityUid? actionId)
-    {
-        if (!TryGetActionData(actionId, out var action))
-            return null;
-
-        return action.Charges;
-    }
-
-    public void AddCharges(EntityUid? actionId, int addCharges)
-    {
-        if (!TryGetActionData(actionId, out var action) || action.Charges == null || addCharges < 1)
-            return;
-
-        action.Charges += addCharges;
-        UpdateAction(actionId, action);
-        Dirty(actionId.Value, action);
-    }
-
-    public void RemoveCharges(EntityUid? actionId, int? removeCharges)
-    {
-        if (!TryGetActionData(actionId, out var action) || action.Charges == null)
-            return;
-
-        if (removeCharges == null)
-            action.Charges = removeCharges;
-        else
-            action.Charges -= removeCharges;
-
-        if (action.Charges is < 0)
-            action.Charges = null;
-
-        UpdateAction(actionId, action);
-        Dirty(actionId.Value, action);
-    }
-
-    public void ResetCharges(EntityUid? actionId, bool update = false, bool dirty = false)
-    {
-        if (!TryGetActionData(actionId, out var action))
-            return;
-
-        action.Charges = action.MaxCharges;
-
-        if (update)
-            UpdateAction(actionId, action);
-
-        if (dirty)
-            Dirty(actionId.Value, action);
-    }
-
     private void OnActionsGetState(EntityUid uid, ActionsComponent component, ref ComponentGetState args)
     {
         args.State = new ActionsComponentState(GetNetEntitySet(component.Actions));
@@ -433,20 +444,16 @@ public abstract class SharedActionsSystem : EntitySystem
         if (!action.Enabled)
             return;
 
+        var curTime = GameTiming.CurTime;
+        if (IsCooldownActive(action, curTime))
+            return;
+
         // check for action use prevention
         // TODO: make code below use this event with a dedicated component
         var attemptEv = new ActionAttemptEvent(user);
         RaiseLocalEvent(actionEnt, ref attemptEv);
         if (attemptEv.Cancelled)
             return;
-
-        var curTime = GameTiming.CurTime;
-        if (IsCooldownActive(action, curTime))
-            return;
-
-        // TODO: Replace with individual charge recovery when we have the visuals to aid it
-        if (action is { Charges: < 1, RenewCharges: true })
-            ResetCharges(actionEnt, true, true);
 
         BaseActionEvent? performEvent = null;
 
@@ -640,7 +647,7 @@ public abstract class SharedActionsSystem : EntitySystem
             // even if we don't check for obstructions, we may still need to check the range.
             var xform = Transform(user);
 
-            if (xform.MapID != coords.GetMapId(EntityManager))
+            if (xform.MapID != _transformSystem.GetMapId(coords))
             {
                 _popup.PopupCursor(Loc.GetString("world-target-out-of-range"), user); // Goobstation Change
                 return false;
@@ -648,8 +655,7 @@ public abstract class SharedActionsSystem : EntitySystem
 
             if (range <= 0)
                 return true;
-
-            return coords.InRange(EntityManager, _transformSystem, Transform(user).Coordinates, range);
+            return _transformSystem.InRange(coords, xform.Coordinates, range);
         }
 
         return _interactionSystem.InRangeUnobstructed(user, coords, range: range);
@@ -685,6 +691,9 @@ public abstract class SharedActionsSystem : EntitySystem
 
     public void PerformAction(EntityUid performer, ActionsComponent? component, EntityUid actionId, BaseActionComponent action, BaseActionEvent? actionEvent, TimeSpan curTime, bool predicted = true)
     {
+        if (!action.Predicted) // Goobstation
+            predicted = false;
+
         var handled = false;
 
         var toggledBefore = action.Toggled;
@@ -724,18 +733,10 @@ public abstract class SharedActionsSystem : EntitySystem
 
         var dirty = toggledBefore != action.Toggled;
 
-        if (action.Charges != null)
-        {
-            dirty = true;
-            action.Charges--;
-            if (action is { Charges: 0, RenewCharges: false })
-                action.Enabled = false;
-        }
-
         action.Cooldown = null;
         // Goob edit start
         var realDelay = CompOrNull<ActionUseDelayModifierComponent>(actionId)?.UseDelay ?? action.UseDelay;
-        if (action is { Charges: null or < 1 } && realDelay != null)
+        if (action is { UseDelay: not null } && realDelay != null)
         {
             dirty = true;
             action.Cooldown = (curTime, curTime + realDelay.Value);
@@ -1048,8 +1049,6 @@ public abstract class SharedActionsSystem : EntitySystem
         if (!action.Enabled)
             return false;
 
-        if (action.Charges.HasValue && action.Charges <= 0)
-            return false;
 
         var curTime = GameTiming.CurTime;
         if (action.Cooldown.HasValue && action.Cooldown.Value.End > curTime)
@@ -1185,16 +1184,10 @@ public abstract class SharedActionsSystem : EntitySystem
     /// <summary>
     ///     Checks if the action has a cooldown and if it's still active
     /// </summary>
-    protected bool IsCooldownActive(BaseActionComponent action, TimeSpan? curTime = null)
+    public bool IsCooldownActive(BaseActionComponent action, TimeSpan? curTime = null)
     {
-        curTime ??= GameTiming.CurTime;
         // TODO: Check for charge recovery timer
         return action.Cooldown.HasValue && action.Cooldown.Value.End > curTime;
-    }
-
-    protected bool ShouldResetCharges(BaseActionComponent action)
-    {
-        return action is { Charges: < 1, RenewCharges: true };
     }
 
     // Shitmed Change Start - Starlight Abductors

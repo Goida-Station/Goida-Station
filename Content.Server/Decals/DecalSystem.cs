@@ -1,3 +1,25 @@
+// SPDX-FileCopyrightText: 2021 Paul <ritter.paul1+git@googlemail.com>
+// SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+// SPDX-FileCopyrightText: 2022 Acruid <shatter66@gmail.com>
+// SPDX-FileCopyrightText: 2022 Kara D <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2022 Vera Aguilera Puerto <gradientvera@outlook.com>
+// SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 0x6273 <0x40@keemail.me>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Numerics;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
@@ -33,6 +55,7 @@ namespace Content.Server.Decals
         [Dependency] private readonly IGameTiming _timing = default!;
         [Dependency] private readonly IAdminLogManager _adminLogger = default!;
         [Dependency] private readonly SharedMapSystem _mapSystem = default!;
+        [Dependency] private readonly SharedTransformSystem _transform = default!;
 
         private readonly Dictionary<NetEntity, HashSet<Vector2i>> _dirtyChunks = new();
         private readonly Dictionary<ICommonSession, Dictionary<NetEntity, HashSet<Vector2i>>> _previousSentChunks = new();
@@ -222,12 +245,12 @@ namespace Content.Server.Decals
 
             if (eventArgs.SenderSession.AttachedEntity != null)
             {
-                _adminLogger.Add(LogType.CrayonDraw, LogImpact.High,
+                _adminLogger.Add(LogType.CrayonDraw, LogImpact.Low,
                     $"{ToPrettyString(eventArgs.SenderSession.AttachedEntity.Value):actor} drew a {ev.Decal.Color} {ev.Decal.Id} at {ev.Coordinates}");
             }
             else
             {
-                _adminLogger.Add(LogType.CrayonDraw, LogImpact.High,
+                _adminLogger.Add(LogType.CrayonDraw, LogImpact.Low,
                     $"{eventArgs.SenderSession.Name} drew a {ev.Decal.Color} {ev.Decal.Id} at {ev.Coordinates}");
             }
         }
@@ -246,7 +269,7 @@ namespace Content.Server.Decals
             if (!coordinates.IsValid(EntityManager))
                 return;
 
-            var gridId = coordinates.GetGridUid(EntityManager);
+            var gridId = _transform.GetGrid(coordinates);
 
             if (gridId == null)
                 return;
@@ -256,12 +279,12 @@ namespace Content.Server.Decals
             {
                 if (eventArgs.SenderSession.AttachedEntity != null)
                 {
-                    _adminLogger.Add(LogType.CrayonDraw, LogImpact.High,
+                    _adminLogger.Add(LogType.CrayonDraw, LogImpact.Low,
                         $"{ToPrettyString(eventArgs.SenderSession.AttachedEntity.Value):actor} removed a {decal.Color} {decal.Id} at {ev.Coordinates}");
                 }
                 else
                 {
-                    _adminLogger.Add(LogType.CrayonDraw, LogImpact.High,
+                    _adminLogger.Add(LogType.CrayonDraw, LogImpact.Low,
                         $"{eventArgs.SenderSession.Name} removed a {decal.Color} {decal.Id} at {ev.Coordinates}");
                 }
 
@@ -293,7 +316,7 @@ namespace Content.Server.Decals
             if (!PrototypeManager.HasIndex<DecalPrototype>(decal.Id))
                 return false;
 
-            var gridId = coordinates.GetGridUid(EntityManager);
+            var gridId = _transform.GetGrid(coordinates);
             if (!TryComp(gridId, out MapGridComponent? grid))
                 return false;
 

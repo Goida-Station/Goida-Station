@@ -1,3 +1,36 @@
+# SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
+# SPDX-FileCopyrightText: 2022 Alex Evgrashin <aevgrashin@yandex.ru>
+# SPDX-FileCopyrightText: 2022 EmoGarbage404 <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Flipp Syder <76629141+vulppine@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Rane <60792108+Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 CrigCrag <137215465+CrigCrag@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Interrobang01 <113810873+Interrobang01@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
+# SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 PuceTint <69696513+PuceTint@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Whisper <121047731+QuietlyWhisper@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 qwerltaz <69696513+qwerltaz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 ArchPigeon <bookmaster3@gmail.com>
+# SPDX-FileCopyrightText: 2024 Ashley Woodiss-Field <ash@DESKTOP-H64M4AI.localdomain>
+# SPDX-FileCopyrightText: 2024 Brandon Li <48413902+aspiringLich@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 CM <ash@DESKTOP-H64M4AI.localdomain>
+# SPDX-FileCopyrightText: 2024 ColesMagnum <98577947+AW-FulCode@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Errant <35878406+Errant-4@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 coderabbitai[bot] <136622811+coderabbitai[bot]@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 gluesniffler <159397573+gluesniffler@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Steve <marlumpy@gmail.com>
+# SPDX-FileCopyrightText: 2025 marc-pelletier <113944176+marc-pelletier@users.noreply.github.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: reagent
   id: Oxygen
   name: reagent-name-oxygen
@@ -8,6 +41,52 @@
   boilingPoint: -183.0
   meltingPoint: -218.4
   metabolisms:
+    Poison:
+      effects:
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Human
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Animal
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Rat
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Plant
+      # Convert Oxygen into CO2.
+      - !type:ModifyLungGas
+        conditions:
+        - !type:OrganType
+          type: Vox
+          shouldHave: false
+        ratios:
+          CarbonDioxide: 1.0
+          Oxygen: -1.0
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Vox
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Poison:
+              3
+      - !type:AdjustAlert
+        alertType: Toxins
+        conditions:
+          - !type:ReagentThreshold
+            min: 0.5
+          - !type:OrganType
+            type: Vox
+        clear: true
+        time: 5
     Gas:
       effects:
       - !type:Oxygenate
@@ -162,6 +241,32 @@
   flavor: bitter
   color: "#66ff33"
   metabolisms:
+    Poison:
+      effects:
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Plant
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Plant
+          shouldHave: false
+        - !type:OrganType
+          type: Vox
+          shouldHave: false
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Poison:
+              0.8
+      - !type:Oxygenate
+        conditions:
+        - !type:OrganType
+          type: Plant
+          shouldHave: false
+        factor: -4
     Gas:
       effects:
       - !type:Oxygenate
@@ -251,6 +356,12 @@
   boilingPoint: -88
   meltingPoint: -90
   metabolisms:
+    Poison:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: 2
     Gas:
       effects:
       - !type:Emote
@@ -337,6 +448,39 @@
   boilingPoint: -195.8
   meltingPoint: -210.0
   metabolisms:
+    Narcotic:
+      effects:
+      - !type:HealthChange
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Cellular: 1
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 100
+        refresh: false
+      - !type:Drunk
+        boozePower: 100
+      - !type:PopupMessage
+        type: Local
+        messages: [ "frezon-lungs-cold" ]
+        probability: 0.1
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Frezon
+          min: 0.5
+      - !type:PopupMessage
+        type: Local
+        visualType: Medium
+        messages: [ "frezon-euphoric" ]
+        probability: 0.1
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Frezon
+          min: 1
     Gas:
       effects:
       - !type:HealthChange
@@ -407,6 +551,111 @@
   flavor: bitter
   color: "#9370db"
   metabolisms:
+    Poison:
+      effects:
+      - !type:Emote
+        conditions:
+        - !type:ReagentThreshold
+          reagent: BZ
+          min: 0.2
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
+        emote: Cough
+        showInChat: true
+        probability: 0.1
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          reagent: BZ
+          min: 0.5
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Asphyxiation: 10
+            Poison: 2.5
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:ReagentThreshold
+          reagent: BZ
+          min: 0.3
+        - !type:OrganType
+          type: Slime
+          shouldHave: false
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 150
+        refresh: false
+      - !type:Emote
+        conditions:
+        - !type:ReagentThreshold
+          reagent: BZ
+          min: 0.2
+        - !type:OrganType
+          type: Slime
+          shouldHave: true
+        emote: Laugh
+        showInChat: true
+        probability: 0.1
+      - !type:Emote
+        conditions:
+        - !type:ReagentThreshold
+          reagent: BZ
+          min: 0.2
+        - !type:OrganType
+          type: Slime
+          shouldHave: true
+        emote: Scream
+        showInChat: true
+        probability: 0.01
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentThreshold
+          reagent: BZ
+          min: 0.5
+        - !type:OrganType
+          type: Slime
+          shouldHave: true
+        - !type:BloodReagentThreshold
+          reagent: NitrosylPlasmide
+          max: 0.1
+        type: Local
+        visualType: Medium
+        messages: [ "effect-sleepy" ]
+        probability: 0.1
+      - !type:MovespeedModifier
+        conditions:
+        - !type:ReagentThreshold
+          reagent: BZ
+          min: 1
+        - !type:OrganType
+          type: Slime
+          shouldHave: true
+        - !type:BloodReagentThreshold
+          reagent: NitrosylPlasmide
+          max: 0.1
+        walkSpeedModifier: 0.65
+        sprintSpeedModifier: 0.65
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:ReagentThreshold
+          reagent: BZ
+          min: 1
+        - !type:OrganType
+          type: Slime
+          shouldHave: true
+        - !type:BloodReagentThreshold
+          reagent: NitrosylPlasmide
+          max: 0.1
+        key: ForcedSleep
+        component: ForcedSleeping
+        time: 10
+        type: Add
     Gas:
       effects:
       - !type:Emote
@@ -438,7 +687,7 @@
         conditions:
         - !type:ReagentThreshold
           reagent: BZ
-          min: 1
+          min: 0.3
         - !type:OrganType
           type: Slime
           shouldHave: false
@@ -521,13 +770,13 @@
   flavor: strange
   color: "#90560b"
   metabolisms:
-    Gas:
+    Narcotic:
       effects:
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
           reagent: Healium
-          max: 15
+          max: 24
         scaleByQuantity: true
         ignoreResistances: true
         damage:
@@ -539,13 +788,13 @@
         conditions:
         - !type:ReagentThreshold
           reagent: Healium
-          min: 15
+          min: 24
         ignoreResistances: true
         damage:
           groups:
-            Burn: -12
-            Toxin: -25
-            Brute: -12
+            Burn: -20
+            Toxin: -50
+            Brute: -20
       - !type:PopupMessage
         conditions:
         - !type:ReagentThreshold
@@ -571,7 +820,62 @@
         time: 1
         type: Add
       - !type:Drunk
-        boozePower: 50
+        boozePower: 45
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Healium
+          min: 4
+    Gas:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Healium
+          max: 24
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          groups:
+            Burn: -2
+            Toxin: -5
+            Brute: -2
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Healium
+          min: 24
+        ignoreResistances: true
+        damage:
+          groups:
+            Burn: -20
+            Toxin: -50
+            Brute: -20
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Healium
+          min: 4
+        - !type:BloodReagentThreshold
+          reagent: NitrosylPlasmide
+          max: 0.1
+        type: Local
+        visualType: Medium
+        messages: [ "effect-sleepy" ]
+        probability: 0.01
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Healium
+          min: 8
+        - !type:BloodReagentThreshold
+          reagent: NitrosylPlasmide
+          max: 0.01
+        key: ForcedSleep
+        component: ForcedSleeping
+        time: 1
+        type: Add
+      - !type:Drunk
+        boozePower: 45
         conditions:
         - !type:ReagentThreshold
           reagent: Healium
@@ -585,15 +889,80 @@
   flavor: sour
   color: "#90560B"
   metabolisms:
+    Narcotic:
+      effects:
+      - !type:NitriumMovespeedModifier
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Nitrium
+          min: 1
+          max: 8
+        walkSpeedModifier: 1.25
+        sprintSpeedModifier: 1.25
+      - !type:NitriumMovespeedModifier
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Nitrium
+          min: 8
+          max: 12
+        walkSpeedModifier: 1.4
+        sprintSpeedModifier: 1.4
+      - !type:NitriumMovespeedModifier
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Nitrium
+          min: 12
+        walkSpeedModifier: 1.6
+        sprintSpeedModifier: 1.6
+      - !type:AddReagentToBlood
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Nitrium
+          min: 6
+        reagent: NitrosylPlasmide
+        amount: 2.5
+      - !type:GenericStatusEffect
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Nitrium
+          min: 8
+        key: Stutter
+        component: StutteringAccent
+        time: 8
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Nitrium
+          min: 10
+        ignoreResistances: true
+        damage:
+          types:
+            Asphyxiation: 15
     Gas:
       effects:
       - !type:NitriumMovespeedModifier
         conditions:
         - !type:ReagentThreshold
           reagent: Nitrium
-          min: 3
+          min: 1
+          max: 8
         walkSpeedModifier: 1.25
         sprintSpeedModifier: 1.25
+      - !type:NitriumMovespeedModifier
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Nitrium
+          min: 8
+          max: 12
+        walkSpeedModifier: 1.4
+        sprintSpeedModifier: 1.4
+      - !type:NitriumMovespeedModifier
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Nitrium
+          min: 12
+        walkSpeedModifier: 1.6
+        sprintSpeedModifier: 1.6
       - !type:AddReagentToBlood
         conditions:
         - !type:ReagentThreshold
@@ -627,6 +996,56 @@
   flavor: bitter
   color: "#7b68ee"
   metabolisms:
+    Poison:
+      effects:
+      - !type:Oxygenate
+        factor: 8
+        conditions:
+        - !type:OrganType
+          type: Human
+      - !type:Oxygenate
+        factor: 8
+        conditions:
+        - !type:OrganType
+          type: Animal
+      - !type:Oxygenate
+        factor: 8
+        conditions:
+        - !type:OrganType
+          type: Rat
+      - !type:Oxygenate
+        factor: 8
+        conditions:
+        - !type:OrganType
+          type: Plant
+      # Convert Pluox into CO2.
+      - !type:ModifyLungGas
+        conditions:
+        - !type:OrganType
+          type: Vox
+          shouldHave: false
+        ratios:
+          CarbonDioxide: 1.0
+          Oxygen: -1.0
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Vox
+        scaleByQuantity: true
+        ignoreResistances: true
+        damage:
+          types:
+            Poison:
+              10
+      - !type:AdjustAlert
+        alertType: Toxins
+        conditions:
+          - !type:ReagentThreshold
+            min: 0.5
+          - !type:OrganType
+            type: Vox
+        clear: true
+        time: 5
     Gas:
       effects:
       - !type:Oxygenate

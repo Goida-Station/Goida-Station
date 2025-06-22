@@ -1,3 +1,13 @@
+<!--
+SPDX-FileCopyrightText: 2021 Javier Guardia Fernández <DrSmugleaf@users.noreply.github.com>
+SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+SPDX-FileCopyrightText: 2022 wrexbe <81056464+wrexbe@users.noreply.github.com>
+SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+
+SPDX-License-Identifier: MIT
+-->
+
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <OutputType>Exe</OutputType>
@@ -16,6 +26,9 @@
       <ProjectReference Include="..\RobustToolbox\Robust.Server\Robust.Server.csproj" />
       <ProjectReference Include="..\RobustToolbox\Robust.Shared.Maths\Robust.Shared.Maths.csproj" />
       <ProjectReference Include="..\RobustToolbox\Robust.Shared\Robust.Shared.csproj" />
+      <ProjectReference Include="..\Content.Goida.Client\Content.Goida.Client.csproj" />
+      <ProjectReference Include="..\Content.Goida.Shared\Content.Goida.Shared.csproj" />
+      <ProjectReference Include="..\Content.Goida.Server\Content.Goida.Server.csproj" />
     </ItemGroup>
 
   <ItemGroup>

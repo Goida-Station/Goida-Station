@@ -1,10 +1,66 @@
+# SPDX-FileCopyrightText: 2021 AJCM-git <60196617+AJCM-git@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 E F R <602406+Efruit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Elijahrane <60792108+Elijahrane@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Mith-randalf <84274729+Mith-randalf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 Paul Ritter <ritter.paul1@googlemail.com>
+# SPDX-FileCopyrightText: 2021 buletsponge <96000213+buletsponge@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2021 wrexbe <81056464+wrexbe@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 0x6273 <0x40@keemail.me>
+# SPDX-FileCopyrightText: 2022 20kdc <asdd2808@gmail.com>
+# SPDX-FileCopyrightText: 2022 Kara <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Morbo <14136326+Morb0@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Myctai <108953437+Myctai@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 Peptide90 <78795277+Peptide90@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 TaralGit <76408146+TaralGit@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 TimrodDX <timrod@gmail.com>
+# SPDX-FileCopyrightText: 2022 Veritius <veritiusgaming@gmail.com>
+# SPDX-FileCopyrightText: 2022 and_a <and_a@DESKTOP-RJENGIR>
+# SPDX-FileCopyrightText: 2022 corentt <36075110+corentt@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2022 metalgearsloth <comedian_vs_clown@hotmail.com>
+# SPDX-FileCopyrightText: 2022 mirrorcult <lunarautomaton6@gmail.com>
+# SPDX-FileCopyrightText: 2022 moonheart08 <moonheart08@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 778b <33431126+778b@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Eoin Mcloughlin <helloworld@eoinrul.es>
+# SPDX-FileCopyrightText: 2023 Jackrost <jackrost@mail.ru>
+# SPDX-FileCopyrightText: 2023 Kevin Zheng <kevinz5000@gmail.com>
+# SPDX-FileCopyrightText: 2023 LankLTE <135308300+LankLTE@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 Ubaser <134914314+UbaserB@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2023 eoineoineoin <github@eoinrul.es>
+# SPDX-FileCopyrightText: 2023 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+# SPDX-FileCopyrightText: 2024 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Krunklehorn <42424291+Krunklehorn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+# SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+# SPDX-FileCopyrightText: 2024 RatherUncreative <RatherUncreativeName@proton.me>
+# SPDX-FileCopyrightText: 2024 Spanky <scott@wearejacob.com>
+# SPDX-FileCopyrightText: 2024 lzk <124214523+lzk228@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 BombasterDS2 <shvalovdenis.workmail@gmail.com>
+# SPDX-FileCopyrightText: 2025 GoobBot <uristmchands@proton.me>
+# SPDX-FileCopyrightText: 2025 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Rouden <149893554+Roudenn@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 Solstice <solsticeofthewinter@gmail.com>
+# SPDX-FileCopyrightText: 2025 pheenty <fedorlukin2006@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 meta:
   format: 7
   category: Map
-  engineVersion: 247.2.0
+  engineVersion: 251.0.0
   forkId: ""
   forkVersion: ""
-  time: 03/14/2025 02:01:00
+  time: 05/19/2025 12:25:36
   entityCount: 15098
 maps:
 - 1
@@ -127,7 +183,7 @@ entities:
           version: 6
         1,1:
           ind: 1,1
-          tiles: eAAAAAAAewAAAAAAZQAAAAADewAAAAAAewAAAAAALAAAAAAAewAAAAAAewAAAAAAewAAAAAAWwAAAAAAWwAAAAADWwAAAAABewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAALAAAAAAALAAAAAAALAAAAAAAewAAAAAAWwAAAAAAWwAAAAACWwAAAAABWwAAAAAAewAAAAAAWwAAAAACWwAAAAACewAAAAAAewAAAAAAewAAAAAAewAAAAAALAAAAAAALAAAAAAALAAAAAAALAAAAAAAewAAAAAAWwAAAAABWwAAAAADWwAAAAAAWwAAAAACewAAAAAAWwAAAAADWwAAAAACWwAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAWwAAAAABWwAAAAABWwAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAWwAAAAADWwAAAAABWwAAAAADWwAAAAAAWwAAAAADWwAAAAACWwAAAAAAWwAAAAAAWwAAAAABWwAAAAABWwAAAAABWwAAAAABewAAAAAAWwAAAAABWwAAAAACWwAAAAADWwAAAAAAWwAAAAACWwAAAAADWwAAAAADWwAAAAADWwAAAAACWwAAAAADWwAAAAABWwAAAAABWwAAAAAAWwAAAAADWwAAAAACewAAAAAAWwAAAAABWwAAAAACewAAAAAAewAAAAAAWwAAAAADWwAAAAAAWwAAAAACWwAAAAADWwAAAAACWwAAAAABWwAAAAAAWwAAAAABWwAAAAACWwAAAAABWwAAAAABewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAWwAAAAADWwAAAAADWwAAAAADWwAAAAACewAAAAAAWwAAAAABWwAAAAABWwAAAAADWwAAAAACWwAAAAACWwAAAAADWwAAAAACWwAAAAABWwAAAAABWwAAAAADewAAAAAAWwAAAAADWwAAAAACWwAAAAABWwAAAAAAewAAAAAAWwAAAAAAWwAAAAADWwAAAAADWwAAAAABWwAAAAACWwAAAAABWwAAAAADWwAAAAAAWwAAAAAAWwAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAWwAAAAAAWwAAAAABWwAAAAABWwAAAAAAWwAAAAADWwAAAAACWwAAAAADHQAAAAACHQAAAAADHQAAAAAAewAAAAAAagAAAAAAagAAAAAAagAAAAAAagAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAWwAAAAACWwAAAAAAWwAAAAAAewAAAAAAHQAAAAABHQAAAAAAHQAAAAABewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAawAAAAAAWwAAAAAAWwAAAAAAWwAAAAACewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAWwAAAAADWwAAAAABWwAAAAADewAAAAAAHQAAAAADHQAAAAAAHQAAAAAAewAAAAAAeAAAAAAAeAAAAAADeAAAAAABeAAAAAADeAAAAAAAewAAAAAAeAAAAAABeAAAAAADWwAAAAAAWwAAAAACWwAAAAABewAAAAAAHQAAAAAAHQAAAAACHQAAAAADewAAAAAAeAAAAAACeAAAAAAAeAAAAAACeAAAAAACeAAAAAAAewAAAAAAeAAAAAAAeAAAAAABWwAAAAADWwAAAAADWwAAAAABewAAAAAAHQAAAAADHQAAAAACHQAAAAAAewAAAAAAeAAAAAACeAAAAAACeAAAAAACeAAAAAABeAAAAAABeAAAAAACeAAAAAADeAAAAAAAWwAAAAACWwAAAAACWwAAAAABewAAAAAAewAAAAAAewAAAAAAewAAAAAA
+          tiles: eAAAAAAAewAAAAAAZQAAAAADewAAAAAAewAAAAAALAAAAAAAewAAAAAAewAAAAAAewAAAAAAWwAAAAAAWwAAAAADWwAAAAABewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAALAAAAAAALAAAAAAALAAAAAAAewAAAAAAWwAAAAAAWwAAAAACWwAAAAABWwAAAAAAewAAAAAAWwAAAAACWwAAAAACewAAAAAAewAAAAAAewAAAAAAewAAAAAALAAAAAAALAAAAAAALAAAAAAALAAAAAAAewAAAAAAWwAAAAABWwAAAAADWwAAAAAAWwAAAAACewAAAAAAWwAAAAADWwAAAAACWwAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAWwAAAAABWwAAAAABWwAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAWwAAAAADWwAAAAABWwAAAAADWwAAAAAAWwAAAAADWwAAAAACWwAAAAAAWwAAAAAAWwAAAAABWwAAAAABWwAAAAABWwAAAAABewAAAAAAWwAAAAABWwAAAAACWwAAAAADWwAAAAAAWwAAAAACWwAAAAADWwAAAAADWwAAAAADWwAAAAACWwAAAAADWwAAAAABWwAAAAABWwAAAAAAWwAAAAADWwAAAAACewAAAAAAWwAAAAABWwAAAAACewAAAAAAewAAAAAAWwAAAAADWwAAAAAAWwAAAAACWwAAAAADWwAAAAACWwAAAAABWwAAAAAAWwAAAAABWwAAAAACWwAAAAABWwAAAAABewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAWwAAAAADWwAAAAADWwAAAAADWwAAAAACewAAAAAAWwAAAAABWwAAAAABWwAAAAADWwAAAAACWwAAAAACWwAAAAADWwAAAAACWwAAAAABWwAAAAABWwAAAAADewAAAAAAWwAAAAADWwAAAAACWwAAAAABWwAAAAAAewAAAAAAWwAAAAAAWwAAAAADWwAAAAADWwAAAAABWwAAAAACWwAAAAABWwAAAAADWwAAAAAAWwAAAAAAWwAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAWwAAAAAAWwAAAAABWwAAAAABWwAAAAAAWwAAAAADWwAAAAACewAAAAAAHQAAAAACHQAAAAADHQAAAAAAewAAAAAAagAAAAAAagAAAAAAagAAAAAAagAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAWwAAAAACWwAAAAAAWwAAAAAAewAAAAAAHQAAAAABHQAAAAAAHQAAAAABewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAawAAAAAAWwAAAAAAWwAAAAAAWwAAAAACewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAewAAAAAAWwAAAAADWwAAAAABWwAAAAADewAAAAAAHQAAAAADHQAAAAAAHQAAAAAAewAAAAAAeAAAAAAAeAAAAAADeAAAAAABeAAAAAADeAAAAAAAewAAAAAAeAAAAAABeAAAAAADWwAAAAAAWwAAAAACWwAAAAABWwAAAAAAHQAAAAAAHQAAAAACHQAAAAADewAAAAAAeAAAAAACeAAAAAAAeAAAAAACeAAAAAACeAAAAAAAewAAAAAAeAAAAAAAeAAAAAABWwAAAAADWwAAAAADWwAAAAABewAAAAAAHQAAAAADHQAAAAACHQAAAAAAewAAAAAAeAAAAAACeAAAAAACeAAAAAACeAAAAAABeAAAAAABeAAAAAACeAAAAAADeAAAAAAAWwAAAAACWwAAAAACWwAAAAABewAAAAAAewAAAAAAewAAAAAAewAAAAAA
           version: 6
         2,0:
           ind: 2,0
@@ -932,11 +988,11 @@ entities:
           7,5:
             0: 61550
           7,6:
-            0: 3839
+            0: 3823
+          7,7:
+            0: 3838
           7,4:
             0: 3680
-          7,7:
-            0: 3822
           7,8:
             0: 53703
           8,4:
@@ -6997,7 +7053,6 @@ entities:
       - 6925
       - 6926
       - 422
-      - 7050
       - 8836
       - 8936
       - 8837
@@ -11263,6 +11318,13 @@ entities:
     - type: Transform
       pos: 14.5,46.5
       parent: 2
+- proto: BedsheetBrigmedic
+  entities:
+  - uid: 14826
+    components:
+    - type: Transform
+      pos: 31.5,26.5
+      parent: 2
 - proto: BedsheetCaptain
   entities:
   - uid: 646
@@ -11765,15 +11827,15 @@ entities:
       parent: 2
 - proto: BoxFlashbang
   entities:
-  - uid: 727
-    components:
-    - type: Transform
-      pos: 36.349575,28.40067
-      parent: 2
   - uid: 728
     components:
     - type: Transform
       pos: 32.47085,27.36973
+      parent: 2
+  - uid: 14918
+    components:
+    - type: Transform
+      pos: 36.74357,24.883837
       parent: 2
 - proto: BoxFolderBlack
   entities:
@@ -11881,10 +11943,10 @@ entities:
       parent: 2
 - proto: BoxHandcuff
   entities:
-  - uid: 747
+  - uid: 12452
     components:
     - type: Transform
-      pos: 36.634296,28.185242
+      pos: 36.34197,24.6514
       parent: 2
 - proto: BoxHeadset
   entities:
@@ -11938,10 +12000,10 @@ entities:
       parent: 2
 - proto: BoxSechud
   entities:
-  - uid: 756
+  - uid: 12507
     components:
     - type: Transform
-      pos: 36.641243,28.595247
+      pos: 36.348915,25.123621
       parent: 2
 - proto: BoxSterileMask
   entities:
@@ -11959,10 +12021,10 @@ entities:
       parent: 2
 - proto: BoxZiptie
   entities:
-  - uid: 759
+  - uid: 10090
     components:
     - type: Transform
-      pos: 36.363464,27.983711
+      pos: 36.80607,24.508837
       parent: 2
 - proto: BrbSign
   entities:
@@ -32716,6 +32778,14 @@ entities:
     - type: Transform
       pos: 59.5,38.5
       parent: 2
+- proto: CapsaicinDispenser
+  entities:
+  - uid: 10185
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 36.5,20.5
+      parent: 2
 - proto: CaptainIDCard
   entities:
   - uid: 4871
@@ -38631,15 +38701,16 @@ entities:
       rot: 3.141592653589793 rad
       pos: 36.5,17.5
       parent: 2
-  - uid: 5953
-    components:
-    - type: Transform
-      pos: 29.5,26.5
-      parent: 2
   - uid: 5954
     components:
     - type: Transform
       pos: 45.5,25.5
+      parent: 2
+  - uid: 11018
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 36.5,28.5
       parent: 2
 - proto: ComputerId
   entities:
@@ -38822,6 +38893,12 @@ entities:
       parent: 2
 - proto: ComputerSurveillanceCameraMonitor
   entities:
+  - uid: 727
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 36.5,27.5
+      parent: 2
   - uid: 5982
     components:
     - type: Transform
@@ -38832,11 +38909,6 @@ entities:
     components:
     - type: Transform
       pos: 24.5,48.5
-      parent: 2
-  - uid: 5984
-    components:
-    - type: Transform
-      pos: 30.5,26.5
       parent: 2
   - uid: 5985
     components:
@@ -40003,6 +40075,12 @@ entities:
       parent: 2
 - proto: DefibrillatorCabinetFilled
   entities:
+  - uid: 747
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 28.5,25.5
+      parent: 2
   - uid: 6147
     components:
     - type: Transform
@@ -43715,13 +43793,6 @@ entities:
       parent: 2
     - type: FaxMachine
       name: Quartermaster
-  - uid: 6774
-    components:
-    - type: Transform
-      pos: 36.5,25.5
-      parent: 2
-    - type: FaxMachine
-      name: Security
   - uid: 6775
     components:
     - type: Transform
@@ -43771,6 +43842,11 @@ entities:
       parent: 2
     - type: FaxMachine
       name: Science
+  - uid: 14835
+    components:
+    - type: Transform
+      pos: 36.5,26.5
+      parent: 2
 - proto: FaxMachineCaptain
   entities:
   - uid: 6782
@@ -43811,11 +43887,6 @@ entities:
     components:
     - type: Transform
       pos: 41.5,19.5
-      parent: 2
-  - uid: 6789
-    components:
-    - type: Transform
-      pos: 36.5,24.5
       parent: 2
   - uid: 6790
     components:
@@ -44203,7 +44274,6 @@ entities:
       - 6925
       - 6926
       - 422
-      - 7050
       - 6903
       - 6902
       - 6901
@@ -46567,15 +46637,6 @@ entities:
       - 6801
       - 57
       - 27
-  - uid: 7050
-    components:
-    - type: Transform
-      pos: 28.5,25.5
-      parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 6812
-      - 43
   - uid: 7051
     components:
     - type: Transform
@@ -46897,6 +46958,9 @@ entities:
     - type: Transform
       pos: -0.0010213852,-26.399889
       parent: 2
+    - type: CollisionWake
+      enabled: False
+    - type: Conveyed
 - proto: FoodMeat
   entities:
   - uid: 7098
@@ -46963,6 +47027,9 @@ entities:
     - type: Transform
       pos: -0.9697714,-25.884264
       parent: 2
+    - type: CollisionWake
+      enabled: False
+    - type: Conveyed
 - proto: FoodPoppy
   entities:
   - uid: 7110
@@ -47005,6 +47072,9 @@ entities:
     - type: Transform
       pos: -1.0166464,-26.540514
       parent: 2
+    - type: CollisionWake
+      enabled: False
+    - type: Conveyed
   - uid: 7115
     components:
     - type: Transform
@@ -47119,6 +47189,13 @@ entities:
     components:
     - type: Transform
       pos: 49.5,-25.5
+      parent: 2
+- proto: GasMinerPlasma
+  entities:
+  - uid: 15099
+    components:
+    - type: Transform
+      pos: 49.5,-31.5
       parent: 2
 - proto: GasMinerWaterVapor
   entities:
@@ -61784,6 +61861,14 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 31.5,39.5
       parent: 2
+- proto: GlassBoxLawbringerFilled
+  entities:
+  - uid: 10186
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 45.5,23.5
+      parent: 2
 - proto: GlowstickRed
   entities:
   - uid: 8995
@@ -64752,11 +64837,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -20.5,-15.5
       parent: 2
-  - uid: 9572
-    components:
-    - type: Transform
-      pos: 28.5,29.5
-      parent: 2
   - uid: 9573
     components:
     - type: Transform
@@ -67472,16 +67552,17 @@ entities:
       parent: 2
 - proto: IntercomSecurity
   entities:
+  - uid: 6789
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 28.5,28.5
+      parent: 2
   - uid: 10089
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 38.5,34.5
-      parent: 2
-  - uid: 10090
-    components:
-    - type: Transform
-      pos: 28.5,26.5
       parent: 2
 - proto: IntercomSupply
   entities:
@@ -67729,6 +67810,13 @@ entities:
     components:
     - type: Transform
       pos: 44.5,-10.5
+      parent: 2
+- proto: LockerBrigmedicFilled
+  entities:
+  - uid: 5953
+    components:
+    - type: Transform
+      pos: 29.5,26.5
       parent: 2
 - proto: LockerCaptainFilledNoLaser
   entities:
@@ -68147,18 +68235,6 @@ entities:
     - type: Transform
       pos: 19.434057,-38.4118
       parent: 2
-- proto: MagazinePistolSubMachineGunTopMounted
-  entities:
-  - uid: 10185
-    components:
-    - type: Transform
-      pos: 45.548477,23.915247
-      parent: 2
-  - uid: 10186
-    components:
-    - type: Transform
-      pos: 45.548477,23.915247
-      parent: 2
 - proto: MailMetricsCartridge
   entities:
   - uid: 10187
@@ -68266,6 +68342,11 @@ entities:
       parent: 2
 - proto: MedicalBed
   entities:
+  - uid: 5984
+    components:
+    - type: Transform
+      pos: 31.5,26.5
+      parent: 2
   - uid: 10203
     components:
     - type: Transform
@@ -69192,10 +69273,10 @@ entities:
       parent: 2
 - proto: PortableFlasher
   entities:
-  - uid: 10356
+  - uid: 14834
     components:
     - type: Transform
-      pos: 31.5,26.5
+      pos: 32.5,22.5
       parent: 2
 - proto: PortableGeneratorJrPacman
   entities:
@@ -73448,11 +73529,6 @@ entities:
     - type: Transform
       pos: 65.5,14.5
       parent: 2
-  - uid: 11018
-    components:
-    - type: Transform
-      pos: 28.5,29.5
-      parent: 2
   - uid: 11019
     components:
     - type: Transform
@@ -77569,6 +77645,12 @@ entities:
       parent: 2
 - proto: SignMedical
   entities:
+  - uid: 10356
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 31.5,27.5
+      parent: 2
   - uid: 11725
     components:
     - type: Transform
@@ -78961,6 +79043,13 @@ entities:
     components:
     - type: Transform
       pos: 44.5,-6.5
+      parent: 2
+- proto: SpawnPointBrigmedic
+  entities:
+  - uid: 9572
+    components:
+    - type: Transform
+      pos: 30.5,26.5
       parent: 2
 - proto: SpawnPointCaptain
   entities:
@@ -81378,6 +81467,11 @@ entities:
       parent: 2
 - proto: Table
   entities:
+  - uid: 6774
+    components:
+    - type: Transform
+      pos: 36.5,24.5
+      parent: 2
   - uid: 12266
     components:
     - type: Transform
@@ -81908,11 +82002,6 @@ entities:
     - type: Transform
       pos: 78.5,-6.5
       parent: 2
-  - uid: 12371
-    components:
-    - type: Transform
-      pos: 36.5,27.5
-      parent: 2
   - uid: 12372
     components:
     - type: Transform
@@ -82031,11 +82120,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 51.5,4.5
-      parent: 2
-  - uid: 12395
-    components:
-    - type: Transform
-      pos: 36.5,28.5
       parent: 2
   - uid: 12396
     components:
@@ -82279,6 +82363,11 @@ entities:
       parent: 2
 - proto: TableReinforced
   entities:
+  - uid: 7050
+    components:
+    - type: Transform
+      pos: 28.5,29.5
+      parent: 2
   - uid: 12438
     components:
     - type: Transform
@@ -82349,11 +82438,6 @@ entities:
     components:
     - type: Transform
       pos: 17.5,40.5
-      parent: 2
-  - uid: 12452
-    components:
-    - type: Transform
-      pos: 28.5,25.5
       parent: 2
   - uid: 12453
     components:
@@ -82644,11 +82728,6 @@ entities:
     components:
     - type: Transform
       pos: 44.5,23.5
-      parent: 2
-  - uid: 12507
-    components:
-    - type: Transform
-      pos: 45.5,23.5
       parent: 2
   - uid: 12508
     components:
@@ -83255,6 +83334,7 @@ entities:
     - type: Transform
       pos: 0.13960361,-25.931139
       parent: 2
+    - type: Conveyed
   - uid: 12583
     components:
     - type: Transform
@@ -91825,6 +91905,12 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 12.5,-54.5
       parent: 2
+  - uid: 14833
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 28.5,25.5
+      parent: 2
 - proto: WallReinforcedRust
   entities:
   - uid: 14165
@@ -95261,15 +95347,15 @@ entities:
       parent: 2
 - proto: WeaponCapacitorRecharger
   entities:
+  - uid: 12395
+    components:
+    - type: Transform
+      pos: 36.5,25.5
+      parent: 2
   - uid: 14825
     components:
     - type: Transform
       pos: 34.5,41.5
-      parent: 2
-  - uid: 14826
-    components:
-    - type: Transform
-      pos: 36.5,26.5
       parent: 2
   - uid: 14827
     components:
@@ -95330,22 +95416,15 @@ entities:
       parent: 2
 - proto: WeaponDisabler
   entities:
-  - uid: 14833
+  - uid: 759
     components:
     - type: Transform
-      pos: 36.50164,27.085938
+      pos: 36.530476,25.51251
       parent: 2
-  - uid: 14834
+  - uid: 14919
     components:
     - type: Transform
-      pos: 36.48081,27.346535
-      parent: 2
-- proto: WeaponSubMachineGunWt550
-  entities:
-  - uid: 14835
-    components:
-    - type: Transform
-      pos: 45.454727,23.618372
+      pos: 36.46103,25.799547
       parent: 2
 - proto: WeaponTurretSyndicateBroken
   entities:
@@ -95637,6 +95716,14 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 29.5,-23.5
       parent: 2
+- proto: WindoorSecureBrigLocked
+  entities:
+  - uid: 756
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 31.5,25.5
+      parent: 2
 - proto: WindoorSecureCargoLocked
   entities:
   - uid: 14887
@@ -95820,6 +95907,12 @@ entities:
       parent: 2
 - proto: WindoorSecureSecurityLocked
   entities:
+  - uid: 12371
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 28.5,29.5
+      parent: 2
   - uid: 14916
     components:
     - type: Transform
@@ -95831,18 +95924,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 31.5,18.5
-      parent: 2
-  - uid: 14918
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 28.5,25.5
-      parent: 2
-  - uid: 14919
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 31.5,25.5
       parent: 2
   - uid: 14920
     components:
@@ -96362,11 +96443,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 2.5,-29.5
-      parent: 2
-  - uid: 15015
-    components:
-    - type: Transform
-      pos: 28.5,25.5
       parent: 2
   - uid: 15016
     components:

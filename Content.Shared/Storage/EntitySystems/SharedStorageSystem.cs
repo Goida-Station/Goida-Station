@@ -1,3 +1,107 @@
+// SPDX-FileCopyrightText: 2023 Pieter-Jan Briers <pieterjan.briers@gmail.com>
+// SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Aidenkrz <aiden@djkraz.com>
+// SPDX-FileCopyrightText: 2024 Alex Pavlenko <diraven@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Alice "Arimah" Heurlin <30327355+arimah@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Boaz1111 <149967078+Boaz1111@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Callmore <22885888+Callmore@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Cojoke <83733158+Cojoke-dot@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Crude Oil <124208219+CroilBird@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <10968691+DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Dvir <39403717+dvir001@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ed <96445749+TheShuEd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Emisse <99158783+Emisse@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 EmoGarbage404 <retron404@gmail.com>
+// SPDX-FileCopyrightText: 2024 Eoin Mcloughlin <helloworld@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 Flareguy <78941145+Flareguy@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ghagliiarghii <68826635+Ghagliiarghii@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 HS <81934438+HolySSSS@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Hrosts <35345601+Hrosts@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 I.K <45953835+notquitehadouken@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 IProduceWidgets <107586145+IProduceWidgets@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ian <ignaz.k@live.de>
+// SPDX-FileCopyrightText: 2024 Ilya246 <57039557+Ilya246@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Joel Zimmerman <JoelZimmerman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 JustCone <141039037+JustCone14@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kara <lunarautomaton6@gmail.com>
+// SPDX-FileCopyrightText: 2024 Killerqu00 <47712032+Killerqu00@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ko4ergaPunk <62609550+Ko4ergaPunk@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Krunklehorn <42424291+Krunklehorn@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Kukutis96513 <146854220+Kukutis96513@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Lye <128915833+Lyroth001@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MerrytheManokit <167581110+MerrytheManokit@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mervill <mervills.email@gmail.com>
+// SPDX-FileCopyrightText: 2024 MilenVolf <63782763+MilenVolf@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Mr. 27 <45323883+Dutch-VanDerLinde@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 MureixloI <132683811+MureixloI@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 NakataRin <45946146+NakataRin@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Nemanja <98561806+EmoGarbage404@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 OrangeMoronage9622 <whyteterry0092@gmail.com>
+// SPDX-FileCopyrightText: 2024 PJBot <pieterjan.briers+bot@gmail.com>
+// SPDX-FileCopyrightText: 2024 Pieter-Jan Briers <pieterjan.briers+git@gmail.com>
+// SPDX-FileCopyrightText: 2024 Piras314 <p1r4s@proton.me>
+// SPDX-FileCopyrightText: 2024 Plykiya <58439124+Plykiya@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 Preston Smith <92108534+thetolbean@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Psychpsyo <60073468+Psychpsyo@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Redfire1331 <125223432+Redfire1331@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Repo <47093363+Titian3@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 RiceMar1244 <138547931+RiceMar1244@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Rouge2t7 <81053047+Sarahon@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <10494922+ShadowCommander@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 ShadowCommander <shadowjjt@gmail.com>
+// SPDX-FileCopyrightText: 2024 Simon <63975668+Simyon264@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Sphiral <145869023+SphiraI@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Stalen <33173619+stalengd@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TakoDragon <69509841+BackeTako@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Tayrtahn <tayrtahn@gmail.com>
+// SPDX-FileCopyrightText: 2024 Thomas <87614336+Aeshus@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Truoizys <153248924+Truoizys@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 TsjipTsjip <19798667+TsjipTsjip@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Ubaser <134914314+UbaserB@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Unkn0wn_Gh0st <shadowstalkermll@gmail.com>
+// SPDX-FileCopyrightText: 2024 Vasilis <vasilis@pikachu.systems>
+// SPDX-FileCopyrightText: 2024 Vigers Ray <60344369+VigersRay@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 beck-thompson <107373427+beck-thompson@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deathride58 <deathride58@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <39013340+deltanedas@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 deltanedas <@deltanedas:kde.org>
+// SPDX-FileCopyrightText: 2024 dffdff2423 <dffdff2423@gmail.com>
+// SPDX-FileCopyrightText: 2024 eoineoineoin <github@eoinrul.es>
+// SPDX-FileCopyrightText: 2024 foboscheshir <156405958+foboscheshir@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 metalgearsloth <comedian_vs_clown@hotmail.com>
+// SPDX-FileCopyrightText: 2024 neutrino <67447925+neutrino-laser@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 nikthechampiongr <32041239+nikthechampiongr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 notquitehadouken <tripwiregamer@gmail.com>
+// SPDX-FileCopyrightText: 2024 osjarw <62134478+osjarw@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 plykiya <plykiya@protonmail.com>
+// SPDX-FileCopyrightText: 2024 redfire1331 <Redfire1331@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 saintmuntzer <47153094+saintmuntzer@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 shamp <140359015+shampunj@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 slarticodefast <161409025+slarticodefast@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 strO0pwafel <153459934+strO0pwafel@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 stroopwafel <j.o.luijkx@student.tudelft.nl>
+// SPDX-FileCopyrightText: 2024 themias <89101928+themias@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 to4no_fix <156101927+chavonadelal@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2024 Арт <123451459+JustArt1m@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Errant <35878406+Errant-4@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Kyle Tyo <36606155+VerinSenpai@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Winkarst <74284083+Winkarst-cpu@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 lzk <124214523+lzk228@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 metalgearsloth <31366439+metalgearsloth@users.noreply.github.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using System.Collections.Frozen;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -16,11 +120,13 @@ using Content.Shared.Interaction;
 using Content.Shared.Interaction.Components;
 using Content.Shared.Inventory;
 using Content.Shared.Item;
+using Content.Shared.Item.ItemToggle.Components;
 using Content.Shared.Lock;
 using Content.Shared.Materials;
 using Content.Shared.Popups;
 using Content.Shared.Stacks;
 using Content.Shared.Storage.Components;
+using Content.Shared.Tag;
 using Content.Shared.Timing;
 using Content.Shared.Storage.Events;
 using Content.Shared.Verbs;
@@ -38,6 +144,7 @@ using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Content.Shared.Rounding;
 
 namespace Content.Shared.Storage.EntitySystems;
 
@@ -65,6 +172,7 @@ public abstract class SharedStorageSystem : EntitySystem
     [Dependency] private   readonly SharedStackSystem _stack = default!;
     [Dependency] protected readonly SharedTransformSystem TransformSystem = default!;
     [Dependency] protected readonly SharedUserInterfaceSystem UI = default!;
+    [Dependency] private   readonly TagSystem _tag = default!;
     [Dependency] protected readonly UseDelaySystem UseDelay = default!;
 
     private EntityQuery<ItemComponent> _itemQuery;
@@ -139,16 +247,16 @@ public abstract class SharedStorageSystem : EntitySystem
         SubscribeLocalEvent<StorageComponent, OpenStorageImplantEvent>(OnImplantActivate);
         SubscribeLocalEvent<StorageComponent, AfterInteractEvent>(AfterInteract);
         SubscribeLocalEvent<StorageComponent, DestructionEventArgs>(OnDestroy);
-        SubscribeLocalEvent<BoundUserInterfaceMessageAttempt>(OnBoundUIAttempt);
+        SubscribeLocalEvent<StorageComponent, BoundUserInterfaceMessageAttempt>(OnBoundUIAttempt);
         SubscribeLocalEvent<StorageComponent, BoundUIOpenedEvent>(OnBoundUIOpen);
         SubscribeLocalEvent<StorageComponent, LockToggledEvent>(OnLockToggled);
-        SubscribeLocalEvent<MetaDataComponent, StackCountChangedEvent>(OnStackCountChanged);
-
         SubscribeLocalEvent<StorageComponent, EntInsertedIntoContainerMessage>(OnEntInserted);
         SubscribeLocalEvent<StorageComponent, EntRemovedFromContainerMessage>(OnEntRemoved);
         SubscribeLocalEvent<StorageComponent, ContainerIsInsertingAttemptEvent>(OnInsertAttempt);
-
         SubscribeLocalEvent<StorageComponent, AreaPickupDoAfterEvent>(OnDoAfter);
+        SubscribeLocalEvent<StorageComponent, GotReclaimedEvent>(OnReclaimed);
+
+        SubscribeLocalEvent<MetaDataComponent, StackCountChangedEvent>(OnStackCountChanged);
 
         SubscribeAllEvent<OpenNestedStorageEvent>(OnStorageNested);
         SubscribeAllEvent<StorageTransferItemEvent>(OnStorageTransfer);
@@ -157,7 +265,7 @@ public abstract class SharedStorageSystem : EntitySystem
         SubscribeAllEvent<StorageInsertItemIntoLocationEvent>(OnInsertItemIntoLocation);
         SubscribeAllEvent<StorageSaveItemLocationEvent>(OnSaveItemLocation);
 
-        SubscribeLocalEvent<StorageComponent, GotReclaimedEvent>(OnReclaimed);
+        SubscribeLocalEvent<ItemSizeChangedEvent>(OnItemSizeChanged);
 
         CommandBinds.Builder
             .Bind(ContentKeyFunctions.OpenBackpack, InputCmdHandler.FromDelegate(HandleOpenBackpack, handle: false))
@@ -167,6 +275,21 @@ public abstract class SharedStorageSystem : EntitySystem
         Subs.CVar(_cfg, CCVars.NestedStorage, OnNestedStorageCvar, true);
 
         UpdatePrototypeCache();
+    }
+
+    private void OnItemSizeChanged(ref ItemSizeChangedEvent ev)
+    {
+        var itemEnt = new Entity<ItemComponent?>(ev.Entity, null);
+
+        if (!TryGetStorageLocation(itemEnt, out var container, out var storage, out var loc))
+        {
+            return;
+        }
+
+        if (!ItemFitsInGridLocation((itemEnt.Owner, itemEnt.Comp), (container.Owner, storage), loc))
+        {
+            ContainerSystem.Remove(itemEnt.Owner, container, force: true);
+        }
     }
 
     private void OnNestedStorageCvar(bool obj)
@@ -275,13 +398,14 @@ public abstract class SharedStorageSystem : EntitySystem
         if (!UI.IsUiOpen(uid, args.UiKey))
         {
             UpdateAppearance((uid, storageComp, null));
-            Audio.PlayPredicted(storageComp.StorageCloseSound, uid, args.Actor);
+            if (!_tag.HasTag(args.Actor, storageComp.SilentStorageUserTag))
+                Audio.PlayPredicted(storageComp.StorageCloseSound, uid, args.Actor);
         }
     }
 
     private void AddUiVerb(EntityUid uid, StorageComponent component, GetVerbsEvent<ActivationVerb> args)
     {
-        if (!CanInteract(args.User, (uid, component), args.CanAccess && args.CanInteract))
+        if (component.ShowVerb == false || !CanInteract(args.User, (uid, component), args.CanAccess && args.CanInteract))
             return;
 
         // Does this player currently have the storage UI open?
@@ -315,6 +439,26 @@ public abstract class SharedStorageSystem : EntitySystem
                 new("/Textures/Interface/VerbIcons/open.svg.192dpi.png"));
         }
         args.Verbs.Add(verb);
+    }
+
+    /// <summary>
+    /// Tries to get the storage location of an item.
+    /// </summary>
+    public bool TryGetStorageLocation(Entity<ItemComponent?> itemEnt, [NotNullWhen(true)] out BaseContainer? container, out StorageComponent? storage, out ItemStorageLocation loc)
+    {
+        loc = default;
+        storage = null;
+
+        if (!ContainerSystem.TryGetContainingContainer(itemEnt, out container) ||
+            container.ID != StorageComponent.ContainerId ||
+            !TryComp(container.Owner, out storage) ||
+            !_itemQuery.Resolve(itemEnt, ref itemEnt.Comp, false))
+        {
+            return false;
+        }
+
+        loc = storage.StoredItems[itemEnt];
+        return true;
     }
 
     public void OpenStorageUI(EntityUid uid, EntityUid actor, StorageComponent? storageComp = null, bool silent = true)
@@ -356,7 +500,7 @@ public abstract class SharedStorageSystem : EntitySystem
         if (!UI.TryOpenUi(uid, StorageComponent.StorageUiKey.Key, entity))
             return;
 
-        if (!silent)
+        if (!silent && !_tag.HasTag(entity, storageComp.SilentStorageUserTag))
         {
             Audio.PlayPredicted(storageComp.StorageOpenSound, uid, entity);
 
@@ -601,7 +745,8 @@ public abstract class SharedStorageSystem : EntitySystem
         // If we picked up at least one thing, play a sound and do a cool animation!
         if (successfullyInserted.Count > 0)
         {
-            Audio.PlayPredicted(component.StorageInsertSound, uid, args.User, _audioParams);
+            if (!_tag.HasTag(args.User, component.SilentStorageUserTag))
+                Audio.PlayPredicted(component.StorageInsertSound, uid, args.User, _audioParams);
             EntityManager.RaiseSharedEvent(new AnimateInsertingEntitiesEvent(
                 GetNetEntity(uid),
                 GetNetEntityList(successfullyInserted),
@@ -644,7 +789,8 @@ public abstract class SharedStorageSystem : EntitySystem
                 $"{ToPrettyString(player):player} is attempting to take {ToPrettyString(item):item} out of {ToPrettyString(storage):storage}");
 
             if (_sharedHandsSystem.TryPickupAnyHand(player, item, handsComp: player.Comp)
-                && storage.Comp.StorageRemoveSound != null)
+                && storage.Comp.StorageRemoveSound != null
+                && !_tag.HasTag(player, storage.Comp.SilentStorageUserTag))
             {
                 Audio.PlayPredicted(storage.Comp.StorageRemoveSound, storage, player, _audioParams);
             }
@@ -712,14 +858,23 @@ public abstract class SharedStorageSystem : EntitySystem
 
     private void OnStorageTransfer(StorageTransferItemEvent msg, EntitySessionEventArgs args)
     {
-        if (!TryGetEntity(msg.ItemEnt, out var itemEnt))
+        if (!TryGetEntity(msg.ItemEnt, out var itemUid) || !TryComp(itemUid, out ItemComponent? itemComp))
             return;
 
         var localPlayer = args.SenderSession.AttachedEntity;
+        var itemEnt = new Entity<ItemComponent?>(itemUid.Value, itemComp);
 
-        if (!TryComp(localPlayer, out HandsComponent? handsComp) || !_sharedHandsSystem.TryPickup(localPlayer.Value, itemEnt.Value, handsComp: handsComp, animate: false))
+        // Validate the source storage
+        if (!TryGetStorageLocation(itemEnt, out var container, out _, out _) ||
+            !ValidateInput(args, GetNetEntity(container.Owner), out _, out _))
+        {
+            return;
+        }
+
+        if (!TryComp(localPlayer, out HandsComponent? handsComp) || !_sharedHandsSystem.TryPickup(localPlayer.Value, itemEnt, handsComp: handsComp, animate: false))
             return;
 
+        // Validate the target storage
         if (!ValidateInput(args, msg.StorageEnt, msg.ItemEnt, out var player, out var storage, out var item, held: true))
             return;
 
@@ -755,7 +910,7 @@ public abstract class SharedStorageSystem : EntitySystem
         UpdateAppearance((ent.Owner, ent.Comp, null));
     }
 
-    private void OnBoundUIAttempt(BoundUserInterfaceMessageAttempt args)
+    private void OnBoundUIAttempt(Entity<StorageComponent> ent, ref BoundUserInterfaceMessageAttempt args)
     {
         if (args.UiKey is not StorageComponent.StorageUiKey.Key ||
             _openStorageLimit == -1 ||
@@ -874,6 +1029,12 @@ public abstract class SharedStorageSystem : EntitySystem
         _appearance.SetData(uid, StorageVisuals.Open, isOpen, appearance);
         _appearance.SetData(uid, SharedBagOpenVisuals.BagState, isOpen ? SharedBagState.Open : SharedBagState.Closed, appearance);
 
+        if (TryComp<StorageFillVisualizerComponent>(uid, out var storageFillVisualizerComp))
+        {
+            var level = ContentHelpers.RoundToLevels(used, capacity, storageFillVisualizerComp.MaxFillLevels);
+            _appearance.SetData(uid, StorageFillVisuals.FillLevel, level, appearance);
+        }
+
         // HideClosedStackVisuals true sets the StackVisuals.Hide to the open state of the storage.
         // This is for containers that only show their contents when open. (e.g. donut boxes)
         if (storage.HideStackVisualsWhenClosed)
@@ -902,8 +1063,10 @@ public abstract class SharedStorageSystem : EntitySystem
         {
             Insert(target, entity, out _, user: user, targetComp, playSound: false);
         }
-
-        Audio.PlayPredicted(sourceComp.StorageInsertSound, target, user, _audioParams);
+        if (user != null
+            && (!_tag.HasTag(user.Value, sourceComp.SilentStorageUserTag)
+                || !_tag.HasTag(user.Value, targetComp.SilentStorageUserTag)))
+            Audio.PlayPredicted(sourceComp.StorageInsertSound, target, user, _audioParams);
     }
 
     /// <summary>
@@ -1076,12 +1239,17 @@ public abstract class SharedStorageSystem : EntitySystem
          * For now we just treat items as always being the same size regardless of stack count.
          */
 
+        // Check if the sound is expected to play.
+        // If there is an user, the sound will not play if they have the SilentStorageUserTag
+        // If there is no user, only playSound is checked.
+        var canPlaySound = playSound && (user == null || !_tag.HasTag(user.Value, storageComp.SilentStorageUserTag));
+
         if (!stackAutomatically || !_stackQuery.TryGetComponent(insertEnt, out var insertStack))
         {
             if (!ContainerSystem.Insert(insertEnt, storageComp.Container))
                 return false;
 
-            if (playSound)
+            if (canPlaySound)
                 Audio.PlayPredicted(storageComp.StorageInsertSound, uid, user, _audioParams);
 
             return true;
@@ -1111,7 +1279,7 @@ public abstract class SharedStorageSystem : EntitySystem
             return false;
         }
 
-        if (playSound)
+        if (canPlaySound)
             Audio.PlayPredicted(storageComp.StorageInsertSound, uid, user, _audioParams);
 
         return true;
@@ -1504,6 +1672,8 @@ public abstract class SharedStorageSystem : EntitySystem
             UpdateUI(container.Owner);
         }
     }
+
+
 
     private void HandleOpenBackpack(ICommonSession? session)
     {

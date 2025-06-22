@@ -1,3 +1,10 @@
+// SPDX-FileCopyrightText: 2022 Leon Friedrich <60421075+ElectroJr@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2023 Visne <39844191+Visne@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+// SPDX-FileCopyrightText: 2025 SX_7 <sn1.test.preria.2002@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-or-later
+
 using Content.Client.SubFloor;
 using Content.Shared.Wires;
 using Robust.Client.GameObjects;
@@ -31,5 +38,7 @@ public sealed class CableVisualizerSystem : EntitySystem
             mask = WireVisDirFlags.None;
 
         args.Sprite.LayerSetState(0, $"{component.StatePrefix}{(int) mask}");
+        if (component.ExtraLayerPrefix != null)
+            args.Sprite.LayerSetState(1, $"{component.ExtraLayerPrefix}{(int) mask}");
     }
 }
