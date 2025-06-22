@@ -85,8 +85,8 @@
   icon: "JobIconPassenger"
   supervisors: job-supervisors-everyone
   goobcoins: 69 #Goida content
-  access: [ ]
-  #- Maintenance
+  access:
+  - Maintenance
 
 - type: startingGear
   id: PassengerGear
