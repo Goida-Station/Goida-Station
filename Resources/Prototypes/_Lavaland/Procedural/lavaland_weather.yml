@@ -19,16 +19,26 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
+  # goida complex storms
 - type: lavalandWeather
   id: AshfallLight
   weatherType: AshfallLight
   damage:
     types:
-      Heat: 4
+      Heat: 2 # warns the player to head back to the shelter
 
 - type: lavalandWeather
-  id: AshfallHeavy
+  id: Ashfall
   weatherType: Ashfall
   damage:
     types:
-      Heat: 6
+      Heat: 6 # obscures vision very badly
+      Ion: 10
+
+- type: lavalandWeather
+  id: AshfallHeavy
+  weatherType: AshfallHeavy
+  damage:
+    types:
+      Heat: 30 # "Stand ready for my arrival, worm. You were given orders, you were given time."
+      Ion: 40

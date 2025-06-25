@@ -34,6 +34,13 @@ public sealed partial class LavalandStormedMapComponent : Component
     public ProtoId<LavalandWeatherPrototype> CurrentWeather;
 
     [DataField]
+    public int CurrentPhaseIndex = 0; // goida - complex storms
+
+    [DataField]
+    public List<StormPhase> Phases = new(); // goida
+
+
+    [DataField]
     public float Duration;
 
     [DataField]
@@ -41,4 +48,26 @@ public sealed partial class LavalandStormedMapComponent : Component
 
     [DataField]
     public float DamageAccumulator;
+
+    [DataField]
+    public List<StormPhase> StormPhases = new() // trust me this is going to look better in the game with the music attached ;-;
+    {
+        new() { StartTime = 0f, WeatherId = "AshfallLight" },
+        new() { StartTime = 98f, WeatherId = "Ashfall" },
+        new() { StartTime = 150f, WeatherId = "AshfallHeavy" },
+        new() { StartTime = 207f, WeatherId = "Ashfall" },
+        new() { StartTime = 260f, WeatherId = "AshfallHeavy" },
+        new() { StartTime = 300f, WeatherId = "Ashfall" },
+        new() { StartTime = 310f, WeatherId = "AshfallLight" }
+    };
+}
+
+[DataDefinition] // todo put this into a new file?
+public sealed partial class StormPhase // goida - complex storms
+{
+    [DataField(required: true)]
+    public float StartTime;
+
+    [DataField(required: true)]
+    public ProtoId<LavalandWeatherPrototype> WeatherId;
 }
