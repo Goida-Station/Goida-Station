@@ -148,6 +148,9 @@ public sealed class InvisibilityWatchSystem : EntitySystem
         stealthOnMove.MovementVisibilityRate = 0f;
         stealthOnMove.InvisibilityPenalty = 0.5f;
         stealthOnMove.MaxInvisibilityPenalty = 1f;
+
+        var effect = EnsureComp<InvisibilityWatchEffectComponent>(user);
+        Dirty(user, effect);
     }
 
     // Désactive la furtivité
@@ -157,6 +160,7 @@ public sealed class InvisibilityWatchSystem : EntitySystem
             _stealth.SetEnabled(user, false, stealth);
 
         RemComp<StealthOnMoveComponent>(user);
+        RemComp<InvisibilityWatchEffectComponent>(user);
     }
 
     // Mise à jour du système à chaque frame
