@@ -1,0 +1,16 @@
+uniform sampler2D SCREEN_TEXTURE;
+
+void fragment() {
+    vec4 color = texture(SCREEN_TEXTURE, UV);
+    float brightness = dot(color.rgb, vec3(0.299, 0.587, 0.114));
+    float intensity = smoothstep(0.1, 0.9, brightness);
+
+    vec3 greenShaded = vec3(0.0, intensity, 0.0);
+
+    if (brightness > 0.85)
+    {
+        greenShaded = vec3(0.3, 1.0, 0.3);
+    }
+
+    COLOR = vec4(greenShaded, 1.0);
+}
