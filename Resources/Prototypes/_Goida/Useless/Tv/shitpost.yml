@@ -1,0 +1,27 @@
+- type: tvInsides
+  id: Shitpost
+  randomImages:
+  - image: /Textures/_Goida/Tv/shitpost/shitpost1.jpg
+    chance: 0.03
+  - image: /Textures/_Goida/Tv/shitpost/shitpost2.png
+    chance: 0.03
+  - image: /Textures/_Goida/Tv/shitpost/shitpost3.png
+    chance: 0.03
+  - image: /Textures/_Goida/Tv/shitpost/shitpost4.png
+    chance: 0.03
+  - image: /Textures/_Goida/Tv/shitpost/shitpost5.jpg
+    chance: 0.03
+  - image: /Textures/_Goida/Tv/shitpost/shitpost6.jpg
+    chance: 0.03
+  - image: /Textures/_Goida/Tv/shitpost/shitpost7.png
+    chance: 0.03
+
+- type: entity
+  id: ClothingEyesGlassesShitpost
+  parent: ClothingEyesGlassesSecurity
+  name: shitpost glasses
+  components:
+  - type: ClothingGrantComponent
+    component:
+    - type: TV
+      insides: Shitpost
