@@ -5,6 +5,7 @@
 ## Technical details
 
 ## Media
+- [ ] Tested, works.
 
 ## Requirements
 - [ ] It's not crashing the game.
@@ -17,4 +18,3 @@
 - remove: Removed fun!
 - tweak: Changed fun!
 - fix: Fixed fun!
--->
