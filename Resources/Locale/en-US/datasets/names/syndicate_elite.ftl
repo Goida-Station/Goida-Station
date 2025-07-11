@@ -25,3 +25,4 @@ names-syndicate-elite-dataset-23 = Omega
 # goida
 names-syndicate-elite-dataset-24 = Goida
 names-syndicate-elite-dataset-25 = Raider
+names-syndicate-elite-dataset-26 = Slon

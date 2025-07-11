@@ -25,3 +25,4 @@ names-syndicate-elite-dataset-23 = Омега
 # goida
 names-syndicate-elite-dataset-24 = Гойда
 names-syndicate-elite-dataset-25 = Набегатор
+names-syndicate-elite-dataset-26 = Слон
