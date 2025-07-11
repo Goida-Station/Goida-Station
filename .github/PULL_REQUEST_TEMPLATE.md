@@ -5,7 +5,8 @@
 ## Technical details
 
 ## Media
-
+- [ ] Tested, works.
+-
 ## Requirements
 - [ ] It's not crashing the game.
 
