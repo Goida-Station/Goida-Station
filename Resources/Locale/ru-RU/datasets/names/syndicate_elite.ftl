@@ -21,3 +21,7 @@ names-syndicate-elite-dataset-20 = Пхи
 names-syndicate-elite-dataset-21 = Чи
 names-syndicate-elite-dataset-22 = Пси
 names-syndicate-elite-dataset-23 = Омега
+
+# goida
+names-syndicate-elite-dataset-24 = Гойда
+names-syndicate-elite-dataset-25 = Набегатор
