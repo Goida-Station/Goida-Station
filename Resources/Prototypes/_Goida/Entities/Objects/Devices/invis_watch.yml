@@ -1,0 +1,27 @@
+- type: entity
+  id: InvisWatch
+  name: invis watch
+  description: An ordinary-looking wrist watch, great for telling what time is it. It has a button on the side.
+  parent: Wristwatch
+  components:
+  - type: InvisibilityWatch
+    maxCharge: 12
+    rechargeRate: 0.5
+    dischargeRate: 1.0
+    slotFlags: [GLOVES]
+
+# todo
+- type: entity
+  id: ToggleInvisibility
+  name: Toggle Invisibility
+  description: Toggles your invisibility watch.
+  components:
+  - type: InstantAction
+    icon:
+      sprite: Objects/Devices/wristwatch.rsi
+      state: wristwatch
+    event: !type:ToggleInvisibilityActionEvent
+    clientExclusive: false
+    delay: 0.5
+
+# i changed .csproj because for some reason you cant take events from .Goida.Server for some reason????
