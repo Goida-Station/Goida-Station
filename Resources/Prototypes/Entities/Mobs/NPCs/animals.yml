@@ -2177,6 +2177,12 @@
     channels:
     - Mousemind
   # </Goobstation>
+  # <Goida>
+  - type: ComponentsChance
+    chance: 0.65
+    components:
+    - type: BlobCarrier
+  # </Goida>
   - type: Destructible # Shitmed Change
     thresholds:
     - trigger:
