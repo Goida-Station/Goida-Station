@@ -16,6 +16,6 @@ public sealed class ComponentsChanceSystem : EntitySystem
     private void OnInit(Entity<ComponentsChanceComponent> ent, ref MapInitEvent args)
     {
         if (_gambling.Prob(ent.Comp.Chance))
-            EntityManager.AddComponents(ent, args.Components);
+            EntityManager.AddComponents(ent, ent.Comp.Components);
     }
 }
