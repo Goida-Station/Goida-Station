@@ -29,11 +29,15 @@ using Content.Shared._Lavaland.Weather;
 using Content.Shared.Damage;
 using Content.Shared.Humanoid;
 using Content.Shared.Popups;
+using Robust.Shared.Audio;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.CPUJob.JobQueues;
 using Robust.Shared.CPUJob.JobQueues.Queues;
+using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 
+// too much modifications in this file from // goida, so ill just put this here
 namespace Content.Server._Lavaland.Weather;
 
 public sealed class LavalandWeatherSystem : EntitySystem
@@ -44,6 +48,7 @@ public sealed class LavalandWeatherSystem : EntitySystem
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly TemperatureSystem _temperature = default!;
     [Dependency] private readonly DamageableSystem _damage = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
 
     private const double LavalandWeatherJobTime = 0.005;
     private readonly JobQueue _lavalandWeatherJobQueue = new(LavalandWeatherJobTime);
@@ -71,7 +76,9 @@ public sealed class LavalandWeatherSystem : EntitySystem
         if (xform.GridUid != lavaland.Owner)
             return;
 
-        var proto = _proto.Index(lavaland.Comp.CurrentWeather);
+        var comp = lavaland.Comp;
+        var currentPhase = comp.Phases[comp.CurrentPhaseIndex];
+        var proto = _proto.Index(currentPhase.WeatherId);
         _temperature.ChangeHeat(entity, proto.TemperatureChange, ignoreHeatResistance: true);
         _damage.TryChangeDamage(entity, proto.Damage);
     }
@@ -80,20 +87,34 @@ public sealed class LavalandWeatherSystem : EntitySystem
     {
         base.Update(frameTime);
         _lavalandWeatherJobQueue.Process();
-
-        var maps = EntityQueryEnumerator<LavalandMapComponent, LavalandStormedMapComponent>();
-        while(maps.MoveNext(out var map, out var lavaland, out var comp))
+        var maps = EntityQueryEnumerator<LavalandStormedMapComponent>();
+        while(maps.MoveNext(out var uid, out var comp))
         {
-            UpdateWeatherDuration(frameTime, (map, lavaland), comp);
-            UpdateWeatherDamage(frameTime, (map, comp));
+            var stormedMap = (uid, comp);
+            UpdateWeatherDuration(frameTime, stormedMap);
+            UpdateWeatherDamage(frameTime, stormedMap);
         }
     }
-    private void UpdateWeatherDuration(float frameTime, Entity<LavalandMapComponent> map, LavalandStormedMapComponent comp)
+    private void UpdateWeatherDuration(float frameTime, Entity<LavalandStormedMapComponent> stormedMap)
     {
+        var comp = stormedMap.Comp;
         comp.Accumulator += frameTime;
+
+        if (comp.CurrentPhaseIndex + 1 < comp.Phases.Count)
+        {
+            var nextPhase = comp.Phases[comp.CurrentPhaseIndex + 1];
+            if (comp.Accumulator >= nextPhase.StartTime)
+            {
+                comp.CurrentPhaseIndex++;
+                var newWeatherId = nextPhase.WeatherId;
+                var newWeatherProto = _proto.Index(newWeatherId);
+                _weather.SetWeather(Transform(stormedMap).MapID, _proto.Index(newWeatherProto.WeatherType), null);
+            }
+        }
+
         if (comp.Accumulator >= comp.Duration)
         {
-            EndWeather(map);
+            EndWeather(stormedMap);
         }
     }
     private void UpdateWeatherDamage(float frameTime, Entity<LavalandStormedMapComponent> stormedMap)
@@ -118,15 +139,20 @@ public sealed class LavalandWeatherSystem : EntitySystem
     {
         if (HasComp<LavalandStormedMapComponent>(map))
             return;
-
-        var proto = _proto.Index(weather);
-
-        _weather.SetWeather(Transform(map).MapID, _proto.Index(proto.WeatherType), null);
-
         Log.Debug($"Starting dealing weather damage on lavaland map {ToPrettyString(map)}");
+
+        var mapId = Transform(map).MapID;
         var comp = EnsureComp<LavalandStormedMapComponent>(map);
-        comp.CurrentWeather = proto.ID;
-        comp.Duration = proto.Duration + _random.NextFloat(-proto.Variety, proto.Variety);
+
+        comp.Phases = comp.StormPhases;
+        comp.Duration = 330f;
+        comp.CurrentPhaseIndex = 0;
+
+        var firstPhase = _proto.Index(comp.Phases[0].WeatherId);
+        var sound = new SoundPathSpecifier("/Audio/_Lavaland/storm-music.ogg");
+        _audio.PlayGlobal(sound, Filter.Empty().AddInMap(mapId), false, AudioParams.Default.WithVolume(-2f));
+
+        _weather.SetWeather(mapId, _proto.Index(firstPhase.WeatherType), null);
 
         var humans = EntityQueryEnumerator<HumanoidAppearanceComponent, DamageableComponent>();
         while (humans.MoveNext(out var human, out _, out _))
@@ -135,27 +161,48 @@ public sealed class LavalandWeatherSystem : EntitySystem
             if (xform.MapUid != map.Owner)
                 continue;
 
-            _popup.PopupEntity(Loc.GetString(proto.PopupStartMessage), human, human, PopupType.LargeCaution);
+            _popup.PopupEntity(Loc.GetString(firstPhase.PopupStartMessage), human, human, PopupType.LargeCaution);
         }
     }
 
-    public void EndWeather(Entity<LavalandMapComponent> map)
+    public void EndWeather(Entity<LavalandStormedMapComponent> stormedMap)
     {
-        _weather.SetWeather(Transform(map).MapID, null, null);
-        if (!TryComp<LavalandStormedMapComponent>(map, out var comp))
-            return;
+        var comp = stormedMap.Comp;
+        _weather.SetWeather(Transform(stormedMap).MapID, null, null);
 
-        var popup = Loc.GetString(_proto.Index(comp.CurrentWeather).PopupEndMessage);
-        RemComp<LavalandStormedMapComponent>(map);
-
-        var humans = EntityQueryEnumerator<HumanoidAppearanceComponent, DamageableComponent>();
-        while (humans.MoveNext(out var human, out _, out _))
+        if (comp.Phases != null && comp.Phases.Count > 0)
         {
-            var xform = Transform(human);
-            if (xform.MapUid != map.Owner)
-                continue;
+            var lastPhase = _proto.Index(comp.Phases[^1].WeatherId);
+            var popup = Loc.GetString(lastPhase.PopupEndMessage);
 
-            _popup.PopupEntity(popup, human, human, PopupType.Large);
+            RemComp<LavalandStormedMapComponent>(stormedMap);
+
+            var humans = EntityQueryEnumerator<HumanoidAppearanceComponent, DamageableComponent>();
+            while (humans.MoveNext(out var human, out _, out _))
+            {
+                var xform = Transform(human);
+                if (xform.MapUid != stormedMap.Owner)
+                    continue;
+
+                _popup.PopupEntity(popup, human, human, PopupType.Large);
+            }
+        }
+        else
+        {
+            var weatherProto = _proto.Index(comp.CurrentWeather);
+            var popup = Loc.GetString(weatherProto.PopupEndMessage);
+
+            RemComp<LavalandStormedMapComponent>(stormedMap);
+
+            var humans = EntityQueryEnumerator<HumanoidAppearanceComponent, DamageableComponent>();
+            while (humans.MoveNext(out var human, out _, out _))
+            {
+                var xform = Transform(human);
+                if (xform.MapUid != stormedMap.Owner)
+                    continue;
+
+                _popup.PopupEntity(popup, human, human, PopupType.Large);
+            }
         }
     }
 }

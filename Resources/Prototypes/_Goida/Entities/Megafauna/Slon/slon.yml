@@ -1,0 +1,62 @@
+- type: entity
+  id: LavalandBossSlon
+  name: Slon
+  description: Who the fuck forgot their elephant here????
+  components:
+  # Basic stuff
+  - type: Physics
+    bodyType: KinematicController
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.6,0.35,0.6"
+        density: 50
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Clickable
+  - type: InteractionOutline
+  - type: InputMover
+  - type: Input
+    context: "human"
+  - type: LagCompensation
+  - type: MobMover
+  - type: Actions
+  - type: Appearance
+  - type: RotationVisuals
+    defaultRotation: 0
+    horizontalRotation: 0
+  - type: DoAfter
+  - type: Examiner
+  - type: Eye
+  - type: ContentEye
+  - type: RequireProjectileTarget
+    active: False
+  - type: CombatMode
+  - type: MobState
+
+  - type: Sprite
+    noRot: true
+    drawdepth: Mobs
+    sprite: _Goida/Mobs/Megafauna/slon.rsi
+    state: slon
+
+  - type: SlonBoss
+  - type: WobbleWobble
+    cycleTime: 2
+  - type: PulsatingScale
+    cycleTime: 2
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      500: Dead
+  - type: Aggressive # also required component for aggro checking
+    forgiveRange: 20.0
+  - type: BossMusic
+    soundId: Hierophant # todo
+  - type: Fauna

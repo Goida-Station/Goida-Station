@@ -1,0 +1,7 @@
+- type: entity
+  parent: RemoteSignaller
+  id: LavalandDebugStormStarter
+  name: lavaland storm starter
+  suffix: DEBUG
+  components:
+  - type: DebugStormStarter
