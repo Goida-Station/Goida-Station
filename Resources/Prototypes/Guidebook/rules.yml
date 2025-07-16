@@ -19,7 +19,7 @@
   priority: 60
   text: "/ServerInfo/Guidebook/ServerRules/DefaultRules.xml"
   children:
-  - CoreRules
+  - CoreRules # пошел нахуй со своим гойда эдитом
   - RoleplayRules
   - SiliconRules
   - RoleTypes

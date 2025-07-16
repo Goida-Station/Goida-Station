@@ -30,8 +30,7 @@ desc = "
 
 ГОЙДА, БРАТИШКА! ПИЗДЕЦ ВСЕМ, КТО НЕ С НАМИ! 🐘💥"
 lobbyenabled     = true
-soft_max_players = 65
-
+soft_max_players = 20
 [infolinks]
 github = "https://github.com/Goida-Station/Goida-Station"
 
