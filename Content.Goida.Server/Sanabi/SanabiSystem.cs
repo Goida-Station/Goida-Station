@@ -1,16 +1,12 @@
 using Robust.Shared.Prototypes;
 using Robust.Shared.Audio;
-using Content.Server.Chat.V2;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
-using Content.Shared.Chat.V2.Repository;
-using Content.Shared.Chat.V2;
 using Content.Server.Chat.Systems;
 using Content.Server.CriminalRecords.Systems;
 using Content.Server.StationRecords.Systems;
 using Content.Shared.StationRecords;
 using Content.Server.Station.Systems;
-using Microsoft.CodeAnalysis;
 using Content.Shared.CriminalRecords;
 using Content.Shared.Security;
 using Robust.Shared.Physics.Systems;
@@ -57,7 +53,7 @@ public sealed class SanabiSystem : EntitySystem
         if (_stationSystem.GetStationInMap(_transformSystem.GetMapId(sanabiCoords)) is not { } station)
             return;
 
-        if (!TryComp<MetaDataComponent>(sender, out var senderMetadataComp))
+        if (!TryComp(sender, out MetaDataComponent? senderMetadataComp))
             return;
 
         if (_records.GetRecordByName(station, senderMetadataComp.EntityName) is not { } id)
