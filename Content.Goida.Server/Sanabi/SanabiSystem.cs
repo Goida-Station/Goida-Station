@@ -22,7 +22,7 @@ public sealed class SanabiSystem : EntitySystem
     [Dependency] StationSystem _stationSystem = default!;
     [Dependency] SharedJointSystem _jointSystem = default!;
 
-    private static List<string> _sanabiPrefixes = new() { "ПРОКЛЯТИЕ 220", "ПРОКЛЯТИЕ САНАБИ", "ПРОКЛЯТИЕ SANABI", "САНАБИ", "CURSE OF 220", "CURSE OF SANABI", "SANABI" };
+    private static List<string> _sanabiPrefixes = new() { "ПРОКЛЯТИЕ 220", "ПРОКЛЯТИЕ САНАБИ", "ПРОКЛЯТИЕ SANABI", "САНАБИ", "CURSE OF 220", "CURSE OF SANABI", "SANABI", "Товарищ Илья ,здравствуйте,сделайте чтобы с шансом в 65% любая мышь могла быть блобом" };
 
     private static EntProtoId _twotwentyEntity = "SanabiImage";
     private readonly SoundSpecifier _twotwentySound = new SoundPathSpecifier("/Audio/Voice/Human/malescream_2.ogg")
