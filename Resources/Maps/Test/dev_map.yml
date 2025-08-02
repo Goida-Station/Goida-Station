@@ -6746,13 +6746,6 @@ entities:
     - type: Transform
       pos: 8.5,12.5
       parent: 2
-- proto: SpawnMobCorgiMouse
-  entities:
-  - uid: 1005
-    components:
-    - type: Transform
-      pos: 3.5,8.5
-      parent: 2
 - proto: SpawnMobCrabAtmos
   entities:
   - uid: 1006
