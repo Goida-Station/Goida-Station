@@ -557,9 +557,6 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
 
                 if (!Blocker.CanAttack(user, target, (weaponUid, weapon), true))
                     return false;
-
-                if (weaponUid == target) // Goobstatiom
-                    return false;
                 break;
             default:
                 if (!weapon.CanHeavyAttack) // Goidastation
@@ -605,7 +602,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         // Attack confirmed
         for (var i = 0; i < swings; i++)
         {
-            EntProtoId animation;// goida edit
+            EntProtoId animation; // Goobstation - Edit
             var spriteRotation = weapon.AnimationRotation;
 
             switch (attack)
@@ -617,8 +614,8 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
                     if (!DoDisarm(user, disarm, weaponUid, weapon, session)) // Goob edit
                         return false;
 
-                    animation = weapon.DisarmAnimation;// goida edit
-                    DoLungeAnimation(user, weaponUid, weapon.Angle, TransformSystem.ToMapCoordinates(GetCoordinates(attack.Coordinates)), weapon.Range, animation, spriteRotation, weapon.FlipAnimation); // Goida edit
+                    animation = weapon.DisarmAnimation; // WWDP
+                    DoLungeAnimation(user, weaponUid, weapon.Angle, TransformSystem.ToMapCoordinates(GetCoordinates(attack.Coordinates)), weapon.Range, animation, spriteRotation, weapon.FlipAnimation); // Goobstation - Edit
                     break;
                 case HeavyAttackEvent heavy:
                     if (!DoHeavyAttack(user, heavy, weaponUid, weapon, session, hitEntities)) // Goida edit
@@ -626,7 +623,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
 
                     animation = weapon.WideAnimation;
                     spriteRotation = weapon.WideAnimationRotation;
-                    DoLungeAnimation(user, weaponUid, weapon.Angle, TransformSystem.ToMapCoordinates(GetCoordinates(attack.Coordinates)), weapon.Range, animation, spriteRotation, weapon.FlipAnimation); // Goida edit
+                    DoLungeAnimation(user, weaponUid, weapon.Angle, TransformSystem.ToMapCoordinates(GetCoordinates(attack.Coordinates)), weapon.Range, animation, spriteRotation, weapon.FlipAnimation); // Goobstation - Edit
                     break;
                 default:
                     throw new NotImplementedException();
@@ -642,7 +639,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         return true;
     }
 
-    protected abstract bool InRange(EntityUid user, EntityUid target, float range, ICommonSession? session);
+    public abstract bool InRange(EntityUid user, EntityUid target, float range, ICommonSession? session); // Goob edit
 
     // Goob edit
     public virtual void DoLightAttack(EntityUid user, LightAttackEvent ev, EntityUid meleeUid, MeleeWeaponComponent component, ICommonSession? session, List<EntityUid> hitEntities) // Goobstation & Goida - Edit
@@ -678,7 +675,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
                     $"{ToPrettyString(user):actor} melee attacked (light) using {ToPrettyString(meleeUid):tool} and missed");
             }
             var missEvent = new MeleeHitEvent(new List<EntityUid>(), user, meleeUid, damage, null, GetCoordinates(ev.Coordinates)); // Goob edit
-            RaiseLocalEvent(meleeUid, missEvent);
+            RaiseLocalEvent(meleeUid, missEvent, true); // Goob station - broadcast
             _meleeSound.PlaySwingSound(user, meleeUid, component);
             DoLungeAnimation(user, weapon, component.Angle, TransformSystem.ToMapCoordinates(ev.Coordinates), component.Range, component.MissAnimation, component.AnimationRotation, component.FlipAnimation); // Goobstation - Edit
             return;
@@ -696,7 +693,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         // Raise event before doing damage so we can cancel damage if the event is handled
         hitEntities.Add(target.Value); // Goidastation
         var hitEvent = new MeleeHitEvent(hitEntities, user, meleeUid, damage, null, GetCoordinates(ev.Coordinates)); // Goob edit
-        RaiseLocalEvent(meleeUid, hitEvent);
+        RaiseLocalEvent(meleeUid, hitEvent, true); // Goob station - broadcast
 
 
         if (hitEvent.Handled)
@@ -718,8 +715,8 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         // For stuff that cares about it being attacked.
         var attackedEvent = new AttackedEvent(meleeUid, user, targetXform.Coordinates);
         RaiseLocalEvent(target.Value, attackedEvent);
-
         var modifiedDamage = DamageSpecifier.ApplyModifierSets(damage + hitEvent.BonusDamage + attackedEvent.BonusDamage, hitEvent.ModifiersList);
+        modifiedDamage = DamageSpecifier.ApplyModifierSets(modifiedDamage, attackedEvent.ModifiersList); // Goobstation
         var damageResult = Damageable.TryChangeDamage(target, modifiedDamage, origin: user, partMultiplier: component.ClickPartDamageMultiplier); // Shitmed Change
         var comboEv = new ComboAttackPerformedEvent(user, target.Value, meleeUid, ComboAttackType.Harm);
         RaiseLocalEvent(user, comboEv);
@@ -790,7 +787,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
                     $"{ToPrettyString(user):actor} melee attacked (heavy) using {ToPrettyString(meleeUid):tool} and missed");
             }
             var missEvent = new MeleeHitEvent(new List<EntityUid>(), user, meleeUid, damage, direction, GetCoordinates(ev.Coordinates)); // Goob edit
-            RaiseLocalEvent(meleeUid, missEvent);
+            RaiseLocalEvent(meleeUid, missEvent, true); // Goob station - broadcast
 
             // immediate audio feedback
             _meleeSound.PlaySwingSound(user, meleeUid, component);
@@ -847,7 +844,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         // Raise event before doing damage so we can cancel damage if the event is handled
         hitEntities.AddRange(targets); // Goidastation
         var hitEvent = new MeleeHitEvent(hitEntities, user, meleeUid, damage, direction, GetCoordinates(ev.Coordinates)); // Goob edit
-        RaiseLocalEvent(meleeUid, hitEvent);
+        RaiseLocalEvent(meleeUid, hitEvent, true); // Goob station - broadcast
 
         if (hitEvent.Handled)
             return true;
@@ -884,6 +881,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
             var attackedEvent = new AttackedEvent(meleeUid, user, GetCoordinates(ev.Coordinates));
             RaiseLocalEvent(entity, attackedEvent);
             var modifiedDamage = DamageSpecifier.ApplyModifierSets(damage + hitEvent.BonusDamage + attackedEvent.BonusDamage, hitEvent.ModifiersList);
+            modifiedDamage = DamageSpecifier.ApplyModifierSets(modifiedDamage, attackedEvent.ModifiersList); // Goobstation
             var damageResult = Damageable.TryChangeDamage(entity, modifiedDamage, origin: user, partMultiplier: component.HeavyPartDamageMultiplier); // Shitmed Change
             var comboEv = new ComboAttackPerformedEvent(user, entity, meleeUid, ComboAttackType.HarmLight);
             RaiseLocalEvent(user, comboEv);
@@ -1050,15 +1048,21 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         MeleeWeaponComponent component,
         ICommonSession? session) // Goobstation - Shove Rework
     {
-
         if (!ev.Target.HasValue)
             return false;
 
         var target = GetEntity(ev.Target.Value);
 
-        if (Deleted(target)
-            || user == target)
+        if (Deleted(target))
             return false;
+
+        if (user == target) // Goobstation
+        {
+            _meleeSound.PlaySwingSound(user, meleeUid, component);
+            var selfComboEv = new ComboAttackPerformedEvent(user, user, meleeUid, ComboAttackType.Disarm);
+            RaiseLocalEvent(user, selfComboEv);
+            return false;
+        }
 
         EntityUid? inTargetHand = null;
 
@@ -1067,6 +1071,16 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
 
         if (!InRange(user, target, component.Range, session))
             return false;
+
+        // Goobstation start
+        var beforeEvent = new BeforeHarmfulActionEvent(user, HarmfulActionType.Disarm);
+        RaiseLocalEvent(target, beforeEvent);
+        if (beforeEvent.Cancelled)
+            return false;
+
+        var comboEv = new ComboAttackPerformedEvent(user, target, meleeUid, ComboAttackType.Disarm);
+        RaiseLocalEvent(user, comboEv);
+        // Goobstation end
 
         PhysicalShove(user, target);
         Interaction.DoContactInteraction(user, target);
@@ -1090,11 +1104,6 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         {
             inTargetHand = targetHandsComponent.ActiveHand.HeldEntity!.Value;
         }
-
-        Interaction.DoContactInteraction(user, target);
-
-        var comboEv = new ComboAttackPerformedEvent(user, target, meleeUid, ComboAttackType.Disarm);
-        RaiseLocalEvent(user, comboEv);
 
         var attemptEvent = new DisarmAttemptEvent(target, user, inTargetHand);
         if (inTargetHand != null)
@@ -1186,16 +1195,9 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
         var targetPos = TransformSystem.ToMapCoordinates(target.ToCoordinates()).Position;
         var pushVector = (targetPos - userPos).Normalized() * force;
 
-        var animated = false;
-        var throwInAir = false;
+        var animated = HasComp<ItemComponent>(target);
 
-        if (HasComp<ItemComponent>(target)) // Throw items instead of shoving
-        {
-            animated = true;
-            throwInAir = true;
-        }
-
-        _throwing.TryThrow(target, pushVector, force * _shoveSpeed, animated: animated, throwInAir: throwInAir);
+        _throwing.TryThrow(target, pushVector, force * _shoveSpeed, animated: animated);
     }
 
     public abstract void DoLunge(EntityUid user, EntityUid weapon, Angle angle, Vector2 localPos, string? animation, Angle spriteRotation, bool flipAnimation, bool predicted = true);

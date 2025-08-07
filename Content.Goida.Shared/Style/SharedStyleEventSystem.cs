@@ -6,7 +6,7 @@ using Content.Goobstation.Shared.Emoting;
 using Content.Goobstation.Shared.Sandevistan;
 using Content.Shared.CombatMode;
 using Content.Shared.Damage;
-using Content.Shared.Damage.Events;
+using Content.Shared._Shitcode.Weapons.Misc;
 using Content.Shared.Electrocution;
 using Content.Shared.Guardian;
 using Content.Shared.Mobs;
@@ -43,7 +43,7 @@ namespace Content.Goida.Style
             SubscribeLocalEvent<StyleCounterComponent, GuardianToggleActionEvent>(OnJojoReference);
             SubscribeLocalEvent<StyleCounterComponent, DashActionEvent>(On65);
             SubscribeLocalEvent<StyleCounterComponent, DisarmedEvent>(OnSkillIssue);
-            SubscribeLocalEvent<StyleCounterComponent, TakeStaminaDamageEvent>(OnStaminaDamage);
+            SubscribeLocalEvent<StyleCounterComponent, StaminaDamageMeleeHitEvent>(OnStaminaDamage);
             SubscribeLocalEvent<StyleCounterComponent, AnimationFlipEmoteEvent>(OnFlip);
             SubscribeLocalEvent<StyleCounterComponent, ToggleSandevistanEvent>(OnSandevistan);
         }
@@ -62,7 +62,7 @@ namespace Content.Goida.Style
             _styleSystem.AddStyleEvent(uid, "+FLIP", component, Color.Purple);
         }
 
-        private void OnStaminaDamage(EntityUid uid, StyleCounterComponent component, TakeStaminaDamageEvent args)
+        private void OnStaminaDamage(EntityUid uid, StyleCounterComponent component, StaminaDamageMeleeHitEvent args)
         {
             if (!_gameTiming.IsFirstTimePredicted)
                 return;
